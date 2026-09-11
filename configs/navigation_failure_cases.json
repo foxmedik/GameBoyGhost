@@ -1,0 +1,168 @@
+{
+  "schema": "navigation-correction-cases-v1",
+  "split": "development_diagnostic",
+  "policy_sha256": "65669206d7ffb37f73d475ac46815c572f00681d321aa77ebbd4dc14804aa29a",
+  "local_goal_failures": [
+    {
+      "segment_id": "a45a26acffba91348ea082faed603b2f2768dafade8d4071f8255b98d55a5439",
+      "episode_id": "4c7ab60c-c89a-50f3-bcce-f845686a3c5f",
+      "source_path": "train/00006648/fc0201bd-0e48-4248-bc81-b12f4b1d407a/steps.parquet",
+      "source_sha256": "c487b9c932e635a99ab8ecdf9c71adcdd280541a82df9366a0f089dc1c832091",
+      "start": "house",
+      "seed": 106648,
+      "step": 3092,
+      "goal": {
+        "room": [
+          0,
+          0,
+          243
+        ],
+        "x": 12,
+        "y": 58
+      },
+      "initial_room": [
+        0,
+        0,
+        243
+      ],
+      "initial_x": 39,
+      "initial_y": 42,
+      "kind": "same_room"
+    },
+    {
+      "segment_id": "25d047d467a4c3875429734f1ffb178c280bc4300f576f4a8646a05a7372e168",
+      "episode_id": "59602133-77fa-5341-b689-154a826a51de",
+      "source_path": "train/00001837/4e7acf89-ff3b-4044-aae0-0b7615ece4f7/steps.parquet",
+      "source_sha256": "57d86b6c464bc15c29be687c4781936af6670baa4998f1cc986709371f7b5bbc",
+      "start": "beach",
+      "seed": 101837,
+      "step": 344,
+      "goal": {
+        "room": [
+          0,
+          0,
+          242
+        ],
+        "x": 85,
+        "y": 61
+      },
+      "initial_room": [
+        0,
+        0,
+        242
+      ],
+      "initial_x": 117,
+      "initial_y": 96,
+      "kind": "same_room"
+    },
+    {
+      "segment_id": "4b4081e2a60168c63025c5daa64af8a2f737affe18d9dc161dc4676eec279e36",
+      "episode_id": "4a79deba-a00c-5401-ae34-ce60d9ccebd8",
+      "source_path": "train/00001000/7fefa6bf-c623-4f6f-b741-6d5642a6cfe7/steps.parquet",
+      "source_sha256": "32be8c9e64ffaf8a84715bec27d9cc0cf9e7b00e7b1218bbf83a613b70481808",
+      "start": "beach",
+      "seed": 101000,
+      "step": 3280,
+      "goal": {
+        "room": [
+          0,
+          0,
+          226
+        ],
+        "x": 33,
+        "y": 101
+      },
+      "initial_room": [
+        0,
+        0,
+        225
+      ],
+      "initial_x": 114,
+      "initial_y": 85,
+      "kind": "cross_room"
+    },
+    {
+      "segment_id": "d83828f5fd478e038e4d2fa0f234802ad62b67e44645ced8f2c991e5531a304e",
+      "episode_id": "077250ed-da41-5279-88ea-f9082158e9dc",
+      "source_path": "train/00002285/6390f43c-28c7-4f9d-a629-6b5064678b06/steps.parquet",
+      "source_sha256": "9851d3e249b7c22c35e2ac23063090b70c7afabd9429a8f18151dd374fb7aed9",
+      "start": "approach",
+      "seed": 102285,
+      "step": 2354,
+      "goal": {
+        "room": [
+          0,
+          0,
+          224
+        ],
+        "x": 140,
+        "y": 101
+      },
+      "initial_room": [
+        0,
+        0,
+        224
+      ],
+      "initial_x": 136,
+      "initial_y": 67,
+      "kind": "same_room"
+    },
+    {
+      "segment_id": "8b9810daf06ac72753f05c0966cfafd8362cfe323cfb564aa6f7ef08f4bc54cd",
+      "episode_id": "344b48db-b8a7-5e27-8aed-bb1b20fb15c9",
+      "source_path": "train/00003911/9b0145c7-a93f-4325-828e-8c935fd49459/steps.parquet",
+      "source_sha256": "a8174ea4207c12e3a2f724620063ee7f2e43f18dbfe34d30925d3ca2adc3798a",
+      "start": "approach",
+      "seed": 103911,
+      "step": 2143,
+      "goal": {
+        "room": [
+          0,
+          0,
+          242
+        ],
+        "x": 68,
+        "y": 18
+      },
+      "initial_room": [
+        0,
+        0,
+        226
+      ],
+      "initial_x": 88,
+      "initial_y": 90,
+      "kind": "cross_room"
+    },
+    {
+      "segment_id": "129b2185b2fc88fbe0abcc8e917c1b19e0d39e1a29f03608793ad6428c3b4138",
+      "episode_id": "563dba18-babd-5f6e-9e54-f6e9a6830df9",
+      "source_path": "train/00004595/12e0beb8-77df-4989-97c8-301da93ba081/steps.parquet",
+      "source_sha256": "8dde70d8e9599b0c0a0d0204c70cb49c7d10e3e4ba138a657ba1a971cd15ca71",
+      "start": "approach",
+      "seed": 104595,
+      "step": 471,
+      "goal": {
+        "room": [
+          0,
+          0,
+          224
+        ],
+        "x": 136,
+        "y": 26
+      },
+      "initial_room": [
+        0,
+        0,
+        225
+      ],
+      "initial_x": 35,
+      "initial_y": 56,
+      "kind": "cross_room"
+    }
+  ],
+  "continuous_failures": [
+    "runs/navigation-chain-beach-v1",
+    "runs/navigation-chain-approach-v1"
+  ],
+  "note": "Preserved for recovery work. If folded into corrective training, retire these cases from validation. The 96 frozen evaluation cases are not included."
+}

@@ -1,0 +1,11 @@
+# Core LADX environment and SB3 baseline, using upstream's original pins.
+# Optional JAX, gamepad, and external broadcast integrations are not included.
+pyboy==2.0.0
+numpy==1.26.4
+gymnasium==0.29.1
+pillow==10.3.0
+scikit-image==0.23.1
+torch==2.2.2
+stable-baselines3==2.3.0
+pygame==2.5.2
+tensorboard==2.16.2

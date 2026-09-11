@@ -1,0 +1,48 @@
+{
+  "frames": 9474,
+  "trace_sha256": "83a4c82b2f20cb5422424a053d732e7623bdab1d740b61804ff1feebd54dfaa3",
+  "hook_counts": {
+    "collision": 3793,
+    "shield": 2,
+    "push": 240,
+    "sword": 1
+  },
+  "sword_frames": [
+    9161
+  ],
+  "push_first_frame": 4886,
+  "rom_sha256": "6285ba6201f17bc8595c600ebc2477d52561f0aff29b11f7fc3343bacb2e230b",
+  "supervision": "scripted",
+  "human_intervened": true,
+  "gameplay_ram_edits": false,
+  "initial_inventory": [
+    4,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0
+  ],
+  "final_inventory": [
+    4,
+    1,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0
+  ],
+  "hooked_replay_exact": true,
+  "unhooked_gameplay_identical": true
+}

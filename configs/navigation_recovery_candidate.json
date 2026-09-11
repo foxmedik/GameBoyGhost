@@ -1,0 +1,13 @@
+{
+  "schema": "navigation-recovery-candidate-v1",
+  "status": "experimental_not_promoted",
+  "policy_path": "runs/navigation-recovery-model-v1/epoch-012.pt",
+  "policy_sha256": "c9a5a16d35faf2ce6125232535a873bf3f4e7c7cdf2fd5a3ae3182c1d4bde740",
+  "parent_policy_path": "runs/navigation-model-no-history-v1/epoch-064.pt",
+  "data": "runs/navigation-recovery-data-v1",
+  "report": "runs/navigation-recovery-comparison-v1.json",
+  "reason": "Fixes continuous endpoint stalls and five correction cases, but introduces regressions and health loss; additional development success unchanged.",
+  "harness_privilege": "D",
+  "completion_evaluated": false,
+  "reserved_evaluation_used": false
+}

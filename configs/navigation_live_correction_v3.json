@@ -1,0 +1,10 @@
+{
+  "schema": "navigation-live-correction-candidate-v3",
+  "status": "experimental_not_promoted",
+  "policy_path": "runs/navigation-live-correction-v3/model/epoch-012.pt",
+  "policy_sha256": "696bdb8677115b99bc0d3b21cdf7213433cfa0206cc3ed7081cafa561ad19991",
+  "report": "runs/navigation-live-correction-v3/result.json",
+  "reason": "One original parent-success regression remains; additional and fresh panels lose no successes and all panels are damage-free.",
+  "reserved_evaluation_used": false,
+  "harness_privilege": "D"
+}

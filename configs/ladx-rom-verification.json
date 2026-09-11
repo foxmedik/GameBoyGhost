@@ -1,0 +1,28 @@
+{
+  "schema_version": "ladx-rom-verification-v1",
+  "rom_sha256": "6285ba6201f17bc8595c600ebc2477d52561f0aff29b11f7fc3343bacb2e230b",
+  "rom_md5": "ccbb56212e3dbaa9007d389a17e9d075",
+  "revision": "English 1.1",
+  "rebuilt_rom_byte_identical": true,
+  "disassembly_url": "https://github.com/zladx/LADX-Disassembly",
+  "disassembly_commit": "880d24c0a2ae3f09551d914f015c7589f743c8fb",
+  "rgbds_version": "rgbasm v1.0.3",
+  "symbols_sha256": "cf0b1444b4b28f787b62e7860a026b5584d6fa021f6e714a1ed50468ae3474c6",
+  "symbols": {
+    "ApplySwordDamagesToEnemy": "03:7190",
+    "ApplyCollisionWithSolid": "02:729f",
+    "UrchinEntityHandler.jr_7408": "15:740a",
+    "CheckLinkCollisionWithProjectile.jr_003_6C54": "03:6c49",
+    "wRoomTransitionState": "00:c124",
+    "wTransitionSequenceCounter": "00:c16b",
+    "wHealth": "01:db5a",
+    "wMaxHearts": "01:db5b",
+    "wRupeeCountHigh": "01:db5d",
+    "wRupeeCountLow": "01:db5e"
+  },
+  "notes": [
+    "Push jingle is UrchinEntityHandler.jr_7408 + 11 bytes.",
+    "Shield jingle is CheckLinkCollisionWithProjectile.jr_003_6C54 - 4 bytes.",
+    "Symbol addresses and opcode signatures are specific to this exact ROM."
+  ]
+}

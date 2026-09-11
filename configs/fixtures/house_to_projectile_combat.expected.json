@@ -1,0 +1,15 @@
+{
+  "frames": 3075,
+  "trace_sha256": "41dcd2fc8c50e6f1dc6ce7d95e8add1d5779b4b1a5c8eed559f08f7fdb4ec0a2",
+  "shield_frames": [
+    2308,
+    2533
+  ],
+  "collision_hits": 1504,
+  "rom_sha256": "6285ba6201f17bc8595c600ebc2477d52561f0aff29b11f7fc3343bacb2e230b",
+  "supervision": "scripted",
+  "human_intervened": true,
+  "gameplay_ram_edits": false,
+  "health_start": 24,
+  "health_end": 16
+}

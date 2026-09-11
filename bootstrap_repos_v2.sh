@@ -1,0 +1,22 @@
+#!/usr/bin/env bash
+set -euo pipefail
+ROOT="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)"
+REFS="$ROOT/references"
+mkdir -p "$REFS"
+clone_or_update(){ url="$1"; dir="$2"; if [ -d "$dir/.git" ]; then git -C "$dir" pull --ff-only; elif [ -e "$dir" ]; then echo "ERROR: $dir exists and is not git" >&2; exit 1; else git clone "$url" "$dir"; fi; }
+clone_or_update https://github.com/PWhiddy/PokemonRedExperiments.git "$REFS/PokemonRedExperiments"
+clone_or_update https://github.com/Xe-Xo/LADXExperiments.git "$REFS/LADXExperiments"
+clone_or_update https://github.com/PWhiddy/pokerl-map-viz.git "$REFS/pokerl-map-viz"
+clone_or_update https://github.com/Baekalfen/PyBoy.git "$REFS/PyBoy"
+clone_or_update https://github.com/drubinstein/pokemonred_puffer.git "$REFS/pokemonred_puffer"
+clone_or_update https://github.com/PufferAI/PufferLib.git "$REFS/PufferLib"
+clone_or_update https://github.com/PufferAI/pokegym.git "$REFS/pokegym-puffer"
+clone_or_update https://github.com/CJBoey/PokemonRedExperiments1.git "$REFS/PokemonRedExperiments1-CJBoey"
+clone_or_update https://github.com/leanke/pokegym.git "$REFS/pokegym-leanke"
+clone_or_update https://github.com/xinpw8/pokegym.git "$REFS/pokegym-xinpw8"
+clone_or_update https://github.com/dvruette/pokemon-emerald-experiments.git "$REFS/pokemon-emerald-experiments"
+clone_or_update https://github.com/PWhiddy/dreamerv3-poke.git "$REFS/dreamerv3-poke"
+clone_or_update https://github.com/JoshuaPurtell/RedAgentExperiments.git "$REFS/RedAgentExperiments"
+clone_or_update https://github.com/jonese1234/PokeBotBad.git "$REFS/PokeBotBad"
+echo "Reference repos ready: $REFS"
+echo "ROMs are intentionally not handled by this script."

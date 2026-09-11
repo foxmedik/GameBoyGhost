@@ -1,0 +1,28 @@
+{
+  "schema": "navigation-recovery-batch-v2",
+  "status": "no_candidate_promoted",
+  "report": "runs/navigation-recovery-batch-v2/result.json",
+  "selected_general_policy_unchanged": "runs/navigation-model-no-history-v1/epoch-064.pt",
+  "candidates": [
+    {
+      "weight": 1,
+      "policy_path": "runs/navigation-recovery-batch-v2/anchor-1/epoch-012.pt",
+      "policy_sha256": "72db399cd7fc476570e11887ec1d0f3326e6c465eecd872281f33e445a0a6d03",
+      "eligible": false
+    },
+    {
+      "weight": 4,
+      "policy_path": "runs/navigation-recovery-batch-v2/anchor-4/epoch-012.pt",
+      "policy_sha256": "9dc85bdf32e97ce5a2faaa9c92fe12c636e9e4df7e463519c09c13313084c56f",
+      "eligible": false
+    },
+    {
+      "weight": 16,
+      "policy_path": "runs/navigation-recovery-batch-v2/anchor-16/epoch-012.pt",
+      "policy_sha256": "2179bf8849cf04f2be24d6017846a940e6072038ab1bd875ceb9530506af3809",
+      "eligible": false
+    }
+  ],
+  "reason": "Every candidate loses parent-success cases on development panels. Weights 4 and 16 eliminate observed damage but additional-panel success drops.",
+  "reserved_evaluation_used": false
+}

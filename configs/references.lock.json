@@ -1,0 +1,80 @@
+{
+  "fetched_at": "2026-09-10T11:01:25.107792+00:00",
+  "repositories": [
+    {
+      "name": "LADXExperiments",
+      "url": "https://github.com/Xe-Xo/LADXExperiments.git",
+      "commit": "23f09fcf0339c1497ef6778e69a33075dd716a9f"
+    },
+    {
+      "name": "PokeBotBad",
+      "url": "https://github.com/jonese1234/PokeBotBad.git",
+      "commit": "2e882849cac6e9b6a6ce62dcd689c64160d1d51e"
+    },
+    {
+      "name": "PokemonRedExperiments",
+      "url": "https://github.com/PWhiddy/PokemonRedExperiments.git",
+      "commit": "7739b399db503a7a78999683188414036a2c0c6b"
+    },
+    {
+      "name": "PokemonRedExperiments1-CJBoey",
+      "url": "https://github.com/CJBoey/PokemonRedExperiments1.git",
+      "commit": "eb54dd43853f9000373768c7d8ac3d12589629c6"
+    },
+    {
+      "name": "PufferLib",
+      "url": "https://github.com/PufferAI/PufferLib.git",
+      "commit": "42f70d6932c30ac977736f861006809c50168ba9"
+    },
+    {
+      "name": "PyBoy",
+      "url": "https://github.com/Baekalfen/PyBoy.git",
+      "commit": "a84cec12b5708a8a6e05a6edbdb3fa71c89b5afa"
+    },
+    {
+      "name": "RedAgentExperiments",
+      "url": "https://github.com/JoshuaPurtell/RedAgentExperiments.git",
+      "commit": "ca5c520b42a51109347bc8ed03f4e330598af079"
+    },
+    {
+      "name": "dreamerv3-poke",
+      "url": "https://github.com/PWhiddy/dreamerv3-poke.git",
+      "commit": "d0fed662d1ec669b7860e8a3ae49993bef480275"
+    },
+    {
+      "name": "pokegym-leanke",
+      "url": "https://github.com/leanke/pokegym.git",
+      "commit": "e239397252df10607401cf5f07acaca016cd4753"
+    },
+    {
+      "name": "pokegym-puffer",
+      "url": "https://github.com/PufferAI/pokegym.git",
+      "commit": "9050f7ae43e21b9337ac5ae407d37e6eb34ca03f"
+    },
+    {
+      "name": "pokegym-xinpw8",
+      "url": "https://github.com/xinpw8/pokegym.git",
+      "commit": "a8b75e4ad2694461f661acf5894d498b69d1a3fa"
+    },
+    {
+      "name": "pokemon-emerald-experiments",
+      "url": "https://github.com/dvruette/pokemon-emerald-experiments.git",
+      "commit": "49c15ebfe1c084cc70327430d2c8f0e78e96c39f"
+    },
+    {
+      "name": "pokemonred_puffer",
+      "url": "https://github.com/drubinstein/pokemonred_puffer.git",
+      "commit": "e3bd1b13675450373cd7d6c734069dee82e6ffa2"
+    },
+    {
+      "name": "pokerl-map-viz",
+      "url": "https://github.com/PWhiddy/pokerl-map-viz.git",
+      "commit": "0fa888646a3e0a2450f43c1ca7be8989e5234336"
+    },
+    {
+      "name": "LADX-Disassembly",
+      "url": "https://github.com/zladx/LADX-Disassembly.git",
+      "commit": "880d24c0a2ae3f09551d914f015c7589f743c8fb"
+    }
+  ]
+}

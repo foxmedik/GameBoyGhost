@@ -1,0 +1,3 @@
+# Optional collection dependencies; baseline versions stay unchanged.
+pyarrow==21.0.0
+psutil==7.0.0

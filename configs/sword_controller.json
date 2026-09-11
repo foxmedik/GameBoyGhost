@@ -1,0 +1,19 @@
+{
+  "schema": "selected-sword-controller-v1",
+  "policy_path": "runs/tree-clean-route-v3/policy.json",
+  "policy_sha256": "c527a20dc92f8c9c51d41e1c9909348549202809e42a6aa732668b64492b1845",
+  "model": "learned_decision_tree",
+  "supervision": "feedback_teacher_imitation",
+  "harness_privilege": "D",
+  "teacher_active_at_inference": false,
+  "task": "acquire_sword_from_fixed_upstream_house_start",
+  "completion_evaluated": false,
+  "development_cases_passed": 58,
+  "new_validation_cases_passed": 12,
+  "evaluation_directories": [
+    "runs/tree-final-development-28",
+    "runs/tree-final-development-18",
+    "runs/tree-final-development-12",
+    "runs/tree-final-validation-12"
+  ]
+}

@@ -1,0 +1,23 @@
+{
+  "schema": "experimental-navigation-controller-v1",
+  "status": "experimental_not_default",
+  "policy_path": "runs/navigation-focused-v4/model/epoch-008.pt",
+  "policy_sha256": "3e6e5f3278b82f098e9d4eb5cd943813075fa75a66f1bd0a6cf50fcde03c66c9",
+  "feature_contract": "structured-goal-250-v1",
+  "previous_movement_masked": true,
+  "supervision": "verified_recovery_and_parent_paths_with_shortest_observed_suffix_labels",
+  "harness_privilege": "D",
+  "local_live_successes": 46,
+  "local_live_cases": 48,
+  "live_development_result": "runs/navigation-focused-v4/result.json",
+  "continuous_room_exit_cases": 3,
+  "continuous_precise_goal_successes": 3,
+  "continuous_cases": 3,
+  "completion_evaluated": false,
+  "additional_development_successes": 39,
+  "additional_development_cases": 48,
+  "fresh_development_successes": 46,
+  "fresh_development_cases": 48,
+  "selection_reason": "Passed fixed no-lost-success/no-damage gate against original parent and v3 across all three panels; continuous goals 3/3.",
+  "previous_policy_path": "runs/navigation-model-no-history-v1/epoch-064.pt"
+}

@@ -1,0 +1,174 @@
+{
+  "panels": {
+    "original": {
+      "cases": 48,
+      "parent_successes": 42,
+      "corrected_successes": 46,
+      "gained": [
+        "25d047d467a4c3875429734f1ffb178c280bc4300f576f4a8646a05a7372e168",
+        "4b4081e2a60168c63025c5daa64af8a2f737affe18d9dc161dc4676eec279e36",
+        "8b9810daf06ac72753f05c0966cfafd8362cfe323cfb564aa6f7ef08f4bc54cd",
+        "d83828f5fd478e038e4d2fa0f234802ad62b67e44645ced8f2c991e5531a304e"
+      ],
+      "lost": [],
+      "corrected_deaths": 0,
+      "corrected_damage": 0,
+      "paired_start_fingerprints_match": true,
+      "versus_v3": {
+        "cases": 48,
+        "parent_successes": 45,
+        "corrected_successes": 46,
+        "gained": [
+          "7ca8327a89569c1600002a6c5953fd39b8e34a98039d425d862eceb99db53944"
+        ],
+        "lost": [],
+        "corrected_deaths": 0,
+        "corrected_damage": 0,
+        "paired_start_fingerprints_match": true
+      },
+      "summary": {
+        "cases": 48,
+        "successes": 46,
+        "deaths": 0,
+        "damage": 0,
+        "mean_steps": 24.1875,
+        "by_kind": {
+          "same_room": {
+            "cases": 24,
+            "successes": 23
+          },
+          "cross_room": {
+            "cases": 24,
+            "successes": 23
+          }
+        }
+      }
+    },
+    "additional": {
+      "cases": 48,
+      "parent_successes": 37,
+      "corrected_successes": 39,
+      "gained": [
+        "2f10fabd4e46eb5ad857812eec89bdb3353a22964edaa9a464ed9da08c13ffd0",
+        "49ee820f981e531f9676247a6db12802cc54f068ed293aa03adfb1e0614e9e14"
+      ],
+      "lost": [],
+      "corrected_deaths": 0,
+      "corrected_damage": 0,
+      "paired_start_fingerprints_match": true,
+      "versus_v3": {
+        "cases": 48,
+        "parent_successes": 37,
+        "corrected_successes": 39,
+        "gained": [
+          "2f10fabd4e46eb5ad857812eec89bdb3353a22964edaa9a464ed9da08c13ffd0",
+          "49ee820f981e531f9676247a6db12802cc54f068ed293aa03adfb1e0614e9e14"
+        ],
+        "lost": [],
+        "corrected_deaths": 0,
+        "corrected_damage": 0,
+        "paired_start_fingerprints_match": true
+      },
+      "summary": {
+        "cases": 48,
+        "successes": 39,
+        "deaths": 0,
+        "damage": 0,
+        "mean_steps": 38.770833333333336,
+        "by_kind": {
+          "same_room": {
+            "cases": 24,
+            "successes": 20
+          },
+          "cross_room": {
+            "cases": 24,
+            "successes": 19
+          }
+        }
+      }
+    },
+    "fresh": {
+      "cases": 48,
+      "parent_successes": 46,
+      "corrected_successes": 46,
+      "gained": [],
+      "lost": [],
+      "corrected_deaths": 0,
+      "corrected_damage": 0,
+      "paired_start_fingerprints_match": true,
+      "versus_v3": {
+        "cases": 48,
+        "parent_successes": 46,
+        "corrected_successes": 46,
+        "gained": [],
+        "lost": [],
+        "corrected_deaths": 0,
+        "corrected_damage": 0,
+        "paired_start_fingerprints_match": true
+      },
+      "summary": {
+        "cases": 48,
+        "successes": 46,
+        "deaths": 0,
+        "damage": 0,
+        "mean_steps": 23.645833333333332,
+        "by_kind": {
+          "same_room": {
+            "cases": 24,
+            "successes": 23
+          },
+          "cross_room": {
+            "cases": 24,
+            "successes": 23
+          }
+        }
+      }
+    }
+  },
+  "continuous": [
+    {
+      "start": "house",
+      "status": "success",
+      "steps": 461,
+      "navigation_steps": 49,
+      "navigation_damage": 0
+    },
+    {
+      "start": "beach",
+      "status": "success",
+      "steps": 317,
+      "navigation_steps": 49,
+      "navigation_damage": 0
+    },
+    {
+      "start": "approach",
+      "status": "success",
+      "steps": 128,
+      "navigation_steps": 45,
+      "navigation_damage": 0
+    }
+  ],
+  "eligible": true,
+  "policy_sha256": "3e6e5f3278b82f098e9d4eb5cd943813075fa75a66f1bd0a6cf50fcde03c66c9",
+  "interpretation": "All three panels are known development/regression data; no new cohorts used in focused training. Require no lost successes relative to both original parent and v3.",
+  "reserved_evaluation_used": false,
+  "harness_privilege": "D",
+  "completion_evaluated": false,
+  "tests_passed": 45,
+  "selected_policy_path": "runs/navigation-focused-v4/model/epoch-008.pt",
+  "resume_verification": {
+    "passed": true,
+    "exact_fields": [
+      "actions",
+      "fingerprint",
+      "steps",
+      "sword_step",
+      "navigation_steps",
+      "damage",
+      "navigation_damage",
+      "status",
+      "final_state"
+    ],
+    "steps": 461
+  }
+}
