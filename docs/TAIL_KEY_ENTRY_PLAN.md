@@ -61,7 +61,7 @@ The immediate next action is the progression-mode and milestone-fixture implemen
 
 ## Provided tilesets and maps
 
-The user's assets have now been processed into `runs/progression-assets-v1/index.html` and a machine-readable manifest: 31 image references, 256 indexed overworld rooms and 451 unique tile appearances. See `docs/PROGRESSION_ASSETS.md` for reproducibility, verification and limitations. Use them in the guided baseline with explicit `provided_full_map_and_artwork` assistance. Live room/coordinate alignment and physical passability still need validation; the static references are not integrated into a controller yet. Standalone tilesets and interior maps remain intact reference images because their layouts differ from the overworld grid.
+The user's assets are processed into `runs/progression-assets-v2/index.html` and a machine-readable manifest: 31 image references, 256 indexed overworld rooms and 451 unique tile appearances. See `docs/PROGRESSION_ASSETS.md` for reproducibility, verification and limitations. Use them in the guided baseline with explicit `provided_full_map_and_artwork` assistance. Live room/coordinate alignment and physical passability still need validation; the static references are not integrated into a controller yet. Standalone tilesets and interior maps remain intact reference images because their layouts differ from the overworld grid.
 
 ## Execution protocol now active
 

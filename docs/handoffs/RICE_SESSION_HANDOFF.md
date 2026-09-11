@@ -1,7 +1,7 @@
 # GameBoyGhost — RICE session handoff
 
 Prepared 2026-09-10. RICE means **Role, Instructions, Context, Expected outcomes**.
-This document preserves the current working state and intended next experiment for a fresh session. Read `PROJECT_HANDOFF_v2.md` for the broader project requirements; this document supplies the latest experimental state and immediate priorities. Recheck configs and reports if work has advanced since this snapshot.
+This document preserves the current working state and intended next experiment for a fresh session. Read `PROJECT_HANDOFF_v2.md` in this directory for the broader project requirements; this document supplies the latest experimental state and immediate priorities. Recheck configs and reports if work has advanced since this snapshot.
 
 ## R — Role
 
@@ -45,7 +45,7 @@ For the immediate foliage problem, a terrain **tileset plus collision/cuttable m
 
 For cross-game work, prefer a reusable perception interface for properties such as obstacle, traversable space, threat position/motion, and interaction outcome. Use game-specific asset knowledge as teacher annotation or auxiliary supervision, and train/evaluate on real gameplay frames and action outcomes. Test unfamiliar rooms/appearances and eventually held-out games; do not infer transfer from memorizing this game's tile IDs. A structured-state versus structured-state-plus-vision comparison belongs to the existing broader project plan.
 
-The user subsequently supplied downloaded sheets in `docs/tilesets`. They reported `/Volumes/Developer/GameBoyAgent/docs/tilesets`, but that volume path does not exist in the current session; the files are available at **`/Users/studio/Developer/GameBoyAgent/docs/tilesets`**. Inspection found 31 PNG/GIF images (32 total directory entries), including Overworld Tileset, Map Objects, Link, Minor Enemies, Weapons/Items/HUD, dungeon/house tiles, and full map/background images. The Overworld Tileset was visually inspected and contains terrain and vegetation reference art. Other images were inventoried by filename and dimensions, not individually visually validated. The earlier web retrieval limitation does not apply to these now-available local files.
+The user subsequently supplied downloaded sheets, now organized at `docs/reference/tilesets`. Inspection found 31 PNG/GIF images (32 total directory entries), including Overworld Tileset, Map Objects, Link, Minor Enemies, Weapons/Items/HUD, dungeon/house tiles, and full map/background images. The Overworld Tileset was visually inspected and contains terrain and vegetation reference art. Other images were inventoried by filename and dimensions, not individually visually validated. The earlier web retrieval limitation does not apply to these now-available local files.
 
 Prioritize the files ending `Tilesets - Overworld Tileset.png` (410×427), `Tilesets - Map Objects.png` (517×354), `Playable Characters - Link.png` (533×361), and `Enemies & Bosses - Minor Enemies.png` (420×900). Sheet layout positions are not game tile IDs. Full map images must not silently become learner navigation knowledge. No new vision model or asset publication has occurred. Do not delay the bounded terrain-aware teacher experiment to build a complete asset library. Keep these reference assets local unless publication is explicitly requested.
 

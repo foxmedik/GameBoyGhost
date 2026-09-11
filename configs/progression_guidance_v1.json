@@ -3,7 +3,7 @@
   "objective": "Approach the forest from the physically obtained sword state; acquire toadstool next",
   "assistance": "provided_full_map_and_artwork_plus_source_grounded_quest_hints",
   "scope": "First southern navigation prefix only. Completion of these goals is not quest completion. Extend guidance only after reviewing the first attempt.",
-  "map_manifest": "runs/progression-assets-v1/manifest.json",
+  "map_manifest": "runs/progression-assets-v2/manifest.json",
   "source_hint": "Matched Overworld50Entities contains ENTITY_SLEEPY_TOADSTOOL; target remains beyond this prefix.",
   "goal_budget": 256,
   "recovery_limit": 2,

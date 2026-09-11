@@ -124,6 +124,6 @@ def build(source, output):
 
 if __name__ == '__main__':
     parser = argparse.ArgumentParser(description=__doc__)
-    parser.add_argument('--output', type=Path, default=ROOT / 'runs/progression-assets-v1')
+    parser.add_argument('--output', type=Path, default=ROOT / 'runs/progression-assets-v2')
     args = parser.parse_args()
-    print(json.dumps(build(ROOT / 'docs/tilesets', args.output), indent=2))
+    print(json.dumps(build(ROOT / 'docs/reference/tilesets', args.output), indent=2))

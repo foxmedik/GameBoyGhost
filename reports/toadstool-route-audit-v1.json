@@ -42,7 +42,7 @@
     "room": [1, 10, 189],
     "pushable_blocks": [[4, 4], [5, 5]],
     "route_eligible": true,
-    "guide_source": "docs/gamefaqs.txt lines 301-309",
+    "guide_source": "docs/reference/gamefaqs-walkthrough.txt lines 301-309",
     "guide_sequence": ["defeat Keese", "move stones to reach the 50-rupee chest", "avoid crumbling floor", "continue north", "defeat Gels", "go left to the stone room", "move stones until the escape path opens", "leave cave and collect the mushroom"],
     "verified_gamefaqs_route": {
       "red_trace_entry_room": [1, 10, 189],

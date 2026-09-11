@@ -25,3 +25,5 @@ checkpoints/
 *.npy
 .cache/
 .huggingface/
+/assets/*
+!/assets/README.md

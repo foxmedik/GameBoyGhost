@@ -1,6 +1,6 @@
 # Provided artwork for Tail Key progression
 
-Run `.venv-ladx/bin/python scripts/process_progression_assets.py` to rebuild `runs/progression-assets-v1/`. Open `index.html` for the room selector, forest/southern reference panel, complete labeled overworld map, tile atlas and preserved source artwork. The manifest is the machine-readable interface for future progression integration; no controller consumes it yet.
+Run `.venv-ladx/bin/python scripts/process_progression_assets.py` to rebuild `runs/progression-assets-v2/`. Open `index.html` for the room selector, forest/southern reference panel, complete labeled overworld map, tile atlas and preserved source artwork. The manifest is the machine-readable interface for future progression integration; no controller consumes it yet.
 
 Processed 31 image assets, preserving original files, annotations and credits. The overworld grid yields 256 native 160×128 room images, 20,480 tile occurrences and 451 unique RGB 16×16 appearances. Each appearance has a pixel hash and all room/cell occurrences. Every source has a SHA-256 and image metadata. The irregular standalone tilesets, sprites and interior maps are normalized reference images, not falsely assigned ROM tile IDs.
 

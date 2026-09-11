@@ -20,7 +20,7 @@ The selected navigator remains `experimental_not_default`. The default `Sequenti
 
 The recent optimizer objective is **behavior cloning**: movement cross-entropy plus a smaller button-classification loss, previously combined with parent-retention and action-margin terms. Environment reward, dungeon progress and credits do not drive these optimizer updates. Failed rollouts inform manually chosen new data/experiments; there is no automated game-completion learning loop here. Earlier PPO experiments are a separate, real part of project history.
 
-Sources: [canonical handoff](../PROJECT_HANDOFF_v2.md), [runtime skill sequence](../src/gameboy_agent/skills.py), [route trainer](../scripts/train_navigation_routes.py), [specialist trainer](../scripts/train_cliff_specialists.py), [cliff-correction trainer](../scripts/train_cliff_correction_v2.py).
+Sources: [canonical handoff](handoffs/PROJECT_HANDOFF_v2.md), [runtime skill sequence](../src/gameboy_agent/skills.py), [route trainer](../scripts/train_navigation_routes.py), [specialist trainer](../scripts/train_cliff_specialists.py), [cliff-correction trainer](../scripts/train_cliff_correction_v2.py).
 
 ## 2. What worked and should be retained
 
