@@ -2,9 +2,10 @@ references/
 .venv*/
 __pycache__/
 *.pyc
-*.gb
-*.gbc
-*.gba
+*.[gG][bB]
+*.[gG][bB][cC]
+*.[gG][bB][aA]
+*.[rR][oO][mM]
 *.sav
 *.ram
 *.state
