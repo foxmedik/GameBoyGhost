@@ -25,8 +25,8 @@ def local_ip():
 
 class App:
  def __init__(self):
-  self.tasks=json.loads(TASK_FILE.read_text())["tasks"];self.selected=0;self.boy=None;self.recording=False;self.ready=False;self.frame=0;self.session=None;self.actions=self.segments=self.tags=None;self.held=frozenset();self.seg=0;self.controllers=[];self.msg="Loading task preview…";self.q=queue.Queue();self.room=(0,0,0);self.world_room=0;self.xy=(0,0);self.on_studio=local_ip()=="192.168.50.27";self.previous_markers=set();self.countdown=0;self.controls_y=390;self.y_was_down=False
-  sdl2.SDL_Init(sdl2.SDL_INIT_VIDEO|sdl2.SDL_INIT_GAMECONTROLLER);ttf.TTF_Init();self.win=sdl2.SDL_CreateWindow(b"GameBoyGhost Demo Recorder",0x1FFF0000,0x1FFF0000,1280,680,0);self.r=sdl2.SDL_CreateRenderer(self.win,-1,sdl2.SDL_RENDERER_ACCELERATED);self.tex=sdl2.SDL_CreateTexture(self.r,sdl2.SDL_PIXELFORMAT_RGB24,sdl2.SDL_TEXTUREACCESS_STREAMING,160,144);self.font=ttf.TTF_OpenFont(b"/System/Library/Fonts/Supplemental/Arial.ttf",18)
+  self.tasks=json.loads(TASK_FILE.read_text())["tasks"];self.selected=0;self.boy=None;self.recording=False;self.ready=False;self.frame=0;self.session=None;self.actions=self.segments=self.tags=None;self.held=frozenset();self.seg=0;self.controllers=[];self.msg="Loading task preview…";self.q=queue.Queue();self.room=(0,0,0);self.world_room=0;self.xy=(0,0);self.on_studio=local_ip()=="192.168.50.27";self.previous_markers=set();self.countdown=0;self.controls_y=720;self.y_was_down=False;self.boxes={}
+  sdl2.SDL_Init(sdl2.SDL_INIT_VIDEO|sdl2.SDL_INIT_GAMECONTROLLER);ttf.TTF_Init();self.win=sdl2.SDL_CreateWindow(b"GameBoyGhost Demo Recorder",0x1FFF0000,0x1FFF0000,1280,900,sdl2.SDL_WINDOW_RESIZABLE);sdl2.SDL_SetWindowMinimumSize(self.win,960,760);self.r=sdl2.SDL_CreateRenderer(self.win,-1,sdl2.SDL_RENDERER_ACCELERATED);self.tex=sdl2.SDL_CreateTexture(self.r,sdl2.SDL_PIXELFORMAT_RGB24,sdl2.SDL_TEXTUREACCESS_STREAMING,160,144);self.font=ttf.TTF_OpenFont(b"/System/Library/Fonts/Supplemental/Arial.ttf",18)
   self.rescan_controllers()
   self.load_preview()
   self.msg=self.capture_message()
@@ -55,6 +55,10 @@ class App:
  def lines(self,x,y,v,n=34):
   for line in self.wrap(v,n):self.text(x,y,line);y+=21
   return y
+ def window_size(self):
+  width=ctypes.c_int();height=ctypes.c_int();sdl2.SDL_GetWindowSize(self.win,ctypes.byref(width),ctypes.byref(height));return width.value,height.value
+ def hit(self,name,x,y):
+  bx,by,bw,bh=self.boxes.get(name,(-1,-1,0,0));return bx<=x<=bx+bw and by<=y<=by+bh
  def start(self):
   if self.recording:return
   if not self.controller_status():self.msg="No controller detected. Pair it, then click RESCAN.";return
@@ -101,17 +105,19 @@ class App:
    subprocess.run(["rsync","-az","--partial",str(arc),DEST],check=True);self.q.put("Sent to Studio")
   except Exception as e:self.q.put(f"Saved locally; delivery failed: {e}")
  def draw(self):
-  self.rect(0,0,1280,680,(20,22,29,255));self.text(18,20,"GAME PREVIEW")
-  if self.boy:sdl2.SDL_UpdateTexture(self.tex,None,self.boy.screen.ndarray[:,:,:3].tobytes(),480);sdl2.SDL_RenderCopy(self.r,self.tex,None,sdl2.SDL_Rect(18,54,640,576))
-  room=self.world_room
+  width,height=self.window_size();top_height=max(500,height-255);task_y=top_height+8;task_height=height-task_y-18;game_scale=min(4,max(2,(top_height-58)//144));game_w,game_h=160*game_scale,144*game_scale;map_x=game_w+55;room=self.world_room;task=self.tasks[self.selected];done=self.task_count(task['id']);self.rect(0,0,width,height,(20,22,29,255));self.text(18,20,"GAME PREVIEW")
+  if self.boy:sdl2.SDL_UpdateTexture(self.tex,None,self.boy.screen.ndarray[:,:,:3].tobytes(),480);sdl2.SDL_RenderCopy(self.r,self.tex,None,sdl2.SDL_Rect(18,50,game_w,game_h))
+  self.text(map_x,20,"MAP & CONTROLLER")
   for y in range(16):
-   for x in range(16):self.rect(1100+x*10,50+y*10,8,8,(244,186,66,255) if (x,y)==(room&15,room>>4) else (55,59,73,255))
-  interior=" INTERIOR" if self.room[0] else ""
-  task=self.tasks[self.selected];done=self.task_count(task['id']);self.text(680,20,f"TASK {self.selected+1}/{len(self.tasks)}");self.text(680,44,task['title']);y=self.lines(680,72,"OBJECTIVE  "+task['goal'],42);y=self.lines(680,y+10,"GOOD · L2  "+task['x'],42);y=self.lines(680,y+10,"BAD · R2  "+task['y'],42);self.text(680,y+8,f"{task['duration_seconds']} SEC  SAVED {done}/{task['target_runs']}");self.controls_y=max(350,y+38);self.rect(680,self.controls_y,180,44,(55,59,73,255));self.text(742,self.controls_y+12,"PREV");self.rect(870,self.controls_y,180,44,(55,59,73,255));self.text(915,self.controls_y+12,"Y: NEXT");self.rect(680,self.controls_y+55,370,48,(47,130,103,255));self.text(810,self.controls_y+68,"START RUN");self.rect(680,self.controls_y+115,180,44,(150,93,42,255));self.text(730,self.controls_y+127,"X: DISCARD");self.rect(870,self.controls_y+115,180,44,(55,59,73,255));self.text(890,self.controls_y+127,f"SAVE SUCCESS {min(done+1,task['target_runs'])}/{task['target_runs']}");count_y=self.controls_y+180
+   for x in range(16):self.rect(map_x+x*12,50+y*12,10,10,(244,186,66,255) if (x,y)==(room&15,room>>4) else (55,59,73,255))
+  interior=" INTERIOR" if self.room[0] else "";self.text(map_x,250,f"PANEL {room&15},{room>>4}{interior}");self.text(map_x,280,f"PAD: {self.controller_status()} CONNECTED" if self.controller_status() else "PAD: NOT CONNECTED");self.boxes={"rescan":(map_x,310,180,42),"bluetooth":(map_x,362,180,42)};self.rect(*self.boxes["rescan"],(55,59,73,255));self.text(map_x+30,322,"RESCAN PAD");self.rect(*self.boxes["bluetooth"],(62,85,129,255));self.text(map_x+20,374,"BLUETOOTH")
+  self.rect(18,task_y,width-36,task_height,(29,33,43,255));self.text(36,task_y+14,f"TASK {self.selected+1}/{len(self.tasks)}  ·  {task['title']}  ·  {done}/{task['target_runs']} SAVED")
+  column=(width-90)//3;line_width=max(24,column//10);self.text(36,task_y+48,"OBJECTIVE");self.lines(36,task_y+74,task['goal'],line_width);self.text(36+column,task_y+48,"GOOD · L2");self.lines(36+column,task_y+74,task['x'],line_width);self.text(36+column*2,task_y+48,"BAD · R2");self.lines(36+column*2,task_y+74,task['y'],line_width)
+  self.controls_y=height-66;self.boxes.update({"prev":(36,self.controls_y,120,42),"next":(166,self.controls_y,120,42),"start":((width-230)//2,self.controls_y,230,42),"discard":(width-306,self.controls_y,130,42),"success":(width-166,self.controls_y,130,42)});self.rect(*self.boxes["prev"],(55,59,73,255));self.text(70,self.controls_y+11,"PREV");self.rect(*self.boxes["next"],(55,59,73,255));self.text(190,self.controls_y+11,"Y: NEXT");self.rect(*self.boxes["start"],(47,130,103,255));self.text((width-112)//2,self.controls_y+11,"START RUN");self.rect(*self.boxes["discard"],(150,93,42,255));self.text(width-288,self.controls_y+11,"X: DISCARD");self.rect(*self.boxes["success"],(55,59,73,255));self.text(width-151,self.controls_y+11,f"SAVE {min(done+1,task['target_runs'])}/{task['target_runs']}")
   if self.countdown:
-   seconds=(self.countdown+59)//60;self.rect(680,count_y,370,82,(38,57,80,255));self.text(700,count_y+12,f"NEXT RUN {done+1}/{task['target_runs']}  —  {seconds}");self.rect(700,count_y+47,330,14,(55,59,73,255));self.rect(700,count_y+47,int(330*(300-self.countdown)/300),14,(72,178,134,255));self.text(700,count_y+66,"Press Y to start now")
-  else:self.text(680,count_y,self.msg[:59])
-  self.text(1100,20,"MAP");self.text(1100,220,f"PANEL {room&15},{room>>4}{interior}");self.text(1100,250,f"PAD: {self.controller_status()} CONNECTED" if self.controller_status() else "PAD: NOT CONNECTED");self.rect(1100,280,160,44,(55,59,73,255));self.text(1130,292,"RESCAN PAD");self.rect(1100,335,160,44,(62,85,129,255));self.text(1125,347,"BLUETOOTH");self.lines(1100,400,"L2 good. R2 bad. X discard. Y next.",20);sdl2.SDL_RenderPresent(self.r)
+   seconds=(self.countdown+59)//60;self.rect(map_x,420,210,58,(38,57,80,255));self.text(map_x+12,430,f"NEXT RUN {done+1}/{task['target_runs']} — {seconds}");self.rect(map_x+12,458,180,8,(55,59,73,255));self.rect(map_x+12,458,int(180*(300-self.countdown)/300),8,(72,178,134,255))
+  else:self.text(36,height-96,self.msg[:110])
+  sdl2.SDL_RenderPresent(self.r)
  def task_count(self,task_id):
   return sum(1 for p in data_dir().glob(f"{task_id}-*/manifest.json"))
  def discard(self):
@@ -128,13 +134,13 @@ class App:
     elif e.type==sdl2.SDL_CONTROLLERDEVICEADDED:self.rescan_controllers();self.msg=self.capture_message()
     elif e.type==sdl2.SDL_MOUSEBUTTONUP:
      x,y=e.button.x,e.button.y
-     if 680<=x<=860 and self.controls_y<=y<=self.controls_y+44:self.choose(-1)
-     if 870<=x<=1050 and self.controls_y<=y<=self.controls_y+44:self.choose(1)
-     if 680<=x<=1050 and self.controls_y+55<=y<=self.controls_y+103:self.start()
-     if 680<=x<=860 and self.controls_y+115<=y<=self.controls_y+159:self.discard()
-     if 870<=x<=1050 and self.controls_y+115<=y<=self.controls_y+159:self.end()
-    if 1100<=x<=1260 and 280<=y<=324:self.rescan_controllers();self.msg=self.capture_message()
-    if 1100<=x<=1260 and 335<=y<=379:self.bluetooth_settings()
+     if self.hit("prev",x,y):self.choose(-1)
+     if self.hit("next",x,y):self.choose(1)
+     if self.hit("start",x,y):self.start()
+     if self.hit("discard",x,y):self.discard()
+     if self.hit("success",x,y):self.end()
+     if self.hit("rescan",x,y):self.rescan_controllers();self.msg=self.capture_message()
+     if self.hit("bluetooth",x,y):self.bluetooth_settings()
    y_down=self.y_down()
    if not self.recording and y_down and not self.y_was_down:
     if self.countdown:self.countdown=0;self.start()
