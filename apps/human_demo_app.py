@@ -25,7 +25,7 @@ def local_ip():
 
 class App:
  def __init__(self):
-  self.tasks=json.loads(TASK_FILE.read_text())["tasks"];self.selected=0;self.boy=None;self.recording=False;self.ready=False;self.frame=0;self.session=None;self.actions=self.segments=self.tags=None;self.held=frozenset();self.seg=0;self.controllers=[];self.msg="Loading task preview…";self.q=queue.Queue();self.room=(0,0,0);self.world_room=0;self.xy=(0,0);self.on_studio=local_ip()=="192.168.50.27";self.previous_markers=set();self.countdown=0;self.controls_y=390
+  self.tasks=json.loads(TASK_FILE.read_text())["tasks"];self.selected=0;self.boy=None;self.recording=False;self.ready=False;self.frame=0;self.session=None;self.actions=self.segments=self.tags=None;self.held=frozenset();self.seg=0;self.controllers=[];self.msg="Loading task preview…";self.q=queue.Queue();self.room=(0,0,0);self.world_room=0;self.xy=(0,0);self.on_studio=local_ip()=="192.168.50.27";self.previous_markers=set();self.countdown=0;self.controls_y=390;self.y_was_down=False
   sdl2.SDL_Init(sdl2.SDL_INIT_VIDEO|sdl2.SDL_INIT_GAMECONTROLLER);ttf.TTF_Init();self.win=sdl2.SDL_CreateWindow(b"GameBoyGhost Demo Recorder",0x1FFF0000,0x1FFF0000,1280,680,0);self.r=sdl2.SDL_CreateRenderer(self.win,-1,sdl2.SDL_RENDERER_ACCELERATED);self.tex=sdl2.SDL_CreateTexture(self.r,sdl2.SDL_PIXELFORMAT_RGB24,sdl2.SDL_TEXTUREACCESS_STREAMING,160,144);self.font=ttf.TTF_OpenFont(b"/System/Library/Fonts/Supplemental/Arial.ttf",18)
   self.rescan_controllers()
   self.load_preview()
@@ -75,6 +75,7 @@ class App:
     if sdl2.SDL_GameControllerGetAxis(c,sdl2.SDL_CONTROLLER_AXIS_TRIGGERLEFT)>16000:marks.add("l2_good")
     if sdl2.SDL_GameControllerGetAxis(c,sdl2.SDL_CONTROLLER_AXIS_TRIGGERRIGHT)>16000:marks.add("r2_bad")
   return frozenset(out),marks
+ def y_down(self):return any(sdl2.SDL_GameControllerGetAttached(c) and sdl2.SDL_GameControllerGetButton(c,sdl2.SDL_CONTROLLER_BUTTON_Y) for c in self.controllers)
  def close_seg(self):
   if self.segments and self.frame>self.seg:self.segments.write(json.dumps({"start_frame":self.seg,"end_frame":self.frame,"length_frames":self.frame-self.seg,"buttons":sorted(self.held)})+"\n")
  def tick(self):
@@ -106,7 +107,7 @@ class App:
   for y in range(16):
    for x in range(16):self.rect(1100+x*10,50+y*10,8,8,(244,186,66,255) if (x,y)==(room&15,room>>4) else (55,59,73,255))
   interior=" INTERIOR" if self.room[0] else ""
-  task=self.tasks[self.selected];done=self.task_count(task['id']);self.text(680,20,f"TASK {self.selected+1}/{len(self.tasks)}");self.text(680,44,task['title']);y=self.lines(680,72,"OBJECTIVE  "+task['goal'],42);y=self.lines(680,y+10,"GOOD · L2  "+task['x'],42);y=self.lines(680,y+10,"BAD · R2  "+task['y'],42);self.text(680,y+8,f"{task['duration_seconds']} SEC  SAVED {done}/{task['target_runs']}");self.controls_y=max(350,y+38);self.rect(680,self.controls_y,180,44,(55,59,73,255));self.text(742,self.controls_y+12,"PREV");self.rect(870,self.controls_y,180,44,(55,59,73,255));self.text(932,self.controls_y+12,"NEXT");self.rect(680,self.controls_y+55,370,48,(47,130,103,255));self.text(810,self.controls_y+68,"START RUN");self.rect(680,self.controls_y+115,180,44,(150,93,42,255));self.text(730,self.controls_y+127,"X: DISCARD");self.rect(870,self.controls_y+115,180,44,(55,59,73,255));self.text(890,self.controls_y+127,f"SAVE SUCCESS {min(done+1,task['target_runs'])}/{task['target_runs']}");self.text(680,self.controls_y+180,self.msg[:59]);self.text(1100,20,"MAP");self.text(1100,220,f"PANEL {room&15},{room>>4}{interior}");self.text(1100,250,f"PAD: {self.controller_status()} CONNECTED" if self.controller_status() else "PAD: NOT CONNECTED");self.rect(1100,280,160,44,(55,59,73,255));self.text(1130,292,"RESCAN PAD");self.rect(1100,335,160,44,(62,85,129,255));self.text(1125,347,"BLUETOOTH");self.lines(1100,400,"L2 good. R2 bad. X discard.",20);sdl2.SDL_RenderPresent(self.r)
+  task=self.tasks[self.selected];done=self.task_count(task['id']);self.text(680,20,f"TASK {self.selected+1}/{len(self.tasks)}");self.text(680,44,task['title']);y=self.lines(680,72,"OBJECTIVE  "+task['goal'],42);y=self.lines(680,y+10,"GOOD · L2  "+task['x'],42);y=self.lines(680,y+10,"BAD · R2  "+task['y'],42);self.text(680,y+8,f"{task['duration_seconds']} SEC  SAVED {done}/{task['target_runs']}");self.controls_y=max(350,y+38);self.rect(680,self.controls_y,180,44,(55,59,73,255));self.text(742,self.controls_y+12,"PREV");self.rect(870,self.controls_y,180,44,(55,59,73,255));self.text(915,self.controls_y+12,"Y: NEXT");self.rect(680,self.controls_y+55,370,48,(47,130,103,255));self.text(810,self.controls_y+68,"START RUN");self.rect(680,self.controls_y+115,180,44,(150,93,42,255));self.text(730,self.controls_y+127,"X: DISCARD");self.rect(870,self.controls_y+115,180,44,(55,59,73,255));self.text(890,self.controls_y+127,f"SAVE SUCCESS {min(done+1,task['target_runs'])}/{task['target_runs']}");self.text(680,self.controls_y+180,self.msg[:59]);self.text(1100,20,"MAP");self.text(1100,220,f"PANEL {room&15},{room>>4}{interior}");self.text(1100,250,f"PAD: {self.controller_status()} CONNECTED" if self.controller_status() else "PAD: NOT CONNECTED");self.rect(1100,280,160,44,(55,59,73,255));self.text(1130,292,"RESCAN PAD");self.rect(1100,335,160,44,(62,85,129,255));self.text(1125,347,"BLUETOOTH");self.lines(1100,400,"L2 good. R2 bad. X discard. Y next.",20);sdl2.SDL_RenderPresent(self.r)
  def task_count(self,task_id):
   return sum(1 for p in data_dir().glob(f"{task_id}-*/manifest.json"))
  def discard(self):
@@ -128,8 +129,13 @@ class App:
      if 680<=x<=1050 and self.controls_y+55<=y<=self.controls_y+103:self.start()
      if 680<=x<=860 and self.controls_y+115<=y<=self.controls_y+159:self.discard()
      if 870<=x<=1050 and self.controls_y+115<=y<=self.controls_y+159:self.end()
-     if 1100<=x<=1260 and 280<=y<=324:self.rescan_controllers();self.msg=self.capture_message()
-     if 1100<=x<=1260 and 335<=y<=379:self.bluetooth_settings()
+    if 1100<=x<=1260 and 280<=y<=324:self.rescan_controllers();self.msg=self.capture_message()
+    if 1100<=x<=1260 and 335<=y<=379:self.bluetooth_settings()
+   y_down=self.y_down()
+   if not self.recording and y_down and not self.y_was_down:
+    if self.countdown:self.countdown=0;self.start()
+    else:self.choose(1)
+   self.y_was_down=y_down
    if self.recording:self.tick()
    elif self.countdown:
     self.countdown-=1;task=self.tasks[self.selected];self.msg=f"Next run {self.task_count(task['id'])+1}/{task['target_runs']} in {(self.countdown+59)//60}"
