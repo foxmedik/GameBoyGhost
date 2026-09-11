@@ -11,6 +11,8 @@ __pycache__/
 *.state
 data/
 runs/
+build/
+dist/
 checkpoints/
 .env
 .env.*
