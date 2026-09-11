@@ -104,9 +104,9 @@ class App:
   if self.boy:sdl2.SDL_UpdateTexture(self.tex,None,self.boy.screen.ndarray[:,:,:3].tobytes(),480);sdl2.SDL_RenderCopy(self.r,self.tex,None,sdl2.SDL_Rect(18,54,640,576))
   room=self.world_room
   for y in range(16):
-   for x in range(16):self.rect(1010+x*16,50+y*16,14,14,(244,186,66,255) if (x,y)==(room&15,room>>4) else (55,59,73,255))
+   for x in range(16):self.rect(1100+x*10,50+y*10,8,8,(244,186,66,255) if (x,y)==(room&15,room>>4) else (55,59,73,255))
   interior=" INTERIOR" if self.room[0] else ""
-  task=self.tasks[self.selected];self.text(680,20,f"TASK {self.selected+1}/{len(self.tasks)}");self.text(680,44,task['title']);y=self.lines(680,72,"OBJECTIVE  "+task['goal'],32);y=self.lines(680,y+10,"GOOD · L2  "+task['x'],32);y=self.lines(680,y+10,"BAD · R2  "+task['y'],32);self.text(680,y+8,f"{task['duration_seconds']} SEC  SAVED {self.task_count(task['id'])}/{task['target_runs']}");self.controls_y=max(390,y+38);self.rect(680,self.controls_y,140,44,(55,59,73,255));self.text(725,self.controls_y+12,"PREV");self.rect(830,self.controls_y,140,44,(55,59,73,255));self.text(875,self.controls_y+12,"NEXT");self.rect(680,self.controls_y+55,290,48,(47,130,103,255));self.text(775,self.controls_y+68,"START RUN");self.rect(680,self.controls_y+115,140,44,(150,93,42,255));self.text(700,self.controls_y+127,"X: DISCARD");self.rect(830,self.controls_y+115,140,44,(55,59,73,255));self.text(855,self.controls_y+127,"END RUN");self.text(680,self.controls_y+180,self.msg[:47]);self.text(1010,20,"OVERWORLD PANEL");self.text(1010,315,f"WORLD PANEL {room&15},{room>>4}{interior}");self.text(1010,355,f"CONTROLLER: {self.controller_status()} CONNECTED" if self.controller_status() else "CONTROLLER: NOT CONNECTED");self.rect(1010,385,256,44,(55,59,73,255));self.text(1050,397,"RESCAN CONTROLLERS");self.rect(1010,440,256,44,(62,85,129,255));self.text(1050,452,"BLUETOOTH SETTINGS");self.lines(1010,500,"L2 marks good. R2 marks bad. X discards the active run.",29);sdl2.SDL_RenderPresent(self.r)
+  task=self.tasks[self.selected];self.text(680,20,f"TASK {self.selected+1}/{len(self.tasks)}");self.text(680,44,task['title']);y=self.lines(680,72,"OBJECTIVE  "+task['goal'],42);y=self.lines(680,y+10,"GOOD · L2  "+task['x'],42);y=self.lines(680,y+10,"BAD · R2  "+task['y'],42);self.text(680,y+8,f"{task['duration_seconds']} SEC  SAVED {self.task_count(task['id'])}/{task['target_runs']}");self.controls_y=max(350,y+38);self.rect(680,self.controls_y,180,44,(55,59,73,255));self.text(742,self.controls_y+12,"PREV");self.rect(870,self.controls_y,180,44,(55,59,73,255));self.text(932,self.controls_y+12,"NEXT");self.rect(680,self.controls_y+55,370,48,(47,130,103,255));self.text(810,self.controls_y+68,"START RUN");self.rect(680,self.controls_y+115,180,44,(150,93,42,255));self.text(730,self.controls_y+127,"X: DISCARD");self.rect(870,self.controls_y+115,180,44,(55,59,73,255));self.text(915,self.controls_y+127,"END RUN");self.text(680,self.controls_y+180,self.msg[:59]);self.text(1100,20,"MAP");self.text(1100,220,f"PANEL {room&15},{room>>4}{interior}");self.text(1100,250,f"PAD: {self.controller_status()} CONNECTED" if self.controller_status() else "PAD: NOT CONNECTED");self.rect(1100,280,160,44,(55,59,73,255));self.text(1130,292,"RESCAN PAD");self.rect(1100,335,160,44,(62,85,129,255));self.text(1125,347,"BLUETOOTH");self.lines(1100,400,"L2 good. R2 bad. X discard.",20);sdl2.SDL_RenderPresent(self.r)
  def task_count(self,task_id):
   return sum(1 for p in data_dir().glob(f"{task_id}-*/manifest.json"))
  def discard(self):
@@ -123,13 +123,13 @@ class App:
     elif e.type==sdl2.SDL_CONTROLLERDEVICEADDED:self.rescan_controllers();self.msg=self.capture_message()
     elif e.type==sdl2.SDL_MOUSEBUTTONUP:
      x,y=e.button.x,e.button.y
-     if 680<=x<=820 and self.controls_y<=y<=self.controls_y+44:self.choose(-1)
-     if 830<=x<=970 and self.controls_y<=y<=self.controls_y+44:self.choose(1)
-     if 680<=x<=970 and self.controls_y+55<=y<=self.controls_y+103:self.start()
-     if 680<=x<=820 and self.controls_y+115<=y<=self.controls_y+159:self.discard()
-     if 830<=x<=970 and self.controls_y+115<=y<=self.controls_y+159:self.end()
-     if 1010<=x<=1266 and 385<=y<=429:self.rescan_controllers();self.msg=self.capture_message()
-     if 1010<=x<=1266 and 440<=y<=484:self.bluetooth_settings()
+     if 680<=x<=860 and self.controls_y<=y<=self.controls_y+44:self.choose(-1)
+     if 870<=x<=1050 and self.controls_y<=y<=self.controls_y+44:self.choose(1)
+     if 680<=x<=1050 and self.controls_y+55<=y<=self.controls_y+103:self.start()
+     if 680<=x<=860 and self.controls_y+115<=y<=self.controls_y+159:self.discard()
+     if 870<=x<=1050 and self.controls_y+115<=y<=self.controls_y+159:self.end()
+     if 1100<=x<=1260 and 280<=y<=324:self.rescan_controllers();self.msg=self.capture_message()
+     if 1100<=x<=1260 and 335<=y<=379:self.bluetooth_settings()
    if self.recording:self.tick()
    elif self.countdown:
     self.countdown-=1;self.msg=f"Next run in {(self.countdown+59)//60}"
