@@ -71,15 +71,18 @@ class App:
    if sdl2.SDL_GameControllerGetAttached(c):
     for k,n in p:
      if sdl2.SDL_GameControllerGetButton(c,k):out.add(n)
-    if sdl2.SDL_GameControllerGetButton(c,sdl2.SDL_CONTROLLER_BUTTON_X):marks.add("x_success")
-    if sdl2.SDL_GameControllerGetButton(c,sdl2.SDL_CONTROLLER_BUTTON_Y):marks.add("y_contrast")
+    if sdl2.SDL_GameControllerGetButton(c,sdl2.SDL_CONTROLLER_BUTTON_X):marks.add("x_discard")
+    if sdl2.SDL_GameControllerGetAxis(c,sdl2.SDL_CONTROLLER_AXIS_TRIGGERLEFT)>16000:marks.add("l2_good")
+    if sdl2.SDL_GameControllerGetAxis(c,sdl2.SDL_CONTROLLER_AXIS_TRIGGERRIGHT)>16000:marks.add("r2_bad")
   return frozenset(out),marks
  def close_seg(self):
   if self.segments and self.frame>self.seg:self.segments.write(json.dumps({"start_frame":self.seg,"end_frame":self.frame,"length_frames":self.frame-self.seg,"buttons":sorted(self.held)})+"\n")
  def tick(self):
   if not self.recording:return
   held,markers=self.inputs()
-  for marker in markers-self.previous_markers:self.tags.write(json.dumps({"frame":self.frame,"tag":marker,"task_id":self.tasks[self.selected]["id"]})+"\n")
+  new_markers=markers-self.previous_markers
+  if "x_discard" in new_markers:self.discard();return
+  for marker in new_markers:self.tags.write(json.dumps({"frame":self.frame,"tag":marker,"task_id":self.tasks[self.selected]["id"]})+"\n")
   self.previous_markers=markers
   if held!=self.held:self.close_seg();self.held=held;self.seg=self.frame
   for b in BUTTONS:(self.boy.button_press if b in held else self.boy.button_release)(b)
@@ -103,7 +106,7 @@ class App:
   for y in range(16):
    for x in range(16):self.rect(1010+x*16,50+y*16,14,14,(244,186,66,255) if (x,y)==(room&15,room>>4) else (55,59,73,255))
   interior=" INTERIOR" if self.room[0] else ""
-  task=self.tasks[self.selected];self.text(680,20,f"TASK {self.selected+1}/{len(self.tasks)}: {task['title']}");y=self.lines(680,50,task['goal']);y=self.lines(680,y+7,"X: "+task['x']);y=self.lines(680,y+7,"Y: "+task['y']);self.text(680,y+8,f"{task['duration_seconds']} SEC  SAVED {self.task_count(task['id'])}/{task['target_runs']}");self.rect(680,300,140,44,(55,59,73,255));self.text(725,312,"PREV");self.rect(830,300,140,44,(55,59,73,255));self.text(875,312,"NEXT");self.rect(680,355,290,48,(47,130,103,255));self.text(775,368,"START RUN");self.rect(680,415,140,44,(150,93,42,255));self.text(705,427,"DISCARD");self.rect(830,415,140,44,(55,59,73,255));self.text(855,427,"END RUN");self.text(680,480,self.msg[:47]);self.text(1010,20,"OVERWORLD PANEL");self.text(1010,315,f"WORLD PANEL {room&15},{room>>4}{interior}");self.text(1010,355,f"CONTROLLER: {self.controller_status()} CONNECTED" if self.controller_status() else "CONTROLLER: NOT CONNECTED");self.rect(1010,385,256,44,(55,59,73,255));self.text(1050,397,"RESCAN CONTROLLERS");self.rect(1010,440,256,44,(62,85,129,255));self.text(1035,452,"OPEN BLUETOOTH SETTINGS");self.lines(1010,500,"SN30 Pro: hold START + A, then hold PAIR for 3 seconds.",29);sdl2.SDL_RenderPresent(self.r)
+  task=self.tasks[self.selected];self.text(680,20,f"TASK {self.selected+1}/{len(self.tasks)}: {task['title']}");y=self.lines(680,50,task['goal']);y=self.lines(680,y+7,"GOOD L2: "+task['x']);y=self.lines(680,y+7,"BAD R2: "+task['y']);self.text(680,y+8,f"{task['duration_seconds']} SEC  SAVED {self.task_count(task['id'])}/{task['target_runs']}");self.rect(680,300,140,44,(55,59,73,255));self.text(725,312,"PREV");self.rect(830,300,140,44,(55,59,73,255));self.text(875,312,"NEXT");self.rect(680,355,290,48,(47,130,103,255));self.text(775,368,"START RUN");self.rect(680,415,140,44,(150,93,42,255));self.text(700,427,"X: DISCARD");self.rect(830,415,140,44,(55,59,73,255));self.text(855,427,"END RUN");self.text(680,480,self.msg[:47]);self.text(1010,20,"OVERWORLD PANEL");self.text(1010,315,f"WORLD PANEL {room&15},{room>>4}{interior}");self.text(1010,355,f"CONTROLLER: {self.controller_status()} CONNECTED" if self.controller_status() else "CONTROLLER: NOT CONNECTED");self.rect(1010,385,256,44,(55,59,73,255));self.text(1050,397,"RESCAN CONTROLLERS");self.rect(1010,440,256,44,(62,85,129,255));self.text(1035,452,"OPEN BLUETOOTH SETTINGS");self.lines(1010,500,"L2 marks good. R2 marks bad. X discards the active run.",29);sdl2.SDL_RenderPresent(self.r)
  def task_count(self,task_id):
   return sum(1 for p in data_dir().glob(f"{task_id}-*/manifest.json"))
  def discard(self):
