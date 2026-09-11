@@ -14,3 +14,7 @@ speedrun video under `assets/videos/speedruns/`.
 Derived media and analyses belong in `runs/`. A source video or guide scan is
 not a training example by itself: training records must include the emulator
 observation, physical input, and observed outcome.
+
+Run [`scripts/prepare_reference_ingestion.py`](../scripts/prepare_reference_ingestion.py)
+to build the searchable local indexes and contact sheets described in
+[reference ingestion](REFERENCE_INGESTION.md).
