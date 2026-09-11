@@ -1,0 +1,50 @@
+{
+  "status": "crossing_blocker_resolved_prefix_verified",
+  "finding": "E1 north edge is solid across all ten live room columns; west via E0 then north to D0 is physically traversable.",
+  "terrain_evidence": "runs/progression-crossing-probe-v1/north.json",
+  "physical_north_probe_damage": 0,
+  "matched_corridor_comparison": {
+    "prefix_decisions": 736,
+    "without_shield": {
+      "status": "damage_stop",
+      "actions": 12,
+      "damage_raw": 2
+    },
+    "shield_held": {
+      "status": "western_crossing_verified",
+      "actions": 20,
+      "damage_raw": 0
+    }
+  },
+  "qualification": "One matched diagnostic pair; not general shield efficacy or encounter reliability.",
+  "fresh_continuous_run": {
+    "steps": 749,
+    "sword_actions": 412,
+    "post_sword_actions": 337,
+    "damage_raw": 0,
+    "final_health_raw": 24,
+    "final_room": [
+      0,
+      0,
+      208
+    ],
+    "exact_action_replay": true,
+    "planner_roundtrip_exact": true
+  },
+  "runtime": "Learned sword/navigation through E1 approach, then explicitly scripted shielded lane movement. No learned policy weights changed.",
+  "prior_failed_run": "v3 shielded lane skill was applied too early across upper-beach obstacles; preserved as failure, not promoted guidance.",
+  "selected_guidance": "configs/progression_guidance_v4.json",
+  "memory": "runs/progression-crossing-resolution-v1/memory-generation-3.json",
+  "memory_version": "5549e93bf23b810c7397279445ec4850e047bb13d62029c4ffc1894e2fb44d24",
+  "tail_key_acquired": false,
+  "quest_success": false,
+  "new_optimizer_updates": 0,
+  "reserved_evaluation_used": false,
+  "next_step": "Map and verify onward connections from D0 toward the forest/toadstool; retain current continuous prefix as a development regression.",
+  "regression": {
+    "tests": 94,
+    "seconds": 37.897,
+    "log": "runs/progression-attempt-v4/regression-tests.log",
+    "sha256": "37f1972a642ac2df2be9474de0979522cd7bfab49882b39984eb6762c12948a2"
+  }
+}

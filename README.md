@@ -6,15 +6,27 @@
 
 A reproducible Game Boy agent research project, beginning with Link's Awakening DX. Both v2 handoff documents are canonical requirements.
 
+Active work follows the [staged progression execution plan](docs/PROGRESSION_EXECUTION_PLAN.md): continuous Tail Key acquisition and Tail Cave entry, evidence-backed memory, and bounded skill improvements. The [new progression interface](docs/PROGRESSION_INTERFACE_V1.md) removes inventory assistance and adds physical equipping and an event journal; the quest itself remains unverified. Further optimizer work is paused until a measured progression blocker exists. The [persistent world memory](docs/WORLD_MEMORY_V1.md) now reconstructs directed connections and observation evidence from verified traces, with deterministic route queries across saved generations.
+
+For the current verified state, completed work, limitations, and the next milestones, see the [project status](docs/PROJECT_STATUS.md).
+
+The [western crossing resolution](docs/PROGRESSION_CROSSING_RESOLUTION.md) corrects an invalid northward route and adds a bounded shielded corridor skill. A fresh house-to-D0 prefix completes with zero damage and exact replay; Tail Key progression remains unverified.
+
+The [forest progression checkpoint](docs/PROGRESSION_FOREST_TERRAIN.md) extends that continuous prefix through forest exploration at full health, with exact replay. Local terrain planning, physical cutting and bounded dialogue handling are scripted; toadstool acquisition remains the next milestone.
+
+The [toadstool route audit](docs/TOADSTOOL_ROUTE_AUDIT.md) shows that ordinary forest screen-edge traversal cannot reach the target room from the current checkpoint; the next bounded skill is non-edge transition discovery and traversal.
+
 The current implementation includes a learned house-to-sword controller that passes 70/70 evaluated start cases, plus a ROM-verified structured baseline, neutral emulator surface, deterministic fixtures, and verified checkpoint/resume. Full-game completion remains unevaluated.
 
-The selected experimental navigator now fixes the last observed regression:
-**46/48, 39/48, and 46/48** across three development/regression panels, with no
-lost parent successes, damage, or deaths. All three continuous
-sword-to-destination runs succeed without damage. See the
-[focused fix](docs/NAVIGATION_FOCUSED_FIX_V4.md) and
-[versioned results](reports/navigation-focused-v4.json). These are development
-results; reserved evaluation data remains untouched.
+The selected experimental navigator completes **9/9 four-goal routes** and
+preserves **46/48, 43/48, and 46/48** successes across the three local panels,
+with zero damage or deaths. All three cliff loops and all three original
+sword-to-destination chains succeed, with exact replay and pause/resume checks.
+It uses two learned final-goal specialists over a frozen v7 fallback. See the
+[learned cliff specialist experiment](docs/NAVIGATION_CLIFF_SPECIALISTS.md) and
+[versioned results](reports/navigation-cliff-specialists-v2.json). These are known
+development/training cases, not general detour-planning evidence; reserved
+evaluation remains untouched.
 
 Repository source lives here; ROMs, reference checkouts, generated datasets,
 and model checkpoints are external artifacts. See

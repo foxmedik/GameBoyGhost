@@ -1,0 +1,15 @@
+{
+  "status": "rejected_for_selection",
+  "plan": "runs/navigation-routes-v9/plan.json",
+  "plan_sha256": "66a19406002139c6d1f62243c9e022ad51de9fd2f9d168bc8365331550db0652",
+  "candidate_path": "runs/navigation-routes-v9/model/epoch-008.pt",
+  "candidate_sha256": "e8df35550b771f44b3b05039eaa62d1ed6f1d1c681538da30b024e6346bf9586",
+  "parent": "runs/navigation-routes-v7/model/epoch-008.pt",
+  "training_performed": true,
+  "selection_changed": false,
+  "sword_reduction": "paused",
+  "result": "reports/navigation-routes-v9.json",
+  "audit": "reports/navigation-routes-v9-audit.json",
+  "reason": "All 135 safe local successes preserved, but all three west returns lost and all three cliff loops still time out: 3/9 routes and 27/36 waypoints versus selected v7 6/9 and 30/36.",
+  "evaluation_completed": true
+}

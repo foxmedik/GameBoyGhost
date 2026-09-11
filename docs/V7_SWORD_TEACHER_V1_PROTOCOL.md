@@ -1,0 +1,13 @@
+# Selective sword collection on v7 movement — frozen protocol
+
+Compare selected route v7 unchanged against the same v7 controller with the previously verified terrain-motion teacher suppressing proposed sword presses. Both arms choose movement with the original v7 network on their current observations. No movement weights, goals, waypoint recovery or runtime selection change. This is a privileged collection-teacher diagnostic, not a new learned candidate.
+
+Use exactly the original 48 known development cases, 128 actions each, eight-pixel Manhattan goal tolerance, and two arms (96 rollouts). Independent physical replays must match the exact final fingerprint for every rollout. Paired start fingerprints must match, and the rerun unmodified v7 must match its historical start/final fingerprints. Record actual swing starts frame by frame, sword presses, allowed/suppressed reasons, states, entities, damage, deaths, actions, frames, and all per-case comparisons.
+
+The gate is unchanged `terrain_sword.gate(motion=True)`: nearby threats, reachable cutting sample, conservative exit handling, and closest linear approach. Dialogue and other item inputs are preserved. Only already-proposed sword presses may be suppressed. The inherited 20-frame motion horizon was designed around alternating teacher actions; v7's learned button schedule is not guaranteed to have that cadence. This limitation is explicit rather than silently adjusting the gate after results.
+
+“Same movement” means identical learned movement mapping, not identical action sequences. Changed buttons alter control history, terrain, emulator time and future observations. In particular, a shorter action trajectory through a room may require different movement responses. The comparison measures whether the teacher is safe under these dynamics before using it for new supervision.
+
+Adoption requires at least 25% fewer actual swings, no lost v7 successes, no per-case damage increases, and no new deaths. Inspect all failures or damage increases. Only if the complete gate passes, collect the zero-damage successful paths with original-goal features, full provenance and independent feature/action replay. If it fails, retain diagnostic traces, reject for collection and diagnose; do not use selected favorable cases to obscure the failed teacher gate. No training follows automatically from this diagnostic.
+
+Freeze cases, source snapshots/hashes, selected policy identity, ROM/state hashes, and protocol before execution under `runs/v7-sword-teacher-v1`. Preserve all prior runs, the 96 reserved evaluation specifications, and selected v7. ROMs and assets remain local.

@@ -1,0 +1,552 @@
+{
+  "local_regressions": [],
+  "route_regressions": [
+    {
+      "route": "west_return",
+      "start": "house",
+      "status": "navigation_timeout",
+      "baseline_status": "success",
+      "waypoints": 3,
+      "baseline_waypoints": 4,
+      "lost": true,
+      "waypoints_lost": true,
+      "damage": 0,
+      "steps": 373,
+      "first_divergence": 537,
+      "baseline_action": [
+        4,
+        1
+      ],
+      "candidate_action": [
+        2,
+        1
+      ],
+      "final_state": {
+        "room": [
+          0,
+          0,
+          225
+        ],
+        "x": 138,
+        "y": 67,
+        "dialogue": false,
+        "sword": true,
+        "health": 24,
+        "a_item": 1,
+        "b_item": 4
+      },
+      "final_window": [
+        {
+          "step": 781,
+          "skill": "navigation",
+          "action": [
+            2,
+            0
+          ],
+          "room": [
+            0,
+            0,
+            225
+          ],
+          "x": 138,
+          "y": 67,
+          "health": 24,
+          "reward": -0.001001,
+          "goal": {
+            "room": [
+              0,
+              0,
+              226
+            ],
+            "x": 33,
+            "y": 101
+          },
+          "goal_index": 3
+        },
+        {
+          "step": 782,
+          "skill": "navigation",
+          "action": [
+            2,
+            0
+          ],
+          "room": [
+            0,
+            0,
+            225
+          ],
+          "x": 138,
+          "y": 67,
+          "health": 24,
+          "reward": -0.001001,
+          "goal": {
+            "room": [
+              0,
+              0,
+              226
+            ],
+            "x": 33,
+            "y": 101
+          },
+          "goal_index": 3
+        },
+        {
+          "step": 783,
+          "skill": "navigation",
+          "action": [
+            2,
+            0
+          ],
+          "room": [
+            0,
+            0,
+            225
+          ],
+          "x": 138,
+          "y": 67,
+          "health": 24,
+          "reward": -0.001001,
+          "goal": {
+            "room": [
+              0,
+              0,
+              226
+            ],
+            "x": 33,
+            "y": 101
+          },
+          "goal_index": 3
+        },
+        {
+          "step": 784,
+          "skill": "navigation",
+          "action": [
+            2,
+            0
+          ],
+          "room": [
+            0,
+            0,
+            225
+          ],
+          "x": 138,
+          "y": 67,
+          "health": 24,
+          "reward": -0.001001,
+          "goal": {
+            "room": [
+              0,
+              0,
+              226
+            ],
+            "x": 33,
+            "y": 101
+          },
+          "goal_index": 3
+        }
+      ],
+      "repeated_positions": [
+        {
+          "room": [
+            0,
+            0,
+            225
+          ],
+          "x": 138,
+          "y": 67,
+          "actions": 230
+        },
+        {
+          "room": [
+            0,
+            0,
+            242
+          ],
+          "x": 85,
+          "y": 84,
+          "actions": 1
+        },
+        {
+          "room": [
+            0,
+            0,
+            242
+          ],
+          "x": 85,
+          "y": 83,
+          "actions": 1
+        }
+      ]
+    },
+    {
+      "route": "west_return",
+      "start": "beach",
+      "status": "navigation_timeout",
+      "baseline_status": "success",
+      "waypoints": 3,
+      "baseline_waypoints": 4,
+      "lost": true,
+      "waypoints_lost": true,
+      "damage": 0,
+      "steps": 375,
+      "first_divergence": 356,
+      "baseline_action": [
+        1,
+        0
+      ],
+      "candidate_action": [
+        3,
+        0
+      ],
+      "final_state": {
+        "room": [
+          0,
+          0,
+          225
+        ],
+        "x": 138,
+        "y": 67,
+        "dialogue": false,
+        "sword": true,
+        "health": 12,
+        "a_item": 1,
+        "b_item": 4
+      },
+      "final_window": [
+        {
+          "step": 639,
+          "skill": "navigation",
+          "action": [
+            2,
+            0
+          ],
+          "room": [
+            0,
+            0,
+            225
+          ],
+          "x": 138,
+          "y": 67,
+          "health": 12,
+          "reward": -0.001001,
+          "goal": {
+            "room": [
+              0,
+              0,
+              226
+            ],
+            "x": 33,
+            "y": 101
+          },
+          "goal_index": 3
+        },
+        {
+          "step": 640,
+          "skill": "navigation",
+          "action": [
+            2,
+            0
+          ],
+          "room": [
+            0,
+            0,
+            225
+          ],
+          "x": 138,
+          "y": 67,
+          "health": 12,
+          "reward": -0.001001,
+          "goal": {
+            "room": [
+              0,
+              0,
+              226
+            ],
+            "x": 33,
+            "y": 101
+          },
+          "goal_index": 3
+        },
+        {
+          "step": 641,
+          "skill": "navigation",
+          "action": [
+            2,
+            0
+          ],
+          "room": [
+            0,
+            0,
+            225
+          ],
+          "x": 138,
+          "y": 67,
+          "health": 12,
+          "reward": -0.001001,
+          "goal": {
+            "room": [
+              0,
+              0,
+              226
+            ],
+            "x": 33,
+            "y": 101
+          },
+          "goal_index": 3
+        },
+        {
+          "step": 642,
+          "skill": "navigation",
+          "action": [
+            2,
+            0
+          ],
+          "room": [
+            0,
+            0,
+            225
+          ],
+          "x": 138,
+          "y": 67,
+          "health": 12,
+          "reward": -0.001001,
+          "goal": {
+            "room": [
+              0,
+              0,
+              226
+            ],
+            "x": 33,
+            "y": 101
+          },
+          "goal_index": 3
+        }
+      ],
+      "repeated_positions": [
+        {
+          "room": [
+            0,
+            0,
+            225
+          ],
+          "x": 138,
+          "y": 67,
+          "actions": 232
+        },
+        {
+          "room": [
+            0,
+            0,
+            226
+          ],
+          "x": 29,
+          "y": 115,
+          "actions": 2
+        },
+        {
+          "room": [
+            0,
+            0,
+            242
+          ],
+          "x": 85,
+          "y": 84,
+          "actions": 1
+        }
+      ]
+    },
+    {
+      "route": "west_return",
+      "start": "approach",
+      "status": "navigation_timeout",
+      "baseline_status": "success",
+      "waypoints": 3,
+      "baseline_waypoints": 4,
+      "lost": true,
+      "waypoints_lost": true,
+      "damage": 0,
+      "steps": 461,
+      "first_divergence": 278,
+      "baseline_action": [
+        1,
+        1
+      ],
+      "candidate_action": [
+        3,
+        1
+      ],
+      "final_state": {
+        "room": [
+          0,
+          0,
+          225
+        ],
+        "x": 124,
+        "y": 71,
+        "dialogue": false,
+        "sword": true,
+        "health": 8,
+        "a_item": 1,
+        "b_item": 4
+      },
+      "final_window": [
+        {
+          "step": 540,
+          "skill": "navigation",
+          "action": [
+            4,
+            1
+          ],
+          "room": [
+            0,
+            0,
+            225
+          ],
+          "x": 124,
+          "y": 71,
+          "health": 8,
+          "reward": -0.001001,
+          "goal": {
+            "room": [
+              0,
+              0,
+              226
+            ],
+            "x": 33,
+            "y": 101
+          },
+          "goal_index": 3
+        },
+        {
+          "step": 541,
+          "skill": "navigation",
+          "action": [
+            4,
+            0
+          ],
+          "room": [
+            0,
+            0,
+            225
+          ],
+          "x": 124,
+          "y": 71,
+          "health": 8,
+          "reward": -0.001001,
+          "goal": {
+            "room": [
+              0,
+              0,
+              226
+            ],
+            "x": 33,
+            "y": 101
+          },
+          "goal_index": 3
+        },
+        {
+          "step": 542,
+          "skill": "navigation",
+          "action": [
+            4,
+            1
+          ],
+          "room": [
+            0,
+            0,
+            225
+          ],
+          "x": 124,
+          "y": 71,
+          "health": 8,
+          "reward": -0.001001,
+          "goal": {
+            "room": [
+              0,
+              0,
+              226
+            ],
+            "x": 33,
+            "y": 101
+          },
+          "goal_index": 3
+        },
+        {
+          "step": 543,
+          "skill": "navigation",
+          "action": [
+            4,
+            0
+          ],
+          "room": [
+            0,
+            0,
+            225
+          ],
+          "x": 124,
+          "y": 71,
+          "health": 8,
+          "reward": -0.001001,
+          "goal": {
+            "room": [
+              0,
+              0,
+              226
+            ],
+            "x": 33,
+            "y": 101
+          },
+          "goal_index": 3
+        }
+      ],
+      "repeated_positions": [
+        {
+          "room": [
+            0,
+            0,
+            225
+          ],
+          "x": 124,
+          "y": 71,
+          "actions": 233
+        },
+        {
+          "room": [
+            0,
+            0,
+            225
+          ],
+          "x": 135,
+          "y": 90,
+          "actions": 49
+        },
+        {
+          "room": [
+            0,
+            0,
+            226
+          ],
+          "x": 36,
+          "y": 124,
+          "actions": 45
+        }
+      ]
+    }
+  ],
+  "training_fit": {
+    "training_rows_only": true,
+    "stats": {
+      "v7": {
+        "rows": 784,
+        "movement_match": 0.4260204081632653,
+        "button_match": 0.9719387755102041
+      },
+      "v9": {
+        "rows": 784,
+        "movement_match": 0.7474489795918368,
+        "button_match": 0.9757653061224489
+      }
+    }
+  },
+  "interpretation": "Descriptive trace audit; first divergence or repeated position does not establish the cause of failure."
+}

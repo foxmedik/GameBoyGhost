@@ -1,0 +1,8 @@
+{
+  "status": "passed",
+  "source_hashes_checked": 31,
+  "exact_room_crops_checked": 256,
+  "tile_occurrences_reconstructed": 20480,
+  "unique_tile_images_checked": 451,
+  "live_emulator_validation": false
+}

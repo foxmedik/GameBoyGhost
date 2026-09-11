@@ -1,0 +1,81 @@
+{
+  "status": "integration_verified_quest_blocked",
+  "attempts": [
+    {
+      "status": "repeated_local_stall",
+      "steps": 652,
+      "sword_actions": 412,
+      "post_sword_actions": 240,
+      "damage_raw": 4,
+      "exact_action_replay": true,
+      "planner_roundtrip_exact": true
+    },
+    {
+      "status": "repeated_local_stall",
+      "steps": 927,
+      "sword_actions": 412,
+      "post_sword_actions": 515,
+      "damage_raw": 20,
+      "exact_action_replay": true,
+      "planner_roundtrip_exact": true
+    }
+  ],
+  "change_between_attempts": "Restored the existing E2 (89,94) approach goal; policies and starting state unchanged.",
+  "finding": "Second attempt reaches cliff goal and western passage, then stalls approaching proposed E1-to-D1 crossing.",
+  "current_blocker": {
+    "category": "navigation_or_unverified_map_connection",
+    "room": [
+      0,
+      0,
+      225
+    ],
+    "position": [
+      10,
+      26
+    ],
+    "goal": {
+      "room": [
+        0,
+        0,
+        209
+      ],
+      "x": 12,
+      "y": 112
+    },
+    "cause_verified": false
+  },
+  "final_health_raw": 4,
+  "quest_success": false,
+  "memory": "runs/progression-integration-v1/memory-generation-2.json",
+  "memory_version": "93efa4668f5f0e0d074845b4c6043b2f8a4b4019bf261babd2b7eaa989c4924a",
+  "new_unique_directed_connections": [
+    [
+      "0:0:225",
+      "0:0:224"
+    ],
+    [
+      "0:0:225",
+      "0:0:226"
+    ],
+    [
+      "0:0:226",
+      "0:0:225"
+    ],
+    [
+      "0:0:242",
+      "0:0:226"
+    ]
+  ],
+  "memory_observations": 4157,
+  "every_observation_verified": true,
+  "regression": {
+    "tests": 91,
+    "seconds": 38.746,
+    "log": "runs/progression-attempt-v1/regression-tests.log",
+    "sha256": "e7831cc6900ced2b8ab8af78aa410bc5cda64e72feb4a0aad57e1767f82b103d"
+  },
+  "new_optimizer_updates": 0,
+  "reserved_evaluation_used": false,
+  "live_memory_intermediate_route_used": false,
+  "note": "Memory queried during live decisions; this prefix had no usable multi-room known route. Known-route intermediate target branch tested separately. No inheritance-efficiency claim."
+}

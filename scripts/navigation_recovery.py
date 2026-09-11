@@ -36,6 +36,8 @@ def freeze(out):
     rows=pq.read_table(index).to_pylist()
     retired_episodes={c['episode_id'] for c in failures['local_goal_failures']}
     retired_cohorts={r['cohort_id'] for r in rows if r['source_episode_id'] in retired_episodes}
+    registry=ROOT/'configs/navigation_retired_cohorts.json'
+    if registry.exists():retired_cohorts.update(json.loads(registry.read_text())['cohorts'])
     old_episodes={c['episode_id'] for c in old}
     # Exclude whole cohorts touched by corrections and all old live episodes.
     available=[r for r in rows if r['cohort_id'] not in retired_cohorts and r['source_episode_id'] not in old_episodes]

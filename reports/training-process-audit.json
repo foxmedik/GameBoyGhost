@@ -1,0 +1,310 @@
+{
+  "scope": "13 bounded candidate experiments: routes v1-v9, sword v1-v2, cliff specialists v1-v2. Earlier navigation/recovery/PPO/teacher searches are excluded from candidate-rollout totals.",
+  "candidates": [
+    {
+      "name": "navigation-routes-v1",
+      "local_successes": [
+        46,
+        43,
+        45
+      ],
+      "candidate_local_cases": 144,
+      "explicit_local_rollouts": null,
+      "route_cases": 9,
+      "route_successes": 2,
+      "route_waypoints": 22,
+      "route_damage": 16,
+      "chain_cases": 3,
+      "selected_or_eligible": false,
+      "epochs": 8,
+      "reserved_evaluation_used": false,
+      "completion_evaluated": false
+    },
+    {
+      "name": "navigation-routes-v2",
+      "local_successes": [
+        46,
+        43,
+        46
+      ],
+      "candidate_local_cases": 144,
+      "explicit_local_rollouts": null,
+      "route_cases": 9,
+      "route_successes": 2,
+      "route_waypoints": 22,
+      "route_damage": 16,
+      "chain_cases": 3,
+      "selected_or_eligible": false,
+      "epochs": 8,
+      "reserved_evaluation_used": false,
+      "completion_evaluated": false
+    },
+    {
+      "name": "navigation-routes-v3",
+      "local_successes": [
+        46,
+        43,
+        46
+      ],
+      "candidate_local_cases": 144,
+      "explicit_local_rollouts": null,
+      "route_cases": 9,
+      "route_successes": 3,
+      "route_waypoints": 25,
+      "route_damage": 12,
+      "chain_cases": 3,
+      "selected_or_eligible": false,
+      "epochs": 8,
+      "reserved_evaluation_used": false,
+      "completion_evaluated": false
+    },
+    {
+      "name": "navigation-routes-v4",
+      "local_successes": [
+        46,
+        43,
+        46
+      ],
+      "candidate_local_cases": 144,
+      "explicit_local_rollouts": null,
+      "route_cases": 9,
+      "route_successes": 4,
+      "route_waypoints": 28,
+      "route_damage": 0,
+      "chain_cases": 3,
+      "selected_or_eligible": false,
+      "epochs": 8,
+      "reserved_evaluation_used": false,
+      "completion_evaluated": false
+    },
+    {
+      "name": "navigation-routes-v5",
+      "local_successes": [
+        46,
+        43,
+        45
+      ],
+      "candidate_local_cases": 144,
+      "explicit_local_rollouts": null,
+      "route_cases": 9,
+      "route_successes": 3,
+      "route_waypoints": 27,
+      "route_damage": 0,
+      "chain_cases": 3,
+      "selected_or_eligible": false,
+      "epochs": 8,
+      "reserved_evaluation_used": false,
+      "completion_evaluated": false
+    },
+    {
+      "name": "navigation-routes-v6",
+      "local_successes": [
+        46,
+        43,
+        46
+      ],
+      "candidate_local_cases": 144,
+      "explicit_local_rollouts": null,
+      "route_cases": 9,
+      "route_successes": 3,
+      "route_waypoints": 27,
+      "route_damage": 0,
+      "chain_cases": 3,
+      "selected_or_eligible": false,
+      "epochs": 8,
+      "reserved_evaluation_used": false,
+      "completion_evaluated": false
+    },
+    {
+      "name": "navigation-routes-v7",
+      "local_successes": [
+        46,
+        43,
+        46
+      ],
+      "candidate_local_cases": 144,
+      "explicit_local_rollouts": null,
+      "route_cases": 9,
+      "route_successes": 6,
+      "route_waypoints": 30,
+      "route_damage": 0,
+      "chain_cases": 3,
+      "selected_or_eligible": true,
+      "epochs": 8,
+      "reserved_evaluation_used": false,
+      "completion_evaluated": false
+    },
+    {
+      "name": "navigation-routes-v8",
+      "local_successes": [
+        46,
+        44,
+        46
+      ],
+      "candidate_local_cases": 144,
+      "explicit_local_rollouts": null,
+      "route_cases": 9,
+      "route_successes": 4,
+      "route_waypoints": 28,
+      "route_damage": 0,
+      "chain_cases": 3,
+      "selected_or_eligible": false,
+      "epochs": 8,
+      "reserved_evaluation_used": false,
+      "completion_evaluated": false
+    },
+    {
+      "name": "navigation-routes-v9",
+      "local_successes": [
+        46,
+        43,
+        46
+      ],
+      "candidate_local_cases": 144,
+      "explicit_local_rollouts": 192,
+      "route_cases": 9,
+      "route_successes": 3,
+      "route_waypoints": 27,
+      "route_damage": 0,
+      "chain_cases": 3,
+      "selected_or_eligible": false,
+      "epochs": 8,
+      "reserved_evaluation_used": false,
+      "completion_evaluated": false
+    },
+    {
+      "name": "navigation-sword-v1",
+      "local_successes": [
+        42,
+        42,
+        47
+      ],
+      "candidate_local_cases": 144,
+      "explicit_local_rollouts": 192,
+      "route_cases": 9,
+      "route_successes": 4,
+      "route_waypoints": 28,
+      "route_damage": 0,
+      "chain_cases": 3,
+      "selected_or_eligible": false,
+      "epochs": 8,
+      "reserved_evaluation_used": false,
+      "completion_evaluated": false
+    },
+    {
+      "name": "navigation-sword-v2",
+      "local_successes": [
+        45,
+        43,
+        46
+      ],
+      "candidate_local_cases": 144,
+      "explicit_local_rollouts": 192,
+      "route_cases": 9,
+      "route_successes": 3,
+      "route_waypoints": 27,
+      "route_damage": 4,
+      "chain_cases": 3,
+      "selected_or_eligible": false,
+      "epochs": 8,
+      "reserved_evaluation_used": false,
+      "completion_evaluated": false
+    },
+    {
+      "name": "navigation-cliff-specialists-v1",
+      "local_successes": [
+        46,
+        43,
+        46
+      ],
+      "candidate_local_cases": 144,
+      "explicit_local_rollouts": 192,
+      "route_cases": 9,
+      "route_successes": 7,
+      "route_waypoints": 32,
+      "route_damage": 0,
+      "chain_cases": 3,
+      "selected_or_eligible": true,
+      "epochs": 256,
+      "reserved_evaluation_used": false,
+      "completion_evaluated": false
+    },
+    {
+      "name": "navigation-cliff-specialists-v2",
+      "local_successes": [
+        46,
+        43,
+        46
+      ],
+      "candidate_local_cases": 144,
+      "explicit_local_rollouts": 192,
+      "route_cases": 9,
+      "route_successes": 9,
+      "route_waypoints": 36,
+      "route_damage": 0,
+      "chain_cases": 3,
+      "selected_or_eligible": true,
+      "epochs": 256,
+      "reserved_evaluation_used": false,
+      "completion_evaluated": false
+    }
+  ],
+  "candidate_count": 13,
+  "candidate_local_cases": 1872,
+  "documented_local_rollout_lower_bound": 2112,
+  "candidate_route_rollouts": 117,
+  "mlp_parameters": 132104,
+  "selected_three_network_parameters": 396312,
+  "data_collection": {
+    "actions": 16777216,
+    "episodes": 8133,
+    "active_seconds": 2389.602453625994,
+    "active_minutes": 39.82670756043323,
+    "committed_bytes": 5707967575,
+    "committed_gib": 5.3159590577706695,
+    "reported_process_cpu_seconds": 50260.056722725996,
+    "reported_process_cpu_hours": 13.961126867423888,
+    "notes": "CPU counter is the supervisor status field; not a complete project-wide CPU ledger. Collection actions are not optimizer-training steps or expert demonstrations."
+  },
+  "earlier_ppo": {
+    "completed": 4,
+    "failed": 2,
+    "batch_wall_seconds": 12836.163158893585,
+    "completion_evaluated": false
+  },
+  "stress_summary": {
+    "cases": 48,
+    "valid_setups": 48,
+    "setup_damage_cases": 0,
+    "setup_damage": 0,
+    "completed": 43,
+    "safe_completed": 34,
+    "navigation_damage_cases": 9,
+    "navigation_damage": 36,
+    "navigation_deaths": 0,
+    "position_changed": 45,
+    "unique_valid_initial_fingerprints": 48,
+    "latest_expert_supervision_matches": 1
+  },
+  "sources": {
+    "reports/navigation-routes-v1.json": "7bbbb70f196c4e37a76b2778dcfb51974870cfad7ff4f5624399feb33dd5985b",
+    "reports/navigation-routes-v2.json": "f5419fecda19a5bd7c5eecff6db33e51bf03fa3be72502d132403fd1c16f9bd3",
+    "reports/navigation-routes-v3.json": "859b93215b414a3032674f3593a73600f4e28e6b17ae76ff5078428cf68ee984",
+    "reports/navigation-routes-v4.json": "424bc00a2a929ba2adfcc41207390b7f64f7e01efb4b15b7861cb18506aa153d",
+    "reports/navigation-routes-v5.json": "dc6c4ac09de79c58fc7f8595212935d912149e743bc5df551b07c01f9b9c102c",
+    "reports/navigation-routes-v6.json": "73d8519c6d03a87f5ab8f7cae51ae6c4208c4936e826302ec61e5abc52d03f49",
+    "reports/navigation-routes-v7.json": "3e6e54caf72ae7f7f7122d3cf729622870f8ee8177428c21000639253ea3adce",
+    "reports/navigation-routes-v8.json": "e166eef30857d8cdea89377b3d150ef8d1ed3c15b646bf708b4ced3f9132751b",
+    "reports/navigation-routes-v9.json": "0e2e61632bde0038a1b54952838239025f3f03a4dcc6aa787975350d00dd4720",
+    "reports/navigation-sword-v1.json": "83d871f4c4f713ffe8911c3a83f876abded3fbff94f0e64bf4ee9eee82bf311a",
+    "reports/navigation-sword-v2.json": "3baf7dbe958895069dcfe27d48a7ec753ff14854c7261f77fee5de9cd70c8317",
+    "reports/navigation-cliff-specialists-v1.json": "f0c3623496cdd42ea9fa677685a5ea275a21f79e7f55f6552806723073140218",
+    "reports/navigation-cliff-specialists-v2.json": "4b1e791d8e5202273a42798b434015a69079c72caec9f6be041b1109c31c9b9c"
+  },
+  "resource_accounting_limits": [
+    "No unified measured train/evaluate/collect wall-time and compute ledger across the 13 candidate experiments.",
+    "No reliable recorded human/assistant effort, token spend, monetary cost or energy allocation for the research loop.",
+    "Do not estimate cumulative compute from epoch counts, file modification times or collection throughput."
+  ],
+  "new_training_performed": false
+}

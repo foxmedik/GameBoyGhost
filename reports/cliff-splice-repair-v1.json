@@ -1,0 +1,70 @@
+{
+  "results": [
+    {
+      "version": "v7",
+      "start": "house",
+      "status": "success",
+      "accepted": true,
+      "damage": 0,
+      "steps": 197,
+      "initial_fingerprint": "68039945834e511b214eedbaf616e690d67dd38332493988f5d8c00c884bc3cb",
+      "final_fingerprint": "6746a46944622af5059aa6ce809268238b50248ae266e0147f59474d8b65e342"
+    },
+    {
+      "version": "v7",
+      "start": "beach",
+      "status": "success",
+      "accepted": true,
+      "damage": 0,
+      "steps": 191,
+      "initial_fingerprint": "23a9ba3106cf5a563390b5b53dfb183bc36a1aab219f2fe1b50ae5957ef25480",
+      "final_fingerprint": "27f048d8c6d0ca067295927352f82b20b15df112c598f2b7bfb74d45012d6726"
+    },
+    {
+      "version": "v7",
+      "start": "approach",
+      "status": "success",
+      "accepted": true,
+      "damage": 0,
+      "steps": 136,
+      "initial_fingerprint": "6fd82da162e93ee286a86af70e4b58c5daa4b83182ce760de225fda4d6e6a256",
+      "final_fingerprint": "7e5ce38b95dad0c9176793cb9446cf3896746fdbffea7da133882ceaab247427"
+    },
+    {
+      "version": "v8",
+      "start": "house",
+      "status": "success",
+      "accepted": true,
+      "damage": 0,
+      "steps": 197,
+      "initial_fingerprint": "68039945834e511b214eedbaf616e690d67dd38332493988f5d8c00c884bc3cb",
+      "final_fingerprint": "6746a46944622af5059aa6ce809268238b50248ae266e0147f59474d8b65e342"
+    },
+    {
+      "version": "v8",
+      "start": "beach",
+      "status": "success",
+      "accepted": true,
+      "damage": 0,
+      "steps": 191,
+      "initial_fingerprint": "23a9ba3106cf5a563390b5b53dfb183bc36a1aab219f2fe1b50ae5957ef25480",
+      "final_fingerprint": "27f048d8c6d0ca067295927352f82b20b15df112c598f2b7bfb74d45012d6726"
+    },
+    {
+      "version": "v8",
+      "start": "approach",
+      "status": "success",
+      "accepted": false,
+      "damage": 4,
+      "steps": 146,
+      "initial_fingerprint": "1dc9c4a3815c38e5851c421e4fbb627130794ac3d3338aaa78dda65c6e725b22",
+      "final_fingerprint": "bc9803dbb7e65cd5132982431d61fcb8a64eb2651323f428c2ed95d39a70bc1b"
+    }
+  ],
+  "accepted": 5,
+  "origins": 6,
+  "unique_accepted_origins": 3,
+  "training_performed": false,
+  "reserved_evaluation_used": false,
+  "plan_sha256": "ce98d4a6467d459597ee036aa74bf66e0e93eeb8d7ed12afa5224364ee360053"
+}

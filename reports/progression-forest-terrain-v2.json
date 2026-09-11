@@ -1,0 +1,85 @@
+{
+  "result": {
+    "status": "budget",
+    "steps": 2349,
+    "extension_steps": 1600,
+    "extension_damage_raw": 0,
+    "rooms": {
+      "208": 1,
+      "192": 3,
+      "193": 2,
+      "176": 1,
+      "160": 2,
+      "144": 1,
+      "161": 2,
+      "145": 3,
+      "129": 2,
+      "162": 3,
+      "146": 5,
+      "130": 6,
+      "147": 4,
+      "131": 5,
+      "132": 4,
+      "148": 4,
+      "163": 3,
+      "179": 2,
+      "178": 2,
+      "177": 1
+    },
+    "final": {
+      "phase": {
+        "gameplay": 11,
+        "subtype": 7,
+        "scroll": 0,
+        "sequence": 4,
+        "palette": 0,
+        "room": [
+          0,
+          0,
+          147
+        ],
+        "health": 24
+      },
+      "room": [
+        0,
+        0,
+        147
+      ],
+      "x": 138,
+      "y": 115,
+      "health": 24,
+      "max_hearts": 3,
+      "inventory": [
+        4,
+        1,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "sword": 1,
+      "toadstool": 0,
+      "powder": 0,
+      "bombs": 0,
+      "arrows": 0,
+      "tail_key": 0,
+      "tarin": 0,
+      "tail_door_status": 0,
+      "trade_item": 0,
+      "dialog_state": 0,
+      "dialog_id": 155,
+      "inventory_cursor": 0
+    },
+    "exact_action_replay": true,
+    "assistance": "scripted_live_terrain_navigation_with_source_grounded_goal_hint",
+    "quest_success": false
+  },
+  "output": "runs/progression-forest-terrain-v2",
+  "memory_version": "fce1d2b58fd3d3eedecfca9e3250b615e33da655435c93bae9d37cb46779ac53"
+}

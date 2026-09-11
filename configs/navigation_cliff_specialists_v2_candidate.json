@@ -1,0 +1,14 @@
+{
+  "status": "selected_experimental",
+  "plan": "runs/navigation-cliff-specialists-v2/plan.json",
+  "plan_sha256": "443b7a61b13ea21ed57f016c5f219813b0f52429f4b02727efcc32f72cc5516a",
+  "candidate_path": "runs/navigation-cliff-specialists-v2/model/epoch-256.pt",
+  "candidate_sha256": "9d2b24b28be5289fc3d32d85d46faa1835ca2068d73a1e8790630d77dbaf85ec",
+  "result": "reports/navigation-cliff-specialists-v2.json",
+  "training_performed": true,
+  "evaluation_completed": true,
+  "selection_changed": true,
+  "previous_policy": "runs/navigation-routes-v7/model/epoch-008.pt",
+  "sword_reduction": "paused",
+  "scope": "Two exact final-goal specialists. Runtime uses original goals and learned physical actions; no intermediate teacher waypoints."
+}

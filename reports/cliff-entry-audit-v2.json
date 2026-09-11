@@ -1,0 +1,3070 @@
+{
+  "entries": [
+    {
+      "version": "v7",
+      "start": "house",
+      "entry_step": 491,
+      "state": {
+        "room": [
+          0,
+          0,
+          226
+        ],
+        "x": 89,
+        "y": 99,
+        "dialogue": false,
+        "sword": true,
+        "health": 24,
+        "a_item": 1,
+        "b_item": 4
+      },
+      "entry_fingerprint": "68039945834e511b214eedbaf616e690d67dd38332493988f5d8c00c884bc3cb",
+      "predicted_action": [
+        1,
+        1
+      ],
+      "recorded_action": [
+        1,
+        1
+      ],
+      "full_replay_verified": true,
+      "matching_demo_entries": [
+        {
+          "path": "runs/navigation-routes-v8/data/cliff-west_neighbor-house/success-0.npz",
+          "origin_fingerprint_match": true,
+          "teacher_action": [
+            1,
+            0
+          ]
+        },
+        {
+          "path": "runs/navigation-routes-v8/data/cliff-west_neighbor-house/success-1.npz",
+          "origin_fingerprint_match": true,
+          "teacher_action": [
+            3,
+            0
+          ]
+        }
+      ],
+      "curated_label": {
+        "path": "runs/navigation-routes-v8/data/cliff-west_neighbor-house/success-0.npz",
+        "row": 0,
+        "remaining": 199,
+        "movement": 1,
+        "button": 0
+      },
+      "model_queries": {
+        "v7": {
+          "movement": 1,
+          "button": 1,
+          "movement_logits": [
+            -22.456329345703125,
+            4.560764312744141,
+            -0.3366985619068146,
+            2.186479091644287,
+            -1.7111196517944336
+          ]
+        },
+        "v8": {
+          "movement": 1,
+          "button": 1,
+          "movement_logits": [
+            -22.3726806640625,
+            3.912437915802002,
+            -0.6354454755783081,
+            3.2042980194091797,
+            -1.5758150815963745
+          ]
+        }
+      }
+    },
+    {
+      "version": "v7",
+      "start": "beach",
+      "entry_step": 347,
+      "state": {
+        "room": [
+          0,
+          0,
+          226
+        ],
+        "x": 89,
+        "y": 99,
+        "dialogue": false,
+        "sword": true,
+        "health": 12,
+        "a_item": 1,
+        "b_item": 4
+      },
+      "entry_fingerprint": "23a9ba3106cf5a563390b5b53dfb183bc36a1aab219f2fe1b50ae5957ef25480",
+      "predicted_action": [
+        1,
+        1
+      ],
+      "recorded_action": [
+        1,
+        1
+      ],
+      "full_replay_verified": true,
+      "matching_demo_entries": [
+        {
+          "path": "runs/navigation-routes-v8/data/cliff-west_neighbor-beach/success-0.npz",
+          "origin_fingerprint_match": true,
+          "teacher_action": [
+            3,
+            0
+          ]
+        },
+        {
+          "path": "runs/navigation-routes-v8/data/cliff-west_neighbor-beach/success-1.npz",
+          "origin_fingerprint_match": true,
+          "teacher_action": [
+            1,
+            0
+          ]
+        }
+      ],
+      "curated_label": {
+        "path": "runs/navigation-routes-v8/data/cliff-west_neighbor-beach/success-1.npz",
+        "row": 0,
+        "remaining": 199,
+        "movement": 1,
+        "button": 0
+      },
+      "model_queries": {
+        "v7": {
+          "movement": 1,
+          "button": 1,
+          "movement_logits": [
+            -20.9628963470459,
+            3.712766408920288,
+            -0.3950788080692291,
+            2.897306442260742,
+            -1.7953758239746094
+          ]
+        },
+        "v8": {
+          "movement": 1,
+          "button": 0,
+          "movement_logits": [
+            -20.782068252563477,
+            3.5859243869781494,
+            -0.7214342355728149,
+            3.1730189323425293,
+            -1.4080687761306763
+          ]
+        }
+      }
+    },
+    {
+      "version": "v7",
+      "start": "approach",
+      "entry_step": 158,
+      "state": {
+        "room": [
+          0,
+          0,
+          226
+        ],
+        "x": 90,
+        "y": 99,
+        "dialogue": false,
+        "sword": true,
+        "health": 8,
+        "a_item": 1,
+        "b_item": 4
+      },
+      "entry_fingerprint": "6fd82da162e93ee286a86af70e4b58c5daa4b83182ce760de225fda4d6e6a256",
+      "predicted_action": [
+        1,
+        1
+      ],
+      "recorded_action": [
+        1,
+        1
+      ],
+      "full_replay_verified": true,
+      "matching_demo_entries": [
+        {
+          "path": "runs/navigation-routes-v8/data/cliff-west_neighbor-approach/success-0.npz",
+          "origin_fingerprint_match": true,
+          "teacher_action": [
+            3,
+            0
+          ]
+        }
+      ],
+      "curated_label": {
+        "path": "runs/navigation-routes-v8/data/cliff-west_neighbor-approach/success-0.npz",
+        "row": 0,
+        "remaining": 146,
+        "movement": 3,
+        "button": 0
+      },
+      "model_queries": {
+        "v7": {
+          "movement": 1,
+          "button": 1,
+          "movement_logits": [
+            -25.050317764282227,
+            5.270166873931885,
+            -0.5836653709411621,
+            2.913675308227539,
+            -1.4654232263565063
+          ]
+        },
+        "v8": {
+          "movement": 3,
+          "button": 1,
+          "movement_logits": [
+            -25.290414810180664,
+            4.125764846801758,
+            -0.6714297533035278,
+            4.440252780914307,
+            -1.4306951761245728
+          ]
+        }
+      }
+    },
+    {
+      "version": "v8",
+      "start": "house",
+      "entry_step": 491,
+      "state": {
+        "room": [
+          0,
+          0,
+          226
+        ],
+        "x": 89,
+        "y": 99,
+        "dialogue": false,
+        "sword": true,
+        "health": 24,
+        "a_item": 1,
+        "b_item": 4
+      },
+      "entry_fingerprint": "68039945834e511b214eedbaf616e690d67dd38332493988f5d8c00c884bc3cb",
+      "predicted_action": [
+        1,
+        1
+      ],
+      "recorded_action": [
+        1,
+        1
+      ],
+      "full_replay_verified": true,
+      "matching_demo_entries": [
+        {
+          "path": "runs/navigation-routes-v8/data/cliff-west_neighbor-house/success-0.npz",
+          "origin_fingerprint_match": true,
+          "teacher_action": [
+            1,
+            0
+          ]
+        },
+        {
+          "path": "runs/navigation-routes-v8/data/cliff-west_neighbor-house/success-1.npz",
+          "origin_fingerprint_match": true,
+          "teacher_action": [
+            3,
+            0
+          ]
+        }
+      ],
+      "curated_label": {
+        "path": "runs/navigation-routes-v8/data/cliff-west_neighbor-house/success-0.npz",
+        "row": 0,
+        "remaining": 199,
+        "movement": 1,
+        "button": 0
+      },
+      "model_queries": {
+        "v7": {
+          "movement": 1,
+          "button": 1,
+          "movement_logits": [
+            -22.456329345703125,
+            4.560764312744141,
+            -0.3366985619068146,
+            2.186479091644287,
+            -1.7111196517944336
+          ]
+        },
+        "v8": {
+          "movement": 1,
+          "button": 1,
+          "movement_logits": [
+            -22.3726806640625,
+            3.912437915802002,
+            -0.6354454755783081,
+            3.2042980194091797,
+            -1.5758150815963745
+          ]
+        }
+      }
+    },
+    {
+      "version": "v8",
+      "start": "beach",
+      "entry_step": 347,
+      "state": {
+        "room": [
+          0,
+          0,
+          226
+        ],
+        "x": 89,
+        "y": 99,
+        "dialogue": false,
+        "sword": true,
+        "health": 12,
+        "a_item": 1,
+        "b_item": 4
+      },
+      "entry_fingerprint": "23a9ba3106cf5a563390b5b53dfb183bc36a1aab219f2fe1b50ae5957ef25480",
+      "predicted_action": [
+        1,
+        0
+      ],
+      "recorded_action": [
+        1,
+        0
+      ],
+      "full_replay_verified": true,
+      "matching_demo_entries": [
+        {
+          "path": "runs/navigation-routes-v8/data/cliff-west_neighbor-beach/success-0.npz",
+          "origin_fingerprint_match": true,
+          "teacher_action": [
+            3,
+            0
+          ]
+        },
+        {
+          "path": "runs/navigation-routes-v8/data/cliff-west_neighbor-beach/success-1.npz",
+          "origin_fingerprint_match": true,
+          "teacher_action": [
+            1,
+            0
+          ]
+        }
+      ],
+      "curated_label": {
+        "path": "runs/navigation-routes-v8/data/cliff-west_neighbor-beach/success-1.npz",
+        "row": 0,
+        "remaining": 199,
+        "movement": 1,
+        "button": 0
+      },
+      "model_queries": {
+        "v7": {
+          "movement": 1,
+          "button": 1,
+          "movement_logits": [
+            -20.9628963470459,
+            3.712766408920288,
+            -0.3950788080692291,
+            2.897306442260742,
+            -1.7953758239746094
+          ]
+        },
+        "v8": {
+          "movement": 1,
+          "button": 0,
+          "movement_logits": [
+            -20.782068252563477,
+            3.5859243869781494,
+            -0.7214342355728149,
+            3.1730189323425293,
+            -1.4080687761306763
+          ]
+        }
+      }
+    },
+    {
+      "version": "v8",
+      "start": "approach",
+      "entry_step": 155,
+      "state": {
+        "room": [
+          0,
+          0,
+          226
+        ],
+        "x": 90,
+        "y": 99,
+        "dialogue": false,
+        "sword": true,
+        "health": 8,
+        "a_item": 1,
+        "b_item": 4
+      },
+      "entry_fingerprint": "1dc9c4a3815c38e5851c421e4fbb627130794ac3d3338aaa78dda65c6e725b22",
+      "predicted_action": [
+        3,
+        1
+      ],
+      "recorded_action": [
+        3,
+        1
+      ],
+      "full_replay_verified": true,
+      "matching_demo_entries": [],
+      "curated_label": null,
+      "model_queries": {
+        "v7": {
+          "movement": 1,
+          "button": 1,
+          "movement_logits": [
+            -24.997526168823242,
+            5.229686737060547,
+            -0.6038724184036255,
+            2.868943929672241,
+            -1.379872441291809
+          ]
+        },
+        "v8": {
+          "movement": 3,
+          "button": 1,
+          "movement_logits": [
+            -25.251394271850586,
+            4.104418754577637,
+            -0.6845070123672485,
+            4.383904933929443,
+            -1.352233648300171
+          ]
+        }
+      }
+    }
+  ],
+  "raw_conflicting_cliff_states": 87,
+  "conflicts_within_single_path": 71,
+  "conflicts": [
+    {
+      "occurrences": [
+        {
+          "path": "runs/navigation-routes-v8/data/cliff-return_west-approach-0/success-0.npz",
+          "row": 0,
+          "remaining": 100,
+          "movement": 1,
+          "button": 0
+        },
+        {
+          "path": "runs/navigation-routes-v8/data/cliff-return_west-approach-0/success-1.npz",
+          "row": 0,
+          "remaining": 87,
+          "movement": 2,
+          "button": 0
+        },
+        {
+          "path": "runs/navigation-routes-v8/data/cliff-return_west-approach-0/success-2.npz",
+          "row": 0,
+          "remaining": 139,
+          "movement": 1,
+          "button": 0
+        }
+      ],
+      "selected": {
+        "path": "runs/navigation-routes-v8/data/cliff-return_west-approach-0/success-1.npz",
+        "row": 0,
+        "remaining": 87,
+        "movement": 2,
+        "button": 0
+      },
+      "within_path": false
+    },
+    {
+      "occurrences": [
+        {
+          "path": "runs/navigation-routes-v8/data/cliff-return_west-approach-0/success-0.npz",
+          "row": 1,
+          "remaining": 99,
+          "movement": 3,
+          "button": 1
+        },
+        {
+          "path": "runs/navigation-routes-v8/data/cliff-return_west-approach-0/success-2.npz",
+          "row": 1,
+          "remaining": 138,
+          "movement": 1,
+          "button": 1
+        }
+      ],
+      "selected": {
+        "path": "runs/navigation-routes-v8/data/cliff-return_west-approach-0/success-0.npz",
+        "row": 1,
+        "remaining": 99,
+        "movement": 3,
+        "button": 1
+      },
+      "within_path": false
+    },
+    {
+      "occurrences": [
+        {
+          "path": "runs/navigation-routes-v8/data/cliff-return_west-approach-0/success-0.npz",
+          "row": 41,
+          "remaining": 59,
+          "movement": 2,
+          "button": 1
+        },
+        {
+          "path": "runs/navigation-routes-v8/data/cliff-return_west-approach-0/success-2.npz",
+          "row": 67,
+          "remaining": 72,
+          "movement": 1,
+          "button": 1
+        }
+      ],
+      "selected": {
+        "path": "runs/navigation-routes-v8/data/cliff-return_west-approach-0/success-0.npz",
+        "row": 41,
+        "remaining": 59,
+        "movement": 2,
+        "button": 1
+      },
+      "within_path": false
+    },
+    {
+      "occurrences": [
+        {
+          "path": "runs/navigation-routes-v8/data/cliff-return_west-approach-0/success-0.npz",
+          "row": 59,
+          "remaining": 41,
+          "movement": 1,
+          "button": 0
+        },
+        {
+          "path": "runs/navigation-routes-v8/data/cliff-return_west-approach-0/success-0.npz",
+          "row": 64,
+          "remaining": 36,
+          "movement": 2,
+          "button": 1
+        }
+      ],
+      "selected": {
+        "path": "runs/navigation-routes-v8/data/cliff-return_west-approach-0/success-0.npz",
+        "row": 64,
+        "remaining": 36,
+        "movement": 2,
+        "button": 1
+      },
+      "within_path": true
+    },
+    {
+      "occurrences": [
+        {
+          "path": "runs/navigation-routes-v8/data/cliff-return_west-approach-0/success-0.npz",
+          "row": 60,
+          "remaining": 40,
+          "movement": 2,
+          "button": 1
+        },
+        {
+          "path": "runs/navigation-routes-v8/data/cliff-return_west-approach-0/success-2.npz",
+          "row": 93,
+          "remaining": 46,
+          "movement": 1,
+          "button": 1
+        }
+      ],
+      "selected": {
+        "path": "runs/navigation-routes-v8/data/cliff-return_west-approach-0/success-0.npz",
+        "row": 60,
+        "remaining": 40,
+        "movement": 2,
+        "button": 1
+      },
+      "within_path": false
+    },
+    {
+      "occurrences": [
+        {
+          "path": "runs/navigation-routes-v8/data/cliff-return_west-approach-0/success-1.npz",
+          "row": 18,
+          "remaining": 69,
+          "movement": 2,
+          "button": 0
+        },
+        {
+          "path": "runs/navigation-routes-v8/data/cliff-return_west-approach-0/success-1.npz",
+          "row": 20,
+          "remaining": 67,
+          "movement": 3,
+          "button": 0
+        }
+      ],
+      "selected": {
+        "path": "runs/navigation-routes-v8/data/cliff-return_west-approach-0/success-1.npz",
+        "row": 20,
+        "remaining": 67,
+        "movement": 3,
+        "button": 0
+      },
+      "within_path": true
+    },
+    {
+      "occurrences": [
+        {
+          "path": "runs/navigation-routes-v8/data/cliff-return_west-approach-0/success-1.npz",
+          "row": 19,
+          "remaining": 68,
+          "movement": 2,
+          "button": 1
+        },
+        {
+          "path": "runs/navigation-routes-v8/data/cliff-return_west-approach-0/success-2.npz",
+          "row": 35,
+          "remaining": 104,
+          "movement": 1,
+          "button": 0
+        }
+      ],
+      "selected": {
+        "path": "runs/navigation-routes-v8/data/cliff-return_west-approach-0/success-1.npz",
+        "row": 19,
+        "remaining": 68,
+        "movement": 2,
+        "button": 1
+      },
+      "within_path": false
+    },
+    {
+      "occurrences": [
+        {
+          "path": "runs/navigation-routes-v8/data/cliff-return_west-approach-0/success-1.npz",
+          "row": 76,
+          "remaining": 11,
+          "movement": 2,
+          "button": 0
+        },
+        {
+          "path": "runs/navigation-routes-v8/data/cliff-return_west-approach-0/success-1.npz",
+          "row": 78,
+          "remaining": 9,
+          "movement": 3,
+          "button": 0
+        }
+      ],
+      "selected": {
+        "path": "runs/navigation-routes-v8/data/cliff-return_west-approach-0/success-1.npz",
+        "row": 78,
+        "remaining": 9,
+        "movement": 3,
+        "button": 0
+      },
+      "within_path": true
+    },
+    {
+      "occurrences": [
+        {
+          "path": "runs/navigation-routes-v8/data/cliff-return_west-approach-0/success-2.npz",
+          "row": 14,
+          "remaining": 125,
+          "movement": 3,
+          "button": 0
+        },
+        {
+          "path": "runs/navigation-routes-v8/data/cliff-return_west-approach-0/success-2.npz",
+          "row": 16,
+          "remaining": 123,
+          "movement": 1,
+          "button": 0
+        },
+        {
+          "path": "runs/navigation-routes-v8/data/cliff-return_west-approach-0/success-2.npz",
+          "row": 20,
+          "remaining": 119,
+          "movement": 2,
+          "button": 0
+        }
+      ],
+      "selected": {
+        "path": "runs/navigation-routes-v8/data/cliff-return_west-approach-0/success-2.npz",
+        "row": 20,
+        "remaining": 119,
+        "movement": 2,
+        "button": 0
+      },
+      "within_path": true
+    },
+    {
+      "occurrences": [
+        {
+          "path": "runs/navigation-routes-v8/data/cliff-return_west-approach-0/success-2.npz",
+          "row": 22,
+          "remaining": 117,
+          "movement": 3,
+          "button": 0
+        },
+        {
+          "path": "runs/navigation-routes-v8/data/cliff-return_west-approach-0/success-2.npz",
+          "row": 24,
+          "remaining": 115,
+          "movement": 2,
+          "button": 0
+        }
+      ],
+      "selected": {
+        "path": "runs/navigation-routes-v8/data/cliff-return_west-approach-0/success-2.npz",
+        "row": 24,
+        "remaining": 115,
+        "movement": 2,
+        "button": 0
+      },
+      "within_path": true
+    },
+    {
+      "occurrences": [
+        {
+          "path": "runs/navigation-routes-v8/data/cliff-return_west-approach-0/success-2.npz",
+          "row": 37,
+          "remaining": 102,
+          "movement": 1,
+          "button": 0
+        },
+        {
+          "path": "runs/navigation-routes-v8/data/cliff-return_west-approach-0/success-2.npz",
+          "row": 39,
+          "remaining": 100,
+          "movement": 1,
+          "button": 0
+        },
+        {
+          "path": "runs/navigation-routes-v8/data/cliff-return_west-approach-0/success-2.npz",
+          "row": 41,
+          "remaining": 98,
+          "movement": 1,
+          "button": 0
+        },
+        {
+          "path": "runs/navigation-routes-v8/data/cliff-return_west-approach-0/success-2.npz",
+          "row": 43,
+          "remaining": 96,
+          "movement": 4,
+          "button": 0
+        },
+        {
+          "path": "runs/navigation-routes-v8/data/cliff-return_west-approach-0/success-2.npz",
+          "row": 47,
+          "remaining": 92,
+          "movement": 2,
+          "button": 0
+        }
+      ],
+      "selected": {
+        "path": "runs/navigation-routes-v8/data/cliff-return_west-approach-0/success-2.npz",
+        "row": 47,
+        "remaining": 92,
+        "movement": 2,
+        "button": 0
+      },
+      "within_path": true
+    },
+    {
+      "occurrences": [
+        {
+          "path": "runs/navigation-routes-v8/data/cliff-return_west-approach-0/success-2.npz",
+          "row": 88,
+          "remaining": 51,
+          "movement": 2,
+          "button": 0
+        },
+        {
+          "path": "runs/navigation-routes-v8/data/cliff-return_west-approach-0/success-2.npz",
+          "row": 92,
+          "remaining": 47,
+          "movement": 1,
+          "button": 0
+        },
+        {
+          "path": "runs/navigation-routes-v8/data/cliff-return_west-approach-0/success-2.npz",
+          "row": 96,
+          "remaining": 43,
+          "movement": 2,
+          "button": 0
+        }
+      ],
+      "selected": {
+        "path": "runs/navigation-routes-v8/data/cliff-return_west-approach-0/success-2.npz",
+        "row": 96,
+        "remaining": 43,
+        "movement": 2,
+        "button": 0
+      },
+      "within_path": true
+    },
+    {
+      "occurrences": [
+        {
+          "path": "runs/navigation-routes-v8/data/cliff-return_west-approach-0/success-2.npz",
+          "row": 90,
+          "remaining": 49,
+          "movement": 1,
+          "button": 0
+        },
+        {
+          "path": "runs/navigation-routes-v8/data/cliff-return_west-approach-0/success-2.npz",
+          "row": 98,
+          "remaining": 41,
+          "movement": 2,
+          "button": 0
+        }
+      ],
+      "selected": {
+        "path": "runs/navigation-routes-v8/data/cliff-return_west-approach-0/success-2.npz",
+        "row": 98,
+        "remaining": 41,
+        "movement": 2,
+        "button": 0
+      },
+      "within_path": true
+    },
+    {
+      "occurrences": [
+        {
+          "path": "runs/navigation-routes-v8/data/cliff-return_west-beach-0/success-0.npz",
+          "row": 0,
+          "remaining": 102,
+          "movement": 1,
+          "button": 0
+        },
+        {
+          "path": "runs/navigation-routes-v8/data/cliff-return_west-beach-0/success-1.npz",
+          "row": 0,
+          "remaining": 86,
+          "movement": 2,
+          "button": 0
+        },
+        {
+          "path": "runs/navigation-routes-v8/data/cliff-return_west-beach-0/success-2.npz",
+          "row": 0,
+          "remaining": 136,
+          "movement": 1,
+          "button": 0
+        }
+      ],
+      "selected": {
+        "path": "runs/navigation-routes-v8/data/cliff-return_west-beach-0/success-1.npz",
+        "row": 0,
+        "remaining": 86,
+        "movement": 2,
+        "button": 0
+      },
+      "within_path": false
+    },
+    {
+      "occurrences": [
+        {
+          "path": "runs/navigation-routes-v8/data/cliff-return_west-beach-0/success-0.npz",
+          "row": 1,
+          "remaining": 101,
+          "movement": 3,
+          "button": 1
+        },
+        {
+          "path": "runs/navigation-routes-v8/data/cliff-return_west-beach-0/success-2.npz",
+          "row": 1,
+          "remaining": 135,
+          "movement": 1,
+          "button": 1
+        }
+      ],
+      "selected": {
+        "path": "runs/navigation-routes-v8/data/cliff-return_west-beach-0/success-0.npz",
+        "row": 1,
+        "remaining": 101,
+        "movement": 3,
+        "button": 1
+      },
+      "within_path": false
+    },
+    {
+      "occurrences": [
+        {
+          "path": "runs/navigation-routes-v8/data/cliff-return_west-beach-0/success-0.npz",
+          "row": 21,
+          "remaining": 81,
+          "movement": 1,
+          "button": 0
+        },
+        {
+          "path": "runs/navigation-routes-v8/data/cliff-return_west-beach-0/success-1.npz",
+          "row": 18,
+          "remaining": 68,
+          "movement": 2,
+          "button": 1
+        }
+      ],
+      "selected": {
+        "path": "runs/navigation-routes-v8/data/cliff-return_west-beach-0/success-1.npz",
+        "row": 18,
+        "remaining": 68,
+        "movement": 2,
+        "button": 1
+      },
+      "within_path": false
+    },
+    {
+      "occurrences": [
+        {
+          "path": "runs/navigation-routes-v8/data/cliff-return_west-beach-0/success-0.npz",
+          "row": 56,
+          "remaining": 46,
+          "movement": 1,
+          "button": 0
+        },
+        {
+          "path": "runs/navigation-routes-v8/data/cliff-return_west-beach-0/success-0.npz",
+          "row": 61,
+          "remaining": 41,
+          "movement": 2,
+          "button": 1
+        }
+      ],
+      "selected": {
+        "path": "runs/navigation-routes-v8/data/cliff-return_west-beach-0/success-0.npz",
+        "row": 61,
+        "remaining": 41,
+        "movement": 2,
+        "button": 1
+      },
+      "within_path": true
+    },
+    {
+      "occurrences": [
+        {
+          "path": "runs/navigation-routes-v8/data/cliff-return_west-beach-0/success-0.npz",
+          "row": 71,
+          "remaining": 31,
+          "movement": 1,
+          "button": 0
+        },
+        {
+          "path": "runs/navigation-routes-v8/data/cliff-return_west-beach-0/success-1.npz",
+          "row": 57,
+          "remaining": 29,
+          "movement": 2,
+          "button": 0
+        }
+      ],
+      "selected": {
+        "path": "runs/navigation-routes-v8/data/cliff-return_west-beach-0/success-1.npz",
+        "row": 57,
+        "remaining": 29,
+        "movement": 2,
+        "button": 0
+      },
+      "within_path": false
+    },
+    {
+      "occurrences": [
+        {
+          "path": "runs/navigation-routes-v8/data/cliff-return_west-beach-0/success-0.npz",
+          "row": 95,
+          "remaining": 7,
+          "movement": 2,
+          "button": 0
+        },
+        {
+          "path": "runs/navigation-routes-v8/data/cliff-return_west-beach-0/success-0.npz",
+          "row": 97,
+          "remaining": 5,
+          "movement": 2,
+          "button": 0
+        },
+        {
+          "path": "runs/navigation-routes-v8/data/cliff-return_west-beach-0/success-0.npz",
+          "row": 99,
+          "remaining": 3,
+          "movement": 4,
+          "button": 0
+        }
+      ],
+      "selected": {
+        "path": "runs/navigation-routes-v8/data/cliff-return_west-beach-0/success-0.npz",
+        "row": 99,
+        "remaining": 3,
+        "movement": 4,
+        "button": 0
+      },
+      "within_path": true
+    },
+    {
+      "occurrences": [
+        {
+          "path": "runs/navigation-routes-v8/data/cliff-return_west-beach-0/success-1.npz",
+          "row": 75,
+          "remaining": 11,
+          "movement": 2,
+          "button": 0
+        },
+        {
+          "path": "runs/navigation-routes-v8/data/cliff-return_west-beach-0/success-1.npz",
+          "row": 77,
+          "remaining": 9,
+          "movement": 3,
+          "button": 0
+        }
+      ],
+      "selected": {
+        "path": "runs/navigation-routes-v8/data/cliff-return_west-beach-0/success-1.npz",
+        "row": 77,
+        "remaining": 9,
+        "movement": 3,
+        "button": 0
+      },
+      "within_path": true
+    },
+    {
+      "occurrences": [
+        {
+          "path": "runs/navigation-routes-v8/data/cliff-return_west-beach-0/success-2.npz",
+          "row": 13,
+          "remaining": 123,
+          "movement": 3,
+          "button": 1
+        },
+        {
+          "path": "runs/navigation-routes-v8/data/cliff-return_west-beach-0/success-2.npz",
+          "row": 15,
+          "remaining": 121,
+          "movement": 2,
+          "button": 1
+        }
+      ],
+      "selected": {
+        "path": "runs/navigation-routes-v8/data/cliff-return_west-beach-0/success-2.npz",
+        "row": 15,
+        "remaining": 121,
+        "movement": 2,
+        "button": 1
+      },
+      "within_path": true
+    },
+    {
+      "occurrences": [
+        {
+          "path": "runs/navigation-routes-v8/data/cliff-return_west-beach-0/success-2.npz",
+          "row": 18,
+          "remaining": 118,
+          "movement": 3,
+          "button": 0
+        },
+        {
+          "path": "runs/navigation-routes-v8/data/cliff-return_west-beach-0/success-2.npz",
+          "row": 20,
+          "remaining": 116,
+          "movement": 2,
+          "button": 0
+        }
+      ],
+      "selected": {
+        "path": "runs/navigation-routes-v8/data/cliff-return_west-beach-0/success-2.npz",
+        "row": 20,
+        "remaining": 116,
+        "movement": 2,
+        "button": 0
+      },
+      "within_path": true
+    },
+    {
+      "occurrences": [
+        {
+          "path": "runs/navigation-routes-v8/data/cliff-return_west-beach-0/success-2.npz",
+          "row": 36,
+          "remaining": 100,
+          "movement": 1,
+          "button": 0
+        },
+        {
+          "path": "runs/navigation-routes-v8/data/cliff-return_west-beach-0/success-2.npz",
+          "row": 38,
+          "remaining": 98,
+          "movement": 1,
+          "button": 0
+        },
+        {
+          "path": "runs/navigation-routes-v8/data/cliff-return_west-beach-0/success-2.npz",
+          "row": 40,
+          "remaining": 96,
+          "movement": 1,
+          "button": 0
+        },
+        {
+          "path": "runs/navigation-routes-v8/data/cliff-return_west-beach-0/success-2.npz",
+          "row": 42,
+          "remaining": 94,
+          "movement": 4,
+          "button": 0
+        },
+        {
+          "path": "runs/navigation-routes-v8/data/cliff-return_west-beach-0/success-2.npz",
+          "row": 46,
+          "remaining": 90,
+          "movement": 2,
+          "button": 0
+        }
+      ],
+      "selected": {
+        "path": "runs/navigation-routes-v8/data/cliff-return_west-beach-0/success-2.npz",
+        "row": 46,
+        "remaining": 90,
+        "movement": 2,
+        "button": 0
+      },
+      "within_path": true
+    },
+    {
+      "occurrences": [
+        {
+          "path": "runs/navigation-routes-v8/data/cliff-return_west-beach-0/success-2.npz",
+          "row": 85,
+          "remaining": 51,
+          "movement": 2,
+          "button": 0
+        },
+        {
+          "path": "runs/navigation-routes-v8/data/cliff-return_west-beach-0/success-2.npz",
+          "row": 89,
+          "remaining": 47,
+          "movement": 1,
+          "button": 0
+        },
+        {
+          "path": "runs/navigation-routes-v8/data/cliff-return_west-beach-0/success-2.npz",
+          "row": 93,
+          "remaining": 43,
+          "movement": 2,
+          "button": 0
+        }
+      ],
+      "selected": {
+        "path": "runs/navigation-routes-v8/data/cliff-return_west-beach-0/success-2.npz",
+        "row": 93,
+        "remaining": 43,
+        "movement": 2,
+        "button": 0
+      },
+      "within_path": true
+    },
+    {
+      "occurrences": [
+        {
+          "path": "runs/navigation-routes-v8/data/cliff-return_west-beach-0/success-2.npz",
+          "row": 87,
+          "remaining": 49,
+          "movement": 1,
+          "button": 0
+        },
+        {
+          "path": "runs/navigation-routes-v8/data/cliff-return_west-beach-0/success-2.npz",
+          "row": 95,
+          "remaining": 41,
+          "movement": 2,
+          "button": 0
+        }
+      ],
+      "selected": {
+        "path": "runs/navigation-routes-v8/data/cliff-return_west-beach-0/success-2.npz",
+        "row": 95,
+        "remaining": 41,
+        "movement": 2,
+        "button": 0
+      },
+      "within_path": true
+    },
+    {
+      "occurrences": [
+        {
+          "path": "runs/navigation-routes-v8/data/cliff-return_west-beach-1/success-0.npz",
+          "row": 0,
+          "remaining": 96,
+          "movement": 1,
+          "button": 0
+        },
+        {
+          "path": "runs/navigation-routes-v8/data/cliff-return_west-beach-1/success-1.npz",
+          "row": 0,
+          "remaining": 87,
+          "movement": 2,
+          "button": 0
+        },
+        {
+          "path": "runs/navigation-routes-v8/data/cliff-return_west-beach-1/success-2.npz",
+          "row": 0,
+          "remaining": 136,
+          "movement": 1,
+          "button": 0
+        }
+      ],
+      "selected": {
+        "path": "runs/navigation-routes-v8/data/cliff-return_west-beach-1/success-1.npz",
+        "row": 0,
+        "remaining": 87,
+        "movement": 2,
+        "button": 0
+      },
+      "within_path": false
+    },
+    {
+      "occurrences": [
+        {
+          "path": "runs/navigation-routes-v8/data/cliff-return_west-beach-1/success-0.npz",
+          "row": 1,
+          "remaining": 95,
+          "movement": 3,
+          "button": 1
+        },
+        {
+          "path": "runs/navigation-routes-v8/data/cliff-return_west-beach-1/success-2.npz",
+          "row": 1,
+          "remaining": 135,
+          "movement": 1,
+          "button": 1
+        }
+      ],
+      "selected": {
+        "path": "runs/navigation-routes-v8/data/cliff-return_west-beach-1/success-0.npz",
+        "row": 1,
+        "remaining": 95,
+        "movement": 3,
+        "button": 1
+      },
+      "within_path": false
+    },
+    {
+      "occurrences": [
+        {
+          "path": "runs/navigation-routes-v8/data/cliff-return_west-beach-1/success-0.npz",
+          "row": 55,
+          "remaining": 41,
+          "movement": 1,
+          "button": 0
+        },
+        {
+          "path": "runs/navigation-routes-v8/data/cliff-return_west-beach-1/success-0.npz",
+          "row": 60,
+          "remaining": 36,
+          "movement": 2,
+          "button": 1
+        }
+      ],
+      "selected": {
+        "path": "runs/navigation-routes-v8/data/cliff-return_west-beach-1/success-0.npz",
+        "row": 60,
+        "remaining": 36,
+        "movement": 2,
+        "button": 1
+      },
+      "within_path": true
+    },
+    {
+      "occurrences": [
+        {
+          "path": "runs/navigation-routes-v8/data/cliff-return_west-beach-1/success-1.npz",
+          "row": 18,
+          "remaining": 69,
+          "movement": 2,
+          "button": 0
+        },
+        {
+          "path": "runs/navigation-routes-v8/data/cliff-return_west-beach-1/success-1.npz",
+          "row": 20,
+          "remaining": 67,
+          "movement": 3,
+          "button": 0
+        }
+      ],
+      "selected": {
+        "path": "runs/navigation-routes-v8/data/cliff-return_west-beach-1/success-1.npz",
+        "row": 20,
+        "remaining": 67,
+        "movement": 3,
+        "button": 0
+      },
+      "within_path": true
+    },
+    {
+      "occurrences": [
+        {
+          "path": "runs/navigation-routes-v8/data/cliff-return_west-beach-1/success-1.npz",
+          "row": 76,
+          "remaining": 11,
+          "movement": 2,
+          "button": 0
+        },
+        {
+          "path": "runs/navigation-routes-v8/data/cliff-return_west-beach-1/success-1.npz",
+          "row": 78,
+          "remaining": 9,
+          "movement": 3,
+          "button": 0
+        }
+      ],
+      "selected": {
+        "path": "runs/navigation-routes-v8/data/cliff-return_west-beach-1/success-1.npz",
+        "row": 78,
+        "remaining": 9,
+        "movement": 3,
+        "button": 0
+      },
+      "within_path": true
+    },
+    {
+      "occurrences": [
+        {
+          "path": "runs/navigation-routes-v8/data/cliff-return_west-beach-1/success-2.npz",
+          "row": 14,
+          "remaining": 122,
+          "movement": 3,
+          "button": 0
+        },
+        {
+          "path": "runs/navigation-routes-v8/data/cliff-return_west-beach-1/success-2.npz",
+          "row": 16,
+          "remaining": 120,
+          "movement": 1,
+          "button": 0
+        }
+      ],
+      "selected": {
+        "path": "runs/navigation-routes-v8/data/cliff-return_west-beach-1/success-2.npz",
+        "row": 16,
+        "remaining": 120,
+        "movement": 1,
+        "button": 0
+      },
+      "within_path": true
+    },
+    {
+      "occurrences": [
+        {
+          "path": "runs/navigation-routes-v8/data/cliff-return_west-beach-1/success-2.npz",
+          "row": 18,
+          "remaining": 118,
+          "movement": 3,
+          "button": 0
+        },
+        {
+          "path": "runs/navigation-routes-v8/data/cliff-return_west-beach-1/success-2.npz",
+          "row": 20,
+          "remaining": 116,
+          "movement": 2,
+          "button": 0
+        }
+      ],
+      "selected": {
+        "path": "runs/navigation-routes-v8/data/cliff-return_west-beach-1/success-2.npz",
+        "row": 20,
+        "remaining": 116,
+        "movement": 2,
+        "button": 0
+      },
+      "within_path": true
+    },
+    {
+      "occurrences": [
+        {
+          "path": "runs/navigation-routes-v8/data/cliff-return_west-beach-1/success-2.npz",
+          "row": 36,
+          "remaining": 100,
+          "movement": 1,
+          "button": 0
+        },
+        {
+          "path": "runs/navigation-routes-v8/data/cliff-return_west-beach-1/success-2.npz",
+          "row": 38,
+          "remaining": 98,
+          "movement": 1,
+          "button": 0
+        },
+        {
+          "path": "runs/navigation-routes-v8/data/cliff-return_west-beach-1/success-2.npz",
+          "row": 40,
+          "remaining": 96,
+          "movement": 1,
+          "button": 0
+        },
+        {
+          "path": "runs/navigation-routes-v8/data/cliff-return_west-beach-1/success-2.npz",
+          "row": 42,
+          "remaining": 94,
+          "movement": 4,
+          "button": 0
+        },
+        {
+          "path": "runs/navigation-routes-v8/data/cliff-return_west-beach-1/success-2.npz",
+          "row": 46,
+          "remaining": 90,
+          "movement": 2,
+          "button": 0
+        }
+      ],
+      "selected": {
+        "path": "runs/navigation-routes-v8/data/cliff-return_west-beach-1/success-2.npz",
+        "row": 46,
+        "remaining": 90,
+        "movement": 2,
+        "button": 0
+      },
+      "within_path": true
+    },
+    {
+      "occurrences": [
+        {
+          "path": "runs/navigation-routes-v8/data/cliff-return_west-beach-1/success-2.npz",
+          "row": 85,
+          "remaining": 51,
+          "movement": 2,
+          "button": 0
+        },
+        {
+          "path": "runs/navigation-routes-v8/data/cliff-return_west-beach-1/success-2.npz",
+          "row": 89,
+          "remaining": 47,
+          "movement": 1,
+          "button": 0
+        },
+        {
+          "path": "runs/navigation-routes-v8/data/cliff-return_west-beach-1/success-2.npz",
+          "row": 93,
+          "remaining": 43,
+          "movement": 2,
+          "button": 0
+        }
+      ],
+      "selected": {
+        "path": "runs/navigation-routes-v8/data/cliff-return_west-beach-1/success-2.npz",
+        "row": 93,
+        "remaining": 43,
+        "movement": 2,
+        "button": 0
+      },
+      "within_path": true
+    },
+    {
+      "occurrences": [
+        {
+          "path": "runs/navigation-routes-v8/data/cliff-return_west-beach-1/success-2.npz",
+          "row": 87,
+          "remaining": 49,
+          "movement": 1,
+          "button": 0
+        },
+        {
+          "path": "runs/navigation-routes-v8/data/cliff-return_west-beach-1/success-2.npz",
+          "row": 95,
+          "remaining": 41,
+          "movement": 2,
+          "button": 0
+        }
+      ],
+      "selected": {
+        "path": "runs/navigation-routes-v8/data/cliff-return_west-beach-1/success-2.npz",
+        "row": 95,
+        "remaining": 41,
+        "movement": 2,
+        "button": 0
+      },
+      "within_path": true
+    },
+    {
+      "occurrences": [
+        {
+          "path": "runs/navigation-routes-v8/data/cliff-return_west-house-0/success-0.npz",
+          "row": 0,
+          "remaining": 96,
+          "movement": 1,
+          "button": 0
+        },
+        {
+          "path": "runs/navigation-routes-v8/data/cliff-return_west-house-0/success-1.npz",
+          "row": 0,
+          "remaining": 87,
+          "movement": 2,
+          "button": 0
+        },
+        {
+          "path": "runs/navigation-routes-v8/data/cliff-return_west-house-0/success-2.npz",
+          "row": 0,
+          "remaining": 136,
+          "movement": 1,
+          "button": 0
+        }
+      ],
+      "selected": {
+        "path": "runs/navigation-routes-v8/data/cliff-return_west-house-0/success-1.npz",
+        "row": 0,
+        "remaining": 87,
+        "movement": 2,
+        "button": 0
+      },
+      "within_path": false
+    },
+    {
+      "occurrences": [
+        {
+          "path": "runs/navigation-routes-v8/data/cliff-return_west-house-0/success-0.npz",
+          "row": 1,
+          "remaining": 95,
+          "movement": 3,
+          "button": 1
+        },
+        {
+          "path": "runs/navigation-routes-v8/data/cliff-return_west-house-0/success-2.npz",
+          "row": 1,
+          "remaining": 135,
+          "movement": 1,
+          "button": 1
+        }
+      ],
+      "selected": {
+        "path": "runs/navigation-routes-v8/data/cliff-return_west-house-0/success-0.npz",
+        "row": 1,
+        "remaining": 95,
+        "movement": 3,
+        "button": 1
+      },
+      "within_path": false
+    },
+    {
+      "occurrences": [
+        {
+          "path": "runs/navigation-routes-v8/data/cliff-return_west-house-0/success-0.npz",
+          "row": 55,
+          "remaining": 41,
+          "movement": 1,
+          "button": 0
+        },
+        {
+          "path": "runs/navigation-routes-v8/data/cliff-return_west-house-0/success-0.npz",
+          "row": 60,
+          "remaining": 36,
+          "movement": 2,
+          "button": 1
+        }
+      ],
+      "selected": {
+        "path": "runs/navigation-routes-v8/data/cliff-return_west-house-0/success-0.npz",
+        "row": 60,
+        "remaining": 36,
+        "movement": 2,
+        "button": 1
+      },
+      "within_path": true
+    },
+    {
+      "occurrences": [
+        {
+          "path": "runs/navigation-routes-v8/data/cliff-return_west-house-0/success-1.npz",
+          "row": 18,
+          "remaining": 69,
+          "movement": 2,
+          "button": 0
+        },
+        {
+          "path": "runs/navigation-routes-v8/data/cliff-return_west-house-0/success-1.npz",
+          "row": 20,
+          "remaining": 67,
+          "movement": 3,
+          "button": 0
+        }
+      ],
+      "selected": {
+        "path": "runs/navigation-routes-v8/data/cliff-return_west-house-0/success-1.npz",
+        "row": 20,
+        "remaining": 67,
+        "movement": 3,
+        "button": 0
+      },
+      "within_path": true
+    },
+    {
+      "occurrences": [
+        {
+          "path": "runs/navigation-routes-v8/data/cliff-return_west-house-0/success-1.npz",
+          "row": 76,
+          "remaining": 11,
+          "movement": 2,
+          "button": 0
+        },
+        {
+          "path": "runs/navigation-routes-v8/data/cliff-return_west-house-0/success-1.npz",
+          "row": 78,
+          "remaining": 9,
+          "movement": 3,
+          "button": 0
+        }
+      ],
+      "selected": {
+        "path": "runs/navigation-routes-v8/data/cliff-return_west-house-0/success-1.npz",
+        "row": 78,
+        "remaining": 9,
+        "movement": 3,
+        "button": 0
+      },
+      "within_path": true
+    },
+    {
+      "occurrences": [
+        {
+          "path": "runs/navigation-routes-v8/data/cliff-return_west-house-0/success-2.npz",
+          "row": 14,
+          "remaining": 122,
+          "movement": 3,
+          "button": 0
+        },
+        {
+          "path": "runs/navigation-routes-v8/data/cliff-return_west-house-0/success-2.npz",
+          "row": 16,
+          "remaining": 120,
+          "movement": 1,
+          "button": 0
+        }
+      ],
+      "selected": {
+        "path": "runs/navigation-routes-v8/data/cliff-return_west-house-0/success-2.npz",
+        "row": 16,
+        "remaining": 120,
+        "movement": 1,
+        "button": 0
+      },
+      "within_path": true
+    },
+    {
+      "occurrences": [
+        {
+          "path": "runs/navigation-routes-v8/data/cliff-return_west-house-0/success-2.npz",
+          "row": 18,
+          "remaining": 118,
+          "movement": 3,
+          "button": 0
+        },
+        {
+          "path": "runs/navigation-routes-v8/data/cliff-return_west-house-0/success-2.npz",
+          "row": 20,
+          "remaining": 116,
+          "movement": 2,
+          "button": 0
+        }
+      ],
+      "selected": {
+        "path": "runs/navigation-routes-v8/data/cliff-return_west-house-0/success-2.npz",
+        "row": 20,
+        "remaining": 116,
+        "movement": 2,
+        "button": 0
+      },
+      "within_path": true
+    },
+    {
+      "occurrences": [
+        {
+          "path": "runs/navigation-routes-v8/data/cliff-return_west-house-0/success-2.npz",
+          "row": 36,
+          "remaining": 100,
+          "movement": 1,
+          "button": 0
+        },
+        {
+          "path": "runs/navigation-routes-v8/data/cliff-return_west-house-0/success-2.npz",
+          "row": 38,
+          "remaining": 98,
+          "movement": 1,
+          "button": 0
+        },
+        {
+          "path": "runs/navigation-routes-v8/data/cliff-return_west-house-0/success-2.npz",
+          "row": 40,
+          "remaining": 96,
+          "movement": 1,
+          "button": 0
+        },
+        {
+          "path": "runs/navigation-routes-v8/data/cliff-return_west-house-0/success-2.npz",
+          "row": 42,
+          "remaining": 94,
+          "movement": 4,
+          "button": 0
+        },
+        {
+          "path": "runs/navigation-routes-v8/data/cliff-return_west-house-0/success-2.npz",
+          "row": 46,
+          "remaining": 90,
+          "movement": 2,
+          "button": 0
+        }
+      ],
+      "selected": {
+        "path": "runs/navigation-routes-v8/data/cliff-return_west-house-0/success-2.npz",
+        "row": 46,
+        "remaining": 90,
+        "movement": 2,
+        "button": 0
+      },
+      "within_path": true
+    },
+    {
+      "occurrences": [
+        {
+          "path": "runs/navigation-routes-v8/data/cliff-return_west-house-0/success-2.npz",
+          "row": 85,
+          "remaining": 51,
+          "movement": 2,
+          "button": 0
+        },
+        {
+          "path": "runs/navigation-routes-v8/data/cliff-return_west-house-0/success-2.npz",
+          "row": 89,
+          "remaining": 47,
+          "movement": 1,
+          "button": 0
+        },
+        {
+          "path": "runs/navigation-routes-v8/data/cliff-return_west-house-0/success-2.npz",
+          "row": 93,
+          "remaining": 43,
+          "movement": 2,
+          "button": 0
+        }
+      ],
+      "selected": {
+        "path": "runs/navigation-routes-v8/data/cliff-return_west-house-0/success-2.npz",
+        "row": 93,
+        "remaining": 43,
+        "movement": 2,
+        "button": 0
+      },
+      "within_path": true
+    },
+    {
+      "occurrences": [
+        {
+          "path": "runs/navigation-routes-v8/data/cliff-return_west-house-0/success-2.npz",
+          "row": 87,
+          "remaining": 49,
+          "movement": 1,
+          "button": 0
+        },
+        {
+          "path": "runs/navigation-routes-v8/data/cliff-return_west-house-0/success-2.npz",
+          "row": 95,
+          "remaining": 41,
+          "movement": 2,
+          "button": 0
+        }
+      ],
+      "selected": {
+        "path": "runs/navigation-routes-v8/data/cliff-return_west-house-0/success-2.npz",
+        "row": 95,
+        "remaining": 41,
+        "movement": 2,
+        "button": 0
+      },
+      "within_path": true
+    },
+    {
+      "occurrences": [
+        {
+          "path": "runs/navigation-routes-v8/data/cliff-return_west-house-1/success-0.npz",
+          "row": 0,
+          "remaining": 92,
+          "movement": 1,
+          "button": 0
+        },
+        {
+          "path": "runs/navigation-routes-v8/data/cliff-return_west-house-1/success-1.npz",
+          "row": 0,
+          "remaining": 85,
+          "movement": 2,
+          "button": 0
+        },
+        {
+          "path": "runs/navigation-routes-v8/data/cliff-return_west-house-1/success-1.npz",
+          "row": 2,
+          "remaining": 83,
+          "movement": 3,
+          "button": 0
+        },
+        {
+          "path": "runs/navigation-routes-v8/data/cliff-return_west-house-1/success-2.npz",
+          "row": 0,
+          "remaining": 132,
+          "movement": 1,
+          "button": 0
+        }
+      ],
+      "selected": {
+        "path": "runs/navigation-routes-v8/data/cliff-return_west-house-1/success-1.npz",
+        "row": 2,
+        "remaining": 83,
+        "movement": 3,
+        "button": 0
+      },
+      "within_path": true
+    },
+    {
+      "occurrences": [
+        {
+          "path": "runs/navigation-routes-v8/data/cliff-return_west-house-1/success-0.npz",
+          "row": 1,
+          "remaining": 91,
+          "movement": 3,
+          "button": 1
+        },
+        {
+          "path": "runs/navigation-routes-v8/data/cliff-return_west-house-1/success-2.npz",
+          "row": 1,
+          "remaining": 131,
+          "movement": 1,
+          "button": 1
+        }
+      ],
+      "selected": {
+        "path": "runs/navigation-routes-v8/data/cliff-return_west-house-1/success-0.npz",
+        "row": 1,
+        "remaining": 91,
+        "movement": 3,
+        "button": 1
+      },
+      "within_path": false
+    },
+    {
+      "occurrences": [
+        {
+          "path": "runs/navigation-routes-v8/data/cliff-return_west-house-1/success-0.npz",
+          "row": 51,
+          "remaining": 41,
+          "movement": 1,
+          "button": 0
+        },
+        {
+          "path": "runs/navigation-routes-v8/data/cliff-return_west-house-1/success-0.npz",
+          "row": 56,
+          "remaining": 36,
+          "movement": 2,
+          "button": 1
+        }
+      ],
+      "selected": {
+        "path": "runs/navigation-routes-v8/data/cliff-return_west-house-1/success-0.npz",
+        "row": 56,
+        "remaining": 36,
+        "movement": 2,
+        "button": 1
+      },
+      "within_path": true
+    },
+    {
+      "occurrences": [
+        {
+          "path": "runs/navigation-routes-v8/data/cliff-return_west-house-1/success-1.npz",
+          "row": 16,
+          "remaining": 69,
+          "movement": 2,
+          "button": 0
+        },
+        {
+          "path": "runs/navigation-routes-v8/data/cliff-return_west-house-1/success-1.npz",
+          "row": 18,
+          "remaining": 67,
+          "movement": 3,
+          "button": 0
+        }
+      ],
+      "selected": {
+        "path": "runs/navigation-routes-v8/data/cliff-return_west-house-1/success-1.npz",
+        "row": 18,
+        "remaining": 67,
+        "movement": 3,
+        "button": 0
+      },
+      "within_path": true
+    },
+    {
+      "occurrences": [
+        {
+          "path": "runs/navigation-routes-v8/data/cliff-return_west-house-1/success-1.npz",
+          "row": 74,
+          "remaining": 11,
+          "movement": 2,
+          "button": 0
+        },
+        {
+          "path": "runs/navigation-routes-v8/data/cliff-return_west-house-1/success-1.npz",
+          "row": 76,
+          "remaining": 9,
+          "movement": 3,
+          "button": 0
+        }
+      ],
+      "selected": {
+        "path": "runs/navigation-routes-v8/data/cliff-return_west-house-1/success-1.npz",
+        "row": 76,
+        "remaining": 9,
+        "movement": 3,
+        "button": 0
+      },
+      "within_path": true
+    },
+    {
+      "occurrences": [
+        {
+          "path": "runs/navigation-routes-v8/data/cliff-return_west-house-1/success-2.npz",
+          "row": 24,
+          "remaining": 108,
+          "movement": 1,
+          "button": 0
+        },
+        {
+          "path": "runs/navigation-routes-v8/data/cliff-return_west-house-1/success-2.npz",
+          "row": 26,
+          "remaining": 106,
+          "movement": 1,
+          "button": 0
+        },
+        {
+          "path": "runs/navigation-routes-v8/data/cliff-return_west-house-1/success-2.npz",
+          "row": 28,
+          "remaining": 104,
+          "movement": 1,
+          "button": 0
+        },
+        {
+          "path": "runs/navigation-routes-v8/data/cliff-return_west-house-1/success-2.npz",
+          "row": 30,
+          "remaining": 102,
+          "movement": 4,
+          "button": 0
+        },
+        {
+          "path": "runs/navigation-routes-v8/data/cliff-return_west-house-1/success-2.npz",
+          "row": 34,
+          "remaining": 98,
+          "movement": 2,
+          "button": 0
+        }
+      ],
+      "selected": {
+        "path": "runs/navigation-routes-v8/data/cliff-return_west-house-1/success-2.npz",
+        "row": 34,
+        "remaining": 98,
+        "movement": 2,
+        "button": 0
+      },
+      "within_path": true
+    },
+    {
+      "occurrences": [
+        {
+          "path": "runs/navigation-routes-v8/data/cliff-return_west-house-1/success-2.npz",
+          "row": 60,
+          "remaining": 72,
+          "movement": 4,
+          "button": 0
+        },
+        {
+          "path": "runs/navigation-routes-v8/data/cliff-return_west-house-1/success-2.npz",
+          "row": 62,
+          "remaining": 70,
+          "movement": 4,
+          "button": 0
+        },
+        {
+          "path": "runs/navigation-routes-v8/data/cliff-return_west-house-1/success-2.npz",
+          "row": 64,
+          "remaining": 68,
+          "movement": 2,
+          "button": 0
+        }
+      ],
+      "selected": {
+        "path": "runs/navigation-routes-v8/data/cliff-return_west-house-1/success-2.npz",
+        "row": 64,
+        "remaining": 68,
+        "movement": 2,
+        "button": 0
+      },
+      "within_path": true
+    },
+    {
+      "occurrences": [
+        {
+          "path": "runs/navigation-routes-v8/data/cliff-return_west-house-1/success-2.npz",
+          "row": 83,
+          "remaining": 49,
+          "movement": 1,
+          "button": 0
+        },
+        {
+          "path": "runs/navigation-routes-v8/data/cliff-return_west-house-1/success-2.npz",
+          "row": 87,
+          "remaining": 45,
+          "movement": 2,
+          "button": 0
+        }
+      ],
+      "selected": {
+        "path": "runs/navigation-routes-v8/data/cliff-return_west-house-1/success-2.npz",
+        "row": 87,
+        "remaining": 45,
+        "movement": 2,
+        "button": 0
+      },
+      "within_path": true
+    },
+    {
+      "occurrences": [
+        {
+          "path": "runs/navigation-routes-v8/data/cliff-return_west-house-1/success-2.npz",
+          "row": 127,
+          "remaining": 5,
+          "movement": 2,
+          "button": 0
+        },
+        {
+          "path": "runs/navigation-routes-v8/data/cliff-return_west-house-1/success-2.npz",
+          "row": 129,
+          "remaining": 3,
+          "movement": 4,
+          "button": 0
+        }
+      ],
+      "selected": {
+        "path": "runs/navigation-routes-v8/data/cliff-return_west-house-1/success-2.npz",
+        "row": 129,
+        "remaining": 3,
+        "movement": 4,
+        "button": 0
+      },
+      "within_path": true
+    },
+    {
+      "occurrences": [
+        {
+          "path": "runs/navigation-routes-v8/data/cliff-west_neighbor-approach/success-0.npz",
+          "row": 81,
+          "remaining": 65,
+          "movement": 1,
+          "button": 0
+        },
+        {
+          "path": "runs/navigation-routes-v8/data/cliff-west_neighbor-approach/success-0.npz",
+          "row": 83,
+          "remaining": 63,
+          "movement": 4,
+          "button": 0
+        }
+      ],
+      "selected": {
+        "path": "runs/navigation-routes-v8/data/cliff-west_neighbor-approach/success-0.npz",
+        "row": 83,
+        "remaining": 63,
+        "movement": 4,
+        "button": 0
+      },
+      "within_path": true
+    },
+    {
+      "occurrences": [
+        {
+          "path": "runs/navigation-routes-v8/data/cliff-west_neighbor-approach/success-0.npz",
+          "row": 86,
+          "remaining": 60,
+          "movement": 3,
+          "button": 0
+        },
+        {
+          "path": "runs/navigation-routes-v8/data/cliff-west_neighbor-approach/success-0.npz",
+          "row": 90,
+          "remaining": 56,
+          "movement": 4,
+          "button": 0
+        }
+      ],
+      "selected": {
+        "path": "runs/navigation-routes-v8/data/cliff-west_neighbor-approach/success-0.npz",
+        "row": 90,
+        "remaining": 56,
+        "movement": 4,
+        "button": 0
+      },
+      "within_path": true
+    },
+    {
+      "occurrences": [
+        {
+          "path": "runs/navigation-routes-v8/data/cliff-west_neighbor-approach/success-0.npz",
+          "row": 104,
+          "remaining": 42,
+          "movement": 1,
+          "button": 0
+        },
+        {
+          "path": "runs/navigation-routes-v8/data/cliff-west_neighbor-approach/success-0.npz",
+          "row": 106,
+          "remaining": 40,
+          "movement": 1,
+          "button": 0
+        },
+        {
+          "path": "runs/navigation-routes-v8/data/cliff-west_neighbor-approach/success-0.npz",
+          "row": 108,
+          "remaining": 38,
+          "movement": 4,
+          "button": 0
+        }
+      ],
+      "selected": {
+        "path": "runs/navigation-routes-v8/data/cliff-west_neighbor-approach/success-0.npz",
+        "row": 108,
+        "remaining": 38,
+        "movement": 4,
+        "button": 0
+      },
+      "within_path": true
+    },
+    {
+      "occurrences": [
+        {
+          "path": "runs/navigation-routes-v8/data/cliff-west_neighbor-beach/success-0.npz",
+          "row": 0,
+          "remaining": 206,
+          "movement": 3,
+          "button": 0
+        },
+        {
+          "path": "runs/navigation-routes-v8/data/cliff-west_neighbor-beach/success-1.npz",
+          "row": 0,
+          "remaining": 199,
+          "movement": 1,
+          "button": 0
+        }
+      ],
+      "selected": {
+        "path": "runs/navigation-routes-v8/data/cliff-west_neighbor-beach/success-1.npz",
+        "row": 0,
+        "remaining": 199,
+        "movement": 1,
+        "button": 0
+      },
+      "within_path": false
+    },
+    {
+      "occurrences": [
+        {
+          "path": "runs/navigation-routes-v8/data/cliff-west_neighbor-beach/success-0.npz",
+          "row": 55,
+          "remaining": 151,
+          "movement": 1,
+          "button": 1
+        },
+        {
+          "path": "runs/navigation-routes-v8/data/cliff-west_neighbor-beach/success-0.npz",
+          "row": 57,
+          "remaining": 149,
+          "movement": 3,
+          "button": 1
+        }
+      ],
+      "selected": {
+        "path": "runs/navigation-routes-v8/data/cliff-west_neighbor-beach/success-0.npz",
+        "row": 57,
+        "remaining": 149,
+        "movement": 3,
+        "button": 1
+      },
+      "within_path": true
+    },
+    {
+      "occurrences": [
+        {
+          "path": "runs/navigation-routes-v8/data/cliff-west_neighbor-beach/success-0.npz",
+          "row": 70,
+          "remaining": 136,
+          "movement": 1,
+          "button": 0
+        },
+        {
+          "path": "runs/navigation-routes-v8/data/cliff-west_neighbor-beach/success-0.npz",
+          "row": 72,
+          "remaining": 134,
+          "movement": 1,
+          "button": 0
+        },
+        {
+          "path": "runs/navigation-routes-v8/data/cliff-west_neighbor-beach/success-0.npz",
+          "row": 74,
+          "remaining": 132,
+          "movement": 2,
+          "button": 0
+        }
+      ],
+      "selected": {
+        "path": "runs/navigation-routes-v8/data/cliff-west_neighbor-beach/success-0.npz",
+        "row": 74,
+        "remaining": 132,
+        "movement": 2,
+        "button": 0
+      },
+      "within_path": true
+    },
+    {
+      "occurrences": [
+        {
+          "path": "runs/navigation-routes-v8/data/cliff-west_neighbor-beach/success-0.npz",
+          "row": 106,
+          "remaining": 100,
+          "movement": 1,
+          "button": 0
+        },
+        {
+          "path": "runs/navigation-routes-v8/data/cliff-west_neighbor-beach/success-0.npz",
+          "row": 108,
+          "remaining": 98,
+          "movement": 1,
+          "button": 0
+        },
+        {
+          "path": "runs/navigation-routes-v8/data/cliff-west_neighbor-beach/success-0.npz",
+          "row": 110,
+          "remaining": 96,
+          "movement": 2,
+          "button": 0
+        }
+      ],
+      "selected": {
+        "path": "runs/navigation-routes-v8/data/cliff-west_neighbor-beach/success-0.npz",
+        "row": 110,
+        "remaining": 96,
+        "movement": 2,
+        "button": 0
+      },
+      "within_path": true
+    },
+    {
+      "occurrences": [
+        {
+          "path": "runs/navigation-routes-v8/data/cliff-west_neighbor-beach/success-0.npz",
+          "row": 107,
+          "remaining": 99,
+          "movement": 1,
+          "button": 1
+        },
+        {
+          "path": "runs/navigation-routes-v8/data/cliff-west_neighbor-beach/success-0.npz",
+          "row": 109,
+          "remaining": 97,
+          "movement": 1,
+          "button": 1
+        },
+        {
+          "path": "runs/navigation-routes-v8/data/cliff-west_neighbor-beach/success-0.npz",
+          "row": 113,
+          "remaining": 93,
+          "movement": 2,
+          "button": 1
+        }
+      ],
+      "selected": {
+        "path": "runs/navigation-routes-v8/data/cliff-west_neighbor-beach/success-0.npz",
+        "row": 113,
+        "remaining": 93,
+        "movement": 2,
+        "button": 1
+      },
+      "within_path": true
+    },
+    {
+      "occurrences": [
+        {
+          "path": "runs/navigation-routes-v8/data/cliff-west_neighbor-beach/success-0.npz",
+          "row": 144,
+          "remaining": 62,
+          "movement": 1,
+          "button": 0
+        },
+        {
+          "path": "runs/navigation-routes-v8/data/cliff-west_neighbor-beach/success-0.npz",
+          "row": 148,
+          "remaining": 58,
+          "movement": 2,
+          "button": 0
+        }
+      ],
+      "selected": {
+        "path": "runs/navigation-routes-v8/data/cliff-west_neighbor-beach/success-0.npz",
+        "row": 148,
+        "remaining": 58,
+        "movement": 2,
+        "button": 0
+      },
+      "within_path": true
+    },
+    {
+      "occurrences": [
+        {
+          "path": "runs/navigation-routes-v8/data/cliff-west_neighbor-beach/success-1.npz",
+          "row": 36,
+          "remaining": 163,
+          "movement": 1,
+          "button": 0
+        },
+        {
+          "path": "runs/navigation-routes-v8/data/cliff-west_neighbor-beach/success-1.npz",
+          "row": 38,
+          "remaining": 161,
+          "movement": 1,
+          "button": 0
+        },
+        {
+          "path": "runs/navigation-routes-v8/data/cliff-west_neighbor-beach/success-1.npz",
+          "row": 40,
+          "remaining": 159,
+          "movement": 4,
+          "button": 0
+        },
+        {
+          "path": "runs/navigation-routes-v8/data/cliff-west_neighbor-beach/success-1.npz",
+          "row": 44,
+          "remaining": 155,
+          "movement": 2,
+          "button": 0
+        }
+      ],
+      "selected": {
+        "path": "runs/navigation-routes-v8/data/cliff-west_neighbor-beach/success-1.npz",
+        "row": 44,
+        "remaining": 155,
+        "movement": 2,
+        "button": 0
+      },
+      "within_path": true
+    },
+    {
+      "occurrences": [
+        {
+          "path": "runs/navigation-routes-v8/data/cliff-west_neighbor-beach/success-1.npz",
+          "row": 67,
+          "remaining": 132,
+          "movement": 1,
+          "button": 0
+        },
+        {
+          "path": "runs/navigation-routes-v8/data/cliff-west_neighbor-beach/success-1.npz",
+          "row": 69,
+          "remaining": 130,
+          "movement": 3,
+          "button": 0
+        }
+      ],
+      "selected": {
+        "path": "runs/navigation-routes-v8/data/cliff-west_neighbor-beach/success-1.npz",
+        "row": 69,
+        "remaining": 130,
+        "movement": 3,
+        "button": 0
+      },
+      "within_path": true
+    },
+    {
+      "occurrences": [
+        {
+          "path": "runs/navigation-routes-v8/data/cliff-west_neighbor-beach/success-1.npz",
+          "row": 71,
+          "remaining": 128,
+          "movement": 1,
+          "button": 0
+        },
+        {
+          "path": "runs/navigation-routes-v8/data/cliff-west_neighbor-beach/success-1.npz",
+          "row": 73,
+          "remaining": 126,
+          "movement": 1,
+          "button": 0
+        },
+        {
+          "path": "runs/navigation-routes-v8/data/cliff-west_neighbor-beach/success-1.npz",
+          "row": 75,
+          "remaining": 124,
+          "movement": 4,
+          "button": 0
+        }
+      ],
+      "selected": {
+        "path": "runs/navigation-routes-v8/data/cliff-west_neighbor-beach/success-1.npz",
+        "row": 75,
+        "remaining": 124,
+        "movement": 4,
+        "button": 0
+      },
+      "within_path": true
+    },
+    {
+      "occurrences": [
+        {
+          "path": "runs/navigation-routes-v8/data/cliff-west_neighbor-beach/success-1.npz",
+          "row": 77,
+          "remaining": 122,
+          "movement": 4,
+          "button": 0
+        },
+        {
+          "path": "runs/navigation-routes-v8/data/cliff-west_neighbor-beach/success-1.npz",
+          "row": 83,
+          "remaining": 116,
+          "movement": 1,
+          "button": 0
+        },
+        {
+          "path": "runs/navigation-routes-v8/data/cliff-west_neighbor-beach/success-1.npz",
+          "row": 85,
+          "remaining": 114,
+          "movement": 1,
+          "button": 0
+        },
+        {
+          "path": "runs/navigation-routes-v8/data/cliff-west_neighbor-beach/success-1.npz",
+          "row": 87,
+          "remaining": 112,
+          "movement": 3,
+          "button": 0
+        }
+      ],
+      "selected": {
+        "path": "runs/navigation-routes-v8/data/cliff-west_neighbor-beach/success-1.npz",
+        "row": 87,
+        "remaining": 112,
+        "movement": 3,
+        "button": 0
+      },
+      "within_path": true
+    },
+    {
+      "occurrences": [
+        {
+          "path": "runs/navigation-routes-v8/data/cliff-west_neighbor-beach/success-1.npz",
+          "row": 79,
+          "remaining": 120,
+          "movement": 1,
+          "button": 0
+        },
+        {
+          "path": "runs/navigation-routes-v8/data/cliff-west_neighbor-beach/success-1.npz",
+          "row": 81,
+          "remaining": 118,
+          "movement": 3,
+          "button": 0
+        }
+      ],
+      "selected": {
+        "path": "runs/navigation-routes-v8/data/cliff-west_neighbor-beach/success-1.npz",
+        "row": 81,
+        "remaining": 118,
+        "movement": 3,
+        "button": 0
+      },
+      "within_path": true
+    },
+    {
+      "occurrences": [
+        {
+          "path": "runs/navigation-routes-v8/data/cliff-west_neighbor-beach/success-1.npz",
+          "row": 107,
+          "remaining": 92,
+          "movement": 1,
+          "button": 0
+        },
+        {
+          "path": "runs/navigation-routes-v8/data/cliff-west_neighbor-beach/success-1.npz",
+          "row": 109,
+          "remaining": 90,
+          "movement": 2,
+          "button": 0
+        }
+      ],
+      "selected": {
+        "path": "runs/navigation-routes-v8/data/cliff-west_neighbor-beach/success-1.npz",
+        "row": 109,
+        "remaining": 90,
+        "movement": 2,
+        "button": 0
+      },
+      "within_path": true
+    },
+    {
+      "occurrences": [
+        {
+          "path": "runs/navigation-routes-v8/data/cliff-west_neighbor-beach/success-1.npz",
+          "row": 121,
+          "remaining": 78,
+          "movement": 1,
+          "button": 0
+        },
+        {
+          "path": "runs/navigation-routes-v8/data/cliff-west_neighbor-beach/success-1.npz",
+          "row": 123,
+          "remaining": 76,
+          "movement": 3,
+          "button": 0
+        }
+      ],
+      "selected": {
+        "path": "runs/navigation-routes-v8/data/cliff-west_neighbor-beach/success-1.npz",
+        "row": 123,
+        "remaining": 76,
+        "movement": 3,
+        "button": 0
+      },
+      "within_path": true
+    },
+    {
+      "occurrences": [
+        {
+          "path": "runs/navigation-routes-v8/data/cliff-west_neighbor-beach/success-1.npz",
+          "row": 132,
+          "remaining": 67,
+          "movement": 1,
+          "button": 0
+        },
+        {
+          "path": "runs/navigation-routes-v8/data/cliff-west_neighbor-beach/success-1.npz",
+          "row": 134,
+          "remaining": 65,
+          "movement": 3,
+          "button": 0
+        },
+        {
+          "path": "runs/navigation-routes-v8/data/cliff-west_neighbor-beach/success-1.npz",
+          "row": 138,
+          "remaining": 61,
+          "movement": 1,
+          "button": 0
+        },
+        {
+          "path": "runs/navigation-routes-v8/data/cliff-west_neighbor-beach/success-1.npz",
+          "row": 140,
+          "remaining": 59,
+          "movement": 1,
+          "button": 0
+        },
+        {
+          "path": "runs/navigation-routes-v8/data/cliff-west_neighbor-beach/success-1.npz",
+          "row": 142,
+          "remaining": 57,
+          "movement": 4,
+          "button": 0
+        }
+      ],
+      "selected": {
+        "path": "runs/navigation-routes-v8/data/cliff-west_neighbor-beach/success-1.npz",
+        "row": 142,
+        "remaining": 57,
+        "movement": 4,
+        "button": 0
+      },
+      "within_path": true
+    },
+    {
+      "occurrences": [
+        {
+          "path": "runs/navigation-routes-v8/data/cliff-west_neighbor-beach/success-1.npz",
+          "row": 155,
+          "remaining": 44,
+          "movement": 1,
+          "button": 0
+        },
+        {
+          "path": "runs/navigation-routes-v8/data/cliff-west_neighbor-beach/success-1.npz",
+          "row": 157,
+          "remaining": 42,
+          "movement": 3,
+          "button": 0
+        },
+        {
+          "path": "runs/navigation-routes-v8/data/cliff-west_neighbor-beach/success-1.npz",
+          "row": 161,
+          "remaining": 38,
+          "movement": 1,
+          "button": 0
+        },
+        {
+          "path": "runs/navigation-routes-v8/data/cliff-west_neighbor-beach/success-1.npz",
+          "row": 163,
+          "remaining": 36,
+          "movement": 1,
+          "button": 0
+        },
+        {
+          "path": "runs/navigation-routes-v8/data/cliff-west_neighbor-beach/success-1.npz",
+          "row": 165,
+          "remaining": 34,
+          "movement": 4,
+          "button": 0
+        }
+      ],
+      "selected": {
+        "path": "runs/navigation-routes-v8/data/cliff-west_neighbor-beach/success-1.npz",
+        "row": 165,
+        "remaining": 34,
+        "movement": 4,
+        "button": 0
+      },
+      "within_path": true
+    },
+    {
+      "occurrences": [
+        {
+          "path": "runs/navigation-routes-v8/data/cliff-west_neighbor-beach/success-1.npz",
+          "row": 175,
+          "remaining": 24,
+          "movement": 4,
+          "button": 0
+        },
+        {
+          "path": "runs/navigation-routes-v8/data/cliff-west_neighbor-beach/success-1.npz",
+          "row": 179,
+          "remaining": 20,
+          "movement": 3,
+          "button": 0
+        }
+      ],
+      "selected": {
+        "path": "runs/navigation-routes-v8/data/cliff-west_neighbor-beach/success-1.npz",
+        "row": 179,
+        "remaining": 20,
+        "movement": 3,
+        "button": 0
+      },
+      "within_path": true
+    },
+    {
+      "occurrences": [
+        {
+          "path": "runs/navigation-routes-v8/data/cliff-west_neighbor-beach/success-1.npz",
+          "row": 178,
+          "remaining": 21,
+          "movement": 3,
+          "button": 1
+        },
+        {
+          "path": "runs/navigation-routes-v8/data/cliff-west_neighbor-beach/success-1.npz",
+          "row": 182,
+          "remaining": 17,
+          "movement": 4,
+          "button": 1
+        }
+      ],
+      "selected": {
+        "path": "runs/navigation-routes-v8/data/cliff-west_neighbor-beach/success-1.npz",
+        "row": 182,
+        "remaining": 17,
+        "movement": 4,
+        "button": 1
+      },
+      "within_path": true
+    },
+    {
+      "occurrences": [
+        {
+          "path": "runs/navigation-routes-v8/data/cliff-west_neighbor-house/success-0.npz",
+          "row": 0,
+          "remaining": 199,
+          "movement": 1,
+          "button": 0
+        },
+        {
+          "path": "runs/navigation-routes-v8/data/cliff-west_neighbor-house/success-1.npz",
+          "row": 0,
+          "remaining": 206,
+          "movement": 3,
+          "button": 0
+        }
+      ],
+      "selected": {
+        "path": "runs/navigation-routes-v8/data/cliff-west_neighbor-house/success-0.npz",
+        "row": 0,
+        "remaining": 199,
+        "movement": 1,
+        "button": 0
+      },
+      "within_path": false
+    },
+    {
+      "occurrences": [
+        {
+          "path": "runs/navigation-routes-v8/data/cliff-west_neighbor-house/success-0.npz",
+          "row": 1,
+          "remaining": 198,
+          "movement": 1,
+          "button": 1
+        },
+        {
+          "path": "runs/navigation-routes-v8/data/cliff-west_neighbor-house/success-0.npz",
+          "row": 3,
+          "remaining": 196,
+          "movement": 3,
+          "button": 1
+        }
+      ],
+      "selected": {
+        "path": "runs/navigation-routes-v8/data/cliff-west_neighbor-house/success-0.npz",
+        "row": 3,
+        "remaining": 196,
+        "movement": 3,
+        "button": 1
+      },
+      "within_path": true
+    },
+    {
+      "occurrences": [
+        {
+          "path": "runs/navigation-routes-v8/data/cliff-west_neighbor-house/success-0.npz",
+          "row": 67,
+          "remaining": 132,
+          "movement": 1,
+          "button": 0
+        },
+        {
+          "path": "runs/navigation-routes-v8/data/cliff-west_neighbor-house/success-0.npz",
+          "row": 69,
+          "remaining": 130,
+          "movement": 3,
+          "button": 0
+        }
+      ],
+      "selected": {
+        "path": "runs/navigation-routes-v8/data/cliff-west_neighbor-house/success-0.npz",
+        "row": 69,
+        "remaining": 130,
+        "movement": 3,
+        "button": 0
+      },
+      "within_path": true
+    },
+    {
+      "occurrences": [
+        {
+          "path": "runs/navigation-routes-v8/data/cliff-west_neighbor-house/success-0.npz",
+          "row": 71,
+          "remaining": 128,
+          "movement": 1,
+          "button": 0
+        },
+        {
+          "path": "runs/navigation-routes-v8/data/cliff-west_neighbor-house/success-0.npz",
+          "row": 73,
+          "remaining": 126,
+          "movement": 1,
+          "button": 0
+        },
+        {
+          "path": "runs/navigation-routes-v8/data/cliff-west_neighbor-house/success-0.npz",
+          "row": 75,
+          "remaining": 124,
+          "movement": 4,
+          "button": 0
+        }
+      ],
+      "selected": {
+        "path": "runs/navigation-routes-v8/data/cliff-west_neighbor-house/success-0.npz",
+        "row": 75,
+        "remaining": 124,
+        "movement": 4,
+        "button": 0
+      },
+      "within_path": true
+    },
+    {
+      "occurrences": [
+        {
+          "path": "runs/navigation-routes-v8/data/cliff-west_neighbor-house/success-0.npz",
+          "row": 77,
+          "remaining": 122,
+          "movement": 4,
+          "button": 0
+        },
+        {
+          "path": "runs/navigation-routes-v8/data/cliff-west_neighbor-house/success-0.npz",
+          "row": 83,
+          "remaining": 116,
+          "movement": 1,
+          "button": 0
+        },
+        {
+          "path": "runs/navigation-routes-v8/data/cliff-west_neighbor-house/success-0.npz",
+          "row": 85,
+          "remaining": 114,
+          "movement": 1,
+          "button": 0
+        },
+        {
+          "path": "runs/navigation-routes-v8/data/cliff-west_neighbor-house/success-0.npz",
+          "row": 87,
+          "remaining": 112,
+          "movement": 3,
+          "button": 0
+        }
+      ],
+      "selected": {
+        "path": "runs/navigation-routes-v8/data/cliff-west_neighbor-house/success-0.npz",
+        "row": 87,
+        "remaining": 112,
+        "movement": 3,
+        "button": 0
+      },
+      "within_path": true
+    },
+    {
+      "occurrences": [
+        {
+          "path": "runs/navigation-routes-v8/data/cliff-west_neighbor-house/success-0.npz",
+          "row": 79,
+          "remaining": 120,
+          "movement": 1,
+          "button": 0
+        },
+        {
+          "path": "runs/navigation-routes-v8/data/cliff-west_neighbor-house/success-0.npz",
+          "row": 81,
+          "remaining": 118,
+          "movement": 3,
+          "button": 0
+        }
+      ],
+      "selected": {
+        "path": "runs/navigation-routes-v8/data/cliff-west_neighbor-house/success-0.npz",
+        "row": 81,
+        "remaining": 118,
+        "movement": 3,
+        "button": 0
+      },
+      "within_path": true
+    },
+    {
+      "occurrences": [
+        {
+          "path": "runs/navigation-routes-v8/data/cliff-west_neighbor-house/success-0.npz",
+          "row": 107,
+          "remaining": 92,
+          "movement": 1,
+          "button": 0
+        },
+        {
+          "path": "runs/navigation-routes-v8/data/cliff-west_neighbor-house/success-0.npz",
+          "row": 109,
+          "remaining": 90,
+          "movement": 2,
+          "button": 0
+        }
+      ],
+      "selected": {
+        "path": "runs/navigation-routes-v8/data/cliff-west_neighbor-house/success-0.npz",
+        "row": 109,
+        "remaining": 90,
+        "movement": 2,
+        "button": 0
+      },
+      "within_path": true
+    },
+    {
+      "occurrences": [
+        {
+          "path": "runs/navigation-routes-v8/data/cliff-west_neighbor-house/success-0.npz",
+          "row": 121,
+          "remaining": 78,
+          "movement": 1,
+          "button": 0
+        },
+        {
+          "path": "runs/navigation-routes-v8/data/cliff-west_neighbor-house/success-0.npz",
+          "row": 123,
+          "remaining": 76,
+          "movement": 3,
+          "button": 0
+        }
+      ],
+      "selected": {
+        "path": "runs/navigation-routes-v8/data/cliff-west_neighbor-house/success-0.npz",
+        "row": 123,
+        "remaining": 76,
+        "movement": 3,
+        "button": 0
+      },
+      "within_path": true
+    },
+    {
+      "occurrences": [
+        {
+          "path": "runs/navigation-routes-v8/data/cliff-west_neighbor-house/success-0.npz",
+          "row": 132,
+          "remaining": 67,
+          "movement": 1,
+          "button": 0
+        },
+        {
+          "path": "runs/navigation-routes-v8/data/cliff-west_neighbor-house/success-0.npz",
+          "row": 134,
+          "remaining": 65,
+          "movement": 3,
+          "button": 0
+        },
+        {
+          "path": "runs/navigation-routes-v8/data/cliff-west_neighbor-house/success-0.npz",
+          "row": 138,
+          "remaining": 61,
+          "movement": 1,
+          "button": 0
+        },
+        {
+          "path": "runs/navigation-routes-v8/data/cliff-west_neighbor-house/success-0.npz",
+          "row": 140,
+          "remaining": 59,
+          "movement": 1,
+          "button": 0
+        },
+        {
+          "path": "runs/navigation-routes-v8/data/cliff-west_neighbor-house/success-0.npz",
+          "row": 142,
+          "remaining": 57,
+          "movement": 4,
+          "button": 0
+        }
+      ],
+      "selected": {
+        "path": "runs/navigation-routes-v8/data/cliff-west_neighbor-house/success-0.npz",
+        "row": 142,
+        "remaining": 57,
+        "movement": 4,
+        "button": 0
+      },
+      "within_path": true
+    },
+    {
+      "occurrences": [
+        {
+          "path": "runs/navigation-routes-v8/data/cliff-west_neighbor-house/success-1.npz",
+          "row": 77,
+          "remaining": 129,
+          "movement": 1,
+          "button": 0
+        },
+        {
+          "path": "runs/navigation-routes-v8/data/cliff-west_neighbor-house/success-1.npz",
+          "row": 81,
+          "remaining": 125,
+          "movement": 2,
+          "button": 0
+        }
+      ],
+      "selected": {
+        "path": "runs/navigation-routes-v8/data/cliff-west_neighbor-house/success-1.npz",
+        "row": 81,
+        "remaining": 125,
+        "movement": 2,
+        "button": 0
+      },
+      "within_path": true
+    },
+    {
+      "occurrences": [
+        {
+          "path": "runs/navigation-routes-v8/data/cliff-west_neighbor-house/success-1.npz",
+          "row": 99,
+          "remaining": 107,
+          "movement": 2,
+          "button": 0
+        },
+        {
+          "path": "runs/navigation-routes-v8/data/cliff-west_neighbor-house/success-1.npz",
+          "row": 105,
+          "remaining": 101,
+          "movement": 1,
+          "button": 0
+        },
+        {
+          "path": "runs/navigation-routes-v8/data/cliff-west_neighbor-house/success-1.npz",
+          "row": 107,
+          "remaining": 99,
+          "movement": 4,
+          "button": 0
+        },
+        {
+          "path": "runs/navigation-routes-v8/data/cliff-west_neighbor-house/success-1.npz",
+          "row": 116,
+          "remaining": 90,
+          "movement": 4,
+          "button": 0
+        }
+      ],
+      "selected": {
+        "path": "runs/navigation-routes-v8/data/cliff-west_neighbor-house/success-1.npz",
+        "row": 116,
+        "remaining": 90,
+        "movement": 4,
+        "button": 0
+      },
+      "within_path": true
+    },
+    {
+      "occurrences": [
+        {
+          "path": "runs/navigation-routes-v8/data/cliff-west_neighbor-house/success-1.npz",
+          "row": 101,
+          "remaining": 105,
+          "movement": 2,
+          "button": 0
+        },
+        {
+          "path": "runs/navigation-routes-v8/data/cliff-west_neighbor-house/success-1.npz",
+          "row": 103,
+          "remaining": 103,
+          "movement": 1,
+          "button": 0
+        }
+      ],
+      "selected": {
+        "path": "runs/navigation-routes-v8/data/cliff-west_neighbor-house/success-1.npz",
+        "row": 103,
+        "remaining": 103,
+        "movement": 1,
+        "button": 0
+      },
+      "within_path": true
+    },
+    {
+      "occurrences": [
+        {
+          "path": "runs/navigation-routes-v8/data/cliff-west_neighbor-house/success-1.npz",
+          "row": 108,
+          "remaining": 98,
+          "movement": 3,
+          "button": 0
+        },
+        {
+          "path": "runs/navigation-routes-v8/data/cliff-west_neighbor-house/success-1.npz",
+          "row": 117,
+          "remaining": 89,
+          "movement": 4,
+          "button": 1
+        }
+      ],
+      "selected": {
+        "path": "runs/navigation-routes-v8/data/cliff-west_neighbor-house/success-1.npz",
+        "row": 117,
+        "remaining": 89,
+        "movement": 4,
+        "button": 1
+      },
+      "within_path": true
+    }
+  ],
+  "curated_state_count": 7017,
+  "source_training_plan_sha256": "d0d371e88fed5019e86f1eca59ef0d7d483b4be40f2bc947b4b0b54bf406f5e3",
+  "training_performed": false,
+  "full_replays_verified": true,
+  "reserved_evaluation_used": false,
+  "interpretation": "Conflicting successful actions can be alternatives or hidden-state aliases. Matching encoded inputs does not imply identical emulator state. Reconstructed curation retains shortest remaining suffix exactly as v8 trainer."
+}

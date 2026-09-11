@@ -1,0 +1,1170 @@
+{
+  "retired_cohorts": [
+    "d62bf3d28d70375d8e5c9f91ce579d5d94bae58e2b59aee824af2f290fff6880"
+  ],
+  "schema": "navigation-route-experiment-v1",
+  "parent_sha256": "37448b31b471b6f84d5880b17a27e8ec961265ec73fee6b5337df979371b48b8",
+  "candidate_path": "runs/navigation-routes-v5/model/epoch-008.pt",
+  "candidate_sha256": "859b1d4268c2e139c4b327dba4c719c18852c5c797f60b32f06d96fccadbcefe",
+  "baseline": {
+    "routes": [
+      {
+        "start": "house",
+        "status": "navigation_timeout",
+        "steps": 747,
+        "sword_step": 412,
+        "navigation_steps": 335,
+        "navigation_damage": 0,
+        "progress": {
+          "cursor": 2,
+          "leg_steps": 256,
+          "leg_start": 491,
+          "completed": [
+            {
+              "index": 0,
+              "step": 461,
+              "actions": 49,
+              "room": [
+                0,
+                0,
+                226
+              ],
+              "x": 40,
+              "y": 125,
+              "health": 24
+            },
+            {
+              "index": 1,
+              "step": 491,
+              "actions": 30,
+              "room": [
+                0,
+                0,
+                226
+              ],
+              "x": 89,
+              "y": 99,
+              "health": 24
+            }
+          ]
+        },
+        "route_id": "room_loop",
+        "run_path": "runs/navigation-routes-v1/baseline/room_loop-house"
+      },
+      {
+        "start": "beach",
+        "status": "death",
+        "steps": 484,
+        "sword_step": 268,
+        "navigation_steps": 216,
+        "navigation_damage": 12,
+        "progress": {
+          "cursor": 2,
+          "leg_steps": 133,
+          "leg_start": 351,
+          "completed": [
+            {
+              "index": 0,
+              "step": 317,
+              "actions": 49,
+              "room": [
+                0,
+                0,
+                226
+              ],
+              "x": 40,
+              "y": 125,
+              "health": 12
+            },
+            {
+              "index": 1,
+              "step": 351,
+              "actions": 34,
+              "room": [
+                0,
+                0,
+                226
+              ],
+              "x": 83,
+              "y": 94,
+              "health": 8
+            }
+          ]
+        },
+        "route_id": "room_loop",
+        "run_path": "runs/navigation-routes-v1/baseline/room_loop-beach"
+      },
+      {
+        "start": "approach",
+        "status": "navigation_timeout",
+        "steps": 414,
+        "sword_step": 83,
+        "navigation_steps": 331,
+        "navigation_damage": 0,
+        "progress": {
+          "cursor": 2,
+          "leg_steps": 256,
+          "leg_start": 158,
+          "completed": [
+            {
+              "index": 0,
+              "step": 128,
+              "actions": 45,
+              "room": [
+                0,
+                0,
+                226
+              ],
+              "x": 40,
+              "y": 124,
+              "health": 8
+            },
+            {
+              "index": 1,
+              "step": 158,
+              "actions": 30,
+              "room": [
+                0,
+                0,
+                226
+              ],
+              "x": 90,
+              "y": 99,
+              "health": 8
+            }
+          ]
+        },
+        "route_id": "room_loop",
+        "run_path": "runs/navigation-routes-v1/baseline/room_loop-approach"
+      },
+      {
+        "start": "house",
+        "status": "navigation_timeout",
+        "steps": 734,
+        "sword_step": 412,
+        "navigation_steps": 322,
+        "navigation_damage": 0,
+        "progress": {
+          "cursor": 2,
+          "leg_steps": 256,
+          "leg_start": 478,
+          "completed": [
+            {
+              "index": 0,
+              "step": 461,
+              "actions": 49,
+              "room": [
+                0,
+                0,
+                226
+              ],
+              "x": 40,
+              "y": 125,
+              "health": 24
+            },
+            {
+              "index": 1,
+              "step": 478,
+              "actions": 17,
+              "room": [
+                0,
+                0,
+                242
+              ],
+              "x": 66,
+              "y": 24,
+              "health": 24
+            }
+          ]
+        },
+        "route_id": "beach_return",
+        "run_path": "runs/navigation-routes-v1/baseline/beach_return-house"
+      },
+      {
+        "start": "beach",
+        "status": "navigation_timeout",
+        "steps": 590,
+        "sword_step": 268,
+        "navigation_steps": 322,
+        "navigation_damage": 0,
+        "progress": {
+          "cursor": 2,
+          "leg_steps": 256,
+          "leg_start": 334,
+          "completed": [
+            {
+              "index": 0,
+              "step": 317,
+              "actions": 49,
+              "room": [
+                0,
+                0,
+                226
+              ],
+              "x": 40,
+              "y": 125,
+              "health": 12
+            },
+            {
+              "index": 1,
+              "step": 334,
+              "actions": 17,
+              "room": [
+                0,
+                0,
+                242
+              ],
+              "x": 66,
+              "y": 24,
+              "health": 12
+            }
+          ]
+        },
+        "route_id": "beach_return",
+        "run_path": "runs/navigation-routes-v1/baseline/beach_return-beach"
+      },
+      {
+        "start": "approach",
+        "status": "navigation_timeout",
+        "steps": 452,
+        "sword_step": 83,
+        "navigation_steps": 369,
+        "navigation_damage": 0,
+        "progress": {
+          "cursor": 3,
+          "leg_steps": 256,
+          "leg_start": 196,
+          "completed": [
+            {
+              "index": 0,
+              "step": 128,
+              "actions": 45,
+              "room": [
+                0,
+                0,
+                226
+              ],
+              "x": 40,
+              "y": 124,
+              "health": 8
+            },
+            {
+              "index": 1,
+              "step": 142,
+              "actions": 14,
+              "room": [
+                0,
+                0,
+                242
+              ],
+              "x": 64,
+              "y": 19,
+              "health": 8
+            },
+            {
+              "index": 2,
+              "step": 196,
+              "actions": 54,
+              "room": [
+                0,
+                0,
+                242
+              ],
+              "x": 113,
+              "y": 91,
+              "health": 8
+            }
+          ]
+        },
+        "route_id": "beach_return",
+        "run_path": "runs/navigation-routes-v1/baseline/beach_return-approach"
+      },
+      {
+        "start": "house",
+        "status": "navigation_timeout",
+        "steps": 742,
+        "sword_step": 412,
+        "navigation_steps": 330,
+        "navigation_damage": 0,
+        "progress": {
+          "cursor": 2,
+          "leg_steps": 256,
+          "leg_start": 486,
+          "completed": [
+            {
+              "index": 0,
+              "step": 461,
+              "actions": 49,
+              "room": [
+                0,
+                0,
+                226
+              ],
+              "x": 40,
+              "y": 125,
+              "health": 24
+            },
+            {
+              "index": 1,
+              "step": 486,
+              "actions": 25,
+              "room": [
+                0,
+                0,
+                225
+              ],
+              "x": 139,
+              "y": 110,
+              "health": 24
+            }
+          ]
+        },
+        "route_id": "west_return",
+        "run_path": "runs/navigation-routes-v1/baseline/west_return-house"
+      },
+      {
+        "start": "beach",
+        "status": "navigation_timeout",
+        "steps": 599,
+        "sword_step": 268,
+        "navigation_steps": 331,
+        "navigation_damage": 4,
+        "progress": {
+          "cursor": 2,
+          "leg_steps": 256,
+          "leg_start": 343,
+          "completed": [
+            {
+              "index": 0,
+              "step": 317,
+              "actions": 49,
+              "room": [
+                0,
+                0,
+                226
+              ],
+              "x": 40,
+              "y": 125,
+              "health": 12
+            },
+            {
+              "index": 1,
+              "step": 343,
+              "actions": 26,
+              "room": [
+                0,
+                0,
+                225
+              ],
+              "x": 136,
+              "y": 111,
+              "health": 8
+            }
+          ]
+        },
+        "route_id": "west_return",
+        "run_path": "runs/navigation-routes-v1/baseline/west_return-beach"
+      },
+      {
+        "start": "approach",
+        "status": "navigation_timeout",
+        "steps": 468,
+        "sword_step": 83,
+        "navigation_steps": 385,
+        "navigation_damage": 4,
+        "progress": {
+          "cursor": 2,
+          "leg_steps": 256,
+          "leg_start": 212,
+          "completed": [
+            {
+              "index": 0,
+              "step": 128,
+              "actions": 45,
+              "room": [
+                0,
+                0,
+                226
+              ],
+              "x": 40,
+              "y": 124,
+              "health": 8
+            },
+            {
+              "index": 1,
+              "step": 212,
+              "actions": 84,
+              "room": [
+                0,
+                0,
+                225
+              ],
+              "x": 137,
+              "y": 112,
+              "health": 4
+            }
+          ]
+        },
+        "route_id": "west_return",
+        "run_path": "runs/navigation-routes-v1/baseline/west_return-approach"
+      }
+    ],
+    "complete": 0,
+    "cases": 9,
+    "goals_completed": 19,
+    "damage": 20,
+    "deaths": 1
+  },
+  "candidate": {
+    "routes": [
+      {
+        "start": "house",
+        "status": "navigation_timeout",
+        "steps": 747,
+        "sword_step": 412,
+        "navigation_steps": 335,
+        "navigation_damage": 0,
+        "progress": {
+          "cursor": 2,
+          "leg_steps": 256,
+          "leg_start": 491,
+          "completed": [
+            {
+              "index": 0,
+              "step": 461,
+              "actions": 49,
+              "room": [
+                0,
+                0,
+                226
+              ],
+              "x": 40,
+              "y": 125,
+              "health": 24
+            },
+            {
+              "index": 1,
+              "step": 491,
+              "actions": 30,
+              "room": [
+                0,
+                0,
+                226
+              ],
+              "x": 89,
+              "y": 99,
+              "health": 24
+            }
+          ]
+        },
+        "route_id": "room_loop",
+        "run_path": "runs/navigation-routes-v5/candidate/room_loop-house"
+      },
+      {
+        "start": "beach",
+        "status": "navigation_timeout",
+        "steps": 603,
+        "sword_step": 268,
+        "navigation_steps": 335,
+        "navigation_damage": 0,
+        "progress": {
+          "cursor": 2,
+          "leg_steps": 256,
+          "leg_start": 347,
+          "completed": [
+            {
+              "index": 0,
+              "step": 317,
+              "actions": 49,
+              "room": [
+                0,
+                0,
+                226
+              ],
+              "x": 40,
+              "y": 125,
+              "health": 12
+            },
+            {
+              "index": 1,
+              "step": 347,
+              "actions": 30,
+              "room": [
+                0,
+                0,
+                226
+              ],
+              "x": 89,
+              "y": 99,
+              "health": 12
+            }
+          ]
+        },
+        "route_id": "room_loop",
+        "run_path": "runs/navigation-routes-v5/candidate/room_loop-beach"
+      },
+      {
+        "start": "approach",
+        "status": "navigation_timeout",
+        "steps": 414,
+        "sword_step": 83,
+        "navigation_steps": 331,
+        "navigation_damage": 0,
+        "progress": {
+          "cursor": 2,
+          "leg_steps": 256,
+          "leg_start": 158,
+          "completed": [
+            {
+              "index": 0,
+              "step": 128,
+              "actions": 45,
+              "room": [
+                0,
+                0,
+                226
+              ],
+              "x": 40,
+              "y": 124,
+              "health": 8
+            },
+            {
+              "index": 1,
+              "step": 158,
+              "actions": 30,
+              "room": [
+                0,
+                0,
+                226
+              ],
+              "x": 90,
+              "y": 99,
+              "health": 8
+            }
+          ]
+        },
+        "route_id": "room_loop",
+        "run_path": "runs/navigation-routes-v5/candidate/room_loop-approach"
+      },
+      {
+        "start": "house",
+        "status": "navigation_timeout",
+        "steps": 783,
+        "sword_step": 412,
+        "navigation_steps": 371,
+        "navigation_damage": 0,
+        "progress": {
+          "cursor": 3,
+          "leg_steps": 256,
+          "leg_start": 527,
+          "completed": [
+            {
+              "index": 0,
+              "step": 461,
+              "actions": 49,
+              "room": [
+                0,
+                0,
+                226
+              ],
+              "x": 40,
+              "y": 125,
+              "health": 24
+            },
+            {
+              "index": 1,
+              "step": 478,
+              "actions": 17,
+              "room": [
+                0,
+                0,
+                242
+              ],
+              "x": 66,
+              "y": 24,
+              "health": 24
+            },
+            {
+              "index": 2,
+              "step": 527,
+              "actions": 49,
+              "room": [
+                0,
+                0,
+                242
+              ],
+              "x": 114,
+              "y": 87,
+              "health": 24
+            }
+          ]
+        },
+        "route_id": "beach_return",
+        "run_path": "runs/navigation-routes-v5/candidate/beach_return-house"
+      },
+      {
+        "start": "beach",
+        "status": "success",
+        "steps": 445,
+        "sword_step": 268,
+        "navigation_steps": 177,
+        "navigation_damage": 0,
+        "progress": {
+          "cursor": 4,
+          "leg_steps": 0,
+          "leg_start": 445,
+          "completed": [
+            {
+              "index": 0,
+              "step": 317,
+              "actions": 49,
+              "room": [
+                0,
+                0,
+                226
+              ],
+              "x": 40,
+              "y": 125,
+              "health": 12
+            },
+            {
+              "index": 1,
+              "step": 334,
+              "actions": 17,
+              "room": [
+                0,
+                0,
+                242
+              ],
+              "x": 66,
+              "y": 24,
+              "health": 12
+            },
+            {
+              "index": 2,
+              "step": 383,
+              "actions": 49,
+              "room": [
+                0,
+                0,
+                242
+              ],
+              "x": 114,
+              "y": 87,
+              "health": 12
+            },
+            {
+              "index": 3,
+              "step": 445,
+              "actions": 62,
+              "room": [
+                0,
+                0,
+                226
+              ],
+              "x": 40,
+              "y": 125,
+              "health": 12
+            }
+          ]
+        },
+        "route_id": "beach_return",
+        "run_path": "runs/navigation-routes-v5/candidate/beach_return-beach"
+      },
+      {
+        "start": "approach",
+        "status": "success",
+        "steps": 260,
+        "sword_step": 83,
+        "navigation_steps": 177,
+        "navigation_damage": 0,
+        "progress": {
+          "cursor": 4,
+          "leg_steps": 0,
+          "leg_start": 260,
+          "completed": [
+            {
+              "index": 0,
+              "step": 128,
+              "actions": 45,
+              "room": [
+                0,
+                0,
+                226
+              ],
+              "x": 40,
+              "y": 124,
+              "health": 8
+            },
+            {
+              "index": 1,
+              "step": 142,
+              "actions": 14,
+              "room": [
+                0,
+                0,
+                242
+              ],
+              "x": 64,
+              "y": 19,
+              "health": 8
+            },
+            {
+              "index": 2,
+              "step": 196,
+              "actions": 54,
+              "room": [
+                0,
+                0,
+                242
+              ],
+              "x": 113,
+              "y": 91,
+              "health": 8
+            },
+            {
+              "index": 3,
+              "step": 260,
+              "actions": 64,
+              "room": [
+                0,
+                0,
+                226
+              ],
+              "x": 37,
+              "y": 128,
+              "health": 8
+            }
+          ]
+        },
+        "route_id": "beach_return",
+        "run_path": "runs/navigation-routes-v5/candidate/beach_return-approach"
+      },
+      {
+        "start": "house",
+        "status": "navigation_timeout",
+        "steps": 785,
+        "sword_step": 412,
+        "navigation_steps": 373,
+        "navigation_damage": 0,
+        "progress": {
+          "cursor": 3,
+          "leg_steps": 256,
+          "leg_start": 529,
+          "completed": [
+            {
+              "index": 0,
+              "step": 461,
+              "actions": 49,
+              "room": [
+                0,
+                0,
+                226
+              ],
+              "x": 40,
+              "y": 125,
+              "health": 24
+            },
+            {
+              "index": 1,
+              "step": 486,
+              "actions": 25,
+              "room": [
+                0,
+                0,
+                225
+              ],
+              "x": 134,
+              "y": 115,
+              "health": 24
+            },
+            {
+              "index": 2,
+              "step": 529,
+              "actions": 43,
+              "room": [
+                0,
+                0,
+                225
+              ],
+              "x": 89,
+              "y": 51,
+              "health": 24
+            }
+          ]
+        },
+        "route_id": "west_return",
+        "run_path": "runs/navigation-routes-v5/candidate/west_return-house"
+      },
+      {
+        "start": "beach",
+        "status": "navigation_timeout",
+        "steps": 643,
+        "sword_step": 268,
+        "navigation_steps": 375,
+        "navigation_damage": 0,
+        "progress": {
+          "cursor": 3,
+          "leg_steps": 256,
+          "leg_start": 387,
+          "completed": [
+            {
+              "index": 0,
+              "step": 317,
+              "actions": 49,
+              "room": [
+                0,
+                0,
+                226
+              ],
+              "x": 40,
+              "y": 125,
+              "health": 12
+            },
+            {
+              "index": 1,
+              "step": 345,
+              "actions": 28,
+              "room": [
+                0,
+                0,
+                225
+              ],
+              "x": 131,
+              "y": 115,
+              "health": 12
+            },
+            {
+              "index": 2,
+              "step": 387,
+              "actions": 42,
+              "room": [
+                0,
+                0,
+                225
+              ],
+              "x": 90,
+              "y": 51,
+              "health": 12
+            }
+          ]
+        },
+        "route_id": "west_return",
+        "run_path": "runs/navigation-routes-v5/candidate/west_return-beach"
+      },
+      {
+        "start": "approach",
+        "status": "success",
+        "steps": 370,
+        "sword_step": 83,
+        "navigation_steps": 287,
+        "navigation_damage": 0,
+        "progress": {
+          "cursor": 4,
+          "leg_steps": 0,
+          "leg_start": 370,
+          "completed": [
+            {
+              "index": 0,
+              "step": 128,
+              "actions": 45,
+              "room": [
+                0,
+                0,
+                226
+              ],
+              "x": 40,
+              "y": 124,
+              "health": 8
+            },
+            {
+              "index": 1,
+              "step": 254,
+              "actions": 126,
+              "room": [
+                0,
+                0,
+                225
+              ],
+              "x": 133,
+              "y": 115,
+              "health": 8
+            },
+            {
+              "index": 2,
+              "step": 298,
+              "actions": 44,
+              "room": [
+                0,
+                0,
+                225
+              ],
+              "x": 90,
+              "y": 51,
+              "health": 8
+            },
+            {
+              "index": 3,
+              "step": 370,
+              "actions": 72,
+              "room": [
+                0,
+                0,
+                226
+              ],
+              "x": 34,
+              "y": 96,
+              "health": 8
+            }
+          ]
+        },
+        "route_id": "west_return",
+        "run_path": "runs/navigation-routes-v5/candidate/west_return-approach"
+      }
+    ],
+    "complete": 3,
+    "cases": 9,
+    "goals_completed": 27,
+    "damage": 0,
+    "deaths": 0
+  },
+  "local_panels": {
+    "original": {
+      "cases": 48,
+      "parent_successes": 46,
+      "corrected_successes": 46,
+      "gained": [],
+      "lost": [],
+      "corrected_deaths": 0,
+      "corrected_damage": 0,
+      "paired_start_fingerprints_match": true
+    },
+    "additional": {
+      "cases": 48,
+      "parent_successes": 39,
+      "corrected_successes": 43,
+      "gained": [
+        "185249f976ddb42f31e0c66816da116b0769fa2a20551fb3f784e518b10504cf",
+        "6a8e3e22a9553c1387bdd208e160b77cc0ab0c9f6a91d9bb02dfe538774fbf39",
+        "8c366af1f0272f0aa06cac4f890defaef1f0fde73320734248aaa0d3f3291bdf",
+        "db63b4241cea6782a1f1cba4ff6850dd2119b49521bdb89fc1244c6939ac5369"
+      ],
+      "lost": [],
+      "corrected_deaths": 0,
+      "corrected_damage": 0,
+      "paired_start_fingerprints_match": true
+    },
+    "fresh": {
+      "cases": 48,
+      "parent_successes": 46,
+      "corrected_successes": 45,
+      "gained": [],
+      "lost": [
+        "f49bda234a90275504d0a788f3ed896810299bca814d35a880e2da18d8b37087"
+      ],
+      "corrected_deaths": 0,
+      "corrected_damage": 0,
+      "paired_start_fingerprints_match": true
+    }
+  },
+  "continuous": [
+    {
+      "start": "house",
+      "status": "success",
+      "navigation_steps": 49,
+      "navigation_damage": 0
+    },
+    {
+      "start": "beach",
+      "status": "success",
+      "navigation_steps": 49,
+      "navigation_damage": 0
+    },
+    {
+      "start": "approach",
+      "status": "success",
+      "navigation_steps": 45,
+      "navigation_damage": 0
+    }
+  ],
+  "collection": [
+    {
+      "id": "repair-anchor-0",
+      "successes": 1,
+      "attempts": 1
+    },
+    {
+      "id": "repair-origin-0-0",
+      "successes": 3,
+      "attempts": 5
+    },
+    {
+      "id": "repair-origin-1-0",
+      "successes": 3,
+      "attempts": 5
+    },
+    {
+      "id": "repair-origin-3-0",
+      "successes": 3,
+      "attempts": 8
+    },
+    {
+      "id": "local-anchor-damage-0",
+      "successes": 1,
+      "attempts": 1
+    },
+    {
+      "id": "local-anchor-fresh-0",
+      "successes": 1,
+      "attempts": 1
+    },
+    {
+      "id": "beach-anchor-house-0-0",
+      "successes": 1,
+      "attempts": 1
+    },
+    {
+      "id": "beach-anchor-house-1-0",
+      "successes": 1,
+      "attempts": 1
+    },
+    {
+      "id": "beach-anchor-house-2-0",
+      "successes": 1,
+      "attempts": 1
+    },
+    {
+      "id": "beach-anchor-house-3-0",
+      "successes": 1,
+      "attempts": 1
+    },
+    {
+      "id": "beach-anchor-beach-0-0",
+      "successes": 1,
+      "attempts": 1
+    },
+    {
+      "id": "beach-anchor-beach-1-0",
+      "successes": 1,
+      "attempts": 1
+    },
+    {
+      "id": "beach-anchor-beach-2-0",
+      "successes": 1,
+      "attempts": 1
+    },
+    {
+      "id": "beach-anchor-beach-3-0",
+      "successes": 1,
+      "attempts": 1
+    },
+    {
+      "id": "beach-anchor-approach-0-0",
+      "successes": 1,
+      "attempts": 1
+    },
+    {
+      "id": "beach-anchor-approach-1-0",
+      "successes": 1,
+      "attempts": 1
+    },
+    {
+      "id": "beach-anchor-approach-2-0",
+      "successes": 1,
+      "attempts": 1
+    },
+    {
+      "id": "beach-anchor-approach-3-0",
+      "successes": 1,
+      "attempts": 1
+    },
+    {
+      "id": "west-anchor-house-0-0",
+      "successes": 1,
+      "attempts": 1
+    },
+    {
+      "id": "west-anchor-house-1-0",
+      "successes": 1,
+      "attempts": 1
+    },
+    {
+      "id": "west-anchor-house-2-0",
+      "successes": 1,
+      "attempts": 1
+    },
+    {
+      "id": "west-anchor-beach-0-0",
+      "successes": 1,
+      "attempts": 1
+    },
+    {
+      "id": "west-anchor-beach-1-0",
+      "successes": 1,
+      "attempts": 1
+    },
+    {
+      "id": "west-anchor-beach-2-0",
+      "successes": 1,
+      "attempts": 1
+    },
+    {
+      "id": "west-anchor-approach-0-0",
+      "successes": 1,
+      "attempts": 1
+    },
+    {
+      "id": "west-anchor-approach-1-0",
+      "successes": 1,
+      "attempts": 1
+    },
+    {
+      "id": "west-anchor-approach-2-0",
+      "successes": 1,
+      "attempts": 1
+    },
+    {
+      "id": "west-anchor-approach-3-0",
+      "successes": 1,
+      "attempts": 1
+    }
+  ],
+  "training": {
+    "verified_paths": 34,
+    "raw_route_rows": 1197,
+    "target_unique_states": 983,
+    "conflicting_states": 6,
+    "retention_rows": 346536,
+    "retention_demonstration_rows": 8653
+  },
+  "resume_verified": {
+    "exact_fields": [
+      "actions",
+      "fingerprint",
+      "steps",
+      "sword_step",
+      "navigation_steps",
+      "damage",
+      "navigation_damage",
+      "status",
+      "final_state",
+      "progress"
+    ],
+    "paused_step": 470,
+    "completed_goals_at_pause": 1
+  },
+  "gate": {
+    "more_complete_routes": true,
+    "no_route_success_lost": true,
+    "no_local_success_lost": false,
+    "zero_local_damage_and_deaths": true,
+    "zero_route_damage_and_deaths": true,
+    "original_continuous_chains_preserved": true,
+    "all_previous_candidate_routes_preserved": false
+  },
+  "promoted": false,
+  "harness_privilege": "D",
+  "reserved_evaluation_used": false,
+  "completion_evaluated": false,
+  "interpretation": "Routes are scripted development training regressions. Goals and starting states are known; these scores do not establish held-out generalization or game completion."
+}

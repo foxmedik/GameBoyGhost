@@ -1,0 +1,72 @@
+{
+  "result": {
+    "status": "no_conservative_exit_path",
+    "steps": 1178,
+    "extension_steps": 429,
+    "extension_damage_raw": 0,
+    "rooms": {
+      "208": 1,
+      "192": 3,
+      "193": 2,
+      "176": 1,
+      "160": 1,
+      "144": 1,
+      "128": 1
+    },
+    "final": {
+      "phase": {
+        "gameplay": 11,
+        "subtype": 7,
+        "scroll": 0,
+        "sequence": 4,
+        "palette": 0,
+        "room": [
+          0,
+          0,
+          128
+        ],
+        "health": 24
+      },
+      "room": [
+        0,
+        0,
+        128
+      ],
+      "x": 105,
+      "y": 127,
+      "health": 24,
+      "max_hearts": 3,
+      "inventory": [
+        4,
+        1,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "sword": 1,
+      "toadstool": 0,
+      "powder": 0,
+      "bombs": 0,
+      "arrows": 0,
+      "tail_key": 0,
+      "tarin": 0,
+      "tail_door_status": 0,
+      "trade_item": 0,
+      "dialog_state": 0,
+      "dialog_id": 155,
+      "inventory_cursor": 0
+    },
+    "exact_action_replay": true,
+    "assistance": "scripted_live_terrain_navigation_with_source_grounded_goal_hint",
+    "quest_success": false
+  },
+  "output": "runs/progression-forest-terrain-v4",
+  "memory_version": "74211acd6d4b0715b5c87701aa3024a19ffec11cd57910eec93b4d2aea5253f3"
+}

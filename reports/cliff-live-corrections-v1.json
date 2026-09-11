@@ -1,0 +1,493 @@
+{
+  "results": [
+    {
+      "start": "house",
+      "phase": 0,
+      "kind": "approach",
+      "status": "success",
+      "accepted": true,
+      "steps": 196,
+      "damage": 0,
+      "goal": {
+        "room": [
+          0,
+          0,
+          226
+        ],
+        "x": 64,
+        "y": 64
+      },
+      "teacher_switch_step": 179,
+      "teacher_waypoints": [],
+      "teacher_tolerance": 3,
+      "initial_fingerprint": "68039945834e511b214eedbaf616e690d67dd38332493988f5d8c00c884bc3cb",
+      "final_fingerprint": "bbcb03bde6df3a4b79825e05eb8e5399dce7587c17e2e53e38bae6d697a83924",
+      "final_state": {
+        "room": [
+          0,
+          0,
+          226
+        ],
+        "x": 62,
+        "y": 61,
+        "dialogue": false,
+        "sword": true,
+        "health": 24,
+        "a_item": 1,
+        "b_item": 4
+      },
+      "replay_verified": true,
+      "features_replay_verified": true,
+      "source_run": "/Users/studio/Developer/GameBoyAgent/runs/navigation-cliff-specialists-v1/candidate/room_loop-house",
+      "source_result_sha256": "b6097ab4cb87a0fa74d90c3616737fd5986f07aaaa90e49ac5d8cb31179b3f04",
+      "asset": "approach.npz",
+      "asset_sha256": "d254f99ec67315b091de00f251841c2068087ac9e485c7a0fd76180e08b043dc"
+    },
+    {
+      "start": "house",
+      "phase": 0,
+      "kind": "return",
+      "status": "success",
+      "accepted": true,
+      "steps": 73,
+      "damage": 0,
+      "goal": {
+        "room": [
+          0,
+          0,
+          226
+        ],
+        "x": 36,
+        "y": 121
+      },
+      "teacher_switch_step": null,
+      "teacher_waypoints": [],
+      "teacher_tolerance": 3,
+      "initial_fingerprint": "bbcb03bde6df3a4b79825e05eb8e5399dce7587c17e2e53e38bae6d697a83924",
+      "final_fingerprint": "580618fd1360a40cee68f448cc0b6059aacfce8f9f10eb1ca4348bd7058075be",
+      "final_state": {
+        "room": [
+          0,
+          0,
+          226
+        ],
+        "x": 34,
+        "y": 117,
+        "dialogue": false,
+        "sword": true,
+        "health": 24,
+        "a_item": 1,
+        "b_item": 4
+      },
+      "replay_verified": true,
+      "features_replay_verified": true,
+      "source_run": "/Users/studio/Developer/GameBoyAgent/runs/navigation-cliff-specialists-v1/candidate/room_loop-house",
+      "source_result_sha256": "b6097ab4cb87a0fa74d90c3616737fd5986f07aaaa90e49ac5d8cb31179b3f04",
+      "asset": "return.npz",
+      "asset_sha256": "278691b66e27fe246d381b2793b5dba142a77736d7a01242ebac64ab5b7f9b99"
+    },
+    {
+      "start": "house",
+      "phase": 1,
+      "kind": "approach",
+      "status": "success",
+      "accepted": true,
+      "steps": 199,
+      "damage": 0,
+      "goal": {
+        "room": [
+          0,
+          0,
+          226
+        ],
+        "x": 64,
+        "y": 64
+      },
+      "teacher_switch_step": 179,
+      "teacher_waypoints": [],
+      "teacher_tolerance": 3,
+      "initial_fingerprint": "68039945834e511b214eedbaf616e690d67dd38332493988f5d8c00c884bc3cb",
+      "final_fingerprint": "00200601d7cd7bb3a0ff751be0a91ef21824108594741e777cdd9e9fa7f3a447",
+      "final_state": {
+        "room": [
+          0,
+          0,
+          226
+        ],
+        "x": 62,
+        "y": 61,
+        "dialogue": false,
+        "sword": true,
+        "health": 24,
+        "a_item": 1,
+        "b_item": 4
+      },
+      "replay_verified": true,
+      "features_replay_verified": true,
+      "source_run": "/Users/studio/Developer/GameBoyAgent/runs/navigation-cliff-specialists-v1/candidate/room_loop-house",
+      "source_result_sha256": "b6097ab4cb87a0fa74d90c3616737fd5986f07aaaa90e49ac5d8cb31179b3f04",
+      "asset": "approach.npz",
+      "asset_sha256": "f28f592f305313080c3851540ecf92a9c4334ce27be4e69eff7a1d55cfb41f2f"
+    },
+    {
+      "start": "house",
+      "phase": 1,
+      "kind": "return",
+      "status": "damage",
+      "accepted": false,
+      "steps": 10,
+      "damage": 3,
+      "goal": {
+        "room": [
+          0,
+          0,
+          226
+        ],
+        "x": 36,
+        "y": 121
+      },
+      "teacher_switch_step": null,
+      "teacher_waypoints": [],
+      "teacher_tolerance": 3,
+      "initial_fingerprint": "00200601d7cd7bb3a0ff751be0a91ef21824108594741e777cdd9e9fa7f3a447",
+      "final_fingerprint": "97cc213b40c74a888e7337015db7aa81add79d8f07798f6b70892c6272dd0631",
+      "final_state": {
+        "room": [
+          0,
+          0,
+          226
+        ],
+        "x": 32,
+        "y": 64,
+        "dialogue": false,
+        "sword": true,
+        "health": 21,
+        "a_item": 1,
+        "b_item": 4
+      },
+      "replay_verified": true,
+      "features_replay_verified": true,
+      "source_run": "/Users/studio/Developer/GameBoyAgent/runs/navigation-cliff-specialists-v1/candidate/room_loop-house",
+      "source_result_sha256": "b6097ab4cb87a0fa74d90c3616737fd5986f07aaaa90e49ac5d8cb31179b3f04",
+      "asset": null,
+      "asset_sha256": null
+    },
+    {
+      "start": "approach",
+      "phase": 0,
+      "kind": "approach",
+      "status": "success",
+      "accepted": true,
+      "steps": 92,
+      "damage": 0,
+      "goal": {
+        "room": [
+          0,
+          0,
+          226
+        ],
+        "x": 64,
+        "y": 64
+      },
+      "teacher_switch_step": 56,
+      "teacher_waypoints": [
+        {
+          "room": [
+            0,
+            0,
+            225
+          ],
+          "x": 125,
+          "y": 54
+        },
+        {
+          "room": [
+            0,
+            0,
+            225
+          ],
+          "x": 126,
+          "y": 54
+        },
+        {
+          "room": [
+            0,
+            0,
+            226
+          ],
+          "x": 18,
+          "y": 56
+        }
+      ],
+      "teacher_tolerance": 3,
+      "initial_fingerprint": "6fd82da162e93ee286a86af70e4b58c5daa4b83182ce760de225fda4d6e6a256",
+      "final_fingerprint": "13c8df2ae1f3ed92cc12ff89686fac2d28cb3285cd4fb0e0a67a3fb31be89857",
+      "final_state": {
+        "room": [
+          0,
+          0,
+          226
+        ],
+        "x": 60,
+        "y": 60,
+        "dialogue": false,
+        "sword": true,
+        "health": 8,
+        "a_item": 1,
+        "b_item": 4
+      },
+      "replay_verified": true,
+      "features_replay_verified": true,
+      "source_run": "/Users/studio/Developer/GameBoyAgent/runs/navigation-cliff-specialists-v1/candidate/room_loop-approach",
+      "source_result_sha256": "56150497b7084443cd3b429f0a87e967e10f15b85d4fef48249bb9868371a98a",
+      "asset": "approach.npz",
+      "asset_sha256": "5a512c9abdb40dd0b7d4d7e374529b0cc74367df77e384111bdfb4e4b831dc06"
+    },
+    {
+      "start": "approach",
+      "phase": 0,
+      "kind": "return",
+      "status": "success",
+      "accepted": true,
+      "steps": 81,
+      "damage": 0,
+      "goal": {
+        "room": [
+          0,
+          0,
+          226
+        ],
+        "x": 36,
+        "y": 121
+      },
+      "teacher_switch_step": null,
+      "teacher_waypoints": [],
+      "teacher_tolerance": 3,
+      "initial_fingerprint": "13c8df2ae1f3ed92cc12ff89686fac2d28cb3285cd4fb0e0a67a3fb31be89857",
+      "final_fingerprint": "f02948a0d008824743f726fa37f17f7593b6cd74fd5319bef4a7fdde210c4599",
+      "final_state": {
+        "room": [
+          0,
+          0,
+          226
+        ],
+        "x": 34,
+        "y": 115,
+        "dialogue": false,
+        "sword": true,
+        "health": 8,
+        "a_item": 1,
+        "b_item": 4
+      },
+      "replay_verified": true,
+      "features_replay_verified": true,
+      "source_run": "/Users/studio/Developer/GameBoyAgent/runs/navigation-cliff-specialists-v1/candidate/room_loop-approach",
+      "source_result_sha256": "56150497b7084443cd3b429f0a87e967e10f15b85d4fef48249bb9868371a98a",
+      "asset": "return.npz",
+      "asset_sha256": "640d269db1e00b507f30695f79d601d5346f4d1a32f285075afa6e961e9db904"
+    },
+    {
+      "start": "approach",
+      "phase": 1,
+      "kind": "approach",
+      "status": "success",
+      "accepted": true,
+      "steps": 95,
+      "damage": 0,
+      "goal": {
+        "room": [
+          0,
+          0,
+          226
+        ],
+        "x": 64,
+        "y": 64
+      },
+      "teacher_switch_step": 56,
+      "teacher_waypoints": [
+        {
+          "room": [
+            0,
+            0,
+            225
+          ],
+          "x": 125,
+          "y": 54
+        },
+        {
+          "room": [
+            0,
+            0,
+            225
+          ],
+          "x": 126,
+          "y": 54
+        },
+        {
+          "room": [
+            0,
+            0,
+            226
+          ],
+          "x": 18,
+          "y": 56
+        }
+      ],
+      "teacher_tolerance": 3,
+      "initial_fingerprint": "6fd82da162e93ee286a86af70e4b58c5daa4b83182ce760de225fda4d6e6a256",
+      "final_fingerprint": "e066d3ba1fd79d555ecb514966f7a8a0d52d84d174f5d35d545368e20d2d3a42",
+      "final_state": {
+        "room": [
+          0,
+          0,
+          226
+        ],
+        "x": 60,
+        "y": 60,
+        "dialogue": false,
+        "sword": true,
+        "health": 8,
+        "a_item": 1,
+        "b_item": 4
+      },
+      "replay_verified": true,
+      "features_replay_verified": true,
+      "source_run": "/Users/studio/Developer/GameBoyAgent/runs/navigation-cliff-specialists-v1/candidate/room_loop-approach",
+      "source_result_sha256": "56150497b7084443cd3b429f0a87e967e10f15b85d4fef48249bb9868371a98a",
+      "asset": "approach.npz",
+      "asset_sha256": "bef21afce1c2e4f6dc7732da63bd0e099d2c9d45175c1f2553598b1c32f3ebb4"
+    },
+    {
+      "start": "approach",
+      "phase": 1,
+      "kind": "return",
+      "status": "success",
+      "accepted": true,
+      "steps": 74,
+      "damage": 0,
+      "goal": {
+        "room": [
+          0,
+          0,
+          226
+        ],
+        "x": 36,
+        "y": 121
+      },
+      "teacher_switch_step": null,
+      "teacher_waypoints": [],
+      "teacher_tolerance": 3,
+      "initial_fingerprint": "e066d3ba1fd79d555ecb514966f7a8a0d52d84d174f5d35d545368e20d2d3a42",
+      "final_fingerprint": "73dc14eaa77ad179144ae335bfff1f2fd640e06240ade5a09e04bc6e6342d76b",
+      "final_state": {
+        "room": [
+          0,
+          0,
+          226
+        ],
+        "x": 34,
+        "y": 115,
+        "dialogue": false,
+        "sword": true,
+        "health": 8,
+        "a_item": 1,
+        "b_item": 4
+      },
+      "replay_verified": true,
+      "features_replay_verified": true,
+      "source_run": "/Users/studio/Developer/GameBoyAgent/runs/navigation-cliff-specialists-v1/candidate/room_loop-approach",
+      "source_result_sha256": "56150497b7084443cd3b429f0a87e967e10f15b85d4fef48249bb9868371a98a",
+      "asset": "return.npz",
+      "asset_sha256": "bda69274cd6463d98f01ec6dcf2b98257234972e721a6b9e353c563e5fc08ed7"
+    },
+    {
+      "start": "beach",
+      "phase": 0,
+      "kind": "approach",
+      "status": "success",
+      "accepted": true,
+      "steps": 159,
+      "damage": 0,
+      "goal": {
+        "room": [
+          0,
+          0,
+          226
+        ],
+        "x": 64,
+        "y": 64
+      },
+      "teacher_switch_step": null,
+      "teacher_waypoints": [],
+      "teacher_tolerance": 3,
+      "initial_fingerprint": "23a9ba3106cf5a563390b5b53dfb183bc36a1aab219f2fe1b50ae5957ef25480",
+      "final_fingerprint": "9baa2e9bdc656363accaec225271b72ca2973e6e2a716013f00c2ba3a02ff923",
+      "final_state": {
+        "room": [
+          0,
+          0,
+          226
+        ],
+        "x": 62,
+        "y": 61,
+        "dialogue": false,
+        "sword": true,
+        "health": 12,
+        "a_item": 1,
+        "b_item": 4
+      },
+      "replay_verified": true,
+      "features_replay_verified": true,
+      "source_run": "/Users/studio/Developer/GameBoyAgent/runs/navigation-cliff-specialists-v1/candidate/room_loop-beach",
+      "source_result_sha256": "15df466531bee70731bfa597c8f2f0616de8487734ddc50853cb251992f2b0ff",
+      "asset": "approach.npz",
+      "asset_sha256": "657ef37003e055387edeb3e5f6ebee3d267ef973e4ff4576297137fd5866b477"
+    },
+    {
+      "start": "beach",
+      "phase": 0,
+      "kind": "return",
+      "status": "success",
+      "accepted": true,
+      "steps": 83,
+      "damage": 0,
+      "goal": {
+        "room": [
+          0,
+          0,
+          226
+        ],
+        "x": 36,
+        "y": 121
+      },
+      "teacher_switch_step": null,
+      "teacher_waypoints": [],
+      "teacher_tolerance": 3,
+      "initial_fingerprint": "9baa2e9bdc656363accaec225271b72ca2973e6e2a716013f00c2ba3a02ff923",
+      "final_fingerprint": "b2e158b7d580ab0070d041129a90c85c47a2e846bf1755e903d53d3ca78c945d",
+      "final_state": {
+        "room": [
+          0,
+          0,
+          226
+        ],
+        "x": 34,
+        "y": 115,
+        "dialogue": false,
+        "sword": true,
+        "health": 12,
+        "a_item": 1,
+        "b_item": 4
+      },
+      "replay_verified": true,
+      "features_replay_verified": true,
+      "source_run": "/Users/studio/Developer/GameBoyAgent/runs/navigation-cliff-specialists-v1/candidate/room_loop-beach",
+      "source_result_sha256": "15df466531bee70731bfa597c8f2f0616de8487734ddc50853cb251992f2b0ff",
+      "asset": "return.npz",
+      "asset_sha256": "b58c7089eb43f08acbb890eb924ab2d41da78c23821bd1569efa604e26050930"
+    }
+  ],
+  "plan_sha256": "e63c7cfbce23f793e28f07362fbabd7fb5bb37ffbffdccf76045f1e55b1e89ea",
+  "runtime_waypoints_used": false,
+  "reserved_evaluation_used": false
+}

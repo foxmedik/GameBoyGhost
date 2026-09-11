@@ -1,0 +1,13 @@
+{
+  "status": "rejected_for_selection",
+  "plan": "runs/navigation-sword-v2/plan.json",
+  "plan_sha256": "5ed7319dc3f2f29a4ec667568c28308a9ecd083ad43cfcee72fc6e8b7521eb61",
+  "candidate_path": "runs/navigation-sword-v2/model/epoch-008.pt",
+  "candidate_sha256": "16836c30ed325faf36a6f05b58d08f9915792b47c41e4b15a643f88dd8d86cac",
+  "training_performed": true,
+  "selection_changed": false,
+  "movement_weights_exactly_preserved": true,
+  "result": "reports/navigation-sword-v2.json",
+  "audit": "reports/navigation-sword-v2-audit.json",
+  "reason": "Frozen movement verified, but only 0.5% fewer swings, one lost local success, three lost routes, and four raw route damage units."
+}

@@ -1,0 +1,1429 @@
+{
+  "results": [
+    {
+      "start": "house",
+      "lane": 126,
+      "kind": "approach",
+      "status": "success",
+      "accepted": true,
+      "steps": 99,
+      "damage": 0,
+      "goal": {
+        "room": [
+          0,
+          0,
+          226
+        ],
+        "x": 64,
+        "y": 64
+      },
+      "teacher_waypoints": [
+        {
+          "room": [
+            0,
+            0,
+            225
+          ],
+          "x": 135,
+          "y": 110
+        },
+        {
+          "room": [
+            0,
+            0,
+            225
+          ],
+          "x": 126,
+          "y": 95
+        },
+        {
+          "room": [
+            0,
+            0,
+            225
+          ],
+          "x": 126,
+          "y": 55
+        },
+        {
+          "room": [
+            0,
+            0,
+            226
+          ],
+          "x": 18,
+          "y": 64
+        }
+      ],
+      "teacher_tolerance": 3,
+      "initial_fingerprint": "68039945834e511b214eedbaf616e690d67dd38332493988f5d8c00c884bc3cb",
+      "final_fingerprint": "6577ff338e7158711705e701287b0b3c02f8d3a878b3bb0334975ac9842536a8",
+      "final_state": {
+        "room": [
+          0,
+          0,
+          226
+        ],
+        "x": 59,
+        "y": 62,
+        "dialogue": false,
+        "sword": true,
+        "health": 24,
+        "a_item": 1,
+        "b_item": 4
+      },
+      "replay_verified": true,
+      "features_replay_verified": true,
+      "source_run": "/Users/studio/Developer/GameBoyAgent/runs/navigation-routes-v7/candidate/room_loop-house",
+      "source_result_sha256": "d5f6213a9a382caf7f926a4b34647172a94a8cd5eb58f6c4904cfee7e1d988d3",
+      "asset": "approach.npz",
+      "asset_sha256": "836fcb8ae21fdcbe9b72ca35b4bba1e5070e6baa567a253775b2c3b5e56c4225"
+    },
+    {
+      "start": "house",
+      "lane": 126,
+      "kind": "return",
+      "status": "damage",
+      "accepted": false,
+      "steps": 1,
+      "damage": 2,
+      "goal": {
+        "room": [
+          0,
+          0,
+          226
+        ],
+        "x": 36,
+        "y": 121
+      },
+      "teacher_waypoints": [
+        {
+          "room": [
+            0,
+            0,
+            226
+          ],
+          "x": 18,
+          "y": 64
+        },
+        {
+          "room": [
+            0,
+            0,
+            225
+          ],
+          "x": 126,
+          "y": 55
+        },
+        {
+          "room": [
+            0,
+            0,
+            225
+          ],
+          "x": 126,
+          "y": 95
+        },
+        {
+          "room": [
+            0,
+            0,
+            225
+          ],
+          "x": 135,
+          "y": 110
+        }
+      ],
+      "teacher_tolerance": 3,
+      "initial_fingerprint": "6577ff338e7158711705e701287b0b3c02f8d3a878b3bb0334975ac9842536a8",
+      "final_fingerprint": "acd6d9d9f439e9e65725c03626acaef3a03a86a2a7cf475a1f158fd8675ea48e",
+      "final_state": {
+        "room": [
+          0,
+          0,
+          226
+        ],
+        "x": 48,
+        "y": 58,
+        "dialogue": false,
+        "sword": true,
+        "health": 22,
+        "a_item": 1,
+        "b_item": 4
+      },
+      "replay_verified": true,
+      "features_replay_verified": true,
+      "source_run": "/Users/studio/Developer/GameBoyAgent/runs/navigation-routes-v7/candidate/room_loop-house",
+      "source_result_sha256": "d5f6213a9a382caf7f926a4b34647172a94a8cd5eb58f6c4904cfee7e1d988d3",
+      "asset": null,
+      "asset_sha256": null
+    },
+    {
+      "start": "house",
+      "lane": 124,
+      "kind": "approach",
+      "status": "success",
+      "accepted": true,
+      "steps": 99,
+      "damage": 0,
+      "goal": {
+        "room": [
+          0,
+          0,
+          226
+        ],
+        "x": 64,
+        "y": 64
+      },
+      "teacher_waypoints": [
+        {
+          "room": [
+            0,
+            0,
+            225
+          ],
+          "x": 135,
+          "y": 110
+        },
+        {
+          "room": [
+            0,
+            0,
+            225
+          ],
+          "x": 124,
+          "y": 95
+        },
+        {
+          "room": [
+            0,
+            0,
+            225
+          ],
+          "x": 124,
+          "y": 55
+        },
+        {
+          "room": [
+            0,
+            0,
+            226
+          ],
+          "x": 18,
+          "y": 64
+        }
+      ],
+      "teacher_tolerance": 3,
+      "initial_fingerprint": "68039945834e511b214eedbaf616e690d67dd38332493988f5d8c00c884bc3cb",
+      "final_fingerprint": "6577ff338e7158711705e701287b0b3c02f8d3a878b3bb0334975ac9842536a8",
+      "final_state": {
+        "room": [
+          0,
+          0,
+          226
+        ],
+        "x": 59,
+        "y": 62,
+        "dialogue": false,
+        "sword": true,
+        "health": 24,
+        "a_item": 1,
+        "b_item": 4
+      },
+      "replay_verified": true,
+      "features_replay_verified": true,
+      "source_run": "/Users/studio/Developer/GameBoyAgent/runs/navigation-routes-v7/candidate/room_loop-house",
+      "source_result_sha256": "d5f6213a9a382caf7f926a4b34647172a94a8cd5eb58f6c4904cfee7e1d988d3",
+      "asset": "approach.npz",
+      "asset_sha256": "836fcb8ae21fdcbe9b72ca35b4bba1e5070e6baa567a253775b2c3b5e56c4225"
+    },
+    {
+      "start": "house",
+      "lane": 124,
+      "kind": "return",
+      "status": "damage",
+      "accepted": false,
+      "steps": 1,
+      "damage": 2,
+      "goal": {
+        "room": [
+          0,
+          0,
+          226
+        ],
+        "x": 36,
+        "y": 121
+      },
+      "teacher_waypoints": [
+        {
+          "room": [
+            0,
+            0,
+            226
+          ],
+          "x": 18,
+          "y": 64
+        },
+        {
+          "room": [
+            0,
+            0,
+            225
+          ],
+          "x": 124,
+          "y": 55
+        },
+        {
+          "room": [
+            0,
+            0,
+            225
+          ],
+          "x": 124,
+          "y": 95
+        },
+        {
+          "room": [
+            0,
+            0,
+            225
+          ],
+          "x": 135,
+          "y": 110
+        }
+      ],
+      "teacher_tolerance": 3,
+      "initial_fingerprint": "6577ff338e7158711705e701287b0b3c02f8d3a878b3bb0334975ac9842536a8",
+      "final_fingerprint": "acd6d9d9f439e9e65725c03626acaef3a03a86a2a7cf475a1f158fd8675ea48e",
+      "final_state": {
+        "room": [
+          0,
+          0,
+          226
+        ],
+        "x": 48,
+        "y": 58,
+        "dialogue": false,
+        "sword": true,
+        "health": 22,
+        "a_item": 1,
+        "b_item": 4
+      },
+      "replay_verified": true,
+      "features_replay_verified": true,
+      "source_run": "/Users/studio/Developer/GameBoyAgent/runs/navigation-routes-v7/candidate/room_loop-house",
+      "source_result_sha256": "d5f6213a9a382caf7f926a4b34647172a94a8cd5eb58f6c4904cfee7e1d988d3",
+      "asset": null,
+      "asset_sha256": null
+    },
+    {
+      "start": "house",
+      "lane": 122,
+      "kind": "approach",
+      "status": "success",
+      "accepted": true,
+      "steps": 103,
+      "damage": 0,
+      "goal": {
+        "room": [
+          0,
+          0,
+          226
+        ],
+        "x": 64,
+        "y": 64
+      },
+      "teacher_waypoints": [
+        {
+          "room": [
+            0,
+            0,
+            225
+          ],
+          "x": 135,
+          "y": 110
+        },
+        {
+          "room": [
+            0,
+            0,
+            225
+          ],
+          "x": 122,
+          "y": 95
+        },
+        {
+          "room": [
+            0,
+            0,
+            225
+          ],
+          "x": 122,
+          "y": 55
+        },
+        {
+          "room": [
+            0,
+            0,
+            226
+          ],
+          "x": 18,
+          "y": 64
+        }
+      ],
+      "teacher_tolerance": 3,
+      "initial_fingerprint": "68039945834e511b214eedbaf616e690d67dd38332493988f5d8c00c884bc3cb",
+      "final_fingerprint": "61761dd0e91db6f530dee84d706c31f958e67eedc8687351154333c284fbe559",
+      "final_state": {
+        "room": [
+          0,
+          0,
+          226
+        ],
+        "x": 62,
+        "y": 61,
+        "dialogue": false,
+        "sword": true,
+        "health": 24,
+        "a_item": 1,
+        "b_item": 4
+      },
+      "replay_verified": true,
+      "features_replay_verified": true,
+      "source_run": "/Users/studio/Developer/GameBoyAgent/runs/navigation-routes-v7/candidate/room_loop-house",
+      "source_result_sha256": "d5f6213a9a382caf7f926a4b34647172a94a8cd5eb58f6c4904cfee7e1d988d3",
+      "asset": "approach.npz",
+      "asset_sha256": "4d2cfcb53c07ab64fc7629096efbe37fc6636f9335060ab062c222ae53b5d8fe"
+    },
+    {
+      "start": "house",
+      "lane": 122,
+      "kind": "return",
+      "status": "timeout",
+      "accepted": false,
+      "steps": 256,
+      "damage": 0,
+      "goal": {
+        "room": [
+          0,
+          0,
+          226
+        ],
+        "x": 36,
+        "y": 121
+      },
+      "teacher_waypoints": [
+        {
+          "room": [
+            0,
+            0,
+            226
+          ],
+          "x": 18,
+          "y": 64
+        },
+        {
+          "room": [
+            0,
+            0,
+            225
+          ],
+          "x": 122,
+          "y": 55
+        },
+        {
+          "room": [
+            0,
+            0,
+            225
+          ],
+          "x": 122,
+          "y": 95
+        },
+        {
+          "room": [
+            0,
+            0,
+            225
+          ],
+          "x": 135,
+          "y": 110
+        }
+      ],
+      "teacher_tolerance": 3,
+      "initial_fingerprint": "61761dd0e91db6f530dee84d706c31f958e67eedc8687351154333c284fbe559",
+      "final_fingerprint": "65b0a457a9fd66985d081465b88626d27a40d9990e4e536f15d1d6bea786fb79",
+      "final_state": {
+        "room": [
+          0,
+          0,
+          226
+        ],
+        "x": 29,
+        "y": 112,
+        "dialogue": false,
+        "sword": true,
+        "health": 24,
+        "a_item": 1,
+        "b_item": 4
+      },
+      "replay_verified": true,
+      "features_replay_verified": true,
+      "source_run": "/Users/studio/Developer/GameBoyAgent/runs/navigation-routes-v7/candidate/room_loop-house",
+      "source_result_sha256": "d5f6213a9a382caf7f926a4b34647172a94a8cd5eb58f6c4904cfee7e1d988d3",
+      "asset": null,
+      "asset_sha256": null
+    },
+    {
+      "start": "beach",
+      "lane": 126,
+      "kind": "approach",
+      "status": "success",
+      "accepted": true,
+      "steps": 99,
+      "damage": 0,
+      "goal": {
+        "room": [
+          0,
+          0,
+          226
+        ],
+        "x": 64,
+        "y": 64
+      },
+      "teacher_waypoints": [
+        {
+          "room": [
+            0,
+            0,
+            225
+          ],
+          "x": 135,
+          "y": 110
+        },
+        {
+          "room": [
+            0,
+            0,
+            225
+          ],
+          "x": 126,
+          "y": 95
+        },
+        {
+          "room": [
+            0,
+            0,
+            225
+          ],
+          "x": 126,
+          "y": 55
+        },
+        {
+          "room": [
+            0,
+            0,
+            226
+          ],
+          "x": 18,
+          "y": 64
+        }
+      ],
+      "teacher_tolerance": 3,
+      "initial_fingerprint": "23a9ba3106cf5a563390b5b53dfb183bc36a1aab219f2fe1b50ae5957ef25480",
+      "final_fingerprint": "bba3ca5e3f16b67d15c56bfea25c0ad8a896ab9ef07ce69127b81898bb6afe53",
+      "final_state": {
+        "room": [
+          0,
+          0,
+          226
+        ],
+        "x": 59,
+        "y": 62,
+        "dialogue": false,
+        "sword": true,
+        "health": 12,
+        "a_item": 1,
+        "b_item": 4
+      },
+      "replay_verified": true,
+      "features_replay_verified": true,
+      "source_run": "/Users/studio/Developer/GameBoyAgent/runs/navigation-routes-v7/candidate/room_loop-beach",
+      "source_result_sha256": "08b0305a4fbb836d434f24d55ad50095f79b65ec020cdbd3d1a03e4ee1054201",
+      "asset": "approach.npz",
+      "asset_sha256": "27d97b95bb2504ce9d8fde8a924c8a4ce188412e83b5b5827107c86dc2221685"
+    },
+    {
+      "start": "beach",
+      "lane": 126,
+      "kind": "return",
+      "status": "damage",
+      "accepted": false,
+      "steps": 6,
+      "damage": 1,
+      "goal": {
+        "room": [
+          0,
+          0,
+          226
+        ],
+        "x": 36,
+        "y": 121
+      },
+      "teacher_waypoints": [
+        {
+          "room": [
+            0,
+            0,
+            226
+          ],
+          "x": 18,
+          "y": 64
+        },
+        {
+          "room": [
+            0,
+            0,
+            225
+          ],
+          "x": 126,
+          "y": 55
+        },
+        {
+          "room": [
+            0,
+            0,
+            225
+          ],
+          "x": 126,
+          "y": 95
+        },
+        {
+          "room": [
+            0,
+            0,
+            225
+          ],
+          "x": 135,
+          "y": 110
+        }
+      ],
+      "teacher_tolerance": 3,
+      "initial_fingerprint": "bba3ca5e3f16b67d15c56bfea25c0ad8a896ab9ef07ce69127b81898bb6afe53",
+      "final_fingerprint": "f1f666a91c7bfc5b69e1b2e287945d301fa8f82448f06223cdec62edaa317a25",
+      "final_state": {
+        "room": [
+          0,
+          0,
+          226
+        ],
+        "x": 34,
+        "y": 59,
+        "dialogue": false,
+        "sword": true,
+        "health": 11,
+        "a_item": 1,
+        "b_item": 4
+      },
+      "replay_verified": true,
+      "features_replay_verified": true,
+      "source_run": "/Users/studio/Developer/GameBoyAgent/runs/navigation-routes-v7/candidate/room_loop-beach",
+      "source_result_sha256": "08b0305a4fbb836d434f24d55ad50095f79b65ec020cdbd3d1a03e4ee1054201",
+      "asset": null,
+      "asset_sha256": null
+    },
+    {
+      "start": "beach",
+      "lane": 124,
+      "kind": "approach",
+      "status": "success",
+      "accepted": true,
+      "steps": 99,
+      "damage": 0,
+      "goal": {
+        "room": [
+          0,
+          0,
+          226
+        ],
+        "x": 64,
+        "y": 64
+      },
+      "teacher_waypoints": [
+        {
+          "room": [
+            0,
+            0,
+            225
+          ],
+          "x": 135,
+          "y": 110
+        },
+        {
+          "room": [
+            0,
+            0,
+            225
+          ],
+          "x": 124,
+          "y": 95
+        },
+        {
+          "room": [
+            0,
+            0,
+            225
+          ],
+          "x": 124,
+          "y": 55
+        },
+        {
+          "room": [
+            0,
+            0,
+            226
+          ],
+          "x": 18,
+          "y": 64
+        }
+      ],
+      "teacher_tolerance": 3,
+      "initial_fingerprint": "23a9ba3106cf5a563390b5b53dfb183bc36a1aab219f2fe1b50ae5957ef25480",
+      "final_fingerprint": "bba3ca5e3f16b67d15c56bfea25c0ad8a896ab9ef07ce69127b81898bb6afe53",
+      "final_state": {
+        "room": [
+          0,
+          0,
+          226
+        ],
+        "x": 59,
+        "y": 62,
+        "dialogue": false,
+        "sword": true,
+        "health": 12,
+        "a_item": 1,
+        "b_item": 4
+      },
+      "replay_verified": true,
+      "features_replay_verified": true,
+      "source_run": "/Users/studio/Developer/GameBoyAgent/runs/navigation-routes-v7/candidate/room_loop-beach",
+      "source_result_sha256": "08b0305a4fbb836d434f24d55ad50095f79b65ec020cdbd3d1a03e4ee1054201",
+      "asset": "approach.npz",
+      "asset_sha256": "27d97b95bb2504ce9d8fde8a924c8a4ce188412e83b5b5827107c86dc2221685"
+    },
+    {
+      "start": "beach",
+      "lane": 124,
+      "kind": "return",
+      "status": "damage",
+      "accepted": false,
+      "steps": 6,
+      "damage": 1,
+      "goal": {
+        "room": [
+          0,
+          0,
+          226
+        ],
+        "x": 36,
+        "y": 121
+      },
+      "teacher_waypoints": [
+        {
+          "room": [
+            0,
+            0,
+            226
+          ],
+          "x": 18,
+          "y": 64
+        },
+        {
+          "room": [
+            0,
+            0,
+            225
+          ],
+          "x": 124,
+          "y": 55
+        },
+        {
+          "room": [
+            0,
+            0,
+            225
+          ],
+          "x": 124,
+          "y": 95
+        },
+        {
+          "room": [
+            0,
+            0,
+            225
+          ],
+          "x": 135,
+          "y": 110
+        }
+      ],
+      "teacher_tolerance": 3,
+      "initial_fingerprint": "bba3ca5e3f16b67d15c56bfea25c0ad8a896ab9ef07ce69127b81898bb6afe53",
+      "final_fingerprint": "f1f666a91c7bfc5b69e1b2e287945d301fa8f82448f06223cdec62edaa317a25",
+      "final_state": {
+        "room": [
+          0,
+          0,
+          226
+        ],
+        "x": 34,
+        "y": 59,
+        "dialogue": false,
+        "sword": true,
+        "health": 11,
+        "a_item": 1,
+        "b_item": 4
+      },
+      "replay_verified": true,
+      "features_replay_verified": true,
+      "source_run": "/Users/studio/Developer/GameBoyAgent/runs/navigation-routes-v7/candidate/room_loop-beach",
+      "source_result_sha256": "08b0305a4fbb836d434f24d55ad50095f79b65ec020cdbd3d1a03e4ee1054201",
+      "asset": null,
+      "asset_sha256": null
+    },
+    {
+      "start": "beach",
+      "lane": 122,
+      "kind": "approach",
+      "status": "success",
+      "accepted": true,
+      "steps": 103,
+      "damage": 0,
+      "goal": {
+        "room": [
+          0,
+          0,
+          226
+        ],
+        "x": 64,
+        "y": 64
+      },
+      "teacher_waypoints": [
+        {
+          "room": [
+            0,
+            0,
+            225
+          ],
+          "x": 135,
+          "y": 110
+        },
+        {
+          "room": [
+            0,
+            0,
+            225
+          ],
+          "x": 122,
+          "y": 95
+        },
+        {
+          "room": [
+            0,
+            0,
+            225
+          ],
+          "x": 122,
+          "y": 55
+        },
+        {
+          "room": [
+            0,
+            0,
+            226
+          ],
+          "x": 18,
+          "y": 64
+        }
+      ],
+      "teacher_tolerance": 3,
+      "initial_fingerprint": "23a9ba3106cf5a563390b5b53dfb183bc36a1aab219f2fe1b50ae5957ef25480",
+      "final_fingerprint": "b3f3ee0c7b397c46d61e5e36c2002e86530d3845c322a65c9cb3340f1d1d3ac4",
+      "final_state": {
+        "room": [
+          0,
+          0,
+          226
+        ],
+        "x": 62,
+        "y": 61,
+        "dialogue": false,
+        "sword": true,
+        "health": 12,
+        "a_item": 1,
+        "b_item": 4
+      },
+      "replay_verified": true,
+      "features_replay_verified": true,
+      "source_run": "/Users/studio/Developer/GameBoyAgent/runs/navigation-routes-v7/candidate/room_loop-beach",
+      "source_result_sha256": "08b0305a4fbb836d434f24d55ad50095f79b65ec020cdbd3d1a03e4ee1054201",
+      "asset": "approach.npz",
+      "asset_sha256": "48abd3c41032964563529a4558ae8c1f6f1fc1536b0f5844775d4f8c75bcef25"
+    },
+    {
+      "start": "beach",
+      "lane": 122,
+      "kind": "return",
+      "status": "timeout",
+      "accepted": false,
+      "steps": 256,
+      "damage": 0,
+      "goal": {
+        "room": [
+          0,
+          0,
+          226
+        ],
+        "x": 36,
+        "y": 121
+      },
+      "teacher_waypoints": [
+        {
+          "room": [
+            0,
+            0,
+            226
+          ],
+          "x": 18,
+          "y": 64
+        },
+        {
+          "room": [
+            0,
+            0,
+            225
+          ],
+          "x": 122,
+          "y": 55
+        },
+        {
+          "room": [
+            0,
+            0,
+            225
+          ],
+          "x": 122,
+          "y": 95
+        },
+        {
+          "room": [
+            0,
+            0,
+            225
+          ],
+          "x": 135,
+          "y": 110
+        }
+      ],
+      "teacher_tolerance": 3,
+      "initial_fingerprint": "b3f3ee0c7b397c46d61e5e36c2002e86530d3845c322a65c9cb3340f1d1d3ac4",
+      "final_fingerprint": "07a329a70c2f124d061c35e8e60679096b0c2ee63291c0c60823af45f3e8729a",
+      "final_state": {
+        "room": [
+          0,
+          0,
+          226
+        ],
+        "x": 29,
+        "y": 112,
+        "dialogue": false,
+        "sword": true,
+        "health": 12,
+        "a_item": 1,
+        "b_item": 4
+      },
+      "replay_verified": true,
+      "features_replay_verified": true,
+      "source_run": "/Users/studio/Developer/GameBoyAgent/runs/navigation-routes-v7/candidate/room_loop-beach",
+      "source_result_sha256": "08b0305a4fbb836d434f24d55ad50095f79b65ec020cdbd3d1a03e4ee1054201",
+      "asset": null,
+      "asset_sha256": null
+    },
+    {
+      "start": "approach",
+      "lane": 126,
+      "kind": "approach",
+      "status": "success",
+      "accepted": true,
+      "steps": 102,
+      "damage": 0,
+      "goal": {
+        "room": [
+          0,
+          0,
+          226
+        ],
+        "x": 64,
+        "y": 64
+      },
+      "teacher_waypoints": [
+        {
+          "room": [
+            0,
+            0,
+            225
+          ],
+          "x": 135,
+          "y": 110
+        },
+        {
+          "room": [
+            0,
+            0,
+            225
+          ],
+          "x": 126,
+          "y": 95
+        },
+        {
+          "room": [
+            0,
+            0,
+            225
+          ],
+          "x": 126,
+          "y": 55
+        },
+        {
+          "room": [
+            0,
+            0,
+            226
+          ],
+          "x": 18,
+          "y": 64
+        }
+      ],
+      "teacher_tolerance": 3,
+      "initial_fingerprint": "6fd82da162e93ee286a86af70e4b58c5daa4b83182ce760de225fda4d6e6a256",
+      "final_fingerprint": "51548e678e73d64036399646b71e1545bf6407db1d6a429aaa9d6eac93c0ab38",
+      "final_state": {
+        "room": [
+          0,
+          0,
+          226
+        ],
+        "x": 59,
+        "y": 61,
+        "dialogue": false,
+        "sword": true,
+        "health": 8,
+        "a_item": 1,
+        "b_item": 4
+      },
+      "replay_verified": true,
+      "features_replay_verified": true,
+      "source_run": "/Users/studio/Developer/GameBoyAgent/runs/navigation-routes-v7/candidate/room_loop-approach",
+      "source_result_sha256": "de6cf9fc87b97a6a7c2296d1b0b31f54e4affdf62843bf5296caad724a166014",
+      "asset": "approach.npz",
+      "asset_sha256": "eb6c444774de9d8f67eb4f33cbee0e4c2fddf133c9e60bbe019c4983e15b527b"
+    },
+    {
+      "start": "approach",
+      "lane": 126,
+      "kind": "return",
+      "status": "timeout",
+      "accepted": false,
+      "steps": 256,
+      "damage": 0,
+      "goal": {
+        "room": [
+          0,
+          0,
+          226
+        ],
+        "x": 36,
+        "y": 121
+      },
+      "teacher_waypoints": [
+        {
+          "room": [
+            0,
+            0,
+            226
+          ],
+          "x": 18,
+          "y": 64
+        },
+        {
+          "room": [
+            0,
+            0,
+            225
+          ],
+          "x": 126,
+          "y": 55
+        },
+        {
+          "room": [
+            0,
+            0,
+            225
+          ],
+          "x": 126,
+          "y": 95
+        },
+        {
+          "room": [
+            0,
+            0,
+            225
+          ],
+          "x": 135,
+          "y": 110
+        }
+      ],
+      "teacher_tolerance": 3,
+      "initial_fingerprint": "51548e678e73d64036399646b71e1545bf6407db1d6a429aaa9d6eac93c0ab38",
+      "final_fingerprint": "ab9aacfc18be3f44cdc04d2fef130e44fdb80e629f58f3003249201a06c29a62",
+      "final_state": {
+        "room": [
+          0,
+          0,
+          226
+        ],
+        "x": 29,
+        "y": 112,
+        "dialogue": false,
+        "sword": true,
+        "health": 8,
+        "a_item": 1,
+        "b_item": 4
+      },
+      "replay_verified": true,
+      "features_replay_verified": true,
+      "source_run": "/Users/studio/Developer/GameBoyAgent/runs/navigation-routes-v7/candidate/room_loop-approach",
+      "source_result_sha256": "de6cf9fc87b97a6a7c2296d1b0b31f54e4affdf62843bf5296caad724a166014",
+      "asset": null,
+      "asset_sha256": null
+    },
+    {
+      "start": "approach",
+      "lane": 124,
+      "kind": "approach",
+      "status": "success",
+      "accepted": true,
+      "steps": 101,
+      "damage": 0,
+      "goal": {
+        "room": [
+          0,
+          0,
+          226
+        ],
+        "x": 64,
+        "y": 64
+      },
+      "teacher_waypoints": [
+        {
+          "room": [
+            0,
+            0,
+            225
+          ],
+          "x": 135,
+          "y": 110
+        },
+        {
+          "room": [
+            0,
+            0,
+            225
+          ],
+          "x": 124,
+          "y": 95
+        },
+        {
+          "room": [
+            0,
+            0,
+            225
+          ],
+          "x": 124,
+          "y": 55
+        },
+        {
+          "room": [
+            0,
+            0,
+            226
+          ],
+          "x": 18,
+          "y": 64
+        }
+      ],
+      "teacher_tolerance": 3,
+      "initial_fingerprint": "6fd82da162e93ee286a86af70e4b58c5daa4b83182ce760de225fda4d6e6a256",
+      "final_fingerprint": "1444a91bd63dc1ea8b83d8a584806476d9e44909d02820d863b9d85a5d6d94a2",
+      "final_state": {
+        "room": [
+          0,
+          0,
+          226
+        ],
+        "x": 56,
+        "y": 64,
+        "dialogue": false,
+        "sword": true,
+        "health": 8,
+        "a_item": 1,
+        "b_item": 4
+      },
+      "replay_verified": true,
+      "features_replay_verified": true,
+      "source_run": "/Users/studio/Developer/GameBoyAgent/runs/navigation-routes-v7/candidate/room_loop-approach",
+      "source_result_sha256": "de6cf9fc87b97a6a7c2296d1b0b31f54e4affdf62843bf5296caad724a166014",
+      "asset": "approach.npz",
+      "asset_sha256": "db19aae1d8272ff953bb4158ffd14cb02f5b7eb25e437cc3f338a725f357c161"
+    },
+    {
+      "start": "approach",
+      "lane": 124,
+      "kind": "return",
+      "status": "success",
+      "accepted": true,
+      "steps": 78,
+      "damage": 0,
+      "goal": {
+        "room": [
+          0,
+          0,
+          226
+        ],
+        "x": 36,
+        "y": 121
+      },
+      "teacher_waypoints": [
+        {
+          "room": [
+            0,
+            0,
+            226
+          ],
+          "x": 18,
+          "y": 64
+        },
+        {
+          "room": [
+            0,
+            0,
+            225
+          ],
+          "x": 124,
+          "y": 55
+        },
+        {
+          "room": [
+            0,
+            0,
+            225
+          ],
+          "x": 124,
+          "y": 95
+        },
+        {
+          "room": [
+            0,
+            0,
+            225
+          ],
+          "x": 135,
+          "y": 110
+        }
+      ],
+      "teacher_tolerance": 3,
+      "initial_fingerprint": "1444a91bd63dc1ea8b83d8a584806476d9e44909d02820d863b9d85a5d6d94a2",
+      "final_fingerprint": "0348cb6379c670b071629d6e567e24300674e06a8095b43257592613e907a43f",
+      "final_state": {
+        "room": [
+          0,
+          0,
+          226
+        ],
+        "x": 34,
+        "y": 115,
+        "dialogue": false,
+        "sword": true,
+        "health": 8,
+        "a_item": 1,
+        "b_item": 4
+      },
+      "replay_verified": true,
+      "features_replay_verified": true,
+      "source_run": "/Users/studio/Developer/GameBoyAgent/runs/navigation-routes-v7/candidate/room_loop-approach",
+      "source_result_sha256": "de6cf9fc87b97a6a7c2296d1b0b31f54e4affdf62843bf5296caad724a166014",
+      "asset": "return.npz",
+      "asset_sha256": "12ee2a0cdce6f978d6807d1b8567b067a4fb7cec1e4996ab7ee4677d2a679691"
+    },
+    {
+      "start": "approach",
+      "lane": 122,
+      "kind": "approach",
+      "status": "success",
+      "accepted": true,
+      "steps": 102,
+      "damage": 0,
+      "goal": {
+        "room": [
+          0,
+          0,
+          226
+        ],
+        "x": 64,
+        "y": 64
+      },
+      "teacher_waypoints": [
+        {
+          "room": [
+            0,
+            0,
+            225
+          ],
+          "x": 135,
+          "y": 110
+        },
+        {
+          "room": [
+            0,
+            0,
+            225
+          ],
+          "x": 122,
+          "y": 95
+        },
+        {
+          "room": [
+            0,
+            0,
+            225
+          ],
+          "x": 122,
+          "y": 55
+        },
+        {
+          "room": [
+            0,
+            0,
+            226
+          ],
+          "x": 18,
+          "y": 64
+        }
+      ],
+      "teacher_tolerance": 3,
+      "initial_fingerprint": "6fd82da162e93ee286a86af70e4b58c5daa4b83182ce760de225fda4d6e6a256",
+      "final_fingerprint": "71f9c6fb15223cab4d8735213460934677b7cb9eefa61b132f67a7584039c3d9",
+      "final_state": {
+        "room": [
+          0,
+          0,
+          226
+        ],
+        "x": 57,
+        "y": 63,
+        "dialogue": false,
+        "sword": true,
+        "health": 8,
+        "a_item": 1,
+        "b_item": 4
+      },
+      "replay_verified": true,
+      "features_replay_verified": true,
+      "source_run": "/Users/studio/Developer/GameBoyAgent/runs/navigation-routes-v7/candidate/room_loop-approach",
+      "source_result_sha256": "de6cf9fc87b97a6a7c2296d1b0b31f54e4affdf62843bf5296caad724a166014",
+      "asset": "approach.npz",
+      "asset_sha256": "d0654d0036e04e240a499dfd604f8f4dead05979eca8e63b8f8ee1955e326ea3"
+    },
+    {
+      "start": "approach",
+      "lane": 122,
+      "kind": "return",
+      "status": "timeout",
+      "accepted": false,
+      "steps": 256,
+      "damage": 0,
+      "goal": {
+        "room": [
+          0,
+          0,
+          226
+        ],
+        "x": 36,
+        "y": 121
+      },
+      "teacher_waypoints": [
+        {
+          "room": [
+            0,
+            0,
+            226
+          ],
+          "x": 18,
+          "y": 64
+        },
+        {
+          "room": [
+            0,
+            0,
+            225
+          ],
+          "x": 122,
+          "y": 55
+        },
+        {
+          "room": [
+            0,
+            0,
+            225
+          ],
+          "x": 122,
+          "y": 95
+        },
+        {
+          "room": [
+            0,
+            0,
+            225
+          ],
+          "x": 135,
+          "y": 110
+        }
+      ],
+      "teacher_tolerance": 3,
+      "initial_fingerprint": "71f9c6fb15223cab4d8735213460934677b7cb9eefa61b132f67a7584039c3d9",
+      "final_fingerprint": "1e80ed904453c7b8adde0a4d35b6467268f7211518a23cb4d3880148327f269f",
+      "final_state": {
+        "room": [
+          0,
+          0,
+          226
+        ],
+        "x": 28,
+        "y": 112,
+        "dialogue": false,
+        "sword": true,
+        "health": 8,
+        "a_item": 1,
+        "b_item": 4
+      },
+      "replay_verified": true,
+      "features_replay_verified": true,
+      "source_run": "/Users/studio/Developer/GameBoyAgent/runs/navigation-routes-v7/candidate/room_loop-approach",
+      "source_result_sha256": "de6cf9fc87b97a6a7c2296d1b0b31f54e4affdf62843bf5296caad724a166014",
+      "asset": null,
+      "asset_sha256": null
+    }
+  ],
+  "plan_sha256": "d49d80643c8827a4ebaf3e5421e429d3f58828edd4d2ee904cde538439b4d7d9",
+  "runtime_waypoints_used": false,
+  "reserved_evaluation_used": false
+}

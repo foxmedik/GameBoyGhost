@@ -1,0 +1,1079 @@
+{
+  "summary": {
+    "approach": {
+      "paths": 5,
+      "rows": 956,
+      "models": {
+        "v7": {
+          "movement_accuracy": 0.4194560669456067,
+          "button_accuracy": 0.9822175732217573,
+          "matching_first_movements": 2
+        },
+        "v8": {
+          "movement_accuracy": 0.5962343096234309,
+          "button_accuracy": 0.9843096234309623,
+          "matching_first_movements": 3
+        }
+      }
+    },
+    "return": {
+      "paths": 15,
+      "rows": 1597,
+      "models": {
+        "v7": {
+          "movement_accuracy": 0.3544145272385723,
+          "button_accuracy": 0.9217282404508453,
+          "matching_first_movements": 5
+        },
+        "v8": {
+          "movement_accuracy": 0.73888541014402,
+          "button_accuracy": 0.9705698184095178,
+          "matching_first_movements": 2
+        }
+      }
+    }
+  },
+  "paths": [
+    {
+      "path": "runs/navigation-routes-v8/data/cliff-return_west-approach-0/success-0.npz",
+      "sha256": "dfd2ede274fc29c39aacc89d0a3e2ebfefc488636a311a04ec1d0040ec1c694e",
+      "kind": "return",
+      "rows": 100,
+      "goal": {
+        "room": [
+          0,
+          0,
+          226
+        ],
+        "x": 36,
+        "y": 121
+      },
+      "first_teacher_action": [
+        1,
+        0
+      ],
+      "stats": {
+        "v7": {
+          "movement_correct": 32,
+          "button_correct": 92,
+          "first_movement_disagreement": 0,
+          "first_action": [
+            2,
+            1
+          ],
+          "first_four_movement_matches": [
+            false,
+            false,
+            false,
+            false
+          ]
+        },
+        "v8": {
+          "movement_correct": 83,
+          "button_correct": 95,
+          "first_movement_disagreement": 0,
+          "first_action": [
+            2,
+            1
+          ],
+          "first_four_movement_matches": [
+            false,
+            true,
+            true,
+            true
+          ]
+        }
+      }
+    },
+    {
+      "path": "runs/navigation-routes-v8/data/cliff-return_west-approach-0/success-1.npz",
+      "sha256": "7dd32ca13b9ba57aada99987b6baf531e28794d76f5d633eb6c36676b36571da",
+      "kind": "return",
+      "rows": 87,
+      "goal": {
+        "room": [
+          0,
+          0,
+          226
+        ],
+        "x": 36,
+        "y": 121
+      },
+      "first_teacher_action": [
+        2,
+        0
+      ],
+      "stats": {
+        "v7": {
+          "movement_correct": 35,
+          "button_correct": 83,
+          "first_movement_disagreement": 2,
+          "first_action": [
+            2,
+            1
+          ],
+          "first_four_movement_matches": [
+            true,
+            true,
+            false,
+            false
+          ]
+        },
+        "v8": {
+          "movement_correct": 70,
+          "button_correct": 84,
+          "first_movement_disagreement": 17,
+          "first_action": [
+            2,
+            1
+          ],
+          "first_four_movement_matches": [
+            true,
+            true,
+            true,
+            true
+          ]
+        }
+      }
+    },
+    {
+      "path": "runs/navigation-routes-v8/data/cliff-return_west-approach-0/success-2.npz",
+      "sha256": "f63846ddd43e7bc80af57a47e9d3fc05812710d2e8742edb18ab6953143012c4",
+      "kind": "return",
+      "rows": 139,
+      "goal": {
+        "room": [
+          0,
+          0,
+          226
+        ],
+        "x": 36,
+        "y": 121
+      },
+      "first_teacher_action": [
+        1,
+        0
+      ],
+      "stats": {
+        "v7": {
+          "movement_correct": 50,
+          "button_correct": 129,
+          "first_movement_disagreement": 0,
+          "first_action": [
+            2,
+            1
+          ],
+          "first_four_movement_matches": [
+            false,
+            false,
+            false,
+            false
+          ]
+        },
+        "v8": {
+          "movement_correct": 92,
+          "button_correct": 135,
+          "first_movement_disagreement": 0,
+          "first_action": [
+            2,
+            1
+          ],
+          "first_four_movement_matches": [
+            false,
+            false,
+            false,
+            true
+          ]
+        }
+      }
+    },
+    {
+      "path": "runs/navigation-routes-v8/data/cliff-return_west-beach-0/success-0.npz",
+      "sha256": "5b6eec8b89a15d7cca9a0c37347e0229fc8371cf5b98e9de4e17e13ffce9be62",
+      "kind": "return",
+      "rows": 102,
+      "goal": {
+        "room": [
+          0,
+          0,
+          226
+        ],
+        "x": 36,
+        "y": 121
+      },
+      "first_teacher_action": [
+        1,
+        0
+      ],
+      "stats": {
+        "v7": {
+          "movement_correct": 31,
+          "button_correct": 84,
+          "first_movement_disagreement": 0,
+          "first_action": [
+            2,
+            1
+          ],
+          "first_four_movement_matches": [
+            false,
+            false,
+            false,
+            false
+          ]
+        },
+        "v8": {
+          "movement_correct": 78,
+          "button_correct": 94,
+          "first_movement_disagreement": 0,
+          "first_action": [
+            2,
+            1
+          ],
+          "first_four_movement_matches": [
+            false,
+            false,
+            true,
+            true
+          ]
+        }
+      }
+    },
+    {
+      "path": "runs/navigation-routes-v8/data/cliff-return_west-beach-0/success-1.npz",
+      "sha256": "5234de064958ee4c0008e68ac7ec63dc84fb977312ad8227ce305cb5552f8373",
+      "kind": "return",
+      "rows": 86,
+      "goal": {
+        "room": [
+          0,
+          0,
+          226
+        ],
+        "x": 36,
+        "y": 121
+      },
+      "first_teacher_action": [
+        2,
+        0
+      ],
+      "stats": {
+        "v7": {
+          "movement_correct": 36,
+          "button_correct": 75,
+          "first_movement_disagreement": 2,
+          "first_action": [
+            2,
+            1
+          ],
+          "first_four_movement_matches": [
+            true,
+            true,
+            false,
+            false
+          ]
+        },
+        "v8": {
+          "movement_correct": 72,
+          "button_correct": 82,
+          "first_movement_disagreement": 13,
+          "first_action": [
+            2,
+            1
+          ],
+          "first_four_movement_matches": [
+            true,
+            true,
+            true,
+            true
+          ]
+        }
+      }
+    },
+    {
+      "path": "runs/navigation-routes-v8/data/cliff-return_west-beach-0/success-2.npz",
+      "sha256": "f306bb15bfc01c325e65bd21d0d3b4166a66519af64e0e8e8dde12aae1ea82e7",
+      "kind": "return",
+      "rows": 136,
+      "goal": {
+        "room": [
+          0,
+          0,
+          226
+        ],
+        "x": 36,
+        "y": 121
+      },
+      "first_teacher_action": [
+        1,
+        0
+      ],
+      "stats": {
+        "v7": {
+          "movement_correct": 47,
+          "button_correct": 123,
+          "first_movement_disagreement": 0,
+          "first_action": [
+            2,
+            1
+          ],
+          "first_four_movement_matches": [
+            false,
+            false,
+            false,
+            false
+          ]
+        },
+        "v8": {
+          "movement_correct": 88,
+          "button_correct": 133,
+          "first_movement_disagreement": 0,
+          "first_action": [
+            2,
+            1
+          ],
+          "first_four_movement_matches": [
+            false,
+            true,
+            true,
+            true
+          ]
+        }
+      }
+    },
+    {
+      "path": "runs/navigation-routes-v8/data/cliff-return_west-beach-1/success-0.npz",
+      "sha256": "e6f2853e21bc123dd2bdf31f2afff19f5a0111fccb55cd599849e507d5f34043",
+      "kind": "return",
+      "rows": 96,
+      "goal": {
+        "room": [
+          0,
+          0,
+          226
+        ],
+        "x": 36,
+        "y": 121
+      },
+      "first_teacher_action": [
+        1,
+        0
+      ],
+      "stats": {
+        "v7": {
+          "movement_correct": 28,
+          "button_correct": 92,
+          "first_movement_disagreement": 0,
+          "first_action": [
+            2,
+            0
+          ],
+          "first_four_movement_matches": [
+            false,
+            false,
+            false,
+            false
+          ]
+        },
+        "v8": {
+          "movement_correct": 76,
+          "button_correct": 93,
+          "first_movement_disagreement": 0,
+          "first_action": [
+            3,
+            0
+          ],
+          "first_four_movement_matches": [
+            false,
+            true,
+            true,
+            true
+          ]
+        }
+      }
+    },
+    {
+      "path": "runs/navigation-routes-v8/data/cliff-return_west-beach-1/success-1.npz",
+      "sha256": "460ccaa77e57faf9a1d755805349b5f6668ca1c8f80568456538d4c4f52d8d32",
+      "kind": "return",
+      "rows": 87,
+      "goal": {
+        "room": [
+          0,
+          0,
+          226
+        ],
+        "x": 36,
+        "y": 121
+      },
+      "first_teacher_action": [
+        2,
+        0
+      ],
+      "stats": {
+        "v7": {
+          "movement_correct": 38,
+          "button_correct": 84,
+          "first_movement_disagreement": 2,
+          "first_action": [
+            2,
+            0
+          ],
+          "first_four_movement_matches": [
+            true,
+            true,
+            false,
+            false
+          ]
+        },
+        "v8": {
+          "movement_correct": 70,
+          "button_correct": 85,
+          "first_movement_disagreement": 0,
+          "first_action": [
+            3,
+            0
+          ],
+          "first_four_movement_matches": [
+            false,
+            true,
+            true,
+            true
+          ]
+        }
+      }
+    },
+    {
+      "path": "runs/navigation-routes-v8/data/cliff-return_west-beach-1/success-2.npz",
+      "sha256": "653a93ec678c61ce47b1a4aa6584eff7098909f2ccd2f26d09dea41fdeb20bd2",
+      "kind": "return",
+      "rows": 136,
+      "goal": {
+        "room": [
+          0,
+          0,
+          226
+        ],
+        "x": 36,
+        "y": 121
+      },
+      "first_teacher_action": [
+        1,
+        0
+      ],
+      "stats": {
+        "v7": {
+          "movement_correct": 51,
+          "button_correct": 131,
+          "first_movement_disagreement": 0,
+          "first_action": [
+            2,
+            0
+          ],
+          "first_four_movement_matches": [
+            false,
+            false,
+            false,
+            false
+          ]
+        },
+        "v8": {
+          "movement_correct": 89,
+          "button_correct": 134,
+          "first_movement_disagreement": 0,
+          "first_action": [
+            3,
+            0
+          ],
+          "first_four_movement_matches": [
+            false,
+            false,
+            false,
+            true
+          ]
+        }
+      }
+    },
+    {
+      "path": "runs/navigation-routes-v8/data/cliff-return_west-house-0/success-0.npz",
+      "sha256": "2ff4f534f28dcfb37ca7f6a14f26b669712781bc380a517cf7d4b5329a7f0f73",
+      "kind": "return",
+      "rows": 96,
+      "goal": {
+        "room": [
+          0,
+          0,
+          226
+        ],
+        "x": 36,
+        "y": 121
+      },
+      "first_teacher_action": [
+        1,
+        0
+      ],
+      "stats": {
+        "v7": {
+          "movement_correct": 28,
+          "button_correct": 86,
+          "first_movement_disagreement": 0,
+          "first_action": [
+            2,
+            0
+          ],
+          "first_four_movement_matches": [
+            false,
+            false,
+            false,
+            false
+          ]
+        },
+        "v8": {
+          "movement_correct": 76,
+          "button_correct": 93,
+          "first_movement_disagreement": 0,
+          "first_action": [
+            3,
+            0
+          ],
+          "first_four_movement_matches": [
+            false,
+            true,
+            true,
+            true
+          ]
+        }
+      }
+    },
+    {
+      "path": "runs/navigation-routes-v8/data/cliff-return_west-house-0/success-1.npz",
+      "sha256": "571e802a6dae61b274cf5ce5fb30ae2d813a04475d24a069b75db237a9e437ce",
+      "kind": "return",
+      "rows": 87,
+      "goal": {
+        "room": [
+          0,
+          0,
+          226
+        ],
+        "x": 36,
+        "y": 121
+      },
+      "first_teacher_action": [
+        2,
+        0
+      ],
+      "stats": {
+        "v7": {
+          "movement_correct": 36,
+          "button_correct": 84,
+          "first_movement_disagreement": 2,
+          "first_action": [
+            2,
+            0
+          ],
+          "first_four_movement_matches": [
+            true,
+            true,
+            false,
+            false
+          ]
+        },
+        "v8": {
+          "movement_correct": 72,
+          "button_correct": 86,
+          "first_movement_disagreement": 0,
+          "first_action": [
+            3,
+            0
+          ],
+          "first_four_movement_matches": [
+            false,
+            true,
+            true,
+            true
+          ]
+        }
+      }
+    },
+    {
+      "path": "runs/navigation-routes-v8/data/cliff-return_west-house-0/success-2.npz",
+      "sha256": "ec0c1500ada45f207e5302b332779d59a542213c78cd27581f4bcacd75bdd753",
+      "kind": "return",
+      "rows": 136,
+      "goal": {
+        "room": [
+          0,
+          0,
+          226
+        ],
+        "x": 36,
+        "y": 121
+      },
+      "first_teacher_action": [
+        1,
+        0
+      ],
+      "stats": {
+        "v7": {
+          "movement_correct": 48,
+          "button_correct": 128,
+          "first_movement_disagreement": 0,
+          "first_action": [
+            2,
+            0
+          ],
+          "first_four_movement_matches": [
+            false,
+            false,
+            false,
+            false
+          ]
+        },
+        "v8": {
+          "movement_correct": 89,
+          "button_correct": 134,
+          "first_movement_disagreement": 0,
+          "first_action": [
+            3,
+            0
+          ],
+          "first_four_movement_matches": [
+            false,
+            false,
+            false,
+            true
+          ]
+        }
+      }
+    },
+    {
+      "path": "runs/navigation-routes-v8/data/cliff-return_west-house-1/success-0.npz",
+      "sha256": "732df9f3b6e488c08c6b5ffbf27b5d4c8b0f1b28e60fd42b4c3bfd5951766019",
+      "kind": "return",
+      "rows": 92,
+      "goal": {
+        "room": [
+          0,
+          0,
+          226
+        ],
+        "x": 36,
+        "y": 121
+      },
+      "first_teacher_action": [
+        1,
+        0
+      ],
+      "stats": {
+        "v7": {
+          "movement_correct": 30,
+          "button_correct": 82,
+          "first_movement_disagreement": 0,
+          "first_action": [
+            2,
+            0
+          ],
+          "first_four_movement_matches": [
+            false,
+            false,
+            false,
+            false
+          ]
+        },
+        "v8": {
+          "movement_correct": 76,
+          "button_correct": 90,
+          "first_movement_disagreement": 0,
+          "first_action": [
+            3,
+            0
+          ],
+          "first_four_movement_matches": [
+            false,
+            true,
+            true,
+            true
+          ]
+        }
+      }
+    },
+    {
+      "path": "runs/navigation-routes-v8/data/cliff-return_west-house-1/success-1.npz",
+      "sha256": "f0f23f6fcb5b64ea9ee14f37f81f4b573f400ff3713ac5d1f9b74adff89b6ffd",
+      "kind": "return",
+      "rows": 85,
+      "goal": {
+        "room": [
+          0,
+          0,
+          226
+        ],
+        "x": 36,
+        "y": 121
+      },
+      "first_teacher_action": [
+        2,
+        0
+      ],
+      "stats": {
+        "v7": {
+          "movement_correct": 32,
+          "button_correct": 82,
+          "first_movement_disagreement": 2,
+          "first_action": [
+            2,
+            0
+          ],
+          "first_four_movement_matches": [
+            true,
+            true,
+            false,
+            false
+          ]
+        },
+        "v8": {
+          "movement_correct": 61,
+          "button_correct": 83,
+          "first_movement_disagreement": 0,
+          "first_action": [
+            3,
+            0
+          ],
+          "first_four_movement_matches": [
+            false,
+            true,
+            true,
+            true
+          ]
+        }
+      }
+    },
+    {
+      "path": "runs/navigation-routes-v8/data/cliff-return_west-house-1/success-2.npz",
+      "sha256": "127ecb4ded9a013afc780acb1bf0afccbdf9e7435ab9f00ab9367a01dfb1782a",
+      "kind": "return",
+      "rows": 132,
+      "goal": {
+        "room": [
+          0,
+          0,
+          226
+        ],
+        "x": 36,
+        "y": 121
+      },
+      "first_teacher_action": [
+        1,
+        0
+      ],
+      "stats": {
+        "v7": {
+          "movement_correct": 44,
+          "button_correct": 117,
+          "first_movement_disagreement": 0,
+          "first_action": [
+            2,
+            0
+          ],
+          "first_four_movement_matches": [
+            false,
+            false,
+            false,
+            false
+          ]
+        },
+        "v8": {
+          "movement_correct": 88,
+          "button_correct": 129,
+          "first_movement_disagreement": 0,
+          "first_action": [
+            3,
+            0
+          ],
+          "first_four_movement_matches": [
+            false,
+            false,
+            false,
+            true
+          ]
+        }
+      }
+    },
+    {
+      "path": "runs/navigation-routes-v8/data/cliff-west_neighbor-approach/success-0.npz",
+      "sha256": "8a5825fd1885a3f049e4c06ff4af863efcf455715bdb088941c0b658a68649ea",
+      "kind": "approach",
+      "rows": 146,
+      "goal": {
+        "room": [
+          0,
+          0,
+          226
+        ],
+        "x": 64,
+        "y": 64
+      },
+      "first_teacher_action": [
+        3,
+        0
+      ],
+      "stats": {
+        "v7": {
+          "movement_correct": 69,
+          "button_correct": 142,
+          "first_movement_disagreement": 0,
+          "first_action": [
+            1,
+            1
+          ],
+          "first_four_movement_matches": [
+            false,
+            false,
+            true,
+            true
+          ]
+        },
+        "v8": {
+          "movement_correct": 87,
+          "button_correct": 142,
+          "first_movement_disagreement": 16,
+          "first_action": [
+            3,
+            1
+          ],
+          "first_four_movement_matches": [
+            true,
+            true,
+            true,
+            true
+          ]
+        }
+      }
+    },
+    {
+      "path": "runs/navigation-routes-v8/data/cliff-west_neighbor-beach/success-0.npz",
+      "sha256": "12a937f44172a7a49829554b795299f3d8216cea698f96fc1b14367854bd2c8c",
+      "kind": "approach",
+      "rows": 206,
+      "goal": {
+        "room": [
+          0,
+          0,
+          226
+        ],
+        "x": 64,
+        "y": 64
+      },
+      "first_teacher_action": [
+        3,
+        0
+      ],
+      "stats": {
+        "v7": {
+          "movement_correct": 94,
+          "button_correct": 204,
+          "first_movement_disagreement": 0,
+          "first_action": [
+            1,
+            1
+          ],
+          "first_four_movement_matches": [
+            false,
+            true,
+            true,
+            true
+          ]
+        },
+        "v8": {
+          "movement_correct": 128,
+          "button_correct": 205,
+          "first_movement_disagreement": 0,
+          "first_action": [
+            1,
+            0
+          ],
+          "first_four_movement_matches": [
+            false,
+            true,
+            true,
+            true
+          ]
+        }
+      }
+    },
+    {
+      "path": "runs/navigation-routes-v8/data/cliff-west_neighbor-beach/success-1.npz",
+      "sha256": "5b2b283abb30833c15f9612d3b34c1e757db2b9eedb3fbe177b082adc9f6d75d",
+      "kind": "approach",
+      "rows": 199,
+      "goal": {
+        "room": [
+          0,
+          0,
+          226
+        ],
+        "x": 64,
+        "y": 64
+      },
+      "first_teacher_action": [
+        1,
+        0
+      ],
+      "stats": {
+        "v7": {
+          "movement_correct": 81,
+          "button_correct": 195,
+          "first_movement_disagreement": 3,
+          "first_action": [
+            1,
+            1
+          ],
+          "first_four_movement_matches": [
+            true,
+            true,
+            true,
+            false
+          ]
+        },
+        "v8": {
+          "movement_correct": 121,
+          "button_correct": 196,
+          "first_movement_disagreement": 5,
+          "first_action": [
+            1,
+            0
+          ],
+          "first_four_movement_matches": [
+            true,
+            true,
+            true,
+            true
+          ]
+        }
+      }
+    },
+    {
+      "path": "runs/navigation-routes-v8/data/cliff-west_neighbor-house/success-0.npz",
+      "sha256": "c0702faf23ebf70ec86fda1254e0207884a017954f36b009a864bf47da290e69",
+      "kind": "approach",
+      "rows": 199,
+      "goal": {
+        "room": [
+          0,
+          0,
+          226
+        ],
+        "x": 64,
+        "y": 64
+      },
+      "first_teacher_action": [
+        1,
+        0
+      ],
+      "stats": {
+        "v7": {
+          "movement_correct": 86,
+          "button_correct": 195,
+          "first_movement_disagreement": 3,
+          "first_action": [
+            1,
+            1
+          ],
+          "first_four_movement_matches": [
+            true,
+            true,
+            true,
+            false
+          ]
+        },
+        "v8": {
+          "movement_correct": 122,
+          "button_correct": 195,
+          "first_movement_disagreement": 1,
+          "first_action": [
+            1,
+            1
+          ],
+          "first_four_movement_matches": [
+            true,
+            false,
+            true,
+            true
+          ]
+        }
+      }
+    },
+    {
+      "path": "runs/navigation-routes-v8/data/cliff-west_neighbor-house/success-1.npz",
+      "sha256": "692bce93a843a6e948d066bb0457f18004f07d46301b3f55f7ada4c84ff4cfc0",
+      "kind": "approach",
+      "rows": 206,
+      "goal": {
+        "room": [
+          0,
+          0,
+          226
+        ],
+        "x": 64,
+        "y": 64
+      },
+      "first_teacher_action": [
+        3,
+        0
+      ],
+      "stats": {
+        "v7": {
+          "movement_correct": 71,
+          "button_correct": 203,
+          "first_movement_disagreement": 0,
+          "first_action": [
+            1,
+            1
+          ],
+          "first_four_movement_matches": [
+            false,
+            false,
+            false,
+            false
+          ]
+        },
+        "v8": {
+          "movement_correct": 112,
+          "button_correct": 203,
+          "first_movement_disagreement": 0,
+          "first_action": [
+            1,
+            1
+          ],
+          "first_four_movement_matches": [
+            false,
+            true,
+            true,
+            true
+          ]
+        }
+      }
+    }
+  ],
+  "exact_masked_states": 2298,
+  "states_with_conflicting_movement_labels": 87,
+  "original_goals_verified": true,
+  "source_manifest_hashes": {
+    "runs/navigation-routes-v8/data/cliff-return-approach-0-0/manifest.json": "a897e54252b2eb911b6d1b40c816c404bfc867b1cf89bc7caf99d935f041c3a3",
+    "runs/navigation-routes-v8/data/cliff-return-beach-0-0/manifest.json": "3a70f88b5acb5bba3d6b4526075733e5f8521fc9144808111b0ee79cb0484345",
+    "runs/navigation-routes-v8/data/cliff-return-beach-1-0/manifest.json": "f6628b0c2afdacb260cb56a13800b61a13fc951d678c044cb810466e2fd628d6",
+    "runs/navigation-routes-v8/data/cliff-return-house-0-0/manifest.json": "af2fef192ae9b0f1666aacf9a6d0e639f26eda0264475faf1b1eac9b3900728c",
+    "runs/navigation-routes-v8/data/cliff-return-house-1-0/manifest.json": "f7cfe0db3ac78e018c4bb50795c1661ccc64d51344c7bec96477dabfb6dfad66",
+    "runs/navigation-routes-v8/data/cliff-return_west-approach-0/manifest.json": "8172a88cd1e30a4922081e9c65bf949c766bd4208dfd720ea3acdb99d1358204",
+    "runs/navigation-routes-v8/data/cliff-return_west-beach-0/manifest.json": "92b50163ea40c3c13d9c3f6c7abd88ece44f187b970f32f63efb036ba0fb804b",
+    "runs/navigation-routes-v8/data/cliff-return_west-beach-1/manifest.json": "0c976923e442e8930c76410cfbdfe270894b00abea9562b7fe118889be368460",
+    "runs/navigation-routes-v8/data/cliff-return_west-house-0/manifest.json": "7f77aba0e0fef23b6b71cc82734dbcb1836f74ae0c001f6567a350efc58c5e5b",
+    "runs/navigation-routes-v8/data/cliff-return_west-house-1/manifest.json": "d9745948679a52043cc6473d838fb26d696a1eebfa27f4415a8a6beb42cc6b10",
+    "runs/navigation-routes-v8/data/cliff-west_neighbor-approach/manifest.json": "e0bd233b1aa8c115aef1edbc0dae2afc5558ff71fca7a929162ca3906d2f2777",
+    "runs/navigation-routes-v8/data/cliff-west_neighbor-beach/manifest.json": "b8e189a5393c0b06198649dc830bcf18ce55c4207fe183634d16dd1a9d8304dd",
+    "runs/navigation-routes-v8/data/cliff-west_neighbor-house/manifest.json": "c832f06cfcddd51784bc5292d33093cc12bc0cf629f3e97d10c916f0342387ce"
+  },
+  "source_sha256": "c98710712065ee40d6a683a9b86e40d1a3698152462841343acfca87b7ae06f2",
+  "offline_training_row_diagnostic": true,
+  "interpretation": "Training-row agreement does not establish live navigation success. Existing physical verification is checked through immutable manifests; this audit runs no emulator or training."
+}

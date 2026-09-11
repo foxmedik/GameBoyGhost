@@ -1,0 +1,209 @@
+{
+  "result": {
+    "status": "guidance_prefix_complete",
+    "steps": 749,
+    "sword_actions": 412,
+    "post_sword_actions": 337,
+    "frames": 8393,
+    "damage_raw": 0,
+    "healing_raw": 0,
+    "final_state": {
+      "phase": {
+        "gameplay": 11,
+        "subtype": 7,
+        "scroll": 0,
+        "sequence": 4,
+        "palette": 0,
+        "room": [
+          0,
+          0,
+          208
+        ],
+        "health": 24
+      },
+      "room": [
+        0,
+        0,
+        208
+      ],
+      "x": 26,
+      "y": 124,
+      "health": 24,
+      "max_hearts": 3,
+      "inventory": [
+        4,
+        1,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "sword": 1,
+      "toadstool": 0,
+      "powder": 0,
+      "bombs": 0,
+      "arrows": 0,
+      "tail_key": 0,
+      "tarin": 0,
+      "tail_door_status": 0,
+      "trade_item": 0,
+      "dialog_state": 0,
+      "dialog_id": 155,
+      "inventory_cursor": 0
+    },
+    "planner": {
+      "goals": [
+        {
+          "room": [
+            0,
+            0,
+            226
+          ],
+          "x": 36,
+          "y": 121,
+          "reason": "Reach the shore room north of the sword; goal is a previously developed navigation target."
+        },
+        {
+          "room": [
+            0,
+            0,
+            226
+          ],
+          "x": 89,
+          "y": 94,
+          "reason": "Existing approach goal from navigation_routes_v1 room_loop; test skill handoff compatibility before retraining."
+        },
+        {
+          "room": [
+            0,
+            0,
+            226
+          ],
+          "x": 64,
+          "y": 64,
+          "reason": "Reach the upper beach via the selected learned detour skill."
+        },
+        {
+          "room": [
+            0,
+            0,
+            225
+          ],
+          "x": 12,
+          "y": 54,
+          "reason": "Map shows a western passage at the upper beach; physically verify approach."
+        },
+        {
+          "room": [
+            0,
+            0,
+            224
+          ],
+          "x": 27,
+          "y": 48,
+          "tolerance": 3,
+          "skill": "shielded_axis",
+          "reason": "Shielded passage validated from earlier full-health arrival."
+        },
+        {
+          "room": [
+            0,
+            0,
+            208
+          ],
+          "x": 27,
+          "y": 125,
+          "tolerance": 3,
+          "skill": "shielded_axis",
+          "reason": "Physically validated crossing north from E0 into D0."
+        }
+      ],
+      "goal_budget": 256,
+      "recovery_limit": 2,
+      "cursor": 6,
+      "leg_steps": 0,
+      "recoveries": 0,
+      "positions": [],
+      "events": [
+        {
+          "kind": "guidance_goal_reached",
+          "index": 0,
+          "steps": 49
+        },
+        {
+          "kind": "guidance_goal_reached",
+          "index": 1,
+          "steps": 30
+        },
+        {
+          "kind": "guidance_goal_reached",
+          "index": 2,
+          "steps": 87
+        },
+        {
+          "kind": "physical_recovery_probe",
+          "goal": 3,
+          "direction": 1
+        },
+        {
+          "kind": "guidance_goal_reached",
+          "index": 3,
+          "steps": 154
+        },
+        {
+          "kind": "guidance_goal_reached",
+          "index": 4,
+          "steps": 13
+        },
+        {
+          "kind": "guidance_goal_reached",
+          "index": 5,
+          "steps": 4
+        }
+      ],
+      "pending_recovery": [],
+      "last_decision": {
+        "kind": "scripted_shielded_axis",
+        "guidance_index": 5,
+        "target": {
+          "room": [
+            0,
+            0,
+            208
+          ],
+          "x": 27,
+          "y": 125
+        },
+        "route_status": "unknown_route",
+        "memory_evidence": null,
+        "conditions_checked": false
+      },
+      "status": "guidance_prefix_complete"
+    },
+    "milestones": {
+      "sword_acquired": 17
+    },
+    "exact_action_replay": true,
+    "assistance": "provided_map_guidance_and_structured_read_only_state",
+    "human_interventions": 0,
+    "optimizer_updates": 0,
+    "reserved_evaluation_used": false,
+    "planner_roundtrip_exact": true,
+    "wall_seconds": 5.285
+  },
+  "output": "runs/progression-attempt-v4",
+  "parent_memory": "db2fa7a29fa5b904b53ee7feceb111a0eb62fbc513cc600bb425a1cd158c7b58",
+  "next_memory": "83cc0d74d3ad0fb1d129a01b35b98e511b2471b5539f5d170c52a141ba29a782",
+  "new_observations": 1364,
+  "new_connection_observations": 18,
+  "code_hashes": {
+    "scripts/run_progression_attempt.py": "8b959797d438602511894af0a70714850548c85d9d1ce78fac1eeed2d1aba6af",
+    "src/gameboy_agent/progression_planner.py": "f384d048a769513eb8e0e4e6b85896113fc33ec7901c39a872bae5c1da3cb4a6"
+  }
+}

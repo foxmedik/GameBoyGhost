@@ -1,0 +1,614 @@
+{
+  "result": {
+    "status": "repeated_local_stall",
+    "steps": 652,
+    "sword_actions": 412,
+    "post_sword_actions": 240,
+    "frames": 7181,
+    "damage_raw": 4,
+    "healing_raw": 0,
+    "final_state": {
+      "phase": {
+        "gameplay": 11,
+        "subtype": 7,
+        "scroll": 0,
+        "sequence": 4,
+        "palette": 0,
+        "room": [
+          0,
+          0,
+          226
+        ],
+        "health": 20
+      },
+      "room": [
+        0,
+        0,
+        226
+      ],
+      "x": 34,
+      "y": 121,
+      "health": 20,
+      "max_hearts": 3,
+      "inventory": [
+        4,
+        1,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "sword": 1,
+      "toadstool": 0,
+      "powder": 0,
+      "bombs": 0,
+      "arrows": 0,
+      "tail_key": 0,
+      "tarin": 0,
+      "tail_door_status": 0,
+      "trade_item": 0,
+      "dialog_state": 0,
+      "dialog_id": 155,
+      "inventory_cursor": 0
+    },
+    "planner": {
+      "goals": [
+        {
+          "room": [
+            0,
+            0,
+            226
+          ],
+          "x": 36,
+          "y": 121,
+          "reason": "Reach the shore room north of the sword; goal is a previously developed navigation target."
+        },
+        {
+          "room": [
+            0,
+            0,
+            226
+          ],
+          "x": 64,
+          "y": 64,
+          "reason": "Reach the upper beach via the selected learned detour skill."
+        },
+        {
+          "room": [
+            0,
+            0,
+            225
+          ],
+          "x": 12,
+          "y": 54,
+          "reason": "Map shows a western passage at the upper beach; physically verify approach."
+        },
+        {
+          "room": [
+            0,
+            0,
+            209
+          ],
+          "x": 12,
+          "y": 112,
+          "reason": "Probe the mapped passage northward; connectivity and coordinates unverified."
+        }
+      ],
+      "goal_budget": 256,
+      "recovery_limit": 2,
+      "cursor": 1,
+      "leg_steps": 191,
+      "recoveries": 2,
+      "positions": [
+        [
+          0,
+          0,
+          226,
+          4,
+          15
+        ],
+        [
+          0,
+          0,
+          226,
+          4,
+          15
+        ],
+        [
+          0,
+          0,
+          226,
+          4,
+          15
+        ],
+        [
+          0,
+          0,
+          226,
+          4,
+          15
+        ],
+        [
+          0,
+          0,
+          226,
+          4,
+          15
+        ],
+        [
+          0,
+          0,
+          226,
+          4,
+          15
+        ],
+        [
+          0,
+          0,
+          226,
+          4,
+          15
+        ],
+        [
+          0,
+          0,
+          226,
+          4,
+          15
+        ],
+        [
+          0,
+          0,
+          226,
+          4,
+          15
+        ],
+        [
+          0,
+          0,
+          226,
+          4,
+          15
+        ],
+        [
+          0,
+          0,
+          226,
+          4,
+          15
+        ],
+        [
+          0,
+          0,
+          226,
+          4,
+          15
+        ],
+        [
+          0,
+          0,
+          226,
+          4,
+          15
+        ],
+        [
+          0,
+          0,
+          226,
+          4,
+          15
+        ],
+        [
+          0,
+          0,
+          226,
+          4,
+          15
+        ],
+        [
+          0,
+          0,
+          226,
+          4,
+          15
+        ],
+        [
+          0,
+          0,
+          226,
+          4,
+          15
+        ],
+        [
+          0,
+          0,
+          226,
+          4,
+          15
+        ],
+        [
+          0,
+          0,
+          226,
+          4,
+          15
+        ],
+        [
+          0,
+          0,
+          226,
+          4,
+          15
+        ],
+        [
+          0,
+          0,
+          226,
+          4,
+          15
+        ],
+        [
+          0,
+          0,
+          226,
+          4,
+          15
+        ],
+        [
+          0,
+          0,
+          226,
+          4,
+          15
+        ],
+        [
+          0,
+          0,
+          226,
+          4,
+          15
+        ],
+        [
+          0,
+          0,
+          226,
+          4,
+          15
+        ],
+        [
+          0,
+          0,
+          226,
+          4,
+          15
+        ],
+        [
+          0,
+          0,
+          226,
+          4,
+          15
+        ],
+        [
+          0,
+          0,
+          226,
+          4,
+          15
+        ],
+        [
+          0,
+          0,
+          226,
+          4,
+          15
+        ],
+        [
+          0,
+          0,
+          226,
+          4,
+          15
+        ],
+        [
+          0,
+          0,
+          226,
+          4,
+          15
+        ],
+        [
+          0,
+          0,
+          226,
+          4,
+          15
+        ],
+        [
+          0,
+          0,
+          226,
+          4,
+          15
+        ],
+        [
+          0,
+          0,
+          226,
+          4,
+          15
+        ],
+        [
+          0,
+          0,
+          226,
+          4,
+          15
+        ],
+        [
+          0,
+          0,
+          226,
+          4,
+          15
+        ],
+        [
+          0,
+          0,
+          226,
+          4,
+          15
+        ],
+        [
+          0,
+          0,
+          226,
+          4,
+          15
+        ],
+        [
+          0,
+          0,
+          226,
+          4,
+          15
+        ],
+        [
+          0,
+          0,
+          226,
+          4,
+          15
+        ],
+        [
+          0,
+          0,
+          226,
+          4,
+          15
+        ],
+        [
+          0,
+          0,
+          226,
+          4,
+          15
+        ],
+        [
+          0,
+          0,
+          226,
+          4,
+          15
+        ],
+        [
+          0,
+          0,
+          226,
+          4,
+          15
+        ],
+        [
+          0,
+          0,
+          226,
+          4,
+          15
+        ],
+        [
+          0,
+          0,
+          226,
+          4,
+          15
+        ],
+        [
+          0,
+          0,
+          226,
+          4,
+          15
+        ],
+        [
+          0,
+          0,
+          226,
+          4,
+          15
+        ],
+        [
+          0,
+          0,
+          226,
+          4,
+          15
+        ],
+        [
+          0,
+          0,
+          226,
+          4,
+          15
+        ],
+        [
+          0,
+          0,
+          226,
+          4,
+          15
+        ],
+        [
+          0,
+          0,
+          226,
+          4,
+          15
+        ],
+        [
+          0,
+          0,
+          226,
+          4,
+          15
+        ],
+        [
+          0,
+          0,
+          226,
+          4,
+          15
+        ],
+        [
+          0,
+          0,
+          226,
+          4,
+          15
+        ],
+        [
+          0,
+          0,
+          226,
+          4,
+          15
+        ],
+        [
+          0,
+          0,
+          226,
+          4,
+          15
+        ],
+        [
+          0,
+          0,
+          226,
+          4,
+          15
+        ],
+        [
+          0,
+          0,
+          226,
+          4,
+          15
+        ],
+        [
+          0,
+          0,
+          226,
+          4,
+          15
+        ],
+        [
+          0,
+          0,
+          226,
+          4,
+          15
+        ],
+        [
+          0,
+          0,
+          226,
+          4,
+          15
+        ],
+        [
+          0,
+          0,
+          226,
+          4,
+          15
+        ],
+        [
+          0,
+          0,
+          226,
+          4,
+          15
+        ]
+      ],
+      "events": [
+        {
+          "kind": "guidance_goal_reached",
+          "index": 0,
+          "steps": 49
+        },
+        {
+          "kind": "physical_recovery_probe",
+          "goal": 1,
+          "direction": 1
+        },
+        {
+          "kind": "physical_recovery_probe",
+          "goal": 1,
+          "direction": 3
+        }
+      ],
+      "pending_recovery": [],
+      "last_decision": {
+        "kind": "provided_map_navigation",
+        "guidance_index": 1,
+        "target": {
+          "room": [
+            0,
+            0,
+            226
+          ],
+          "x": 64,
+          "y": 64
+        },
+        "route_status": "observed_route",
+        "memory_evidence": null,
+        "conditions_checked": false
+      },
+      "status": "repeated_local_stall"
+    },
+    "milestones": {
+      "sword_acquired": 17
+    },
+    "exact_action_replay": true,
+    "assistance": "provided_map_guidance_and_structured_read_only_state",
+    "human_interventions": 0,
+    "optimizer_updates": 0,
+    "reserved_evaluation_used": false,
+    "planner_roundtrip_exact": true,
+    "wall_seconds": 4.665
+  },
+  "output": "runs/progression-attempt-v1",
+  "parent_memory": "db2fa7a29fa5b904b53ee7feceb111a0eb62fbc513cc600bb425a1cd158c7b58",
+  "next_memory": "ea199c5c1febae3f83cce3d93cb75f8a3d2aeef4abb09caa492121a8bdfddf78",
+  "new_observations": 1174,
+  "new_connection_observations": 13,
+  "code_hashes": {
+    "scripts/run_progression_attempt.py": "a013b350ccd3302731253b7b4216d47dcac23a68825df229391852cf8674485f",
+    "src/gameboy_agent/progression_planner.py": "54dcbe00e7bd5f357f9574da7ba07e81d3e461bf540193e266b0501dc87b2d67"
+  }
+}

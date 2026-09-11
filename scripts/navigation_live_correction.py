@@ -42,6 +42,8 @@ def prepare(out):
     index=ROOT/'data/curated/ladx-navigation-v1/dev/hindsight_navigation.parquet'
     cm=read(index.parents[1]/'manifest.json');assert sha256(index)==cm['artifacts']['dev/hindsight_navigation.parquet']
     rows=pq.read_table(index).to_pylist();retired={r['cohort_id'] for r in rows if r['source_episode_id'] in seen}
+    registry=ROOT/'configs/navigation_retired_cohorts.json'
+    if registry.exists():retired.update(read(registry)['cohorts'])
     available=[r for r in rows if r['cohort_id'] not in retired and r['source_episode_id'] not in all_old]
     cases=[];used=set()
     for start in ['house','beach','approach']:

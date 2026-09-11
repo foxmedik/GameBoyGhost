@@ -1,0 +1,112 @@
+{
+  "results": [
+    {
+      "id": "house-0",
+      "version": "v7",
+      "start": "house",
+      "status": "actions_exhausted",
+      "accepted": false,
+      "damage": 0,
+      "steps": 85,
+      "initial_fingerprint": "6746a46944622af5059aa6ce809268238b50248ae266e0147f59474d8b65e342",
+      "final_fingerprint": "a93881149b3141435fc9e0b0ec66860a74af94dc866fcf24598d679bd9005181"
+    },
+    {
+      "id": "house-1",
+      "version": "v7",
+      "start": "house",
+      "status": "success",
+      "accepted": true,
+      "damage": 0,
+      "steps": 87,
+      "initial_fingerprint": "6746a46944622af5059aa6ce809268238b50248ae266e0147f59474d8b65e342",
+      "final_fingerprint": "76de1a8a81018f8553edd70b3d4b39b6ff3ebabbaf9e28d82dec737d3128cf09"
+    },
+    {
+      "id": "house-2",
+      "version": "v7",
+      "start": "house",
+      "status": "actions_exhausted",
+      "accepted": false,
+      "damage": 0,
+      "steps": 92,
+      "initial_fingerprint": "6746a46944622af5059aa6ce809268238b50248ae266e0147f59474d8b65e342",
+      "final_fingerprint": "47eb178dda632bedbb57a98973ef475905d4f93f2f3e98bbdc672050d2e4e4b5"
+    },
+    {
+      "id": "beach-0",
+      "version": "v7",
+      "start": "beach",
+      "status": "success",
+      "accepted": true,
+      "damage": 0,
+      "steps": 86,
+      "initial_fingerprint": "27f048d8c6d0ca067295927352f82b20b15df112c598f2b7bfb74d45012d6726",
+      "final_fingerprint": "a40a3cd3677b70f9c375e190d9ed957243e3793978e47698ce97a928730732f5"
+    },
+    {
+      "id": "beach-1",
+      "version": "v7",
+      "start": "beach",
+      "status": "success",
+      "accepted": true,
+      "damage": 0,
+      "steps": 87,
+      "initial_fingerprint": "27f048d8c6d0ca067295927352f82b20b15df112c598f2b7bfb74d45012d6726",
+      "final_fingerprint": "d7e51ed64a99ebbb2956d08f0f9c630c6910f9740be577ed1acb4d6c158bcbca"
+    },
+    {
+      "id": "beach-2",
+      "version": "v7",
+      "start": "beach",
+      "status": "success",
+      "accepted": true,
+      "damage": 0,
+      "steps": 96,
+      "initial_fingerprint": "27f048d8c6d0ca067295927352f82b20b15df112c598f2b7bfb74d45012d6726",
+      "final_fingerprint": "ad2550f0f05ccc7eb31df2f70fa7e3e206f302e0b7da89fe98101616ac58c84f"
+    },
+    {
+      "id": "approach-0",
+      "version": "v7",
+      "start": "approach",
+      "status": "success",
+      "accepted": true,
+      "damage": 0,
+      "steps": 87,
+      "initial_fingerprint": "7e5ce38b95dad0c9176793cb9446cf3896746fdbffea7da133882ceaab247427",
+      "final_fingerprint": "c610973a417ff6c8f0a0fafdd80e3551591c5d3bb7f9c1c154d2f4f9e1523e77"
+    },
+    {
+      "id": "approach-1",
+      "version": "v7",
+      "start": "approach",
+      "status": "success",
+      "accepted": true,
+      "damage": 0,
+      "steps": 100,
+      "initial_fingerprint": "7e5ce38b95dad0c9176793cb9446cf3896746fdbffea7da133882ceaab247427",
+      "final_fingerprint": "74d9341e8e7903a911411106e88f308232ddd051b5be9a56f26f751771dcd603"
+    },
+    {
+      "id": "approach-2",
+      "version": "v7",
+      "start": "approach",
+      "status": "success",
+      "accepted": true,
+      "damage": 0,
+      "steps": 139,
+      "initial_fingerprint": "7e5ce38b95dad0c9176793cb9446cf3896746fdbffea7da133882ceaab247427",
+      "final_fingerprint": "c2b7e6062db644eba470ed33d0bcd100a8388e99cb8dad59852d60f16cdffdc2"
+    }
+  ],
+  "accepted": 7,
+  "starts_with_safe_return": [
+    "approach",
+    "beach",
+    "house"
+  ],
+  "plan_sha256": "5440e1d9c56e3332b081f29d8c00bd33b1b9ae2fb529f81eecfdee0a381b8fd2",
+  "training_performed": false,
+  "reserved_evaluation_used": false
+}

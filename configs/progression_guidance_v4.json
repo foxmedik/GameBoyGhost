@@ -1,0 +1,78 @@
+{
+  "schema": "provided-map-guidance-prefix-v4",
+  "objective": "Approach the forest from the physically obtained sword state; acquire toadstool next",
+  "assistance": "provided_full_map_and_artwork_plus_source_grounded_quest_hints",
+  "scope": "First southern navigation prefix only. Completion of these goals is not quest completion. Extend guidance only after reviewing the first attempt.",
+  "map_manifest": "runs/progression-assets-v1/manifest.json",
+  "source_hint": "Matched Overworld50Entities contains ENTITY_SLEEPY_TOADSTOOL; target remains beyond this prefix.",
+  "goal_budget": 256,
+  "recovery_limit": 2,
+  "goals": [
+    {
+      "room": [
+        0,
+        0,
+        226
+      ],
+      "x": 36,
+      "y": 121,
+      "reason": "Reach the shore room north of the sword; goal is a previously developed navigation target."
+    },
+    {
+      "room": [
+        0,
+        0,
+        226
+      ],
+      "x": 89,
+      "y": 94,
+      "reason": "Existing approach goal from navigation_routes_v1 room_loop; test skill handoff compatibility before retraining."
+    },
+    {
+      "room": [
+        0,
+        0,
+        226
+      ],
+      "x": 64,
+      "y": 64,
+      "reason": "Reach the upper beach via the selected learned detour skill."
+    },
+    {
+      "room": [
+        0,
+        0,
+        225
+      ],
+      "x": 12,
+      "y": 54,
+      "reason": "Map shows a western passage at the upper beach; physically verify approach."
+    },
+    {
+      "room": [
+        0,
+        0,
+        224
+      ],
+      "x": 27,
+      "y": 48,
+      "tolerance": 3,
+      "skill": "shielded_axis",
+      "reason": "Shielded passage validated from earlier full-health arrival."
+    },
+    {
+      "room": [
+        0,
+        0,
+        208
+      ],
+      "x": 27,
+      "y": 125,
+      "tolerance": 3,
+      "skill": "shielded_axis",
+      "reason": "Physically validated crossing north from E0 into D0."
+    }
+  ],
+  "change": "Retain the previously successful learned approach to E1 before handing off to the validated shielded E0\u2192D0 skill. Keep original memory snapshot for matched arrival behavior; newer memory remains preserved separately.",
+  "memory_path": "runs/world-memory-v1/generation-1.json"
+}

@@ -1,0 +1,64 @@
+{
+  "result": {
+    "status": "western_crossing_verified",
+    "steps": 756,
+    "diagnostic_steps": 20,
+    "diagnostic_damage_raw": 0,
+    "final": {
+      "phase": {
+        "gameplay": 11,
+        "subtype": 7,
+        "scroll": 0,
+        "sequence": 4,
+        "palette": 0,
+        "room": [
+          0,
+          0,
+          208
+        ],
+        "health": 24
+      },
+      "room": [
+        0,
+        0,
+        208
+      ],
+      "x": 27,
+      "y": 125,
+      "health": 24,
+      "max_hearts": 3,
+      "inventory": [
+        4,
+        1,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "sword": 1,
+      "toadstool": 0,
+      "powder": 0,
+      "bombs": 0,
+      "arrows": 0,
+      "tail_key": 0,
+      "tarin": 0,
+      "tail_door_status": 0,
+      "trade_item": 0,
+      "dialog_state": 0,
+      "dialog_id": 155,
+      "inventory_cursor": 0
+    },
+    "exact_action_replay": true,
+    "assistance": "source_map_assisted_scripted_physical_diagnostic",
+    "quest_success": false
+  },
+  "output": "runs/progression-west-passage-shield-v1",
+  "memory_version": "d10bc161f02797925a07a97ab177981bab71596c58fc509807388893bb3767a7",
+  "source_hash": "e9e3a46a975066888614fc4b93ea51e97cffbb157a05e88528d2561a219a8e6b"
+}

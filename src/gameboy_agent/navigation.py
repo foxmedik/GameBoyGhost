@@ -33,7 +33,15 @@ class NavigationController:
         self.model=NavigationNet(saved['inputs']);self.model.load_state_dict(saved['model']);self.model.eval()
         self.mean=saved['mean'];self.scale=saved['scale']
         self.mask=saved.get('input_mask',np.ones(saved['inputs'],dtype=np.float32))
+        self.goal_experts={}
+        for expert in saved.get('goal_experts',[]):
+            goal=expert['goal'];key=tuple(goal['room'])+(goal['x'],goal['y'])
+            if len(goal['room'])!=3 or key in self.goal_experts:
+                raise ValueError('Invalid or duplicate navigation expert goal')
+            model=NavigationNet(saved['inputs']);model.load_state_dict(expert['model']);model.eval()
+            self.goal_experts[key]=model
     def action(self,obs,room,goal):
         x=encode(obs,room,goal['room'],goal['x'],goal['y'])
-        with torch.no_grad():logits=self.model(torch.from_numpy((x-self.mean)/self.scale*self.mask))
+        model=self.goal_experts.get(tuple(goal['room'])+(goal['x'],goal['y']),self.model)
+        with torch.no_grad():logits=model(torch.from_numpy((x-self.mean)/self.scale*self.mask))
         return [int(logits[:5].argmax()),int(logits[5:].argmax())]

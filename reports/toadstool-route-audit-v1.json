@@ -1,0 +1,60 @@
+{
+  "schema": "toadstool-route-audit-v1",
+  "status": "non_edge_transition_required",
+  "source_run": "runs/progression-forest-terrain-v5",
+  "target": {
+    "overworld_room": 80,
+    "entity": "ENTITY_SLEEPY_TOADSTOOL",
+    "source_tile": [3, 2],
+    "success_latch": "DB4B"
+  },
+  "verified_prefix_rooms": [208, 192, 193, 176, 160, 144, 128, 112, 96, 97, 81, 99, 83, 82],
+  "forest_redirect": {
+    "origin_room": 81,
+    "direction": "north",
+    "geometric_destination": 65,
+    "actual_destination": 99,
+    "cause": "source-backed Mysterious Woods lost-state redirection"
+  },
+  "edge_search": {
+    "start_room": 82,
+    "distinct_arrival_states": 79,
+    "target_reached": false,
+    "method": "physical edge traversal from reconstructed v5 state; diagnostic state branching only"
+  },
+  "room_52_warps": [
+    {"tile_index": 85, "destination": [1, 31, 225, 136, 80]},
+    {"tile_index": 51, "destination": [1, 16, 167, 80, 124]}
+  ],
+  "route_hint": "User confirmed the target route passes through a cave and requires pushing specific movable rock tiles.",
+  "cave_branch_65": {
+    "forest_route": [82, 66, 67, 68, 84, 100, 101],
+    "entry": {"tile_index": 36, "approach": "from below while holding up"},
+    "room": [1, 14, 162],
+    "landing": [80, 86],
+    "pushable_blocks": [],
+    "right_interaction": {"dialog": "08D", "result": "heavy obstacle requires a lifting item"},
+    "route_eligible": false
+  },
+  "toadstool_cave_branch": {
+    "forest_route": [82, 98],
+    "entry": {"tile_index": 55, "approach_cell": [7, 4]},
+    "room": [1, 10, 189],
+    "pushable_blocks": [[4, 4], [5, 5]],
+    "route_eligible": true,
+    "guide_source": "docs/gamefaqs.txt lines 301-309",
+    "guide_sequence": ["defeat Keese", "move stones to reach the 50-rupee chest", "avoid crumbling floor", "continue north", "defeat Gels", "go left to the stone room", "move stones until the escape path opens", "leave cave and collect the mushroom"],
+    "verified_gamefaqs_route": {
+      "red_trace_entry_room": [1, 10, 189],
+      "trace_inputs": [["left", "up", 18], ["left", 42], ["up", 70], ["right", "up", 92]],
+      "intermediate_room": [1, 10, 172],
+      "left_exit_input": ["left", "up"],
+      "stone_room": [1, 10, 171],
+      "stone_room_blocks": [38, 39, 53, 55, 65, 67, 68, 70, 72, 82, 83, 87]
+    }
+  },
+  "next_blocker": "Implement and replay the cave's side-view movement and sword-clear segment, then execute the two verified A7 pushes and confirm the southern exit reaches the toadstool exterior.",
+  "optimizer_updates": 0,
+  "reserved_evaluation_used": false,
+  "quest_success": false
+}

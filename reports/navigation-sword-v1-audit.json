@@ -1,0 +1,3437 @@
+{
+  "local_regressions": [
+    {
+      "panel": "original",
+      "case_id": "794f8293f588cd17415b89276670985fc4abb0e99c5b1f71e0c127ed9c670b92",
+      "baseline_success": true,
+      "candidate_success": false,
+      "damage_delta": 0,
+      "first_action_divergence": 0,
+      "baseline_final": {
+        "room": [
+          0,
+          0,
+          240
+        ],
+        "x": 127,
+        "y": 92
+      },
+      "candidate_final": {
+        "room": [
+          0,
+          0,
+          240
+        ],
+        "x": 108,
+        "y": 67,
+        "dialogue": false,
+        "sword": true,
+        "health": 16,
+        "a_item": 1,
+        "b_item": 4
+      },
+      "repeated_positions": [
+        {
+          "room": [
+            0,
+            0,
+            240
+          ],
+          "x": 108,
+          "y": 67,
+          "actions": 119
+        },
+        {
+          "room": [
+            0,
+            0,
+            241
+          ],
+          "x": 19,
+          "y": 69,
+          "actions": 1
+        },
+        {
+          "room": [
+            0,
+            0,
+            241
+          ],
+          "x": 9,
+          "y": 69,
+          "actions": 1
+        }
+      ],
+      "divergence_window": [
+        {
+          "step": 0,
+          "state": {
+            "room": [
+              0,
+              0,
+              241
+            ],
+            "x": 19,
+            "y": 69,
+            "dialogue": false,
+            "sword": true,
+            "health": 16,
+            "a_item": 1,
+            "b_item": 4
+          },
+          "after_state": {
+            "room": [
+              0,
+              0,
+              241
+            ],
+            "x": 9,
+            "y": 69,
+            "dialogue": false,
+            "sword": true,
+            "health": 16,
+            "a_item": 1,
+            "b_item": 4
+          },
+          "action": [
+            3,
+            0
+          ],
+          "damage": 0,
+          "entities": []
+        },
+        {
+          "step": 1,
+          "state": {
+            "room": [
+              0,
+              0,
+              241
+            ],
+            "x": 9,
+            "y": 69,
+            "dialogue": false,
+            "sword": true,
+            "health": 16,
+            "a_item": 1,
+            "b_item": 4
+          },
+          "after_state": {
+            "room": [
+              0,
+              0,
+              241
+            ],
+            "x": 8,
+            "y": 69,
+            "dialogue": false,
+            "sword": true,
+            "health": 16,
+            "a_item": 1,
+            "b_item": 4
+          },
+          "action": [
+            3,
+            1
+          ],
+          "damage": 0,
+          "entities": []
+        },
+        {
+          "step": 2,
+          "state": {
+            "room": [
+              0,
+              0,
+              241
+            ],
+            "x": 8,
+            "y": 69,
+            "dialogue": false,
+            "sword": true,
+            "health": 16,
+            "a_item": 1,
+            "b_item": 4
+          },
+          "after_state": {
+            "room": [
+              0,
+              0,
+              241
+            ],
+            "x": 4,
+            "y": 69,
+            "dialogue": false,
+            "sword": true,
+            "health": 16,
+            "a_item": 1,
+            "b_item": 4
+          },
+          "action": [
+            3,
+            0
+          ],
+          "damage": 0,
+          "entities": []
+        },
+        {
+          "step": 3,
+          "state": {
+            "room": [
+              0,
+              0,
+              241
+            ],
+            "x": 4,
+            "y": 69,
+            "dialogue": false,
+            "sword": true,
+            "health": 16,
+            "a_item": 1,
+            "b_item": 4
+          },
+          "after_state": {
+            "room": [
+              0,
+              0,
+              240
+            ],
+            "x": 149,
+            "y": 69,
+            "dialogue": false,
+            "sword": true,
+            "health": 16,
+            "a_item": 1,
+            "b_item": 4
+          },
+          "action": [
+            3,
+            1
+          ],
+          "damage": 0,
+          "entities": []
+        }
+      ],
+      "final_window": [
+        {
+          "step": 124,
+          "state": {
+            "room": [
+              0,
+              0,
+              240
+            ],
+            "x": 108,
+            "y": 67,
+            "dialogue": false,
+            "sword": true,
+            "health": 16,
+            "a_item": 1,
+            "b_item": 4
+          },
+          "after_state": {
+            "room": [
+              0,
+              0,
+              240
+            ],
+            "x": 108,
+            "y": 67,
+            "dialogue": false,
+            "sword": true,
+            "health": 16,
+            "a_item": 1,
+            "b_item": 4
+          },
+          "action": [
+            2,
+            0
+          ],
+          "damage": 0,
+          "entities": [
+            {
+              "slot": 0,
+              "status": 5,
+              "type": 9,
+              "x": 29,
+              "y": 14,
+              "vx": 0.5,
+              "vy": 0.0
+            }
+          ]
+        },
+        {
+          "step": 125,
+          "state": {
+            "room": [
+              0,
+              0,
+              240
+            ],
+            "x": 108,
+            "y": 67,
+            "dialogue": false,
+            "sword": true,
+            "health": 16,
+            "a_item": 1,
+            "b_item": 4
+          },
+          "after_state": {
+            "room": [
+              0,
+              0,
+              240
+            ],
+            "x": 108,
+            "y": 67,
+            "dialogue": false,
+            "sword": true,
+            "health": 16,
+            "a_item": 1,
+            "b_item": 4
+          },
+          "action": [
+            2,
+            1
+          ],
+          "damage": 0,
+          "entities": [
+            {
+              "slot": 0,
+              "status": 5,
+              "type": 9,
+              "x": 34,
+              "y": 14,
+              "vx": 0.5,
+              "vy": 0.0
+            }
+          ]
+        },
+        {
+          "step": 126,
+          "state": {
+            "room": [
+              0,
+              0,
+              240
+            ],
+            "x": 108,
+            "y": 67,
+            "dialogue": false,
+            "sword": true,
+            "health": 16,
+            "a_item": 1,
+            "b_item": 4
+          },
+          "after_state": {
+            "room": [
+              0,
+              0,
+              240
+            ],
+            "x": 108,
+            "y": 67,
+            "dialogue": false,
+            "sword": true,
+            "health": 16,
+            "a_item": 1,
+            "b_item": 4
+          },
+          "action": [
+            2,
+            0
+          ],
+          "damage": 0,
+          "entities": [
+            {
+              "slot": 0,
+              "status": 5,
+              "type": 9,
+              "x": 39,
+              "y": 14,
+              "vx": 0.5,
+              "vy": 0.0
+            }
+          ]
+        },
+        {
+          "step": 127,
+          "state": {
+            "room": [
+              0,
+              0,
+              240
+            ],
+            "x": 108,
+            "y": 67,
+            "dialogue": false,
+            "sword": true,
+            "health": 16,
+            "a_item": 1,
+            "b_item": 4
+          },
+          "after_state": {
+            "room": [
+              0,
+              0,
+              240
+            ],
+            "x": 108,
+            "y": 67,
+            "dialogue": false,
+            "sword": true,
+            "health": 16,
+            "a_item": 1,
+            "b_item": 4
+          },
+          "action": [
+            2,
+            1
+          ],
+          "damage": 0,
+          "entities": [
+            {
+              "slot": 0,
+              "status": 5,
+              "type": 9,
+              "x": 42,
+              "y": 14,
+              "vx": 0.0,
+              "vy": 0.0
+            }
+          ]
+        }
+      ],
+      "damage_windows": []
+    },
+    {
+      "panel": "original",
+      "case_id": "4b4081e2a60168c63025c5daa64af8a2f737affe18d9dc161dc4676eec279e36",
+      "baseline_success": true,
+      "candidate_success": false,
+      "damage_delta": 0,
+      "first_action_divergence": 0,
+      "baseline_final": {
+        "room": [
+          0,
+          0,
+          226
+        ],
+        "x": 32,
+        "y": 96
+      },
+      "candidate_final": {
+        "room": [
+          0,
+          0,
+          226
+        ],
+        "x": 32,
+        "y": 87,
+        "dialogue": false,
+        "sword": true,
+        "health": 12,
+        "a_item": 1,
+        "b_item": 4
+      },
+      "repeated_positions": [
+        {
+          "room": [
+            0,
+            0,
+            226
+          ],
+          "x": 32,
+          "y": 87,
+          "actions": 111
+        },
+        {
+          "room": [
+            0,
+            0,
+            225
+          ],
+          "x": 114,
+          "y": 85,
+          "actions": 1
+        },
+        {
+          "room": [
+            0,
+            0,
+            225
+          ],
+          "x": 124,
+          "y": 85,
+          "actions": 1
+        }
+      ],
+      "divergence_window": [
+        {
+          "step": 0,
+          "state": {
+            "room": [
+              0,
+              0,
+              225
+            ],
+            "x": 114,
+            "y": 85,
+            "dialogue": false,
+            "sword": true,
+            "health": 12,
+            "a_item": 1,
+            "b_item": 4
+          },
+          "after_state": {
+            "room": [
+              0,
+              0,
+              225
+            ],
+            "x": 124,
+            "y": 85,
+            "dialogue": false,
+            "sword": true,
+            "health": 12,
+            "a_item": 1,
+            "b_item": 4
+          },
+          "action": [
+            4,
+            0
+          ],
+          "damage": 0,
+          "entities": []
+        },
+        {
+          "step": 1,
+          "state": {
+            "room": [
+              0,
+              0,
+              225
+            ],
+            "x": 124,
+            "y": 85,
+            "dialogue": false,
+            "sword": true,
+            "health": 12,
+            "a_item": 1,
+            "b_item": 4
+          },
+          "after_state": {
+            "room": [
+              0,
+              0,
+              225
+            ],
+            "x": 132,
+            "y": 87,
+            "dialogue": false,
+            "sword": true,
+            "health": 12,
+            "a_item": 1,
+            "b_item": 4
+          },
+          "action": [
+            4,
+            0
+          ],
+          "damage": 0,
+          "entities": []
+        },
+        {
+          "step": 2,
+          "state": {
+            "room": [
+              0,
+              0,
+              225
+            ],
+            "x": 132,
+            "y": 87,
+            "dialogue": false,
+            "sword": true,
+            "health": 12,
+            "a_item": 1,
+            "b_item": 4
+          },
+          "after_state": {
+            "room": [
+              0,
+              0,
+              225
+            ],
+            "x": 133,
+            "y": 87,
+            "dialogue": false,
+            "sword": true,
+            "health": 12,
+            "a_item": 1,
+            "b_item": 4
+          },
+          "action": [
+            4,
+            1
+          ],
+          "damage": 0,
+          "entities": []
+        },
+        {
+          "step": 3,
+          "state": {
+            "room": [
+              0,
+              0,
+              225
+            ],
+            "x": 133,
+            "y": 87,
+            "dialogue": false,
+            "sword": true,
+            "health": 12,
+            "a_item": 1,
+            "b_item": 4
+          },
+          "after_state": {
+            "room": [
+              0,
+              0,
+              225
+            ],
+            "x": 137,
+            "y": 87,
+            "dialogue": false,
+            "sword": true,
+            "health": 12,
+            "a_item": 1,
+            "b_item": 4
+          },
+          "action": [
+            4,
+            0
+          ],
+          "damage": 0,
+          "entities": []
+        }
+      ],
+      "final_window": [
+        {
+          "step": 124,
+          "state": {
+            "room": [
+              0,
+              0,
+              226
+            ],
+            "x": 32,
+            "y": 87,
+            "dialogue": false,
+            "sword": true,
+            "health": 12,
+            "a_item": 1,
+            "b_item": 4
+          },
+          "after_state": {
+            "room": [
+              0,
+              0,
+              226
+            ],
+            "x": 32,
+            "y": 87,
+            "dialogue": false,
+            "sword": true,
+            "health": 12,
+            "a_item": 1,
+            "b_item": 4
+          },
+          "action": [
+            1,
+            0
+          ],
+          "damage": 0,
+          "entities": []
+        },
+        {
+          "step": 125,
+          "state": {
+            "room": [
+              0,
+              0,
+              226
+            ],
+            "x": 32,
+            "y": 87,
+            "dialogue": false,
+            "sword": true,
+            "health": 12,
+            "a_item": 1,
+            "b_item": 4
+          },
+          "after_state": {
+            "room": [
+              0,
+              0,
+              226
+            ],
+            "x": 32,
+            "y": 87,
+            "dialogue": false,
+            "sword": true,
+            "health": 12,
+            "a_item": 1,
+            "b_item": 4
+          },
+          "action": [
+            1,
+            0
+          ],
+          "damage": 0,
+          "entities": []
+        },
+        {
+          "step": 126,
+          "state": {
+            "room": [
+              0,
+              0,
+              226
+            ],
+            "x": 32,
+            "y": 87,
+            "dialogue": false,
+            "sword": true,
+            "health": 12,
+            "a_item": 1,
+            "b_item": 4
+          },
+          "after_state": {
+            "room": [
+              0,
+              0,
+              226
+            ],
+            "x": 32,
+            "y": 87,
+            "dialogue": false,
+            "sword": true,
+            "health": 12,
+            "a_item": 1,
+            "b_item": 4
+          },
+          "action": [
+            1,
+            0
+          ],
+          "damage": 0,
+          "entities": []
+        },
+        {
+          "step": 127,
+          "state": {
+            "room": [
+              0,
+              0,
+              226
+            ],
+            "x": 32,
+            "y": 87,
+            "dialogue": false,
+            "sword": true,
+            "health": 12,
+            "a_item": 1,
+            "b_item": 4
+          },
+          "after_state": {
+            "room": [
+              0,
+              0,
+              226
+            ],
+            "x": 32,
+            "y": 87,
+            "dialogue": false,
+            "sword": true,
+            "health": 12,
+            "a_item": 1,
+            "b_item": 4
+          },
+          "action": [
+            1,
+            0
+          ],
+          "damage": 0,
+          "entities": []
+        }
+      ],
+      "damage_windows": []
+    },
+    {
+      "panel": "original",
+      "case_id": "2881dd94fbb424b1e28ab6e0464eb351a8d3aac7139f402cd9eaa25c848d0ce2",
+      "baseline_success": true,
+      "candidate_success": false,
+      "damage_delta": 0,
+      "first_action_divergence": 0,
+      "baseline_final": {
+        "room": [
+          0,
+          0,
+          224
+        ],
+        "x": 33,
+        "y": 94
+      },
+      "candidate_final": {
+        "room": [
+          0,
+          0,
+          224
+        ],
+        "x": 35,
+        "y": 99,
+        "dialogue": false,
+        "sword": true,
+        "health": 16,
+        "a_item": 1,
+        "b_item": 4
+      },
+      "repeated_positions": [
+        {
+          "room": [
+            0,
+            0,
+            224
+          ],
+          "x": 35,
+          "y": 99,
+          "actions": 62
+        },
+        {
+          "room": [
+            0,
+            0,
+            224
+          ],
+          "x": 35,
+          "y": 89,
+          "actions": 62
+        },
+        {
+          "room": [
+            0,
+            0,
+            224
+          ],
+          "x": 35,
+          "y": 124,
+          "actions": 1
+        }
+      ],
+      "divergence_window": [
+        {
+          "step": 0,
+          "state": {
+            "room": [
+              0,
+              0,
+              224
+            ],
+            "x": 35,
+            "y": 124,
+            "dialogue": false,
+            "sword": true,
+            "health": 16,
+            "a_item": 1,
+            "b_item": 4
+          },
+          "after_state": {
+            "room": [
+              0,
+              0,
+              224
+            ],
+            "x": 35,
+            "y": 114,
+            "dialogue": false,
+            "sword": true,
+            "health": 16,
+            "a_item": 1,
+            "b_item": 4
+          },
+          "action": [
+            1,
+            0
+          ],
+          "damage": 0,
+          "entities": []
+        },
+        {
+          "step": 1,
+          "state": {
+            "room": [
+              0,
+              0,
+              224
+            ],
+            "x": 35,
+            "y": 114,
+            "dialogue": false,
+            "sword": true,
+            "health": 16,
+            "a_item": 1,
+            "b_item": 4
+          },
+          "after_state": {
+            "room": [
+              0,
+              0,
+              224
+            ],
+            "x": 35,
+            "y": 104,
+            "dialogue": false,
+            "sword": true,
+            "health": 16,
+            "a_item": 1,
+            "b_item": 4
+          },
+          "action": [
+            1,
+            0
+          ],
+          "damage": 0,
+          "entities": []
+        },
+        {
+          "step": 2,
+          "state": {
+            "room": [
+              0,
+              0,
+              224
+            ],
+            "x": 35,
+            "y": 104,
+            "dialogue": false,
+            "sword": true,
+            "health": 16,
+            "a_item": 1,
+            "b_item": 4
+          },
+          "after_state": {
+            "room": [
+              0,
+              0,
+              224
+            ],
+            "x": 35,
+            "y": 103,
+            "dialogue": false,
+            "sword": true,
+            "health": 16,
+            "a_item": 1,
+            "b_item": 4
+          },
+          "action": [
+            1,
+            1
+          ],
+          "damage": 0,
+          "entities": []
+        },
+        {
+          "step": 3,
+          "state": {
+            "room": [
+              0,
+              0,
+              224
+            ],
+            "x": 35,
+            "y": 103,
+            "dialogue": false,
+            "sword": true,
+            "health": 16,
+            "a_item": 1,
+            "b_item": 4
+          },
+          "after_state": {
+            "room": [
+              0,
+              0,
+              224
+            ],
+            "x": 35,
+            "y": 99,
+            "dialogue": false,
+            "sword": true,
+            "health": 16,
+            "a_item": 1,
+            "b_item": 4
+          },
+          "action": [
+            1,
+            0
+          ],
+          "damage": 0,
+          "entities": []
+        }
+      ],
+      "final_window": [
+        {
+          "step": 124,
+          "state": {
+            "room": [
+              0,
+              0,
+              224
+            ],
+            "x": 35,
+            "y": 99,
+            "dialogue": false,
+            "sword": true,
+            "health": 16,
+            "a_item": 1,
+            "b_item": 4
+          },
+          "after_state": {
+            "room": [
+              0,
+              0,
+              224
+            ],
+            "x": 35,
+            "y": 89,
+            "dialogue": false,
+            "sword": true,
+            "health": 16,
+            "a_item": 1,
+            "b_item": 4
+          },
+          "action": [
+            1,
+            0
+          ],
+          "damage": 0,
+          "entities": []
+        },
+        {
+          "step": 125,
+          "state": {
+            "room": [
+              0,
+              0,
+              224
+            ],
+            "x": 35,
+            "y": 89,
+            "dialogue": false,
+            "sword": true,
+            "health": 16,
+            "a_item": 1,
+            "b_item": 4
+          },
+          "after_state": {
+            "room": [
+              0,
+              0,
+              224
+            ],
+            "x": 35,
+            "y": 99,
+            "dialogue": false,
+            "sword": true,
+            "health": 16,
+            "a_item": 1,
+            "b_item": 4
+          },
+          "action": [
+            2,
+            0
+          ],
+          "damage": 0,
+          "entities": []
+        },
+        {
+          "step": 126,
+          "state": {
+            "room": [
+              0,
+              0,
+              224
+            ],
+            "x": 35,
+            "y": 99,
+            "dialogue": false,
+            "sword": true,
+            "health": 16,
+            "a_item": 1,
+            "b_item": 4
+          },
+          "after_state": {
+            "room": [
+              0,
+              0,
+              224
+            ],
+            "x": 35,
+            "y": 89,
+            "dialogue": false,
+            "sword": true,
+            "health": 16,
+            "a_item": 1,
+            "b_item": 4
+          },
+          "action": [
+            1,
+            0
+          ],
+          "damage": 0,
+          "entities": []
+        },
+        {
+          "step": 127,
+          "state": {
+            "room": [
+              0,
+              0,
+              224
+            ],
+            "x": 35,
+            "y": 89,
+            "dialogue": false,
+            "sword": true,
+            "health": 16,
+            "a_item": 1,
+            "b_item": 4
+          },
+          "after_state": {
+            "room": [
+              0,
+              0,
+              224
+            ],
+            "x": 35,
+            "y": 99,
+            "dialogue": false,
+            "sword": true,
+            "health": 16,
+            "a_item": 1,
+            "b_item": 4
+          },
+          "action": [
+            2,
+            0
+          ],
+          "damage": 0,
+          "entities": []
+        }
+      ],
+      "damage_windows": []
+    },
+    {
+      "panel": "original",
+      "case_id": "c2d33e5c7c9523f2c88e2894d23d7297fffc74e807099721f330ed7685fdb94f",
+      "baseline_success": true,
+      "candidate_success": false,
+      "damage_delta": 0,
+      "first_action_divergence": 0,
+      "baseline_final": {
+        "room": [
+          0,
+          0,
+          225
+        ],
+        "x": 38,
+        "y": 81
+      },
+      "candidate_final": {
+        "room": [
+          0,
+          0,
+          225
+        ],
+        "x": 18,
+        "y": 112,
+        "dialogue": false,
+        "sword": true,
+        "health": 16,
+        "a_item": 1,
+        "b_item": 4
+      },
+      "repeated_positions": [
+        {
+          "room": [
+            0,
+            0,
+            225
+          ],
+          "x": 18,
+          "y": 112,
+          "actions": 110
+        },
+        {
+          "room": [
+            0,
+            0,
+            225
+          ],
+          "x": 18,
+          "y": 92,
+          "actions": 3
+        },
+        {
+          "room": [
+            0,
+            0,
+            225
+          ],
+          "x": 18,
+          "y": 36,
+          "actions": 1
+        }
+      ],
+      "divergence_window": [
+        {
+          "step": 0,
+          "state": {
+            "room": [
+              0,
+              0,
+              225
+            ],
+            "x": 18,
+            "y": 36,
+            "dialogue": false,
+            "sword": true,
+            "health": 8,
+            "a_item": 1,
+            "b_item": 4
+          },
+          "after_state": {
+            "room": [
+              0,
+              0,
+              225
+            ],
+            "x": 18,
+            "y": 46,
+            "dialogue": false,
+            "sword": true,
+            "health": 8,
+            "a_item": 1,
+            "b_item": 4
+          },
+          "action": [
+            2,
+            0
+          ],
+          "damage": 0,
+          "entities": []
+        },
+        {
+          "step": 1,
+          "state": {
+            "room": [
+              0,
+              0,
+              225
+            ],
+            "x": 18,
+            "y": 46,
+            "dialogue": false,
+            "sword": true,
+            "health": 8,
+            "a_item": 1,
+            "b_item": 4
+          },
+          "after_state": {
+            "room": [
+              0,
+              0,
+              225
+            ],
+            "x": 18,
+            "y": 56,
+            "dialogue": false,
+            "sword": true,
+            "health": 8,
+            "a_item": 1,
+            "b_item": 4
+          },
+          "action": [
+            2,
+            0
+          ],
+          "damage": 0,
+          "entities": []
+        },
+        {
+          "step": 2,
+          "state": {
+            "room": [
+              0,
+              0,
+              225
+            ],
+            "x": 18,
+            "y": 56,
+            "dialogue": false,
+            "sword": true,
+            "health": 8,
+            "a_item": 1,
+            "b_item": 4
+          },
+          "after_state": {
+            "room": [
+              0,
+              0,
+              225
+            ],
+            "x": 18,
+            "y": 57,
+            "dialogue": false,
+            "sword": true,
+            "health": 8,
+            "a_item": 1,
+            "b_item": 4
+          },
+          "action": [
+            2,
+            1
+          ],
+          "damage": 0,
+          "entities": []
+        },
+        {
+          "step": 3,
+          "state": {
+            "room": [
+              0,
+              0,
+              225
+            ],
+            "x": 18,
+            "y": 57,
+            "dialogue": false,
+            "sword": true,
+            "health": 8,
+            "a_item": 1,
+            "b_item": 4
+          },
+          "after_state": {
+            "room": [
+              0,
+              0,
+              225
+            ],
+            "x": 18,
+            "y": 61,
+            "dialogue": false,
+            "sword": true,
+            "health": 8,
+            "a_item": 1,
+            "b_item": 4
+          },
+          "action": [
+            2,
+            0
+          ],
+          "damage": 0,
+          "entities": []
+        }
+      ],
+      "final_window": [
+        {
+          "step": 124,
+          "state": {
+            "room": [
+              0,
+              0,
+              225
+            ],
+            "x": 18,
+            "y": 112,
+            "dialogue": false,
+            "sword": true,
+            "health": 16,
+            "a_item": 1,
+            "b_item": 4
+          },
+          "after_state": {
+            "room": [
+              0,
+              0,
+              225
+            ],
+            "x": 18,
+            "y": 112,
+            "dialogue": false,
+            "sword": true,
+            "health": 16,
+            "a_item": 1,
+            "b_item": 4
+          },
+          "action": [
+            3,
+            0
+          ],
+          "damage": 0,
+          "entities": []
+        },
+        {
+          "step": 125,
+          "state": {
+            "room": [
+              0,
+              0,
+              225
+            ],
+            "x": 18,
+            "y": 112,
+            "dialogue": false,
+            "sword": true,
+            "health": 16,
+            "a_item": 1,
+            "b_item": 4
+          },
+          "after_state": {
+            "room": [
+              0,
+              0,
+              225
+            ],
+            "x": 18,
+            "y": 112,
+            "dialogue": false,
+            "sword": true,
+            "health": 16,
+            "a_item": 1,
+            "b_item": 4
+          },
+          "action": [
+            2,
+            1
+          ],
+          "damage": 0,
+          "entities": []
+        },
+        {
+          "step": 126,
+          "state": {
+            "room": [
+              0,
+              0,
+              225
+            ],
+            "x": 18,
+            "y": 112,
+            "dialogue": false,
+            "sword": true,
+            "health": 16,
+            "a_item": 1,
+            "b_item": 4
+          },
+          "after_state": {
+            "room": [
+              0,
+              0,
+              225
+            ],
+            "x": 18,
+            "y": 112,
+            "dialogue": false,
+            "sword": true,
+            "health": 16,
+            "a_item": 1,
+            "b_item": 4
+          },
+          "action": [
+            3,
+            0
+          ],
+          "damage": 0,
+          "entities": []
+        },
+        {
+          "step": 127,
+          "state": {
+            "room": [
+              0,
+              0,
+              225
+            ],
+            "x": 18,
+            "y": 112,
+            "dialogue": false,
+            "sword": true,
+            "health": 16,
+            "a_item": 1,
+            "b_item": 4
+          },
+          "after_state": {
+            "room": [
+              0,
+              0,
+              225
+            ],
+            "x": 18,
+            "y": 112,
+            "dialogue": false,
+            "sword": true,
+            "health": 16,
+            "a_item": 1,
+            "b_item": 4
+          },
+          "action": [
+            2,
+            1
+          ],
+          "damage": 0,
+          "entities": []
+        }
+      ],
+      "damage_windows": []
+    },
+    {
+      "panel": "additional",
+      "case_id": "e4a3a8a5403c701c7324b538ef520b3b59ec422c7b2b093d1c6fbf4a6e78d967",
+      "baseline_success": true,
+      "candidate_success": false,
+      "damage_delta": 0,
+      "first_action_divergence": 31,
+      "baseline_final": {
+        "room": [
+          0,
+          0,
+          225
+        ],
+        "x": 132,
+        "y": 95
+      },
+      "candidate_final": {
+        "room": [
+          0,
+          0,
+          225
+        ],
+        "x": 149,
+        "y": 114,
+        "dialogue": false,
+        "sword": true,
+        "health": 12,
+        "a_item": 1,
+        "b_item": 4
+      },
+      "repeated_positions": [
+        {
+          "room": [
+            0,
+            0,
+            225
+          ],
+          "x": 149,
+          "y": 114,
+          "actions": 10
+        },
+        {
+          "room": [
+            0,
+            0,
+            225
+          ],
+          "x": 150,
+          "y": 114,
+          "actions": 10
+        },
+        {
+          "room": [
+            0,
+            0,
+            225
+          ],
+          "x": 154,
+          "y": 114,
+          "actions": 10
+        }
+      ],
+      "divergence_window": [
+        {
+          "step": 30,
+          "state": {
+            "room": [
+              0,
+              0,
+              225
+            ],
+            "x": 146,
+            "y": 114,
+            "dialogue": false,
+            "sword": true,
+            "health": 12,
+            "a_item": 1,
+            "b_item": 4
+          },
+          "after_state": {
+            "room": [
+              0,
+              0,
+              225
+            ],
+            "x": 147,
+            "y": 114,
+            "dialogue": false,
+            "sword": true,
+            "health": 12,
+            "a_item": 1,
+            "b_item": 4
+          },
+          "action": [
+            4,
+            1
+          ],
+          "damage": 0,
+          "entities": [
+            {
+              "slot": 0,
+              "status": 5,
+              "type": 197,
+              "x": 56,
+              "y": 48,
+              "vx": 0.0,
+              "vy": 0.0
+            },
+            {
+              "slot": 1,
+              "status": 5,
+              "type": 197,
+              "x": 104,
+              "y": 80,
+              "vx": 0.0,
+              "vy": 0.0
+            },
+            {
+              "slot": 2,
+              "status": 5,
+              "type": 197,
+              "x": 120,
+              "y": 80,
+              "vx": 0.0,
+              "vy": 0.0
+            }
+          ]
+        },
+        {
+          "step": 31,
+          "state": {
+            "room": [
+              0,
+              0,
+              225
+            ],
+            "x": 147,
+            "y": 114,
+            "dialogue": false,
+            "sword": true,
+            "health": 12,
+            "a_item": 1,
+            "b_item": 4
+          },
+          "after_state": {
+            "room": [
+              0,
+              0,
+              225
+            ],
+            "x": 151,
+            "y": 114,
+            "dialogue": false,
+            "sword": true,
+            "health": 12,
+            "a_item": 1,
+            "b_item": 4
+          },
+          "action": [
+            4,
+            0
+          ],
+          "damage": 0,
+          "entities": [
+            {
+              "slot": 0,
+              "status": 5,
+              "type": 197,
+              "x": 56,
+              "y": 48,
+              "vx": 0.0,
+              "vy": 0.0
+            },
+            {
+              "slot": 1,
+              "status": 5,
+              "type": 197,
+              "x": 104,
+              "y": 80,
+              "vx": 0.0,
+              "vy": 0.0
+            },
+            {
+              "slot": 2,
+              "status": 5,
+              "type": 197,
+              "x": 120,
+              "y": 80,
+              "vx": 0.0,
+              "vy": 0.0
+            }
+          ]
+        },
+        {
+          "step": 32,
+          "state": {
+            "room": [
+              0,
+              0,
+              225
+            ],
+            "x": 151,
+            "y": 114,
+            "dialogue": false,
+            "sword": true,
+            "health": 12,
+            "a_item": 1,
+            "b_item": 4
+          },
+          "after_state": {
+            "room": [
+              0,
+              0,
+              225
+            ],
+            "x": 152,
+            "y": 114,
+            "dialogue": false,
+            "sword": true,
+            "health": 12,
+            "a_item": 1,
+            "b_item": 4
+          },
+          "action": [
+            4,
+            1
+          ],
+          "damage": 0,
+          "entities": [
+            {
+              "slot": 0,
+              "status": 5,
+              "type": 197,
+              "x": 56,
+              "y": 48,
+              "vx": 0.0,
+              "vy": 0.0
+            },
+            {
+              "slot": 1,
+              "status": 5,
+              "type": 197,
+              "x": 104,
+              "y": 80,
+              "vx": 0.0,
+              "vy": 0.0
+            },
+            {
+              "slot": 2,
+              "status": 5,
+              "type": 197,
+              "x": 120,
+              "y": 80,
+              "vx": 0.0,
+              "vy": 0.0
+            }
+          ]
+        },
+        {
+          "step": 33,
+          "state": {
+            "room": [
+              0,
+              0,
+              225
+            ],
+            "x": 152,
+            "y": 114,
+            "dialogue": false,
+            "sword": true,
+            "health": 12,
+            "a_item": 1,
+            "b_item": 4
+          },
+          "after_state": {
+            "room": [
+              0,
+              0,
+              225
+            ],
+            "x": 148,
+            "y": 114,
+            "dialogue": false,
+            "sword": true,
+            "health": 12,
+            "a_item": 1,
+            "b_item": 4
+          },
+          "action": [
+            3,
+            0
+          ],
+          "damage": 0,
+          "entities": [
+            {
+              "slot": 0,
+              "status": 5,
+              "type": 197,
+              "x": 56,
+              "y": 48,
+              "vx": 0.0,
+              "vy": 0.0
+            },
+            {
+              "slot": 1,
+              "status": 5,
+              "type": 197,
+              "x": 104,
+              "y": 80,
+              "vx": 0.0,
+              "vy": 0.0
+            },
+            {
+              "slot": 2,
+              "status": 5,
+              "type": 197,
+              "x": 120,
+              "y": 80,
+              "vx": 0.0,
+              "vy": 0.0
+            }
+          ]
+        },
+        {
+          "step": 34,
+          "state": {
+            "room": [
+              0,
+              0,
+              225
+            ],
+            "x": 148,
+            "y": 114,
+            "dialogue": false,
+            "sword": true,
+            "health": 12,
+            "a_item": 1,
+            "b_item": 4
+          },
+          "after_state": {
+            "room": [
+              0,
+              0,
+              225
+            ],
+            "x": 149,
+            "y": 114,
+            "dialogue": false,
+            "sword": true,
+            "health": 12,
+            "a_item": 1,
+            "b_item": 4
+          },
+          "action": [
+            4,
+            1
+          ],
+          "damage": 0,
+          "entities": [
+            {
+              "slot": 0,
+              "status": 5,
+              "type": 197,
+              "x": 56,
+              "y": 48,
+              "vx": 0.0,
+              "vy": 0.0
+            },
+            {
+              "slot": 1,
+              "status": 5,
+              "type": 197,
+              "x": 104,
+              "y": 80,
+              "vx": 0.0,
+              "vy": 0.0
+            },
+            {
+              "slot": 2,
+              "status": 5,
+              "type": 197,
+              "x": 120,
+              "y": 80,
+              "vx": 0.0,
+              "vy": 0.0
+            }
+          ]
+        }
+      ],
+      "final_window": [
+        {
+          "step": 124,
+          "state": {
+            "room": [
+              0,
+              0,
+              225
+            ],
+            "x": 147,
+            "y": 114,
+            "dialogue": false,
+            "sword": true,
+            "health": 12,
+            "a_item": 1,
+            "b_item": 4
+          },
+          "after_state": {
+            "room": [
+              0,
+              0,
+              225
+            ],
+            "x": 148,
+            "y": 114,
+            "dialogue": false,
+            "sword": true,
+            "health": 12,
+            "a_item": 1,
+            "b_item": 4
+          },
+          "action": [
+            4,
+            1
+          ],
+          "damage": 0,
+          "entities": [
+            {
+              "slot": 0,
+              "status": 5,
+              "type": 197,
+              "x": 56,
+              "y": 48,
+              "vx": 0.0,
+              "vy": 0.0
+            },
+            {
+              "slot": 1,
+              "status": 5,
+              "type": 197,
+              "x": 104,
+              "y": 80,
+              "vx": 0.0,
+              "vy": 0.0
+            },
+            {
+              "slot": 2,
+              "status": 5,
+              "type": 197,
+              "x": 120,
+              "y": 80,
+              "vx": 0.0,
+              "vy": 0.0
+            }
+          ]
+        },
+        {
+          "step": 125,
+          "state": {
+            "room": [
+              0,
+              0,
+              225
+            ],
+            "x": 148,
+            "y": 114,
+            "dialogue": false,
+            "sword": true,
+            "health": 12,
+            "a_item": 1,
+            "b_item": 4
+          },
+          "after_state": {
+            "room": [
+              0,
+              0,
+              225
+            ],
+            "x": 152,
+            "y": 114,
+            "dialogue": false,
+            "sword": true,
+            "health": 12,
+            "a_item": 1,
+            "b_item": 4
+          },
+          "action": [
+            4,
+            0
+          ],
+          "damage": 0,
+          "entities": [
+            {
+              "slot": 0,
+              "status": 5,
+              "type": 197,
+              "x": 56,
+              "y": 48,
+              "vx": 0.0,
+              "vy": 0.0
+            },
+            {
+              "slot": 1,
+              "status": 5,
+              "type": 197,
+              "x": 104,
+              "y": 80,
+              "vx": 0.0,
+              "vy": 0.0
+            },
+            {
+              "slot": 2,
+              "status": 5,
+              "type": 197,
+              "x": 120,
+              "y": 80,
+              "vx": 0.0,
+              "vy": 0.0
+            }
+          ]
+        },
+        {
+          "step": 126,
+          "state": {
+            "room": [
+              0,
+              0,
+              225
+            ],
+            "x": 152,
+            "y": 114,
+            "dialogue": false,
+            "sword": true,
+            "health": 12,
+            "a_item": 1,
+            "b_item": 4
+          },
+          "after_state": {
+            "room": [
+              0,
+              0,
+              225
+            ],
+            "x": 153,
+            "y": 114,
+            "dialogue": false,
+            "sword": true,
+            "health": 12,
+            "a_item": 1,
+            "b_item": 4
+          },
+          "action": [
+            4,
+            1
+          ],
+          "damage": 0,
+          "entities": [
+            {
+              "slot": 0,
+              "status": 5,
+              "type": 197,
+              "x": 56,
+              "y": 48,
+              "vx": 0.0,
+              "vy": 0.0
+            },
+            {
+              "slot": 1,
+              "status": 5,
+              "type": 197,
+              "x": 104,
+              "y": 80,
+              "vx": 0.0,
+              "vy": 0.0
+            },
+            {
+              "slot": 2,
+              "status": 5,
+              "type": 197,
+              "x": 120,
+              "y": 80,
+              "vx": 0.0,
+              "vy": 0.0
+            }
+          ]
+        },
+        {
+          "step": 127,
+          "state": {
+            "room": [
+              0,
+              0,
+              225
+            ],
+            "x": 153,
+            "y": 114,
+            "dialogue": false,
+            "sword": true,
+            "health": 12,
+            "a_item": 1,
+            "b_item": 4
+          },
+          "after_state": {
+            "room": [
+              0,
+              0,
+              225
+            ],
+            "x": 149,
+            "y": 114,
+            "dialogue": false,
+            "sword": true,
+            "health": 12,
+            "a_item": 1,
+            "b_item": 4
+          },
+          "action": [
+            3,
+            0
+          ],
+          "damage": 0,
+          "entities": [
+            {
+              "slot": 0,
+              "status": 5,
+              "type": 197,
+              "x": 56,
+              "y": 48,
+              "vx": 0.0,
+              "vy": 0.0
+            },
+            {
+              "slot": 1,
+              "status": 5,
+              "type": 197,
+              "x": 104,
+              "y": 80,
+              "vx": 0.0,
+              "vy": 0.0
+            },
+            {
+              "slot": 2,
+              "status": 5,
+              "type": 197,
+              "x": 120,
+              "y": 80,
+              "vx": 0.0,
+              "vy": 0.0
+            }
+          ]
+        }
+      ],
+      "damage_windows": []
+    },
+    {
+      "panel": "additional",
+      "case_id": "49ee820f981e531f9676247a6db12802cc54f068ed293aa03adfb1e0614e9e14",
+      "baseline_success": true,
+      "candidate_success": true,
+      "damage_delta": 4,
+      "first_action_divergence": 0,
+      "baseline_final": {
+        "room": [
+          0,
+          0,
+          243
+        ],
+        "x": 54,
+        "y": 50
+      },
+      "candidate_final": {
+        "room": [
+          0,
+          0,
+          243
+        ],
+        "x": 53,
+        "y": 49,
+        "dialogue": false,
+        "sword": true,
+        "health": 8,
+        "a_item": 1,
+        "b_item": 4
+      },
+      "repeated_positions": [
+        {
+          "room": [
+            0,
+            0,
+            242
+          ],
+          "x": 147,
+          "y": 74,
+          "actions": 1
+        },
+        {
+          "room": [
+            0,
+            0,
+            242
+          ],
+          "x": 147,
+          "y": 73,
+          "actions": 1
+        },
+        {
+          "room": [
+            0,
+            0,
+            242
+          ],
+          "x": 147,
+          "y": 69,
+          "actions": 1
+        }
+      ],
+      "divergence_window": [
+        {
+          "step": 0,
+          "state": {
+            "room": [
+              0,
+              0,
+              242
+            ],
+            "x": 147,
+            "y": 74,
+            "dialogue": false,
+            "sword": true,
+            "health": 12,
+            "a_item": 1,
+            "b_item": 4
+          },
+          "after_state": {
+            "room": [
+              0,
+              0,
+              242
+            ],
+            "x": 147,
+            "y": 73,
+            "dialogue": false,
+            "sword": true,
+            "health": 12,
+            "a_item": 1,
+            "b_item": 4
+          },
+          "action": [
+            1,
+            1
+          ],
+          "damage": 0,
+          "entities": []
+        },
+        {
+          "step": 1,
+          "state": {
+            "room": [
+              0,
+              0,
+              242
+            ],
+            "x": 147,
+            "y": 73,
+            "dialogue": false,
+            "sword": true,
+            "health": 12,
+            "a_item": 1,
+            "b_item": 4
+          },
+          "after_state": {
+            "room": [
+              0,
+              0,
+              242
+            ],
+            "x": 147,
+            "y": 69,
+            "dialogue": false,
+            "sword": true,
+            "health": 12,
+            "a_item": 1,
+            "b_item": 4
+          },
+          "action": [
+            1,
+            0
+          ],
+          "damage": 0,
+          "entities": []
+        },
+        {
+          "step": 2,
+          "state": {
+            "room": [
+              0,
+              0,
+              242
+            ],
+            "x": 147,
+            "y": 69,
+            "dialogue": false,
+            "sword": true,
+            "health": 12,
+            "a_item": 1,
+            "b_item": 4
+          },
+          "after_state": {
+            "room": [
+              0,
+              0,
+              242
+            ],
+            "x": 147,
+            "y": 68,
+            "dialogue": false,
+            "sword": true,
+            "health": 12,
+            "a_item": 1,
+            "b_item": 4
+          },
+          "action": [
+            1,
+            1
+          ],
+          "damage": 0,
+          "entities": []
+        },
+        {
+          "step": 3,
+          "state": {
+            "room": [
+              0,
+              0,
+              242
+            ],
+            "x": 147,
+            "y": 68,
+            "dialogue": false,
+            "sword": true,
+            "health": 12,
+            "a_item": 1,
+            "b_item": 4
+          },
+          "after_state": {
+            "room": [
+              0,
+              0,
+              242
+            ],
+            "x": 147,
+            "y": 64,
+            "dialogue": false,
+            "sword": true,
+            "health": 12,
+            "a_item": 1,
+            "b_item": 4
+          },
+          "action": [
+            1,
+            0
+          ],
+          "damage": 0,
+          "entities": []
+        }
+      ],
+      "final_window": [
+        {
+          "step": 27,
+          "state": {
+            "room": [
+              0,
+              0,
+              243
+            ],
+            "x": 53,
+            "y": 59,
+            "dialogue": false,
+            "sword": true,
+            "health": 8,
+            "a_item": 1,
+            "b_item": 4
+          },
+          "after_state": {
+            "room": [
+              0,
+              0,
+              243
+            ],
+            "x": 53,
+            "y": 58,
+            "dialogue": false,
+            "sword": true,
+            "health": 8,
+            "a_item": 1,
+            "b_item": 4
+          },
+          "action": [
+            1,
+            1
+          ],
+          "damage": 0,
+          "entities": [
+            {
+              "slot": 0,
+              "status": 5,
+              "type": 198,
+              "x": 153,
+              "y": 52,
+              "vx": 0.0,
+              "vy": -0.3125
+            },
+            {
+              "slot": 1,
+              "status": 1,
+              "type": 198,
+              "x": 51,
+              "y": 46,
+              "vx": -1.0,
+              "vy": 0.0
+            }
+          ]
+        },
+        {
+          "step": 28,
+          "state": {
+            "room": [
+              0,
+              0,
+              243
+            ],
+            "x": 53,
+            "y": 58,
+            "dialogue": false,
+            "sword": true,
+            "health": 8,
+            "a_item": 1,
+            "b_item": 4
+          },
+          "after_state": {
+            "room": [
+              0,
+              0,
+              243
+            ],
+            "x": 53,
+            "y": 54,
+            "dialogue": false,
+            "sword": true,
+            "health": 8,
+            "a_item": 1,
+            "b_item": 4
+          },
+          "action": [
+            1,
+            0
+          ],
+          "damage": 0,
+          "entities": [
+            {
+              "slot": 0,
+              "status": 5,
+              "type": 198,
+              "x": 153,
+              "y": 49,
+              "vx": 0.0,
+              "vy": -0.3125
+            },
+            {
+              "slot": 1,
+              "status": 1,
+              "type": 198,
+              "x": 51,
+              "y": 46,
+              "vx": -1.0,
+              "vy": 0.0
+            }
+          ]
+        },
+        {
+          "step": 29,
+          "state": {
+            "room": [
+              0,
+              0,
+              243
+            ],
+            "x": 53,
+            "y": 54,
+            "dialogue": false,
+            "sword": true,
+            "health": 8,
+            "a_item": 1,
+            "b_item": 4
+          },
+          "after_state": {
+            "room": [
+              0,
+              0,
+              243
+            ],
+            "x": 53,
+            "y": 53,
+            "dialogue": false,
+            "sword": true,
+            "health": 8,
+            "a_item": 1,
+            "b_item": 4
+          },
+          "action": [
+            1,
+            1
+          ],
+          "damage": 0,
+          "entities": [
+            {
+              "slot": 0,
+              "status": 5,
+              "type": 198,
+              "x": 153,
+              "y": 46,
+              "vx": 0.0,
+              "vy": -0.3125
+            }
+          ]
+        },
+        {
+          "step": 30,
+          "state": {
+            "room": [
+              0,
+              0,
+              243
+            ],
+            "x": 53,
+            "y": 53,
+            "dialogue": false,
+            "sword": true,
+            "health": 8,
+            "a_item": 1,
+            "b_item": 4
+          },
+          "after_state": {
+            "room": [
+              0,
+              0,
+              243
+            ],
+            "x": 53,
+            "y": 49,
+            "dialogue": false,
+            "sword": true,
+            "health": 8,
+            "a_item": 1,
+            "b_item": 4
+          },
+          "action": [
+            1,
+            0
+          ],
+          "damage": 0,
+          "entities": [
+            {
+              "slot": 0,
+              "status": 5,
+              "type": 198,
+              "x": 150,
+              "y": 46,
+              "vx": -1.0,
+              "vy": 0.0
+            }
+          ]
+        }
+      ],
+      "damage_windows": [
+        [
+          {
+            "step": 5,
+            "state": {
+              "room": [
+                0,
+                0,
+                242
+              ],
+              "x": 148,
+              "y": 64,
+              "dialogue": false,
+              "sword": true,
+              "health": 12,
+              "a_item": 1,
+              "b_item": 4
+            },
+            "after_state": {
+              "room": [
+                0,
+                0,
+                242
+              ],
+              "x": 152,
+              "y": 64,
+              "dialogue": false,
+              "sword": true,
+              "health": 12,
+              "a_item": 1,
+              "b_item": 4
+            },
+            "action": [
+              4,
+              0
+            ],
+            "damage": 0,
+            "entities": []
+          },
+          {
+            "step": 6,
+            "state": {
+              "room": [
+                0,
+                0,
+                242
+              ],
+              "x": 152,
+              "y": 64,
+              "dialogue": false,
+              "sword": true,
+              "health": 12,
+              "a_item": 1,
+              "b_item": 4
+            },
+            "after_state": {
+              "room": [
+                0,
+                0,
+                242
+              ],
+              "x": 153,
+              "y": 64,
+              "dialogue": false,
+              "sword": true,
+              "health": 12,
+              "a_item": 1,
+              "b_item": 4
+            },
+            "action": [
+              4,
+              1
+            ],
+            "damage": 0,
+            "entities": []
+          },
+          {
+            "step": 7,
+            "state": {
+              "room": [
+                0,
+                0,
+                242
+              ],
+              "x": 153,
+              "y": 64,
+              "dialogue": false,
+              "sword": true,
+              "health": 12,
+              "a_item": 1,
+              "b_item": 4
+            },
+            "after_state": {
+              "room": [
+                0,
+                0,
+                243
+              ],
+              "x": 12,
+              "y": 64,
+              "dialogue": false,
+              "sword": true,
+              "health": 12,
+              "a_item": 1,
+              "b_item": 4
+            },
+            "action": [
+              4,
+              0
+            ],
+            "damage": 0,
+            "entities": []
+          },
+          {
+            "step": 8,
+            "state": {
+              "room": [
+                0,
+                0,
+                243
+              ],
+              "x": 12,
+              "y": 64,
+              "dialogue": false,
+              "sword": true,
+              "health": 12,
+              "a_item": 1,
+              "b_item": 4
+            },
+            "after_state": {
+              "room": [
+                0,
+                0,
+                243
+              ],
+              "x": 15,
+              "y": 64,
+              "dialogue": false,
+              "sword": true,
+              "health": 11,
+              "a_item": 1,
+              "b_item": 4
+            },
+            "action": [
+              4,
+              0
+            ],
+            "damage": 1,
+            "entities": [
+              {
+                "slot": 0,
+                "status": 5,
+                "type": 198,
+                "x": 32,
+                "y": 64,
+                "vx": -1.0,
+                "vy": 0.0
+              },
+              {
+                "slot": 1,
+                "status": 5,
+                "type": 198,
+                "x": 96,
+                "y": 80,
+                "vx": -1.0,
+                "vy": 0.0
+              }
+            ]
+          },
+          {
+            "step": 9,
+            "state": {
+              "room": [
+                0,
+                0,
+                243
+              ],
+              "x": 15,
+              "y": 64,
+              "dialogue": false,
+              "sword": true,
+              "health": 11,
+              "a_item": 1,
+              "b_item": 4
+            },
+            "after_state": {
+              "room": [
+                0,
+                0,
+                243
+              ],
+              "x": 14,
+              "y": 64,
+              "dialogue": false,
+              "sword": true,
+              "health": 8,
+              "a_item": 1,
+              "b_item": 4
+            },
+            "action": [
+              4,
+              1
+            ],
+            "damage": 3,
+            "entities": [
+              {
+                "slot": 0,
+                "status": 5,
+                "type": 198,
+                "x": 22,
+                "y": 64,
+                "vx": -1.0,
+                "vy": 0.0
+              },
+              {
+                "slot": 1,
+                "status": 5,
+                "type": 198,
+                "x": 86,
+                "y": 80,
+                "vx": -1.0,
+                "vy": 0.0
+              }
+            ]
+          }
+        ],
+        [
+          {
+            "step": 6,
+            "state": {
+              "room": [
+                0,
+                0,
+                242
+              ],
+              "x": 152,
+              "y": 64,
+              "dialogue": false,
+              "sword": true,
+              "health": 12,
+              "a_item": 1,
+              "b_item": 4
+            },
+            "after_state": {
+              "room": [
+                0,
+                0,
+                242
+              ],
+              "x": 153,
+              "y": 64,
+              "dialogue": false,
+              "sword": true,
+              "health": 12,
+              "a_item": 1,
+              "b_item": 4
+            },
+            "action": [
+              4,
+              1
+            ],
+            "damage": 0,
+            "entities": []
+          },
+          {
+            "step": 7,
+            "state": {
+              "room": [
+                0,
+                0,
+                242
+              ],
+              "x": 153,
+              "y": 64,
+              "dialogue": false,
+              "sword": true,
+              "health": 12,
+              "a_item": 1,
+              "b_item": 4
+            },
+            "after_state": {
+              "room": [
+                0,
+                0,
+                243
+              ],
+              "x": 12,
+              "y": 64,
+              "dialogue": false,
+              "sword": true,
+              "health": 12,
+              "a_item": 1,
+              "b_item": 4
+            },
+            "action": [
+              4,
+              0
+            ],
+            "damage": 0,
+            "entities": []
+          },
+          {
+            "step": 8,
+            "state": {
+              "room": [
+                0,
+                0,
+                243
+              ],
+              "x": 12,
+              "y": 64,
+              "dialogue": false,
+              "sword": true,
+              "health": 12,
+              "a_item": 1,
+              "b_item": 4
+            },
+            "after_state": {
+              "room": [
+                0,
+                0,
+                243
+              ],
+              "x": 15,
+              "y": 64,
+              "dialogue": false,
+              "sword": true,
+              "health": 11,
+              "a_item": 1,
+              "b_item": 4
+            },
+            "action": [
+              4,
+              0
+            ],
+            "damage": 1,
+            "entities": [
+              {
+                "slot": 0,
+                "status": 5,
+                "type": 198,
+                "x": 32,
+                "y": 64,
+                "vx": -1.0,
+                "vy": 0.0
+              },
+              {
+                "slot": 1,
+                "status": 5,
+                "type": 198,
+                "x": 96,
+                "y": 80,
+                "vx": -1.0,
+                "vy": 0.0
+              }
+            ]
+          },
+          {
+            "step": 9,
+            "state": {
+              "room": [
+                0,
+                0,
+                243
+              ],
+              "x": 15,
+              "y": 64,
+              "dialogue": false,
+              "sword": true,
+              "health": 11,
+              "a_item": 1,
+              "b_item": 4
+            },
+            "after_state": {
+              "room": [
+                0,
+                0,
+                243
+              ],
+              "x": 14,
+              "y": 64,
+              "dialogue": false,
+              "sword": true,
+              "health": 8,
+              "a_item": 1,
+              "b_item": 4
+            },
+            "action": [
+              4,
+              1
+            ],
+            "damage": 3,
+            "entities": [
+              {
+                "slot": 0,
+                "status": 5,
+                "type": 198,
+                "x": 22,
+                "y": 64,
+                "vx": -1.0,
+                "vy": 0.0
+              },
+              {
+                "slot": 1,
+                "status": 5,
+                "type": 198,
+                "x": 86,
+                "y": 80,
+                "vx": -1.0,
+                "vy": 0.0
+              }
+            ]
+          },
+          {
+            "step": 10,
+            "state": {
+              "room": [
+                0,
+                0,
+                243
+              ],
+              "x": 14,
+              "y": 64,
+              "dialogue": false,
+              "sword": true,
+              "health": 8,
+              "a_item": 1,
+              "b_item": 4
+            },
+            "after_state": {
+              "room": [
+                0,
+                0,
+                243
+              ],
+              "x": 18,
+              "y": 64,
+              "dialogue": false,
+              "sword": true,
+              "health": 8,
+              "a_item": 1,
+              "b_item": 4
+            },
+            "action": [
+              4,
+              0
+            ],
+            "damage": 0,
+            "entities": [
+              {
+                "slot": 0,
+                "status": 5,
+                "type": 198,
+                "x": 12,
+                "y": 64,
+                "vx": -1.0,
+                "vy": 0.0
+              },
+              {
+                "slot": 1,
+                "status": 5,
+                "type": 198,
+                "x": 76,
+                "y": 80,
+                "vx": -1.0,
+                "vy": 0.0
+              }
+            ]
+          }
+        ]
+      ]
+    }
+  ],
+  "route_regressions": [
+    {
+      "route": "west_return",
+      "start": "beach",
+      "status": "navigation_timeout",
+      "baseline_status": "success",
+      "waypoints": 3,
+      "baseline_waypoints": 4,
+      "lost": true,
+      "waypoints_lost": true,
+      "damage": 0,
+      "steps": 375,
+      "first_divergence": 356,
+      "baseline_action": [
+        1,
+        0
+      ],
+      "candidate_action": [
+        3,
+        0
+      ],
+      "final_state": {
+        "room": [
+          0,
+          0,
+          225
+        ],
+        "x": 145,
+        "y": 64,
+        "dialogue": false,
+        "sword": true,
+        "health": 12,
+        "a_item": 1,
+        "b_item": 4
+      },
+      "final_window": [
+        {
+          "step": 639,
+          "skill": "navigation",
+          "action": [
+            2,
+            1
+          ],
+          "room": [
+            0,
+            0,
+            225
+          ],
+          "x": 145,
+          "y": 64,
+          "health": 12,
+          "reward": -0.001001,
+          "goal": {
+            "room": [
+              0,
+              0,
+              226
+            ],
+            "x": 33,
+            "y": 101
+          },
+          "goal_index": 3
+        },
+        {
+          "step": 640,
+          "skill": "navigation",
+          "action": [
+            2,
+            0
+          ],
+          "room": [
+            0,
+            0,
+            225
+          ],
+          "x": 145,
+          "y": 64,
+          "health": 12,
+          "reward": -0.001001,
+          "goal": {
+            "room": [
+              0,
+              0,
+              226
+            ],
+            "x": 33,
+            "y": 101
+          },
+          "goal_index": 3
+        },
+        {
+          "step": 641,
+          "skill": "navigation",
+          "action": [
+            2,
+            1
+          ],
+          "room": [
+            0,
+            0,
+            225
+          ],
+          "x": 145,
+          "y": 64,
+          "health": 12,
+          "reward": -0.001001,
+          "goal": {
+            "room": [
+              0,
+              0,
+              226
+            ],
+            "x": 33,
+            "y": 101
+          },
+          "goal_index": 3
+        },
+        {
+          "step": 642,
+          "skill": "navigation",
+          "action": [
+            2,
+            0
+          ],
+          "room": [
+            0,
+            0,
+            225
+          ],
+          "x": 145,
+          "y": 64,
+          "health": 12,
+          "reward": -0.001001,
+          "goal": {
+            "room": [
+              0,
+              0,
+              226
+            ],
+            "x": 33,
+            "y": 101
+          },
+          "goal_index": 3
+        }
+      ],
+      "repeated_positions": [
+        {
+          "room": [
+            0,
+            0,
+            225
+          ],
+          "x": 145,
+          "y": 64,
+          "actions": 227
+        },
+        {
+          "room": [
+            0,
+            0,
+            226
+          ],
+          "x": 29,
+          "y": 115,
+          "actions": 2
+        },
+        {
+          "room": [
+            0,
+            0,
+            242
+          ],
+          "x": 85,
+          "y": 84,
+          "actions": 1
+        }
+      ]
+    },
+    {
+      "route": "west_return",
+      "start": "approach",
+      "status": "navigation_timeout",
+      "baseline_status": "success",
+      "waypoints": 3,
+      "baseline_waypoints": 4,
+      "lost": true,
+      "waypoints_lost": true,
+      "damage": 0,
+      "steps": 458,
+      "first_divergence": 176,
+      "baseline_action": [
+        1,
+        1
+      ],
+      "candidate_action": [
+        1,
+        0
+      ],
+      "final_state": {
+        "room": [
+          0,
+          0,
+          225
+        ],
+        "x": 145,
+        "y": 64,
+        "dialogue": false,
+        "sword": true,
+        "health": 8,
+        "a_item": 1,
+        "b_item": 4
+      },
+      "final_window": [
+        {
+          "step": 537,
+          "skill": "navigation",
+          "action": [
+            2,
+            1
+          ],
+          "room": [
+            0,
+            0,
+            225
+          ],
+          "x": 145,
+          "y": 64,
+          "health": 8,
+          "reward": -0.001001,
+          "goal": {
+            "room": [
+              0,
+              0,
+              226
+            ],
+            "x": 33,
+            "y": 101
+          },
+          "goal_index": 3
+        },
+        {
+          "step": 538,
+          "skill": "navigation",
+          "action": [
+            2,
+            0
+          ],
+          "room": [
+            0,
+            0,
+            225
+          ],
+          "x": 145,
+          "y": 64,
+          "health": 8,
+          "reward": -0.001001,
+          "goal": {
+            "room": [
+              0,
+              0,
+              226
+            ],
+            "x": 33,
+            "y": 101
+          },
+          "goal_index": 3
+        },
+        {
+          "step": 539,
+          "skill": "navigation",
+          "action": [
+            2,
+            1
+          ],
+          "room": [
+            0,
+            0,
+            225
+          ],
+          "x": 145,
+          "y": 64,
+          "health": 8,
+          "reward": -0.001001,
+          "goal": {
+            "room": [
+              0,
+              0,
+              226
+            ],
+            "x": 33,
+            "y": 101
+          },
+          "goal_index": 3
+        },
+        {
+          "step": 540,
+          "skill": "navigation",
+          "action": [
+            2,
+            0
+          ],
+          "room": [
+            0,
+            0,
+            225
+          ],
+          "x": 145,
+          "y": 64,
+          "health": 8,
+          "reward": -0.001001,
+          "goal": {
+            "room": [
+              0,
+              0,
+              226
+            ],
+            "x": 33,
+            "y": 101
+          },
+          "goal_index": 3
+        }
+      ],
+      "repeated_positions": [
+        {
+          "room": [
+            0,
+            0,
+            225
+          ],
+          "x": 145,
+          "y": 64,
+          "actions": 227
+        },
+        {
+          "room": [
+            0,
+            0,
+            225
+          ],
+          "x": 136,
+          "y": 90,
+          "actions": 49
+        },
+        {
+          "room": [
+            0,
+            0,
+            226
+          ],
+          "x": 36,
+          "y": 124,
+          "actions": 45
+        }
+      ]
+    }
+  ],
+  "training_fit": {
+    "training_rows_only_not_live_evidence": true,
+    "groups": {
+      "sword": {
+        "rows": 290,
+        "stats": {
+          "v7": {
+            "movement_match": 0.7482758620689656,
+            "button_match": 0.3620689655172414,
+            "button_none": 52
+          },
+          "candidate": {
+            "movement_match": 0.8896551724137931,
+            "button_match": 0.5896551724137931,
+            "button_none": 122
+          }
+        }
+      },
+      "preserve": {
+        "rows": 6773,
+        "stats": {
+          "v7": {
+            "movement_match": 0.8547172597076628,
+            "button_match": 0.994094197549092,
+            "button_none": 3365
+          },
+          "candidate": {
+            "movement_match": 0.8529455189723903,
+            "button_match": 0.9777055957478222,
+            "button_none": 3474
+          }
+        }
+      }
+    }
+  },
+  "interpretation": "Descriptive trace audit; first divergence or repeated position does not establish the cause of failure."
+}

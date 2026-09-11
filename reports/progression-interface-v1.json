@@ -1,0 +1,120 @@
+{
+  "schema": "progression-interface-validation-v1",
+  "status": "passed",
+  "acceptance_scope": "stage_1_interface_and_event_foundation",
+  "tests_run": 13,
+  "synthetic_tests_separate_from_trajectories": true,
+  "observation_purity_reads": 100,
+  "fixtures": [
+    {
+      "start": "house",
+      "sword_actions": 412,
+      "steps": 428,
+      "frames": 4967,
+      "damage_raw": 0,
+      "healing_raw": 0,
+      "physical_equip_results": [
+        {
+          "status": "succeeded",
+          "item": 1,
+          "button": "b",
+          "decisions": 8
+        },
+        {
+          "status": "succeeded",
+          "item": 1,
+          "button": "a",
+          "decisions": 8
+        }
+      ],
+      "exact_action_replay": true,
+      "journal_roundtrip_exact": true,
+      "final_fingerprint": "93858706ec61e289fd4e15a66beb185b75b09e6860675998bdaf42ee49b635f0",
+      "room_transitions": 12,
+      "dialogue_events": 2,
+      "terminal_quest_evaluated": false,
+      "assistance": "structured_read_only_game_state",
+      "supervision": "selected_sword_controller_then_scripted_physical_menu_skill"
+    },
+    {
+      "start": "beach",
+      "sword_actions": 268,
+      "steps": 268,
+      "frames": 2779,
+      "damage_raw": 0,
+      "healing_raw": 0,
+      "physical_equip_results": [],
+      "exact_action_replay": true,
+      "journal_roundtrip_exact": true,
+      "final_fingerprint": "79d917f6a18582fa28c9b6597de3237eecf48624940754b1e005d6a1a666f7e3",
+      "room_transitions": 2,
+      "dialogue_events": 2,
+      "terminal_quest_evaluated": false,
+      "assistance": "structured_read_only_game_state",
+      "supervision": "selected_sword_controller_then_scripted_physical_menu_skill"
+    },
+    {
+      "start": "approach",
+      "sword_actions": 83,
+      "steps": 83,
+      "frames": 837,
+      "damage_raw": 0,
+      "healing_raw": 0,
+      "physical_equip_results": [],
+      "exact_action_replay": true,
+      "journal_roundtrip_exact": true,
+      "final_fingerprint": "5fe5969648f0fd29b3c00e7dd056401bbe31ccf8cbd5bbd1cd7b8f61216c6138",
+      "room_transitions": 0,
+      "dialogue_events": 1,
+      "terminal_quest_evaluated": false,
+      "assistance": "structured_read_only_game_state",
+      "supervision": "selected_sword_controller_then_scripted_physical_menu_skill"
+    }
+  ],
+  "live_verified": [
+    "sword_acquisition",
+    "room_transition",
+    "dialogue_id_observation",
+    "inventory_open_close",
+    "physical_sword_equip_between_buttons"
+  ],
+  "source_grounded_pending_live": [
+    "toadstool",
+    "witch_exchange",
+    "raccoon_cure",
+    "tail_key_acquisition",
+    "tail_cave_unlock",
+    "tail_cave_entry"
+  ],
+  "wall_seconds": 5.597,
+  "workers": 1,
+  "optimizer_updates": 0,
+  "reserved_evaluation_used": false,
+  "run_directory": "runs/progression-interface-v1-verified",
+  "sources": {
+    "scripts/validate_progression_interface.py": "31ae5d6509fc3a470ef1ead2114548c4be646da23a635f1464e4d24b85b7b772",
+    "tests/test_progression.py": "d984421331fbd06fe794a2920a0e84b01462916c3349e3ff52783deb3f772f9f",
+    "src/gameboy_agent/__init__.py": "c0db13aa2a0f74826baea4e34dd5850b0acf613b4f290966df5ba3d5b3dde019",
+    "src/gameboy_agent/checkpoint.py": "92dc02738f1b2ef26aa78b71ca363a042310cbf64e320f1b74dcb3171a2c37aa",
+    "src/gameboy_agent/curation.py": "346fdbec424e4fc16fb29233d7c328668ccdb829b6bd9e11eb651209bea861c3",
+    "src/gameboy_agent/dataset.py": "e95c3f33de63f22a4d6aef19d99acdce044e1bf251f4abe866baa24a9a0cc489",
+    "src/gameboy_agent/ladx_baseline.py": "d39803146f2563f47699c664166efb28dc949043d71ee4c9603f5c761f43ab8c",
+    "src/gameboy_agent/navigation.py": "1f23b26bf4fbf95c1119d91d7f02163876b14918546bfd4d9c0b29785e1d43f8",
+    "src/gameboy_agent/neutral_env.py": "7ac122a8472bb7c4907be78f565cb7c23d449a1454b6df048bbfbb1c4699a1c7",
+    "src/gameboy_agent/progression.py": "028a2b55af1ede9083b42ea4fca8e96a0e86ffbc417b2200ce223c123f6cdf67",
+    "src/gameboy_agent/progression_env.py": "bf4205973622046a8856366f009e4fb7002c1687a84d5332e7c9a695f2eb502c",
+    "src/gameboy_agent/progression_skills.py": "5c8af16c9af88080f23dc756ea0863bb197c3ca6b2867d84e0392764503b2b3b",
+    "src/gameboy_agent/rom_profile.py": "a0d2d51dede516c30351deebf0faff60dea80a0eb5dfc73edde64a2b7c1301e9",
+    "src/gameboy_agent/skills.py": "3d34f3ec623cc5e7406d7ea9e49877dd82845a5bf8902daea693e4232323beff",
+    "src/gameboy_agent/training_env.py": "56357f1af55a5fbeb46688f8935cdacf7cdffaaed4a38f02ea4e7193867f4d8f",
+    "src/gameboy_agent/transitions.py": "9a00f8c610b755ee3580bd1f6cb22c0dab1a9217e398fbe0c58eb99c5ad86a2f"
+  },
+  "versions": {
+    "pyboy": "2.0.0",
+    "torch": "2.2.2",
+    "gymnasium": "0.29.1",
+    "numpy": "1.26.4"
+  },
+  "sword_policy_sha256": "c527a20dc92f8c9c51d41e1c9909348549202809e42a6aa732668b64492b1845",
+  "rom_sha256": "6285ba6201f17bc8595c600ebc2477d52561f0aff29b11f7fc3343bacb2e230b"
+}

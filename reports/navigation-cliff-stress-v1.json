@@ -1,0 +1,4224 @@
+{
+  "plan_sha256": "d615beb326b12a7888f3e413f611108ce682ea3bcbae59f1b3c4e03d78d2f3eb",
+  "policy_path": "runs/navigation-cliff-specialists-v2/model/epoch-256.pt",
+  "policy_sha256": "9d2b24b28be5289fc3d32d85d46faa1835ca2068d73a1e8790630d77dbaf85ec",
+  "controls": {
+    "cases": 12,
+    "valid_setups": 12,
+    "setup_damage_cases": 0,
+    "setup_damage": 0,
+    "completed": 12,
+    "safe_completed": 12,
+    "navigation_damage_cases": 0,
+    "navigation_damage": 0,
+    "navigation_deaths": 0,
+    "position_changed": 0,
+    "unique_valid_initial_fingerprints": 12,
+    "latest_expert_supervision_matches": 7
+  },
+  "perturbed": {
+    "cases": 48,
+    "valid_setups": 48,
+    "setup_damage_cases": 0,
+    "setup_damage": 0,
+    "completed": 43,
+    "safe_completed": 34,
+    "navigation_damage_cases": 9,
+    "navigation_damage": 36,
+    "navigation_deaths": 0,
+    "position_changed": 45,
+    "unique_valid_initial_fingerprints": 48,
+    "latest_expert_supervision_matches": 1
+  },
+  "by_group": {
+    "anchor": {
+      "cliff_entry": {
+        "cases": 12,
+        "valid_setups": 12,
+        "setup_damage_cases": 0,
+        "setup_damage": 0,
+        "completed": 9,
+        "safe_completed": 8,
+        "navigation_damage_cases": 1,
+        "navigation_damage": 4,
+        "navigation_deaths": 0,
+        "position_changed": 12,
+        "unique_valid_initial_fingerprints": 12,
+        "latest_expert_supervision_matches": 0
+      },
+      "return_entry": {
+        "cases": 12,
+        "valid_setups": 12,
+        "setup_damage_cases": 0,
+        "setup_damage": 0,
+        "completed": 11,
+        "safe_completed": 9,
+        "navigation_damage_cases": 2,
+        "navigation_damage": 8,
+        "navigation_deaths": 0,
+        "position_changed": 12,
+        "unique_valid_initial_fingerprints": 12,
+        "latest_expert_supervision_matches": 0
+      },
+      "upper_entry": {
+        "cases": 12,
+        "valid_setups": 12,
+        "setup_damage_cases": 0,
+        "setup_damage": 0,
+        "completed": 12,
+        "safe_completed": 8,
+        "navigation_damage_cases": 4,
+        "navigation_damage": 16,
+        "navigation_deaths": 0,
+        "position_changed": 11,
+        "unique_valid_initial_fingerprints": 12,
+        "latest_expert_supervision_matches": 1
+      },
+      "west_corridor": {
+        "cases": 12,
+        "valid_setups": 12,
+        "setup_damage_cases": 0,
+        "setup_damage": 0,
+        "completed": 11,
+        "safe_completed": 9,
+        "navigation_damage_cases": 2,
+        "navigation_damage": 8,
+        "navigation_deaths": 0,
+        "position_changed": 10,
+        "unique_valid_initial_fingerprints": 12,
+        "latest_expert_supervision_matches": 0
+      }
+    },
+    "condition": {
+      "down": {
+        "cases": 12,
+        "valid_setups": 12,
+        "setup_damage_cases": 0,
+        "setup_damage": 0,
+        "completed": 9,
+        "safe_completed": 8,
+        "navigation_damage_cases": 1,
+        "navigation_damage": 4,
+        "navigation_deaths": 0,
+        "position_changed": 12,
+        "unique_valid_initial_fingerprints": 12,
+        "latest_expert_supervision_matches": 0
+      },
+      "left": {
+        "cases": 12,
+        "valid_setups": 12,
+        "setup_damage_cases": 0,
+        "setup_damage": 0,
+        "completed": 11,
+        "safe_completed": 8,
+        "navigation_damage_cases": 3,
+        "navigation_damage": 12,
+        "navigation_deaths": 0,
+        "position_changed": 12,
+        "unique_valid_initial_fingerprints": 12,
+        "latest_expert_supervision_matches": 0
+      },
+      "right": {
+        "cases": 12,
+        "valid_setups": 12,
+        "setup_damage_cases": 0,
+        "setup_damage": 0,
+        "completed": 11,
+        "safe_completed": 10,
+        "navigation_damage_cases": 1,
+        "navigation_damage": 4,
+        "navigation_deaths": 0,
+        "position_changed": 12,
+        "unique_valid_initial_fingerprints": 12,
+        "latest_expert_supervision_matches": 1
+      },
+      "up": {
+        "cases": 12,
+        "valid_setups": 12,
+        "setup_damage_cases": 0,
+        "setup_damage": 0,
+        "completed": 12,
+        "safe_completed": 8,
+        "navigation_damage_cases": 4,
+        "navigation_damage": 16,
+        "navigation_deaths": 0,
+        "position_changed": 9,
+        "unique_valid_initial_fingerprints": 12,
+        "latest_expert_supervision_matches": 0
+      }
+    },
+    "start": {
+      "approach": {
+        "cases": 16,
+        "valid_setups": 16,
+        "setup_damage_cases": 0,
+        "setup_damage": 0,
+        "completed": 15,
+        "safe_completed": 13,
+        "navigation_damage_cases": 2,
+        "navigation_damage": 8,
+        "navigation_deaths": 0,
+        "position_changed": 15,
+        "unique_valid_initial_fingerprints": 16,
+        "latest_expert_supervision_matches": 1
+      },
+      "beach": {
+        "cases": 16,
+        "valid_setups": 16,
+        "setup_damage_cases": 0,
+        "setup_damage": 0,
+        "completed": 13,
+        "safe_completed": 12,
+        "navigation_damage_cases": 1,
+        "navigation_damage": 4,
+        "navigation_deaths": 0,
+        "position_changed": 15,
+        "unique_valid_initial_fingerprints": 16,
+        "latest_expert_supervision_matches": 0
+      },
+      "house": {
+        "cases": 16,
+        "valid_setups": 16,
+        "setup_damage_cases": 0,
+        "setup_damage": 0,
+        "completed": 15,
+        "safe_completed": 9,
+        "navigation_damage_cases": 6,
+        "navigation_damage": 24,
+        "navigation_deaths": 0,
+        "position_changed": 15,
+        "unique_valid_initial_fingerprints": 16,
+        "latest_expert_supervision_matches": 0
+      }
+    }
+  },
+  "cases": [
+    {
+      "case_id": "house-cliff_entry-control",
+      "start": "house",
+      "anchor": "cliff_entry",
+      "condition": "control",
+      "status": "success",
+      "valid_setup": true,
+      "setup_damage": 0,
+      "damage": 0,
+      "success": true,
+      "safe_success": true,
+      "steps": 267,
+      "goals_completed": 2,
+      "goals_total": 2,
+      "anchor_state": {
+        "room": [
+          0,
+          0,
+          226
+        ],
+        "x": 89,
+        "y": 99,
+        "dialogue": false,
+        "sword": true,
+        "health": 24,
+        "a_item": 1,
+        "b_item": 4
+      },
+      "initial_state": {
+        "room": [
+          0,
+          0,
+          226
+        ],
+        "x": 89,
+        "y": 99,
+        "dialogue": false,
+        "sword": true,
+        "health": 24,
+        "a_item": 1,
+        "b_item": 4
+      },
+      "final_state": {
+        "room": [
+          0,
+          0,
+          226
+        ],
+        "x": 34,
+        "y": 118,
+        "dialogue": false,
+        "sword": true,
+        "health": 24,
+        "a_item": 1,
+        "b_item": 4
+      },
+      "anchor_fingerprint": "68039945834e511b214eedbaf616e690d67dd38332493988f5d8c00c884bc3cb",
+      "initial_fingerprint": "68039945834e511b214eedbaf616e690d67dd38332493988f5d8c00c884bc3cb",
+      "final_fingerprint": "56f5403eca4cdd10f031ae60ce8838bdc112fe508fc3b9278fb6909ac319ca82",
+      "position_changed": false,
+      "room_changed": false,
+      "matches_latest_expert_supervision": true,
+      "independent_replay_verified": true,
+      "feature_replay_verified": true,
+      "control_matches_historical": true,
+      "training_performed": false
+    },
+    {
+      "case_id": "house-cliff_entry-up",
+      "start": "house",
+      "anchor": "cliff_entry",
+      "condition": "up",
+      "status": "success",
+      "valid_setup": true,
+      "setup_damage": 0,
+      "damage": 0,
+      "success": true,
+      "safe_success": true,
+      "steps": 216,
+      "goals_completed": 2,
+      "goals_total": 2,
+      "anchor_state": {
+        "room": [
+          0,
+          0,
+          226
+        ],
+        "x": 89,
+        "y": 99,
+        "dialogue": false,
+        "sword": true,
+        "health": 24,
+        "a_item": 1,
+        "b_item": 4
+      },
+      "initial_state": {
+        "room": [
+          0,
+          0,
+          226
+        ],
+        "x": 89,
+        "y": 90,
+        "dialogue": false,
+        "sword": true,
+        "health": 24,
+        "a_item": 1,
+        "b_item": 4
+      },
+      "final_state": {
+        "room": [
+          0,
+          0,
+          226
+        ],
+        "x": 34,
+        "y": 117,
+        "dialogue": false,
+        "sword": true,
+        "health": 24,
+        "a_item": 1,
+        "b_item": 4
+      },
+      "anchor_fingerprint": "68039945834e511b214eedbaf616e690d67dd38332493988f5d8c00c884bc3cb",
+      "initial_fingerprint": "552ab5d4f08ce57b7e552e171cfbb0044aa5c75b3863ac1a62c3bfc08b27d59a",
+      "final_fingerprint": "d907483d25e70909f5146d4e7c2a914ff658f11522eafbc3df107aa006802c3e",
+      "position_changed": true,
+      "room_changed": false,
+      "matches_latest_expert_supervision": false,
+      "independent_replay_verified": true,
+      "feature_replay_verified": true,
+      "control_matches_historical": false,
+      "training_performed": false
+    },
+    {
+      "case_id": "house-cliff_entry-down",
+      "start": "house",
+      "anchor": "cliff_entry",
+      "condition": "down",
+      "status": "navigation_timeout",
+      "valid_setup": true,
+      "setup_damage": 0,
+      "damage": 0,
+      "success": false,
+      "safe_success": false,
+      "steps": 375,
+      "goals_completed": 1,
+      "goals_total": 2,
+      "anchor_state": {
+        "room": [
+          0,
+          0,
+          226
+        ],
+        "x": 89,
+        "y": 99,
+        "dialogue": false,
+        "sword": true,
+        "health": 24,
+        "a_item": 1,
+        "b_item": 4
+      },
+      "initial_state": {
+        "room": [
+          0,
+          0,
+          226
+        ],
+        "x": 89,
+        "y": 109,
+        "dialogue": false,
+        "sword": true,
+        "health": 24,
+        "a_item": 1,
+        "b_item": 4
+      },
+      "final_state": {
+        "room": [
+          0,
+          0,
+          226
+        ],
+        "x": 62,
+        "y": 64,
+        "dialogue": false,
+        "sword": true,
+        "health": 24,
+        "a_item": 1,
+        "b_item": 4
+      },
+      "anchor_fingerprint": "68039945834e511b214eedbaf616e690d67dd38332493988f5d8c00c884bc3cb",
+      "initial_fingerprint": "eaf4d94b9b17652beeb254744e33536f10fee489a73e5c24571d4633a71880d7",
+      "final_fingerprint": "a518f2d19787a95e3d5c1381d957af50407d2bd5d4f736194af4c9371b5a2d23",
+      "position_changed": true,
+      "room_changed": false,
+      "matches_latest_expert_supervision": false,
+      "independent_replay_verified": true,
+      "feature_replay_verified": true,
+      "control_matches_historical": false,
+      "training_performed": false
+    },
+    {
+      "case_id": "house-cliff_entry-left",
+      "start": "house",
+      "anchor": "cliff_entry",
+      "condition": "left",
+      "status": "success",
+      "valid_setup": true,
+      "setup_damage": 0,
+      "damage": 0,
+      "success": true,
+      "safe_success": true,
+      "steps": 206,
+      "goals_completed": 2,
+      "goals_total": 2,
+      "anchor_state": {
+        "room": [
+          0,
+          0,
+          226
+        ],
+        "x": 89,
+        "y": 99,
+        "dialogue": false,
+        "sword": true,
+        "health": 24,
+        "a_item": 1,
+        "b_item": 4
+      },
+      "initial_state": {
+        "room": [
+          0,
+          0,
+          226
+        ],
+        "x": 79,
+        "y": 99,
+        "dialogue": false,
+        "sword": true,
+        "health": 24,
+        "a_item": 1,
+        "b_item": 4
+      },
+      "final_state": {
+        "room": [
+          0,
+          0,
+          226
+        ],
+        "x": 34,
+        "y": 115,
+        "dialogue": false,
+        "sword": true,
+        "health": 24,
+        "a_item": 1,
+        "b_item": 4
+      },
+      "anchor_fingerprint": "68039945834e511b214eedbaf616e690d67dd38332493988f5d8c00c884bc3cb",
+      "initial_fingerprint": "515169572b28d25114b8638bba3be725861a6974314411f5fbf2de37fa16e211",
+      "final_fingerprint": "c1bded7bb8b2c49304e5f0dc9fa6fe8a32f62b1eafc7f712b230ee65869ac416",
+      "position_changed": true,
+      "room_changed": false,
+      "matches_latest_expert_supervision": false,
+      "independent_replay_verified": true,
+      "feature_replay_verified": true,
+      "control_matches_historical": false,
+      "training_performed": false
+    },
+    {
+      "case_id": "house-cliff_entry-right",
+      "start": "house",
+      "anchor": "cliff_entry",
+      "condition": "right",
+      "status": "success",
+      "valid_setup": true,
+      "setup_damage": 0,
+      "damage": 0,
+      "success": true,
+      "safe_success": true,
+      "steps": 233,
+      "goals_completed": 2,
+      "goals_total": 2,
+      "anchor_state": {
+        "room": [
+          0,
+          0,
+          226
+        ],
+        "x": 89,
+        "y": 99,
+        "dialogue": false,
+        "sword": true,
+        "health": 24,
+        "a_item": 1,
+        "b_item": 4
+      },
+      "initial_state": {
+        "room": [
+          0,
+          0,
+          226
+        ],
+        "x": 99,
+        "y": 99,
+        "dialogue": false,
+        "sword": true,
+        "health": 24,
+        "a_item": 1,
+        "b_item": 4
+      },
+      "final_state": {
+        "room": [
+          0,
+          0,
+          226
+        ],
+        "x": 34,
+        "y": 115,
+        "dialogue": false,
+        "sword": true,
+        "health": 24,
+        "a_item": 1,
+        "b_item": 4
+      },
+      "anchor_fingerprint": "68039945834e511b214eedbaf616e690d67dd38332493988f5d8c00c884bc3cb",
+      "initial_fingerprint": "008deeccd634848c53caec0bc2613b451718b679f3aa6419fbfb5ef06b55a770",
+      "final_fingerprint": "8e7036406c3a31ebe8a2bacee697b4b539dc4425fce434437adc24cb2d9579c7",
+      "position_changed": true,
+      "room_changed": false,
+      "matches_latest_expert_supervision": false,
+      "independent_replay_verified": true,
+      "feature_replay_verified": true,
+      "control_matches_historical": false,
+      "training_performed": false
+    },
+    {
+      "case_id": "house-west_corridor-control",
+      "start": "house",
+      "anchor": "west_corridor",
+      "condition": "control",
+      "status": "success",
+      "valid_setup": true,
+      "setup_damage": 0,
+      "damage": 0,
+      "success": true,
+      "safe_success": true,
+      "steps": 227,
+      "goals_completed": 2,
+      "goals_total": 2,
+      "anchor_state": {
+        "room": [
+          0,
+          0,
+          225
+        ],
+        "x": 149,
+        "y": 90,
+        "dialogue": false,
+        "sword": true,
+        "health": 24,
+        "a_item": 1,
+        "b_item": 4
+      },
+      "initial_state": {
+        "room": [
+          0,
+          0,
+          225
+        ],
+        "x": 149,
+        "y": 90,
+        "dialogue": false,
+        "sword": true,
+        "health": 24,
+        "a_item": 1,
+        "b_item": 4
+      },
+      "final_state": {
+        "room": [
+          0,
+          0,
+          226
+        ],
+        "x": 34,
+        "y": 118,
+        "dialogue": false,
+        "sword": true,
+        "health": 24,
+        "a_item": 1,
+        "b_item": 4
+      },
+      "anchor_fingerprint": "781b70d0ff7f3b38b93e7fc8c5f3171e189f7eed1af40869d055de2496229da8",
+      "initial_fingerprint": "781b70d0ff7f3b38b93e7fc8c5f3171e189f7eed1af40869d055de2496229da8",
+      "final_fingerprint": "56f5403eca4cdd10f031ae60ce8838bdc112fe508fc3b9278fb6909ac319ca82",
+      "position_changed": false,
+      "room_changed": false,
+      "matches_latest_expert_supervision": true,
+      "independent_replay_verified": true,
+      "feature_replay_verified": true,
+      "control_matches_historical": true,
+      "training_performed": false
+    },
+    {
+      "case_id": "house-west_corridor-up",
+      "start": "house",
+      "anchor": "west_corridor",
+      "condition": "up",
+      "status": "success",
+      "valid_setup": true,
+      "setup_damage": 0,
+      "damage": 0,
+      "success": true,
+      "safe_success": true,
+      "steps": 230,
+      "goals_completed": 2,
+      "goals_total": 2,
+      "anchor_state": {
+        "room": [
+          0,
+          0,
+          225
+        ],
+        "x": 149,
+        "y": 90,
+        "dialogue": false,
+        "sword": true,
+        "health": 24,
+        "a_item": 1,
+        "b_item": 4
+      },
+      "initial_state": {
+        "room": [
+          0,
+          0,
+          225
+        ],
+        "x": 149,
+        "y": 90,
+        "dialogue": false,
+        "sword": true,
+        "health": 24,
+        "a_item": 1,
+        "b_item": 4
+      },
+      "final_state": {
+        "room": [
+          0,
+          0,
+          226
+        ],
+        "x": 34,
+        "y": 115,
+        "dialogue": false,
+        "sword": true,
+        "health": 24,
+        "a_item": 1,
+        "b_item": 4
+      },
+      "anchor_fingerprint": "781b70d0ff7f3b38b93e7fc8c5f3171e189f7eed1af40869d055de2496229da8",
+      "initial_fingerprint": "4d3c8da91a7e6454b385476a543fd85cb3f47f0cbff569b6bcc159946e43af6c",
+      "final_fingerprint": "ce683515525749b3506664f5fa8149bb8416d24470092efb4c55260c05141d51",
+      "position_changed": false,
+      "room_changed": false,
+      "matches_latest_expert_supervision": false,
+      "independent_replay_verified": true,
+      "feature_replay_verified": true,
+      "control_matches_historical": false,
+      "training_performed": false
+    },
+    {
+      "case_id": "house-west_corridor-down",
+      "start": "house",
+      "anchor": "west_corridor",
+      "condition": "down",
+      "status": "success",
+      "valid_setup": true,
+      "setup_damage": 0,
+      "damage": 0,
+      "success": true,
+      "safe_success": true,
+      "steps": 173,
+      "goals_completed": 2,
+      "goals_total": 2,
+      "anchor_state": {
+        "room": [
+          0,
+          0,
+          225
+        ],
+        "x": 149,
+        "y": 90,
+        "dialogue": false,
+        "sword": true,
+        "health": 24,
+        "a_item": 1,
+        "b_item": 4
+      },
+      "initial_state": {
+        "room": [
+          0,
+          0,
+          225
+        ],
+        "x": 149,
+        "y": 99,
+        "dialogue": false,
+        "sword": true,
+        "health": 24,
+        "a_item": 1,
+        "b_item": 4
+      },
+      "final_state": {
+        "room": [
+          0,
+          0,
+          226
+        ],
+        "x": 34,
+        "y": 115,
+        "dialogue": false,
+        "sword": true,
+        "health": 24,
+        "a_item": 1,
+        "b_item": 4
+      },
+      "anchor_fingerprint": "781b70d0ff7f3b38b93e7fc8c5f3171e189f7eed1af40869d055de2496229da8",
+      "initial_fingerprint": "d638c66f9500b9a9b89c75ede9d6ea1c3b2bdadc65bb4e5b60ecf9c2bb64017b",
+      "final_fingerprint": "d10cb5c0d3ae7d146b09104d10239e09803d86c926dcc54f12b09401f2cadbce",
+      "position_changed": true,
+      "room_changed": false,
+      "matches_latest_expert_supervision": false,
+      "independent_replay_verified": true,
+      "feature_replay_verified": true,
+      "control_matches_historical": false,
+      "training_performed": false
+    },
+    {
+      "case_id": "house-west_corridor-left",
+      "start": "house",
+      "anchor": "west_corridor",
+      "condition": "left",
+      "status": "success",
+      "valid_setup": true,
+      "setup_damage": 0,
+      "damage": 4,
+      "success": true,
+      "safe_success": false,
+      "steps": 159,
+      "goals_completed": 2,
+      "goals_total": 2,
+      "anchor_state": {
+        "room": [
+          0,
+          0,
+          225
+        ],
+        "x": 149,
+        "y": 90,
+        "dialogue": false,
+        "sword": true,
+        "health": 24,
+        "a_item": 1,
+        "b_item": 4
+      },
+      "initial_state": {
+        "room": [
+          0,
+          0,
+          225
+        ],
+        "x": 140,
+        "y": 90,
+        "dialogue": false,
+        "sword": true,
+        "health": 24,
+        "a_item": 1,
+        "b_item": 4
+      },
+      "final_state": {
+        "room": [
+          0,
+          0,
+          226
+        ],
+        "x": 34,
+        "y": 115,
+        "dialogue": false,
+        "sword": true,
+        "health": 20,
+        "a_item": 1,
+        "b_item": 4
+      },
+      "anchor_fingerprint": "781b70d0ff7f3b38b93e7fc8c5f3171e189f7eed1af40869d055de2496229da8",
+      "initial_fingerprint": "a9f2f11cfe568c6bf82eb1d0013b853bc4ae86735eef7ade17b4b79198a94503",
+      "final_fingerprint": "dabdc39a7624c65574247e81d5946695583715309905e0754ee1166d8a2202e1",
+      "position_changed": true,
+      "room_changed": false,
+      "matches_latest_expert_supervision": false,
+      "independent_replay_verified": true,
+      "feature_replay_verified": true,
+      "control_matches_historical": false,
+      "training_performed": false
+    },
+    {
+      "case_id": "house-west_corridor-right",
+      "start": "house",
+      "anchor": "west_corridor",
+      "condition": "right",
+      "status": "success",
+      "valid_setup": true,
+      "setup_damage": 0,
+      "damage": 0,
+      "success": true,
+      "safe_success": true,
+      "steps": 203,
+      "goals_completed": 2,
+      "goals_total": 2,
+      "anchor_state": {
+        "room": [
+          0,
+          0,
+          225
+        ],
+        "x": 149,
+        "y": 90,
+        "dialogue": false,
+        "sword": true,
+        "health": 24,
+        "a_item": 1,
+        "b_item": 4
+      },
+      "initial_state": {
+        "room": [
+          0,
+          0,
+          226
+        ],
+        "x": 13,
+        "y": 90,
+        "dialogue": false,
+        "sword": true,
+        "health": 24,
+        "a_item": 1,
+        "b_item": 4
+      },
+      "final_state": {
+        "room": [
+          0,
+          0,
+          226
+        ],
+        "x": 34,
+        "y": 115,
+        "dialogue": false,
+        "sword": true,
+        "health": 24,
+        "a_item": 1,
+        "b_item": 4
+      },
+      "anchor_fingerprint": "781b70d0ff7f3b38b93e7fc8c5f3171e189f7eed1af40869d055de2496229da8",
+      "initial_fingerprint": "bee2f384e009178ae84ca25bd93bb3df963e3c18e5b5361c5f2fa857124f708b",
+      "final_fingerprint": "3316e841a036ee1a3ee685d2b3425ffab0dea0a65b1c267ca4a8f1981e0006fe",
+      "position_changed": true,
+      "room_changed": true,
+      "matches_latest_expert_supervision": false,
+      "independent_replay_verified": true,
+      "feature_replay_verified": true,
+      "control_matches_historical": false,
+      "training_performed": false
+    },
+    {
+      "case_id": "house-upper_entry-control",
+      "start": "house",
+      "anchor": "upper_entry",
+      "condition": "control",
+      "status": "success",
+      "valid_setup": true,
+      "setup_damage": 0,
+      "damage": 0,
+      "success": true,
+      "safe_success": true,
+      "steps": 88,
+      "goals_completed": 2,
+      "goals_total": 2,
+      "anchor_state": {
+        "room": [
+          0,
+          0,
+          226
+        ],
+        "x": 14,
+        "y": 61,
+        "dialogue": false,
+        "sword": true,
+        "health": 24,
+        "a_item": 1,
+        "b_item": 4
+      },
+      "initial_state": {
+        "room": [
+          0,
+          0,
+          226
+        ],
+        "x": 14,
+        "y": 61,
+        "dialogue": false,
+        "sword": true,
+        "health": 24,
+        "a_item": 1,
+        "b_item": 4
+      },
+      "final_state": {
+        "room": [
+          0,
+          0,
+          226
+        ],
+        "x": 34,
+        "y": 118,
+        "dialogue": false,
+        "sword": true,
+        "health": 24,
+        "a_item": 1,
+        "b_item": 4
+      },
+      "anchor_fingerprint": "e45170064c1dc723108869afde7708187c1f85024e7f878d5a9921c67dcdc574",
+      "initial_fingerprint": "e45170064c1dc723108869afde7708187c1f85024e7f878d5a9921c67dcdc574",
+      "final_fingerprint": "56f5403eca4cdd10f031ae60ce8838bdc112fe508fc3b9278fb6909ac319ca82",
+      "position_changed": false,
+      "room_changed": false,
+      "matches_latest_expert_supervision": false,
+      "independent_replay_verified": true,
+      "feature_replay_verified": true,
+      "control_matches_historical": true,
+      "training_performed": false
+    },
+    {
+      "case_id": "house-upper_entry-up",
+      "start": "house",
+      "anchor": "upper_entry",
+      "condition": "up",
+      "status": "success",
+      "valid_setup": true,
+      "setup_damage": 0,
+      "damage": 4,
+      "success": true,
+      "safe_success": false,
+      "steps": 94,
+      "goals_completed": 2,
+      "goals_total": 2,
+      "anchor_state": {
+        "room": [
+          0,
+          0,
+          226
+        ],
+        "x": 14,
+        "y": 61,
+        "dialogue": false,
+        "sword": true,
+        "health": 24,
+        "a_item": 1,
+        "b_item": 4
+      },
+      "initial_state": {
+        "room": [
+          0,
+          0,
+          226
+        ],
+        "x": 14,
+        "y": 58,
+        "dialogue": false,
+        "sword": true,
+        "health": 24,
+        "a_item": 1,
+        "b_item": 4
+      },
+      "final_state": {
+        "room": [
+          0,
+          0,
+          226
+        ],
+        "x": 34,
+        "y": 118,
+        "dialogue": false,
+        "sword": true,
+        "health": 20,
+        "a_item": 1,
+        "b_item": 4
+      },
+      "anchor_fingerprint": "e45170064c1dc723108869afde7708187c1f85024e7f878d5a9921c67dcdc574",
+      "initial_fingerprint": "81fc45d96abee8d62838700c13d2b4d4aed2e5236622d3f4e1c5d1ee888240f9",
+      "final_fingerprint": "eaf39bc5ef9d211800d386380f2b182c01d3ca450da3b968b47715f9dc995cbe",
+      "position_changed": true,
+      "room_changed": false,
+      "matches_latest_expert_supervision": false,
+      "independent_replay_verified": true,
+      "feature_replay_verified": true,
+      "control_matches_historical": false,
+      "training_performed": false
+    },
+    {
+      "case_id": "house-upper_entry-down",
+      "start": "house",
+      "anchor": "upper_entry",
+      "condition": "down",
+      "status": "success",
+      "valid_setup": true,
+      "setup_damage": 0,
+      "damage": 4,
+      "success": true,
+      "safe_success": false,
+      "steps": 88,
+      "goals_completed": 2,
+      "goals_total": 2,
+      "anchor_state": {
+        "room": [
+          0,
+          0,
+          226
+        ],
+        "x": 14,
+        "y": 61,
+        "dialogue": false,
+        "sword": true,
+        "health": 24,
+        "a_item": 1,
+        "b_item": 4
+      },
+      "initial_state": {
+        "room": [
+          0,
+          0,
+          226
+        ],
+        "x": 14,
+        "y": 64,
+        "dialogue": false,
+        "sword": true,
+        "health": 24,
+        "a_item": 1,
+        "b_item": 4
+      },
+      "final_state": {
+        "room": [
+          0,
+          0,
+          226
+        ],
+        "x": 34,
+        "y": 115,
+        "dialogue": false,
+        "sword": true,
+        "health": 20,
+        "a_item": 1,
+        "b_item": 4
+      },
+      "anchor_fingerprint": "e45170064c1dc723108869afde7708187c1f85024e7f878d5a9921c67dcdc574",
+      "initial_fingerprint": "ec5c8e3520811be215b6a5a2330422a30e098fd86f1af9bedc7417c3723b3279",
+      "final_fingerprint": "b7796b79df8d9604e9c066962c6dcc0530fdbfc893c30d904c373b3c0d3f4a9e",
+      "position_changed": true,
+      "room_changed": false,
+      "matches_latest_expert_supervision": false,
+      "independent_replay_verified": true,
+      "feature_replay_verified": true,
+      "control_matches_historical": false,
+      "training_performed": false
+    },
+    {
+      "case_id": "house-upper_entry-left",
+      "start": "house",
+      "anchor": "upper_entry",
+      "condition": "left",
+      "status": "success",
+      "valid_setup": true,
+      "setup_damage": 0,
+      "damage": 4,
+      "success": true,
+      "safe_success": false,
+      "steps": 119,
+      "goals_completed": 2,
+      "goals_total": 2,
+      "anchor_state": {
+        "room": [
+          0,
+          0,
+          226
+        ],
+        "x": 14,
+        "y": 61,
+        "dialogue": false,
+        "sword": true,
+        "health": 24,
+        "a_item": 1,
+        "b_item": 4
+      },
+      "initial_state": {
+        "room": [
+          0,
+          0,
+          226
+        ],
+        "x": 4,
+        "y": 61,
+        "dialogue": false,
+        "sword": true,
+        "health": 24,
+        "a_item": 1,
+        "b_item": 4
+      },
+      "final_state": {
+        "room": [
+          0,
+          0,
+          226
+        ],
+        "x": 34,
+        "y": 115,
+        "dialogue": false,
+        "sword": true,
+        "health": 20,
+        "a_item": 1,
+        "b_item": 4
+      },
+      "anchor_fingerprint": "e45170064c1dc723108869afde7708187c1f85024e7f878d5a9921c67dcdc574",
+      "initial_fingerprint": "d1ad012c4523cba5221c9025c740266c19c205b24f1441f22c94a92628797b49",
+      "final_fingerprint": "333756d36f9ccd3bacb98334e9ac97d1850856390bf0edcf2a8adf5a2d979560",
+      "position_changed": true,
+      "room_changed": false,
+      "matches_latest_expert_supervision": false,
+      "independent_replay_verified": true,
+      "feature_replay_verified": true,
+      "control_matches_historical": false,
+      "training_performed": false
+    },
+    {
+      "case_id": "house-upper_entry-right",
+      "start": "house",
+      "anchor": "upper_entry",
+      "condition": "right",
+      "status": "success",
+      "valid_setup": true,
+      "setup_damage": 0,
+      "damage": 4,
+      "success": true,
+      "safe_success": false,
+      "steps": 95,
+      "goals_completed": 2,
+      "goals_total": 2,
+      "anchor_state": {
+        "room": [
+          0,
+          0,
+          226
+        ],
+        "x": 14,
+        "y": 61,
+        "dialogue": false,
+        "sword": true,
+        "health": 24,
+        "a_item": 1,
+        "b_item": 4
+      },
+      "initial_state": {
+        "room": [
+          0,
+          0,
+          226
+        ],
+        "x": 24,
+        "y": 61,
+        "dialogue": false,
+        "sword": true,
+        "health": 24,
+        "a_item": 1,
+        "b_item": 4
+      },
+      "final_state": {
+        "room": [
+          0,
+          0,
+          226
+        ],
+        "x": 34,
+        "y": 115,
+        "dialogue": false,
+        "sword": true,
+        "health": 20,
+        "a_item": 1,
+        "b_item": 4
+      },
+      "anchor_fingerprint": "e45170064c1dc723108869afde7708187c1f85024e7f878d5a9921c67dcdc574",
+      "initial_fingerprint": "78ef22fde7afffd2f559483eaf851d9a784c3726693baac134d753cf9c4e81f9",
+      "final_fingerprint": "5de33ee394f45ce3e6e342380b68e4a1803b6c1b83d6e5b7f69560836226102a",
+      "position_changed": true,
+      "room_changed": false,
+      "matches_latest_expert_supervision": false,
+      "independent_replay_verified": true,
+      "feature_replay_verified": true,
+      "control_matches_historical": false,
+      "training_performed": false
+    },
+    {
+      "case_id": "house-return_entry-control",
+      "start": "house",
+      "anchor": "return_entry",
+      "condition": "control",
+      "status": "success",
+      "valid_setup": true,
+      "setup_damage": 0,
+      "damage": 0,
+      "success": true,
+      "safe_success": true,
+      "steps": 73,
+      "goals_completed": 1,
+      "goals_total": 1,
+      "anchor_state": {
+        "room": [
+          0,
+          0,
+          226
+        ],
+        "x": 59,
+        "y": 61,
+        "dialogue": false,
+        "sword": true,
+        "health": 24,
+        "a_item": 1,
+        "b_item": 4
+      },
+      "initial_state": {
+        "room": [
+          0,
+          0,
+          226
+        ],
+        "x": 59,
+        "y": 61,
+        "dialogue": false,
+        "sword": true,
+        "health": 24,
+        "a_item": 1,
+        "b_item": 4
+      },
+      "final_state": {
+        "room": [
+          0,
+          0,
+          226
+        ],
+        "x": 34,
+        "y": 118,
+        "dialogue": false,
+        "sword": true,
+        "health": 24,
+        "a_item": 1,
+        "b_item": 4
+      },
+      "anchor_fingerprint": "6517b3767450b66e7c0fb6770cdb7776648019fc311c276e6b0c2380b190f2b4",
+      "initial_fingerprint": "6517b3767450b66e7c0fb6770cdb7776648019fc311c276e6b0c2380b190f2b4",
+      "final_fingerprint": "56f5403eca4cdd10f031ae60ce8838bdc112fe508fc3b9278fb6909ac319ca82",
+      "position_changed": false,
+      "room_changed": false,
+      "matches_latest_expert_supervision": false,
+      "independent_replay_verified": true,
+      "feature_replay_verified": true,
+      "control_matches_historical": true,
+      "training_performed": false
+    },
+    {
+      "case_id": "house-return_entry-up",
+      "start": "house",
+      "anchor": "return_entry",
+      "condition": "up",
+      "status": "success",
+      "valid_setup": true,
+      "setup_damage": 0,
+      "damage": 4,
+      "success": true,
+      "safe_success": false,
+      "steps": 69,
+      "goals_completed": 1,
+      "goals_total": 1,
+      "anchor_state": {
+        "room": [
+          0,
+          0,
+          226
+        ],
+        "x": 59,
+        "y": 61,
+        "dialogue": false,
+        "sword": true,
+        "health": 24,
+        "a_item": 1,
+        "b_item": 4
+      },
+      "initial_state": {
+        "room": [
+          0,
+          0,
+          226
+        ],
+        "x": 59,
+        "y": 51,
+        "dialogue": false,
+        "sword": true,
+        "health": 24,
+        "a_item": 1,
+        "b_item": 4
+      },
+      "final_state": {
+        "room": [
+          0,
+          0,
+          226
+        ],
+        "x": 34,
+        "y": 115,
+        "dialogue": false,
+        "sword": true,
+        "health": 20,
+        "a_item": 1,
+        "b_item": 4
+      },
+      "anchor_fingerprint": "6517b3767450b66e7c0fb6770cdb7776648019fc311c276e6b0c2380b190f2b4",
+      "initial_fingerprint": "d059d8aef286235f2e02ea1bde1681bee74e329bc6ada50c65d1fd1b914b5cdd",
+      "final_fingerprint": "2798c8006beea035faaaedf1bb5221e5e55c2f02256133a2d4037a43b4c0e300",
+      "position_changed": true,
+      "room_changed": false,
+      "matches_latest_expert_supervision": false,
+      "independent_replay_verified": true,
+      "feature_replay_verified": true,
+      "control_matches_historical": false,
+      "training_performed": false
+    },
+    {
+      "case_id": "house-return_entry-down",
+      "start": "house",
+      "anchor": "return_entry",
+      "condition": "down",
+      "status": "success",
+      "valid_setup": true,
+      "setup_damage": 0,
+      "damage": 0,
+      "success": true,
+      "safe_success": true,
+      "steps": 74,
+      "goals_completed": 1,
+      "goals_total": 1,
+      "anchor_state": {
+        "room": [
+          0,
+          0,
+          226
+        ],
+        "x": 59,
+        "y": 61,
+        "dialogue": false,
+        "sword": true,
+        "health": 24,
+        "a_item": 1,
+        "b_item": 4
+      },
+      "initial_state": {
+        "room": [
+          0,
+          0,
+          226
+        ],
+        "x": 59,
+        "y": 64,
+        "dialogue": false,
+        "sword": true,
+        "health": 24,
+        "a_item": 1,
+        "b_item": 4
+      },
+      "final_state": {
+        "room": [
+          0,
+          0,
+          226
+        ],
+        "x": 34,
+        "y": 115,
+        "dialogue": false,
+        "sword": true,
+        "health": 24,
+        "a_item": 1,
+        "b_item": 4
+      },
+      "anchor_fingerprint": "6517b3767450b66e7c0fb6770cdb7776648019fc311c276e6b0c2380b190f2b4",
+      "initial_fingerprint": "f56bfe4d49173e71ca533b8e9a0d100d01cc4b0a1392f1cdcdbeb94fc58fd488",
+      "final_fingerprint": "6fa0521c8d34b0c5d5cb9f43f6ee379ffe6cd00f040f9ec531d6d231edf8bc3e",
+      "position_changed": true,
+      "room_changed": false,
+      "matches_latest_expert_supervision": false,
+      "independent_replay_verified": true,
+      "feature_replay_verified": true,
+      "control_matches_historical": false,
+      "training_performed": false
+    },
+    {
+      "case_id": "house-return_entry-left",
+      "start": "house",
+      "anchor": "return_entry",
+      "condition": "left",
+      "status": "success",
+      "valid_setup": true,
+      "setup_damage": 0,
+      "damage": 0,
+      "success": true,
+      "safe_success": true,
+      "steps": 69,
+      "goals_completed": 1,
+      "goals_total": 1,
+      "anchor_state": {
+        "room": [
+          0,
+          0,
+          226
+        ],
+        "x": 59,
+        "y": 61,
+        "dialogue": false,
+        "sword": true,
+        "health": 24,
+        "a_item": 1,
+        "b_item": 4
+      },
+      "initial_state": {
+        "room": [
+          0,
+          0,
+          226
+        ],
+        "x": 49,
+        "y": 61,
+        "dialogue": false,
+        "sword": true,
+        "health": 24,
+        "a_item": 1,
+        "b_item": 4
+      },
+      "final_state": {
+        "room": [
+          0,
+          0,
+          226
+        ],
+        "x": 34,
+        "y": 118,
+        "dialogue": false,
+        "sword": true,
+        "health": 24,
+        "a_item": 1,
+        "b_item": 4
+      },
+      "anchor_fingerprint": "6517b3767450b66e7c0fb6770cdb7776648019fc311c276e6b0c2380b190f2b4",
+      "initial_fingerprint": "747fdd7ce9051a437c123c21b52cc6f9a3f857d21f665f4f8706f4cdd1ae7f88",
+      "final_fingerprint": "56f5403eca4cdd10f031ae60ce8838bdc112fe508fc3b9278fb6909ac319ca82",
+      "position_changed": true,
+      "room_changed": false,
+      "matches_latest_expert_supervision": false,
+      "independent_replay_verified": true,
+      "feature_replay_verified": true,
+      "control_matches_historical": false,
+      "training_performed": false
+    },
+    {
+      "case_id": "house-return_entry-right",
+      "start": "house",
+      "anchor": "return_entry",
+      "condition": "right",
+      "status": "success",
+      "valid_setup": true,
+      "setup_damage": 0,
+      "damage": 0,
+      "success": true,
+      "safe_success": true,
+      "steps": 77,
+      "goals_completed": 1,
+      "goals_total": 1,
+      "anchor_state": {
+        "room": [
+          0,
+          0,
+          226
+        ],
+        "x": 59,
+        "y": 61,
+        "dialogue": false,
+        "sword": true,
+        "health": 24,
+        "a_item": 1,
+        "b_item": 4
+      },
+      "initial_state": {
+        "room": [
+          0,
+          0,
+          226
+        ],
+        "x": 69,
+        "y": 61,
+        "dialogue": false,
+        "sword": true,
+        "health": 24,
+        "a_item": 1,
+        "b_item": 4
+      },
+      "final_state": {
+        "room": [
+          0,
+          0,
+          226
+        ],
+        "x": 34,
+        "y": 115,
+        "dialogue": false,
+        "sword": true,
+        "health": 24,
+        "a_item": 1,
+        "b_item": 4
+      },
+      "anchor_fingerprint": "6517b3767450b66e7c0fb6770cdb7776648019fc311c276e6b0c2380b190f2b4",
+      "initial_fingerprint": "06a3b6d8d8853918a2d24fbd6e335c7c399218d8182d4e621d7b2440b0c11fcd",
+      "final_fingerprint": "db091cd57bc52cd5337436eb891a1b7f52bda7570d9ab8e488ee2eef2271f21d",
+      "position_changed": true,
+      "room_changed": false,
+      "matches_latest_expert_supervision": false,
+      "independent_replay_verified": true,
+      "feature_replay_verified": true,
+      "control_matches_historical": false,
+      "training_performed": false
+    },
+    {
+      "case_id": "beach-cliff_entry-control",
+      "start": "beach",
+      "anchor": "cliff_entry",
+      "condition": "control",
+      "status": "success",
+      "valid_setup": true,
+      "setup_damage": 0,
+      "damage": 0,
+      "success": true,
+      "safe_success": true,
+      "steps": 238,
+      "goals_completed": 2,
+      "goals_total": 2,
+      "anchor_state": {
+        "room": [
+          0,
+          0,
+          226
+        ],
+        "x": 89,
+        "y": 99,
+        "dialogue": false,
+        "sword": true,
+        "health": 12,
+        "a_item": 1,
+        "b_item": 4
+      },
+      "initial_state": {
+        "room": [
+          0,
+          0,
+          226
+        ],
+        "x": 89,
+        "y": 99,
+        "dialogue": false,
+        "sword": true,
+        "health": 12,
+        "a_item": 1,
+        "b_item": 4
+      },
+      "final_state": {
+        "room": [
+          0,
+          0,
+          226
+        ],
+        "x": 34,
+        "y": 115,
+        "dialogue": false,
+        "sword": true,
+        "health": 12,
+        "a_item": 1,
+        "b_item": 4
+      },
+      "anchor_fingerprint": "23a9ba3106cf5a563390b5b53dfb183bc36a1aab219f2fe1b50ae5957ef25480",
+      "initial_fingerprint": "23a9ba3106cf5a563390b5b53dfb183bc36a1aab219f2fe1b50ae5957ef25480",
+      "final_fingerprint": "19d5d6cbe5c769dab9cca0180a592a1d01ef69862f29ed012f33a250f4f03b26",
+      "position_changed": false,
+      "room_changed": false,
+      "matches_latest_expert_supervision": true,
+      "independent_replay_verified": true,
+      "feature_replay_verified": true,
+      "control_matches_historical": true,
+      "training_performed": false
+    },
+    {
+      "case_id": "beach-cliff_entry-up",
+      "start": "beach",
+      "anchor": "cliff_entry",
+      "condition": "up",
+      "status": "success",
+      "valid_setup": true,
+      "setup_damage": 0,
+      "damage": 0,
+      "success": true,
+      "safe_success": true,
+      "steps": 226,
+      "goals_completed": 2,
+      "goals_total": 2,
+      "anchor_state": {
+        "room": [
+          0,
+          0,
+          226
+        ],
+        "x": 89,
+        "y": 99,
+        "dialogue": false,
+        "sword": true,
+        "health": 12,
+        "a_item": 1,
+        "b_item": 4
+      },
+      "initial_state": {
+        "room": [
+          0,
+          0,
+          226
+        ],
+        "x": 89,
+        "y": 90,
+        "dialogue": false,
+        "sword": true,
+        "health": 12,
+        "a_item": 1,
+        "b_item": 4
+      },
+      "final_state": {
+        "room": [
+          0,
+          0,
+          226
+        ],
+        "x": 34,
+        "y": 115,
+        "dialogue": false,
+        "sword": true,
+        "health": 20,
+        "a_item": 1,
+        "b_item": 4
+      },
+      "anchor_fingerprint": "23a9ba3106cf5a563390b5b53dfb183bc36a1aab219f2fe1b50ae5957ef25480",
+      "initial_fingerprint": "b9f604299893d261505aa52b10bcd6672a25df606d983b7025b9d2824580ff79",
+      "final_fingerprint": "649bb52b360381c8e6fd342feda671ae1b02b1bae120785d72cac2f3205cbc10",
+      "position_changed": true,
+      "room_changed": false,
+      "matches_latest_expert_supervision": false,
+      "independent_replay_verified": true,
+      "feature_replay_verified": true,
+      "control_matches_historical": false,
+      "training_performed": false
+    },
+    {
+      "case_id": "beach-cliff_entry-down",
+      "start": "beach",
+      "anchor": "cliff_entry",
+      "condition": "down",
+      "status": "navigation_timeout",
+      "valid_setup": true,
+      "setup_damage": 0,
+      "damage": 0,
+      "success": false,
+      "safe_success": false,
+      "steps": 256,
+      "goals_completed": 0,
+      "goals_total": 2,
+      "anchor_state": {
+        "room": [
+          0,
+          0,
+          226
+        ],
+        "x": 89,
+        "y": 99,
+        "dialogue": false,
+        "sword": true,
+        "health": 12,
+        "a_item": 1,
+        "b_item": 4
+      },
+      "initial_state": {
+        "room": [
+          0,
+          0,
+          226
+        ],
+        "x": 89,
+        "y": 109,
+        "dialogue": false,
+        "sword": true,
+        "health": 12,
+        "a_item": 1,
+        "b_item": 4
+      },
+      "final_state": {
+        "room": [
+          0,
+          0,
+          225
+        ],
+        "x": 75,
+        "y": 90,
+        "dialogue": false,
+        "sword": true,
+        "health": 12,
+        "a_item": 1,
+        "b_item": 4
+      },
+      "anchor_fingerprint": "23a9ba3106cf5a563390b5b53dfb183bc36a1aab219f2fe1b50ae5957ef25480",
+      "initial_fingerprint": "254ef34abe9d51e98700b1f08694691d9edcbdc34ffc055935af152b34bcee1c",
+      "final_fingerprint": "bf478f797e53fc94f202ed4e6c8f826585e01d1ccb0ba075228ab9aa5f81d77d",
+      "position_changed": true,
+      "room_changed": false,
+      "matches_latest_expert_supervision": false,
+      "independent_replay_verified": true,
+      "feature_replay_verified": true,
+      "control_matches_historical": false,
+      "training_performed": false
+    },
+    {
+      "case_id": "beach-cliff_entry-left",
+      "start": "beach",
+      "anchor": "cliff_entry",
+      "condition": "left",
+      "status": "success",
+      "valid_setup": true,
+      "setup_damage": 0,
+      "damage": 4,
+      "success": true,
+      "safe_success": false,
+      "steps": 176,
+      "goals_completed": 2,
+      "goals_total": 2,
+      "anchor_state": {
+        "room": [
+          0,
+          0,
+          226
+        ],
+        "x": 89,
+        "y": 99,
+        "dialogue": false,
+        "sword": true,
+        "health": 12,
+        "a_item": 1,
+        "b_item": 4
+      },
+      "initial_state": {
+        "room": [
+          0,
+          0,
+          226
+        ],
+        "x": 79,
+        "y": 99,
+        "dialogue": false,
+        "sword": true,
+        "health": 12,
+        "a_item": 1,
+        "b_item": 4
+      },
+      "final_state": {
+        "room": [
+          0,
+          0,
+          226
+        ],
+        "x": 34,
+        "y": 116,
+        "dialogue": false,
+        "sword": true,
+        "health": 8,
+        "a_item": 1,
+        "b_item": 4
+      },
+      "anchor_fingerprint": "23a9ba3106cf5a563390b5b53dfb183bc36a1aab219f2fe1b50ae5957ef25480",
+      "initial_fingerprint": "f2dc59a3c87e3d52b7e9188745743d49299f8483b00e1cd10bbcf9b6d7b6fb38",
+      "final_fingerprint": "5c7a206ab9d6eb69c7821bb31d234265a01a31691472799afc9c85c60c596a48",
+      "position_changed": true,
+      "room_changed": false,
+      "matches_latest_expert_supervision": false,
+      "independent_replay_verified": true,
+      "feature_replay_verified": true,
+      "control_matches_historical": false,
+      "training_performed": false
+    },
+    {
+      "case_id": "beach-cliff_entry-right",
+      "start": "beach",
+      "anchor": "cliff_entry",
+      "condition": "right",
+      "status": "success",
+      "valid_setup": true,
+      "setup_damage": 0,
+      "damage": 0,
+      "success": true,
+      "safe_success": true,
+      "steps": 240,
+      "goals_completed": 2,
+      "goals_total": 2,
+      "anchor_state": {
+        "room": [
+          0,
+          0,
+          226
+        ],
+        "x": 89,
+        "y": 99,
+        "dialogue": false,
+        "sword": true,
+        "health": 12,
+        "a_item": 1,
+        "b_item": 4
+      },
+      "initial_state": {
+        "room": [
+          0,
+          0,
+          226
+        ],
+        "x": 99,
+        "y": 99,
+        "dialogue": false,
+        "sword": true,
+        "health": 12,
+        "a_item": 1,
+        "b_item": 4
+      },
+      "final_state": {
+        "room": [
+          0,
+          0,
+          226
+        ],
+        "x": 34,
+        "y": 115,
+        "dialogue": false,
+        "sword": true,
+        "health": 12,
+        "a_item": 1,
+        "b_item": 4
+      },
+      "anchor_fingerprint": "23a9ba3106cf5a563390b5b53dfb183bc36a1aab219f2fe1b50ae5957ef25480",
+      "initial_fingerprint": "743bdde0d51bebc5a9eec4fb14d85a3a04ec745bc618832bad66489e9fb52183",
+      "final_fingerprint": "16577b7a2f12041ec178a005004cd138e5d9add2d714cc227c74ea30802138cc",
+      "position_changed": true,
+      "room_changed": false,
+      "matches_latest_expert_supervision": false,
+      "independent_replay_verified": true,
+      "feature_replay_verified": true,
+      "control_matches_historical": false,
+      "training_performed": false
+    },
+    {
+      "case_id": "beach-west_corridor-control",
+      "start": "beach",
+      "anchor": "west_corridor",
+      "condition": "control",
+      "status": "success",
+      "valid_setup": true,
+      "setup_damage": 0,
+      "damage": 0,
+      "success": true,
+      "safe_success": true,
+      "steps": 200,
+      "goals_completed": 2,
+      "goals_total": 2,
+      "anchor_state": {
+        "room": [
+          0,
+          0,
+          225
+        ],
+        "x": 149,
+        "y": 90,
+        "dialogue": false,
+        "sword": true,
+        "health": 12,
+        "a_item": 1,
+        "b_item": 4
+      },
+      "initial_state": {
+        "room": [
+          0,
+          0,
+          225
+        ],
+        "x": 149,
+        "y": 90,
+        "dialogue": false,
+        "sword": true,
+        "health": 12,
+        "a_item": 1,
+        "b_item": 4
+      },
+      "final_state": {
+        "room": [
+          0,
+          0,
+          226
+        ],
+        "x": 34,
+        "y": 115,
+        "dialogue": false,
+        "sword": true,
+        "health": 12,
+        "a_item": 1,
+        "b_item": 4
+      },
+      "anchor_fingerprint": "7cdcca1963ce498a81a34b3d17f2b64eee7972d628b56d27dab9ec31735d23e8",
+      "initial_fingerprint": "7cdcca1963ce498a81a34b3d17f2b64eee7972d628b56d27dab9ec31735d23e8",
+      "final_fingerprint": "19d5d6cbe5c769dab9cca0180a592a1d01ef69862f29ed012f33a250f4f03b26",
+      "position_changed": false,
+      "room_changed": false,
+      "matches_latest_expert_supervision": true,
+      "independent_replay_verified": true,
+      "feature_replay_verified": true,
+      "control_matches_historical": true,
+      "training_performed": false
+    },
+    {
+      "case_id": "beach-west_corridor-up",
+      "start": "beach",
+      "anchor": "west_corridor",
+      "condition": "up",
+      "status": "success",
+      "valid_setup": true,
+      "setup_damage": 0,
+      "damage": 0,
+      "success": true,
+      "safe_success": true,
+      "steps": 200,
+      "goals_completed": 2,
+      "goals_total": 2,
+      "anchor_state": {
+        "room": [
+          0,
+          0,
+          225
+        ],
+        "x": 149,
+        "y": 90,
+        "dialogue": false,
+        "sword": true,
+        "health": 12,
+        "a_item": 1,
+        "b_item": 4
+      },
+      "initial_state": {
+        "room": [
+          0,
+          0,
+          225
+        ],
+        "x": 149,
+        "y": 90,
+        "dialogue": false,
+        "sword": true,
+        "health": 12,
+        "a_item": 1,
+        "b_item": 4
+      },
+      "final_state": {
+        "room": [
+          0,
+          0,
+          226
+        ],
+        "x": 34,
+        "y": 115,
+        "dialogue": false,
+        "sword": true,
+        "health": 12,
+        "a_item": 1,
+        "b_item": 4
+      },
+      "anchor_fingerprint": "7cdcca1963ce498a81a34b3d17f2b64eee7972d628b56d27dab9ec31735d23e8",
+      "initial_fingerprint": "18e9a4e12846c344d1e865f0ac30499c18645b986f97ad46534fbcfa86da5608",
+      "final_fingerprint": "2756cb5e72ecc837111b839a12852267a75e1633753e57b3b9e46945d386701f",
+      "position_changed": false,
+      "room_changed": false,
+      "matches_latest_expert_supervision": false,
+      "independent_replay_verified": true,
+      "feature_replay_verified": true,
+      "control_matches_historical": false,
+      "training_performed": false
+    },
+    {
+      "case_id": "beach-west_corridor-down",
+      "start": "beach",
+      "anchor": "west_corridor",
+      "condition": "down",
+      "status": "success",
+      "valid_setup": true,
+      "setup_damage": 0,
+      "damage": 0,
+      "success": true,
+      "safe_success": true,
+      "steps": 226,
+      "goals_completed": 2,
+      "goals_total": 2,
+      "anchor_state": {
+        "room": [
+          0,
+          0,
+          225
+        ],
+        "x": 149,
+        "y": 90,
+        "dialogue": false,
+        "sword": true,
+        "health": 12,
+        "a_item": 1,
+        "b_item": 4
+      },
+      "initial_state": {
+        "room": [
+          0,
+          0,
+          225
+        ],
+        "x": 149,
+        "y": 99,
+        "dialogue": false,
+        "sword": true,
+        "health": 12,
+        "a_item": 1,
+        "b_item": 4
+      },
+      "final_state": {
+        "room": [
+          0,
+          0,
+          226
+        ],
+        "x": 34,
+        "y": 115,
+        "dialogue": false,
+        "sword": true,
+        "health": 12,
+        "a_item": 1,
+        "b_item": 4
+      },
+      "anchor_fingerprint": "7cdcca1963ce498a81a34b3d17f2b64eee7972d628b56d27dab9ec31735d23e8",
+      "initial_fingerprint": "4bad540472e73c518f73ce2e24510311dc279d49f17b0eefdbc6baa537b67c41",
+      "final_fingerprint": "285a0ffa5f585a4581527f8d6d8f3a86415d13e0a7940a3724d7b13c800a8b1c",
+      "position_changed": true,
+      "room_changed": false,
+      "matches_latest_expert_supervision": false,
+      "independent_replay_verified": true,
+      "feature_replay_verified": true,
+      "control_matches_historical": false,
+      "training_performed": false
+    },
+    {
+      "case_id": "beach-west_corridor-left",
+      "start": "beach",
+      "anchor": "west_corridor",
+      "condition": "left",
+      "status": "navigation_timeout",
+      "valid_setup": true,
+      "setup_damage": 0,
+      "damage": 0,
+      "success": false,
+      "safe_success": false,
+      "steps": 322,
+      "goals_completed": 1,
+      "goals_total": 2,
+      "anchor_state": {
+        "room": [
+          0,
+          0,
+          225
+        ],
+        "x": 149,
+        "y": 90,
+        "dialogue": false,
+        "sword": true,
+        "health": 12,
+        "a_item": 1,
+        "b_item": 4
+      },
+      "initial_state": {
+        "room": [
+          0,
+          0,
+          225
+        ],
+        "x": 140,
+        "y": 90,
+        "dialogue": false,
+        "sword": true,
+        "health": 12,
+        "a_item": 1,
+        "b_item": 4
+      },
+      "final_state": {
+        "room": [
+          0,
+          0,
+          226
+        ],
+        "x": 64,
+        "y": 64,
+        "dialogue": false,
+        "sword": true,
+        "health": 12,
+        "a_item": 1,
+        "b_item": 4
+      },
+      "anchor_fingerprint": "7cdcca1963ce498a81a34b3d17f2b64eee7972d628b56d27dab9ec31735d23e8",
+      "initial_fingerprint": "1715ffd31b40d30fa28099d62f5070af0c48bb788096e9cb456a1400c64819f6",
+      "final_fingerprint": "cf2f1b12f8c27cf3327384fb1b87b50bb8e1512a9dbaf927c3509d3a7bcd982d",
+      "position_changed": true,
+      "room_changed": false,
+      "matches_latest_expert_supervision": false,
+      "independent_replay_verified": true,
+      "feature_replay_verified": true,
+      "control_matches_historical": false,
+      "training_performed": false
+    },
+    {
+      "case_id": "beach-west_corridor-right",
+      "start": "beach",
+      "anchor": "west_corridor",
+      "condition": "right",
+      "status": "success",
+      "valid_setup": true,
+      "setup_damage": 0,
+      "damage": 0,
+      "success": true,
+      "safe_success": true,
+      "steps": 204,
+      "goals_completed": 2,
+      "goals_total": 2,
+      "anchor_state": {
+        "room": [
+          0,
+          0,
+          225
+        ],
+        "x": 149,
+        "y": 90,
+        "dialogue": false,
+        "sword": true,
+        "health": 12,
+        "a_item": 1,
+        "b_item": 4
+      },
+      "initial_state": {
+        "room": [
+          0,
+          0,
+          226
+        ],
+        "x": 13,
+        "y": 90,
+        "dialogue": false,
+        "sword": true,
+        "health": 12,
+        "a_item": 1,
+        "b_item": 4
+      },
+      "final_state": {
+        "room": [
+          0,
+          0,
+          226
+        ],
+        "x": 34,
+        "y": 115,
+        "dialogue": false,
+        "sword": true,
+        "health": 12,
+        "a_item": 1,
+        "b_item": 4
+      },
+      "anchor_fingerprint": "7cdcca1963ce498a81a34b3d17f2b64eee7972d628b56d27dab9ec31735d23e8",
+      "initial_fingerprint": "9d3c55cb2d2ee1b49ed5e57ad2f3260eead7c723448e2a41a788a847dc0e9fab",
+      "final_fingerprint": "20474671bd6cf72c2c038a5c26a30dd8fb63565edef82700100020ba1a2c120e",
+      "position_changed": true,
+      "room_changed": true,
+      "matches_latest_expert_supervision": false,
+      "independent_replay_verified": true,
+      "feature_replay_verified": true,
+      "control_matches_historical": false,
+      "training_performed": false
+    },
+    {
+      "case_id": "beach-upper_entry-control",
+      "start": "beach",
+      "anchor": "upper_entry",
+      "condition": "control",
+      "status": "success",
+      "valid_setup": true,
+      "setup_damage": 0,
+      "damage": 0,
+      "success": true,
+      "safe_success": true,
+      "steps": 106,
+      "goals_completed": 2,
+      "goals_total": 2,
+      "anchor_state": {
+        "room": [
+          0,
+          0,
+          226
+        ],
+        "x": 13,
+        "y": 59,
+        "dialogue": false,
+        "sword": true,
+        "health": 12,
+        "a_item": 1,
+        "b_item": 4
+      },
+      "initial_state": {
+        "room": [
+          0,
+          0,
+          226
+        ],
+        "x": 13,
+        "y": 59,
+        "dialogue": false,
+        "sword": true,
+        "health": 12,
+        "a_item": 1,
+        "b_item": 4
+      },
+      "final_state": {
+        "room": [
+          0,
+          0,
+          226
+        ],
+        "x": 34,
+        "y": 115,
+        "dialogue": false,
+        "sword": true,
+        "health": 12,
+        "a_item": 1,
+        "b_item": 4
+      },
+      "anchor_fingerprint": "e577fd9f2322cf7c4039e1d0cf7b2acb95c22d9f7519c39da9a1701b53bccf47",
+      "initial_fingerprint": "e577fd9f2322cf7c4039e1d0cf7b2acb95c22d9f7519c39da9a1701b53bccf47",
+      "final_fingerprint": "19d5d6cbe5c769dab9cca0180a592a1d01ef69862f29ed012f33a250f4f03b26",
+      "position_changed": false,
+      "room_changed": false,
+      "matches_latest_expert_supervision": false,
+      "independent_replay_verified": true,
+      "feature_replay_verified": true,
+      "control_matches_historical": true,
+      "training_performed": false
+    },
+    {
+      "case_id": "beach-upper_entry-up",
+      "start": "beach",
+      "anchor": "upper_entry",
+      "condition": "up",
+      "status": "success",
+      "valid_setup": true,
+      "setup_damage": 0,
+      "damage": 0,
+      "success": true,
+      "safe_success": true,
+      "steps": 106,
+      "goals_completed": 2,
+      "goals_total": 2,
+      "anchor_state": {
+        "room": [
+          0,
+          0,
+          226
+        ],
+        "x": 13,
+        "y": 59,
+        "dialogue": false,
+        "sword": true,
+        "health": 12,
+        "a_item": 1,
+        "b_item": 4
+      },
+      "initial_state": {
+        "room": [
+          0,
+          0,
+          226
+        ],
+        "x": 13,
+        "y": 58,
+        "dialogue": false,
+        "sword": true,
+        "health": 12,
+        "a_item": 1,
+        "b_item": 4
+      },
+      "final_state": {
+        "room": [
+          0,
+          0,
+          226
+        ],
+        "x": 34,
+        "y": 115,
+        "dialogue": false,
+        "sword": true,
+        "health": 12,
+        "a_item": 1,
+        "b_item": 4
+      },
+      "anchor_fingerprint": "e577fd9f2322cf7c4039e1d0cf7b2acb95c22d9f7519c39da9a1701b53bccf47",
+      "initial_fingerprint": "99f8b5760c7cc37579be01bc30bd2378ac578bc626e04ebf15a2f14da0298934",
+      "final_fingerprint": "c0e5b2db0c4641fe398ebd17135eab22d7578f73aff9e39478636c02b1b95ac8",
+      "position_changed": true,
+      "room_changed": false,
+      "matches_latest_expert_supervision": false,
+      "independent_replay_verified": true,
+      "feature_replay_verified": true,
+      "control_matches_historical": false,
+      "training_performed": false
+    },
+    {
+      "case_id": "beach-upper_entry-down",
+      "start": "beach",
+      "anchor": "upper_entry",
+      "condition": "down",
+      "status": "success",
+      "valid_setup": true,
+      "setup_damage": 0,
+      "damage": 0,
+      "success": true,
+      "safe_success": true,
+      "steps": 100,
+      "goals_completed": 2,
+      "goals_total": 2,
+      "anchor_state": {
+        "room": [
+          0,
+          0,
+          226
+        ],
+        "x": 13,
+        "y": 59,
+        "dialogue": false,
+        "sword": true,
+        "health": 12,
+        "a_item": 1,
+        "b_item": 4
+      },
+      "initial_state": {
+        "room": [
+          0,
+          0,
+          226
+        ],
+        "x": 13,
+        "y": 64,
+        "dialogue": false,
+        "sword": true,
+        "health": 12,
+        "a_item": 1,
+        "b_item": 4
+      },
+      "final_state": {
+        "room": [
+          0,
+          0,
+          226
+        ],
+        "x": 34,
+        "y": 115,
+        "dialogue": false,
+        "sword": true,
+        "health": 12,
+        "a_item": 1,
+        "b_item": 4
+      },
+      "anchor_fingerprint": "e577fd9f2322cf7c4039e1d0cf7b2acb95c22d9f7519c39da9a1701b53bccf47",
+      "initial_fingerprint": "cbde94d1f3d0c0c80f16794d8c2233b1b0067acdc8d19aba6653c23a95b203eb",
+      "final_fingerprint": "7a685760cec30c41f167a352bfb0f7c2a7fee23f962a6f77d83ba37bf43efeda",
+      "position_changed": true,
+      "room_changed": false,
+      "matches_latest_expert_supervision": false,
+      "independent_replay_verified": true,
+      "feature_replay_verified": true,
+      "control_matches_historical": false,
+      "training_performed": false
+    },
+    {
+      "case_id": "beach-upper_entry-left",
+      "start": "beach",
+      "anchor": "upper_entry",
+      "condition": "left",
+      "status": "success",
+      "valid_setup": true,
+      "setup_damage": 0,
+      "damage": 0,
+      "success": true,
+      "safe_success": true,
+      "steps": 110,
+      "goals_completed": 2,
+      "goals_total": 2,
+      "anchor_state": {
+        "room": [
+          0,
+          0,
+          226
+        ],
+        "x": 13,
+        "y": 59,
+        "dialogue": false,
+        "sword": true,
+        "health": 12,
+        "a_item": 1,
+        "b_item": 4
+      },
+      "initial_state": {
+        "room": [
+          0,
+          0,
+          225
+        ],
+        "x": 148,
+        "y": 59,
+        "dialogue": false,
+        "sword": true,
+        "health": 12,
+        "a_item": 1,
+        "b_item": 4
+      },
+      "final_state": {
+        "room": [
+          0,
+          0,
+          226
+        ],
+        "x": 34,
+        "y": 115,
+        "dialogue": false,
+        "sword": true,
+        "health": 12,
+        "a_item": 1,
+        "b_item": 4
+      },
+      "anchor_fingerprint": "e577fd9f2322cf7c4039e1d0cf7b2acb95c22d9f7519c39da9a1701b53bccf47",
+      "initial_fingerprint": "d04fecef79d4ca10bd518d6d455e46d1fb969d0d7c46b3a556f0d695bbb8591d",
+      "final_fingerprint": "57e0cc4a72f026d459eeb03bfaa4f3f51f34c16d1abb66cf4a69dcc0df1b870d",
+      "position_changed": true,
+      "room_changed": true,
+      "matches_latest_expert_supervision": false,
+      "independent_replay_verified": true,
+      "feature_replay_verified": true,
+      "control_matches_historical": false,
+      "training_performed": false
+    },
+    {
+      "case_id": "beach-upper_entry-right",
+      "start": "beach",
+      "anchor": "upper_entry",
+      "condition": "right",
+      "status": "success",
+      "valid_setup": true,
+      "setup_damage": 0,
+      "damage": 0,
+      "success": true,
+      "safe_success": true,
+      "steps": 97,
+      "goals_completed": 2,
+      "goals_total": 2,
+      "anchor_state": {
+        "room": [
+          0,
+          0,
+          226
+        ],
+        "x": 13,
+        "y": 59,
+        "dialogue": false,
+        "sword": true,
+        "health": 12,
+        "a_item": 1,
+        "b_item": 4
+      },
+      "initial_state": {
+        "room": [
+          0,
+          0,
+          226
+        ],
+        "x": 23,
+        "y": 59,
+        "dialogue": false,
+        "sword": true,
+        "health": 12,
+        "a_item": 1,
+        "b_item": 4
+      },
+      "final_state": {
+        "room": [
+          0,
+          0,
+          226
+        ],
+        "x": 34,
+        "y": 115,
+        "dialogue": false,
+        "sword": true,
+        "health": 12,
+        "a_item": 1,
+        "b_item": 4
+      },
+      "anchor_fingerprint": "e577fd9f2322cf7c4039e1d0cf7b2acb95c22d9f7519c39da9a1701b53bccf47",
+      "initial_fingerprint": "559a11822687cbe95e82fadf01e6ca038085fe15769e01484f9c28f99aaef01c",
+      "final_fingerprint": "63ad8a7315d9765b4683558059d381d58eb2f18bd21927e954dce384d034d50a",
+      "position_changed": true,
+      "room_changed": false,
+      "matches_latest_expert_supervision": false,
+      "independent_replay_verified": true,
+      "feature_replay_verified": true,
+      "control_matches_historical": false,
+      "training_performed": false
+    },
+    {
+      "case_id": "beach-return_entry-control",
+      "start": "beach",
+      "anchor": "return_entry",
+      "condition": "control",
+      "status": "success",
+      "valid_setup": true,
+      "setup_damage": 0,
+      "damage": 0,
+      "success": true,
+      "safe_success": true,
+      "steps": 81,
+      "goals_completed": 1,
+      "goals_total": 1,
+      "anchor_state": {
+        "room": [
+          0,
+          0,
+          226
+        ],
+        "x": 63,
+        "y": 59,
+        "dialogue": false,
+        "sword": true,
+        "health": 12,
+        "a_item": 1,
+        "b_item": 4
+      },
+      "initial_state": {
+        "room": [
+          0,
+          0,
+          226
+        ],
+        "x": 63,
+        "y": 59,
+        "dialogue": false,
+        "sword": true,
+        "health": 12,
+        "a_item": 1,
+        "b_item": 4
+      },
+      "final_state": {
+        "room": [
+          0,
+          0,
+          226
+        ],
+        "x": 34,
+        "y": 115,
+        "dialogue": false,
+        "sword": true,
+        "health": 12,
+        "a_item": 1,
+        "b_item": 4
+      },
+      "anchor_fingerprint": "120d61d9762b24114be308db907edbc21a191b390f6feb9441854fd2bb48ea5a",
+      "initial_fingerprint": "120d61d9762b24114be308db907edbc21a191b390f6feb9441854fd2bb48ea5a",
+      "final_fingerprint": "19d5d6cbe5c769dab9cca0180a592a1d01ef69862f29ed012f33a250f4f03b26",
+      "position_changed": false,
+      "room_changed": false,
+      "matches_latest_expert_supervision": false,
+      "independent_replay_verified": true,
+      "feature_replay_verified": true,
+      "control_matches_historical": true,
+      "training_performed": false
+    },
+    {
+      "case_id": "beach-return_entry-up",
+      "start": "beach",
+      "anchor": "return_entry",
+      "condition": "up",
+      "status": "success",
+      "valid_setup": true,
+      "setup_damage": 0,
+      "damage": 0,
+      "success": true,
+      "safe_success": true,
+      "steps": 89,
+      "goals_completed": 1,
+      "goals_total": 1,
+      "anchor_state": {
+        "room": [
+          0,
+          0,
+          226
+        ],
+        "x": 63,
+        "y": 59,
+        "dialogue": false,
+        "sword": true,
+        "health": 12,
+        "a_item": 1,
+        "b_item": 4
+      },
+      "initial_state": {
+        "room": [
+          0,
+          0,
+          226
+        ],
+        "x": 63,
+        "y": 49,
+        "dialogue": false,
+        "sword": true,
+        "health": 12,
+        "a_item": 1,
+        "b_item": 4
+      },
+      "final_state": {
+        "room": [
+          0,
+          0,
+          226
+        ],
+        "x": 34,
+        "y": 115,
+        "dialogue": false,
+        "sword": true,
+        "health": 12,
+        "a_item": 1,
+        "b_item": 4
+      },
+      "anchor_fingerprint": "120d61d9762b24114be308db907edbc21a191b390f6feb9441854fd2bb48ea5a",
+      "initial_fingerprint": "92d38ed1be8951fbe9c1f30ba8c3219cdd406c0df78020a0315280ace02a2025",
+      "final_fingerprint": "6f5aecd504b284433ffc1d5317dc95d628dfbfa45ad2cdb26dcca90e41509f46",
+      "position_changed": true,
+      "room_changed": false,
+      "matches_latest_expert_supervision": false,
+      "independent_replay_verified": true,
+      "feature_replay_verified": true,
+      "control_matches_historical": false,
+      "training_performed": false
+    },
+    {
+      "case_id": "beach-return_entry-down",
+      "start": "beach",
+      "anchor": "return_entry",
+      "condition": "down",
+      "status": "success",
+      "valid_setup": true,
+      "setup_damage": 0,
+      "damage": 0,
+      "success": true,
+      "safe_success": true,
+      "steps": 79,
+      "goals_completed": 1,
+      "goals_total": 1,
+      "anchor_state": {
+        "room": [
+          0,
+          0,
+          226
+        ],
+        "x": 63,
+        "y": 59,
+        "dialogue": false,
+        "sword": true,
+        "health": 12,
+        "a_item": 1,
+        "b_item": 4
+      },
+      "initial_state": {
+        "room": [
+          0,
+          0,
+          226
+        ],
+        "x": 63,
+        "y": 64,
+        "dialogue": false,
+        "sword": true,
+        "health": 12,
+        "a_item": 1,
+        "b_item": 4
+      },
+      "final_state": {
+        "room": [
+          0,
+          0,
+          226
+        ],
+        "x": 34,
+        "y": 115,
+        "dialogue": false,
+        "sword": true,
+        "health": 12,
+        "a_item": 1,
+        "b_item": 4
+      },
+      "anchor_fingerprint": "120d61d9762b24114be308db907edbc21a191b390f6feb9441854fd2bb48ea5a",
+      "initial_fingerprint": "aa8316a53470dfb240d85f5bc5d01e9dbb05b60a2cf96007e53b5b1eee54cc42",
+      "final_fingerprint": "553d2dc664bde28fb0ee5a460f8a5516e48884618a39ef1ad34b2dc825b183e8",
+      "position_changed": true,
+      "room_changed": false,
+      "matches_latest_expert_supervision": false,
+      "independent_replay_verified": true,
+      "feature_replay_verified": true,
+      "control_matches_historical": false,
+      "training_performed": false
+    },
+    {
+      "case_id": "beach-return_entry-left",
+      "start": "beach",
+      "anchor": "return_entry",
+      "condition": "left",
+      "status": "success",
+      "valid_setup": true,
+      "setup_damage": 0,
+      "damage": 0,
+      "success": true,
+      "safe_success": true,
+      "steps": 77,
+      "goals_completed": 1,
+      "goals_total": 1,
+      "anchor_state": {
+        "room": [
+          0,
+          0,
+          226
+        ],
+        "x": 63,
+        "y": 59,
+        "dialogue": false,
+        "sword": true,
+        "health": 12,
+        "a_item": 1,
+        "b_item": 4
+      },
+      "initial_state": {
+        "room": [
+          0,
+          0,
+          226
+        ],
+        "x": 53,
+        "y": 59,
+        "dialogue": false,
+        "sword": true,
+        "health": 12,
+        "a_item": 1,
+        "b_item": 4
+      },
+      "final_state": {
+        "room": [
+          0,
+          0,
+          226
+        ],
+        "x": 34,
+        "y": 115,
+        "dialogue": false,
+        "sword": true,
+        "health": 12,
+        "a_item": 1,
+        "b_item": 4
+      },
+      "anchor_fingerprint": "120d61d9762b24114be308db907edbc21a191b390f6feb9441854fd2bb48ea5a",
+      "initial_fingerprint": "d0cc716247e45958eb510a503058b8829bac29d522b69736075c4eb0a42d3655",
+      "final_fingerprint": "19d5d6cbe5c769dab9cca0180a592a1d01ef69862f29ed012f33a250f4f03b26",
+      "position_changed": true,
+      "room_changed": false,
+      "matches_latest_expert_supervision": false,
+      "independent_replay_verified": true,
+      "feature_replay_verified": true,
+      "control_matches_historical": false,
+      "training_performed": false
+    },
+    {
+      "case_id": "beach-return_entry-right",
+      "start": "beach",
+      "anchor": "return_entry",
+      "condition": "right",
+      "status": "navigation_timeout",
+      "valid_setup": true,
+      "setup_damage": 0,
+      "damage": 0,
+      "success": false,
+      "safe_success": false,
+      "steps": 256,
+      "goals_completed": 0,
+      "goals_total": 1,
+      "anchor_state": {
+        "room": [
+          0,
+          0,
+          226
+        ],
+        "x": 63,
+        "y": 59,
+        "dialogue": false,
+        "sword": true,
+        "health": 12,
+        "a_item": 1,
+        "b_item": 4
+      },
+      "initial_state": {
+        "room": [
+          0,
+          0,
+          226
+        ],
+        "x": 73,
+        "y": 59,
+        "dialogue": false,
+        "sword": true,
+        "health": 12,
+        "a_item": 1,
+        "b_item": 4
+      },
+      "final_state": {
+        "room": [
+          0,
+          0,
+          226
+        ],
+        "x": 73,
+        "y": 64,
+        "dialogue": false,
+        "sword": true,
+        "health": 12,
+        "a_item": 1,
+        "b_item": 4
+      },
+      "anchor_fingerprint": "120d61d9762b24114be308db907edbc21a191b390f6feb9441854fd2bb48ea5a",
+      "initial_fingerprint": "6740c88364e10766c83436a428156bc0e4619bf8b61731faf416c2ecbc227b49",
+      "final_fingerprint": "624b9f8cbe7b40796a00969fc391e17ce705268c89628a838792f13ac01ab5b7",
+      "position_changed": true,
+      "room_changed": false,
+      "matches_latest_expert_supervision": false,
+      "independent_replay_verified": true,
+      "feature_replay_verified": true,
+      "control_matches_historical": false,
+      "training_performed": false
+    },
+    {
+      "case_id": "approach-cliff_entry-control",
+      "start": "approach",
+      "anchor": "cliff_entry",
+      "condition": "control",
+      "status": "success",
+      "valid_setup": true,
+      "setup_damage": 0,
+      "damage": 0,
+      "success": true,
+      "safe_success": true,
+      "steps": 173,
+      "goals_completed": 2,
+      "goals_total": 2,
+      "anchor_state": {
+        "room": [
+          0,
+          0,
+          226
+        ],
+        "x": 90,
+        "y": 99,
+        "dialogue": false,
+        "sword": true,
+        "health": 8,
+        "a_item": 1,
+        "b_item": 4
+      },
+      "initial_state": {
+        "room": [
+          0,
+          0,
+          226
+        ],
+        "x": 90,
+        "y": 99,
+        "dialogue": false,
+        "sword": true,
+        "health": 8,
+        "a_item": 1,
+        "b_item": 4
+      },
+      "final_state": {
+        "room": [
+          0,
+          0,
+          226
+        ],
+        "x": 34,
+        "y": 115,
+        "dialogue": false,
+        "sword": true,
+        "health": 8,
+        "a_item": 1,
+        "b_item": 4
+      },
+      "anchor_fingerprint": "6fd82da162e93ee286a86af70e4b58c5daa4b83182ce760de225fda4d6e6a256",
+      "initial_fingerprint": "6fd82da162e93ee286a86af70e4b58c5daa4b83182ce760de225fda4d6e6a256",
+      "final_fingerprint": "f02948a0d008824743f726fa37f17f7593b6cd74fd5319bef4a7fdde210c4599",
+      "position_changed": false,
+      "room_changed": false,
+      "matches_latest_expert_supervision": true,
+      "independent_replay_verified": true,
+      "feature_replay_verified": true,
+      "control_matches_historical": true,
+      "training_performed": false
+    },
+    {
+      "case_id": "approach-cliff_entry-up",
+      "start": "approach",
+      "anchor": "cliff_entry",
+      "condition": "up",
+      "status": "success",
+      "valid_setup": true,
+      "setup_damage": 0,
+      "damage": 0,
+      "success": true,
+      "safe_success": true,
+      "steps": 173,
+      "goals_completed": 2,
+      "goals_total": 2,
+      "anchor_state": {
+        "room": [
+          0,
+          0,
+          226
+        ],
+        "x": 90,
+        "y": 99,
+        "dialogue": false,
+        "sword": true,
+        "health": 8,
+        "a_item": 1,
+        "b_item": 4
+      },
+      "initial_state": {
+        "room": [
+          0,
+          0,
+          226
+        ],
+        "x": 90,
+        "y": 90,
+        "dialogue": false,
+        "sword": true,
+        "health": 8,
+        "a_item": 1,
+        "b_item": 4
+      },
+      "final_state": {
+        "room": [
+          0,
+          0,
+          226
+        ],
+        "x": 34,
+        "y": 116,
+        "dialogue": false,
+        "sword": true,
+        "health": 8,
+        "a_item": 1,
+        "b_item": 4
+      },
+      "anchor_fingerprint": "6fd82da162e93ee286a86af70e4b58c5daa4b83182ce760de225fda4d6e6a256",
+      "initial_fingerprint": "8b0a6cdccbb68ca75d6be244a0e38fc88fac48245ddf543c4e71d00aa0c0c5db",
+      "final_fingerprint": "91d6a0bc419292e61016b79167aa75151099032de1cf5c23351cb1ae4b022c21",
+      "position_changed": true,
+      "room_changed": false,
+      "matches_latest_expert_supervision": false,
+      "independent_replay_verified": true,
+      "feature_replay_verified": true,
+      "control_matches_historical": false,
+      "training_performed": false
+    },
+    {
+      "case_id": "approach-cliff_entry-down",
+      "start": "approach",
+      "anchor": "cliff_entry",
+      "condition": "down",
+      "status": "navigation_timeout",
+      "valid_setup": true,
+      "setup_damage": 0,
+      "damage": 0,
+      "success": false,
+      "safe_success": false,
+      "steps": 256,
+      "goals_completed": 0,
+      "goals_total": 2,
+      "anchor_state": {
+        "room": [
+          0,
+          0,
+          226
+        ],
+        "x": 90,
+        "y": 99,
+        "dialogue": false,
+        "sword": true,
+        "health": 8,
+        "a_item": 1,
+        "b_item": 4
+      },
+      "initial_state": {
+        "room": [
+          0,
+          0,
+          226
+        ],
+        "x": 90,
+        "y": 109,
+        "dialogue": false,
+        "sword": true,
+        "health": 8,
+        "a_item": 1,
+        "b_item": 4
+      },
+      "final_state": {
+        "room": [
+          0,
+          0,
+          225
+        ],
+        "x": 130,
+        "y": 112,
+        "dialogue": false,
+        "sword": true,
+        "health": 8,
+        "a_item": 1,
+        "b_item": 4
+      },
+      "anchor_fingerprint": "6fd82da162e93ee286a86af70e4b58c5daa4b83182ce760de225fda4d6e6a256",
+      "initial_fingerprint": "85419ab723f35a36db88e5e511ce2b4e3dc13f55f14068f8dc83e30c72cbb201",
+      "final_fingerprint": "58e7110519eb705dac28be2523cd2e23c58e24bad2b1c93de8a8b12c624f9f58",
+      "position_changed": true,
+      "room_changed": false,
+      "matches_latest_expert_supervision": false,
+      "independent_replay_verified": true,
+      "feature_replay_verified": true,
+      "control_matches_historical": false,
+      "training_performed": false
+    },
+    {
+      "case_id": "approach-cliff_entry-left",
+      "start": "approach",
+      "anchor": "cliff_entry",
+      "condition": "left",
+      "status": "success",
+      "valid_setup": true,
+      "setup_damage": 0,
+      "damage": 0,
+      "success": true,
+      "safe_success": true,
+      "steps": 167,
+      "goals_completed": 2,
+      "goals_total": 2,
+      "anchor_state": {
+        "room": [
+          0,
+          0,
+          226
+        ],
+        "x": 90,
+        "y": 99,
+        "dialogue": false,
+        "sword": true,
+        "health": 8,
+        "a_item": 1,
+        "b_item": 4
+      },
+      "initial_state": {
+        "room": [
+          0,
+          0,
+          226
+        ],
+        "x": 80,
+        "y": 99,
+        "dialogue": false,
+        "sword": true,
+        "health": 8,
+        "a_item": 1,
+        "b_item": 4
+      },
+      "final_state": {
+        "room": [
+          0,
+          0,
+          226
+        ],
+        "x": 34,
+        "y": 115,
+        "dialogue": false,
+        "sword": true,
+        "health": 8,
+        "a_item": 1,
+        "b_item": 4
+      },
+      "anchor_fingerprint": "6fd82da162e93ee286a86af70e4b58c5daa4b83182ce760de225fda4d6e6a256",
+      "initial_fingerprint": "d29ff267e2b29b8d708f6d7a7d5a73391a2a935308b035b999ca3275d7902125",
+      "final_fingerprint": "7d0ff0cd6029ad0cee6bc65d9471333da8a7daf22993b6c84a2b4bbca777ac29",
+      "position_changed": true,
+      "room_changed": false,
+      "matches_latest_expert_supervision": false,
+      "independent_replay_verified": true,
+      "feature_replay_verified": true,
+      "control_matches_historical": false,
+      "training_performed": false
+    },
+    {
+      "case_id": "approach-cliff_entry-right",
+      "start": "approach",
+      "anchor": "cliff_entry",
+      "condition": "right",
+      "status": "success",
+      "valid_setup": true,
+      "setup_damage": 0,
+      "damage": 0,
+      "success": true,
+      "safe_success": true,
+      "steps": 175,
+      "goals_completed": 2,
+      "goals_total": 2,
+      "anchor_state": {
+        "room": [
+          0,
+          0,
+          226
+        ],
+        "x": 90,
+        "y": 99,
+        "dialogue": false,
+        "sword": true,
+        "health": 8,
+        "a_item": 1,
+        "b_item": 4
+      },
+      "initial_state": {
+        "room": [
+          0,
+          0,
+          226
+        ],
+        "x": 100,
+        "y": 99,
+        "dialogue": false,
+        "sword": true,
+        "health": 8,
+        "a_item": 1,
+        "b_item": 4
+      },
+      "final_state": {
+        "room": [
+          0,
+          0,
+          226
+        ],
+        "x": 34,
+        "y": 115,
+        "dialogue": false,
+        "sword": true,
+        "health": 8,
+        "a_item": 1,
+        "b_item": 4
+      },
+      "anchor_fingerprint": "6fd82da162e93ee286a86af70e4b58c5daa4b83182ce760de225fda4d6e6a256",
+      "initial_fingerprint": "d4121374e0fad50bf6dc7ced31890241786e9c2113125f7bb6e2c0414b0eb6e0",
+      "final_fingerprint": "831ee013952fd58ffe1630b742990a5821b2290d9a06d407bed563b3db061a77",
+      "position_changed": true,
+      "room_changed": false,
+      "matches_latest_expert_supervision": false,
+      "independent_replay_verified": true,
+      "feature_replay_verified": true,
+      "control_matches_historical": false,
+      "training_performed": false
+    },
+    {
+      "case_id": "approach-west_corridor-control",
+      "start": "approach",
+      "anchor": "west_corridor",
+      "condition": "control",
+      "status": "success",
+      "valid_setup": true,
+      "setup_damage": 0,
+      "damage": 0,
+      "success": true,
+      "safe_success": true,
+      "steps": 140,
+      "goals_completed": 2,
+      "goals_total": 2,
+      "anchor_state": {
+        "room": [
+          0,
+          0,
+          225
+        ],
+        "x": 145,
+        "y": 99,
+        "dialogue": false,
+        "sword": true,
+        "health": 8,
+        "a_item": 1,
+        "b_item": 4
+      },
+      "initial_state": {
+        "room": [
+          0,
+          0,
+          225
+        ],
+        "x": 145,
+        "y": 99,
+        "dialogue": false,
+        "sword": true,
+        "health": 8,
+        "a_item": 1,
+        "b_item": 4
+      },
+      "final_state": {
+        "room": [
+          0,
+          0,
+          226
+        ],
+        "x": 34,
+        "y": 115,
+        "dialogue": false,
+        "sword": true,
+        "health": 8,
+        "a_item": 1,
+        "b_item": 4
+      },
+      "anchor_fingerprint": "c773ed27dd309ff132fc1553bc3ce625148863cf36319643ddc0bf66d674521b",
+      "initial_fingerprint": "c773ed27dd309ff132fc1553bc3ce625148863cf36319643ddc0bf66d674521b",
+      "final_fingerprint": "f02948a0d008824743f726fa37f17f7593b6cd74fd5319bef4a7fdde210c4599",
+      "position_changed": false,
+      "room_changed": false,
+      "matches_latest_expert_supervision": true,
+      "independent_replay_verified": true,
+      "feature_replay_verified": true,
+      "control_matches_historical": true,
+      "training_performed": false
+    },
+    {
+      "case_id": "approach-west_corridor-up",
+      "start": "approach",
+      "anchor": "west_corridor",
+      "condition": "up",
+      "status": "success",
+      "valid_setup": true,
+      "setup_damage": 0,
+      "damage": 4,
+      "success": true,
+      "safe_success": false,
+      "steps": 159,
+      "goals_completed": 2,
+      "goals_total": 2,
+      "anchor_state": {
+        "room": [
+          0,
+          0,
+          225
+        ],
+        "x": 145,
+        "y": 99,
+        "dialogue": false,
+        "sword": true,
+        "health": 8,
+        "a_item": 1,
+        "b_item": 4
+      },
+      "initial_state": {
+        "room": [
+          0,
+          0,
+          225
+        ],
+        "x": 145,
+        "y": 90,
+        "dialogue": false,
+        "sword": true,
+        "health": 8,
+        "a_item": 1,
+        "b_item": 4
+      },
+      "final_state": {
+        "room": [
+          0,
+          0,
+          226
+        ],
+        "x": 34,
+        "y": 115,
+        "dialogue": false,
+        "sword": true,
+        "health": 4,
+        "a_item": 1,
+        "b_item": 4
+      },
+      "anchor_fingerprint": "c773ed27dd309ff132fc1553bc3ce625148863cf36319643ddc0bf66d674521b",
+      "initial_fingerprint": "62ac72bd74c26ecfc576632d5d3080430e69c5a87e918a108ec1485aaf5676cf",
+      "final_fingerprint": "ec322c011f2df71a1e933efcd846eb2dc10ae6755b1111010c9824e09ab5d177",
+      "position_changed": true,
+      "room_changed": false,
+      "matches_latest_expert_supervision": false,
+      "independent_replay_verified": true,
+      "feature_replay_verified": true,
+      "control_matches_historical": false,
+      "training_performed": false
+    },
+    {
+      "case_id": "approach-west_corridor-down",
+      "start": "approach",
+      "anchor": "west_corridor",
+      "condition": "down",
+      "status": "success",
+      "valid_setup": true,
+      "setup_damage": 0,
+      "damage": 0,
+      "success": true,
+      "safe_success": true,
+      "steps": 142,
+      "goals_completed": 2,
+      "goals_total": 2,
+      "anchor_state": {
+        "room": [
+          0,
+          0,
+          225
+        ],
+        "x": 145,
+        "y": 99,
+        "dialogue": false,
+        "sword": true,
+        "health": 8,
+        "a_item": 1,
+        "b_item": 4
+      },
+      "initial_state": {
+        "room": [
+          0,
+          0,
+          225
+        ],
+        "x": 145,
+        "y": 109,
+        "dialogue": false,
+        "sword": true,
+        "health": 8,
+        "a_item": 1,
+        "b_item": 4
+      },
+      "final_state": {
+        "room": [
+          0,
+          0,
+          226
+        ],
+        "x": 34,
+        "y": 115,
+        "dialogue": false,
+        "sword": true,
+        "health": 8,
+        "a_item": 1,
+        "b_item": 4
+      },
+      "anchor_fingerprint": "c773ed27dd309ff132fc1553bc3ce625148863cf36319643ddc0bf66d674521b",
+      "initial_fingerprint": "f592d7d52f1a2d775940b2444bb6d2dabd8ac87d7d434595e0cc3f15f3091ee2",
+      "final_fingerprint": "578be113a03dd30d908f453085c9d613318c8d2fb074c3215b9902d0974d1e6d",
+      "position_changed": true,
+      "room_changed": false,
+      "matches_latest_expert_supervision": false,
+      "independent_replay_verified": true,
+      "feature_replay_verified": true,
+      "control_matches_historical": false,
+      "training_performed": false
+    },
+    {
+      "case_id": "approach-west_corridor-left",
+      "start": "approach",
+      "anchor": "west_corridor",
+      "condition": "left",
+      "status": "success",
+      "valid_setup": true,
+      "setup_damage": 0,
+      "damage": 0,
+      "success": true,
+      "safe_success": true,
+      "steps": 160,
+      "goals_completed": 2,
+      "goals_total": 2,
+      "anchor_state": {
+        "room": [
+          0,
+          0,
+          225
+        ],
+        "x": 145,
+        "y": 99,
+        "dialogue": false,
+        "sword": true,
+        "health": 8,
+        "a_item": 1,
+        "b_item": 4
+      },
+      "initial_state": {
+        "room": [
+          0,
+          0,
+          225
+        ],
+        "x": 135,
+        "y": 99,
+        "dialogue": false,
+        "sword": true,
+        "health": 8,
+        "a_item": 1,
+        "b_item": 4
+      },
+      "final_state": {
+        "room": [
+          0,
+          0,
+          226
+        ],
+        "x": 34,
+        "y": 115,
+        "dialogue": false,
+        "sword": true,
+        "health": 8,
+        "a_item": 1,
+        "b_item": 4
+      },
+      "anchor_fingerprint": "c773ed27dd309ff132fc1553bc3ce625148863cf36319643ddc0bf66d674521b",
+      "initial_fingerprint": "7ac39b2feee9377919c45f124147f25677c655e30aa796b1160bb56ac441d1f7",
+      "final_fingerprint": "4328e803f15e3f91cf8977ccc3aa90ac25b6c566a374c8ccc644c28b1b705ede",
+      "position_changed": true,
+      "room_changed": false,
+      "matches_latest_expert_supervision": false,
+      "independent_replay_verified": true,
+      "feature_replay_verified": true,
+      "control_matches_historical": false,
+      "training_performed": false
+    },
+    {
+      "case_id": "approach-west_corridor-right",
+      "start": "approach",
+      "anchor": "west_corridor",
+      "condition": "right",
+      "status": "success",
+      "valid_setup": true,
+      "setup_damage": 0,
+      "damage": 0,
+      "success": true,
+      "safe_success": true,
+      "steps": 147,
+      "goals_completed": 2,
+      "goals_total": 2,
+      "anchor_state": {
+        "room": [
+          0,
+          0,
+          225
+        ],
+        "x": 145,
+        "y": 99,
+        "dialogue": false,
+        "sword": true,
+        "health": 8,
+        "a_item": 1,
+        "b_item": 4
+      },
+      "initial_state": {
+        "room": [
+          0,
+          0,
+          225
+        ],
+        "x": 155,
+        "y": 99,
+        "dialogue": false,
+        "sword": true,
+        "health": 8,
+        "a_item": 1,
+        "b_item": 4
+      },
+      "final_state": {
+        "room": [
+          0,
+          0,
+          226
+        ],
+        "x": 34,
+        "y": 116,
+        "dialogue": false,
+        "sword": true,
+        "health": 8,
+        "a_item": 1,
+        "b_item": 4
+      },
+      "anchor_fingerprint": "c773ed27dd309ff132fc1553bc3ce625148863cf36319643ddc0bf66d674521b",
+      "initial_fingerprint": "0de300dcea5362b167c167a586dab280a056deb9bb194c4f0b81143c1e944f21",
+      "final_fingerprint": "0ce8acedadf29b07e7da214da24e3e7bdb2121adb87e32cd3e9c2ea40f1b7a58",
+      "position_changed": true,
+      "room_changed": false,
+      "matches_latest_expert_supervision": false,
+      "independent_replay_verified": true,
+      "feature_replay_verified": true,
+      "control_matches_historical": false,
+      "training_performed": false
+    },
+    {
+      "case_id": "approach-upper_entry-control",
+      "start": "approach",
+      "anchor": "upper_entry",
+      "condition": "control",
+      "status": "success",
+      "valid_setup": true,
+      "setup_damage": 0,
+      "damage": 0,
+      "success": true,
+      "safe_success": true,
+      "steps": 102,
+      "goals_completed": 2,
+      "goals_total": 2,
+      "anchor_state": {
+        "room": [
+          0,
+          0,
+          226
+        ],
+        "x": 14,
+        "y": 55,
+        "dialogue": false,
+        "sword": true,
+        "health": 8,
+        "a_item": 1,
+        "b_item": 4
+      },
+      "initial_state": {
+        "room": [
+          0,
+          0,
+          226
+        ],
+        "x": 14,
+        "y": 55,
+        "dialogue": false,
+        "sword": true,
+        "health": 8,
+        "a_item": 1,
+        "b_item": 4
+      },
+      "final_state": {
+        "room": [
+          0,
+          0,
+          226
+        ],
+        "x": 34,
+        "y": 115,
+        "dialogue": false,
+        "sword": true,
+        "health": 8,
+        "a_item": 1,
+        "b_item": 4
+      },
+      "anchor_fingerprint": "c2eb9afc0c282ca3ff74ec456ed2ef89f22c567f7d8534c95ccad7f2f29b4310",
+      "initial_fingerprint": "c2eb9afc0c282ca3ff74ec456ed2ef89f22c567f7d8534c95ccad7f2f29b4310",
+      "final_fingerprint": "f02948a0d008824743f726fa37f17f7593b6cd74fd5319bef4a7fdde210c4599",
+      "position_changed": false,
+      "room_changed": false,
+      "matches_latest_expert_supervision": true,
+      "independent_replay_verified": true,
+      "feature_replay_verified": true,
+      "control_matches_historical": true,
+      "training_performed": false
+    },
+    {
+      "case_id": "approach-upper_entry-up",
+      "start": "approach",
+      "anchor": "upper_entry",
+      "condition": "up",
+      "status": "success",
+      "valid_setup": true,
+      "setup_damage": 0,
+      "damage": 0,
+      "success": true,
+      "safe_success": true,
+      "steps": 102,
+      "goals_completed": 2,
+      "goals_total": 2,
+      "anchor_state": {
+        "room": [
+          0,
+          0,
+          226
+        ],
+        "x": 14,
+        "y": 55,
+        "dialogue": false,
+        "sword": true,
+        "health": 8,
+        "a_item": 1,
+        "b_item": 4
+      },
+      "initial_state": {
+        "room": [
+          0,
+          0,
+          226
+        ],
+        "x": 14,
+        "y": 55,
+        "dialogue": false,
+        "sword": true,
+        "health": 8,
+        "a_item": 1,
+        "b_item": 4
+      },
+      "final_state": {
+        "room": [
+          0,
+          0,
+          226
+        ],
+        "x": 34,
+        "y": 115,
+        "dialogue": false,
+        "sword": true,
+        "health": 8,
+        "a_item": 1,
+        "b_item": 4
+      },
+      "anchor_fingerprint": "c2eb9afc0c282ca3ff74ec456ed2ef89f22c567f7d8534c95ccad7f2f29b4310",
+      "initial_fingerprint": "204c8e3cfb3cd4710831d92e51dd2dbac097817b4037853fec9c40fdc5c66b13",
+      "final_fingerprint": "7eb80f644e08840b6d717980239d8f5091a749acd7459253a0ebb9c86c66be45",
+      "position_changed": false,
+      "room_changed": false,
+      "matches_latest_expert_supervision": false,
+      "independent_replay_verified": true,
+      "feature_replay_verified": true,
+      "control_matches_historical": false,
+      "training_performed": false
+    },
+    {
+      "case_id": "approach-upper_entry-down",
+      "start": "approach",
+      "anchor": "upper_entry",
+      "condition": "down",
+      "status": "success",
+      "valid_setup": true,
+      "setup_damage": 0,
+      "damage": 0,
+      "success": true,
+      "safe_success": true,
+      "steps": 94,
+      "goals_completed": 2,
+      "goals_total": 2,
+      "anchor_state": {
+        "room": [
+          0,
+          0,
+          226
+        ],
+        "x": 14,
+        "y": 55,
+        "dialogue": false,
+        "sword": true,
+        "health": 8,
+        "a_item": 1,
+        "b_item": 4
+      },
+      "initial_state": {
+        "room": [
+          0,
+          0,
+          226
+        ],
+        "x": 14,
+        "y": 64,
+        "dialogue": false,
+        "sword": true,
+        "health": 8,
+        "a_item": 1,
+        "b_item": 4
+      },
+      "final_state": {
+        "room": [
+          0,
+          0,
+          226
+        ],
+        "x": 34,
+        "y": 117,
+        "dialogue": false,
+        "sword": true,
+        "health": 8,
+        "a_item": 1,
+        "b_item": 4
+      },
+      "anchor_fingerprint": "c2eb9afc0c282ca3ff74ec456ed2ef89f22c567f7d8534c95ccad7f2f29b4310",
+      "initial_fingerprint": "b50146d29766ced71d3b548dceb6e528680105e01fbbf8000aa1d501bbd4f801",
+      "final_fingerprint": "8817db6df080531d1e9edfb22e53ea5ab7f2a4a70e81782a916682f86f8f0140",
+      "position_changed": true,
+      "room_changed": false,
+      "matches_latest_expert_supervision": false,
+      "independent_replay_verified": true,
+      "feature_replay_verified": true,
+      "control_matches_historical": false,
+      "training_performed": false
+    },
+    {
+      "case_id": "approach-upper_entry-left",
+      "start": "approach",
+      "anchor": "upper_entry",
+      "condition": "left",
+      "status": "success",
+      "valid_setup": true,
+      "setup_damage": 0,
+      "damage": 0,
+      "success": true,
+      "safe_success": true,
+      "steps": 106,
+      "goals_completed": 2,
+      "goals_total": 2,
+      "anchor_state": {
+        "room": [
+          0,
+          0,
+          226
+        ],
+        "x": 14,
+        "y": 55,
+        "dialogue": false,
+        "sword": true,
+        "health": 8,
+        "a_item": 1,
+        "b_item": 4
+      },
+      "initial_state": {
+        "room": [
+          0,
+          0,
+          226
+        ],
+        "x": 4,
+        "y": 55,
+        "dialogue": false,
+        "sword": true,
+        "health": 8,
+        "a_item": 1,
+        "b_item": 4
+      },
+      "final_state": {
+        "room": [
+          0,
+          0,
+          226
+        ],
+        "x": 34,
+        "y": 115,
+        "dialogue": false,
+        "sword": true,
+        "health": 8,
+        "a_item": 1,
+        "b_item": 4
+      },
+      "anchor_fingerprint": "c2eb9afc0c282ca3ff74ec456ed2ef89f22c567f7d8534c95ccad7f2f29b4310",
+      "initial_fingerprint": "499ac2204900bcddc49519de02815c2270aa6e95f99ec311cb7a1ea888b3fad9",
+      "final_fingerprint": "aaa107bbebe9bb2997228c31683db0b4657a33ae45bc288ba322dfe81ff76659",
+      "position_changed": true,
+      "room_changed": false,
+      "matches_latest_expert_supervision": false,
+      "independent_replay_verified": true,
+      "feature_replay_verified": true,
+      "control_matches_historical": false,
+      "training_performed": false
+    },
+    {
+      "case_id": "approach-upper_entry-right",
+      "start": "approach",
+      "anchor": "upper_entry",
+      "condition": "right",
+      "status": "success",
+      "valid_setup": true,
+      "setup_damage": 0,
+      "damage": 0,
+      "success": true,
+      "safe_success": true,
+      "steps": 98,
+      "goals_completed": 2,
+      "goals_total": 2,
+      "anchor_state": {
+        "room": [
+          0,
+          0,
+          226
+        ],
+        "x": 14,
+        "y": 55,
+        "dialogue": false,
+        "sword": true,
+        "health": 8,
+        "a_item": 1,
+        "b_item": 4
+      },
+      "initial_state": {
+        "room": [
+          0,
+          0,
+          226
+        ],
+        "x": 24,
+        "y": 55,
+        "dialogue": false,
+        "sword": true,
+        "health": 8,
+        "a_item": 1,
+        "b_item": 4
+      },
+      "final_state": {
+        "room": [
+          0,
+          0,
+          226
+        ],
+        "x": 34,
+        "y": 115,
+        "dialogue": false,
+        "sword": true,
+        "health": 8,
+        "a_item": 1,
+        "b_item": 4
+      },
+      "anchor_fingerprint": "c2eb9afc0c282ca3ff74ec456ed2ef89f22c567f7d8534c95ccad7f2f29b4310",
+      "initial_fingerprint": "746f54193823c068e6e4aeeb2dc18a883b59cd92e3bc2d26e69f1ed856f2d6fe",
+      "final_fingerprint": "f02948a0d008824743f726fa37f17f7593b6cd74fd5319bef4a7fdde210c4599",
+      "position_changed": true,
+      "room_changed": false,
+      "matches_latest_expert_supervision": true,
+      "independent_replay_verified": true,
+      "feature_replay_verified": true,
+      "control_matches_historical": false,
+      "training_performed": false
+    },
+    {
+      "case_id": "approach-return_entry-control",
+      "start": "approach",
+      "anchor": "return_entry",
+      "condition": "control",
+      "status": "success",
+      "valid_setup": true,
+      "setup_damage": 0,
+      "damage": 0,
+      "success": true,
+      "safe_success": true,
+      "steps": 81,
+      "goals_completed": 1,
+      "goals_total": 1,
+      "anchor_state": {
+        "room": [
+          0,
+          0,
+          226
+        ],
+        "x": 60,
+        "y": 60,
+        "dialogue": false,
+        "sword": true,
+        "health": 8,
+        "a_item": 1,
+        "b_item": 4
+      },
+      "initial_state": {
+        "room": [
+          0,
+          0,
+          226
+        ],
+        "x": 60,
+        "y": 60,
+        "dialogue": false,
+        "sword": true,
+        "health": 8,
+        "a_item": 1,
+        "b_item": 4
+      },
+      "final_state": {
+        "room": [
+          0,
+          0,
+          226
+        ],
+        "x": 34,
+        "y": 115,
+        "dialogue": false,
+        "sword": true,
+        "health": 8,
+        "a_item": 1,
+        "b_item": 4
+      },
+      "anchor_fingerprint": "13c8df2ae1f3ed92cc12ff89686fac2d28cb3285cd4fb0e0a67a3fb31be89857",
+      "initial_fingerprint": "13c8df2ae1f3ed92cc12ff89686fac2d28cb3285cd4fb0e0a67a3fb31be89857",
+      "final_fingerprint": "f02948a0d008824743f726fa37f17f7593b6cd74fd5319bef4a7fdde210c4599",
+      "position_changed": false,
+      "room_changed": false,
+      "matches_latest_expert_supervision": false,
+      "independent_replay_verified": true,
+      "feature_replay_verified": true,
+      "control_matches_historical": true,
+      "training_performed": false
+    },
+    {
+      "case_id": "approach-return_entry-up",
+      "start": "approach",
+      "anchor": "return_entry",
+      "condition": "up",
+      "status": "success",
+      "valid_setup": true,
+      "setup_damage": 0,
+      "damage": 4,
+      "success": true,
+      "safe_success": false,
+      "steps": 87,
+      "goals_completed": 1,
+      "goals_total": 1,
+      "anchor_state": {
+        "room": [
+          0,
+          0,
+          226
+        ],
+        "x": 60,
+        "y": 60,
+        "dialogue": false,
+        "sword": true,
+        "health": 8,
+        "a_item": 1,
+        "b_item": 4
+      },
+      "initial_state": {
+        "room": [
+          0,
+          0,
+          226
+        ],
+        "x": 60,
+        "y": 50,
+        "dialogue": false,
+        "sword": true,
+        "health": 8,
+        "a_item": 1,
+        "b_item": 4
+      },
+      "final_state": {
+        "room": [
+          0,
+          0,
+          226
+        ],
+        "x": 34,
+        "y": 115,
+        "dialogue": false,
+        "sword": true,
+        "health": 4,
+        "a_item": 1,
+        "b_item": 4
+      },
+      "anchor_fingerprint": "13c8df2ae1f3ed92cc12ff89686fac2d28cb3285cd4fb0e0a67a3fb31be89857",
+      "initial_fingerprint": "ec40fda22acfe833e851e4f30d2a3a5f6a01fbedcb2c8d8a218c22a524d7537d",
+      "final_fingerprint": "cf35a8ed0542683ac5d6437727c441817e699150b15f0ebbf20e48457963661d",
+      "position_changed": true,
+      "room_changed": false,
+      "matches_latest_expert_supervision": false,
+      "independent_replay_verified": true,
+      "feature_replay_verified": true,
+      "control_matches_historical": false,
+      "training_performed": false
+    },
+    {
+      "case_id": "approach-return_entry-down",
+      "start": "approach",
+      "anchor": "return_entry",
+      "condition": "down",
+      "status": "success",
+      "valid_setup": true,
+      "setup_damage": 0,
+      "damage": 0,
+      "success": true,
+      "safe_success": true,
+      "steps": 85,
+      "goals_completed": 1,
+      "goals_total": 1,
+      "anchor_state": {
+        "room": [
+          0,
+          0,
+          226
+        ],
+        "x": 60,
+        "y": 60,
+        "dialogue": false,
+        "sword": true,
+        "health": 8,
+        "a_item": 1,
+        "b_item": 4
+      },
+      "initial_state": {
+        "room": [
+          0,
+          0,
+          226
+        ],
+        "x": 60,
+        "y": 64,
+        "dialogue": false,
+        "sword": true,
+        "health": 8,
+        "a_item": 1,
+        "b_item": 4
+      },
+      "final_state": {
+        "room": [
+          0,
+          0,
+          226
+        ],
+        "x": 34,
+        "y": 115,
+        "dialogue": false,
+        "sword": true,
+        "health": 8,
+        "a_item": 1,
+        "b_item": 4
+      },
+      "anchor_fingerprint": "13c8df2ae1f3ed92cc12ff89686fac2d28cb3285cd4fb0e0a67a3fb31be89857",
+      "initial_fingerprint": "2bdf60f0c800f4be343e93557fe7e253795802a3b5174dd9652d41ffd9ee9491",
+      "final_fingerprint": "329d7485572183265ca5e5c713dbf56d8669728f4ca5932e2237e5e0fae04818",
+      "position_changed": true,
+      "room_changed": false,
+      "matches_latest_expert_supervision": false,
+      "independent_replay_verified": true,
+      "feature_replay_verified": true,
+      "control_matches_historical": false,
+      "training_performed": false
+    },
+    {
+      "case_id": "approach-return_entry-left",
+      "start": "approach",
+      "anchor": "return_entry",
+      "condition": "left",
+      "status": "success",
+      "valid_setup": true,
+      "setup_damage": 0,
+      "damage": 0,
+      "success": true,
+      "safe_success": true,
+      "steps": 77,
+      "goals_completed": 1,
+      "goals_total": 1,
+      "anchor_state": {
+        "room": [
+          0,
+          0,
+          226
+        ],
+        "x": 60,
+        "y": 60,
+        "dialogue": false,
+        "sword": true,
+        "health": 8,
+        "a_item": 1,
+        "b_item": 4
+      },
+      "initial_state": {
+        "room": [
+          0,
+          0,
+          226
+        ],
+        "x": 50,
+        "y": 60,
+        "dialogue": false,
+        "sword": true,
+        "health": 8,
+        "a_item": 1,
+        "b_item": 4
+      },
+      "final_state": {
+        "room": [
+          0,
+          0,
+          226
+        ],
+        "x": 34,
+        "y": 115,
+        "dialogue": false,
+        "sword": true,
+        "health": 8,
+        "a_item": 1,
+        "b_item": 4
+      },
+      "anchor_fingerprint": "13c8df2ae1f3ed92cc12ff89686fac2d28cb3285cd4fb0e0a67a3fb31be89857",
+      "initial_fingerprint": "b9f0845aec9e25adb66dd50fbb0667ef4e552081b72be38fc668c159811e1f3c",
+      "final_fingerprint": "f02948a0d008824743f726fa37f17f7593b6cd74fd5319bef4a7fdde210c4599",
+      "position_changed": true,
+      "room_changed": false,
+      "matches_latest_expert_supervision": false,
+      "independent_replay_verified": true,
+      "feature_replay_verified": true,
+      "control_matches_historical": false,
+      "training_performed": false
+    },
+    {
+      "case_id": "approach-return_entry-right",
+      "start": "approach",
+      "anchor": "return_entry",
+      "condition": "right",
+      "status": "success",
+      "valid_setup": true,
+      "setup_damage": 0,
+      "damage": 0,
+      "success": true,
+      "safe_success": true,
+      "steps": 87,
+      "goals_completed": 1,
+      "goals_total": 1,
+      "anchor_state": {
+        "room": [
+          0,
+          0,
+          226
+        ],
+        "x": 60,
+        "y": 60,
+        "dialogue": false,
+        "sword": true,
+        "health": 8,
+        "a_item": 1,
+        "b_item": 4
+      },
+      "initial_state": {
+        "room": [
+          0,
+          0,
+          226
+        ],
+        "x": 70,
+        "y": 60,
+        "dialogue": false,
+        "sword": true,
+        "health": 8,
+        "a_item": 1,
+        "b_item": 4
+      },
+      "final_state": {
+        "room": [
+          0,
+          0,
+          226
+        ],
+        "x": 34,
+        "y": 115,
+        "dialogue": false,
+        "sword": true,
+        "health": 16,
+        "a_item": 1,
+        "b_item": 4
+      },
+      "anchor_fingerprint": "13c8df2ae1f3ed92cc12ff89686fac2d28cb3285cd4fb0e0a67a3fb31be89857",
+      "initial_fingerprint": "048d36b297a41ff0c821a8ad370fe3cd4ba2ce77e7f88bc5c4a735d4f0b1005e",
+      "final_fingerprint": "9f6077b13ee12ae2687c72249430e10c39a758d3f1fe27db19996eec87caf23d",
+      "position_changed": true,
+      "room_changed": false,
+      "matches_latest_expert_supervision": false,
+      "independent_replay_verified": true,
+      "feature_replay_verified": true,
+      "control_matches_historical": false,
+      "training_performed": false
+    }
+  ],
+  "all_independent_replays_verified": true,
+  "controls_match_historical": true,
+  "passes_frozen_stress_gate": false,
+  "training_performed": false,
+  "selection_changed": false,
+  "reserved_evaluation_used": false,
+  "scope": "New development perturbations of known training/development routes; unchanged final goals, not held-out maps or reserved evaluation. Input-match diagnostic covers latest expert supervision only, not all inherited pretraining."
+}

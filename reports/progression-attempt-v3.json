@@ -1,0 +1,650 @@
+{
+  "result": {
+    "status": "repeated_local_stall",
+    "steps": 813,
+    "sword_actions": 412,
+    "post_sword_actions": 401,
+    "frames": 8891,
+    "damage_raw": 8,
+    "healing_raw": 0,
+    "final_state": {
+      "phase": {
+        "gameplay": 11,
+        "subtype": 7,
+        "scroll": 0,
+        "sequence": 4,
+        "palette": 0,
+        "room": [
+          0,
+          0,
+          226
+        ],
+        "health": 16
+      },
+      "room": [
+        0,
+        0,
+        226
+      ],
+      "x": 36,
+      "y": 49,
+      "health": 16,
+      "max_hearts": 3,
+      "inventory": [
+        4,
+        1,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "sword": 1,
+      "toadstool": 0,
+      "powder": 0,
+      "bombs": 0,
+      "arrows": 0,
+      "tail_key": 0,
+      "tarin": 0,
+      "tail_door_status": 0,
+      "trade_item": 0,
+      "dialog_state": 0,
+      "dialog_id": 155,
+      "inventory_cursor": 0
+    },
+    "planner": {
+      "goals": [
+        {
+          "room": [
+            0,
+            0,
+            226
+          ],
+          "x": 36,
+          "y": 121,
+          "reason": "Reach the shore room north of the sword; goal is a previously developed navigation target."
+        },
+        {
+          "room": [
+            0,
+            0,
+            226
+          ],
+          "x": 89,
+          "y": 94,
+          "reason": "Existing approach goal from navigation_routes_v1 room_loop; test skill handoff compatibility before retraining."
+        },
+        {
+          "room": [
+            0,
+            0,
+            226
+          ],
+          "x": 64,
+          "y": 64,
+          "reason": "Reach the upper beach via the selected learned detour skill."
+        },
+        {
+          "room": [
+            0,
+            0,
+            225
+          ],
+          "x": 12,
+          "y": 48,
+          "tolerance": 3,
+          "skill": "shielded_axis",
+          "reason": "Align with physically observed western crossing."
+        },
+        {
+          "room": [
+            0,
+            0,
+            224
+          ],
+          "x": 27,
+          "y": 48,
+          "tolerance": 3,
+          "skill": "shielded_axis",
+          "reason": "Shielded passage validated from earlier full-health arrival."
+        },
+        {
+          "room": [
+            0,
+            0,
+            208
+          ],
+          "x": 27,
+          "y": 125,
+          "tolerance": 3,
+          "skill": "shielded_axis",
+          "reason": "Physically validated crossing north from E0 into D0."
+        }
+      ],
+      "goal_budget": 256,
+      "recovery_limit": 2,
+      "cursor": 3,
+      "leg_steps": 235,
+      "recoveries": 2,
+      "positions": [
+        [
+          0,
+          0,
+          226,
+          4,
+          8
+        ],
+        [
+          0,
+          0,
+          226,
+          4,
+          8
+        ],
+        [
+          0,
+          0,
+          226,
+          4,
+          6
+        ],
+        [
+          0,
+          0,
+          226,
+          4,
+          5
+        ],
+        [
+          0,
+          0,
+          226,
+          4,
+          6
+        ],
+        [
+          0,
+          0,
+          226,
+          4,
+          5
+        ],
+        [
+          0,
+          0,
+          226,
+          4,
+          6
+        ],
+        [
+          0,
+          0,
+          226,
+          4,
+          5
+        ],
+        [
+          0,
+          0,
+          226,
+          4,
+          5
+        ],
+        [
+          0,
+          0,
+          226,
+          4,
+          5
+        ],
+        [
+          0,
+          0,
+          226,
+          4,
+          5
+        ],
+        [
+          0,
+          0,
+          226,
+          4,
+          5
+        ],
+        [
+          0,
+          0,
+          226,
+          4,
+          5
+        ],
+        [
+          0,
+          0,
+          226,
+          4,
+          5
+        ],
+        [
+          0,
+          0,
+          226,
+          4,
+          5
+        ],
+        [
+          0,
+          0,
+          226,
+          4,
+          5
+        ],
+        [
+          0,
+          0,
+          226,
+          4,
+          5
+        ],
+        [
+          0,
+          0,
+          226,
+          4,
+          5
+        ],
+        [
+          0,
+          0,
+          226,
+          4,
+          5
+        ],
+        [
+          0,
+          0,
+          226,
+          4,
+          5
+        ],
+        [
+          0,
+          0,
+          226,
+          4,
+          5
+        ],
+        [
+          0,
+          0,
+          226,
+          4,
+          5
+        ],
+        [
+          0,
+          0,
+          226,
+          4,
+          5
+        ],
+        [
+          0,
+          0,
+          226,
+          4,
+          5
+        ],
+        [
+          0,
+          0,
+          226,
+          4,
+          5
+        ],
+        [
+          0,
+          0,
+          226,
+          4,
+          5
+        ],
+        [
+          0,
+          0,
+          226,
+          4,
+          5
+        ],
+        [
+          0,
+          0,
+          226,
+          4,
+          4
+        ],
+        [
+          0,
+          0,
+          226,
+          4,
+          4
+        ],
+        [
+          0,
+          0,
+          226,
+          4,
+          6
+        ],
+        [
+          0,
+          0,
+          226,
+          4,
+          6
+        ],
+        [
+          0,
+          0,
+          226,
+          4,
+          6
+        ],
+        [
+          0,
+          0,
+          226,
+          4,
+          6
+        ],
+        [
+          0,
+          0,
+          226,
+          4,
+          6
+        ],
+        [
+          0,
+          0,
+          226,
+          4,
+          6
+        ],
+        [
+          0,
+          0,
+          226,
+          4,
+          6
+        ],
+        [
+          0,
+          0,
+          226,
+          4,
+          6
+        ],
+        [
+          0,
+          0,
+          226,
+          4,
+          6
+        ],
+        [
+          0,
+          0,
+          226,
+          4,
+          6
+        ],
+        [
+          0,
+          0,
+          226,
+          4,
+          6
+        ],
+        [
+          0,
+          0,
+          226,
+          4,
+          6
+        ],
+        [
+          0,
+          0,
+          226,
+          4,
+          6
+        ],
+        [
+          0,
+          0,
+          226,
+          4,
+          6
+        ],
+        [
+          0,
+          0,
+          226,
+          4,
+          6
+        ],
+        [
+          0,
+          0,
+          226,
+          4,
+          6
+        ],
+        [
+          0,
+          0,
+          226,
+          4,
+          6
+        ],
+        [
+          0,
+          0,
+          226,
+          4,
+          6
+        ],
+        [
+          0,
+          0,
+          226,
+          4,
+          6
+        ],
+        [
+          0,
+          0,
+          226,
+          4,
+          6
+        ],
+        [
+          0,
+          0,
+          226,
+          4,
+          6
+        ],
+        [
+          0,
+          0,
+          226,
+          4,
+          6
+        ],
+        [
+          0,
+          0,
+          226,
+          4,
+          6
+        ],
+        [
+          0,
+          0,
+          226,
+          4,
+          6
+        ],
+        [
+          0,
+          0,
+          226,
+          4,
+          6
+        ],
+        [
+          0,
+          0,
+          226,
+          4,
+          6
+        ],
+        [
+          0,
+          0,
+          226,
+          4,
+          6
+        ],
+        [
+          0,
+          0,
+          226,
+          4,
+          6
+        ],
+        [
+          0,
+          0,
+          226,
+          4,
+          6
+        ],
+        [
+          0,
+          0,
+          226,
+          4,
+          6
+        ],
+        [
+          0,
+          0,
+          226,
+          4,
+          6
+        ],
+        [
+          0,
+          0,
+          226,
+          4,
+          6
+        ],
+        [
+          0,
+          0,
+          226,
+          4,
+          6
+        ],
+        [
+          0,
+          0,
+          226,
+          4,
+          6
+        ],
+        [
+          0,
+          0,
+          226,
+          4,
+          6
+        ]
+      ],
+      "events": [
+        {
+          "kind": "guidance_goal_reached",
+          "index": 0,
+          "steps": 49
+        },
+        {
+          "kind": "guidance_goal_reached",
+          "index": 1,
+          "steps": 30
+        },
+        {
+          "kind": "guidance_goal_reached",
+          "index": 2,
+          "steps": 87
+        },
+        {
+          "kind": "physical_recovery_probe",
+          "goal": 3,
+          "direction": 2
+        },
+        {
+          "kind": "physical_recovery_probe",
+          "goal": 3,
+          "direction": 2
+        }
+      ],
+      "pending_recovery": [],
+      "last_decision": {
+        "kind": "scripted_shielded_axis",
+        "guidance_index": 3,
+        "target": {
+          "room": [
+            0,
+            0,
+            225
+          ],
+          "x": 12,
+          "y": 48
+        },
+        "route_status": "observed_route",
+        "memory_evidence": null,
+        "conditions_checked": false
+      },
+      "status": "repeated_local_stall"
+    },
+    "milestones": {
+      "sword_acquired": 17
+    },
+    "exact_action_replay": true,
+    "assistance": "provided_map_guidance_and_structured_read_only_state",
+    "human_interventions": 0,
+    "optimizer_updates": 0,
+    "reserved_evaluation_used": false,
+    "planner_roundtrip_exact": true,
+    "wall_seconds": 6.579
+  },
+  "output": "runs/progression-attempt-v3",
+  "parent_memory": "d10bc161f02797925a07a97ab177981bab71596c58fc509807388893bb3767a7",
+  "next_memory": "2c4427f9910f309613d20b95c0dce5267f9309994f11bede99a182627548067a",
+  "new_observations": 1500,
+  "new_connection_observations": 15,
+  "code_hashes": {
+    "scripts/run_progression_attempt.py": "8b959797d438602511894af0a70714850548c85d9d1ce78fac1eeed2d1aba6af",
+    "src/gameboy_agent/progression_planner.py": "f384d048a769513eb8e0e4e6b85896113fc33ec7901c39a872bae5c1da3cb4a6"
+  }
+}

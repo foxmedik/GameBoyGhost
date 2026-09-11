@@ -1,0 +1,15 @@
+{
+  "status": "eligible_superseded_by_v2",
+  "plan": "runs/navigation-cliff-specialists-v1/plan.json",
+  "candidate_path": "runs/navigation-cliff-specialists-v1/model/epoch-256.pt",
+  "candidate_sha256": "0b5df1403d3b3b29c36199b3599a2b252b802e3cce2c928b623e2702b84bbdf1",
+  "parent": "/Users/studio/Developer/GameBoyAgent/runs/navigation-routes-v7/model/epoch-008.pt",
+  "training_performed": true,
+  "selection_changed": false,
+  "sword_reduction": "paused",
+  "scope": "Two final-goal feed-forward specialists with frozen v7 fallback; no runtime intermediate teacher waypoints.",
+  "result": "reports/navigation-cliff-specialists-v1.json",
+  "route_successes": 7,
+  "route_cases": 9,
+  "superseded_by": "configs/navigation_cliff_specialists_v2_candidate.json"
+}

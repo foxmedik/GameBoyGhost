@@ -1,0 +1,186 @@
+{
+  "status": "diagnostics_complete",
+  "branches": [
+    {
+      "branch": "north",
+      "status": "stationary_stop",
+      "actions": 3,
+      "final": {
+        "room": [
+          0,
+          0,
+          225
+        ],
+        "x": 10,
+        "y": 26,
+        "health": 4
+      },
+      "exact_replay": true
+    },
+    {
+      "branch": "east_then_north",
+      "status": "stationary_stop",
+      "actions": 5,
+      "final": {
+        "room": [
+          0,
+          0,
+          225
+        ],
+        "x": 28,
+        "y": 26,
+        "health": 4
+      },
+      "exact_replay": true
+    },
+    {
+      "branch": "west_then_north",
+      "status": "room_crossed",
+      "actions": 1,
+      "final": {
+        "room": [
+          0,
+          0,
+          224
+        ],
+        "x": 145,
+        "y": 26,
+        "health": 4
+      },
+      "exact_replay": true
+    }
+  ],
+  "plan": {
+    "source": "/Users/studio/Developer/GameBoyAgent/runs/progression-attempt-v2",
+    "source_trace_sha256": "6cff1538442498bc2b67c0e4ebbc3c7090c756642872f7c5c3e3e9ffa629acf0",
+    "purpose": "Distinguish unverified passage geometry from learned movement failure.",
+    "branches": {
+      "north": [
+        [
+          1,
+          0
+        ],
+        [
+          1,
+          0
+        ],
+        [
+          1,
+          0
+        ],
+        [
+          1,
+          0
+        ],
+        [
+          1,
+          0
+        ],
+        [
+          1,
+          0
+        ],
+        [
+          1,
+          0
+        ],
+        [
+          1,
+          0
+        ]
+      ],
+      "east_then_north": [
+        [
+          4,
+          0
+        ],
+        [
+          4,
+          0
+        ],
+        [
+          1,
+          0
+        ],
+        [
+          1,
+          0
+        ],
+        [
+          1,
+          0
+        ],
+        [
+          1,
+          0
+        ],
+        [
+          1,
+          0
+        ],
+        [
+          1,
+          0
+        ],
+        [
+          1,
+          0
+        ],
+        [
+          1,
+          0
+        ]
+      ],
+      "west_then_north": [
+        [
+          3,
+          0
+        ],
+        [
+          3,
+          0
+        ],
+        [
+          1,
+          0
+        ],
+        [
+          1,
+          0
+        ],
+        [
+          1,
+          0
+        ],
+        [
+          1,
+          0
+        ],
+        [
+          1,
+          0
+        ],
+        [
+          1,
+          0
+        ],
+        [
+          1,
+          0
+        ],
+        [
+          1,
+          0
+        ]
+      ]
+    },
+    "stop_on_any_health_loss": true,
+    "stop_on_room_change": true,
+    "stop_after_three_stationary_actions": true,
+    "assistance": "scripted_physical_diagnostic; exact failed prefix reconstructed independently per branch"
+  },
+  "learned_policy_changed": false,
+  "new_optimizer_updates": 0,
+  "output": "runs/progression-crossing-probe-v1",
+  "source_sha256": "f888a6e5bb9b8fbdd86cc1b0ed74a3ad1a36d3a9ad14f06e9e0ff7fde9cebb97"
+}

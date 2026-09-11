@@ -1,0 +1,7 @@
+{
+  "status": "passed",
+  "tests_run": 86,
+  "wall_seconds": 36.343,
+  "log": "runs/world-memory-v1/regression-tests.log",
+  "sha256": "c567eebb4a5e6018c588aec8388a04c1b8756b89a0ddd090028e75017ea7c799"
+}

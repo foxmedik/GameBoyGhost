@@ -1,0 +1,18 @@
+{
+  "status": "rejected_for_selection",
+  "plan": "runs/navigation-sword-v1/plan.json",
+  "plan_sha256": "ced68c5ac3b4eed7e0eed90ea61bcde68467fa72d21fd097d3ad3ae43c829e05",
+  "parent": "runs/navigation-routes-v7/model/epoch-008.pt",
+  "selected_epoch": 8,
+  "new_demonstrations": 42,
+  "new_rows": 290,
+  "preservation_paths": 202,
+  "preservation_rows": 6773,
+  "training_performed": true,
+  "selection_changed": false,
+  "candidate_path": "runs/navigation-sword-v1/model/epoch-008.pt",
+  "candidate_sha256": "4a03007aed5f140afa205740bff765c0cb111f56c8eaf2d4f89c09498deb25f9",
+  "result": "reports/navigation-sword-v1.json",
+  "audit": "reports/navigation-sword-v1-audit.json",
+  "reason": "Only 2.4% fewer swings; five lost local successes, four extra raw damage units, and two lost routes."
+}

@@ -1,0 +1,64 @@
+{
+  "result": {
+    "status": "damage_stop",
+    "steps": 748,
+    "diagnostic_steps": 12,
+    "diagnostic_damage_raw": 2,
+    "final": {
+      "phase": {
+        "gameplay": 11,
+        "subtype": 7,
+        "scroll": 0,
+        "sequence": 4,
+        "palette": 0,
+        "room": [
+          0,
+          0,
+          224
+        ],
+        "health": 22
+      },
+      "room": [
+        0,
+        0,
+        224
+      ],
+      "x": 35,
+      "y": 43,
+      "health": 22,
+      "max_hearts": 3,
+      "inventory": [
+        4,
+        1,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "sword": 1,
+      "toadstool": 0,
+      "powder": 0,
+      "bombs": 0,
+      "arrows": 0,
+      "tail_key": 0,
+      "tarin": 0,
+      "tail_door_status": 0,
+      "trade_item": 0,
+      "dialog_state": 0,
+      "dialog_id": 155,
+      "inventory_cursor": 0
+    },
+    "exact_action_replay": true,
+    "assistance": "source_map_assisted_scripted_physical_diagnostic",
+    "quest_success": false
+  },
+  "output": "runs/progression-west-passage-v2",
+  "memory_version": "801458b2aaefa2be43f8cb735bb5efc78816d93ae3ded0419da4d4c3ce65877d",
+  "source_hash": "aeed492ef0a5c9ef28ee07d670d4b35112b8faa89c08531ab79b1c9f4ab9450f"
+}

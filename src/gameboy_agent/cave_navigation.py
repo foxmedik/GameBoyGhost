@@ -1,0 +1,128 @@
+"""Read-only cave transition and pushable-block senses for progression work.
+
+These helpers never alter emulator RAM.  They expose only loaded warp records
+and the ROM-designated indoor pushable-block object, not a visual guess that a
+rock might move.
+"""
+
+PUSHABLE_BLOCK = 0xA7
+SWORD_BREAKABLE_CRYSTAL = 0xDD
+PUSH_FRAMES = 64
+ROOM_STRIDE = 16
+VISIBLE_COLUMNS = 10
+VISIBLE_ROWS = 8
+
+# Verified from the user's annotated route and physical object-grid changes in
+# the mushroom cave's stone room (IndoorsAAB).  These are world facts for this
+# one room, rather than a rule inferred from the appearance of every rock.
+TOADSTOOL_STONE_ROOM = (1, 0x0A, 0xAB)
+TOADSTOOL_STONE_PUSHES = (
+    dict(index=0x37, col=7, row=3, direction=3),  # push left
+    dict(index=0x57, col=7, row=5, direction=2),  # then push down
+)
+
+
+def loaded_warps(boy):
+    """Return populated room warp records, including their trigger tile."""
+    memory = boy.memory
+    result = []
+    for index in range(4):
+        offset = 0xD401 + index * 5
+        category, map_id, room, x, y = (int(v) for v in memory[offset:offset + 5])
+        tile = int(memory[0xD416 + index])
+        # The four slots are not cleared uniformly when a room changes.  A
+        # category outside the three map categories is therefore stale data,
+        # rather than a transition the planner may follow.
+        if category not in (0, 1, 2):
+            continue
+        if (category, map_id, room, x, y, tile) == (0, 0, 0, 0, 0, 0):
+            continue
+        result.append(dict(index=index, category=category, map=map_id, room=room,
+                           destination_x=x, destination_y=y, tile_index=tile,
+                           col=tile & 0x0F, row=tile >> 4))
+    return result
+
+
+def pushable_blocks(boy):
+    """Return visible indoor ``OBJECT_PUSHABLE_BLOCK`` cells only."""
+    if int(boy.memory[0xDBA5]) == 0:
+        return []
+    objects = boy.memory[0xD711:0xD791]
+    return [dict(index=index, col=index % ROOM_STRIDE, row=index // ROOM_STRIDE,
+                 object_id=PUSHABLE_BLOCK)
+            for index, value in enumerate(objects)
+            if int(value) == PUSHABLE_BLOCK
+            and index % ROOM_STRIDE < VISIBLE_COLUMNS
+            and index // ROOM_STRIDE < VISIBLE_ROWS]
+
+
+def breakable_crystals(boy):
+    """Return visible cave crystals that must be cleared before block routing.
+
+    ``OBJECT_SWORD_BLOCK`` is ``DD`` in the matched ROM.  The object is only
+    a candidate until a physical sword swing changes its room-object entry.
+    """
+    if int(boy.memory[0xDBA5]) == 0:
+        return []
+    objects = boy.memory[0xD711:0xD791]
+    return [dict(index=index, col=index % ROOM_STRIDE, row=index // ROOM_STRIDE,
+                 object_id=SWORD_BREAKABLE_CRYSTAL)
+            for index, value in enumerate(objects)
+            if int(value) == SWORD_BREAKABLE_CRYSTAL
+            and index % ROOM_STRIDE < VISIBLE_COLUMNS
+            and index // ROOM_STRIDE < VISIBLE_ROWS]
+
+
+def push_direction(link_cell, block_cell):
+    """D-pad direction needed when Link is adjacent to a pushable block.
+
+    The result uses the project's movement encoding: up=1, down=2, left=3,
+    right=4.  Diagonal and non-adjacent positions deliberately return ``None``.
+    """
+    dx, dy = block_cell[0] - link_cell[0], block_cell[1] - link_cell[1]
+    return {(0, -1): 1, (0, 1): 2, (-1, 0): 3, (1, 0): 4}.get((dx, dy))
+
+
+def block_changed(before, after, block):
+    """Whether the original block cell changed after a physical push attempt."""
+    index = int(block['index'])
+    return int(before[index]) == PUSHABLE_BLOCK and int(after[index]) != PUSHABLE_BLOCK
+
+
+def crystal_cleared(before, after, crystal):
+    """Whether a physical sword action removed the selected crystal tile."""
+    index = int(crystal['index'])
+    return (int(before[index]) == SWORD_BREAKABLE_CRYSTAL
+            and int(after[index]) != SWORD_BREAKABLE_CRYSTAL)
+
+
+def obstacle_phase(boy):
+    """Return the required local cave interaction phase.
+
+    Crystal gates are resolved first because they can be the only obstruction
+    between Link and the stance needed for a block push.  The result describes
+    the current room only; it does not infer that every crystal must be broken.
+    """
+    crystals = breakable_crystals(boy)
+    if crystals:
+        return dict(kind='clear_crystals', targets=crystals)
+    blocks = pushable_blocks(boy)
+    if blocks:
+        return dict(kind='push_blocks', targets=blocks)
+    return dict(kind='navigate', targets=[])
+
+
+def toadstool_stone_push_plan(boy):
+    """Return the verified two-push plan when the loaded room is IndoorsAAB.
+
+    A plan is emitted only while both original blocks are still present.  Each
+    completed push must be observed through :func:`block_changed` before the
+    caller advances to the next entry or follows the exit walk.
+    """
+    memory = boy.memory
+    location = (int(memory[0xDBA5]), int(memory[0xFFF7]), int(memory[0xFFF6]))
+    if location != TOADSTOOL_STONE_ROOM:
+        return []
+    objects = memory[0xD711:0xD791]
+    return [dict(push) for push in TOADSTOOL_STONE_PUSHES
+            if int(objects[push['index']]) == PUSHABLE_BLOCK]

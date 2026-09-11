@@ -1,0 +1,1939 @@
+Guide and Walkthrough (GBC) by Artemis251
+Version: 1.2 | Updated: 09/27/2001
+
+       ____________
+      |  _______  /       T H E   L E G E N D   O F
+      | /      / / __________ _____      ________         __
+      |/      / /  \   ____  |\   /      \   ___ \       /  \
+             / /    | |    \ | | |        | |   \ \     / /\ \
+            / /     | |__/| \| | |        | |    \ |   / /  \ \
+           / /      |  __ |    | |        | |    | |  / /____\ \
+          / /       | |  \|    | |        | |    | | / ________ \
+         / /        | |     /| | |     /| | |    / |/ /        \ \
+        / /      /| | |____/ | | |____/ | | |___/ //  \        /  \
+       / /______/ |/_________|/_________|/_______//____\      /____\
+      /___________|
+                    L I N K ' S   A W A K E N I N G   D X
+
+
+
+               A Guide/Walkthrough/FAQ for Link's Awakening
+               Written by Artemis251 (Artemis251@yahoo.com)
+                                 Version 1.2
+
+
+   *@*@*@*@*@*@*@*@*@*@*@*@*@*@*@*@*@*@*@*@*@*@*@*@*@*@*@*@*@*@*@*@*@*@*@*@
+ 
+Welcome to my very first FAQ/Walkthrough/Guide!  And look!  What luck!  It's what 
+you're looking for!  In this guide you will most likely find bad jokes and good 
+info on the game.  If you look at the whole thing, you'll find many things about 
+the game you *probably* didn't know!  There are even sections that have things 
+to do after you beat the game - Great codes!
+
+This guide not only shows you what to do, but it's very detailed, so enjoy!  This 
+is only a fraction of the information found on my Link's Awakening site, The Wind 
+Fish's Egg!  Give it a visit sometime if you need more help or if you want great 
+maps to follow along with this guide!
+             http://www.geocities.com/magikarp129/index.html
+                   ~or~  http://windfishsegg.cjb.net
+
+        ---Anyway, to kick off, I have a Table of Contents for you!---
+              
+            
+           TABLE OF CONTENTS
+ 
+                1.Story
+                2.Controls
+                3.Walkthrough
+                4.Dx's Color Dungeon
+                5.Items
+                    Selected Items
+                    Inventory Items
+                    Dungeon Items
+                    Miscellaneous Items
+                6.People
+                7.Places
+                    Map Sections
+                    Treasure Chests
+                    Special Places
+                8.Enemies
+                    Overworld
+                    Underworld
+                    Traps
+                9.Bosses
+                    Mini-Bosses
+                    Dungeon Bosses
+                    Shadow Bosses
+
+
+               10.Heart Pieces
+               11.Secret Seashells
+               12.Trading Sequence
+               13.Photos
+               14.Ending
+                    Ending
+                    Special Ending
+               15.Tricks and Tips
+               16.FAQs
+               17.Version History
+               18.Special Thanks
+               19.Legal Stuff
+
+   
+    /\===================================================================/\
+   /__\                            S T O R Y                            /__\
+  /\  /\                          -----------                          /\  /\
+ /__\/__\=============================================================/__\/__\
+
+
+
+Though you fulfilled the Hylian prophecy of the Legendary Hero and destroyed the 
+evil tyrant Ganon, the land of Hyrule enjoyed only a precarious peace.
+
+"Who knows what threats may arise from Ganon's ashes?" the restless people murmured 
+as they knitted their brows and shook their heads.  Ever vigilant, you decided 
+to journey away from Hyrule on a quest for enlightenment, in search of wisdom 
+that would make you better able to withstand the next threat to your homeland.
+
+Months of difficult travel passed.  After a long and fruitful voyage, you breathed 
+deeply the seas spray from the deck of the ship that carried you home to Hyrule. 
+ But your homecoming was not to be.  Suddenly a squall struck your ship, and though 
+you valiantly fought the waves, a lightning bolt reduced your ship to splinters.
+
+Your world faded to black as you sink into the darkness of the storm-tossed sea 
+with the remains of your craft.  But in the cold darkness of the deep, you hear 
+a comforting voice that reminded you of home.  It was the voice of Princess Zelda!
+
+"You're going to be all right!" the voice said.  "What a relief!"
+
+You opened your eyes to find Princess Zelda standing over you-or was it?!  Actually, 
+it turned out to be a woman named Marin.  She explained that you had drifted with 
+the wreckage of your ship to the shores of Koholint Island.  This mysterious island 
+was unique for the giant egg which crowned its central mountain.  It was said 
+that a mythical creature, the Wind Fish, lay asleep inside the egg.
+
+You set out in search of your sword and other gear that might have washed up on 
+the beach with you.  As you stood in the surf with your recovered sword, a strange 
+owl suddenly appeared and hooted this riddle:
+
+"Awaken the Wind Fish and all will be answered."
+
+"What is the Wind Fish?" you wonder...And what did its awakening portend?  Your 
+most mysterious adventure yet, following the riddle of the Wind Fish through the 
+uncharted island of Koholint, is about to unfold.
+
+
+
+    /\===================================================================/\
+
+
+   /__\                        C O N T R O L S                          /__\
+  /\  /\                       ---------------                         /\  /\
+ /__\/__\=============================================================/__\/__\
+
+                            *--------------------*
+                            | ON THE MAIN SCREEN |
+                            *--------------------*
+
+CONTROL PAD
+***********
+Moves your character around the screen.  Obviously, up moves your character up, 
+down moves it down, etc.  By holding the direction towards an object, you can 
+push it.  If you move your character towards a hill, you will jump it automatically 
+to the bottom.  This is the same for waterfalls.
+
+
+A BUTTON
+""""""""
+This button can be assigned a weapon from your Sub-Screen.  Press the button to 
+use the item.  If you're near a chest, press the Button to open it and take its 
+contents.  If you happen to be near one of the island's inhabitants, press the 
+Button to begin talking.  If the message is long, you'll have to press the Button 
+again to reveal the rest of the message.  When swimming, this speeds up your moves.
+
+
+B BUTTON
+^^^^^^^^
+This Button is very similar as the A Button.  You can assign a weapon to it and 
+you can open chests in the same fashion as you do with the A Button.  When you're 
+in a conversation, however, press this Button to make the speaker turn into a 
+mime, incapable of speaking.  Actually, it just cancels the message, but if it's 
+too important, you may not be able to cancel it.  Press this to dive in the water 
+when swimming, too.
+
+
+START BUTTON
+============
+This Button brings the Sub-Screen up.
+
+
+SELECT BUTTON
+-------------
+Pressing this will bring the map of Koholint up.  All of the dark squares are 
+screens that you have not explored yet.  When you see a special icon pop up, press 
+the A Button to read what is important there.  Otherwise, just press the A Button 
+to see the name of the place.
+
+
+                           *-------------------*
+                           | ON THE SUB-SCREEN |
+                           *-------------------*
+
+CONTROL PAD
+***********
+This will move the cursor in your item list.
+
+
+A BUTTON
+""""""""
+Pressing this Button will swap the item you have assigned to the Button with the 
+weapon that the cursor is placed on.
+
+
+
+
+B BUTTON
+^^^^^^^^
+This assigns an item to the B Button in the same way as the A Button does.
+
+
+START BUTTON
+============
+This exits the Sub-Screen and returns you to the Main Screen.
+
+SELECT BUTTON
+-------------
+When holding this down, a smaller menu will pop up showing you how many Heart 
+Pieces and Photos you have.
+
+
+
+    /\===================================================================/\
+   /__\                     W A L K T H R O U G H                       /__\
+  /\  /\                    ---------------------                      /\  /\
+ /__\/__\=============================================================/__\/__\
+
+
+  --------------------------------------------------------------------------
+                             PREFACE TO WALKTHROUGH
+  --------------------------------------------------------------------------
+
+First of all, when you hear a coordinate of a screen, use the below example.
+
+   A B C D
+   _ _ _ _
+1 |_|_|_|_|
+2 |_|_|_|_|
+3 |_|_|_|_|
+4 |_|_|_|_|
+
+So, if I'm referring to B-3, you'd start from the northwestern corner of the map. 
+ Go over 2 and then down 3.  That would be B-3.  This won't be used in dungeons, 
+though.  If coordinates are NOT used, I'll simply describe the surroundings to 
+indicate what screen I mean.
+
+This is just a basic walkthrough.  It doesn't tell you how to get everything in 
+the game inside.  Be sure to explore on your own, too!  To learn about Heart Pieces, 
+Secret Seashells, and the like, go to their corresponding sections.  The walkthrough 
+will provide you with some of those items along the way, but the rest of them 
+are to be found on your own.  By using the sections and this walkthrough together, 
+you'll get complete coverage of the game.
+
+If you can't seem to find something in this guide, just look!  After looking through, 
+if you ABSOLUTELY CAN'T find what you need, E-mail me (Artemis251@yahoo.com) and 
+I will help you with whatever you need.  The E-mail must be about something that 
+you CAN'T FIND on the guide.  Anything that is on this guide will be disregarded 
+and marked with a big red 'DELETE' stamp.  Comments are gratefully accepted, as 
+well as errors found in the guide.  I, like everyone else, am not perfect, so 
+if you see an error (spelling or grammar) or some wrong info, just tell me in 
+an E-mail.  You will get credit, of course, in the 'Special Thanks' section.
+
+Right!  Now for the walkthrough!
+
+
+  *------------------------------------------------------------------------*
+  |                       QUEST FOR TAIL CAVE                              |
+  *------------------------------------------------------------------------*
+
+
+
+         OBJECTIVES
+         ==========
+              -Get your shield from Tarin
+              -Get your sword from the beach
+              -Get the Sleepy Mushroom
+              -Obtain Magic Powder from the Witch
+              -Get the Tail Key
+
+
+MABE VILLAGE
+************
+  You wake up in Marin's House.  Marin is a bright young woman who lives with 
+her father, Tarin.  After hopping out of bed, be sure to talk to Tarin.  He'll 
+give you your shiny new shield back!  With shield in arms, exit the house and 
+go left 2 screens.  This is the town's well.  Go down and enter the building.  
+Read all of the books to learn basic info.  There will be 2 books that are very 
+curious - one is on the top of a shelf and another has text too small to read. 
+ Keep these books in mind for later.  Exit the library and go down a screen.
+
+
+SOUTH OF THE VILLAGE & TORONBO SHORES
+"""""""""""""""""""""""""""""""""""""
+Hop off all of the cliffs until you reach the sandy shores of Toronbo.  While 
+exploring around the beach, you'll see spiny sea urchins.  Using your shield, 
+push them aside to open the way up to your sword.  When you reach your sword, 
+a mysterious owl will fly down and hoot a riddle to you - "Awaken the Wind Fish 
+and you can leave this isle."  Now knowing your quest, backtrack to Mabe Village.
+
+
+MABE VILLAGE (Revisited)
+^^^^^^^^^^^^^^^^^^^^^^^^
+Now with sword in hand, many of the town's attractions open up to you.  Try looking 
+in the well and inside the Trendy Game - both have useful prizes.  Don't worry 
+about the Trendy Game, the claw never drops the prize inches away from the pick-up 
+slot like in real life (Ahh...the power of electronics).  After thoroughly exploring 
+the village, head back to the well.  Go up and cut the bushes out of your way.
+
+
+MYSTERIOUS WOODS & KOHOLINT PRAIRIE
+===================================
+Once again, the strange owl greets you.  It tells you to find the key to the Tail 
+Cave inside the forest.  After it leaves, continue up a screen and right 2 screens. 
+ Enter the strange tunnel.  After destroying the bats (Keese), push the stones 
+around to access the chest.  Open it for 50 rupees.  Watch out that the floor 
+doesn't crumble beneath you!  Walk around a lot to avoid falling.  Continue up 
+and defeat the Gels that pop out at you.  Go left to find a room full of stones. 
+ Push them until you make a path to escape from the cave.
+
+After emerging from the cave, you'll see a mushroom behind some bushes.  Grab 
+it!  With the smelly mushroom in your possession, reenter the cave and make it 
+to the end.  After exiting the tunnel, go up and fight the 2 Moblins.  Continue 
+up and destroy the enemies.  After they're vanquished, go right 2 screens, killing 
+any enemies in your way.  Go down 2 screens and you should see a gravestone on 
+the left that's inaccessible at this point.  Go right and enter the Witch's Hut. 
+ Show her your mushroom and she'll turn it into Magic Powder for free!  After 
+acquiring it, go back to screen C-8 (the screen with the entrance to the first 
+tunnel you went into).
+
+
+
+From screen C-8, go left a screen and up 2 screens.  The Raccoon says that he 
+doesn't like powder, so sprinkle some on him.  He'll bounce around all over the 
+place and finally explode revealing...Tarin?!  Tarin will go back home to get 
+some rest, opening the way up to you.  What's up there?  The Tail Key of course! 
+ Open the chest and the owl will give you more instructions.  After the owl is 
+gone, go back to Mabe Village.
+
+
+MABE VILLAGE & SOUTH OF THE VILLAGE (Revisited...again)
+-------------------------------------------------------
+From the screen with the well, go back down 2 screens.  Follow the path to the 
+right 3 screens.  Destroy all Octoroks that get in your way.  Follow around the 
+curving path and you'll find Tail Cave.  Unlock the door with the Tail Key and 
+enter the dungeon.
+
+
+                    ____
+           __      / __/ _______________________________________
+          /  \----| |---/ L E V E L   1   -   T A I L   C A V E \
+          \__/----| |---\_______________________________________/
+                   \___\
+
+   ------------------------------------------------------------------------
+From the start of the level?
+
+Go left and hit the enemies into the pit with your sword.  A small key will fall. 
+ Grab it and go left.  Defeat the Gels and the statues will stop firing at you 
+(the door will open, too).  Open the chest for the Compass. Backtrack right 2 
+screens and go up.  Go right and destroy the Keese and the Stalfos.  Open the 
+chest (map) and go back to the left.  Hit the enemy into the pit and stand on 
+the button.  A chest will appear that holds a small key.  Get it and go left.
+
+Defeat all of the Keese and the doors will open.  Go up and destroy the Moldorm. 
+ A chest will appear.  Open it for 20 rupees.  Continue up and unlock the door. 
+ Enter the new room and make your way around the blocks by going  right to the 
+upper part of the screen and to the left.  Push the block farthest away in any 
+direction and the door to the left will open.  Use your shield to flip the enemies 
+onto their backs, making them vulnerable.  After destroying the duo, a stairway 
+will appear.  Go down it and go through the underground passage.
+
+After emerging, go up 2 screens and open the chest to receive Roc's Feather!  
+Save and Quit or walk back to the level's entrance.  From the start, go up and 
+to the left.  Destroy the Keese and go up.  Go right and carefully open the chest 
+guarded by the Bubble (small key).  Go to the right and destroy the enemies to 
+make the door open.  Go left and to the upper right to get behind the blocks.  
+Go up and jump across the pit.  Unlock the block and continue left.  Open the 
+chest for the Nightmare Key.  Go back right and down.  Go left and go on the other 
+side of the blocks around and around...).  Go right and unlock the door.  Go up 
+and 'discard' the Three-of-a-Kind to get the Stone Beak.  Though you don't really 
+need it, getting all of the treasures in the dungeon shows determination, especially 
+against the Three-of-a-Kind!  You must time your hits to make all 3 hold the same 
+suit.
+
+Go down and jump over the pit.  Go right and defeat Rolling Bones by jumping over 
+the spiked log and hitting the bouncing quail with your sword.  After he's through, 
+go up and unlock the Nightmare Door.  Defeat the Moldorm by striking its flashing 
+tail segment.  After a hit, it will speed up.  If you wait a bit, it'll slow down 
+again.  On the 3rd hit, it'll stay fast, so watch out.  Try hitting it with 2 
+normal blows and once with a Whirling Blade.  After 4 hits from your sword, he'll 
+leave a Heart Container.  Grab it and go up to claim the Full Moon Cello!
+
+
+  *------------------------------------------------------------------------*
+  |                        QUEST FOR BOTTLE GROTTO                         |
+
+
+  *------------------------------------------------------------------------*
+
+         OBJECTIVES
+         ==========
+              -Rescue Bowwow from the Moblin Gang
+              -Make Bowwow eat your way into Level 2
+
+
+SOUTH OF THE VILLAGE AND MABE VILLAGE
+*************************************
+When you exit level 1, the owl will visit you and congratulate your accomplishments. 
+ Yay, you beat level 1!  It turns out that it didn't think you could do that simple 
+level!  Keep your rage against the owl in now, it does get even more annoying 
+with its continuous hooting of more and more text...
+
+Anyway, walk back to Mabe Village.  As soon as you enter, two children will come 
+and tell you that Bowwow was stolen.  You, being the only hero on the entire island, 
+must save it!  You can get more info at Madame MeowMeow's house, but you probably 
+don't need it.  Continue to the Mysterious Forest, a few screens up from the town's 
+well.
+
+
+MYSTERIOUS FOREST 
+"""""""""""""""""
+Walk to the cave entrance that lead to the Sleepy Mushroom (up 2 screens and right 
+2 screens from the entrance).  From there, go up 2 screens, killing all enemies 
+along the way.  Go right 2 screens and grab the Heart Piece from the pit-surrounded 
+island.  Jump up a screen and right a screen.  Enter the cave here.
+
+
+BOWWOW DUNGEON
+^^^^^^^^^^^^^^
+Start by defeating the Moblin Warrior who guards the entrance.  After the doors 
+open, go up and turn the 4 Moblins in the room to nice ham dinners.  Continue 
+right and do battle with the Moblin King.  Use your Shield to block it's arrows, 
+then move away when it starts to pound its chest.  It will charge into the wall, 
+stunning itself.  Rush in with your trusty blade and give it a few swipes.  Repeat, 
+rinse, dry.  After it's gone, go right and push the stone to free Bowwow!
+
+
+TAL TAL HEIGHTS & GOPONGA SWAMP
+===============================
+Exit the dungeon and go right a screen.  Your favorite hooting friend will come 
+and blab on about how Bowwow is a fierce animal.  Go right after it's gone.  The 
+shop here is the Photographer's House.  After you rid yourself of Bowwow, you 
+can come back here and start an album of pictures!  Keep that in mind for later.
+
+Continuing your quest, go left 3 screens and down a screen.  You'll be on the 
+screen where you got the Heart Piece from the pit-surrounded island.  Go left 
+3 screens and jump over the pit.  Continue left a screen and go up.  Go into the 
+house if you want to meet Mr. Write.  If not, go right 2 screens to enter the 
+swamp.  Go up and let Bowwow eat the poisonous Goponga flowers that stand in your 
+way.  After exploring the swamp a bit, you'll find a chest containing 50 rupees 
+and the entrance to level 2!  Allow Bowwow to clear the flowers blocking it and 
+enter!
+
+
+                 ____
+        __      / __/ _______________________________________________
+       /  \----| |---/ L E V E L   2   -   B O T T L E   G R O T T O \
+
+
+       \__/----| |---\_______________________________________________/
+                \___\
+
+   ------------------------------------------------------------------------
+Too bad Bowwow can't come into the dungeon with you...Well, from the start?
+
+Go up.  You can't get the chest here until you get the Power Bracelet.  Throw 
+some Magic Powder in both of the pots in the dark room.  The door to the right 
+will open...from light?!  Anyway, go right and defeat the 2 Stalfos in the room 
+for a small key.  Grab it and unlock the lower door.  Charge up your sword and 
+walk around to make the Shyguy stand right behind your back.  Let go of the sword's 
+button and it'll defeat the Shyguy, revealing a chest.  Open it and you'll get 
+the compass.
+
+Go back up and to the right.  Hit the crystal switch and the blocks will go down. 
+ Go down and defeat the Stalfos.  Hit the crystal switch with your sword to make 
+the blocks go down.  Open the chest (small key) and hit the switch when you are 
+standing on a block.  The blocks will rise and you'll be standing on an upraised 
+one.  Jump to the two blocks on the right and fall off of them.  Continue right 
+and jump over the pits to the crystal switch.  Hit it and stand on the small switch. 
+ A chest will appear above you.  Walk up and open it (small key).
+
+Jump to the ledge on the upper side of the screen and go up.  Defeat the 2 Shyguys 
+by using your Whirling Blade Technique.  A key will drop out of reach.  Go down 
+and jump over the pits to the crystal switch.  Ignore it and continue jumping 
+to the left.  Hit the crystal switch on this screen and go up.  Go right and get 
+the key that dropped before.  Go back to the left 3 screens and unlock the door 
+in the dark room.
+
+Ignore the traps, defeat the Keese, and go up.  Jump over the pit and knock the 
+enemy into the pit with your sword.  Open the chest (map) and go back to the level's 
+start (or Save and Quit).  From the start, go up and put Magic Powder in each 
+of the pots to light the room and open the right door.  Go right 2 screens and 
+hit the crystal switch.  Go down and hit the crystal switch with your sword when 
+you're standing on a block that's down.  You'll be on an uprisen block (again). 
+ Jump to the right over the two blocks and go right.  Make your way across the 
+pits and hit the crystal switch.
+
+Jump over to the platform at the top of the screen and go up.  Ignore the Shyguys 
+and go right.  Ignore the enemies and unlock the door.  Go up and destroy all 
+of the Keese in the room.  Push the two blocks in the middle of the room onto 
+the different floor tiles (or just push them together, same thing) and a staircase 
+will appear.  Go down the stairs and jump from moving platform to moving platform. 
+ After exiting the underground passage, jump to the door shaped like a body.  
+Watch it-there are holes in the ground around the platform you're on.  You'll 
+emerge in a mini boss battle.
+
+Hit the Hinox with your sword while playing 'Dodge Bomb' with it (Ahhh...Oracle 
+of Ages game!).  It may charge at you, too.  When it does, it will pick you up 
+and throw you, causing major damage as well as giving you the risk of falling 
+down a cracked floor tile.  After a few hits, it'll die and leave a warp hole 
+behind (as well as the door opening).  Go right and jump over the pits to the 
+upper exit of the room.  Continue up and stay in the doorway of the room.  All 
+of the Keese will be sucked into the Vacuum (survival of the fittest!).
+
+
+
+You can ignore the chest, there's only a map inside, but if you really want it, 
+wait for the Vacuum to stop sucking you in to open it.  Concentrate on going up 
+(beware, though.  Falling into the Vacuum warps you to the level's beginning). 
+ After you're up, get the chest for 20 rupees.  Unlock the left door and hit the 
+Boo Didleys so they fall back.  Try to light a pot with Magic Powder.  The room 
+will light and the Boo Didleys will turn into small, black, yelping balls of gas. 
+ Hit them with your sword and a chest will appear.  Open it for the Power Bracelet!
+
+Head back right and lift the pots to gain access right.  Go to the upper right. 
+ Walk to the crystal switch that *should* have a raised block in front of it.  
+If the blocks are in your way, go back to the left and take the lower path.  Hit 
+the switch once and return to the upper part of the screen.  After you're standing 
+on a flat block, hit the crystal switch.  Jump down to the lowered block in front 
+of the switch and hit it again.  Walk to the right and hit it again.  Open the 
+chest (small key) and go right.
+
+Hit the enemies into the pit and continue right.  Destroy the Keese and the Stalfos 
+and go down.  Eliminate the Pols Voice (bunny thing) with a pot.  Then destroy 
+the Keese.  Finally, destroy the Stalfos.  A chest will appear when you defeat 
+them in that order.  The chest will have the Nightmare Key!  Grab it and go up. 
+ Unlock the door and go in.  Throw pots at the Pols Voice and destroy the Gel 
+to make a stairway appear.  Go down the stairs and stand on the ledge to make 
+it fall.  Link must be heavy...Anyway, go left and pick up the pot at the bottom 
+of the ladder.  Climb up and stand on the ledge with the pot and it'll sink.  
+Climb out of the passage and jump to the Nightmare Door.  Unlock it and do battle 
+with the Genie.
+
+Destroy the Genie by dodging its fireballs and hitting the pot with your sword 
+when he goes inside of it.  Pick up the pot when it stops moving (and when he 
+stops blabbing on and on...) and throw it against the wall.  Repeat this process 
+2 more times and the pot will break.  Hit the genie as it comes towards you.  
+After being hit, it'll project 2 images of itself around the room.  They won't 
+hurt you, so jump around and be ready for the Genie to appear at any second.  
+Jump the fireball and hit it with your sword.  Repeat until dead.  Grab the Heart 
+Container and go left to get the Conch Horn!
+
+
+  *------------------------------------------------------------------------*
+  |                         QUEST FOR KEY CAVERN                           |
+  *------------------------------------------------------------------------*
+
+         OBJECTIVES
+         ==========
+              -Return Bowwow to its owner
+              -Buy a shovel and bombs
+              -Get some Bananas
+              -Recover 5 Golden Leaves
+              -Obtain the Slime Key
+
+
+GOPONGA SWAMP
+*************
+When you exit the level, head left.  Go to Mr. Write's house (screen A-4).  Walking 
+a screen up, you'll see a cave.  Enter that cave and get both chests inside.  
+Exit the cave and head down towards the Mysterious Forest, specifically, the screen 
+where you got the Sleepy Mushroom.
+
+
+MYSTERIOUS FOREST
+"""""""""""""""""
+Enter the cave on the screen where you got the mushroom and push the stones to 
+make a path to the right.  Go right and backtrack left.  The stones will reset, 
+giving you access to the Heart Piece.  After acquiring it, continue right and 
+down.  Exit the cave and go a screen left and a screen down.  Open the chest here 
+for a Secret Seashell.  After emptying the chest, walk on your way back to the 
+forest's entrance.  Exit down to Mabe Village.
+
+
+MABE VILLAGE
+^^^^^^^^^^^^
+
+
+First, go to Madame MeowMeow's house to return Bowwow.  After getting your reward 
+(what will Marin think?), go to the Shop and buy a shovel with your hard-earned 
+money.  Buy bombs, too, you'll need them.  Make sure you have your Trade Sequence 
+up to date, you'll need the bananas.  Read the Trading Section for info on how 
+to get them.  After you have all of the goods listed above, walk to the far right 
+side of town and lift the rocks blocking the path.
+
+
+UKUKU PRAIRIE
+============= 
+Go a screen right and you'll see a strange hole with lights circling it.  This 
+is a warp hole, one of 4 on Koholint Island.  You can't warp anywhere until you 
+find another, so go down 2 screens, right a screen, and down a screen.  Enter 
+the house and talk to Richard.  He'll tell you that he and his frogs had to 
+run...err...jump away to their villa from an attack by deranged guards.  Accept 
+his quest and exit his house.
+
+Go right a screen and up 2 screens.  That water is the gateway to level 3.  You'll 
+find out more about that later, so for now, go right a screen and up 2 screens. 
+ Talk to Grandpa Ulrira in the telephone booth if you like, but to continue the 
+quest, go right a screen and up a screen.  This is Kanalet Castle, Richard's home. 
+ You'll see that the drawbridge is up, leaving no path to enter.  If you have 
+visited the Photographer, walk up to the drawbridge for a rare picture.  If not, 
+I suggest you visit him.
+
+Anyway, continue right 2 screens and talk to the monkey, Kiki.  Kiki will call 
+upon his friends to build a bridge for you after giving him bananas.  Once monkey 
+will leave a stick behind.  Grab it and head up 3 screens.  Yet another telephone 
+booth, leaving the unanswered question, "Where are Koholint's telephone lines?" 
+ Go left and slash at the bush.
+
+
+KANALET CASTLE
+--------------
+Inside the cave under the bush will be Goombas and spikes.  Jump over all of them 
+and exit the cave.  You will be inside to castle.  Go left a screen and down a 
+screen, defeating both Darknuts on your way.  See the crow on the tree?  It won't 
+budge until you chuck a stone at it.  Slash at it after it tries to fly off.  
+You'll get Gold Leaf #1.  Go down a screen and right 2 screens, vanquishing all 
+foes on the way.  Continue up and fight with the Bomb Trooper for possession of 
+Gold Leaf #2.  After it's gone, go to the main castle entrance, a screen down 
+and left of where the Bomb Trooper was.
+
+Enter the castle and head left.  Kill all of the enemies here (except the Anti-Faerie) 
+to get Gold Leaf #3.  Fight your way up and right.  Stand on the switch to open 
+the drawbridge.  Go up the small staircase and go left.  Walk upstairs and place 
+a bomb near the left wall decoration you see.  A Darknut Warrior will pop out. 
+ Fight it for Gold Leaf #4.  After collecting it, head right a screen, down a 
+screen, and left a screen.  Exit the castle.
+
+You'll emerge on a screen with 2 castle entrances.  Go to the right one and enter. 
+ Pick up a pot and throw it at the door.  If you need bombs or hearts, you can 
+find one of each in the collection of pots.  Go up when you're ready and defeat 
+the Ball and Chain Trooper.  After he's done, you'll have a happy Sub-Screen full 
+of 5 Gold Leaves!  Exit the castle and go back to Richard's Villa.
+
+
+UKUKU PRAIRIE (revisited)
+*************************
+
+
+Enter Richard's Villa and give him the Gold Leaves.  He'll allow you to push a 
+crate aside.  Underneath will be a staircase.  Go down it and make your way up 
+to the staircase (there's a chest here with a Secret Seashell, too).  Go up it 
+and exit the cave.  You'll emerge in a field of bushes.  Slash your way through 
+them to find a path, or pull at them for an easier way to get through.  If they 
+don't budge, there's a pit under it.  Make your way to the end where you'll find 
+an owl statue.
+
+That's no ordinary owl statue.  Inside the soil underneath it is the Slime Key! 
+ Dig it up and make your way back to Richard's Villa.  Exit his house and go up 
+a screen, left a screen, and up a screen.  Unlock the level and walk around to 
+the water I mentioned earlier.  Jump from island to island to get to the level. 
+ Enter it!
+
+
+                 ____
+        __      / __/ _________________________________________
+       /  \----| |---/ L E V E L   3   -   K E Y   C A V E R N \
+       \__/----| |---\_________________________________________/
+                \___\
+
+   ------------------------------------------------------------------------
+From the start, pick up a pot and throw it against the upper door to break it 
+open.  Go up and defeat all of the enemies on this screen.  A chest will appear 
+containing a small key.  Take it and go the upper right path.  Defeat the 4 Gels 
+that pop up and the doors will open.  The chest has a Gel, so you don't have to 
+get it.  Continue up.  Ignore the enemies and go up yet again.  Quickly go down 
+the stairs so you don't have to confront the Gels.  You'll resurface in a room 
+with 4 locked doors on each side.  Quickly charge up your sword for a Whirling 
+Blade Technique (WBT) to destroy the Gels that pop up.
+
+Unlock the upper door.  Inside will be 2 Stalfos and a crystal switch.  Defeat 
+the enemies and a small key will drop.  Hit the crystal switch and go down and 
+back up the stairs.  Get the chest here (Stone Beak) and go down 2 screens.  Defeat 
+the 4 Gels and go right.  Get the chest in this room for a map.  Go back left 
+and up to the staircase.  Go back down the stairs (geez, Link gets lots of exercise!). 
+ WBT the Gels and go back to the crystal switch room.  Hit the switch again and 
+go back down a screen.  Unlock the right door this time.  Ignore the Pairodd and 
+go to the staircase.
+
+You'll be on an upraised platform.  Walk around the perimeter of this platform 
+to scare out Gels.  Defeat all of them and a small key will fall.  Grab it and 
+go up.  There will be 2 Stalfos and a load of pots.  Head left and go up.  Defeat 
+the Dodongo Snakes by walking up to them and placing a bomb in front of their 
+mouths.  After one eats 3 bombs, it'll explode.  When both are vanquished, the 
+door to the right will open.
+
+Go right.  Push the block farthest to the right down and push the block closest 
+to the two blocks above the crystals left.  Open the chest and you'll get the 
+Pegasus Boots.  Walk back to the Mini-Boss' room.  Enter the Warp Hole and you'll 
+be back at the level's entrance.  Walk right and dash into the Vacuum with your 
+Pegasus Boots before it shoves you off into a pit.  Get the chest behind it for 
+a small key.  Go back left and up.
+
+Go to the upper left this time and dash through the crystals.  Defeat the Mini-Gel 
+and go up.  Push the block to the right and go down.  Defeat the Stalfos and a 
+chest will appear.  Inside will be 200 rupees.  Grab it and Save and Quit (or 
+walk back to the level's entrance).  From the entrance, go into the warp hole. 
+ Go down when you emerge in the Mini-Boss' room.  Walk left and dash into the 
+Telekeets, defeating the Gels that pop along the way.
+
+Grab the small key that falls.  Continue up and defeat all of the enemies and 
+a chest will appear out of reach.  Go up again and go to the upraised platform. 
+ Walk down and get the chest (Stone Beak).  Move down and to the right.  Continue 
+right and hit the wall until you find a place where it sounds different.  Place 
+a bomb there and a new doorway will appear.  Go into it and equip the Pegasus 
+Boots and Roc's Feather.  Run and jump over the 3-sprite-long pit.  Open the chest 
+for the Nightmare Key.
+
+
+Leap off the upraised platform and go up a screen.  Defeat all of the enemies 
+in this room (the easiest way to defeat the countdown Bombites is to hit them 
+away when the begin to flash).  The doors will open, so walk left.  Get the chest 
+and poke the wall with your sword until you hear a different sound when you hit 
+it.  Place a bomb there and a doorway will appear.  Continue into it and defeat 
+all of the Bombites in the room.  Grab the key and pick up the pots to get a faerie.
+
+Save and Quit.  When you restart, warp to the Mini-Bosses' room.  Go down and 
+unlock the block on the screen.  Walk up and unlock the block on this screen.  
+Continue right and (you guessed it) unlock the block on this screen.  For the 
+last time, go down and unlock the block to access the staircase leading to the 
+boss.  Go down the stairs.  Dash into the giant block and it'll fall.  Jump down 
+onto it and walk to the right.  This part can be tricky, so hopefully you have 
+a lot of hearts.  Equip the Pegasus Boots and Roc's Feather.  Run and jump to 
+the ladder.  If you fall into the spikes, try to make your way to the right and 
+grab the ladder.  Go up the ladder and exit the cave.
+
+You'll find yourself in a room full of crystals.  Dash into the Pairodd.  When 
+all of them are destroyed, go left.  Defeat all of the Keese in this room for 
+a small key.  This key serves for exploration of the dungeon, so pocket it.  Unlock 
+the Nightmare Door and dash into the wall to make the Slime Eye fall.  Repeatedly 
+hit it until the two eyes are hanging on by a thread.  Dash into the thread and 
+they'll be separated.  For the easiest way to defeat them, use the WBT on the 
+eyeballs.  When you hit one, it flies up and it's shadow will be seen.  Jump when 
+it lands or you'll be stunned for a short while.  After both are gone, grab the 
+heart container and claim the Sea Lily Bell!
+
+
+  *------------------------------------------------------------------------*
+  |                       QUEST FOR ANGLER'S TUNNEL                        |
+  *------------------------------------------------------------------------*
+
+         OBJECTIVES
+         ==========
+              -Get the Honeycomb from Tarin
+              -Obtain the Ocarina from Dream Shrine
+              -Learn the Ballad of the Wind Fish for your Ocarina
+              -Go to Animal Village
+              -Give the bear chef the honeycomb for a pineapple
+              -Take Marin to the Walrus
+              -Recover the Angler Key
+              -Give Papahl the Pineapple for a Hibiscus
+              -Leap from the mountains to level 4
+
+
+UKUKU PRAIRIE
+*************
+After your valiant defeat of the Slime Eyes, the owl will fly down and hoot at 
+you some more.  Blah, blah, the same...After his departure, head up to the warp 
+hole you found.  Go on right and follow the path until you meet up with Tarin. 
+ He'll knock down a bee hive if you let him have your stick.  Take the fallen 
+honeycomb and go down a screen.  Bomb the giant Moblin-like statue for a shortcut. 
+ Now head back to Mabe Village.
+
+
+MABE VILLAGE
+""""""""""""
+
+
+Go a screen up from the town's Shop.  You'll see an odd shrine surrounded by stones. 
+ Pick them up and toss them aside.  Enter the building and slip into the bed.  
+You'll dream of a shrine of dreams, the Dream Shrine!  This shrine of dreams makes 
+the dreamer dream of a shrine, all are dreams, but is the shrine a dream?  Akkk, 
+no more tongue twisters!!  Ok, you'll find some tough enemies called Armmimics 
+all over the place.  They may not appear strong, but the only way to harm them 
+is to execute a Whirling Blade Technique on them.  Simple, but there are cracked 
+floors as well.
+
+To get past them, perform this simple trick-grab onto the wall.  You can direct 
+the moves of them and make them all come to a single point.  WBT them and you 
+can destroy all of them in one blow!  After coming near the end, you'll find a 
+chest containing 100 rupees.  Dash through the crystal at the base of the chests' 
+structure and go up to find yet another chest.  This one has an Ocarina in it! 
+ Exit the shrine.
+
+Talk to Marin, who can be found on the normal screen - the rooster's grave.  She'll 
+teach you a new song for your Ocarina - The Ballad of the Wind Fish!  This plays 
+a major role later in the game.  Now that you have that in your possession, head 
+back to the right into the Ukuku Prairie.
+
+
+UKUKU PRAIRIE (revisited) & ANIMAL VILLAGE
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+Make your way to the screen with Kanalet Castle's drawbridge.  From there, go 
+down 3 screens and go right a screen.  Chop the strange bush to uncover a secret 
+passageway.  Enter it and dash through the crystals inside.  At the end, you'll 
+emerge on another island.  Go down and to the right.  Welcome to Animal Village! 
+ Talk to the locals there and explore the town.  In one of the houses, you'll 
+find a bear chef in need of honey.
+
+Trade your Honeycomb for his Pineapple.  He'll tell you that Marin can help you 
+get to the Yarna Desert, where the key to level 4 rests.  Depart for Mabe!  An 
+easy way to get there is by way of warp holes.  The second one you'll find is 
+south of Animal Village.  Warp back to the Ukuku Prairie and go left to enter 
+Mabe.
+
+
+MABE VILLAGE (revisited) & TORONBO SHORES
+=========================================
+Go to the screen Marin is usually on.  She's not there?  Check inside her house. 
+ A note tells you that she's on the beach.  Go back down to the screen where you 
+found your sword was (Screen C-16).  Go right 2 screens and up a screen.  Ignore 
+the monkey and go right to discover a chest.  Open it and continue down to find 
+Marin!  Talk with her and she'll follow you.  Take her back to Animal Village!
+
+
+ANIMAL VILLAGE (revisited) & YARNA DESERT
+-----------------------------------------
+Go south of the village and approach the walrus.  Marin will start singing to 
+it.  It will fall into the ocean in happiness of Marin's Song.  Marin will depart 
+for Animal Village after opening Yarna Desert for you.  Enter the dry region and 
+go up 3 screens.  Defeat the Lanmola for the Angler Key.  Slash at its head to 
+stand as the victor.  Don't get swallowed by the sand pit, though!  After thoroughly 
+exploring the desert, go to the entrance of Bowwow's Dungeon in Tal Tal Heights 
+(Screen F-4).
+
+
+TAL TAL HEIGHTS
+***************
+From the screen with the entrance to Bowwow's Dungeon, go up a screen and lift 
+the stones up.  Walk right on the upper path until you get to a screen with 2 
+Elite Moblins and a stone blocking the path right.  Defeat the Moblins and go 
+right.  If you explore the area a bit, you'll find your third warp hole, as well 
+as the keyhole for level 4.  Unlock the level, and the nearby waterfall will stop 
+flowing, but how do you get to the entrance?  Yep, you must jump from above.
+
+
+
+
+TAL TAL MOUNTAIN RANGE
+""""""""""""""""""""""
+Return to the screen with 2 Elite Moblins and the stone (Screen H-3).  Go left 
+a screen and up the stairs.  Enter the cave via lifting the stones.  Inside, defeat 
+the enemies and head right.  Push the stones and defeat any Gels that pop up.  
+Make your way to the staircase and go down the stairs.  Defeat all the enemies 
+while going to the right.  Go up the staircase and head right.  Exit the cave 
+and open the chest for some rupees.  Reenter the cave and dash through the crystals 
+to the right.  Exit again and head right a screen.  Enter the cave and go through 
+it to emerge atop a small mountain.
+
+Not far from the exit is Papahl.  He's exhausted and needs energy.  Give him your 
+Pineapple.  He'll give you a Hibiscus in return.  Leap off the mountain or go 
+back through the cave.  Keep walking right until you see a spot to leap off.  
+Jump from it and you'll land by the entrance of level 4!  Enter the fish!
+
+
+               ____
+      __      / __/ ___________________________________________________
+     /  \----| |---/ L E V E L   4   -   A N G L E R ' S   T U N N E L \
+     \__/----| |---\___________________________________________________/
+              \___\
+
+   ------------------------------------------------------------------------
+L:4 - Angler's Tunnel
+
+From the start, go up a screen.  Go up to the upraised platform and head right 
+2 screens.  Go down and open the chest (Stone Beak).  Go left a screen then up 
+2 screens.  You'll see a pit 3 sprites long.  For now, ignore it and continue 
+up.  Get the map from inside the chest and return to the screen with the long 
+pit.  Jump over it by executing a long jump (Equip Pegasus Boots and Roc's Feather, 
+then run and jump).  In this room, you'll see a cracked block.  Use a bomb to 
+break it and push the remaining block into the water.  Open the chest to get a 
+small key.  Proceed upwards.
+
+After a screen or two, you'll be in a room with another cracked block.  Avoiding 
+the Anti-Faeries, bomb your way to the chest (small key).  Pick up the hearts 
+if you need them.  Save and Quit your game or walk back to the level's first screen 
+now.
+
+From the entrance, walk up.  Defeat the enemies and the door will open (how killing 
+them triggers it I don't know...).  Go right and battle the enemies once again. 
+ When they're vanquished, open the chest for the Compass.  Go down a screen and 
+kill the Tektites.  A small key is inside the chest, and the door will open once 
+every Tektite is gone.  After going up, unlock the right door and hop from shallow 
+water to shallow water.  Unlock this door and go up.
+
+The chest you see should be gotten with the flippers, but you don't have them 
+yet, so continue upwards.  Do a running jump over the pit when you slash the Gels. 
+ Hop over and go up.  Unlock the block and defeat the Stalfos and Whrrlrobe.  
+Walk left and destroy the gels for a key...or did you?  The key will fall down 
+a flooded hole.  With no flippers in your inventory, go down 2 screens and hop 
+across the shallow water to your left.
+
+Continue left and up and you'll find a chest surrounded by enemies.  Vanquish 
+them and open the chest for a Gel.  Whoopee.  Walk up again and you'll enter a 
+strange room with odd tiles.  Ignore it for now, but keep that screen in mind 
+for later.  Traverse right and open the chest.  Small Key!  Backtrack to the room 
+where the defeated Gels dropped a key into the flooded cave (Left a screen, down 
+2 screens, right 2 screens, up 2 screens).
+
+
+
+Unlock this door.  The giant tick-thingy is Cue-Ball.  Don't let it run you over. 
+ Stay near a straightway and jump over it as it comes near.  Slash it in its abdomen 
+until it disappears.  Quickly go up and to the left.  If you don't make it between 
+the blocks, pull the lever on your right back until the blocks separate.  Dash 
+for it!  After getting through the tight squeeze, walk left and kill the Gels. 
+ Open the chest.  You've got the Flippers!
+
+Go down and study the floor tiles (after destroying the enemies of course).  They 
+resemble the ones in the room I told you to remember, right?  Either write down 
+the sequence or memorize it.  After having it in your head/on paper, go down and 
+swim right.  Make your way back to that room that had the same tiles.  Perform 
+the correct sequence and a staircase will pop up.  Enter it!
+
+Avoid the first Thwomp and go left.  Make the Thwomp here crash to the ground 
+as you climb the ladder.  Jump on its flat top to get boosted to the exit.  This 
+may take practice, so you've been warned...Anyway, when you exit, go down and 
+open the chest (Nightmare Key).  You have a choice now.  Either Save and Quit 
+or walk back to the Mini-Boss's room.  If you Save and Quit, jump into the warp 
+hole leading to the room of the Mini-Boss.
+
+From there, go down a screen and right a screen.  Annihilate the enemies and push 
+the blocks to open the way to the staircase.  Go down it and explore the cave 
+to find that key that dropped down after defeating Gels.  With it in your possession, 
+exit the cave and go left a screen.  Walk down 2 screens and left a screen whilst 
+destroying any enemies in your path.  Swim to the door and step on the switch 
+to open it.  Continue up and unlock the block.  Enter the cave and swim to the 
+exit.  You'll come out in a rather small area.  Walk left and kill the Gels.  
+Unlock the Nightmare Door and you'll battle...
+
+A staircase?!?!
+
+Actually, when you go down the stairs, you'll find a big Angler Fish.  You should 
+probably slash at it's face like mad, but if it stops, move out of the way!  It 
+will charge against the wall, making floor tiles drop.  Keep slashing at it and 
+it's fry until it disappears to a Heart Container.  Grab it and exit the battle 
+arena.  Continue up and gain possession of the Surf Harp!
+
+
+
+  *------------------------------------------------------------------------*
+  |                        QUEST FOR CATFISH'S MAW                         |
+  *------------------------------------------------------------------------*
+
+         OBJECTIVES
+         ==========
+              -Learn Manbo's Mambo on your Ocarina
+              -Take a lost ghost to its house
+              -Return the ghost to its grave
+              -Dive into Martha's Bay to enter L:5
+
+
+TAL TAL HEIGHTS
+***************
+When you exit the level, swim to the left and enter the cave.  Talk to the giant 
+sunfish named Manbo.  It'll teach you its mambo on your ocarina for free!  This 
+song warps you to Manbo's Pond, which can be found on screen F-5.  When you leave 
+the cave, swim to land and play it.  You'll be warped to that screen in Koholint 
+Prarie.
+
+
+KOHOLINT PRAIRIE & UKUKU PRAIRIE
+""""""""""""""""""""""""""""""""
+
+
+Walk out of the pond and down a few screens to appear in the Ukuku Prairie.  If 
+you have a strange ghost following you now or at any part of this paragraph, skip 
+to the next section below.  When you appear, try walking around on many screens, 
+like Kanalet Castle.  Search the area for nothingness, all you're looking for 
+is the ghost to get you to the below paragraph.  It appears randomly, so just 
+walk around.
+
+
+TORONBO SHORES
+^^^^^^^^^^^^^^
+After acquiring your new buddy, walk down to the screen that you claimed your 
+sword on (Screen C-16).  Walk 2 screen right and 1 screen up, destroying all enemies 
+in your path.  Continue right 2 screens and down a screen.  The ghost will tell 
+you to enter its house.  It will then want to return to its grave.  Exit and go 
+to the Witch's Hut on screen F-7.
+
+KOHOLINT PRAIRIE (revisited) & MARTHA'S BAY
+===========================================
+From the screen with the Witch's Hut, go left and lift the stone.  Walk down and 
+go around to the grave.  It'll go back to its eternal rest after telling you to 
+check the pots in its house.  After a happy visit from your favorite bird, head 
+over to Animal Village, the best way to get there is by the Warp Hole in Ukuku 
+Prairie.
+
+Upon arrival, exit the village and go up a screen then left a screen.  Enter the 
+water and swim around in Martha's Bay until you discover a giant Catfish's Head. 
+ Dive in the water near the rocks and you'll discover a secret passageway.  Swim 
+through the cave and you'll resurface inside the ring of rocks.  Become the fish's 
+lunch to enter the level.
+
+
+                 ____
+        __      / __/ _______________________________________________
+       /  \----| |---/ L E V E L   5   -   C A T F I S H ' S   M A W \
+       \__/----| |---\_______________________________________________/
+                \___\
+
+   ------------------------------------------------------------------------
+From the beginning?
+
+Go left a screen.  Avoid the two enemies and walk left again.  Destroy all of 
+the baddies in this room, and the door to the left will open.  To destroy the 
+Iron Mask (walking shield-thing), hit it in it's back with your sword.  Anyways, 
+go left through the now-opened door.  Just avoid the enemies in this room and 
+continue down the staircase in the corner.  Hop from platform to platform to make 
+it across to the exit of the underground passage.
+
+After you come up, you'll be in a room with lots of crystal-like things and 4 
+Stalfos.  Destroy the Stalfos and break all of the crystal things with your sword. 
+ Push the top two blocks in the center of the room towards each other to make 
+a square.  A key will fall.  Grab it and head back to the cave.  After you go 
+through it, you'll emerge in the room with 2 Iron Masks and a Spark.  Destroy 
+the two Iron Masks to make the door open.  Grab the Compass out of the chest and 
+continue right a screen.
+
+Unlock the door and go up.  Walk left and defeat the 2 Iron Masks.  Go into the 
+door to the left and destroy all of the enemies in the room (not the Spark) to 
+make the chest with the map appear.  Head right 2 screens.  Go up and defeat all 
+of the Stalfos in this room to make the upper door open.  Continue up and do battle 
+with Master Stalfos.  Hit him with your sword to stun him and place a bomb next 
+to him while he's stunned.  3 bomb blasts will make him retreat.  Walk right.
+
+
+
+The chest here has a note from Master Stalfos saying that he has the Hookshot. 
+ Yep, he's so polite, he leaves you a note to tell you that he stole something. 
+ Go up and push the block in the middle of the room up.  Walk right and battle 
+Master Stalfos again.  2 bombs will make him retreat this time.  You get used 
+to his cowardice after awhile.  When he's gone, go left a screen and push the 
+block left.  Continue up.  Jump across the pit and walk up.  Head left and you'll 
+be in a room with blocks going diagonally across the room.
+
+Pick up the pot on the diagonal block formation closest to the door.  Push the 
+block to the left and pick up one of the pots on the other side of the room to 
+reveal a switch.  Step on and the upper door opens.  Go up and battle Master Stalfos 
+for the 3rd time.  2 hits makes him retreat once more.  Go left after he's gone 
+and get the map.  Grab the hearts if you need them.  After you're done, Save and 
+Quit or play Manbo's Mambo to warp you back to the level's entrance.
+
+Go left 3 screens and go down the stairs.  Get through the underground cave like 
+you did before and you'll emerge in the room with many crystal things.  Go left 
+a screen and battle Master Stalfos for the last time.  After 3 bombs, he'll blow 
+up and leave the Hookshot.  With the new weapon in your inventory, go back to 
+the underground tunnel a screen to the right.
+
+After you emerge again, you'll have to defeat the 2 Iron Masks to open the door 
+again.  Use your Hookshot to dispose of them easily.  Go right when the door is 
+open.  Continue a screen to the right (upper side) and Hookshot across the chasm 
+to the chest.  Inside will be a lot of rupees, use them to buy the Bow later in 
+the game.  Head back left and up.  Walk left and up again.  In this room, 2 Gels 
+will be under a bunch of flying arrows.  A statue will fire at you until the Gels 
+are defeated.  Go left from here and Hookshot across the traps to the left side 
+of the room.  Go left and Hookshot across the chasm.  Get the chest (small key) 
+and exit through the lower door.
+
+Hookshot back across the traps and go right.  Use the Hookshot to grab the bridge 
+on the right and extend it to yourself.  Cross the bridge and go up.  Unlock the 
+door and defeat the two Gohmas.  Use your shield to block their charges and hookshot 
+them in the eyes when they're open.  After you defeat them, head back to the room 
+with the flying arrows and the statue that fires at you.
+
+Go down and to the right.  Continue up two screens and to the right.  This is 
+where you got that note about the Hookshot, remember?  Walk up from here and push 
+the block in the middle of the room up.  Head left and go up.  Dive into the pool 
+of deep water in the middle of this room and you'll enter a secret flooded tunnel. 
+ Swim to its exit and you'll emerge in a room with a chest in the corner.  Use 
+your Hookshot to grab the bridge and cross it.  Open the chest and you'll receive 
+the Nightmare Key.  Walk back into the flooded passage and exit into the room 
+with the pool in its middle.
+
+Go down and to the right.  Push the block in the middle of the room to the right. 
+ Continue up and hop right over the pit.  Hookshot to the chest (50 rupees) and 
+open it.  Go a screen to the right and Hookshot to the chest.  Grab the small 
+key inside and go back to the left.  Head up and use your Hookshot to grab the 
+bridge.  Cross it and get the chest (50 rupees).  Save and Quit or play Manbo's 
+Mambo to get back to the level's entrance.
+
+Enter the warp you created by defeating the Gohmas and go through the upper right 
+door.  Enter the stairwell.  Use the Hookshot on the dragon's heads to be pulled 
+up to them.  Get through the tunnel and you'll emerge next to a block that's locked. 
+ Unlock the block (rhyming!!!  AHH!!!) and Hookshot across the chasm.  Continue 
+left and unlock the Nightmare Door.  Defeat the Slime Eel by using your Hookshot.
+
+
+
+Stay in a corner to avoid the tail, and when you have the chance, Hookshot its 
+mouth to pull it out of the wall.  Slash the hearts in its neck if you see them. 
+ If you Hookshot the mouth and  a small eel comes out, bouncing around the room, 
+avoid it - it's a dud.  After running a bit it'll blow up.  Continue using these 
+battle techniques until the Slime Eel is no more.  Grab the Heart Container and 
+go up to claim the Wind Marimba!
+
+
+  *------------------------------------------------------------------------*
+  |                         QUEST FOR FACE SHRINE                          |
+  *------------------------------------------------------------------------*
+
+
+         OBJECTIVES
+         ==========
+              -Buy the Bow from Mabe Village's Shop
+              -Defeat the Armos Knight for the Face Key
+              -Read the inscription of the Wind Fish
+              -Finish the Trading Sequence
+              -Get the Boomerang from Toronbo Shores
+
+
+MARTHA'S BAY
+************
+Since you defeated the Slime Eel and gained the Hookshot as a weapon, you can 
+finally finish the Trading Sequence!  Explore all of Koholint as explained in 
+the Trading Section of this FAQ/Walkthrough to get the Magnifying Lens.  This 
+important item will be your guide through the final level.  It also allows you 
+to get a very important item - the Boomerang!  This is the only way to defeat 
+Sparks, and they always give you a faerie for defeating them!  Anyway, after you 
+acquire the Magnifying Lens, go to the screen on Toronbo Shores where you found 
+your sword (Screen C-16).
+
+
+TORONBO SHORES
+""""""""""""""
+Go left 2 screens and bomb open the cave entrance.  Enter it and you'll find an 
+old enemy in the Zelda series - a Goriya!  It wants to trade its weapon, a boomerang, 
+for an item in your B Button.  I suggest trading your Shovel, since you no longer 
+need it.  This weapon is one of the best in the game, it's very powerful and can 
+be used to create a huge shortcut in level 7.  Anyway, you need nothing else on 
+the beach, so head back to Mabe Village.
+
+
+
+MABE VILLAGE
+^^^^^^^^^^^^
+When you reach the village, head over towards the shop.  Inside you'll find a 
+very expensive item, the Bow.  This is very useful in level 6, so buy it if you 
+have enough cash.  If you don't, explore the many caves on Koholint or win it 
+in the Trendy Game.  You don't want to pass this item up!  When you have the weapon 
+in your inventory, walk right 2 screens from the shop and jump into the Warp Hole. 
+ Warp to Animal Village and exit it as soon as you arrive.
+
+
+SOUTHERN SHRINE
+===============
+When you leave Animal Village, walk up a few screens and right a few screens until 
+you meet up with Kaepora.  After another long lecture, go right and lift all the 
+stones in your way to open the path right.  Kill any enemies in your way as well. 
+ After a bit of exploring, the path will open south.  Walk down and you'll be 
+in a field full of statues.  Some will awaken and attack you when touched.  Simply 
+use your new boomerang to destroy them.  After some self-exploration, you'll 
+discover an entrance to a shrine.  Enter it!
+
+
+
+Once inside, walk up.  You'll awaken a huge Armos Statue.  To defeat it, use your 
+bow and arrows.  If you run out of arrows, charge up your sword and use a whirling 
+blade technique.  When it jumps, hop in the air or you'll be paralyzed from the 
+shockwave.  When hit a lot of times, it loses its shield.  After a few more hits, 
+its armor wears off.  Hit it a couple of times after that to destroy it, rewarding 
+you with the Face Key!  Head up after your triumph.
+
+Light the pots and look at the wall inscription.  You'll hear a riddle of the 
+Wind Fish.  Is the island true?  Or is this only a dream?  You'll only know when 
+you find all of the Sirens' Instruments and awaken the Wind Fish.  Exit the shrine 
+and Kaepora will hoot at you until you shout 'MERCY!' out.  Backtrack to the Animal 
+Village.
+
+
+ANIMAL VILLAGE & FACE SHRINE
+----------------------------
+Exit Animal Village and go up a few screens.  Dive into the water and swim up 
+a screen and right a few screens.  You'll see an odd island with Armos Statues 
+on it.  Defeat the left one to reveal a staircase.  Enter it and swim through 
+the cave (use the Hookshot as well).  Upon exiting, you'll be on another island. 
+ Take the right path upwards and unlock the face.  Face Shrine will emerge out 
+of the ruins.  Go around to enter.
+
+
+                   ____
+          __      / __/ ___________________________________________
+         /  \----| |---/ L E V E L   6   -   F A C E   S H R I N E \
+         \__/----| |---\___________________________________________/
+                  \___\
+
+   ------------------------------------------------------------------------
+From the start of the level, go left.  Ignore the Wizzrobes and continue up 2 
+screens.  From there, go left and you'll be face-to-face with a Mask-mimic.  
+Eliminate him and set a bomb by the crystal switch.  Quickly go to the upper right 
+so you're above the lowered crystal.  The bomb will activate the switch and 'trap' 
+you (the crystal will now be up).  Walk up, it's the only way to go.  Bomb the 
+right wall at its most obvious point.  Head into the doorway you just made and 
+walk around, defeating any gels you meet.  After defeating four, a staircase will 
+appear in the upper right.  Walk down it!
+
+Simply go left and ignore the giant Bubbles until you climb out of the underground 
+passage.  When you submerge, kill the two Wizzrobes and the Moldorm.  The door 
+will open, so go in!  Get the chest in the upper left corner for the Power Bracelet 
+L:2!  If you need life, pick up the pot in the upper right for a faerie.  Continue 
+up into the man-shaped door and you'll wind up back at the room with the Maskmimic 
+and the crystal switch.  Hit the crystal switch.  This time, go into the upper 
+left (place a bomb by the switch in the same way you previously did).
+
+Go up and pick up pots until you discover a switch.  Stand on it and the door 
+on the left will open.  Walk in and use you bow/bombs to kill the Wizzrobes.  
+Hit the switch to get the chest (map).  Go up and to the right.  The chest here 
+has the Stone Beak.  Continue back left and throw a pot at the door to break it 
+open (you may have to go down and hit the crystal switch to make the pots accessible). 
+ Walk into it and go right.  Open the chest (compass) and hit the crystal switch. 
+ Continue right and go down a screen.  Head right 2 screens then up a screen.  
+Defeat the Wizzrobes here for a key.
+
+Backtrack to the screen where you got the compass and go left.  Break the door 
+in here with an elephant statue.  Walk up and get the chest for 100 rupees.  Exit 
+at the staircase here and you'll emerge in the Rapids Ride.  Open the chest for 
+a secret seashell (or 20 rupees).  Re-enter and go back to the start of the level. 
+ The easiest way to do this is to play Manbo's Mambo, but it's a good idea to 
+save frequently, so do what you like to get back.  Once you're there, go right. 
+ Avoid the traps and walk right again.  Defend against the tiles with your shield.
+
+
+
+Once they're all gone, go into the door that just opened.  Pick up an elephant 
+statue and throw it at the right door.  Continue in and defeat all 4 of the Wizzrobes 
+to open the upper door.  Go up a bunch of screens until you find a chest that 
+holds a small key.  Backtrack to the room with 4 Wizzrobes.  Walk left and unlock 
+the door with a small key.  Bomb the upper wall near its middle and enter.  Defeat 
+Smasher by picking up its ball and throwing it at the mini-boss about 4 times. 
+ After its defeat, walk up and lift the left elephant statue to reveal a staircase. 
+ Go down.
+
+Make it to the left by jumping from ladder to ladder until you get to the underground 
+tunnel's exit.  Exit the cave and you'll be in a room full of tiles.  After they 
+perish, a key will fall.  Get it, unlock the block, and continue up.  Break the 
+door on the left with an elephant statue.  Go left and throw the horse head statues 
+until they both land heads up.  The door to the left will open.  Walk in and go 
+down the stairs there.
+
+Dash past the Thwimps and get to the underground tunnel's exit.  Once exiting, 
+you'll be in a room full of Pol's Voices.  Play the Ballad of the Wind Fish and 
+they'll self-destruct.  Go up 2 screens if you want 50 rupees.  Whatever you decide 
+to do, from the room that had the Pol's Voices in it, go down and defeat the Dodongos. 
+ Continue left and hookshot across the chasm.  Unlock the block and go up two 
+screens.  You'll find that the chest won't open!  Throw a pot at it to force it 
+open and get the Nightmare Key.
+
+Once again, Save and Quit (or mambo) for a shorter trip and enter the mini boss's 
+warp hole.  Continue up and lift the elephant statue on the left.  Enter the 
+underground passage, making it through the way you did before.  After you exit, 
+walk down after defeating the tiles.  Destroy all of the gels without getting 
+sucked into the vortex to make the door on the right open.  Once scared out, they'll 
+most likely be sucked into a pit.  After the door opens, go into it and push the 
+block near the lower wall right.  Shoot arrows vertically up to the Wizzrobe to 
+defeat it.  Continue up a screen.
+
+If you need life, powder the two unlit pots.  The two Sparks will turn into faeries. 
+ After you're satisfied, unlock the Nightmare Door and do battle with Facade.  
+Place bombs on its face.  The bombs will explode and it'll suffer damage.  It 
+may make tiles come up and fly at you, so be ready with your shield.  Jump the 
+pots, for you can't shield them.  Eventually, holes will appear and disappear 
+(they're not hard to avoid).  After bombing him awhile, get the heart container 
+and go up to claim the Coral Triangle!
+
+
+  *------------------------------------------------------------------------* 
+  |                        QUEST FOR EAGLE'S TOWER                         |
+  *------------------------------------------------------------------------*
+
+
+         OBJECTIVES
+         ==========
+              -Learn the Frog's Song of Soul from Mamu
+              -Awaken the Flying Rooster from its grave
+              -Acquire the Bird Key
+              -Trek to Eagle's Tower
+
+
+ANIMAL VILLAGE & UKUKU PRAIRIE
+******************************
+After your valiant defeat of Facade, you'll hear another tale from Kaepora.  After 
+the long talk, make your way back to Animal Village either by water or land.  
+Once there, go south and into the warp hole.  Warp to the Ukuku Prairie and go 
+southwest.  You'll see a long row of pits.  Get a running start with your Pegasus 
+Boots and leap over the pits using Roc's Feather.  Read the sign.  It tells you 
+to go down.  Follow it!
+
+
+
+SIGNPOST MAZE
+"""""""""""""
+Don't be overwhelmed - the signposts do have an order, and it's not random.  Once 
+you read a sign telling you which way to go, align yourself in front of the signpost 
+in the direction it pointed.  Walk that direction until a sign is in your path. 
+ Read that sign and do the same.  After you get the hang of it, you'll breeze 
+through the puzzle.
+
+A mistake will make you have to restart, but with the above trick, you shouldn't 
+mess up.  After completing the maze, a staircase will appear.  Enter it and pay 
+Mamu the famous singer 300 Rupees to hear him croak.  After surviving the singer's 
+music, you acquire the Frog's Song of Soul, capable of awakening unliving things! 
+ Exit Mamu's cave and go north to Mabe Village.
+
+
+MABE VILLAGE
+^^^^^^^^^^^^
+Walk to the Rooster Statue and push it up with your new Power Bracelet strength. 
+ Enter the cave underneath the statue.  You'll find Rooster bones on a pedestal. 
+ Play the Frog's Song of Soul and the Rooster's Soul will flow into the room and 
+bring the bones back to life!  When you pick up this rooster with the Power Bracelet, 
+you can hover in the air!  Take this poultry just outside Mabe to the warp hole, 
+warping to Tal Tal Heights.
+
+
+TAL TAL HEIGHTS
+===============
+From the warp hole, go left many screens and go to higher ground.  On the screen 
+with 2 Elite Moblins and a stone, lift the stone and go left a screen.  Climb 
+up the stairs and lift the stones surrounding the cave.  Enter the cave and destroy 
+the enemies in your way.  After emerging from the cave into the Tal Tal Mountain 
+Range, go right a few screens and swim to the large staircase.  Climb the stairs 
+and go left until you find a suspicious cave.
+
+Enter the cave and go left a screen when inside.  Push the stones to make a path 
+to the upper left.  Hookshot to the upper right and go up.  Pick up the Flying 
+Rooster and float over the pit to safety on the left.  Go left and pick up the 
+Bird Key.  Now with the key in hand, exit the cave and climb back down the long 
+staircase into the pool of water on the Tal Tal Mountains.
+
+Swim right and enter the cave.  Fight your way to its exit and you'll emerge on 
+the opposite side of the screen from where you entered.  Continue right and climb 
+the staircase to the cave.  Walk to its exit and you'll see a cave on the right 
+with a sealed cave on the bottom of the screen.  Simply go left and enter the 
+cave.  Walk to the staircase and hop over the pit.  Go up the small staircase 
+and go right.  Avoid the enemies, making your way down.  Hookshot across the chasm 
+and leap off the platform to the cave's exit.
+
+When you exit, bomb the sealed cave if you need health.  Enter the other cave 
+on this screen and go up to the stairs.  Ignore the enemies and exit the skull-shaped 
+cave.  You will exit a building-looking structure.  Kill the Gohmas and go left. 
+ Pick up the stone blocking the keyhole and unlock the rock.  Eagle's Tower will 
+twist around, revealing a staircase to enter.  Walk up the stairs.
+
+
+                 ____
+        __      / __/ _______________________________________________
+       /  \----| |---/ L E V E L   7   -   E A G L E ' S   T O W E R \
+       \__/----| |---\_______________________________________________/  
+                \___\
+
+   ------------------------------------------------------------------------
+
+
+Before you start, I heavily advise you to copy your saved file if possible.  In 
+some areas of this level, it is possible to lose the ball you need to complete 
+the level.  A few unlucky people had top restart their games from getting the 
+ball stuck in unreachable spots.  Anyway, from the start,
+
+Go right 2 screens and defeat all of the enemies on this screen (not the 
+Anti-faerie)to get a key.  Unlock the door on this screen and go up.  Walk up 
+the stairs.  If you have to boomerang, you can get the Mirror Shield by throwing 
+it diagonally at the crystal switch, if not, get it like it says later in the 
+walkthrough.
+
+Continue up and you'll see a ball on a platform and some blocks moving together 
+quickly.  Pick up the ball and throw it by the blocks.  Walk over to the lever 
+and pull it all the way down to make the blocks separate.  Quickly dash over to 
+the ball, pick it up, and go in between the 2 blocks.  Continue left.  Hit the 
+giant pillar with the ball and it'll crumble.  Pick up the ball and throw it over 
+the blocks on the left side of the screen.  Jump sideways over the pit and go 
+down.  If you fall, make your way back to this screen and try again.
+
+Go to the left side of the screen and walk up to get the ball back.  Pick it up 
+and go down again.  Throw it at the pillar to make it crumble.  Heave it up from 
+where you last threw it (if it ever falls down a hole, it'll return to it's original 
+screen) and continue down.  Throw it over the small square border around the crystal 
+switch so it's on the other side of the screen.  Hit the crystal switch and go 
+up.  Go to the upper right of the screen and go up a screen.  Fall down the pit 
+purposely and you'll fall to the first floor.
+
+From where you landed, ignore the crystal switch and go left following the crystals 
+that are down (the blocks, I call them crystals, hence the name, crystal switch). 
+ Follow the path and you'll be on a screen with many crystals (blocks) in a pattern. 
+ Follow to the right and you'll see 2 traps and a Gibdos.  Dodge them and go down. 
+ Head up into the first door you unlocked and up the stairs.
+
+Open the chest for the Mirror Shield(if you didn't already)and hit the crystal 
+switch so you're standing on upraised crystals(blocks).  Go down.  Head to the 
+left, ignoring the block with a keyhole.  On this screen, you'll find the ball. 
+ Pick it up and continue left.  This screen hold Three-of-a-Kind.  Defeat them 
+and a chest will appear out of reach.  Throw the ball over the small square border 
+so it goes over the pit and onto the upper right side of the screen.  Continue 
+left.
+
+Defeat the Hinox in this room for a key.  Use your Boomerang or, if you don't 
+have it, your Hookshot.  If you fall down a pit, you will have to defeat the card 
+symbol enemies again(not to mention getting back to where you were).  Continue 
+up and go into the door shaped like a body.  Defend yourself in the bottom right 
+corner of this room and the tiles will break on your shield.  Once they're all 
+gone, head right.  Bomb the wall in between the two lanterns on the bottom wall 
+on this screen.
+
+Walk into the new passage and go down.  Continue down again and you'll be on the 
+screen where you defeated the Three-of-a-Kind.  Hookshot to the chest to make 
+it over the chasm and get the bomb inside the chest.  Grab the ball and head up. 
+ Destroy the pillar and pick the ball up again.  Go down and throw it over the 
+chasm to put in on the side of the screen where the enemies were.  Fall down the 
+pit and you'll land on the level's starting screen.  Go right 2 screens and up 
+where you unlocked your first door.  Go up the staircase.
+
+
+
+Go down a screen and left 2 screens.  Recover the ball and walk left and up.  
+Enter the body-shaped door and toss the orb safely in the corner, away from all 
+tiles.  Pick a corner and defend yourself from the tiles with your shield.  After 
+they're all gone, pick up the ball and go right.  Chuck it at the final pillar 
+to see the tower's 4th floor crumble into the 3rd.  The entrance to the 3rd floor 
+is the staircase a screen right from the Three-of-a-Kind were destroyed (where 
+you made the chest with the bomb appear).
+
+Trek over to that screen and walk up the steps.  Continue up and right.  Defeat 
+the mini-boss by killing all of the bats that fly at you.  You must defeat all 
+6 successfully to defeat it.  Go up after it left and push the two blocks in the 
+middle of the room together to make a chest appear that contains the Nightmare 
+Key.  Return to the mini-boss's room and go left 2 screens.  
+
+Unlock the Nightmare Door and go up.  Walk up to the upraised platform and hookshot 
+onto the block.  Go down, jumping on the Goombas if you need life.  Continue right 
+and up the stairs.  Walk up the ladder and defeat the Evil Eagle by hitting him 
+with the hookshot in its head.  When it blows feathers at you, defend with the 
+shield.  If you get blown off, you'll have to restart the battle.  After the Evil 
+Eagle is vanquished, return to the screen with the staircase leading to the tower's 
+top and jump off to the right.  Go into the door and claim the Organ of Evening 
+Calm!
+
+
+  *------------------------------------------------------------------------*
+  |                         QUEST FOR TURTLE ROCK                          |
+  *------------------------------------------------------------------------*
+
+
+         OBJECTIVES
+         ==========
+              -Rescue Marin from a bridge
+              -Awaken Turtle Rock and destroy the head
+
+
+TAL TAL MOUNTAIN RANGE
+**********************
+One last dungeon to go!  Don't quit!  When you exit the tower, leap off on the 
+right side.  Go right a screen and enter the cave.  After exiting on the other 
+side of the cave, walk down the stairs and kill the Gohma.  Continue left and 
+enter the cave.  Ignore or kill the enemies in this cave and make your way to 
+the exit.  You'll emerge in shallow water.  Go left and swim to the staircase. 
+ Climb it up and walk left 2 screens.  Head up and enter the house.
+
+You'll see that the Hen House guy is taking good care of your flying rooster, 
+so exit his house and go left.  Hookshot across the broken bridge and continue 
+left.  Marin will yell at you from a precarious part of the bridge.  Hookshot 
+across and you'll pick her up.  Tarin will interrupt your little love scene and 
+Marin will walk off.  Once more, Kaepora will decide to flap his way over to you 
+and hoot more riddles out.  After the pathetic mouse hunter flies away, continue 
+left.
+
+Slash the bush to reveal a staircase.  Enter the underground passage and go left. 
+ Hop down to the stairs.  After going through them, go left and hookshot across 
+the long pit.  Head left and exit the cave.  You'll emerge on a screen that doesn't 
+have much space to walk.  Leap down off the mountain.  After destroying the enemies, 
+bomb the cave open.  Enter the new passageway and block the flames from the 
+flamethrower with your new Mirror Shield.  Exit the cave.
+
+You will be on the opposite side of where you leapt off to the bottom cave.  Head 
+left and down.  Kill the Leevers and other enemies and go left.  Fend yourself 
+off from the Ravens and take some time to look at your surroundings.  The head 
+of Turtle Rock blocks the entrance...if only you could awaken the head...Yes!  
+The Frog's Song of Soul!
+
+Equip your Ocarina and play the song.  The head will revive from its stony slumber 
+and will attack!  Equip your sword and give it a taste of metal.  After a few 
+slashes, it'll self-destruct, opening the way to level 8 for you!  Enter the level!
+
+
+
+                   ____
+          __      / __/ ___________________________________________
+         /  \----| |---/ L E V E L   8   -   T U R T L E   R O C K \
+         \__/----| |---\___________________________________________/
+                  \___\
+
+   ------------------------------------------------------------------------- 
+First, You go up and defeat the Vire.  Go through the left door and defeat all 
+of the snakes.  Continue up and defeat the Hinox, preferably with the Hookshot 
+or Boomerang.  After defeating it, move left and push the rock to make a bridge 
+to the bottom part of the screen.  Walk down and hop over the pits.  Open the 
+chest for a key.  Head left and defeat Rolling Bones.  Walk up and defeat the 
+Vire for a key.  Walk down two screens and open the chest.  Fall into the Vortex 
+purposely to warp you back to the beginning.
+
+Go up 2 screens from the beginning and go right.  Push the rock to make a path 
+to the bottom right (not the stairs).  Walk right and poke the wall on the right 
+until you find the part you can bomb (it tings when you found it).  Bomb it and 
+enter.  Hit the crystal switch and bomb the cracked wall on the south side of 
+the room.  Push the rock to clear all of the pits, rewarding you with a key (keep 
+trying, don't give up!).  Head back left and avoid the chest, there's a Gel inside. 
+ Continue left two screens and you'll be back in the familiar room with a Vire.
+
+Go up again and right.  Push the rock in between the two blocks that stick out 
+into the lava.  Walk to them and push the one on your right into the lava.  Go 
+into the passageway revealed.  Unlock the block with a key and head left.  Use 
+a missile (equip the bombs and the bow and press A and B together) on the wall 
+behind the lava.  Enter the new room and bomb the left wall where it's cracked.
+
+Go into this doorway and shoot the statue in the eye with an arrow for a key.  
+Continue up and enter the stairway to exit the level.   You'll emerge outside 
+on the Tal Tal Mountains.  Pick up the Piece of Heart and go right to discover 
+a new warp hole.  Warp away if you need hearts, but if you don't, go right and 
+enter the door.
+
+Defeat the Dodongos by throwing bombs down from your perch high above them.  Once 
+they're defeated, open the chest (key).  Go right and defeat the two Gibdos for 
+a key.  Head left 4 screens(unlock the door on your way) and walk down and right 
+to be in the dark room you used a missile to get into.  Unlock the block in this 
+room and continue right.  Hookshot across the chasm and unlock the block.  Continue 
+down the stairs.
+
+Jump to the moving platform avoiding the Podoboos and make it to the other side 
+of the screen.  Go right and jump from platform to platform to find the exit.  
+Climb up the ladder.  Go down as soon as you exit the passage and do battle with 
+Boxin' Blaino.  Charge up your sword and when it's standing still, punching air, 
+let 'er rip!  If you have the L:2 sword and the Red Tunic, one hit from a charged 
+up sword makes Blaino throw his towel in.  If not, keep hitting Blaino while avoiding 
+its punches.  If you get hit, you're punched all the way to the start of the level!
+
+After its defeat, walk up and get the Magic Rod from the chest.  Sometimes you'll 
+have to trek back to the crystal switch( I don't know why it resets itself...take 
+advantage of the warp that gets created when you defeat a mini boss if it does 
+reset).  After the Magic Rod is in your arsenal, go back to the start of the 
+level(Manbo's Mambo or mini-boss' warp).
+
+
+
+Go up and defeat the bat(use the Magic Rod for a one-hit KO).  Walk up again and 
+to the right.  Push the rock to make a pathway to the staircase.  Go down it.  
+Burn all of the ice and go to the left.  Make a staircase out of the ice by jumping 
+and using the fire rod while in the air.  Exit down the ladder.  Unlock the door 
+on your left and defeat Cue Ball.  It may appear harder, but this mini-boss is 
+still a piece of cake.
+
+Go up and push the rocks so it fill all of the holes.  Open the chest that appears 
+when you complete this task (Nightmare Key).  Head back to start (again!  Manbo's 
+Mambo - your new best friend).  Continue up a screen and defeat the bat (hmm...I 
+swear I've heard that somewhere).  Head up and right.  Push the rock to the lower 
+right path (not the stairs) and go right.  Walk up the stairs.
+
+Melt all of the ice and jump into the small exit hole.  Make a staircase out of 
+the ice in this screen and go down the ladder.  Unlock the Nightmare door and 
+defeat Hot Head.  To defeat Hot Head, simply use your fire rod on it until he's 
+dead.  Watch out for it's fireballs, they do major damage.  After a load of hits, 
+it will crack and turn into a weird smoggy head.  After a few more hit, you'll 
+be rewarded with a Heart Container.  Go up and claim the Thunder Drum!
+
+
+  *------------------------------------------------------------------------*
+  |                     QUEST FOR THE WIND FISH'S EGG                      |
+  *------------------------------------------------------------------------*
+
+
+         OBJECTIVES
+         ==========
+              -Read 'Dark Secrets and Mysteries of Koholint'
+              -Get every Heart Piece (optional)
+              -Acquire the L:2 sword (optional)
+              -Play the Sirens' Instruments in front of the egg
+
+
+MABE VILLAGE
+************
+At this point, you should have all the instruments.  Now use the Heart Piece and 
+Secret Seashell sections to boost your power to the max.  You don't have to, but 
+you should, just to make yourself even harder to defeat.  Yu may already have 
+everything, but anyway, to continue, you have a choice.  Either re-enter L:8 and 
+walk to the warp hole on top of the level, or walk back to Mabe Village (using 
+Manbo's Mambo).  Whatever you decide to do, get back to Mabe.  Walk over to the 
+library.
+
+Enter it and read the book titled 'Dark Secrets and Mysteries of Koholint'.  Since 
+you have the Magnifying Lens, you can now read the text.  It will tell you the 
+route through the Egg's passageways.  It will be one of the following-
+
+1)right, up, up, right, up, up, right, up
+2)left, left, up, right, right, up, left, up
+3)left, up, right, up, left, up, right, up
+4)left, left, left, left, up, up, up, up
+5)right, right, right, right, up, up, up, up
+
+You'll find that passageway to be the way to the Wind Fish.  You may just want 
+to skip the trek and just try out all 5 sequences until you find the right one. 
+ Whatever you do, go back to Bowwow's Dungeon (the screen with the entrance).
+
+
+MOUNT TAMARANCH
+"""""""""""""""
+
+
+From the screen with the entrance to Bowwow's dungeon on it, go up a screen and 
+lift the 2 stones in your path.  Go right and up the staircase.  The vicious owl 
+will fly down and do the same as always (blah, blah, blah...) Until it flies away. 
+ Go up and you'll see the Wind Fish's Egg.  Whip out your ocarina and play the 
+Ballad of the Wind Fish.  Your accomplishments will form a circle around the egg 
+and cause it to burst open.  Enter after hearing Kaepora (again?!).
+
+
+          ____
+ __      / __/ ______________________________________________________________
+/  \----| |---/ L E V E L   8  1/2   -   T H E   W I N D   F I S H 'S  E G G \
+\__/----| |---\______________________________________________________________/
+         \___\
+
+   -------------------------------------------------------------------------
+Apart from having the longest dungeon name, the Wind Fish's Egg has weird music. 
+ It starts pitch black.  Explore bit and you'll fall down to the room below.  
+If you go down in this plain room, you'll exit the level, and if you try going 
+up, left, or right, you'll be on the same screen.  Walk through the egg in the 
+sequence you read from the library's book and you'll find a different screen.
+
+Hop down into the pit.  You'll land on the boss of all the Nightmares - the Shadow 
+Nightmare!  It'll tell you of its plans to make the Wind Fish sleep endlessly. 
+ Put a stop to their destruction!  The first form of the final boss is a simple 
+blob.  When it hops at you, sprinkle Magic Powder on it.  If it disappears, stand 
+on the fish in the middle of the room for a safe standing place.  Sprinkle it 
+when it reappears.  After a few hits it becomes...
+
+Agahnim!  This wizard from Link to the Past charges up a shot and tries to hit 
+you with it.  When the shot is round, hit it with your sword back into the wizard's 
+face.  If it's shaped like an Anti-Faerie, jump over it - it splits into fireballs 
+on the wall.  After a shot, the shadow will shift to a new position and try hitting 
+you again.  If you have the shovel, it reflects shots better.  After a few hits 
+it becomes...
+
+A Moldorm!  Dispose of this Moldorm like you did with the first level's boss - 
+hit the final segment in its tail.  After a hit, it will madly charge about the 
+room.  I suggest getting a shield ready to defend against this fast foe.  It takes 
+a lot of hits, but after awhile, it turns into...
+
+Ganon!  Nooo!  This is the main boss from just about every Zelda game.  Equip 
+your Pegasus Boots and your sword and dash at it.  When it starts to swing its 
+axe, fall back and jump across the room to avoid the fire bats.  After all of 
+the bats are gone, Ganon throws his axe at you.  Jump it and get ready for another 
+attack.  Continue until it perishes, revealing...
+
+A Gloworm!  This is a new enemy to the Zelda series, but wins the title for 'Easiest 
+Kill'.  Hit it once with the Hookshot or Magic Rod and it's through.  If you want 
+a challenge, use bombs.  After the easy ball of shadow is dead, it turns into 
+the final form...
+
+Deathl!  This Nightmare comes equipped with 2 maces for arms, good weapons to 
+try to swat at the Hero.  Use your feather to jump the arms and shoot Deathl in 
+the eye with arrows until it closes it's lid.  Defend against the arms, shoot. 
+ Repeat.  If you're looking for an easy way out, hit it in the eye with the Boomerang. 
+ 2-3 hits kills it, but that doesn't deserve an ending!  Use the bow to actually 
+earn your ending.  After a load of arrows, a strange staircase appears after the 
+Shadows are eliminated...
+
+Congrats!  You beat the best game for Game Boy!  Enjoy the ending!
+
+
+
+   /\====================================================================/\
+  /__\               D X ' S   C O L O R   D U N G E O N                /__\
+ /\  /\              -----------------------------------               /\  /\
+
+
+/__\/__\==============================================================/__\/__\
+
+
+First of all, there is no quest for L:O, the DX Game Boy Color exclusive Color 
+Dungeon.  All you must do is go to the graveyard.  Keep in mind that you can enter 
+anytime after you beat L:2 - Bottle Grotto.  Whenever you feel ready for a challenge, 
+head over towards the graveyard. Go to the southeast corner of it.  You'll be 
+on a screen with 5 gravestones on it.
+
+In order to enter, though, you must've beaten the Nightmare for every dungeon 
+you set foot into.  If you haven't, the stones won't open the way to the level. 
+ Anyway, when you just beat whatever level you came from, go to the screen listed 
+above and push the gravestones as the chart shows below.  The number on each shows 
+the order you push the stones in, and the letter (U, D, R, L) shows the direction 
+to push it (U=up, D=down, L=left, R=right).
+
+ _   _   _
+/3\ /4\ /5\
+|U| |R| |U|
+ _   _
+/2\ /1\
+|L| |D|
+
+When pushed correctly, a staircase is found under gravestone #5.  That leads to 
+the Color Dungeon, but you can only get into the main dungeon with a Game Boy 
+Color or Game Boy Advance.  A regular Game Boy, a Game Boy Pocket, or a Super 
+Game Boy all give you a message telling you that you need the power of color, 
+so in other words, you can't enter.  Anyway, onto the dungeon walkthrough!
+
+             ____
+    __      / __/ _______________________________________________________
+   /  \----| |---/ L E V E L   0   -   T H E   C O L O R   D U N G E O N \
+   \__/----| |---\_______________________________________________________/
+            \___\
+
+   -------------------------------------------------------------------------
+Talk to the skeletons and tell them their colors.  The way up will be open now, 
+so go up.  Defeat the enemies on this screen by luring them out to attack.  When 
+they lunge upwards, rush in with your sword.  The right door will open when they're 
+gone.  Go right.  Hit the upper left red statue, then hit the bottom right red 
+statue.  A chest will appear.  Open it for the compass and continue right.  Hop 
+across the colored tiles to the right.  The tiles will turn into different colors, 
+green has 3 more hops, yellow has 2, and red has 1.  After a tile loses it hopping 
+power, it becomes a regular pit.  
+Knowing that, hop right a screen and hit the enemies with your sword.  They will 
+curl up into a ball.  Pick one of them up and throw it into its matching colored 
+hole.  After both are in their holes, a chest with the Stone Beak will appear. 
+ You may need practice throwing them first, so keep trying.  Open the chest and 
+head south.  Defeat all of the enemies and the doors will open.  Go left and hop 
+across to tiles to the chest.  Ignore the enemy - chances are it'll hop into a 
+pit itself.  Get the small key from inside the chest.
+
+Go up and you'll be back in the room where you first saw the hopping tiles.
+Continue right and up.  Hop across the tiles and walk north.  Hit the bottom right 
+statue, then hit the upper left statue 2 times.  The statues will all be blue 
+and a key will fall.  Grab it and head right.  Unlock the door (it's best to defeat 
+the enemies first).  Continue up and defeat the Giant Buzz Blob.  Sprinkle Magic 
+Powder on it and it'll turn into a blob.  Hit it with your sword as many times 
+as you can before it turns into the banana shape again.  Watch out for the lightning 
+it shoots!  Repeat the process until the monster is defeated.
+
+
+
+Walk left and push the top and bottom block to the left.  Push the middle block 
+down or up.  Open the chest for the Nightmare Key.  Save and Quit (walking to 
+the start or playing Manbo's Mambo work too).  Go up and defeat all of the enemies 
+on the screen for the right door to open.  Walk right 2 screens and unlock the 
+door.  Head north and defeat the Sub-Boss by hitting it with your sword repeatedly. 
+ Every hit you get will send you falling a bit behind, so make sure you're at 
+an angle that doesn't let you crash into any spikes.  After a hit, it'll jump 
+up and slam the ground, causing many boulders to fall.  Jump before he hits the 
+ground or you'll be stunned for a short time.  Dodge the falling boulders and 
+hit it again.  Repeat until he turns into a faerie.
+
+Go left and hop across the tiles to the northern door.  Walk up and defeat the 
+Gels.  A chest will appear, open it for the map and go right.  Hit and throw the 
+enemies into their matching holes.  After they are all in their holes, you'll 
+get a small key.  Backtrack left and down.  Walk left and hit the statues to turn 
+them all blue.  Use the below diagram for an easy 4-hit solution.  An O means 
+that the statue is blue, and an 8 means that the statue is red.  An X is used 
+to show which statue you should hit next.
+
+Formation 1--  O X O
+               8 O 8
+               O 8 O
+
+Formation 2--  8 O 8
+               8 8 8
+               O X O
+  
+Formation 3--  8 O 8
+               8 O X
+               8 O 8
+
+Formation 4--  8 O O
+               X 8 O
+               8 O O
+
+Formation 5--  O O O
+               O O O
+               O O O
+
+They will all be blue.  The doors will open, so go up.  Unlock the door and continue 
+left.  Hit the crystal switch and walk to the Nightmare Door.  Unlock it and defeat 
+Turtalfos.  Hitting him with your sword will do a bit of damage, but it will also 
+hit you back a bit.  I suggest jumping at it continuously.  Try to get it into 
+a corner.  Repeatedly hit it with your sword to make it turn colors (from blue 
+to yellow to red).  After it's completely red, it'll blow up and the doors will 
+open.
+
+Go right and talk to the faerie.  She'll give you a new tunic.  Pick red if you 
+want more offense, blue if you want more defense.  The tunics' changes are like 
+the game's power-ups - the Red Tunic is like a permanent Piece of Power, and the 
+Blue Tunic is like a permanent Guardian Acorn.  Whenever you want to change tunics, 
+go back to the faerie and she'll give you another choice.  Congrats!  You beat 
+the Color Dungeon!
+
+
+
+   /\====================================================================/\
+  /__\                            I T E M S                             /__\
+ /\  /\                           ---------                            /\  /\
+/__\/__\==============================================================/__\/__\
+
+
+
+
+In this game, there are many kinds of items, from ones you equip, to auto-use 
+ones, to dungeon only ones.  Descriptions as well as locations are given here. 
+ Selected Items are placed in your Sub-screen, and you must equip them to use 
+them.  Inventory Items are used automatically.  Dungeon Items are found only in 
+dungeons, and cannot be taken from dungeon to dungeon.  The Miscellaneous Items 
+have various items you'll find on the Island.
+
+
+                           @=======================@
+                           |  -= SELECTED ITEMS =- |
+                           @=======================@
+
+SWORD
+-----
+Desc. - Your trusty blade.  This is the main weapon of the game.  This takes   
+         out most enemies.  There is a rare, more powerful blade hidden on     
+          Koholint.
+Loc.  - L:1 sword found on Toronbo Shores, L:2 sword found in Seashell Mansion
+Use   - Cuts grass and bushes.  Good for defeating enemies.  Can be used to    
+         detect bombable walls.
+
+
+SHIELD
+------
+Desc. - A method of protection.  When attacked, use this to block blows or     
+         projectiles.  An upgraded form is present on Koholint Isle.
+Loc.  - L:1 shield given to Link by Tarin, or it can be bought from a store.   
+         The L:2 shield is found in level 7.
+Use   - Blocks arrows, rocks, and fire blasts at L:1.  At L:2, it blocks large 
+         flames and feathers as well as the L:1 shield's protection.  Can be   
+          used to push enemies.
+
+
+POWER BRACELET
+--------------
+Desc. - A form of powerful jewelry that enables the wearer to heave heavy      
+         objects.  A more powerful bracelet is found in the game as well.
+Loc.  - The L:1 Power Bracelet is found in level 2.  The L:2 bracelet is found 
+         in level 6.
+Use   - When equipped, you can lift pots, grass, and rocks.  If an object is   
+         lifted, you can continue to chuck it at enemies.  When the L:2 Power  
+          Bracelet is worn, you can lift elephant statues and can push with    
+           tremendous force.  You can also pull levers back to reset blocks.  
+You          can also lift stunned enemies with the jewelry.
+
+
+MAGIC POWDER
+------------
+Desc. - A powder that radically changes enemy DNA sequences.  It can do many   
+         weird things to anything it touches.  Can be upgraded to hold more.
+Loc.  - Witch's Hut, it's made from a Sleepy Toadstool (see below).
+Amnt. - 20 uses max until an upgrade is received.  The number increases to 40.
+Use   - Can turn enemies into easier foes.  It lights lamps and also can be    
+         used to reveal many secrets...
+
+
+SLEEPY MUSHROOM
+---------------
+Desc. - Main component of Magic Powder.  It has a distinct smell.
+Loc.  - Grows in the Mysterious Forest.
+Use   - It's useless unless you like to smell mushrooms in the middle of       
+         battle...The only thing to do with it is to give it to the Witch in   
+          the Koholint Prairie for Magic Powder brewing.
+
+
+
+
+ROC'S FEATHER
+-------------
+Desc. - A useful feather that allows the holder to lose weight rapidly.  This  
+         lightness allows one to hop over long pits and enemies.
+Loc.  - Found in level 1.
+Use   - A great part of your arsenal!  You can jump high in the air, over      
+         enemies or pits.  When the Pegasus Boots are used with this, you can  
+          jump even longer pits.  You may be able to jump on some enemies as   
+           well.
+
+
+HOOKSHOT
+--------
+Desc. - A spring-loaded chain that shoots out and thrusts into objects.  It    
+         then pulls the chain back in, pulling the holder in with it.
+Loc.  - Found in level 5.
+Use   - This weapon shoots across the screen and pulls you towards chests,     
+         rocks, pots, and other things.  This also can pull bridges out when   
+          they're not extended.  Using this as a weapon is useful as well.  It 
+           also brings items to you from far away.
+
+
+MAGIC ROD
+---------
+Desc. - A rod that can engulf enemies in a whirl of flames and heat.
+Loc.  - Found in level 8.
+Use   - This lights lamps from far away.  It also is a great long-range        
+         weapon.  Melts ice as well.
+
+
+SHOVEL
+------
+Desc. - A digging tool that can unearth many secrets.
+Loc.  - Buy it for 200 rupees at Mabe Village's Shop.
+Use   - Digs in the ground.  Many items can pop out of the holes you dig.
+
+
+BOW
+---
+Desc. - A long-distance weapon that shoots arrows.  The Quiver can be upgraded 
+         for more shots.
+Loc.  - Buy it for 980 rupees at Mabe Village's Shop.
+Amnt. - 30 Arrows, 60 after upgrade.
+Use   - Can be a great long distance weapon, but arrows are very rare.  If you 
+         run out, you can buy more arrows at Mabe Village's Shop.  When used   
+          with Bombs, you can create 'missiles' that fly out, exploding upon   
+           contact.  Arrows can also trigger switches.
+
+
+BOMBS
+-----
+Desc. - An explosive ball with a fuse.  Bomb bag can be upgraded to hold more.
+Loc.  - Buy it for 10 rupees at Mabe Village's Shop or find them.
+Amnt. - 30 bombs can be placed, 60 after the upgrade.
+Use   - Knocks holes in walls.  Not a great weapon due to waiting period, and  
+         also can't be found very easily.  When used with the Bow, you can     
+          create a 'missile' that fly out, exploding upon contact.  You can only 
+         place one bomb at a time.
+
+
+OCARINA
+-------
+Desc. - A musical instrument that can play up to three tunes.
+Loc.  - It's in Dream Shrine in northern Mabe Village.
+
+
+Use   - Plays musical tunes.  Different songs do different things.
+            -Song 1- The Ballad of the Wind Fish
+            -Song 2- Manbo's Mambo
+            -Song 3- Frog's Song of Soul
+        Song 1 can destroy Pol's Voices with its song.  It also plays your     
+         Sirens' Instruments to the Wind Fish's Egg.  Song 2 warps you to      
+          Mambo's Pond in the Koholint Prairie, or in dungeons, it warps you to 
+          the entrance of the dungeon.  Song 3 aw

@@ -1,0 +1,7 @@
+{
+  "status": "passed",
+  "tests_run": 79,
+  "wall_seconds": 37.207,
+  "log": "runs/progression-interface-v1-verified/regression-tests.log",
+  "sha256": "844c6715f348192c6d8566dc996310fd2e24ef625f3acc513d38e130ad803854"
+}

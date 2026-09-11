@@ -1,0 +1,12 @@
+{
+  "schema": "proximity-sword-experiment-v1",
+  "status": "rejected_for_adoption",
+  "radius_pixels": 32,
+  "matched_sessions": 48,
+  "rollouts": 96,
+  "result": "reports/proximity-sword-48-v1.json",
+  "training_performed": false,
+  "runtime_changed": false,
+  "reason": "Swings fall 87.6%, but six successes are lost and two cases take more damage.",
+  "reserved_evaluation_used": false
+}

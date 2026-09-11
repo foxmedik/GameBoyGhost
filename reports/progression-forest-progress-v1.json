@@ -1,0 +1,90 @@
+{
+  "schema": "progression-forest-progress-v1",
+  "status": "forest_prefix_verified_quest_incomplete",
+  "experiments": [
+    {
+      "run": "runs/progression-forest-terrain-v1",
+      "status": "damage_budget",
+      "steps": 1052,
+      "extension_steps": 303,
+      "extension_damage_raw": 4,
+      "exact_action_replay": true,
+      "quest_success": false
+    },
+    {
+      "run": "runs/progression-forest-terrain-v2",
+      "status": "budget",
+      "steps": 2349,
+      "extension_steps": 1600,
+      "extension_damage_raw": 0,
+      "exact_action_replay": true,
+      "quest_success": false
+    },
+    {
+      "run": "runs/progression-forest-terrain-v3",
+      "status": "no_conservative_exit_path",
+      "steps": 1176,
+      "extension_steps": 427,
+      "extension_damage_raw": 0,
+      "exact_action_replay": true,
+      "quest_success": false
+    },
+    {
+      "run": "runs/progression-forest-terrain-v4",
+      "status": "no_conservative_exit_path",
+      "steps": 1178,
+      "extension_steps": 429,
+      "extension_damage_raw": 0,
+      "exact_action_replay": true,
+      "quest_success": false
+    },
+    {
+      "run": "runs/progression-forest-terrain-v5",
+      "status": "budget",
+      "steps": 2349,
+      "extension_steps": 1600,
+      "extension_damage_raw": 0,
+      "exact_action_replay": true,
+      "quest_success": false
+    }
+  ],
+  "best_run": "runs/progression-forest-terrain-v5",
+  "best_extension_unique_rooms": 14,
+  "best_extension_event_counts": {
+    "room_transition": 16,
+    "dialogue_observed": 2,
+    "dialogue_closed": 2
+  },
+  "best_extension_cutting_decisions": 23,
+  "memory_path": "runs/progression-forest-progress-v1/memory-generation-4.json",
+  "memory_version": "d23c3fb074a23d1c33c4109621610b7b3c81ccb2998b156828a97aacbc5b91e0",
+  "verified_observations": 26624,
+  "memory_sources": 15,
+  "tests": {
+    "passed": 101,
+    "seconds": 37.874,
+    "log": "runs/progression-forest-terrain-v5/regression-tests.log"
+  },
+  "new_optimizer_updates": 0,
+  "reserved_evaluation_used": false,
+  "quest_success": false,
+  "assistance": [
+    "read_only_ROM_object_physics",
+    "scripted_local_grid_navigation",
+    "source_grounded_toadstool_room_hint",
+    "physically_reconstructed_house_prefix"
+  ],
+  "limitations": [
+    "Single deterministic development trajectory; robustness unmeasured.",
+    "Room component cache is episode-local, not inherited.",
+    "Stationary allowance is bounded patience, not a general scripted-event detector.",
+    "Dialogue IDs recorded; exact text and speaker not decoded.",
+    "Net health difference in individual result fields is not a general damage total; best trace has no damage or healing events."
+  ],
+  "next_step": "Replace outdoor room-distance exploration with explicit verified toadstool approach subgoals, including any required indoor transitions; preserve zero-damage forest entry regression.",
+  "code_hashes": {
+    "src/gameboy_agent/terrain_navigation.py": "0a1799504bdb117f815d3bf438c26a11fe2f078cf13f2cc28b849de85810d72a",
+    "scripts/extend_forest_route.py": "d9030898170042705db24f178b99962ec4144af1a067252ae8bbf7d4f6cbde06",
+    "tests/test_terrain_navigation.py": "39b58d1ef3661f4d3fec38b5f7cfb55f4f56cb8ac476dac3766f51be6201f3b0"
+  }
+}

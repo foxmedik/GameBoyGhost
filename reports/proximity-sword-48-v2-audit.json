@@ -1,0 +1,2360 @@
+{
+  "regressions": [
+    {
+      "case_id": "a45a26acffba91348ea082faed603b2f2768dafade8d4071f8255b98d55a5439",
+      "variant": "terrain",
+      "lost": false,
+      "gained": false,
+      "damage_delta": 4,
+      "new_death": false,
+      "swings_delta": -44,
+      "goal": {
+        "room": [
+          0,
+          0,
+          243
+        ],
+        "x": 12,
+        "y": 58
+      },
+      "first_divergence": 1,
+      "baseline_status": "timeout",
+      "variant_status": "timeout",
+      "baseline_final": {
+        "room": [
+          0,
+          0,
+          243
+        ],
+        "x": 36,
+        "y": 42,
+        "dialogue": false,
+        "sword": true,
+        "health": 16,
+        "a_item": 1,
+        "b_item": 4
+      },
+      "variant_final": {
+        "room": [
+          0,
+          0,
+          243
+        ],
+        "x": 36,
+        "y": 42,
+        "dialogue": false,
+        "sword": true,
+        "health": 12,
+        "a_item": 1,
+        "b_item": 4
+      },
+      "repeated_positions": [
+        {
+          "room": [
+            0,
+            0,
+            243
+          ],
+          "x": 36,
+          "y": 42,
+          "actions": 127
+        },
+        {
+          "room": [
+            0,
+            0,
+            243
+          ],
+          "x": 39,
+          "y": 42,
+          "actions": 1
+        }
+      ],
+      "divergence_window": [
+        {
+          "step": 0,
+          "state": {
+            "room": [
+              0,
+              0,
+              243
+            ],
+            "x": 39,
+            "y": 42,
+            "dialogue": false,
+            "sword": true,
+            "health": 20,
+            "a_item": 1,
+            "b_item": 4
+          },
+          "after_state": {
+            "room": [
+              0,
+              0,
+              243
+            ],
+            "x": 36,
+            "y": 42,
+            "dialogue": false,
+            "sword": true,
+            "health": 20,
+            "a_item": 1,
+            "b_item": 4
+          },
+          "proposed": [
+            3,
+            0
+          ],
+          "action": [
+            3,
+            0
+          ],
+          "reason": "unchanged",
+          "damage": 0,
+          "terrain_target": null,
+          "entities": [
+            {
+              "slot": 0,
+              "status": 5,
+              "type": 198,
+              "x": 107,
+              "y": 77,
+              "vx": -1.0,
+              "vy": 0.0
+            }
+          ]
+        },
+        {
+          "step": 1,
+          "state": {
+            "room": [
+              0,
+              0,
+              243
+            ],
+            "x": 36,
+            "y": 42,
+            "dialogue": false,
+            "sword": true,
+            "health": 20,
+            "a_item": 1,
+            "b_item": 4
+          },
+          "after_state": {
+            "room": [
+              0,
+              0,
+              243
+            ],
+            "x": 36,
+            "y": 42,
+            "dialogue": false,
+            "sword": true,
+            "health": 20,
+            "a_item": 1,
+            "b_item": 4
+          },
+          "proposed": [
+            3,
+            1
+          ],
+          "action": [
+            3,
+            0
+          ],
+          "reason": "clear_path",
+          "damage": 0,
+          "terrain_target": null,
+          "entities": [
+            {
+              "slot": 0,
+              "status": 5,
+              "type": 198,
+              "x": 104,
+              "y": 75,
+              "vx": 0.0,
+              "vy": -0.3125
+            }
+          ]
+        },
+        {
+          "step": 2,
+          "state": {
+            "room": [
+              0,
+              0,
+              243
+            ],
+            "x": 36,
+            "y": 42,
+            "dialogue": false,
+            "sword": true,
+            "health": 20,
+            "a_item": 1,
+            "b_item": 4
+          },
+          "after_state": {
+            "room": [
+              0,
+              0,
+              243
+            ],
+            "x": 36,
+            "y": 42,
+            "dialogue": false,
+            "sword": true,
+            "health": 20,
+            "a_item": 1,
+            "b_item": 4
+          },
+          "proposed": [
+            3,
+            0
+          ],
+          "action": [
+            3,
+            0
+          ],
+          "reason": "unchanged",
+          "damage": 0,
+          "terrain_target": null,
+          "entities": [
+            {
+              "slot": 0,
+              "status": 5,
+              "type": 198,
+              "x": 104,
+              "y": 72,
+              "vx": 0.0,
+              "vy": -0.3125
+            }
+          ]
+        },
+        {
+          "step": 3,
+          "state": {
+            "room": [
+              0,
+              0,
+              243
+            ],
+            "x": 36,
+            "y": 42,
+            "dialogue": false,
+            "sword": true,
+            "health": 20,
+            "a_item": 1,
+            "b_item": 4
+          },
+          "after_state": {
+            "room": [
+              0,
+              0,
+              243
+            ],
+            "x": 36,
+            "y": 42,
+            "dialogue": false,
+            "sword": true,
+            "health": 20,
+            "a_item": 1,
+            "b_item": 4
+          },
+          "proposed": [
+            3,
+            1
+          ],
+          "action": [
+            3,
+            0
+          ],
+          "reason": "clear_path",
+          "damage": 0,
+          "terrain_target": null,
+          "entities": [
+            {
+              "slot": 0,
+              "status": 5,
+              "type": 198,
+              "x": 104,
+              "y": 68,
+              "vx": 0.0,
+              "vy": -0.3125
+            }
+          ]
+        }
+      ],
+      "final_window": [
+        {
+          "step": 124,
+          "state": {
+            "room": [
+              0,
+              0,
+              243
+            ],
+            "x": 36,
+            "y": 42,
+            "dialogue": false,
+            "sword": true,
+            "health": 12,
+            "a_item": 1,
+            "b_item": 4
+          },
+          "after_state": {
+            "room": [
+              0,
+              0,
+              243
+            ],
+            "x": 36,
+            "y": 42,
+            "dialogue": false,
+            "sword": true,
+            "health": 12,
+            "a_item": 1,
+            "b_item": 4
+          },
+          "proposed": [
+            3,
+            0
+          ],
+          "action": [
+            3,
+            0
+          ],
+          "reason": "unchanged",
+          "damage": 0,
+          "terrain_target": null,
+          "entities": [
+            {
+              "slot": 0,
+              "status": 5,
+              "type": 198,
+              "x": 149,
+              "y": 86,
+              "vx": -1.0,
+              "vy": 0.0
+            }
+          ]
+        },
+        {
+          "step": 125,
+          "state": {
+            "room": [
+              0,
+              0,
+              243
+            ],
+            "x": 36,
+            "y": 42,
+            "dialogue": false,
+            "sword": true,
+            "health": 12,
+            "a_item": 1,
+            "b_item": 4
+          },
+          "after_state": {
+            "room": [
+              0,
+              0,
+              243
+            ],
+            "x": 36,
+            "y": 42,
+            "dialogue": false,
+            "sword": true,
+            "health": 12,
+            "a_item": 1,
+            "b_item": 4
+          },
+          "proposed": [
+            3,
+            1
+          ],
+          "action": [
+            3,
+            0
+          ],
+          "reason": "clear_path",
+          "damage": 0,
+          "terrain_target": null,
+          "entities": [
+            {
+              "slot": 0,
+              "status": 5,
+              "type": 198,
+              "x": 139,
+              "y": 86,
+              "vx": -1.0,
+              "vy": 0.0
+            }
+          ]
+        },
+        {
+          "step": 126,
+          "state": {
+            "room": [
+              0,
+              0,
+              243
+            ],
+            "x": 36,
+            "y": 42,
+            "dialogue": false,
+            "sword": true,
+            "health": 12,
+            "a_item": 1,
+            "b_item": 4
+          },
+          "after_state": {
+            "room": [
+              0,
+              0,
+              243
+            ],
+            "x": 36,
+            "y": 42,
+            "dialogue": false,
+            "sword": true,
+            "health": 12,
+            "a_item": 1,
+            "b_item": 4
+          },
+          "proposed": [
+            3,
+            0
+          ],
+          "action": [
+            3,
+            0
+          ],
+          "reason": "unchanged",
+          "damage": 0,
+          "terrain_target": null,
+          "entities": [
+            {
+              "slot": 0,
+              "status": 5,
+              "type": 198,
+              "x": 129,
+              "y": 86,
+              "vx": -1.0,
+              "vy": 0.0
+            }
+          ]
+        },
+        {
+          "step": 127,
+          "state": {
+            "room": [
+              0,
+              0,
+              243
+            ],
+            "x": 36,
+            "y": 42,
+            "dialogue": false,
+            "sword": true,
+            "health": 12,
+            "a_item": 1,
+            "b_item": 4
+          },
+          "after_state": {
+            "room": [
+              0,
+              0,
+              243
+            ],
+            "x": 36,
+            "y": 42,
+            "dialogue": false,
+            "sword": true,
+            "health": 12,
+            "a_item": 1,
+            "b_item": 4
+          },
+          "proposed": [
+            3,
+            1
+          ],
+          "action": [
+            3,
+            0
+          ],
+          "reason": "clear_path",
+          "damage": 0,
+          "terrain_target": null,
+          "entities": [
+            {
+              "slot": 0,
+              "status": 5,
+              "type": 198,
+              "x": 119,
+              "y": 86,
+              "vx": -1.0,
+              "vy": 0.0
+            }
+          ]
+        }
+      ],
+      "damage_windows": {
+        "cadence": [
+          [
+            {
+              "step": 42,
+              "state": {
+                "room": [
+                  0,
+                  0,
+                  243
+                ],
+                "x": 36,
+                "y": 42,
+                "dialogue": false,
+                "sword": true,
+                "health": 20,
+                "a_item": 1,
+                "b_item": 4
+              },
+              "after_state": {
+                "room": [
+                  0,
+                  0,
+                  243
+                ],
+                "x": 36,
+                "y": 42,
+                "dialogue": false,
+                "sword": true,
+                "health": 20,
+                "a_item": 1,
+                "b_item": 4
+              },
+              "proposed": [
+                3,
+                0
+              ],
+              "action": [
+                3,
+                0
+              ],
+              "reason": "cadence",
+              "damage": 0,
+              "terrain_target": null,
+              "entities": [
+                {
+                  "slot": 0,
+                  "status": 5,
+                  "type": 198,
+                  "x": 80,
+                  "y": 47,
+                  "vx": -1.0,
+                  "vy": 0.0
+                }
+              ]
+            },
+            {
+              "step": 43,
+              "state": {
+                "room": [
+                  0,
+                  0,
+                  243
+                ],
+                "x": 36,
+                "y": 42,
+                "dialogue": false,
+                "sword": true,
+                "health": 20,
+                "a_item": 1,
+                "b_item": 4
+              },
+              "after_state": {
+                "room": [
+                  0,
+                  0,
+                  243
+                ],
+                "x": 36,
+                "y": 42,
+                "dialogue": false,
+                "sword": true,
+                "health": 20,
+                "a_item": 1,
+                "b_item": 4
+              },
+              "proposed": [
+                3,
+                1
+              ],
+              "action": [
+                3,
+                1
+              ],
+              "reason": "cadence",
+              "damage": 0,
+              "terrain_target": null,
+              "entities": [
+                {
+                  "slot": 0,
+                  "status": 5,
+                  "type": 198,
+                  "x": 70,
+                  "y": 47,
+                  "vx": -1.0,
+                  "vy": 0.0
+                }
+              ]
+            },
+            {
+              "step": 44,
+              "state": {
+                "room": [
+                  0,
+                  0,
+                  243
+                ],
+                "x": 36,
+                "y": 42,
+                "dialogue": false,
+                "sword": true,
+                "health": 20,
+                "a_item": 1,
+                "b_item": 4
+              },
+              "after_state": {
+                "room": [
+                  0,
+                  0,
+                  243
+                ],
+                "x": 36,
+                "y": 42,
+                "dialogue": false,
+                "sword": true,
+                "health": 20,
+                "a_item": 1,
+                "b_item": 4
+              },
+              "proposed": [
+                3,
+                0
+              ],
+              "action": [
+                3,
+                0
+              ],
+              "reason": "cadence",
+              "damage": 0,
+              "terrain_target": null,
+              "entities": [
+                {
+                  "slot": 0,
+                  "status": 5,
+                  "type": 198,
+                  "x": 60,
+                  "y": 47,
+                  "vx": -1.0,
+                  "vy": 0.0
+                }
+              ]
+            },
+            {
+              "step": 45,
+              "state": {
+                "room": [
+                  0,
+                  0,
+                  243
+                ],
+                "x": 36,
+                "y": 42,
+                "dialogue": false,
+                "sword": true,
+                "health": 20,
+                "a_item": 1,
+                "b_item": 4
+              },
+              "after_state": {
+                "room": [
+                  0,
+                  0,
+                  243
+                ],
+                "x": 36,
+                "y": 42,
+                "dialogue": false,
+                "sword": true,
+                "health": 19,
+                "a_item": 1,
+                "b_item": 4
+              },
+              "proposed": [
+                3,
+                1
+              ],
+              "action": [
+                3,
+                1
+              ],
+              "reason": "cadence",
+              "damage": 1,
+              "terrain_target": null,
+              "entities": [
+                {
+                  "slot": 0,
+                  "status": 5,
+                  "type": 198,
+                  "x": 50,
+                  "y": 47,
+                  "vx": -1.0,
+                  "vy": 0.0
+                }
+              ]
+            },
+            {
+              "step": 46,
+              "state": {
+                "room": [
+                  0,
+                  0,
+                  243
+                ],
+                "x": 36,
+                "y": 42,
+                "dialogue": false,
+                "sword": true,
+                "health": 19,
+                "a_item": 1,
+                "b_item": 4
+              },
+              "after_state": {
+                "room": [
+                  0,
+                  0,
+                  243
+                ],
+                "x": 36,
+                "y": 42,
+                "dialogue": false,
+                "sword": true,
+                "health": 16,
+                "a_item": 1,
+                "b_item": 4
+              },
+              "proposed": [
+                3,
+                0
+              ],
+              "action": [
+                3,
+                0
+              ],
+              "reason": "cadence",
+              "damage": 3,
+              "terrain_target": null,
+              "entities": [
+                {
+                  "slot": 0,
+                  "status": 5,
+                  "type": 198,
+                  "x": 40,
+                  "y": 47,
+                  "vx": -1.0,
+                  "vy": 0.0
+                }
+              ]
+            }
+          ],
+          [
+            {
+              "step": 43,
+              "state": {
+                "room": [
+                  0,
+                  0,
+                  243
+                ],
+                "x": 36,
+                "y": 42,
+                "dialogue": false,
+                "sword": true,
+                "health": 20,
+                "a_item": 1,
+                "b_item": 4
+              },
+              "after_state": {
+                "room": [
+                  0,
+                  0,
+                  243
+                ],
+                "x": 36,
+                "y": 42,
+                "dialogue": false,
+                "sword": true,
+                "health": 20,
+                "a_item": 1,
+                "b_item": 4
+              },
+              "proposed": [
+                3,
+                1
+              ],
+              "action": [
+                3,
+                1
+              ],
+              "reason": "cadence",
+              "damage": 0,
+              "terrain_target": null,
+              "entities": [
+                {
+                  "slot": 0,
+                  "status": 5,
+                  "type": 198,
+                  "x": 70,
+                  "y": 47,
+                  "vx": -1.0,
+                  "vy": 0.0
+                }
+              ]
+            },
+            {
+              "step": 44,
+              "state": {
+                "room": [
+                  0,
+                  0,
+                  243
+                ],
+                "x": 36,
+                "y": 42,
+                "dialogue": false,
+                "sword": true,
+                "health": 20,
+                "a_item": 1,
+                "b_item": 4
+              },
+              "after_state": {
+                "room": [
+                  0,
+                  0,
+                  243
+                ],
+                "x": 36,
+                "y": 42,
+                "dialogue": false,
+                "sword": true,
+                "health": 20,
+                "a_item": 1,
+                "b_item": 4
+              },
+              "proposed": [
+                3,
+                0
+              ],
+              "action": [
+                3,
+                0
+              ],
+              "reason": "cadence",
+              "damage": 0,
+              "terrain_target": null,
+              "entities": [
+                {
+                  "slot": 0,
+                  "status": 5,
+                  "type": 198,
+                  "x": 60,
+                  "y": 47,
+                  "vx": -1.0,
+                  "vy": 0.0
+                }
+              ]
+            },
+            {
+              "step": 45,
+              "state": {
+                "room": [
+                  0,
+                  0,
+                  243
+                ],
+                "x": 36,
+                "y": 42,
+                "dialogue": false,
+                "sword": true,
+                "health": 20,
+                "a_item": 1,
+                "b_item": 4
+              },
+              "after_state": {
+                "room": [
+                  0,
+                  0,
+                  243
+                ],
+                "x": 36,
+                "y": 42,
+                "dialogue": false,
+                "sword": true,
+                "health": 19,
+                "a_item": 1,
+                "b_item": 4
+              },
+              "proposed": [
+                3,
+                1
+              ],
+              "action": [
+                3,
+                1
+              ],
+              "reason": "cadence",
+              "damage": 1,
+              "terrain_target": null,
+              "entities": [
+                {
+                  "slot": 0,
+                  "status": 5,
+                  "type": 198,
+                  "x": 50,
+                  "y": 47,
+                  "vx": -1.0,
+                  "vy": 0.0
+                }
+              ]
+            },
+            {
+              "step": 46,
+              "state": {
+                "room": [
+                  0,
+                  0,
+                  243
+                ],
+                "x": 36,
+                "y": 42,
+                "dialogue": false,
+                "sword": true,
+                "health": 19,
+                "a_item": 1,
+                "b_item": 4
+              },
+              "after_state": {
+                "room": [
+                  0,
+                  0,
+                  243
+                ],
+                "x": 36,
+                "y": 42,
+                "dialogue": false,
+                "sword": true,
+                "health": 16,
+                "a_item": 1,
+                "b_item": 4
+              },
+              "proposed": [
+                3,
+                0
+              ],
+              "action": [
+                3,
+                0
+              ],
+              "reason": "cadence",
+              "damage": 3,
+              "terrain_target": null,
+              "entities": [
+                {
+                  "slot": 0,
+                  "status": 5,
+                  "type": 198,
+                  "x": 40,
+                  "y": 47,
+                  "vx": -1.0,
+                  "vy": 0.0
+                }
+              ]
+            },
+            {
+              "step": 47,
+              "state": {
+                "room": [
+                  0,
+                  0,
+                  243
+                ],
+                "x": 36,
+                "y": 42,
+                "dialogue": false,
+                "sword": true,
+                "health": 16,
+                "a_item": 1,
+                "b_item": 4
+              },
+              "after_state": {
+                "room": [
+                  0,
+                  0,
+                  243
+                ],
+                "x": 36,
+                "y": 42,
+                "dialogue": false,
+                "sword": true,
+                "health": 16,
+                "a_item": 1,
+                "b_item": 4
+              },
+              "proposed": [
+                3,
+                1
+              ],
+              "action": [
+                3,
+                1
+              ],
+              "reason": "cadence",
+              "damage": 0,
+              "terrain_target": null,
+              "entities": [
+                {
+                  "slot": 0,
+                  "status": 5,
+                  "type": 198,
+                  "x": 38,
+                  "y": 46,
+                  "vx": 0.0,
+                  "vy": -0.3125
+                }
+              ]
+            }
+          ]
+        ],
+        "terrain": [
+          [
+            {
+              "step": 24,
+              "state": {
+                "room": [
+                  0,
+                  0,
+                  243
+                ],
+                "x": 36,
+                "y": 42,
+                "dialogue": false,
+                "sword": true,
+                "health": 20,
+                "a_item": 1,
+                "b_item": 4
+              },
+              "after_state": {
+                "room": [
+                  0,
+                  0,
+                  243
+                ],
+                "x": 36,
+                "y": 42,
+                "dialogue": false,
+                "sword": true,
+                "health": 20,
+                "a_item": 1,
+                "b_item": 4
+              },
+              "proposed": [
+                3,
+                0
+              ],
+              "action": [
+                3,
+                0
+              ],
+              "reason": "unchanged",
+              "damage": 0,
+              "terrain_target": null,
+              "entities": [
+                {
+                  "slot": 0,
+                  "status": 5,
+                  "type": 198,
+                  "x": 76,
+                  "y": 46,
+                  "vx": -1.0,
+                  "vy": 0.0
+                }
+              ]
+            },
+            {
+              "step": 25,
+              "state": {
+                "room": [
+                  0,
+                  0,
+                  243
+                ],
+                "x": 36,
+                "y": 42,
+                "dialogue": false,
+                "sword": true,
+                "health": 20,
+                "a_item": 1,
+                "b_item": 4
+              },
+              "after_state": {
+                "room": [
+                  0,
+                  0,
+                  243
+                ],
+                "x": 36,
+                "y": 42,
+                "dialogue": false,
+                "sword": true,
+                "health": 20,
+                "a_item": 1,
+                "b_item": 4
+              },
+              "proposed": [
+                3,
+                1
+              ],
+              "action": [
+                3,
+                1
+              ],
+              "reason": "near_threat",
+              "damage": 0,
+              "terrain_target": null,
+              "entities": [
+                {
+                  "slot": 0,
+                  "status": 5,
+                  "type": 198,
+                  "x": 66,
+                  "y": 46,
+                  "vx": -1.0,
+                  "vy": 0.0
+                }
+              ]
+            },
+            {
+              "step": 26,
+              "state": {
+                "room": [
+                  0,
+                  0,
+                  243
+                ],
+                "x": 36,
+                "y": 42,
+                "dialogue": false,
+                "sword": true,
+                "health": 20,
+                "a_item": 1,
+                "b_item": 4
+              },
+              "after_state": {
+                "room": [
+                  0,
+                  0,
+                  243
+                ],
+                "x": 36,
+                "y": 42,
+                "dialogue": false,
+                "sword": true,
+                "health": 20,
+                "a_item": 1,
+                "b_item": 4
+              },
+              "proposed": [
+                3,
+                0
+              ],
+              "action": [
+                3,
+                0
+              ],
+              "reason": "unchanged",
+              "damage": 0,
+              "terrain_target": null,
+              "entities": [
+                {
+                  "slot": 0,
+                  "status": 5,
+                  "type": 198,
+                  "x": 56,
+                  "y": 46,
+                  "vx": -1.0,
+                  "vy": 0.0
+                }
+              ]
+            },
+            {
+              "step": 27,
+              "state": {
+                "room": [
+                  0,
+                  0,
+                  243
+                ],
+                "x": 36,
+                "y": 42,
+                "dialogue": false,
+                "sword": true,
+                "health": 20,
+                "a_item": 1,
+                "b_item": 4
+              },
+              "after_state": {
+                "room": [
+                  0,
+                  0,
+                  243
+                ],
+                "x": 36,
+                "y": 42,
+                "dialogue": false,
+                "sword": true,
+                "health": 17,
+                "a_item": 1,
+                "b_item": 4
+              },
+              "proposed": [
+                3,
+                1
+              ],
+              "action": [
+                3,
+                1
+              ],
+              "reason": "near_threat",
+              "damage": 3,
+              "terrain_target": null,
+              "entities": [
+                {
+                  "slot": 0,
+                  "status": 5,
+                  "type": 198,
+                  "x": 46,
+                  "y": 46,
+                  "vx": -1.0,
+                  "vy": 0.0
+                }
+              ]
+            },
+            {
+              "step": 28,
+              "state": {
+                "room": [
+                  0,
+                  0,
+                  243
+                ],
+                "x": 36,
+                "y": 42,
+                "dialogue": false,
+                "sword": true,
+                "health": 17,
+                "a_item": 1,
+                "b_item": 4
+              },
+              "after_state": {
+                "room": [
+                  0,
+                  0,
+                  243
+                ],
+                "x": 36,
+                "y": 42,
+                "dialogue": false,
+                "sword": true,
+                "health": 16,
+                "a_item": 1,
+                "b_item": 4
+              },
+              "proposed": [
+                3,
+                0
+              ],
+              "action": [
+                3,
+                0
+              ],
+              "reason": "unchanged",
+              "damage": 1,
+              "terrain_target": null,
+              "entities": [
+                {
+                  "slot": 0,
+                  "status": 5,
+                  "type": 198,
+                  "x": 38,
+                  "y": 47,
+                  "vx": 0.0,
+                  "vy": 0.3125
+                }
+              ]
+            }
+          ],
+          [
+            {
+              "step": 25,
+              "state": {
+                "room": [
+                  0,
+                  0,
+                  243
+                ],
+                "x": 36,
+                "y": 42,
+                "dialogue": false,
+                "sword": true,
+                "health": 20,
+                "a_item": 1,
+                "b_item": 4
+              },
+              "after_state": {
+                "room": [
+                  0,
+                  0,
+                  243
+                ],
+                "x": 36,
+                "y": 42,
+                "dialogue": false,
+                "sword": true,
+                "health": 20,
+                "a_item": 1,
+                "b_item": 4
+              },
+              "proposed": [
+                3,
+                1
+              ],
+              "action": [
+                3,
+                1
+              ],
+              "reason": "near_threat",
+              "damage": 0,
+              "terrain_target": null,
+              "entities": [
+                {
+                  "slot": 0,
+                  "status": 5,
+                  "type": 198,
+                  "x": 66,
+                  "y": 46,
+                  "vx": -1.0,
+                  "vy": 0.0
+                }
+              ]
+            },
+            {
+              "step": 26,
+              "state": {
+                "room": [
+                  0,
+                  0,
+                  243
+                ],
+                "x": 36,
+                "y": 42,
+                "dialogue": false,
+                "sword": true,
+                "health": 20,
+                "a_item": 1,
+                "b_item": 4
+              },
+              "after_state": {
+                "room": [
+                  0,
+                  0,
+                  243
+                ],
+                "x": 36,
+                "y": 42,
+                "dialogue": false,
+                "sword": true,
+                "health": 20,
+                "a_item": 1,
+                "b_item": 4
+              },
+              "proposed": [
+                3,
+                0
+              ],
+              "action": [
+                3,
+                0
+              ],
+              "reason": "unchanged",
+              "damage": 0,
+              "terrain_target": null,
+              "entities": [
+                {
+                  "slot": 0,
+                  "status": 5,
+                  "type": 198,
+                  "x": 56,
+                  "y": 46,
+                  "vx": -1.0,
+                  "vy": 0.0
+                }
+              ]
+            },
+            {
+              "step": 27,
+              "state": {
+                "room": [
+                  0,
+                  0,
+                  243
+                ],
+                "x": 36,
+                "y": 42,
+                "dialogue": false,
+                "sword": true,
+                "health": 20,
+                "a_item": 1,
+                "b_item": 4
+              },
+              "after_state": {
+                "room": [
+                  0,
+                  0,
+                  243
+                ],
+                "x": 36,
+                "y": 42,
+                "dialogue": false,
+                "sword": true,
+                "health": 17,
+                "a_item": 1,
+                "b_item": 4
+              },
+              "proposed": [
+                3,
+                1
+              ],
+              "action": [
+                3,
+                1
+              ],
+              "reason": "near_threat",
+              "damage": 3,
+              "terrain_target": null,
+              "entities": [
+                {
+                  "slot": 0,
+                  "status": 5,
+                  "type": 198,
+                  "x": 46,
+                  "y": 46,
+                  "vx": -1.0,
+                  "vy": 0.0
+                }
+              ]
+            },
+            {
+              "step": 28,
+              "state": {
+                "room": [
+                  0,
+                  0,
+                  243
+                ],
+                "x": 36,
+                "y": 42,
+                "dialogue": false,
+                "sword": true,
+                "health": 17,
+                "a_item": 1,
+                "b_item": 4
+              },
+              "after_state": {
+                "room": [
+                  0,
+                  0,
+                  243
+                ],
+                "x": 36,
+                "y": 42,
+                "dialogue": false,
+                "sword": true,
+                "health": 16,
+                "a_item": 1,
+                "b_item": 4
+              },
+              "proposed": [
+                3,
+                0
+              ],
+              "action": [
+                3,
+                0
+              ],
+              "reason": "unchanged",
+              "damage": 1,
+              "terrain_target": null,
+              "entities": [
+                {
+                  "slot": 0,
+                  "status": 5,
+                  "type": 198,
+                  "x": 38,
+                  "y": 47,
+                  "vx": 0.0,
+                  "vy": 0.3125
+                }
+              ]
+            },
+            {
+              "step": 29,
+              "state": {
+                "room": [
+                  0,
+                  0,
+                  243
+                ],
+                "x": 36,
+                "y": 42,
+                "dialogue": false,
+                "sword": true,
+                "health": 16,
+                "a_item": 1,
+                "b_item": 4
+              },
+              "after_state": {
+                "room": [
+                  0,
+                  0,
+                  243
+                ],
+                "x": 36,
+                "y": 42,
+                "dialogue": false,
+                "sword": true,
+                "health": 16,
+                "a_item": 1,
+                "b_item": 4
+              },
+              "proposed": [
+                3,
+                1
+              ],
+              "action": [
+                3,
+                1
+              ],
+              "reason": "near_threat",
+              "damage": 0,
+              "terrain_target": null,
+              "entities": [
+                {
+                  "slot": 0,
+                  "status": 5,
+                  "type": 198,
+                  "x": 38,
+                  "y": 50,
+                  "vx": 0.0,
+                  "vy": 0.3125
+                }
+              ]
+            }
+          ],
+          [
+            {
+              "step": 71,
+              "state": {
+                "room": [
+                  0,
+                  0,
+                  243
+                ],
+                "x": 36,
+                "y": 42,
+                "dialogue": false,
+                "sword": true,
+                "health": 16,
+                "a_item": 1,
+                "b_item": 4
+              },
+              "after_state": {
+                "room": [
+                  0,
+                  0,
+                  243
+                ],
+                "x": 36,
+                "y": 42,
+                "dialogue": false,
+                "sword": true,
+                "health": 16,
+                "a_item": 1,
+                "b_item": 4
+              },
+              "proposed": [
+                3,
+                1
+              ],
+              "action": [
+                3,
+                0
+              ],
+              "reason": "clear_path",
+              "damage": 0,
+              "terrain_target": null,
+              "entities": [
+                {
+                  "slot": 0,
+                  "status": 5,
+                  "type": 198,
+                  "x": 79,
+                  "y": 46,
+                  "vx": -1.0,
+                  "vy": 0.0
+                }
+              ]
+            },
+            {
+              "step": 72,
+              "state": {
+                "room": [
+                  0,
+                  0,
+                  243
+                ],
+                "x": 36,
+                "y": 42,
+                "dialogue": false,
+                "sword": true,
+                "health": 16,
+                "a_item": 1,
+                "b_item": 4
+              },
+              "after_state": {
+                "room": [
+                  0,
+                  0,
+                  243
+                ],
+                "x": 36,
+                "y": 42,
+                "dialogue": false,
+                "sword": true,
+                "health": 16,
+                "a_item": 1,
+                "b_item": 4
+              },
+              "proposed": [
+                3,
+                0
+              ],
+              "action": [
+                3,
+                0
+              ],
+              "reason": "unchanged",
+              "damage": 0,
+              "terrain_target": null,
+              "entities": [
+                {
+                  "slot": 0,
+                  "status": 5,
+                  "type": 198,
+                  "x": 69,
+                  "y": 46,
+                  "vx": -1.0,
+                  "vy": 0.0
+                }
+              ]
+            },
+            {
+              "step": 73,
+              "state": {
+                "room": [
+                  0,
+                  0,
+                  243
+                ],
+                "x": 36,
+                "y": 42,
+                "dialogue": false,
+                "sword": true,
+                "health": 16,
+                "a_item": 1,
+                "b_item": 4
+              },
+              "after_state": {
+                "room": [
+                  0,
+                  0,
+                  243
+                ],
+                "x": 36,
+                "y": 42,
+                "dialogue": false,
+                "sword": true,
+                "health": 16,
+                "a_item": 1,
+                "b_item": 4
+              },
+              "proposed": [
+                3,
+                1
+              ],
+              "action": [
+                3,
+                1
+              ],
+              "reason": "near_threat",
+              "damage": 0,
+              "terrain_target": null,
+              "entities": [
+                {
+                  "slot": 0,
+                  "status": 5,
+                  "type": 198,
+                  "x": 59,
+                  "y": 46,
+                  "vx": -1.0,
+                  "vy": 0.0
+                }
+              ]
+            },
+            {
+              "step": 74,
+              "state": {
+                "room": [
+                  0,
+                  0,
+                  243
+                ],
+                "x": 36,
+                "y": 42,
+                "dialogue": false,
+                "sword": true,
+                "health": 16,
+                "a_item": 1,
+                "b_item": 4
+              },
+              "after_state": {
+                "room": [
+                  0,
+                  0,
+                  243
+                ],
+                "x": 36,
+                "y": 42,
+                "dialogue": false,
+                "sword": true,
+                "health": 15,
+                "a_item": 1,
+                "b_item": 4
+              },
+              "proposed": [
+                3,
+                0
+              ],
+              "action": [
+                3,
+                0
+              ],
+              "reason": "unchanged",
+              "damage": 1,
+              "terrain_target": null,
+              "entities": [
+                {
+                  "slot": 0,
+                  "status": 5,
+                  "type": 198,
+                  "x": 49,
+                  "y": 46,
+                  "vx": -1.0,
+                  "vy": 0.0
+                }
+              ]
+            },
+            {
+              "step": 75,
+              "state": {
+                "room": [
+                  0,
+                  0,
+                  243
+                ],
+                "x": 36,
+                "y": 42,
+                "dialogue": false,
+                "sword": true,
+                "health": 15,
+                "a_item": 1,
+                "b_item": 4
+              },
+              "after_state": {
+                "room": [
+                  0,
+                  0,
+                  243
+                ],
+                "x": 36,
+                "y": 42,
+                "dialogue": false,
+                "sword": true,
+                "health": 12,
+                "a_item": 1,
+                "b_item": 4
+              },
+              "proposed": [
+                3,
+                1
+              ],
+              "action": [
+                3,
+                1
+              ],
+              "reason": "near_threat",
+              "damage": 3,
+              "terrain_target": null,
+              "entities": [
+                {
+                  "slot": 0,
+                  "status": 5,
+                  "type": 198,
+                  "x": 39,
+                  "y": 46,
+                  "vx": -1.0,
+                  "vy": 0.0
+                }
+              ]
+            }
+          ],
+          [
+            {
+              "step": 72,
+              "state": {
+                "room": [
+                  0,
+                  0,
+                  243
+                ],
+                "x": 36,
+                "y": 42,
+                "dialogue": false,
+                "sword": true,
+                "health": 16,
+                "a_item": 1,
+                "b_item": 4
+              },
+              "after_state": {
+                "room": [
+                  0,
+                  0,
+                  243
+                ],
+                "x": 36,
+                "y": 42,
+                "dialogue": false,
+                "sword": true,
+                "health": 16,
+                "a_item": 1,
+                "b_item": 4
+              },
+              "proposed": [
+                3,
+                0
+              ],
+              "action": [
+                3,
+                0
+              ],
+              "reason": "unchanged",
+              "damage": 0,
+              "terrain_target": null,
+              "entities": [
+                {
+                  "slot": 0,
+                  "status": 5,
+                  "type": 198,
+                  "x": 69,
+                  "y": 46,
+                  "vx": -1.0,
+                  "vy": 0.0
+                }
+              ]
+            },
+            {
+              "step": 73,
+              "state": {
+                "room": [
+                  0,
+                  0,
+                  243
+                ],
+                "x": 36,
+                "y": 42,
+                "dialogue": false,
+                "sword": true,
+                "health": 16,
+                "a_item": 1,
+                "b_item": 4
+              },
+              "after_state": {
+                "room": [
+                  0,
+                  0,
+                  243
+                ],
+                "x": 36,
+                "y": 42,
+                "dialogue": false,
+                "sword": true,
+                "health": 16,
+                "a_item": 1,
+                "b_item": 4
+              },
+              "proposed": [
+                3,
+                1
+              ],
+              "action": [
+                3,
+                1
+              ],
+              "reason": "near_threat",
+              "damage": 0,
+              "terrain_target": null,
+              "entities": [
+                {
+                  "slot": 0,
+                  "status": 5,
+                  "type": 198,
+                  "x": 59,
+                  "y": 46,
+                  "vx": -1.0,
+                  "vy": 0.0
+                }
+              ]
+            },
+            {
+              "step": 74,
+              "state": {
+                "room": [
+                  0,
+                  0,
+                  243
+                ],
+                "x": 36,
+                "y": 42,
+                "dialogue": false,
+                "sword": true,
+                "health": 16,
+                "a_item": 1,
+                "b_item": 4
+              },
+              "after_state": {
+                "room": [
+                  0,
+                  0,
+                  243
+                ],
+                "x": 36,
+                "y": 42,
+                "dialogue": false,
+                "sword": true,
+                "health": 15,
+                "a_item": 1,
+                "b_item": 4
+              },
+              "proposed": [
+                3,
+                0
+              ],
+              "action": [
+                3,
+                0
+              ],
+              "reason": "unchanged",
+              "damage": 1,
+              "terrain_target": null,
+              "entities": [
+                {
+                  "slot": 0,
+                  "status": 5,
+                  "type": 198,
+                  "x": 49,
+                  "y": 46,
+                  "vx": -1.0,
+                  "vy": 0.0
+                }
+              ]
+            },
+            {
+              "step": 75,
+              "state": {
+                "room": [
+                  0,
+                  0,
+                  243
+                ],
+                "x": 36,
+                "y": 42,
+                "dialogue": false,
+                "sword": true,
+                "health": 15,
+                "a_item": 1,
+                "b_item": 4
+              },
+              "after_state": {
+                "room": [
+                  0,
+                  0,
+                  243
+                ],
+                "x": 36,
+                "y": 42,
+                "dialogue": false,
+                "sword": true,
+                "health": 12,
+                "a_item": 1,
+                "b_item": 4
+              },
+              "proposed": [
+                3,
+                1
+              ],
+              "action": [
+                3,
+                1
+              ],
+              "reason": "near_threat",
+              "damage": 3,
+              "terrain_target": null,
+              "entities": [
+                {
+                  "slot": 0,
+                  "status": 5,
+                  "type": 198,
+                  "x": 39,
+                  "y": 46,
+                  "vx": -1.0,
+                  "vy": 0.0
+                }
+              ]
+            },
+            {
+              "step": 76,
+              "state": {
+                "room": [
+                  0,
+                  0,
+                  243
+                ],
+                "x": 36,
+                "y": 42,
+                "dialogue": false,
+                "sword": true,
+                "health": 12,
+                "a_item": 1,
+                "b_item": 4
+              },
+              "after_state": {
+                "room": [
+                  0,
+                  0,
+                  243
+                ],
+                "x": 36,
+                "y": 42,
+                "dialogue": false,
+                "sword": true,
+                "health": 12,
+                "a_item": 1,
+                "b_item": 4
+              },
+              "proposed": [
+                3,
+                0
+              ],
+              "action": [
+                3,
+                0
+              ],
+              "reason": "unchanged",
+              "damage": 0,
+              "terrain_target": null,
+              "entities": [
+                {
+                  "slot": 0,
+                  "status": 5,
+                  "type": 198,
+                  "x": 38,
+                  "y": 49,
+                  "vx": 0.0,
+                  "vy": 0.3125
+                }
+              ]
+            }
+          ]
+        ]
+      }
+    }
+  ],
+  "terrain_observations": {
+    "terrain_allowed": 4,
+    "terrain_changed_within_3_actions": 4,
+    "terrain_motion_allowed": 4,
+    "terrain_motion_changed_within_3_actions": 4
+  },
+  "cut_examples": [
+    {
+      "case_id": "763b4286fbad9a9da88b05c5193e729a743e00489d7a93e95683e45a0a961ebe",
+      "variant": "terrain",
+      "step": 3,
+      "before": {
+        "room": [
+          0,
+          0,
+          225
+        ],
+        "x": 72,
+        "y": 39,
+        "dialogue": false,
+        "sword": true,
+        "health": 24,
+        "a_item": 1,
+        "b_item": 4
+      },
+      "target": {
+        "index": 21,
+        "row": 1,
+        "col": 5,
+        "object_id": 92,
+        "physics": 48,
+        "facing": 0,
+        "sample_x": 86,
+        "sample_y": 31
+      },
+      "after_object_id": 3
+    },
+    {
+      "case_id": "070f7ef4aa8d508a0be93b0a1da0f1b9f278fa586503b17fcea02caec1cc6f79",
+      "variant": "terrain",
+      "step": 5,
+      "before": {
+        "room": [
+          0,
+          0,
+          224
+        ],
+        "x": 74,
+        "y": 115,
+        "dialogue": false,
+        "sword": true,
+        "health": 4,
+        "a_item": 1,
+        "b_item": 4
+      },
+      "target": {
+        "index": 101,
+        "row": 6,
+        "col": 5,
+        "object_id": 92,
+        "physics": 48,
+        "facing": 0,
+        "sample_x": 88,
+        "sample_y": 107
+      },
+      "after_object_id": 3
+    },
+    {
+      "case_id": "09923eaa5ae5002074932221cb9fca869c8ef0fb4fff01532ae241fce799a8ea",
+      "variant": "terrain",
+      "step": 1,
+      "before": {
+        "room": [
+          0,
+          0,
+          225
+        ],
+        "x": 92,
+        "y": 30,
+        "dialogue": false,
+        "sword": true,
+        "health": 12,
+        "a_item": 1,
+        "b_item": 4
+      },
+      "target": {
+        "index": 22,
+        "row": 1,
+        "col": 6,
+        "object_id": 92,
+        "physics": 48,
+        "facing": 0,
+        "sample_x": 106,
+        "sample_y": 22
+      },
+      "after_object_id": 3
+    },
+    {
+      "case_id": "d83828f5fd478e038e4d2fa0f234802ad62b67e44645ced8f2c991e5531a304e",
+      "variant": "terrain",
+      "step": 3,
+      "before": {
+        "room": [
+          0,
+          0,
+          224
+        ],
+        "x": 136,
+        "y": 96,
+        "dialogue": false,
+        "sword": true,
+        "health": 4,
+        "a_item": 1,
+        "b_item": 4
+      },
+      "target": {
+        "index": 104,
+        "row": 6,
+        "col": 8,
+        "object_id": 92,
+        "physics": 48,
+        "facing": 3,
+        "sample_x": 136,
+        "sample_y": 102
+      },
+      "after_object_id": 3
+    },
+    {
+      "case_id": "763b4286fbad9a9da88b05c5193e729a743e00489d7a93e95683e45a0a961ebe",
+      "variant": "terrain_motion",
+      "step": 3,
+      "before": {
+        "room": [
+          0,
+          0,
+          225
+        ],
+        "x": 72,
+        "y": 39,
+        "dialogue": false,
+        "sword": true,
+        "health": 24,
+        "a_item": 1,
+        "b_item": 4
+      },
+      "target": {
+        "index": 21,
+        "row": 1,
+        "col": 5,
+        "object_id": 92,
+        "physics": 48,
+        "facing": 0,
+        "sample_x": 86,
+        "sample_y": 31
+      },
+      "after_object_id": 3
+    },
+    {
+      "case_id": "070f7ef4aa8d508a0be93b0a1da0f1b9f278fa586503b17fcea02caec1cc6f79",
+      "variant": "terrain_motion",
+      "step": 5,
+      "before": {
+        "room": [
+          0,
+          0,
+          224
+        ],
+        "x": 74,
+        "y": 115,
+        "dialogue": false,
+        "sword": true,
+        "health": 4,
+        "a_item": 1,
+        "b_item": 4
+      },
+      "target": {
+        "index": 101,
+        "row": 6,
+        "col": 5,
+        "object_id": 92,
+        "physics": 48,
+        "facing": 0,
+        "sample_x": 88,
+        "sample_y": 107
+      },
+      "after_object_id": 3
+    },
+    {
+      "case_id": "09923eaa5ae5002074932221cb9fca869c8ef0fb4fff01532ae241fce799a8ea",
+      "variant": "terrain_motion",
+      "step": 1,
+      "before": {
+        "room": [
+          0,
+          0,
+          225
+        ],
+        "x": 92,
+        "y": 30,
+        "dialogue": false,
+        "sword": true,
+        "health": 12,
+        "a_item": 1,
+        "b_item": 4
+      },
+      "target": {
+        "index": 22,
+        "row": 1,
+        "col": 6,
+        "object_id": 92,
+        "physics": 48,
+        "facing": 0,
+        "sample_x": 106,
+        "sample_y": 22
+      },
+      "after_object_id": 3
+    },
+    {
+      "case_id": "d83828f5fd478e038e4d2fa0f234802ad62b67e44645ced8f2c991e5531a304e",
+      "variant": "terrain_motion",
+      "step": 3,
+      "before": {
+        "room": [
+          0,
+          0,
+          224
+        ],
+        "x": 136,
+        "y": 96,
+        "dialogue": false,
+        "sword": true,
+        "health": 4,
+        "a_item": 1,
+        "b_item": 4
+      },
+      "target": {
+        "index": 104,
+        "row": 6,
+        "col": 8,
+        "object_id": 92,
+        "physics": 48,
+        "facing": 3,
+        "sample_x": 136,
+        "sample_y": 102
+      },
+      "after_object_id": 3
+    }
+  ],
+  "caveat": "A target change within three actions verifies a local terrain outcome, not all sword geometry or sole causation. Windows may overlap."
+}

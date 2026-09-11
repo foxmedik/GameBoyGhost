@@ -1,0 +1,70 @@
+{
+  "result": {
+    "status": "damage_budget",
+    "steps": 1052,
+    "extension_steps": 303,
+    "extension_damage_raw": 4,
+    "rooms": {
+      "208": 1,
+      "192": 1,
+      "193": 2,
+      "209": 1,
+      "194": 1
+    },
+    "final": {
+      "phase": {
+        "gameplay": 11,
+        "subtype": 7,
+        "scroll": 0,
+        "sequence": 4,
+        "palette": 0,
+        "room": [
+          0,
+          0,
+          194
+        ],
+        "health": 20
+      },
+      "room": [
+        0,
+        0,
+        194
+      ],
+      "x": 145,
+      "y": 33,
+      "health": 20,
+      "max_hearts": 3,
+      "inventory": [
+        4,
+        1,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "sword": 1,
+      "toadstool": 0,
+      "powder": 0,
+      "bombs": 0,
+      "arrows": 0,
+      "tail_key": 0,
+      "tarin": 0,
+      "tail_door_status": 0,
+      "trade_item": 0,
+      "dialog_state": 0,
+      "dialog_id": 155,
+      "inventory_cursor": 0
+    },
+    "exact_action_replay": true,
+    "assistance": "scripted_live_terrain_navigation_with_source_grounded_goal_hint",
+    "quest_success": false
+  },
+  "output": "runs/progression-forest-terrain-v1",
+  "memory_version": "e899d775baef291615dca57c1a4edad3203b5f6e9389fb6db712dd099ae24aec"
+}

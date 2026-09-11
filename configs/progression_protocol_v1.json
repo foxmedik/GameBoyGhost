@@ -1,0 +1,89 @@
+{
+  "schema": "progression-protocol-v1",
+  "plan": "docs/PROGRESSION_EXECUTION_PLAN.md",
+  "objective": "Physically acquire Tail Key, unlock Tail Cave and enter its settled entrance alive, continuously.",
+  "assistance": [
+    "structured_read_only_game_state",
+    "source_grounded_quest_hints",
+    "provided_full_map_and_artwork"
+  ],
+  "budgets": {
+    "post_sword": {
+      "decisions": 8192,
+      "frames": 200000
+    },
+    "house": {
+      "decisions": 12288,
+      "frames": 300000
+    },
+    "unchanged_attempts": 3,
+    "training_candidates_per_blocker": 3,
+    "new_decisions_per_blocker": 250000,
+    "new_decisions_initial_total": 1000000
+  },
+  "gates": {
+    "observation_purity_reads": 100,
+    "skill_development": [
+      18,
+      20
+    ],
+    "integrated_skill": [
+      9,
+      10
+    ],
+    "quest_validation": [
+      18,
+      20
+    ],
+    "memory_development_pairs": 10,
+    "memory_min_successful_pairs": 5,
+    "memory_median_action_reduction": 0.2,
+    "interventions_allowed": 0
+  },
+  "stages": {
+    "0": {
+      "status": "complete"
+    },
+    "1": {
+      "status": "complete",
+      "evidence": [
+        "reports/progression-interface-v1.json",
+        "reports/progression-interface-v1-regression.json"
+      ],
+      "scope": "Interface and event foundation; physical terminal quest fixtures remain stage 3."
+    },
+    "2": {
+      "status": "complete",
+      "evidence": [
+        "reports/world-memory-v1.json",
+        "reports/world-memory-v1-regression.json"
+      ],
+      "scope": "Persistent evidence, directed route queries and saved-generation determinism; live motor integration remains stage 3."
+    },
+    "3": {
+      "status": "in_progress",
+      "evidence": [
+        "reports/progression-crossing-resolution-v1.json",
+        "reports/progression-forest-progress-v1.json"
+      ],
+      "blocker": null,
+      "remaining": "Toadstool acquisition, witch exchange, Tarin interaction, Tail Key and Tail Cave entry remain unverified."
+    },
+    "4": {
+      "status": "pending"
+    },
+    "5": {
+      "status": "pending"
+    },
+    "6": {
+      "status": "pending"
+    },
+    "7": {
+      "status": "pending"
+    }
+  },
+  "reserved_navigation_evaluation_used": false,
+  "optimizer_status": "paused_until_measured_blocker_and_frozen_experiment",
+  "active_stage": 3,
+  "next_step": "Replace outdoor room-distance exploration with explicit verified toadstool approach subgoals, including any required indoor transitions; preserve zero-damage forest entry regression."
+}

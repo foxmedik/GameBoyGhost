@@ -1,0 +1,13 @@
+{
+  "schema": "terrain-sword-experiment-v2",
+  "status": "terrain_motion_passed_for_verified_collection",
+  "rejected_arm": "terrain",
+  "result": "reports/proximity-sword-48-v2.json",
+  "audit": "reports/proximity-sword-48-v2-audit.json",
+  "matched_sessions": 48,
+  "rollouts": 144,
+  "training_performed": false,
+  "runtime_changed": false,
+  "reserved_evaluation_used": false,
+  "selected_navigator": "route_v7_unchanged"
+}

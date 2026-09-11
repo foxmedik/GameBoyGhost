@@ -1,23 +1,53 @@
 {
   "schema": "experimental-navigation-controller-v1",
   "status": "experimental_not_default",
-  "policy_path": "runs/navigation-focused-v4/model/epoch-008.pt",
-  "policy_sha256": "3e6e5f3278b82f098e9d4eb5cd943813075fa75a66f1bd0a6cf50fcde03c66c9",
+  "policy_path": "runs/navigation-cliff-specialists-v2/model/epoch-256.pt",
+  "policy_sha256": "9d2b24b28be5289fc3d32d85d46faa1835ca2068d73a1e8790630d77dbaf85ec",
   "feature_contract": "structured-goal-250-v1",
   "previous_movement_masked": true,
-  "supervision": "verified_recovery_and_parent_paths_with_shortest_observed_suffix_labels",
+  "supervision": "verified_live_continuous_successes_and_teacher_corrected_paths_with_original_final_goals",
   "harness_privilege": "D",
   "local_live_successes": 46,
   "local_live_cases": 48,
-  "live_development_result": "runs/navigation-focused-v4/result.json",
+  "live_development_result": "runs/navigation-cliff-specialists-v2/result.json",
   "continuous_room_exit_cases": 3,
   "continuous_precise_goal_successes": 3,
   "continuous_cases": 3,
   "completion_evaluated": false,
-  "additional_development_successes": 39,
+  "additional_development_successes": 43,
   "additional_development_cases": 48,
   "fresh_development_successes": 46,
   "fresh_development_cases": 48,
-  "selection_reason": "Passed fixed no-lost-success/no-damage gate against original parent and v3 across all three panels; continuous goals 3/3.",
-  "previous_policy_path": "runs/navigation-model-no-history-v1/epoch-064.pt"
+  "selection_reason": "9/9 known development routes and 36/36 waypoints, preserving all 135 safe local successes, all seven specialist-v1 routes, original chains, zero damage/deaths, and exact replay plus three resume checks. Known-goal specialists; general detour planning remains unevaluated.",
+  "previous_policy_path": "runs/navigation-routes-v7/model/epoch-008.pt",
+  "previous_policy_sha256": "6d26dcd6a2d7b22c0681d7e7a0c9b9d3f27c9d8caccbeca94426be0da97fc062",
+  "route_successes": 9,
+  "route_cases": 9,
+  "route_waypoints_reached": 36,
+  "route_waypoints_total": 36,
+  "route_navigation_damage": 0,
+  "route_deaths": 0,
+  "route_result": "reports/navigation-cliff-specialists-v2.json",
+  "retired_cohort_registry": "configs/navigation_retired_cohorts.json",
+  "architecture": "frozen_v7_with_two_final_goal_feedforward_specialists",
+  "goal_specialists": [
+    {
+      "room": [
+        0,
+        0,
+        226
+      ],
+      "x": 36,
+      "y": 121
+    },
+    {
+      "room": [
+        0,
+        0,
+        226
+      ],
+      "x": 64,
+      "y": 64
+    }
+  ]
 }

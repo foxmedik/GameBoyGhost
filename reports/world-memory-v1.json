@@ -1,0 +1,40 @@
+{
+  "schema": "world-memory-validation-v1",
+  "status": "passed",
+  "tests_run": 7,
+  "source_traces": 3,
+  "observations": 1243,
+  "counts": {
+    "presence": 779,
+    "movement_attempt": 442,
+    "connection": 14,
+    "landmark_observation": 8
+  },
+  "unique_rooms": 13,
+  "route_queries_identical": 169,
+  "every_observation_rederived_from_hashed_trace": true,
+  "generation_0": "21dd6347bdbd2403c1ce8b5f297e842460b16b554d366beb2e8e15c9f38546cc",
+  "generation_1": "db2fa7a29fa5b904b53ee7feceb111a0eb62fbc513cc600bb425a1cd158c7b58",
+  "example_route_legs": 12,
+  "return_route_status": "unknown_route",
+  "tail_key_route_status": "unknown_route",
+  "episode_state_inherited": false,
+  "live_navigation_integration": false,
+  "inheritance_efficiency_evaluated": false,
+  "new_emulator_actions": 0,
+  "optimizer_updates": 0,
+  "reserved_evaluation_used": false,
+  "wall_seconds": 0.691,
+  "output": "runs/world-memory-v1",
+  "code_hashes": {
+    "src/gameboy_agent/world_memory.py": "c816fe5a72118a8791013676a0aacfbbb2846c9fe93545ddf1acec7ad5d28bcb",
+    "tests/test_world_memory.py": "d9a201570bdfaa1fb85c50dcf866b6c4265db1828873f40942c545a0d4ef427e",
+    "scripts/build_world_memory.py": "3c855d7adc05a7c36e8163435b5ccd95ed55c4412fbc52f3046e3782a17b9bbb"
+  },
+  "artifacts": {
+    "route-queries.json": "33c0a404a2a29df82137701200502454a37e735f469b4fafa37f3ed2d6543dbf",
+    "generation-0.json": "56b8c84b292854864e6935a61fc521f25b916c1fdaee676058ea8f724b80bd1a",
+    "generation-1.json": "fa0ebcc2e1885c65c09fc4f13fe7698609fcdac993398a94d3a6ee37b7206742",
+    "example-routes.json": "95a0f2611bd268c60324604a019bd344db7fb378991034b908f1222972e04130"
+  }
+}

@@ -1,0 +1,164 @@
+{
+  "results": [
+    {
+      "case_id": "763b4286fbad9a9da88b05c5193e729a743e00489d7a93e95683e45a0a961ebe",
+      "source_sha256": "cfe1ce5f3543f3fd229a5872cc2eda5383a7c6fb61dad23d203db1a48564eaca",
+      "state": {
+        "room": [
+          0,
+          0,
+          225
+        ],
+        "x": 124,
+        "y": 49,
+        "dialogue": false,
+        "sword": true,
+        "health": 24,
+        "a_item": 1,
+        "b_item": 4
+      },
+      "goal": {
+        "room": [
+          0,
+          0,
+          225
+        ],
+        "x": 92,
+        "y": 26
+      },
+      "observed_previous_button": 0.0,
+      "queries": [
+        {
+          "pretend_previous_button": 0,
+          "action": [
+            4,
+            1
+          ]
+        },
+        {
+          "pretend_previous_button": 1,
+          "action": [
+            4,
+            0
+          ]
+        },
+        {
+          "pretend_previous_button": 2,
+          "action": [
+            4,
+            0
+          ]
+        }
+      ],
+      "replay_verified": true,
+      "environment_unchanged": true
+    },
+    {
+      "case_id": "e180088302d83494bdac016044b074f2a3f867c5f58f46834e5251accd07fcd0",
+      "source_sha256": "e47719b9b3ef1144c69c01fa94001afddf486cdff5644a4cef28978af7de3516",
+      "state": {
+        "room": [
+          0,
+          0,
+          241
+        ],
+        "x": 92,
+        "y": 96,
+        "dialogue": false,
+        "sword": true,
+        "health": 4,
+        "a_item": 1,
+        "b_item": 4
+      },
+      "goal": {
+        "room": [
+          0,
+          0,
+          241
+        ],
+        "x": 76,
+        "y": 87
+      },
+      "observed_previous_button": 0.0,
+      "queries": [
+        {
+          "pretend_previous_button": 0,
+          "action": [
+            2,
+            1
+          ]
+        },
+        {
+          "pretend_previous_button": 1,
+          "action": [
+            2,
+            0
+          ]
+        },
+        {
+          "pretend_previous_button": 2,
+          "action": [
+            3,
+            0
+          ]
+        }
+      ],
+      "replay_verified": true,
+      "environment_unchanged": true
+    },
+    {
+      "case_id": "c975b2fd3b62cc7b8aca751d66fab9427665066ee1f050199dc03bea350d3206",
+      "source_sha256": "027ff3dcbf8499a1fd0b6d9f0455bdd0dd908a96096094d19dac1304876cc44e",
+      "state": {
+        "room": [
+          0,
+          0,
+          226
+        ],
+        "x": 108,
+        "y": 130,
+        "dialogue": false,
+        "sword": true,
+        "health": 16,
+        "a_item": 1,
+        "b_item": 4
+      },
+      "goal": {
+        "room": [
+          0,
+          0,
+          242
+        ],
+        "x": 115,
+        "y": 62
+      },
+      "observed_previous_button": 0.0,
+      "queries": [
+        {
+          "pretend_previous_button": 0,
+          "action": [
+            4,
+            1
+          ]
+        },
+        {
+          "pretend_previous_button": 1,
+          "action": [
+            4,
+            0
+          ]
+        },
+        {
+          "pretend_previous_button": 2,
+          "action": [
+            4,
+            0
+          ]
+        }
+      ],
+      "replay_verified": true,
+      "environment_unchanged": true
+    }
+  ],
+  "interpretation": "Only the model input previous-button feature changes; queries never execute actions or alter environment state. Sensitivity demonstrates dependence on button history at these states, not that spoofing history is a safe remedy."
+}

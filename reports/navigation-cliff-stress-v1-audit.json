@@ -1,0 +1,669 @@
+{
+  "source_result_sha256": "204df77ff3ff3c9316284bffda057579b361d57ed45a9f9f48d1f2239eb53c2c",
+  "failures": [
+    {
+      "case_id": "house-cliff_entry-down",
+      "status": "navigation_timeout",
+      "damage": 0,
+      "position_changed": true,
+      "goals_completed": 1,
+      "goals_total": 2,
+      "active_goal_at_stop": 3,
+      "first_damage_goal_index": null,
+      "first_damage_step": null,
+      "first_damage_state": null,
+      "repeated_tail_positions": [
+        {
+          "room": [
+            0,
+            0,
+            226
+          ],
+          "x": 62,
+          "y": 64,
+          "observations": 32
+        }
+      ]
+    },
+    {
+      "case_id": "house-west_corridor-left",
+      "status": "success",
+      "damage": 4,
+      "position_changed": true,
+      "goals_completed": 2,
+      "goals_total": 2,
+      "active_goal_at_stop": 3,
+      "first_damage_goal_index": 3,
+      "first_damage_step": 70,
+      "first_damage_state": {
+        "room": [
+          0,
+          0,
+          226
+        ],
+        "x": 64,
+        "y": 64,
+        "dialogue": false,
+        "sword": true,
+        "health": 24,
+        "a_item": 1,
+        "b_item": 4
+      },
+      "repeated_tail_positions": [
+        {
+          "room": [
+            0,
+            0,
+            226
+          ],
+          "x": 26,
+          "y": 112,
+          "observations": 2
+        },
+        {
+          "room": [
+            0,
+            0,
+            226
+          ],
+          "x": 30,
+          "y": 112,
+          "observations": 2
+        },
+        {
+          "room": [
+            0,
+            0,
+            225
+          ],
+          "x": 130,
+          "y": 109,
+          "observations": 1
+        }
+      ]
+    },
+    {
+      "case_id": "house-upper_entry-up",
+      "status": "success",
+      "damage": 4,
+      "position_changed": true,
+      "goals_completed": 2,
+      "goals_total": 2,
+      "active_goal_at_stop": 3,
+      "first_damage_goal_index": 3,
+      "first_damage_step": 23,
+      "first_damage_state": {
+        "room": [
+          0,
+          0,
+          226
+        ],
+        "x": 64,
+        "y": 64,
+        "dialogue": false,
+        "sword": true,
+        "health": 24,
+        "a_item": 1,
+        "b_item": 4
+      },
+      "repeated_tail_positions": [
+        {
+          "room": [
+            0,
+            0,
+            225
+          ],
+          "x": 125,
+          "y": 77,
+          "observations": 1
+        },
+        {
+          "room": [
+            0,
+            0,
+            225
+          ],
+          "x": 125,
+          "y": 78,
+          "observations": 1
+        },
+        {
+          "room": [
+            0,
+            0,
+            225
+          ],
+          "x": 125,
+          "y": 82,
+          "observations": 1
+        }
+      ]
+    },
+    {
+      "case_id": "house-upper_entry-down",
+      "status": "success",
+      "damage": 4,
+      "position_changed": true,
+      "goals_completed": 2,
+      "goals_total": 2,
+      "active_goal_at_stop": 3,
+      "first_damage_goal_index": 3,
+      "first_damage_step": 24,
+      "first_damage_state": {
+        "room": [
+          0,
+          0,
+          226
+        ],
+        "x": 44,
+        "y": 64,
+        "dialogue": false,
+        "sword": true,
+        "health": 24,
+        "a_item": 1,
+        "b_item": 4
+      },
+      "repeated_tail_positions": [
+        {
+          "room": [
+            0,
+            0,
+            226
+          ],
+          "x": 28,
+          "y": 112,
+          "observations": 2
+        },
+        {
+          "room": [
+            0,
+            0,
+            225
+          ],
+          "x": 126,
+          "y": 89,
+          "observations": 1
+        },
+        {
+          "room": [
+            0,
+            0,
+            225
+          ],
+          "x": 126,
+          "y": 99,
+          "observations": 1
+        }
+      ]
+    },
+    {
+      "case_id": "house-upper_entry-left",
+      "status": "success",
+      "damage": 4,
+      "position_changed": true,
+      "goals_completed": 2,
+      "goals_total": 2,
+      "active_goal_at_stop": 3,
+      "first_damage_goal_index": 2,
+      "first_damage_step": 20,
+      "first_damage_state": {
+        "room": [
+          0,
+          0,
+          226
+        ],
+        "x": 54,
+        "y": 61,
+        "dialogue": false,
+        "sword": true,
+        "health": 24,
+        "a_item": 1,
+        "b_item": 4
+      },
+      "repeated_tail_positions": [
+        {
+          "room": [
+            0,
+            0,
+            226
+          ],
+          "x": 26,
+          "y": 112,
+          "observations": 2
+        },
+        {
+          "room": [
+            0,
+            0,
+            226
+          ],
+          "x": 30,
+          "y": 112,
+          "observations": 2
+        },
+        {
+          "room": [
+            0,
+            0,
+            225
+          ],
+          "x": 130,
+          "y": 109,
+          "observations": 1
+        }
+      ]
+    },
+    {
+      "case_id": "house-upper_entry-right",
+      "status": "success",
+      "damage": 4,
+      "position_changed": true,
+      "goals_completed": 2,
+      "goals_total": 2,
+      "active_goal_at_stop": 3,
+      "first_damage_goal_index": 3,
+      "first_damage_step": 20,
+      "first_damage_state": {
+        "room": [
+          0,
+          0,
+          226
+        ],
+        "x": 44,
+        "y": 61,
+        "dialogue": false,
+        "sword": true,
+        "health": 24,
+        "a_item": 1,
+        "b_item": 4
+      },
+      "repeated_tail_positions": [
+        {
+          "room": [
+            0,
+            0,
+            226
+          ],
+          "x": 28,
+          "y": 111,
+          "observations": 2
+        },
+        {
+          "room": [
+            0,
+            0,
+            225
+          ],
+          "x": 126,
+          "y": 98,
+          "observations": 1
+        },
+        {
+          "room": [
+            0,
+            0,
+            225
+          ],
+          "x": 126,
+          "y": 108,
+          "observations": 1
+        }
+      ]
+    },
+    {
+      "case_id": "house-return_entry-up",
+      "status": "success",
+      "damage": 4,
+      "position_changed": true,
+      "goals_completed": 1,
+      "goals_total": 1,
+      "active_goal_at_stop": 3,
+      "first_damage_goal_index": 3,
+      "first_damage_step": 20,
+      "first_damage_state": {
+        "room": [
+          0,
+          0,
+          226
+        ],
+        "x": 20,
+        "y": 62,
+        "dialogue": false,
+        "sword": true,
+        "health": 24,
+        "a_item": 1,
+        "b_item": 4
+      },
+      "repeated_tail_positions": [
+        {
+          "room": [
+            0,
+            0,
+            225
+          ],
+          "x": 125,
+          "y": 74,
+          "observations": 1
+        },
+        {
+          "room": [
+            0,
+            0,
+            225
+          ],
+          "x": 125,
+          "y": 78,
+          "observations": 1
+        },
+        {
+          "room": [
+            0,
+            0,
+            225
+          ],
+          "x": 125,
+          "y": 79,
+          "observations": 1
+        }
+      ]
+    },
+    {
+      "case_id": "beach-cliff_entry-down",
+      "status": "navigation_timeout",
+      "damage": 0,
+      "position_changed": true,
+      "goals_completed": 0,
+      "goals_total": 2,
+      "active_goal_at_stop": 2,
+      "first_damage_goal_index": null,
+      "first_damage_step": null,
+      "first_damage_state": null,
+      "repeated_tail_positions": [
+        {
+          "room": [
+            0,
+            0,
+            225
+          ],
+          "x": 75,
+          "y": 90,
+          "observations": 32
+        }
+      ]
+    },
+    {
+      "case_id": "beach-cliff_entry-left",
+      "status": "success",
+      "damage": 4,
+      "position_changed": true,
+      "goals_completed": 2,
+      "goals_total": 2,
+      "active_goal_at_stop": 3,
+      "first_damage_goal_index": 3,
+      "first_damage_step": 93,
+      "first_damage_state": {
+        "room": [
+          0,
+          0,
+          226
+        ],
+        "x": 58,
+        "y": 58,
+        "dialogue": false,
+        "sword": true,
+        "health": 12,
+        "a_item": 1,
+        "b_item": 4
+      },
+      "repeated_tail_positions": [
+        {
+          "room": [
+            0,
+            0,
+            225
+          ],
+          "x": 134,
+          "y": 105,
+          "observations": 1
+        },
+        {
+          "room": [
+            0,
+            0,
+            225
+          ],
+          "x": 134,
+          "y": 106,
+          "observations": 1
+        },
+        {
+          "room": [
+            0,
+            0,
+            225
+          ],
+          "x": 138,
+          "y": 106,
+          "observations": 1
+        }
+      ]
+    },
+    {
+      "case_id": "beach-west_corridor-left",
+      "status": "navigation_timeout",
+      "damage": 0,
+      "position_changed": true,
+      "goals_completed": 1,
+      "goals_total": 2,
+      "active_goal_at_stop": 3,
+      "first_damage_goal_index": null,
+      "first_damage_step": null,
+      "first_damage_state": null,
+      "repeated_tail_positions": [
+        {
+          "room": [
+            0,
+            0,
+            226
+          ],
+          "x": 64,
+          "y": 64,
+          "observations": 32
+        }
+      ]
+    },
+    {
+      "case_id": "beach-return_entry-right",
+      "status": "navigation_timeout",
+      "damage": 0,
+      "position_changed": true,
+      "goals_completed": 0,
+      "goals_total": 1,
+      "active_goal_at_stop": 3,
+      "first_damage_goal_index": null,
+      "first_damage_step": null,
+      "first_damage_state": null,
+      "repeated_tail_positions": [
+        {
+          "room": [
+            0,
+            0,
+            226
+          ],
+          "x": 73,
+          "y": 64,
+          "observations": 32
+        }
+      ]
+    },
+    {
+      "case_id": "approach-cliff_entry-down",
+      "status": "navigation_timeout",
+      "damage": 0,
+      "position_changed": true,
+      "goals_completed": 0,
+      "goals_total": 2,
+      "active_goal_at_stop": 2,
+      "first_damage_goal_index": null,
+      "first_damage_step": null,
+      "first_damage_state": null,
+      "repeated_tail_positions": [
+        {
+          "room": [
+            0,
+            0,
+            225
+          ],
+          "x": 130,
+          "y": 112,
+          "observations": 8
+        },
+        {
+          "room": [
+            0,
+            0,
+            225
+          ],
+          "x": 129,
+          "y": 112,
+          "observations": 8
+        },
+        {
+          "room": [
+            0,
+            0,
+            225
+          ],
+          "x": 125,
+          "y": 112,
+          "observations": 8
+        }
+      ]
+    },
+    {
+      "case_id": "approach-west_corridor-up",
+      "status": "success",
+      "damage": 4,
+      "position_changed": true,
+      "goals_completed": 2,
+      "goals_total": 2,
+      "active_goal_at_stop": 3,
+      "first_damage_goal_index": 3,
+      "first_damage_step": 72,
+      "first_damage_state": {
+        "room": [
+          0,
+          0,
+          226
+        ],
+        "x": 44,
+        "y": 59,
+        "dialogue": false,
+        "sword": true,
+        "health": 8,
+        "a_item": 1,
+        "b_item": 4
+      },
+      "repeated_tail_positions": [
+        {
+          "room": [
+            0,
+            0,
+            226
+          ],
+          "x": 24,
+          "y": 112,
+          "observations": 2
+        },
+        {
+          "room": [
+            0,
+            0,
+            226
+          ],
+          "x": 28,
+          "y": 112,
+          "observations": 2
+        },
+        {
+          "room": [
+            0,
+            0,
+            226
+          ],
+          "x": 29,
+          "y": 112,
+          "observations": 2
+        }
+      ]
+    },
+    {
+      "case_id": "approach-return_entry-up",
+      "status": "success",
+      "damage": 4,
+      "position_changed": true,
+      "goals_completed": 1,
+      "goals_total": 1,
+      "active_goal_at_stop": 3,
+      "first_damage_goal_index": 3,
+      "first_damage_step": 4,
+      "first_damage_state": {
+        "room": [
+          0,
+          0,
+          226
+        ],
+        "x": 60,
+        "y": 60,
+        "dialogue": false,
+        "sword": true,
+        "health": 8,
+        "a_item": 1,
+        "b_item": 4
+      },
+      "repeated_tail_positions": [
+        {
+          "room": [
+            0,
+            0,
+            225
+          ],
+          "x": 126,
+          "y": 88,
+          "observations": 1
+        },
+        {
+          "room": [
+            0,
+            0,
+            225
+          ],
+          "x": 126,
+          "y": 92,
+          "observations": 1
+        },
+        {
+          "room": [
+            0,
+            0,
+            225
+          ],
+          "x": 126,
+          "y": 93,
+          "observations": 1
+        }
+      ]
+    }
+  ],
+  "first_damage_by_goal": {
+    "3": 8,
+    "2": 1
+  },
+  "timeouts_by_goal": {
+    "3": 3,
+    "2": 2
+  },
+  "interpretation": "Goal index 2 is cliff approach; 3 is return. Physical setup changes position, time, facing and combat state; the audit identifies observed failure phases, not a proven causal mechanism.",
+  "training_performed": false,
+  "reserved_evaluation_used": false
+}

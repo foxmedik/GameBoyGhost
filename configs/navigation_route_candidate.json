@@ -1,0 +1,12 @@
+{
+  "schema": "navigation-route-candidate-v1",
+  "status": "rejected_promotion",
+  "policy_path": "runs/navigation-routes-v8/model/epoch-008.pt",
+  "policy_sha256": "7ac67a3411a6a26d05db2e54445913aa810da3dbf6ba3978e70dc949150c5b07",
+  "parent_sha256": "6d26dcd6a2d7b22c0681d7e7a0c9b9d3f27c9d8caccbeca94426be0da97fc062",
+  "result": "reports/navigation-routes-v8.json",
+  "previous_result": "reports/navigation-routes-v7.json",
+  "selection_unchanged": "configs/navigation_experiment.json",
+  "reason": "Verified cliff demonstrations collected, but learned cliff paths still time out and two westbound successes are lost.",
+  "reserved_evaluation_used": false
+}

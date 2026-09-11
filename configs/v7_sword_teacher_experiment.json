@@ -1,0 +1,12 @@
+{
+  "status": "rejected_for_collection",
+  "result": "reports/v7-sword-teacher-v1.json",
+  "audit": "reports/v7-sword-teacher-v1-audit.json",
+  "diagnostic": "reports/v7-sword-button-history.json",
+  "matched_cases": 48,
+  "rollouts": 96,
+  "training_performed": false,
+  "demonstrations_curated": false,
+  "selection_changed": false,
+  "reason": "About 60% fewer swings, but 11 lost successes, 12 raw damage units and one new death."
+}

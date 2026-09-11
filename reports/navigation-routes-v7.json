@@ -1,0 +1,2018 @@
+{
+  "retired_cohorts": [
+    "00bce352d0057c8a2130750897efc6c9277f5e2e5cfb4143ea4ac9dd70865777",
+    "0207e34c3cea9005963ca554f47c613a7e0fb9c18c9b6596bf1b5cdd582b9035",
+    "022294c19835f5a56095d1165def92d94ab90b7dee1bbf134466407809a6bde5",
+    "02d93c611edd2aa908feae2a7fd2b67b290678ac8e97f7b52d1bd2c7a8c1993a",
+    "05272083f4fc487fb66fc2b4d5fedecae0afb510f84cd6e186bf5982b09020ad",
+    "08a4c5c3a36d3128bb64004c8af7022a9f2b069414ba42a88b43c28c12a6fbb9",
+    "08f9f766272b5a9448f3945fcd1b49e31b202cc1d0f4c78e9e37c9babd6a4b61",
+    "0c360793b0eb140de64fb7e4b8245016a414550b27b1cd662c9ba0ce9099b47d",
+    "107a0eb6adb33a92f9bc0f67f1476db79d3403ddb710da9c0e9061e6ab189e9d",
+    "1294d8ef3f6299376ebed252ce4734091d0219ae53014173afb142e79fb86181",
+    "1a13ca98c07bedd92d7d2640ea565129baccec472974c8be80171aa739531874",
+    "1fc1f2192326e60efb7e273c2e119c4f2c4e0a6864f6f4028b73935f1f73cdd9",
+    "1fd03b120a14e11a565a6f662c05b7fb23cb30a2bf9116d7ff4f8b887fe2b35f",
+    "20989e9508b45c0ec3e975f7f7cf1aa86086aca757936261ea4d5854d1811c7f",
+    "24d5437939246edaedb20b72acc5678dc834656df85ed44f5c27eb35768e5401",
+    "2506f5fb6d212aa5e6dd02e515c4715acf8da275ebfa16d58f2f576f210d0741",
+    "258ef7eaeff5380b33b81db15750ab25cffc9122a70bca30fe072efe3c66ecfa",
+    "25be3d8b63084e7bc40d2b6eac776627a5a22f4ac107d06dc82bcb7c3d74bb92",
+    "28b667a5da6f53d685813acb3cd31477df65244be70d6e476a1fe52dad50da26",
+    "29dd9833bc8b1ed4a4e9be2b3654457eb9200f4ccebae4f31dee1201e71f5073",
+    "2a30401c0352d6b116d090875e292ed8ebaf3d4470e53b0f0e1f612b99e6b5c5",
+    "2bd606d840abc1f1f8deee8b22d9130940288996e96926ded0730e13355e3257",
+    "2d36d2331a07a570e929ee56c934b62f8d80a74a5ece4b8077df47063ecb206f",
+    "2ea30382d8080225306013e97fe14e299125c4f8c5716221e38d8b2d2a7ceddb",
+    "2f8ecb97f85de29719f575a9eddc9307f0fe462045eddc86a751d5cdcfef9494",
+    "30916b19e5c6732ceee3d111c75ea036d1eba49ffd75558c03a84e182e8775f7",
+    "33867bb603ca87d14b7e41502afce55f0ad40572d7c65c35f188f1edb35a6a22",
+    "3ce68a0df52b64efe21f1afa18f8672def2c772d65c110b095452ff01bc618a7",
+    "3e5e6c5514d755ea4c70113a63f31f2651c07ec409f5c35b3266fcffcc7cf794",
+    "48b3784e6434030be466984002546af5d11010103400182ef7934bb6aab3ce11",
+    "49bde407c07fafd376b8895c837e3c0c992b0657e12f4d1ccba6523918f9a4a7",
+    "4a480134db9cd17254fa8d0d22d22b50b65970ff8f9b8e7e86d2af20d01741cf",
+    "4a63a5bd6eaffdf14ddeb027e20a67b9c0194ce4ee5a388c7f79c0f75bbe27b5",
+    "4aa70fdc57a00f41cad1f7bd73a2f9d9ec31f35dca05a089503d339bee10629f",
+    "5047337f1311cdff28b7608e85e9588e323a12c0612352603bba29ee9b37d108",
+    "5184ea0191d1ef926087c70ca841082a53dc140cd48c87e78804ee90172739d7",
+    "526df89cc43fda3c2f762248bb735507d417d85e07f1f8c64ead89a4a3013be6",
+    "54d7d195be5ab8d8d7af446f9427a0faf30839f273863519ddde5cb514497330",
+    "55bb73e5cf9013e291de18d20d37027e036966f76af2b013339c923d8e8bedf4",
+    "5640f9835735089608f7690c51f113b168b4745d50a43f50908391b992bc35e7",
+    "585bd50aedcfe51bf3b59e17dd668a433844297b20fe00059e37aa6f82c5f3c2",
+    "596b603964d3fdf7399edfe3f73818cb625708e5452ce840335ad613f834509a",
+    "5d1f1bb1da2415be2a99bd2f0dce32f06e4fe6cb4e00ee62fd478d0f90b3aab1",
+    "5f801420861c26561933b0ce007e904534b623c240b3bbf73feadde9632886ed",
+    "65f5d71af81a8e9d9f6499ca135b7353edcf29c635034db1fc66487b72e88675",
+    "66b920be613b2f91d5151b810026d57fbd6e294f214b75b26923054a76b7403c",
+    "6cef7a034fcd4453bb0fd66012c1c81688cdee3a7f9b7b5a5fbfaf81dd986cd3",
+    "6f14c90318d82ffb627067abcffa1c0cbd265edc4bde2ef0cd30aedb802ce4e3",
+    "7a423f588129d063a4e5371c5f381fd077094399ae90ebc96e7b62ba0671235c",
+    "80f84a317294fb9b1943e01959fbbc124febf744150707ed52023c0a5400b8f6",
+    "84d24fe9593f7047cbcf0d852614104ea82b97924f5f36f8679cbc97d29c0901",
+    "8c16c66650aa428091f1cc2ff200b71f4505488b1c50f29e6e798470785c411b",
+    "956cf12c8069f4f35f16f319578ca63469587883827b7929868706f3e9efd9a0",
+    "95900c68b1bdcf90c0fd6e13c54262e4be1cf0286df50d558fd7122fd05b5b35",
+    "9c23496f3c5f22373c90ee9dd63629355379ee8ddb587fe3388a4452e92ca845",
+    "9d53ba81f6cf5b83cc79798b3e5c11aba1b351e40e0c43147d03544ae7cd0e36",
+    "9fe6042e581625626e65753cd5ea7dbccefca3213e789299d8496030527813ba",
+    "a0b216192658e3dc986a21a82dee8cd74780e86c009a92dda7e9d1f5478c3064",
+    "a0c0c255417c3f526a31d65ca2e70ae83d21fdd8459d5d3e975c034c5621fd78",
+    "a12c8834c1f7e2cce754adced434b445ecdda10e11e58f0f8492c26200b4f032",
+    "a2387fe5953e4e11ffc41b73cce17c231310d831017f2ebde7ae564b9545d2f3",
+    "a45e390ff963573ecd7b336a819ed345e50e45ab1cb70652a8cc6fd99830c19b",
+    "a775c0d6d3f8abe3d2ed2e887ed7ec088279acf16035dec82db140945935d49c",
+    "a882463ddabb3eb24a1de03bfdc9723698b00d55971dc814ff3664043dc6fc71",
+    "a90c4849378b383fffcb327f2bbde2721b0287a9ffdc648baf68d40246601596",
+    "a9301d9be8bb280d853ede39f2576fc12126c7af1fdfe9fb1ba793158fac5347",
+    "ac0a3c111327d8d9bde10ac5342f1826f5ea1b3d8eb8130aa2187ff68677bd18",
+    "aecb2f285b5eaed46f0eec58729cbf0b1ae418506151fa29f0445f7f6ae2c53c",
+    "b0c03cc35165a5f9faace3570cb6dfc1e0c47225ec6d554f8517164633010dbe",
+    "b19a824f8066667e1f4960129e3351afcf6526932cdd66f7723f29a252e63a60",
+    "b98df47b961cd0dada7811404186d180b615aa3dddcbe5078345375ca54ffc8c",
+    "bc23649632946c9a1723c6be28e2ebed51df06f0633f1d2d100db72b37fb9e22",
+    "c5176b82a73e9345d12337f0a927c2521be3c94222043132ae1c1aae6234abee",
+    "c6d5be898b54648880d31e1aff476e066c4127b6c69d1c8fa2a3c3ec017e6218",
+    "cc2093b9ca76445d22ecb603f1b43933216f1a62229d6a9165896a90235503a2",
+    "cc561b3bc43ca5e5185b2091f5f16d92b1a001771fdff232e111d1a35aca3077",
+    "cca76915c0abd52fab72ce372324a409bd359af398a63b5c18a88417bbf361a2",
+    "d62bf3d28d70375d8e5c9f91ce579d5d94bae58e2b59aee824af2f290fff6880",
+    "d70a38a1430bb7de8823d4750023f970502cda6aaa475a31906e82258a3a62f2",
+    "da09ad4762da3422dafb6abc29cedbfdfafad8f776baef1fc7fb053aa92743ce",
+    "e3913e845ce2098a2cb32927c0a9fb66035b6e83ecddb6e8eafcd5aeba541423",
+    "e67a96439046ce105f1efe7a1b97cc76fac72a310b8ada164f3e580e4909b791",
+    "e7b8311b1662128ea2ac5188e04b669b53491922a55f86d74d147beaed79642a",
+    "f3c49b8090f1112ada7d4b162904dfca8cd30196ce6637e8eaf7cf68b8818aeb",
+    "fd82840fb36608c3e9cb87198fd8fb1ce866d3e5016605699ef114e41217aec2",
+    "ffdb0dc9e0239b5264c263b3a62cb3a7ec1306da15c1faeac55e65f474bf8770"
+  ],
+  "schema": "navigation-route-experiment-v1",
+  "parent_sha256": "0b5fcd25645a00b6559284599ee587df1c3e81a8e4f89e94cb9f2b465c6f7559",
+  "candidate_path": "runs/navigation-routes-v7/model/epoch-008.pt",
+  "candidate_sha256": "6d26dcd6a2d7b22c0681d7e7a0c9b9d3f27c9d8caccbeca94426be0da97fc062",
+  "baseline": {
+    "routes": [
+      {
+        "start": "house",
+        "status": "navigation_timeout",
+        "steps": 747,
+        "sword_step": 412,
+        "navigation_steps": 335,
+        "navigation_damage": 0,
+        "progress": {
+          "cursor": 2,
+          "leg_steps": 256,
+          "leg_start": 491,
+          "completed": [
+            {
+              "index": 0,
+              "step": 461,
+              "actions": 49,
+              "room": [
+                0,
+                0,
+                226
+              ],
+              "x": 40,
+              "y": 125,
+              "health": 24
+            },
+            {
+              "index": 1,
+              "step": 491,
+              "actions": 30,
+              "room": [
+                0,
+                0,
+                226
+              ],
+              "x": 89,
+              "y": 99,
+              "health": 24
+            }
+          ]
+        },
+        "route_id": "room_loop",
+        "run_path": "runs/navigation-routes-v1/baseline/room_loop-house"
+      },
+      {
+        "start": "beach",
+        "status": "death",
+        "steps": 484,
+        "sword_step": 268,
+        "navigation_steps": 216,
+        "navigation_damage": 12,
+        "progress": {
+          "cursor": 2,
+          "leg_steps": 133,
+          "leg_start": 351,
+          "completed": [
+            {
+              "index": 0,
+              "step": 317,
+              "actions": 49,
+              "room": [
+                0,
+                0,
+                226
+              ],
+              "x": 40,
+              "y": 125,
+              "health": 12
+            },
+            {
+              "index": 1,
+              "step": 351,
+              "actions": 34,
+              "room": [
+                0,
+                0,
+                226
+              ],
+              "x": 83,
+              "y": 94,
+              "health": 8
+            }
+          ]
+        },
+        "route_id": "room_loop",
+        "run_path": "runs/navigation-routes-v1/baseline/room_loop-beach"
+      },
+      {
+        "start": "approach",
+        "status": "navigation_timeout",
+        "steps": 414,
+        "sword_step": 83,
+        "navigation_steps": 331,
+        "navigation_damage": 0,
+        "progress": {
+          "cursor": 2,
+          "leg_steps": 256,
+          "leg_start": 158,
+          "completed": [
+            {
+              "index": 0,
+              "step": 128,
+              "actions": 45,
+              "room": [
+                0,
+                0,
+                226
+              ],
+              "x": 40,
+              "y": 124,
+              "health": 8
+            },
+            {
+              "index": 1,
+              "step": 158,
+              "actions": 30,
+              "room": [
+                0,
+                0,
+                226
+              ],
+              "x": 90,
+              "y": 99,
+              "health": 8
+            }
+          ]
+        },
+        "route_id": "room_loop",
+        "run_path": "runs/navigation-routes-v1/baseline/room_loop-approach"
+      },
+      {
+        "start": "house",
+        "status": "navigation_timeout",
+        "steps": 734,
+        "sword_step": 412,
+        "navigation_steps": 322,
+        "navigation_damage": 0,
+        "progress": {
+          "cursor": 2,
+          "leg_steps": 256,
+          "leg_start": 478,
+          "completed": [
+            {
+              "index": 0,
+              "step": 461,
+              "actions": 49,
+              "room": [
+                0,
+                0,
+                226
+              ],
+              "x": 40,
+              "y": 125,
+              "health": 24
+            },
+            {
+              "index": 1,
+              "step": 478,
+              "actions": 17,
+              "room": [
+                0,
+                0,
+                242
+              ],
+              "x": 66,
+              "y": 24,
+              "health": 24
+            }
+          ]
+        },
+        "route_id": "beach_return",
+        "run_path": "runs/navigation-routes-v1/baseline/beach_return-house"
+      },
+      {
+        "start": "beach",
+        "status": "navigation_timeout",
+        "steps": 590,
+        "sword_step": 268,
+        "navigation_steps": 322,
+        "navigation_damage": 0,
+        "progress": {
+          "cursor": 2,
+          "leg_steps": 256,
+          "leg_start": 334,
+          "completed": [
+            {
+              "index": 0,
+              "step": 317,
+              "actions": 49,
+              "room": [
+                0,
+                0,
+                226
+              ],
+              "x": 40,
+              "y": 125,
+              "health": 12
+            },
+            {
+              "index": 1,
+              "step": 334,
+              "actions": 17,
+              "room": [
+                0,
+                0,
+                242
+              ],
+              "x": 66,
+              "y": 24,
+              "health": 12
+            }
+          ]
+        },
+        "route_id": "beach_return",
+        "run_path": "runs/navigation-routes-v1/baseline/beach_return-beach"
+      },
+      {
+        "start": "approach",
+        "status": "navigation_timeout",
+        "steps": 452,
+        "sword_step": 83,
+        "navigation_steps": 369,
+        "navigation_damage": 0,
+        "progress": {
+          "cursor": 3,
+          "leg_steps": 256,
+          "leg_start": 196,
+          "completed": [
+            {
+              "index": 0,
+              "step": 128,
+              "actions": 45,
+              "room": [
+                0,
+                0,
+                226
+              ],
+              "x": 40,
+              "y": 124,
+              "health": 8
+            },
+            {
+              "index": 1,
+              "step": 142,
+              "actions": 14,
+              "room": [
+                0,
+                0,
+                242
+              ],
+              "x": 64,
+              "y": 19,
+              "health": 8
+            },
+            {
+              "index": 2,
+              "step": 196,
+              "actions": 54,
+              "room": [
+                0,
+                0,
+                242
+              ],
+              "x": 113,
+              "y": 91,
+              "health": 8
+            }
+          ]
+        },
+        "route_id": "beach_return",
+        "run_path": "runs/navigation-routes-v1/baseline/beach_return-approach"
+      },
+      {
+        "start": "house",
+        "status": "navigation_timeout",
+        "steps": 742,
+        "sword_step": 412,
+        "navigation_steps": 330,
+        "navigation_damage": 0,
+        "progress": {
+          "cursor": 2,
+          "leg_steps": 256,
+          "leg_start": 486,
+          "completed": [
+            {
+              "index": 0,
+              "step": 461,
+              "actions": 49,
+              "room": [
+                0,
+                0,
+                226
+              ],
+              "x": 40,
+              "y": 125,
+              "health": 24
+            },
+            {
+              "index": 1,
+              "step": 486,
+              "actions": 25,
+              "room": [
+                0,
+                0,
+                225
+              ],
+              "x": 139,
+              "y": 110,
+              "health": 24
+            }
+          ]
+        },
+        "route_id": "west_return",
+        "run_path": "runs/navigation-routes-v1/baseline/west_return-house"
+      },
+      {
+        "start": "beach",
+        "status": "navigation_timeout",
+        "steps": 599,
+        "sword_step": 268,
+        "navigation_steps": 331,
+        "navigation_damage": 4,
+        "progress": {
+          "cursor": 2,
+          "leg_steps": 256,
+          "leg_start": 343,
+          "completed": [
+            {
+              "index": 0,
+              "step": 317,
+              "actions": 49,
+              "room": [
+                0,
+                0,
+                226
+              ],
+              "x": 40,
+              "y": 125,
+              "health": 12
+            },
+            {
+              "index": 1,
+              "step": 343,
+              "actions": 26,
+              "room": [
+                0,
+                0,
+                225
+              ],
+              "x": 136,
+              "y": 111,
+              "health": 8
+            }
+          ]
+        },
+        "route_id": "west_return",
+        "run_path": "runs/navigation-routes-v1/baseline/west_return-beach"
+      },
+      {
+        "start": "approach",
+        "status": "navigation_timeout",
+        "steps": 468,
+        "sword_step": 83,
+        "navigation_steps": 385,
+        "navigation_damage": 4,
+        "progress": {
+          "cursor": 2,
+          "leg_steps": 256,
+          "leg_start": 212,
+          "completed": [
+            {
+              "index": 0,
+              "step": 128,
+              "actions": 45,
+              "room": [
+                0,
+                0,
+                226
+              ],
+              "x": 40,
+              "y": 124,
+              "health": 8
+            },
+            {
+              "index": 1,
+              "step": 212,
+              "actions": 84,
+              "room": [
+                0,
+                0,
+                225
+              ],
+              "x": 137,
+              "y": 112,
+              "health": 4
+            }
+          ]
+        },
+        "route_id": "west_return",
+        "run_path": "runs/navigation-routes-v1/baseline/west_return-approach"
+      }
+    ],
+    "complete": 0,
+    "cases": 9,
+    "goals_completed": 19,
+    "damage": 20,
+    "deaths": 1
+  },
+  "candidate": {
+    "routes": [
+      {
+        "start": "house",
+        "status": "navigation_timeout",
+        "steps": 747,
+        "sword_step": 412,
+        "navigation_steps": 335,
+        "navigation_damage": 0,
+        "progress": {
+          "cursor": 2,
+          "leg_steps": 256,
+          "leg_start": 491,
+          "completed": [
+            {
+              "index": 0,
+              "step": 461,
+              "actions": 49,
+              "room": [
+                0,
+                0,
+                226
+              ],
+              "x": 40,
+              "y": 125,
+              "health": 24
+            },
+            {
+              "index": 1,
+              "step": 491,
+              "actions": 30,
+              "room": [
+                0,
+                0,
+                226
+              ],
+              "x": 89,
+              "y": 99,
+              "health": 24
+            }
+          ]
+        },
+        "route_id": "room_loop",
+        "run_path": "runs/navigation-routes-v7/candidate/room_loop-house"
+      },
+      {
+        "start": "beach",
+        "status": "navigation_timeout",
+        "steps": 603,
+        "sword_step": 268,
+        "navigation_steps": 335,
+        "navigation_damage": 0,
+        "progress": {
+          "cursor": 2,
+          "leg_steps": 256,
+          "leg_start": 347,
+          "completed": [
+            {
+              "index": 0,
+              "step": 317,
+              "actions": 49,
+              "room": [
+                0,
+                0,
+                226
+              ],
+              "x": 40,
+              "y": 125,
+              "health": 12
+            },
+            {
+              "index": 1,
+              "step": 347,
+              "actions": 30,
+              "room": [
+                0,
+                0,
+                226
+              ],
+              "x": 89,
+              "y": 99,
+              "health": 12
+            }
+          ]
+        },
+        "route_id": "room_loop",
+        "run_path": "runs/navigation-routes-v7/candidate/room_loop-beach"
+      },
+      {
+        "start": "approach",
+        "status": "navigation_timeout",
+        "steps": 414,
+        "sword_step": 83,
+        "navigation_steps": 331,
+        "navigation_damage": 0,
+        "progress": {
+          "cursor": 2,
+          "leg_steps": 256,
+          "leg_start": 158,
+          "completed": [
+            {
+              "index": 0,
+              "step": 128,
+              "actions": 45,
+              "room": [
+                0,
+                0,
+                226
+              ],
+              "x": 40,
+              "y": 124,
+              "health": 8
+            },
+            {
+              "index": 1,
+              "step": 158,
+              "actions": 30,
+              "room": [
+                0,
+                0,
+                226
+              ],
+              "x": 90,
+              "y": 99,
+              "health": 8
+            }
+          ]
+        },
+        "route_id": "room_loop",
+        "run_path": "runs/navigation-routes-v7/candidate/room_loop-approach"
+      },
+      {
+        "start": "house",
+        "status": "success",
+        "steps": 589,
+        "sword_step": 412,
+        "navigation_steps": 177,
+        "navigation_damage": 0,
+        "progress": {
+          "cursor": 4,
+          "leg_steps": 0,
+          "leg_start": 589,
+          "completed": [
+            {
+              "index": 0,
+              "step": 461,
+              "actions": 49,
+              "room": [
+                0,
+                0,
+                226
+              ],
+              "x": 40,
+              "y": 125,
+              "health": 24
+            },
+            {
+              "index": 1,
+              "step": 478,
+              "actions": 17,
+              "room": [
+                0,
+                0,
+                242
+              ],
+              "x": 66,
+              "y": 24,
+              "health": 24
+            },
+            {
+              "index": 2,
+              "step": 527,
+              "actions": 49,
+              "room": [
+                0,
+                0,
+                242
+              ],
+              "x": 113,
+              "y": 88,
+              "health": 24
+            },
+            {
+              "index": 3,
+              "step": 589,
+              "actions": 62,
+              "room": [
+                0,
+                0,
+                226
+              ],
+              "x": 39,
+              "y": 125,
+              "health": 24
+            }
+          ]
+        },
+        "route_id": "beach_return",
+        "run_path": "runs/navigation-routes-v7/candidate/beach_return-house"
+      },
+      {
+        "start": "beach",
+        "status": "success",
+        "steps": 445,
+        "sword_step": 268,
+        "navigation_steps": 177,
+        "navigation_damage": 0,
+        "progress": {
+          "cursor": 4,
+          "leg_steps": 0,
+          "leg_start": 445,
+          "completed": [
+            {
+              "index": 0,
+              "step": 317,
+              "actions": 49,
+              "room": [
+                0,
+                0,
+                226
+              ],
+              "x": 40,
+              "y": 125,
+              "health": 12
+            },
+            {
+              "index": 1,
+              "step": 334,
+              "actions": 17,
+              "room": [
+                0,
+                0,
+                242
+              ],
+              "x": 66,
+              "y": 24,
+              "health": 12
+            },
+            {
+              "index": 2,
+              "step": 383,
+              "actions": 49,
+              "room": [
+                0,
+                0,
+                242
+              ],
+              "x": 114,
+              "y": 87,
+              "health": 12
+            },
+            {
+              "index": 3,
+              "step": 445,
+              "actions": 62,
+              "room": [
+                0,
+                0,
+                226
+              ],
+              "x": 40,
+              "y": 125,
+              "health": 12
+            }
+          ]
+        },
+        "route_id": "beach_return",
+        "run_path": "runs/navigation-routes-v7/candidate/beach_return-beach"
+      },
+      {
+        "start": "approach",
+        "status": "success",
+        "steps": 260,
+        "sword_step": 83,
+        "navigation_steps": 177,
+        "navigation_damage": 0,
+        "progress": {
+          "cursor": 4,
+          "leg_steps": 0,
+          "leg_start": 260,
+          "completed": [
+            {
+              "index": 0,
+              "step": 128,
+              "actions": 45,
+              "room": [
+                0,
+                0,
+                226
+              ],
+              "x": 40,
+              "y": 124,
+              "health": 8
+            },
+            {
+              "index": 1,
+              "step": 142,
+              "actions": 14,
+              "room": [
+                0,
+                0,
+                242
+              ],
+              "x": 64,
+              "y": 19,
+              "health": 8
+            },
+            {
+              "index": 2,
+              "step": 196,
+              "actions": 54,
+              "room": [
+                0,
+                0,
+                242
+              ],
+              "x": 113,
+              "y": 91,
+              "health": 8
+            },
+            {
+              "index": 3,
+              "step": 260,
+              "actions": 64,
+              "room": [
+                0,
+                0,
+                226
+              ],
+              "x": 37,
+              "y": 128,
+              "health": 8
+            }
+          ]
+        },
+        "route_id": "beach_return",
+        "run_path": "runs/navigation-routes-v7/candidate/beach_return-approach"
+      },
+      {
+        "start": "house",
+        "status": "success",
+        "steps": 589,
+        "sword_step": 412,
+        "navigation_steps": 177,
+        "navigation_damage": 0,
+        "progress": {
+          "cursor": 4,
+          "leg_steps": 0,
+          "leg_start": 589,
+          "completed": [
+            {
+              "index": 0,
+              "step": 461,
+              "actions": 49,
+              "room": [
+                0,
+                0,
+                226
+              ],
+              "x": 40,
+              "y": 125,
+              "health": 24
+            },
+            {
+              "index": 1,
+              "step": 486,
+              "actions": 25,
+              "room": [
+                0,
+                0,
+                225
+              ],
+              "x": 134,
+              "y": 115,
+              "health": 24
+            },
+            {
+              "index": 2,
+              "step": 529,
+              "actions": 43,
+              "room": [
+                0,
+                0,
+                225
+              ],
+              "x": 89,
+              "y": 51,
+              "health": 24
+            },
+            {
+              "index": 3,
+              "step": 589,
+              "actions": 60,
+              "room": [
+                0,
+                0,
+                226
+              ],
+              "x": 36,
+              "y": 97,
+              "health": 24
+            }
+          ]
+        },
+        "route_id": "west_return",
+        "run_path": "runs/navigation-routes-v7/candidate/west_return-house"
+      },
+      {
+        "start": "beach",
+        "status": "success",
+        "steps": 443,
+        "sword_step": 268,
+        "navigation_steps": 175,
+        "navigation_damage": 0,
+        "progress": {
+          "cursor": 4,
+          "leg_steps": 0,
+          "leg_start": 443,
+          "completed": [
+            {
+              "index": 0,
+              "step": 317,
+              "actions": 49,
+              "room": [
+                0,
+                0,
+                226
+              ],
+              "x": 40,
+              "y": 125,
+              "health": 12
+            },
+            {
+              "index": 1,
+              "step": 345,
+              "actions": 28,
+              "room": [
+                0,
+                0,
+                225
+              ],
+              "x": 131,
+              "y": 115,
+              "health": 12
+            },
+            {
+              "index": 2,
+              "step": 387,
+              "actions": 42,
+              "room": [
+                0,
+                0,
+                225
+              ],
+              "x": 91,
+              "y": 50,
+              "health": 12
+            },
+            {
+              "index": 3,
+              "step": 443,
+              "actions": 56,
+              "room": [
+                0,
+                0,
+                226
+              ],
+              "x": 36,
+              "y": 97,
+              "health": 12
+            }
+          ]
+        },
+        "route_id": "west_return",
+        "run_path": "runs/navigation-routes-v7/candidate/west_return-beach"
+      },
+      {
+        "start": "approach",
+        "status": "success",
+        "steps": 344,
+        "sword_step": 83,
+        "navigation_steps": 261,
+        "navigation_damage": 0,
+        "progress": {
+          "cursor": 4,
+          "leg_steps": 0,
+          "leg_start": 344,
+          "completed": [
+            {
+              "index": 0,
+              "step": 128,
+              "actions": 45,
+              "room": [
+                0,
+                0,
+                226
+              ],
+              "x": 40,
+              "y": 124,
+              "health": 8
+            },
+            {
+              "index": 1,
+              "step": 197,
+              "actions": 69,
+              "room": [
+                0,
+                0,
+                225
+              ],
+              "x": 135,
+              "y": 114,
+              "health": 8
+            },
+            {
+              "index": 2,
+              "step": 288,
+              "actions": 91,
+              "room": [
+                0,
+                0,
+                225
+              ],
+              "x": 90,
+              "y": 50,
+              "health": 8
+            },
+            {
+              "index": 3,
+              "step": 344,
+              "actions": 56,
+              "room": [
+                0,
+                0,
+                226
+              ],
+              "x": 34,
+              "y": 96,
+              "health": 8
+            }
+          ]
+        },
+        "route_id": "west_return",
+        "run_path": "runs/navigation-routes-v7/candidate/west_return-approach"
+      }
+    ],
+    "complete": 6,
+    "cases": 9,
+    "goals_completed": 30,
+    "damage": 0,
+    "deaths": 0
+  },
+  "local_panels": {
+    "original": {
+      "cases": 48,
+      "parent_successes": 46,
+      "corrected_successes": 46,
+      "gained": [],
+      "lost": [],
+      "corrected_deaths": 0,
+      "corrected_damage": 0,
+      "paired_start_fingerprints_match": true
+    },
+    "additional": {
+      "cases": 48,
+      "parent_successes": 39,
+      "corrected_successes": 43,
+      "gained": [
+        "185249f976ddb42f31e0c66816da116b0769fa2a20551fb3f784e518b10504cf",
+        "6a8e3e22a9553c1387bdd208e160b77cc0ab0c9f6a91d9bb02dfe538774fbf39",
+        "8c366af1f0272f0aa06cac4f890defaef1f0fde73320734248aaa0d3f3291bdf",
+        "db63b4241cea6782a1f1cba4ff6850dd2119b49521bdb89fc1244c6939ac5369"
+      ],
+      "lost": [],
+      "corrected_deaths": 0,
+      "corrected_damage": 0,
+      "paired_start_fingerprints_match": true
+    },
+    "fresh": {
+      "cases": 48,
+      "parent_successes": 46,
+      "corrected_successes": 46,
+      "gained": [],
+      "lost": [],
+      "corrected_deaths": 0,
+      "corrected_damage": 0,
+      "paired_start_fingerprints_match": true
+    }
+  },
+  "continuous": [
+    {
+      "start": "house",
+      "status": "success",
+      "navigation_steps": 49,
+      "navigation_damage": 0
+    },
+    {
+      "start": "beach",
+      "status": "success",
+      "navigation_steps": 49,
+      "navigation_damage": 0
+    },
+    {
+      "start": "approach",
+      "status": "success",
+      "navigation_steps": 45,
+      "navigation_damage": 0
+    }
+  ],
+  "collection": [
+    {
+      "id": "repair-anchor-0",
+      "successes": 1,
+      "attempts": 1
+    },
+    {
+      "id": "repair-origin-0-0",
+      "successes": 3,
+      "attempts": 3
+    },
+    {
+      "id": "repair-origin-1-0",
+      "successes": 3,
+      "attempts": 3
+    },
+    {
+      "id": "repair-origin-3-0",
+      "successes": 3,
+      "attempts": 3
+    },
+    {
+      "id": "repair-origin-5-0",
+      "successes": 3,
+      "attempts": 3
+    },
+    {
+      "id": "local-anchor-original-c514bfed35422d856df24fa41d8c42590b5fcbb0d14f66fcd4ce5df4aab4e8b7-0",
+      "successes": 1,
+      "attempts": 1
+    },
+    {
+      "id": "local-anchor-original-e180088302d83494bdac016044b074f2a3f867c5f58f46834e5251accd07fcd0-0",
+      "successes": 1,
+      "attempts": 1
+    },
+    {
+      "id": "local-anchor-original-4e074f66221feb03d7491e944fb130f804d654f4e4d3d76ba6cc9e744ecc2f3f-0",
+      "successes": 1,
+      "attempts": 1
+    },
+    {
+      "id": "local-anchor-original-71401310adf0d5f2caf594877bb8afd598eb75f0e1341f4dd0bf58654f342219-0",
+      "successes": 1,
+      "attempts": 1
+    },
+    {
+      "id": "local-anchor-original-1315b6fad2de99f0c53a4275af093a9276383345ebd87fa00c9b86e512e9993c-0",
+      "successes": 1,
+      "attempts": 1
+    },
+    {
+      "id": "local-anchor-original-0ab57b998db7ab46c88c63f0e161ca78c19d4f934b4db1658ba82185e0bf6e8a-0",
+      "successes": 1,
+      "attempts": 1
+    },
+    {
+      "id": "local-anchor-original-763b4286fbad9a9da88b05c5193e729a743e00489d7a93e95683e45a0a961ebe-0",
+      "successes": 1,
+      "attempts": 1
+    },
+    {
+      "id": "local-anchor-original-fd8126553553e2cdf5464402c56393f2348ddda055e7510709c7469f7f7149c6-0",
+      "successes": 1,
+      "attempts": 1
+    },
+    {
+      "id": "local-anchor-original-2b70007c69c8e7a7faa9399a6eea7e76e799e097862a30690fafdf1f90fa4f51-0",
+      "successes": 1,
+      "attempts": 1
+    },
+    {
+      "id": "local-anchor-original-c975b2fd3b62cc7b8aca751d66fab9427665066ee1f050199dc03bea350d3206-0",
+      "successes": 1,
+      "attempts": 1
+    },
+    {
+      "id": "local-anchor-original-794f8293f588cd17415b89276670985fc4abb0e99c5b1f71e0c127ed9c670b92-0",
+      "successes": 1,
+      "attempts": 1
+    },
+    {
+      "id": "local-anchor-original-21e44ee39a43bf74b79e58706b9e731adce10057db6b1a260ea084df1178bb4f-0",
+      "successes": 1,
+      "attempts": 1
+    },
+    {
+      "id": "local-anchor-original-3ddc99b981a418cf52a2faeb88faed00df62ad4883ce9d061e9d207467c177ce-0",
+      "successes": 1,
+      "attempts": 1
+    },
+    {
+      "id": "local-anchor-original-00cd12f19b25ca66db69ab95b7372e6dc60fb5fc3cfb7e335c215e507d27e7f9-0",
+      "successes": 1,
+      "attempts": 1
+    },
+    {
+      "id": "local-anchor-original-b85b0caa84179de927447b852d675786a5ad6a2ae7bbdeb9f6e8682e629b6544-0",
+      "successes": 1,
+      "attempts": 1
+    },
+    {
+      "id": "local-anchor-original-a06428175d9c08407412f9c7597b0e029b17674694cac167197e8ef1ace0a63c-0",
+      "successes": 1,
+      "attempts": 1
+    },
+    {
+      "id": "local-anchor-original-84b11d6f3a8d1eb58b6a20e74532605d67185f00cdb72728e89660de3562f8c8-0",
+      "successes": 1,
+      "attempts": 1
+    },
+    {
+      "id": "local-anchor-original-05e7becf726d17da466e7bf304c24561049a2a2f34d89f1de884d1e009c7a775-0",
+      "successes": 1,
+      "attempts": 1
+    },
+    {
+      "id": "local-anchor-original-070f7ef4aa8d508a0be93b0a1da0f1b9f278fa586503b17fcea02caec1cc6f79-0",
+      "successes": 1,
+      "attempts": 1
+    },
+    {
+      "id": "local-anchor-original-25d047d467a4c3875429734f1ffb178c280bc4300f576f4a8646a05a7372e168-0",
+      "successes": 1,
+      "attempts": 1
+    },
+    {
+      "id": "local-anchor-original-4813cd0df2bb0f56d014144ffdd16b2e9afab00e0aa1cd41a4cde5dbcc7be2d6-0",
+      "successes": 1,
+      "attempts": 1
+    },
+    {
+      "id": "local-anchor-original-24058fd98d2ebadb03ff56fd9a670e789593c51e7d1185a82d8e1f8fc4dca39d-0",
+      "successes": 1,
+      "attempts": 1
+    },
+    {
+      "id": "local-anchor-original-8807cdb8aab83fda1bd9625044343aba2984261b07ac2488365724f5cd47cb83-0",
+      "successes": 1,
+      "attempts": 1
+    },
+    {
+      "id": "local-anchor-original-5037f737bd4bbaf5098fcc09319025a98bd9fcdd3c23c36eb8be23407653ded2-0",
+      "successes": 1,
+      "attempts": 1
+    },
+    {
+      "id": "local-anchor-original-98d4f3095a331a550ad94a05c6df02131912309a766e6b88a832c8dc3e4e2fba-0",
+      "successes": 1,
+      "attempts": 1
+    },
+    {
+      "id": "local-anchor-original-ad819075151c6872ba4622cf0b6f321940e4f0ad957e2172c3da14a0bf760fcb-0",
+      "successes": 1,
+      "attempts": 1
+    },
+    {
+      "id": "local-anchor-original-4b4081e2a60168c63025c5daa64af8a2f737affe18d9dc161dc4676eec279e36-0",
+      "successes": 1,
+      "attempts": 1
+    },
+    {
+      "id": "local-anchor-original-115a958140affa52969204521ac4934d169732f7a07320674dbfe4cc24357748-0",
+      "successes": 1,
+      "attempts": 1
+    },
+    {
+      "id": "local-anchor-original-b273937f99db61c1330ef4dd88f5273323de640f83a10afb79c151c5df07f62f-0",
+      "successes": 1,
+      "attempts": 1
+    },
+    {
+      "id": "local-anchor-original-fd72547878df701417e5ec82ac3569e9b6825f2255c48c346c3d903082961ca0-0",
+      "successes": 1,
+      "attempts": 1
+    },
+    {
+      "id": "local-anchor-original-da94244b691252713e294f91f536d1338112050b4b4f117544c51d38650bc4ad-0",
+      "successes": 1,
+      "attempts": 1
+    },
+    {
+      "id": "local-anchor-original-4af142bb121399e015d5964eb3c98438b70a5079a52ede59438ae5a89fd2461e-0",
+      "successes": 1,
+      "attempts": 1
+    },
+    {
+      "id": "local-anchor-original-7ca8327a89569c1600002a6c5953fd39b8e34a98039d425d862eceb99db53944-0",
+      "successes": 1,
+      "attempts": 1
+    },
+    {
+      "id": "local-anchor-original-607b0d877a45c7a8baa429741f82ea7da5a6e0d1b7b3b5b3b201144d50840fd8-0",
+      "successes": 1,
+      "attempts": 1
+    },
+    {
+      "id": "local-anchor-original-2881dd94fbb424b1e28ab6e0464eb351a8d3aac7139f402cd9eaa25c848d0ce2-0",
+      "successes": 1,
+      "attempts": 1
+    },
+    {
+      "id": "local-anchor-original-c2d33e5c7c9523f2c88e2894d23d7297fffc74e807099721f330ed7685fdb94f-0",
+      "successes": 1,
+      "attempts": 1
+    },
+    {
+      "id": "local-anchor-original-952bf44235027d14b18fe2205c0e2d6a033a496f12f57555ab229c6f6d24026f-0",
+      "successes": 1,
+      "attempts": 1
+    },
+    {
+      "id": "local-anchor-original-09923eaa5ae5002074932221cb9fca869c8ef0fb4fff01532ae241fce799a8ea-0",
+      "successes": 1,
+      "attempts": 1
+    },
+    {
+      "id": "local-anchor-original-d83828f5fd478e038e4d2fa0f234802ad62b67e44645ced8f2c991e5531a304e-0",
+      "successes": 1,
+      "attempts": 1
+    },
+    {
+      "id": "local-anchor-original-8b9810daf06ac72753f05c0966cfafd8362cfe323cfb564aa6f7ef08f4bc54cd-0",
+      "successes": 1,
+      "attempts": 1
+    },
+    {
+      "id": "local-anchor-original-32dcd837315669f4a5fd9baddc2e5a782d57e6e7abc3852861698a8278ad8d6d-0",
+      "successes": 1,
+      "attempts": 1
+    },
+    {
+      "id": "local-anchor-original-f9034e2ffac86d626614b8756297f1d5acc16b52ace962722dd33f9ee121fd54-0",
+      "successes": 1,
+      "attempts": 1
+    },
+    {
+      "id": "local-anchor-original-f7a2cedad4d0a0c2e4f0f55e9d8152c3bf9d345cea6ae9d6d390af48920a383e-0",
+      "successes": 1,
+      "attempts": 1
+    },
+    {
+      "id": "local-anchor-original-95322f5fbb991b92b8c2c30406284f2b01d5e4f28facd535b24e7e3bd89cd108-0",
+      "successes": 1,
+      "attempts": 1
+    },
+    {
+      "id": "local-anchor-original-6bacd401212ddd37f0e87f60e1e1ebde9912ba632bcf8909d93379d3ca9c6169-0",
+      "successes": 1,
+      "attempts": 1
+    },
+    {
+      "id": "local-anchor-original-6bfd067a9019cf8c4fa35bda3b313b7fe314204152dcadd33ed8d98b5f64e7f7-0",
+      "successes": 1,
+      "attempts": 1
+    },
+    {
+      "id": "local-anchor-additional-529e97c2ce36c424b3eda3c8a7011eb31015a566daf9bf783828080acf2d2c6c-0",
+      "successes": 1,
+      "attempts": 1
+    },
+    {
+      "id": "local-anchor-additional-e5114a3b688ebe528ac06b19366c408f371803ab3f58969d94d9f9c07b2553e7-0",
+      "successes": 1,
+      "attempts": 1
+    },
+    {
+      "id": "local-anchor-additional-6a8e3e22a9553c1387bdd208e160b77cc0ab0c9f6a91d9bb02dfe538774fbf39-0",
+      "successes": 1,
+      "attempts": 1
+    },
+    {
+      "id": "local-anchor-additional-45dd1c23894897293dbd522c995507814858c5bf8a86afe7c42f48f4f1e671b5-0",
+      "successes": 1,
+      "attempts": 1
+    },
+    {
+      "id": "local-anchor-additional-f36cb061d45ad801c4c8b62574a2b326138c50a4b1029beccdbc6d6db026c6ac-0",
+      "successes": 1,
+      "attempts": 1
+    },
+    {
+      "id": "local-anchor-additional-181bd1a3acb911af3d0411e70bc7b2c38dec7ee832ef725d8f6814469acff6fe-0",
+      "successes": 1,
+      "attempts": 1
+    },
+    {
+      "id": "local-anchor-additional-3d0833d41cae9a697dc09c035d6e210b908da727e5ae8c45971f51bf28912b28-0",
+      "successes": 1,
+      "attempts": 1
+    },
+    {
+      "id": "local-anchor-additional-8c366af1f0272f0aa06cac4f890defaef1f0fde73320734248aaa0d3f3291bdf-0",
+      "successes": 1,
+      "attempts": 1
+    },
+    {
+      "id": "local-anchor-additional-8f7ad10d53f36b678c5eff3c2c9590f35b56d5b021a1efadef3368adc3f7491c-0",
+      "successes": 1,
+      "attempts": 1
+    },
+    {
+      "id": "local-anchor-additional-ed5f61561f90a22af4fa3bc75e663850c62292b5612c54a3f4aa337bb0f72277-0",
+      "successes": 1,
+      "attempts": 1
+    },
+    {
+      "id": "local-anchor-additional-3404850a6a2bf39db28b3e0295acc7b271b006af91e36d5755025a483d189ff8-0",
+      "successes": 1,
+      "attempts": 1
+    },
+    {
+      "id": "local-anchor-additional-bed9be3b3004732de38b9829dce85e4a03f5c65b8889fe4cfb7e6cc829df31de-0",
+      "successes": 1,
+      "attempts": 1
+    },
+    {
+      "id": "local-anchor-additional-f4e5316cd4d783f44192d006d71f8149925bbcf7360b2f716e3e44d9e0eef460-0",
+      "successes": 1,
+      "attempts": 1
+    },
+    {
+      "id": "local-anchor-additional-590321cca419e9f3f3450fe2b6bc4f8084a3682d08be209d3ad923116722ce20-0",
+      "successes": 1,
+      "attempts": 1
+    },
+    {
+      "id": "local-anchor-additional-246fe5bd6b3464cc424db9d3ca267ee892dbcad03e9684c5562b75ce08d19a92-0",
+      "successes": 1,
+      "attempts": 1
+    },
+    {
+      "id": "local-anchor-additional-2f8086bceb53b52bd1aa76d9f62944ca1a52dae533357a7db484dbf30d152f64-0",
+      "successes": 1,
+      "attempts": 1
+    },
+    {
+      "id": "local-anchor-additional-c13342d233598c8056af36e61c8d68f49289997c33e49e8f44142dee9c5db19e-0",
+      "successes": 1,
+      "attempts": 1
+    },
+    {
+      "id": "local-anchor-additional-b1fe901a7a469c36806c56e4a218e53fded345784f6d8fdd0bb846b73435afaa-0",
+      "successes": 1,
+      "attempts": 1
+    },
+    {
+      "id": "local-anchor-additional-38bf41890e9ca203f82ea9c434031a2220dd67890f71b6bbf0c2e17279603ca2-0",
+      "successes": 1,
+      "attempts": 1
+    },
+    {
+      "id": "local-anchor-additional-e4a3a8a5403c701c7324b538ef520b3b59ec422c7b2b093d1c6fbf4a6e78d967-0",
+      "successes": 1,
+      "attempts": 1
+    },
+    {
+      "id": "local-anchor-additional-5c9cba7c9516256297dfc59ad0e2e55fac182ed03594db9f9471489d310418af-0",
+      "successes": 1,
+      "attempts": 1
+    },
+    {
+      "id": "local-anchor-additional-b7bdea6de863592ce34a0058a1ed39aa806c33af65b530520dbf9b47bab88300-0",
+      "successes": 1,
+      "attempts": 1
+    },
+    {
+      "id": "local-anchor-additional-a4daf0ecb9ae344d9667b7e05d72c2251ccd42d3b0d00637b4f8c1d496581257-0",
+      "successes": 1,
+      "attempts": 1
+    },
+    {
+      "id": "local-anchor-additional-aec971bc786420a42d305720157684dbebb46aae4ac0b6c9b336e18aac9c90d8-0",
+      "successes": 1,
+      "attempts": 1
+    },
+    {
+      "id": "local-anchor-additional-72872b90ceba6decfca89733134193e473e1478fb0d8bf26a2d81def38f75342-0",
+      "successes": 1,
+      "attempts": 1
+    },
+    {
+      "id": "local-anchor-additional-20994c823ffd41c5dce1083163a37d6eb604d4fe43c54323033c300fb9d01465-0",
+      "successes": 1,
+      "attempts": 1
+    },
+    {
+      "id": "local-anchor-additional-49ee820f981e531f9676247a6db12802cc54f068ed293aa03adfb1e0614e9e14-0",
+      "successes": 1,
+      "attempts": 1
+    },
+    {
+      "id": "local-anchor-additional-27ef09684a164b58a0b6d3c757acbc3059255386a5350c7cfed7158e9a6ec3e0-0",
+      "successes": 1,
+      "attempts": 1
+    },
+    {
+      "id": "local-anchor-additional-6e8c0381ee1167125ab478b1acd0725fe0a4e4bdda62fcd18d7b1561966e4f82-0",
+      "successes": 1,
+      "attempts": 1
+    },
+    {
+      "id": "local-anchor-additional-db63b4241cea6782a1f1cba4ff6850dd2119b49521bdb89fc1244c6939ac5369-0",
+      "successes": 1,
+      "attempts": 1
+    },
+    {
+      "id": "local-anchor-additional-8bf9410a23f4308397796de3a3262d02830d3ed6098910b6231e5a4fef0fcfc9-0",
+      "successes": 1,
+      "attempts": 1
+    },
+    {
+      "id": "local-anchor-additional-6e8c9a5db191d5da8c1efd6570f4bc3c4f77a1e5b5bcda339ade846f03d7c273-0",
+      "successes": 1,
+      "attempts": 1
+    },
+    {
+      "id": "local-anchor-additional-185249f976ddb42f31e0c66816da116b0769fa2a20551fb3f784e518b10504cf-0",
+      "successes": 1,
+      "attempts": 1
+    },
+    {
+      "id": "local-anchor-additional-6dfdf7c8517f0e14bb594ab6bd38f66eb3fbb423547a151588c2c0cfae8f7a9b-0",
+      "successes": 1,
+      "attempts": 1
+    },
+    {
+      "id": "local-anchor-additional-3ecfc16784384624c51e8a3c97f4219c529ec1ae4863da55c3ed7d71cd225949-0",
+      "successes": 1,
+      "attempts": 1
+    },
+    {
+      "id": "local-anchor-additional-19e3435eecd8161928e379479b36ebc13878727e74ee691079b295bb70376f1e-0",
+      "successes": 1,
+      "attempts": 1
+    },
+    {
+      "id": "local-anchor-additional-716e36fc1954f99616b8021a7e4fb98282ffbe1b27a82edfb640956d905dc10e-0",
+      "successes": 1,
+      "attempts": 1
+    },
+    {
+      "id": "local-anchor-additional-2f10fabd4e46eb5ad857812eec89bdb3353a22964edaa9a464ed9da08c13ffd0-0",
+      "successes": 1,
+      "attempts": 1
+    },
+    {
+      "id": "local-anchor-additional-1c25ebb76ad969aa370a7a6b7f3f879715860e6383a9098a9797548f0c26dc9a-0",
+      "successes": 1,
+      "attempts": 1
+    },
+    {
+      "id": "local-anchor-additional-8e7ae990615f1f3cef35fa095217d1ac71e3027589ecbb5a0f89754cdcd5d7c8-0",
+      "successes": 1,
+      "attempts": 1
+    },
+    {
+      "id": "local-anchor-additional-8213a0ee5b8c23b92ea24adec80fe233d1772fb5847ccdbc3c374a8add4cfa0d-0",
+      "successes": 1,
+      "attempts": 1
+    },
+    {
+      "id": "local-anchor-additional-2fc1d939749440350b6c9273dd5ccdfa3e0768d6249a8c2845a60ce24d3f4986-0",
+      "successes": 1,
+      "attempts": 1
+    },
+    {
+      "id": "local-anchor-additional-4a6d3260ce83b149c595b9ca3873855864f8e6b354b28f9ba251c1f43226371b-0",
+      "successes": 1,
+      "attempts": 1
+    },
+    {
+      "id": "local-anchor-fresh-fd4a24e50a12ee4454bd8978ef5ada5d30898d86aca65b1967507adc57e25679-0",
+      "successes": 1,
+      "attempts": 1
+    },
+    {
+      "id": "local-anchor-fresh-4c08db4689f29aa28670d0f74522d124b4f144b3f9d0c8edbec20c74010ec69f-0",
+      "successes": 1,
+      "attempts": 1
+    },
+    {
+      "id": "local-anchor-fresh-7af653351ee3a79409e4523b55cecda9c6a31c1a65f47e166da0ede1819c8c2a-0",
+      "successes": 1,
+      "attempts": 1
+    },
+    {
+      "id": "local-anchor-fresh-86034c0f38e95db9f85527de04eddb2b771e178e60641c4b8a591c150b6375fe-0",
+      "successes": 1,
+      "attempts": 1
+    },
+    {
+      "id": "local-anchor-fresh-1956eaf690bdc4a4fb468a13ea94c08282c33d7e136dc063d03fe1851ea51cdc-0",
+      "successes": 1,
+      "attempts": 1
+    },
+    {
+      "id": "local-anchor-fresh-a413ff098667e507d56e0af6c49f6e4550d881f5ce9173e4d8281d698a1f47a4-0",
+      "successes": 1,
+      "attempts": 1
+    },
+    {
+      "id": "local-anchor-fresh-90adc7eb57d5e66f139f318afe53e716b2e230bbfed860670d156fffdd61ce6e-0",
+      "successes": 1,
+      "attempts": 1
+    },
+    {
+      "id": "local-anchor-fresh-cfd487c9a8529dd19c185441f8ac153ed66bac52212251c4eb858a430a756863-0",
+      "successes": 1,
+      "attempts": 1
+    },
+    {
+      "id": "local-anchor-fresh-5da7ea9a3e1a6287c12d093953bfd3e97cfac74cff203c2d90cfa704236a5200-0",
+      "successes": 1,
+      "attempts": 1
+    },
+    {
+      "id": "local-anchor-fresh-cbf4936d44c91de16e6fb2a3b79644f8c411d21e36463e0c634acd4753ed6cd0-0",
+      "successes": 1,
+      "attempts": 1
+    },
+    {
+      "id": "local-anchor-fresh-fa91afa9baceb1ed64d82e97644e1e6db0ccf94fb07cd028071c5e0365f3f195-0",
+      "successes": 1,
+      "attempts": 1
+    },
+    {
+      "id": "local-anchor-fresh-d5f00d7e9f023bd1bb87305aefd12456734ef575a04390ba3dba2e409ee972bf-0",
+      "successes": 1,
+      "attempts": 1
+    },
+    {
+      "id": "local-anchor-fresh-41a99c8a466fa33a3abcb98ede6a0d75dfa9eea2bd1fe5b8846710cd51c58731-0",
+      "successes": 1,
+      "attempts": 1
+    },
+    {
+      "id": "local-anchor-fresh-5eb57e88221db84e77cc6f5caee838315492e4df81ab9c3fc00cdb0f6c9869f9-0",
+      "successes": 1,
+      "attempts": 1
+    },
+    {
+      "id": "local-anchor-fresh-b57c2666e3e8c4c348019017008798b332acebbda42f8d769df6cca667087d41-0",
+      "successes": 1,
+      "attempts": 1
+    },
+    {
+      "id": "local-anchor-fresh-dad3b558322919defe8926a25933426511a07f4b3de69619e435c63cc6a58884-0",
+      "successes": 1,
+      "attempts": 1
+    },
+    {
+      "id": "local-anchor-fresh-228c47bc4d4a7d24e1084a092f90c958de05bd6f1587756485658a5022222002-0",
+      "successes": 1,
+      "attempts": 1
+    },
+    {
+      "id": "local-anchor-fresh-e269c0704b18235f8ac2c2582624ad88bc84f907fb5c699d5b64b240b96a35f8-0",
+      "successes": 1,
+      "attempts": 1
+    },
+    {
+      "id": "local-anchor-fresh-5992da40e8a629c82627d919a9eb96f2a92bb74ed9335150d01eb62faeceac5f-0",
+      "successes": 1,
+      "attempts": 1
+    },
+    {
+      "id": "local-anchor-fresh-0cea8d06a14ec1e4564afe883117c39dc0b6f3c779aa377025170e3ef72d6e88-0",
+      "successes": 1,
+      "attempts": 1
+    },
+    {
+      "id": "local-anchor-fresh-0ffae3c05e9b67bfc3b7e3fc4c7e9c0e9eba9ad0de803da9419e9733e766d83a-0",
+      "successes": 1,
+      "attempts": 1
+    },
+    {
+      "id": "local-anchor-fresh-5ebbc1be8b02c6afef338a06394e41da99b027294b8bd29349ff23c5bca4a302-0",
+      "successes": 1,
+      "attempts": 1
+    },
+    {
+      "id": "local-anchor-fresh-eb6fe691fe86c13f4b85ea39fdda3cba4dfe76026414650e7dff356fd4a181bd-0",
+      "successes": 1,
+      "attempts": 1
+    },
+    {
+      "id": "local-anchor-fresh-1ca42b50d5f5b019c1f346e1987217c6bac6c6eb3105ee1d53297974849180d3-0",
+      "successes": 1,
+      "attempts": 1
+    },
+    {
+      "id": "local-anchor-fresh-33723795813e3e7b06704c4e549ee5dabb37616e4733889443751b0709c8d475-0",
+      "successes": 1,
+      "attempts": 1
+    },
+    {
+      "id": "local-anchor-fresh-0e136f212b12dafdfd00a9e5ba272cae1f378e8ee8032ddea6e80bee30ad2121-0",
+      "successes": 1,
+      "attempts": 1
+    },
+    {
+      "id": "local-anchor-fresh-b9605e3ef0bb130bb003ba1ee61584ed222f87fbdf8bca77490cb4fabb53da08-0",
+      "successes": 1,
+      "attempts": 1
+    },
+    {
+      "id": "local-anchor-fresh-1dd78e52bcddd3ba165f148babbd03dda88e13e27ac6f18368d88f5da6833c76-0",
+      "successes": 1,
+      "attempts": 1
+    },
+    {
+      "id": "local-anchor-fresh-b0ebba6a4783b7ae297ff14540cc981b3583b2e11f03f685746f6e081f740b03-0",
+      "successes": 1,
+      "attempts": 1
+    },
+    {
+      "id": "local-anchor-fresh-307c799b5864646ad77b786b7d8467340d56f78c40450414fde966bef97cd438-0",
+      "successes": 1,
+      "attempts": 1
+    },
+    {
+      "id": "local-anchor-fresh-3607c894b8a915a0fdde7ec8ebab970464da30e50ea8f72a20ca51781ff908d5-0",
+      "successes": 1,
+      "attempts": 1
+    },
+    {
+      "id": "local-anchor-fresh-c23010e67942bc8d4ad865110694b83b1d106106cd8c927f32af6c9c32af267e-0",
+      "successes": 1,
+      "attempts": 1
+    },
+    {
+      "id": "local-anchor-fresh-197b68860c57b8cfbde87c4d5aa06889a376ac4d778ca14c4e8bc522a84e301b-0",
+      "successes": 1,
+      "attempts": 1
+    },
+    {
+      "id": "local-anchor-fresh-b1af12de0c7a78be0e60d26c77e19637cdebce5f03c5210f945ab4aa52883768-0",
+      "successes": 1,
+      "attempts": 1
+    },
+    {
+      "id": "local-anchor-fresh-89dad7a34f0e26a1a4a01c96b22d087cff6c9433765e5a96398ee9acf4aaab50-0",
+      "successes": 1,
+      "attempts": 1
+    },
+    {
+      "id": "local-anchor-fresh-51631fcb6a839532e3438719cd44d72d6017000d51d9c5f5a3bab682baf4a891-0",
+      "successes": 1,
+      "attempts": 1
+    },
+    {
+      "id": "local-anchor-fresh-8eeafacc78747ec386fccf76c0536bc5bef3d4fbaad4bcc9343b6f6a485636c0-0",
+      "successes": 1,
+      "attempts": 1
+    },
+    {
+      "id": "local-anchor-fresh-76c8d358e8bf49bebc4aa400116152ed7fa224487cfb20c12f079516a33edc5c-0",
+      "successes": 1,
+      "attempts": 1
+    },
+    {
+      "id": "local-anchor-fresh-898ead4573845c72272f67d0e03711e0480cfda90c0ad5926a7d5c161e05fe8f-0",
+      "successes": 1,
+      "attempts": 1
+    },
+    {
+      "id": "local-anchor-fresh-806b474cf66ed7e24856e36c219641da077bf6bf8bca2ec30b0b34566defc278-0",
+      "successes": 1,
+      "attempts": 1
+    },
+    {
+      "id": "local-anchor-fresh-8c79deedcf7273e0a7ad233b211b1c0a85fb53b2db8db2460ca839cc579b1f67-0",
+      "successes": 1,
+      "attempts": 1
+    },
+    {
+      "id": "local-anchor-fresh-981f8149647fd270666f2c5003af8437dcc1fa3340cb815a406ed930e98ef071-0",
+      "successes": 1,
+      "attempts": 1
+    },
+    {
+      "id": "local-anchor-fresh-5e22d73891c0e7e1f6594917af05f2a27fe120fdeb1d9022fe52603f4038ca34-0",
+      "successes": 1,
+      "attempts": 1
+    },
+    {
+      "id": "local-anchor-fresh-7a192f021b3fcf27bc19e70ca50e4a1cbb9a8008803f8ab79e12761f8b9ec87f-0",
+      "successes": 1,
+      "attempts": 1
+    },
+    {
+      "id": "local-anchor-fresh-c5fd4fa06143ba8f1b8895778bedd3187d1526bc4192f3414e098b4d8985017b-0",
+      "successes": 1,
+      "attempts": 1
+    },
+    {
+      "id": "local-anchor-fresh-f49bda234a90275504d0a788f3ed896810299bca814d35a880e2da18d8b37087-0",
+      "successes": 1,
+      "attempts": 1
+    },
+    {
+      "id": "repair-house-527-0",
+      "successes": 3,
+      "attempts": 8
+    },
+    {
+      "id": "repair-house-531-0",
+      "successes": 3,
+      "attempts": 9
+    },
+    {
+      "id": "repair-house-543-0",
+      "successes": 3,
+      "attempts": 8
+    },
+    {
+      "id": "repair-house-591-0",
+      "successes": 3,
+      "attempts": 9
+    },
+    {
+      "id": "beach-anchor-house-0-0",
+      "successes": 1,
+      "attempts": 1
+    },
+    {
+      "id": "beach-anchor-house-1-0",
+      "successes": 1,
+      "attempts": 1
+    },
+    {
+      "id": "beach-anchor-house-2-0",
+      "successes": 1,
+      "attempts": 1
+    },
+    {
+      "id": "beach-anchor-house-3-0",
+      "successes": 1,
+      "attempts": 1
+    },
+    {
+      "id": "beach-anchor-beach-0-0",
+      "successes": 1,
+      "attempts": 1
+    },
+    {
+      "id": "beach-anchor-beach-1-0",
+      "successes": 1,
+      "attempts": 1
+    },
+    {
+      "id": "beach-anchor-beach-2-0",
+      "successes": 1,
+      "attempts": 1
+    },
+    {
+      "id": "beach-anchor-beach-3-0",
+      "successes": 1,
+      "attempts": 1
+    },
+    {
+      "id": "beach-anchor-approach-0-0",
+      "successes": 1,
+      "attempts": 1
+    },
+    {
+      "id": "beach-anchor-approach-1-0",
+      "successes": 1,
+      "attempts": 1
+    },
+    {
+      "id": "beach-anchor-approach-2-0",
+      "successes": 1,
+      "attempts": 1
+    },
+    {
+      "id": "beach-anchor-approach-3-0",
+      "successes": 1,
+      "attempts": 1
+    },
+    {
+      "id": "west-anchor-house-0-0",
+      "successes": 1,
+      "attempts": 1
+    },
+    {
+      "id": "west-anchor-house-1-0",
+      "successes": 1,
+      "attempts": 1
+    },
+    {
+      "id": "west-anchor-house-2-0",
+      "successes": 1,
+      "attempts": 1
+    },
+    {
+      "id": "west-anchor-beach-0-0",
+      "successes": 1,
+      "attempts": 1
+    },
+    {
+      "id": "west-anchor-beach-1-0",
+      "successes": 1,
+      "attempts": 1
+    },
+    {
+      "id": "west-anchor-beach-2-0",
+      "successes": 1,
+      "attempts": 1
+    },
+    {
+      "id": "west-anchor-approach-0-0",
+      "successes": 1,
+      "attempts": 1
+    },
+    {
+      "id": "west-anchor-approach-1-0",
+      "successes": 1,
+      "attempts": 1
+    },
+    {
+      "id": "west-anchor-approach-2-0",
+      "successes": 1,
+      "attempts": 1
+    },
+    {
+      "id": "west-anchor-approach-3-0",
+      "successes": 1,
+      "attempts": 1
+    },
+    {
+      "id": "finish-repair-292-0",
+      "successes": 3,
+      "attempts": 102
+    },
+    {
+      "id": "finish-repair-294-0",
+      "successes": 2,
+      "attempts": 128
+    },
+    {
+      "id": "finish-repair-296-0",
+      "successes": 3,
+      "attempts": 102
+    },
+    {
+      "id": "finish-repair-300-0",
+      "successes": 3,
+      "attempts": 19
+    },
+    {
+      "id": "finish-repair-308-0",
+      "successes": 3,
+      "attempts": 19
+    },
+    {
+      "id": "finish-repair-340-0",
+      "successes": 3,
+      "attempts": 19
+    },
+    {
+      "id": "finish-repair-388-0",
+      "successes": 3,
+      "attempts": 19
+    }
+  ],
+  "training": {
+    "verified_paths": 202,
+    "raw_route_rows": 6773,
+    "target_unique_states": 4719,
+    "conflicting_states": 61,
+    "retention_rows": 346536,
+    "retention_demonstration_rows": 11171
+  },
+  "resume_verified": {
+    "exact_fields": [
+      "actions",
+      "fingerprint",
+      "steps",
+      "sword_step",
+      "navigation_steps",
+      "damage",
+      "navigation_damage",
+      "status",
+      "final_state",
+      "progress"
+    ],
+    "paused_step": 470,
+    "completed_goals_at_pause": 1
+  },
+  "gate": {
+    "more_complete_routes": true,
+    "no_route_success_lost": true,
+    "no_local_success_lost": true,
+    "zero_local_damage_and_deaths": true,
+    "zero_route_damage_and_deaths": true,
+    "original_continuous_chains_preserved": true,
+    "all_previous_candidate_routes_preserved": true,
+    "all_previous_safe_local_successes_preserved": true
+  },
+  "promoted": true,
+  "harness_privilege": "D",
+  "reserved_evaluation_used": false,
+  "completion_evaluated": false,
+  "interpretation": "Routes are scripted development training regressions. Goals and starting states are known; these scores do not establish held-out generalization or game completion."
+}
