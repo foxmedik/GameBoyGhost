@@ -6,6 +6,8 @@
 
 A reproducible Game Boy agent research project, beginning with Link's Awakening DX. Both v2 handoff documents are canonical requirements.
 
+Watch recorded training milestones on the [GameBoyGhost DX YouTube channel](https://www.youtube.com/@GameboyGhost-dx).
+
 Active work follows the [staged progression execution plan](docs/PROGRESSION_EXECUTION_PLAN.md): continuous Tail Key acquisition and Tail Cave entry, evidence-backed memory, and bounded skill improvements. The [new progression interface](docs/PROGRESSION_INTERFACE_V1.md) removes inventory assistance and adds physical equipping and an event journal; the quest itself remains unverified. Further optimizer work is paused until a measured progression blocker exists. The [persistent world memory](docs/WORLD_MEMORY_V1.md) now reconstructs directed connections and observation evidence from verified traces, with deterministic route queries across saved generations.
 
 For the current verified state, completed work, limitations, and the next milestones, see the [project status](docs/PROJECT_STATUS.md).
