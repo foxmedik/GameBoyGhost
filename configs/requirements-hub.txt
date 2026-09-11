@@ -1,0 +1,2 @@
+# Separate publishing environment; keep emulator/training dependencies unchanged.
+huggingface_hub==1.31.0
