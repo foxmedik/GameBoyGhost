@@ -59,3 +59,8 @@ route recovery, but none passes the broader regression gate.
 The [live-trajectory correction experiment](docs/NAVIGATION_LIVE_CORRECTION_V3.md)
 adds verified parent trajectories and off-route recoveries, restoring the
 additional panel without damage; one original regression still blocks promotion.
+
+The [Hugging Face dataset](https://huggingface.co/datasets/foxmedik/GameBoyGhost-LADX)
+is now published: 16,777,216 actions in 64 verified shards, with curated indexes
+and metadata. [Download the pinned release](docs/ARTIFACT_STORAGE.md). ROMs and
+reserved evaluation specifications are excluded.

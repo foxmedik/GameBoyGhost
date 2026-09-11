@@ -1,0 +1,14 @@
+{
+  "repo_id": "foxmedik/GameBoyGhost-LADX",
+  "revision": "ec397f19343bf83d4265ce616949c7ac411ec8a0",
+  "verified_files": 83,
+  "public": true,
+  "rows": 16777216,
+  "remote_hashes_match": true,
+  "episodes": 8133,
+  "raw_shards": 64,
+  "bytes": 3002305450,
+  "source_row_equality_verified": true,
+  "roms_included": false,
+  "reserved_evaluation_included": false
+}

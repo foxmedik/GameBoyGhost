@@ -1,0 +1,15 @@
+{
+  "source_repository": "https://github.com/foxmedik/GameBoyGhost",
+  "dataset_repository": "foxmedik/GameBoyGhost-LADX",
+  "dataset_url": "https://huggingface.co/datasets/foxmedik/GameBoyGhost-LADX",
+  "release": "ladx-collection-v1",
+  "local_release_path": "data/releases/ladx-collection-v1",
+  "upload_status": "verified",
+  "checkpoints": "local_only",
+  "dataset_revision": "ec397f19343bf83d4265ce616949c7ac411ec8a0",
+  "dataset_rows": 16777216,
+  "dataset_episodes": 8133,
+  "dataset_shards": 64,
+  "verified_files": 83,
+  "checksums_sha256": "078088e74252b0e13dc30a0828934e6bab9be6a1657cfda59d5e75f35aa14e3e"
+}
