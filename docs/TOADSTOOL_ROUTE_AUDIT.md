@@ -2,9 +2,15 @@
 
 ## Result
 
-The exact outdoor edge graph from the verified forest checkpoint does not reach the toadstool room. The route instead passes through a cave and requires pushing specific movable rock tiles to open the way. Ordinary room-distance navigation is insufficient.
+The complete route now succeeds in one continuous physical replay: forest checkpoint, cave entrance, user-traced crumbling-floor crossing, two verified block pushes, lower cave exit, Toadstool contact, and its unskippable message. The game writes `1` to `wHasToadstool` at `DB4B` only after the message has been advanced and the acquisition animation has settled. The final replay observes that value.
 
-This closes the first mapping pass. It does not claim that the toadstool has been reached or that the full route has been solved.
+The rendered evidence is intentionally excluded from Git with the other run outputs. Regenerate it with:
+
+```sh
+./.venv-ladx/bin/python scripts/record_toadstool_route.py
+```
+
+It writes `runs/videos/toadstool-full-route-v2/toadstool-full-route.mp4` and its manifest. The successful final state is `[0, 0, 80, 36, 49, 1]`, where the last field is `DB4B`.
 
 ## Confirmed target
 
@@ -67,7 +73,16 @@ At the right-hand entrance, the exact push sequence is:
 
 The runner records both grid changes before it may attempt the exit. `toadstool_stone_push_plan` encodes these two room-specific, verified actions; it does not infer a push order for other cave rooms.
 
-Once that skill reaches room `50`, stop adjacent to the source-defined toadstool position and separately validate physical pickup plus the `DB4B` transition. That pickup validation is the following step, not part of this audit.
+## Verified physical pickup
+
+The room-local planner reaches the clearing cell `(2,3)`. From its stable approach state, this physical sequence enters the Toadstool collision band:
+
+1. Hold up for 32 frames, left for 48 frames, then down for 22 frames.
+2. Hold down for four single frames. The fourth starts the entity's `0x68`-frame pickup timer at Link position `(36,49)`.
+3. Wait for `Dialog00F` to render. It is unskippable, so wait 120 frames before each deliberate one-frame `A` press.
+4. Once the dialog closes, wait for the remaining entity animation and require `DB4B == 1`.
+
+This sequence contains only rendered buttons and elapsed emulator frames. It does not assign inventory or progression RAM. `scripts/record_toadstool_route.py` implements it with assertions at collision start and completion so a future ROM or control regression fails visibly.
 
 ## Evidence
 
@@ -76,5 +91,6 @@ Once that skill reaches room `50`, stop adjacent to the source-defined toadstool
 - Aggregate checkpoint: `reports/progression-forest-progress-v1.json`
 - Toadstool placement: `references/LADX-Disassembly/src/data/entities/overworld.asm`
 - Toadstool pickup/latch: `references/LADX-Disassembly/src/code/entities/bank3.asm`
+- Complete physical replay: `scripts/record_toadstool_route.py` (generated manifest records `DB4B == 1`)
 - Forest redirection: `references/LADX-Disassembly/src/code/entities/05_tarin.asm` and `references/LADX-Disassembly/src/code/room_transition.asm`
 - Warp structure and trigger semantics: `references/LADX-Disassembly/src/constants/memory/wram.asm` and `references/LADX-Disassembly/src/code/bank0.asm`
