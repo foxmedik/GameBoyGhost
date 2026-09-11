@@ -17,6 +17,11 @@ BUTTONS=("up","down","left","right","a","b","start","select")
 TASK_FILE=ROOT/"configs/human_demo_tasks.json"
 def data_dir():
  p=Path.home()/"Library/Application Support/GameBoyGhost Demo Recorder"/"runs";p.mkdir(parents=True,exist_ok=True);return p
+def progress_file():return data_dir()/"progress.json"
+def read_progress():
+ try:return json.loads(progress_file().read_text())
+ except (FileNotFoundError,json.JSONDecodeError):return {}
+def write_progress(progress):progress_file().write_text(json.dumps(progress,indent=2,sort_keys=True))
 def local_ip():
  s=socket.socket(socket.AF_INET,socket.SOCK_DGRAM)
  try:
@@ -25,7 +30,7 @@ def local_ip():
 
 class App:
  def __init__(self):
-  self.tasks=json.loads(TASK_FILE.read_text())["tasks"];self.selected=0;self.boy=None;self.recording=False;self.ready=False;self.frame=0;self.session=None;self.actions=self.segments=self.tags=None;self.held=frozenset();self.seg=0;self.controllers=[];self.msg="Loading task preview…";self.q=queue.Queue();self.room=(0,0,0);self.world_room=0;self.xy=(0,0);self.on_studio=local_ip()=="192.168.50.27";self.previous_markers=set();self.countdown=0;self.controls_y=720;self.y_was_down=False;self.boxes={}
+  self.tasks=json.loads(TASK_FILE.read_text())["tasks"];self.selected=0;self.boy=None;self.recording=False;self.ready=False;self.frame=0;self.session=None;self.actions=self.segments=self.tags=None;self.held=frozenset();self.seg=0;self.controllers=[];self.msg="Loading task preview…";self.q=queue.Queue();self.room=(0,0,0);self.world_room=0;self.xy=(0,0);self.on_studio=local_ip()=="192.168.50.27";self.previous_markers=set();self.countdown=0;self.controls_y=720;self.y_was_down=False;self.boxes={};self.good_tags=0;self.bad_tags=0;self.tag_flash="";self.tag_flash_frames=0;self.delivery="Not sent"
   sdl2.SDL_Init(sdl2.SDL_INIT_VIDEO|sdl2.SDL_INIT_GAMECONTROLLER);ttf.TTF_Init();self.win=sdl2.SDL_CreateWindow(b"GameBoyGhost Demo Recorder",0x1FFF0000,0x1FFF0000,1280,900,sdl2.SDL_WINDOW_RESIZABLE);sdl2.SDL_SetWindowMinimumSize(self.win,960,760);self.r=sdl2.SDL_CreateRenderer(self.win,-1,sdl2.SDL_RENDERER_ACCELERATED);self.tex=sdl2.SDL_CreateTexture(self.r,sdl2.SDL_PIXELFORMAT_RGB24,sdl2.SDL_TEXTUREACCESS_STREAMING,160,144);self.font=ttf.TTF_OpenFont(b"/System/Library/Fonts/Supplemental/Arial.ttf",18)
   self.rescan_controllers()
   self.load_preview()
@@ -63,7 +68,7 @@ class App:
   if self.recording:return
   if not self.controller_status():self.msg="No controller detected. Pair it, then click RESCAN.";return
   task=self.tasks[self.selected];self.session=data_dir()/f"{task['id']}-{datetime.now().strftime('%Y%m%d-%H%M%S')}";(self.session/"frames").mkdir(parents=True);self.actions=(self.session/"actions.jsonl").open("x");self.segments=(self.session/"input_segments.jsonl").open("x");self.tags=(self.session/"tags.jsonl").open("x");self.boy.stop();self.load_preview()
-  self.recording=True;self.ready=False;self.frame=0;self.held=frozenset();self.seg=0;self.previous_markers=set();self.msg=f"Recording {task['title']}"
+  self.recording=True;self.ready=False;self.frame=0;self.held=frozenset();self.seg=0;self.previous_markers=set();self.good_tags=0;self.bad_tags=0;self.tag_flash="";self.tag_flash_frames=0;self.delivery="Recording locally";self.msg=f"Recording {task['title']}"
  def state_path(self):return ROOT/self.tasks[self.selected]["state"]
  def load_preview(self):
   self.boy=PyBoy(str(ROM),window="null");self.boy.set_emulation_speed(0)
@@ -87,23 +92,28 @@ class App:
   held,markers=self.inputs()
   new_markers=markers-self.previous_markers
   if "x_discard" in new_markers:self.discard();return
-  for marker in new_markers:self.tags.write(json.dumps({"frame":self.frame,"tag":marker,"task_id":self.tasks[self.selected]["id"]})+"\n")
+  for marker in new_markers:
+   self.tags.write(json.dumps({"frame":self.frame,"tag":marker,"task_id":self.tasks[self.selected]["id"]})+"\n")
+   if marker=="l2_good":self.good_tags+=1;self.tag_flash=f"GOOD TAG +1  ({self.good_tags})";self.tag_flash_frames=45
+   if marker=="r2_bad":self.bad_tags+=1;self.tag_flash=f"BAD TAG +1  ({self.bad_tags})";self.tag_flash_frames=45
   self.previous_markers=markers
   if held!=self.held:self.close_seg();self.held=held;self.seg=self.frame
   for b in BUTTONS:(self.boy.button_press if b in held else self.boy.button_release)(b)
-  self.boy.tick(1,render=True);m=self.boy.memory;self.room=tuple(int(m[a]) for a in (0xDBA5,0xFFF7,0xFFF6));self.world_room=int(m[0xFFF6] if self.room[0]==0 else m[0xDB9C]);self.xy=(int(m[0xFF98]),int(m[0xFF99]));state={"room":self.room,"world_room":self.world_room,"x":self.xy[0],"y":self.xy[1],"health":int(m[0xDB5A]),"toadstool":int(m[0xDB4B])};self.actions.write(json.dumps({"frame":self.frame,"buttons":sorted(held),"state":state})+"\n");Image.fromarray(self.boy.screen.ndarray[:,:,:3]).save(self.session/"frames"/f"{self.frame:08d}.png");self.frame+=1
+  self.boy.tick(1,render=True);m=self.boy.memory;self.room=tuple(int(m[a]) for a in (0xDBA5,0xFFF7,0xFFF6));self.world_room=int(m[0xFFF6] if self.room[0]==0 else m[0xDB9C]);self.xy=(int(m[0xFF98]),int(m[0xFF99]));state={"room":self.room,"world_room":self.world_room,"x":self.xy[0],"y":self.xy[1],"health":int(m[0xDB5A]),"toadstool":int(m[0xDB4B]),"sword_level":int(m[0xDB4E])};self.actions.write(json.dumps({"frame":self.frame,"buttons":sorted(held),"state":state})+"\n");Image.fromarray(self.boy.screen.ndarray[:,:,:3]).save(self.session/"frames"/f"{self.frame:08d}.png");self.frame+=1;self.tag_flash_frames=max(0,self.tag_flash_frames-1)
   if self.frame>=self.tasks[self.selected]["duration_seconds"]*60:self.end()
  def end(self):
   if not self.recording:return
-  task=self.tasks[self.selected];self.recording=False;self.close_seg();self.actions.close();self.segments.close();self.tags.close();self.boy.stop();(self.session/"manifest.json").write_text(json.dumps({"format":"human-demo-v3","task_id":task["id"],"frames":self.frame},indent=2));done=self.task_count(task["id"]);self.countdown=300 if done<task["target_runs"] else 0;self.msg=f"Success saved — {done}/{task['target_runs']}. Next run {done+1}/{task['target_runs']} in 5" if self.countdown else f"Success saved — {done}/{task['target_runs']}. Checkout complete.";threading.Thread(target=self.send,daemon=True).start()
+  task=self.tasks[self.selected];before=self.task_count(task["id"]);self.recording=False;self.close_seg();self.actions.close();self.segments.close();self.tags.close();self.boy.stop();(self.session/"manifest.json").write_text(json.dumps({"format":"human-demo-v4","task_id":task["id"],"frames":self.frame,"good_tags":self.good_tags,"bad_tags":self.bad_tags,"completed_at":datetime.now().isoformat()},indent=2));progress=read_progress();progress[task["id"]]=before+1;write_progress(progress);done=self.task_count(task["id"]);self.countdown=300 if done<task["target_runs"] else 0;self.delivery="Archiving for Studio";self.msg=f"Success saved — {done}/{task['target_runs']}. Next run {done+1}/{task['target_runs']} in 5" if self.countdown else f"Success saved — {done}/{task['target_runs']}. Checkout complete.";threading.Thread(target=self.send,daemon=True).start()
  def send(self):
   try:
    arc=self.session.with_suffix(".tar.gz");
    with tarfile.open(arc,"w:gz") as t:t.add(self.session,arcname=self.session.name)
    if self.on_studio:
-    incoming=ROOT/"runs/human-demos/incoming";incoming.mkdir(parents=True,exist_ok=True);shutil.copy2(arc,incoming/arc.name);self.q.put("Saved directly to Studio incoming folder");return
-   subprocess.run(["rsync","-az","--partial",str(arc),DEST],check=True);self.q.put("Sent to Studio")
-  except Exception as e:self.q.put(f"Saved locally; delivery failed: {e}")
+    incoming=ROOT/"runs/human-demos/incoming";incoming.mkdir(parents=True,exist_ok=True);shutil.copy2(arc,incoming/arc.name);self.delivery="Saved on Studio";self.q.put("Saved on Studio");return
+   key=Path.home()/".ssh/gameboyghost_studio"
+   if not key.exists():raise RuntimeError("Studio upload key is missing")
+   subprocess.run(["rsync","-az","--partial","-e",f"ssh -i {key} -o BatchMode=yes",str(arc),DEST],check=True);self.delivery="Uploaded to Studio";self.q.put("Uploaded to Studio")
+  except Exception as e:self.delivery="Upload failed — saved locally";self.q.put(f"Saved locally; upload failed: {e}")
  def draw(self):
   width,height=self.window_size();top_height=max(500,height-255);task_y=top_height+8;task_height=height-task_y-18;game_scale=min(4,max(2,(top_height-58)//144));game_w,game_h=160*game_scale,144*game_scale;map_x=game_w+55;room=self.world_room;task=self.tasks[self.selected];done=self.task_count(task['id']);self.rect(0,0,width,height,(20,22,29,255));self.text(18,20,"GAME PREVIEW")
   if self.boy:sdl2.SDL_UpdateTexture(self.tex,None,self.boy.screen.ndarray[:,:,:3].tobytes(),480);sdl2.SDL_RenderCopy(self.r,self.tex,None,sdl2.SDL_Rect(18,50,game_w,game_h))
@@ -111,6 +121,10 @@ class App:
   for y in range(16):
    for x in range(16):self.rect(map_x+x*12,50+y*12,10,10,(244,186,66,255) if (x,y)==(room&15,room>>4) else (55,59,73,255))
   interior=" INTERIOR" if self.room[0] else "";self.text(map_x,250,f"PANEL {room&15},{room>>4}{interior}");self.text(map_x,280,f"PAD: {self.controller_status()} CONNECTED" if self.controller_status() else "PAD: NOT CONNECTED");self.boxes={"rescan":(map_x,310,180,42),"bluetooth":(map_x,362,180,42)};self.rect(*self.boxes["rescan"],(55,59,73,255));self.text(map_x+30,322,"RESCAN PAD");self.rect(*self.boxes["bluetooth"],(62,85,129,255));self.text(map_x+20,374,"BLUETOOTH")
+  if self.recording:
+   self.text(map_x,420,"LIVE TAGS");self.rect(map_x,447,190,30,(38,104,77,255));self.text(map_x+12,452,f"L2 GOOD: {self.good_tags}");self.rect(map_x,483,190,30,(123,61,61,255));self.text(map_x+12,488,f"R2 BAD: {self.bad_tags}")
+   if self.tag_flash_frames:self.text(map_x,528,self.tag_flash)
+  else:self.text(map_x,420,"DELIVERY: "+self.delivery)
   self.rect(18,task_y,width-36,task_height,(29,33,43,255));self.text(36,task_y+14,f"TASK {self.selected+1}/{len(self.tasks)}  ·  {task['title']}  ·  {done}/{task['target_runs']} SAVED")
   column=(width-90)//3;line_width=max(24,column//10);self.text(36,task_y+48,"OBJECTIVE");self.lines(36,task_y+74,task['goal'],line_width);self.text(36+column,task_y+48,"GOOD · L2");self.lines(36+column,task_y+74,task['x'],line_width);self.text(36+column*2,task_y+48,"BAD · R2");self.lines(36+column*2,task_y+74,task['y'],line_width)
   self.controls_y=height-66;self.boxes.update({"prev":(36,self.controls_y,120,42),"next":(166,self.controls_y,120,42),"start":((width-230)//2,self.controls_y,230,42),"discard":(width-306,self.controls_y,130,42),"success":(width-166,self.controls_y,130,42)});self.rect(*self.boxes["prev"],(55,59,73,255));self.text(70,self.controls_y+11,"PREV");self.rect(*self.boxes["next"],(55,59,73,255));self.text(190,self.controls_y+11,"Y: NEXT");self.rect(*self.boxes["start"],(47,130,103,255));self.text((width-112)//2,self.controls_y+11,"START RUN");self.rect(*self.boxes["discard"],(150,93,42,255));self.text(width-288,self.controls_y+11,"X: DISCARD");self.rect(*self.boxes["success"],(55,59,73,255));self.text(width-151,self.controls_y+11,f"SAVE {min(done+1,task['target_runs'])}/{task['target_runs']}")
@@ -119,7 +133,7 @@ class App:
   else:self.text(36,height-96,self.msg[:110])
   sdl2.SDL_RenderPresent(self.r)
  def task_count(self,task_id):
-  return sum(1 for p in data_dir().glob(f"{task_id}-*/manifest.json"))
+  complete={p.parent.name for p in data_dir().glob(f"{task_id}-*/manifest.json")};complete.update(p.name[:-7] for p in data_dir().glob(f"{task_id}-*.tar.gz"));return max(len(complete),int(read_progress().get(task_id,0)))
  def discard(self):
   if not self.recording:return
   self.recording=False;self.close_seg();self.actions.close();self.segments.close();self.tags.close();self.boy.stop();shutil.rmtree(self.session,ignore_errors=True);self.load_preview();self.countdown=300;self.msg="Discarded — retry in 5"
