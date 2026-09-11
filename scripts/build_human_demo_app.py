@@ -8,6 +8,7 @@ ROOT = Path(__file__).resolve().parents[1]
 ROM = ROOT / "Legend of Zelda, The - Link's Awakening DX (USA, Europe) (Rev A) (SGB Enhanced).gbc"
 STATE = ROOT / "runs/navigation-chain-house-v1/initial.state"
 DIST = ROOT / "dist/GameBoyGhost Demo Recorder.app"
+SDL2_PACKAGE = ROOT / ".venv-ladx/lib/python3.11/site-packages/sdl2"
 
 
 def main():
@@ -19,7 +20,7 @@ def main():
     command = [sys.executable, "-m", "PyInstaller", "--noconfirm", "--windowed",
         "--name", "GameBoyGhost Demo Recorder", "--target-architecture", "arm64",
         "--add-data", f"{ROM}:assets", "--add-data", f"{STATE}:assets",
-        "--hidden-import", "sdl2.sdlttf", "--collect-all", "sdl2dll",
+        "--add-data", f"{SDL2_PACKAGE}:sdl2", "--collect-all", "sdl2dll",
         "--collect-all", "PIL", "--distpath", str(ROOT / "dist"), "--workpath", str(ROOT / "build"),
         "--specpath", str(ROOT / "build"), str(ROOT / "apps/human_demo_app.py")]
     subprocess.run(command, check=True)
