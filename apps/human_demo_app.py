@@ -26,18 +26,38 @@ def local_ip():
 class App:
  def __init__(self):
   self.tasks=json.loads(TASK_FILE.read_text())["tasks"];self.selected=0;self.boy=None;self.recording=False;self.ready=False;self.frame=0;self.session=None;self.actions=self.segments=self.tags=None;self.held=frozenset();self.seg=0;self.controllers=[];self.msg="Loading task preview…";self.q=queue.Queue();self.room=(0,0,0);self.world_room=0;self.xy=(0,0);self.on_studio=local_ip()=="192.168.50.27";self.previous_markers=set();self.countdown=0
-  sdl2.SDL_Init(sdl2.SDL_INIT_VIDEO|sdl2.SDL_INIT_GAMECONTROLLER);ttf.TTF_Init();self.win=sdl2.SDL_CreateWindow(b"GameBoyGhost Demo Recorder",0x1FFF0000,0x1FFF0000,1000,640,0);self.r=sdl2.SDL_CreateRenderer(self.win,-1,sdl2.SDL_RENDERER_ACCELERATED);self.tex=sdl2.SDL_CreateTexture(self.r,sdl2.SDL_PIXELFORMAT_RGB24,sdl2.SDL_TEXTUREACCESS_STREAMING,160,144);self.font=ttf.TTF_OpenFont(b"/System/Library/Fonts/Supplemental/Arial.ttf",18)
-  for i in range(sdl2.SDL_NumJoysticks()):
-   if sdl2.SDL_IsGameController(i):self.controllers.append(sdl2.SDL_GameControllerOpen(i))
+  sdl2.SDL_Init(sdl2.SDL_INIT_VIDEO|sdl2.SDL_INIT_GAMECONTROLLER);ttf.TTF_Init();self.win=sdl2.SDL_CreateWindow(b"GameBoyGhost Demo Recorder",0x1FFF0000,0x1FFF0000,1280,680,0);self.r=sdl2.SDL_CreateRenderer(self.win,-1,sdl2.SDL_RENDERER_ACCELERATED);self.tex=sdl2.SDL_CreateTexture(self.r,sdl2.SDL_PIXELFORMAT_RGB24,sdl2.SDL_TEXTUREACCESS_STREAMING,160,144);self.font=ttf.TTF_OpenFont(b"/System/Library/Fonts/Supplemental/Arial.ttf",18)
+  self.rescan_controllers()
   self.load_preview()
-  if self.controllers:self.msg=("STUDIO PREVIEW — click START RUN" if self.on_studio else "MINI CAPTURE — click START RUN")
-  else:self.msg="Pair controller, then restart app"
+  self.msg=self.capture_message()
  def rect(self,x,y,w,h,c):sdl2.SDL_SetRenderDrawColor(self.r,*c);sdl2.SDL_RenderFillRect(self.r,sdl2.SDL_Rect(x,y,w,h))
  def text(self,x,y,v):
   if not v:return
   z=ttf.TTF_RenderUTF8_Blended(self.font,v.encode(),sdl2.SDL_Color(230,235,245,255));q=sdl2.SDL_CreateTextureFromSurface(self.r,z);sdl2.SDL_RenderCopy(self.r,q,None,sdl2.SDL_Rect(x,y,z.contents.w,z.contents.h));sdl2.SDL_DestroyTexture(q);sdl2.SDL_FreeSurface(z)
+ def controller_status(self):return sum(bool(sdl2.SDL_GameControllerGetAttached(c)) for c in self.controllers)
+ def rescan_controllers(self):
+  self.controllers=[]
+  for i in range(sdl2.SDL_NumJoysticks()):
+   if sdl2.SDL_IsGameController(i):
+    c=sdl2.SDL_GameControllerOpen(i)
+    if c:self.controllers.append(c)
+ def capture_message(self):return ("STUDIO PREVIEW — click START RUN" if self.on_studio else "MINI CAPTURE — click START RUN") if self.controller_status() else "No controller found — pair one, then click RESCAN"
+ def bluetooth_settings(self):
+  subprocess.Popen(["open","x-apple.systempreferences:com.apple.BluetoothSettings-Settings.extension"]);self.msg="Bluetooth Settings opened — pair the SN30 Pro, then RESCAN"
+ def wrap(self,v,n=34):
+  words=v.split();lines=[];line=""
+  for word in words:
+   next_line=(line+" "+word).strip()
+   if line and len(next_line)>n:lines.append(line);line=word
+   else:line=next_line
+  if line:lines.append(line)
+  return lines
+ def lines(self,x,y,v,n=34):
+  for line in self.wrap(v,n):self.text(x,y,line);y+=21
+  return y
  def start(self):
   if self.recording:return
+  if not self.controller_status():self.msg="No controller detected. Pair it, then click RESCAN.";return
   task=self.tasks[self.selected];self.session=data_dir()/f"{task['id']}-{datetime.now().strftime('%Y%m%d-%H%M%S')}";(self.session/"frames").mkdir(parents=True);self.actions=(self.session/"actions.jsonl").open("x");self.segments=(self.session/"input_segments.jsonl").open("x");self.tags=(self.session/"tags.jsonl").open("x");self.boy.stop();self.load_preview()
   self.recording=True;self.ready=False;self.frame=0;self.held=frozenset();self.seg=0;self.previous_markers=set();self.msg=f"Recording {task['title']}"
  def state_path(self):return ROOT/self.tasks[self.selected]["state"]
@@ -77,13 +97,13 @@ class App:
    subprocess.run(["rsync","-az","--partial",str(arc),DEST],check=True);self.q.put("Sent to Studio")
   except Exception as e:self.q.put(f"Saved locally; delivery failed: {e}")
  def draw(self):
-  self.rect(0,0,1000,640,(20,22,29,255))
-  if self.boy:sdl2.SDL_UpdateTexture(self.tex,None,self.boy.screen.ndarray[:,:,:3].tobytes(),480);sdl2.SDL_RenderCopy(self.r,self.tex,None,sdl2.SDL_Rect(18,40,640,576))
+  self.rect(0,0,1280,680,(20,22,29,255));self.text(18,20,"GAME PREVIEW")
+  if self.boy:sdl2.SDL_UpdateTexture(self.tex,None,self.boy.screen.ndarray[:,:,:3].tobytes(),480);sdl2.SDL_RenderCopy(self.r,self.tex,None,sdl2.SDL_Rect(18,54,640,576))
   room=self.world_room
   for y in range(16):
-   for x in range(16):self.rect(700+x*16,50+y*16,14,14,(244,186,66,255) if (x,y)==(room&15,room>>4) else (55,59,73,255))
+   for x in range(16):self.rect(1010+x*16,50+y*16,14,14,(244,186,66,255) if (x,y)==(room&15,room>>4) else (55,59,73,255))
   interior=" INTERIOR" if self.room[0] else ""
-  task=self.tasks[self.selected];self.text(700,315,f"WORLD PANEL {room&15},{room>>4}{interior}");self.text(700,338,f"TASK {self.selected+1}/{len(self.tasks)}: {task['title']}");self.text(700,361,task['goal'][:30]);self.text(700,384,"X: "+task['x'][:27]);self.text(700,407,"Y: "+task['y'][:27]);self.text(700,430,f"{task['duration_seconds']} SEC  SAVED {self.task_count(task['id'])}/{task['target_runs']}");self.rect(700,455,125,45,(55,59,73,255));self.text(742,468,"PREV");self.rect(835,455,125,45,(55,59,73,255));self.text(878,468,"NEXT");self.rect(700,510,260,48,(47,130,103,255));self.text(780,523,"START RUN");self.rect(700,568,125,42,(150,93,42,255));self.text(720,580,"DISCARD");self.rect(835,568,125,42,(55,59,73,255));self.text(862,580,"END RUN");self.text(700,620,self.msg[:38]);sdl2.SDL_RenderPresent(self.r)
+  task=self.tasks[self.selected];self.text(680,20,f"TASK {self.selected+1}/{len(self.tasks)}: {task['title']}");y=self.lines(680,50,task['goal']);y=self.lines(680,y+7,"X: "+task['x']);y=self.lines(680,y+7,"Y: "+task['y']);self.text(680,y+8,f"{task['duration_seconds']} SEC  SAVED {self.task_count(task['id'])}/{task['target_runs']}");self.rect(680,300,140,44,(55,59,73,255));self.text(725,312,"PREV");self.rect(830,300,140,44,(55,59,73,255));self.text(875,312,"NEXT");self.rect(680,355,290,48,(47,130,103,255));self.text(775,368,"START RUN");self.rect(680,415,140,44,(150,93,42,255));self.text(705,427,"DISCARD");self.rect(830,415,140,44,(55,59,73,255));self.text(855,427,"END RUN");self.text(680,480,self.msg[:47]);self.text(1010,20,"OVERWORLD PANEL");self.text(1010,315,f"WORLD PANEL {room&15},{room>>4}{interior}");self.text(1010,355,f"CONTROLLER: {self.controller_status()} CONNECTED" if self.controller_status() else "CONTROLLER: NOT CONNECTED");self.rect(1010,385,256,44,(55,59,73,255));self.text(1050,397,"RESCAN CONTROLLERS");self.rect(1010,440,256,44,(62,85,129,255));self.text(1035,452,"OPEN BLUETOOTH SETTINGS");self.lines(1010,500,"SN30 Pro: hold START + A, then hold PAIR for 3 seconds.",29);sdl2.SDL_RenderPresent(self.r)
  def task_count(self,task_id):
   return sum(1 for p in data_dir().glob(f"{task_id}-*/manifest.json"))
  def discard(self):
@@ -91,20 +111,22 @@ class App:
   self.recording=False;self.close_seg();self.actions.close();self.segments.close();self.tags.close();self.boy.stop();shutil.rmtree(self.session,ignore_errors=True);self.load_preview();self.countdown=300;self.msg="Discarded — retry in 5"
  def choose(self,delta):
   if self.recording:return
-  self.selected=(self.selected+delta)%len(self.tasks);self.boy.stop();self.load_preview();self.msg="Task selected — click START RUN"
+  self.selected=(self.selected+delta)%len(self.tasks);self.boy.stop();self.load_preview();self.msg=self.capture_message()
  def loop(self):
   e=sdl2.SDL_Event();live=True
   while live:
    while sdl2.SDL_PollEvent(ctypes.byref(e)):
     if e.type==sdl2.SDL_QUIT:live=False
-    elif e.type==sdl2.SDL_CONTROLLERDEVICEADDED:self.controllers.append(sdl2.SDL_GameControllerOpen(e.cdevice.which))
+    elif e.type==sdl2.SDL_CONTROLLERDEVICEADDED:self.rescan_controllers();self.msg=self.capture_message()
     elif e.type==sdl2.SDL_MOUSEBUTTONUP:
      x,y=e.button.x,e.button.y
-     if 700<=x<=825 and 455<=y<=500:self.choose(-1)
-     if 835<=x<=960 and 455<=y<=500:self.choose(1)
-     if 700<=x<=960 and 510<=y<=558:self.start()
-     if 700<=x<=825 and 568<=y<=610:self.discard()
-     if 835<=x<=960 and 568<=y<=610:self.end()
+     if 680<=x<=820 and 300<=y<=344:self.choose(-1)
+     if 830<=x<=970 and 300<=y<=344:self.choose(1)
+     if 680<=x<=970 and 355<=y<=403:self.start()
+     if 680<=x<=820 and 415<=y<=459:self.discard()
+     if 830<=x<=970 and 415<=y<=459:self.end()
+     if 1010<=x<=1266 and 385<=y<=429:self.rescan_controllers();self.msg=self.capture_message()
+     if 1010<=x<=1266 and 440<=y<=484:self.bluetooth_settings()
    if self.recording:self.tick()
    elif self.countdown:
     self.countdown-=1;self.msg=f"Next run in {(self.countdown+59)//60}"
