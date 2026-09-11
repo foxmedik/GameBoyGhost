@@ -2,6 +2,6 @@
   "version": "recorder-checkout-house-to-sword-v1",
   "countdown_seconds": 5,
   "tasks": [
-    {"id":"recorder-checkout-house-to-sword","title":"House to sword — 5-run checkout","state":"runs/navigation-chain-house-v1/initial.state","duration_seconds":120,"target_runs":5,"x":"Tap L2 at the house exit, the beach entry, the sword pickup, and any especially clean movement.","y":"Tap R2 only after real damage, a wrong turn, a collision, or the recovery that follows it.","goal":"Complete five natural runs from Marin's house to the sword. Use X immediately to discard a bad run; it reloads this same state."}
+    {"id":"recorder-checkout-house-to-sword","title":"House to sword — 5-run checkout","state":"runs/navigation-chain-house-v1/initial.state","duration_seconds":120,"target_runs":5,"x":"Tap L2 after the house exit, each of two successful urchin shield bumps, the beach entry, and the sword pickup.","y":"Tap R2 only after real damage, a wrong turn, a collision, or the recovery that follows it.","goal":"Complete five runs from Marin's house to the sword. Each accepted run requires two clean urchin shield bumps; use X to discard a bad attempt."}
   ]
 }
