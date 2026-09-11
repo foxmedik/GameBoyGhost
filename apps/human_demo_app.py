@@ -1,5 +1,5 @@
 """SDL demonstration recorder app; no second SDL framework is loaded."""
-import ctypes, json, queue, shutil, socket, subprocess, sys, tarfile, threading
+import ctypes, json, os, queue, shutil, socket, subprocess, sys, tarfile, threading
 from datetime import datetime
 from pathlib import Path
 from PIL import Image
@@ -7,7 +7,7 @@ from pyboy import PyBoy
 import sdl2
 import sdl2.sdlttf as ttf
 
-ROOT=Path(getattr(sys,"_MEIPASS",Path(__file__).resolve().parents[1])); ASSETS=ROOT/"assets"
+ROOT=Path(getattr(sys,"_MEIPASS",os.environ.get("GAMEBOY_AGENT_ROOT",Path(__file__).resolve().parents[1]))); ASSETS=ROOT/"assets"
 if hasattr(sys, "_MEIPASS"):
  ROM=ASSETS/"ladx.gbc"; STATE=ASSETS/"house.state"
 else:

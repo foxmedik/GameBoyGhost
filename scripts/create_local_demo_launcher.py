@@ -20,10 +20,16 @@ def main():
         "CFBundlePackageType": "APPL",
     }))
     launcher = macos / "GameBoyGhost Demo Recorder"
-    root = shlex.quote(str(ROOT))
     launcher.write_text(f'''#!/bin/zsh
-cd {root}
-exec {root}/.venv-ladx/bin/python {root}/apps/human_demo_app.py
+set -e
+app_root="$(cd "$(dirname "$0")/../../.." && pwd)"
+for root in "$app_root/../GameBoyAgent" "$HOME/Developer/GameBoyAgent"; do
+  if [[ -x "$root/.venv-ladx/bin/python" && -f "$root/apps/human_demo_app.py" ]]; then
+    export GAMEBOY_AGENT_ROOT="$root"
+    exec "$root/.venv-ladx/bin/python" "$root/apps/human_demo_app.py"
+  fi
+done
+osascript -e 'display alert "GameBoyGhost Demo Recorder" message "Install the GameBoyAgent checkout at ~/Developer/GameBoyAgent before opening this app."'
 ''')
     launcher.chmod(0o755)
     print(APP)
