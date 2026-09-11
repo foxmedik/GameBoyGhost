@@ -90,7 +90,7 @@ class App:
   if self.frame>=self.tasks[self.selected]["duration_seconds"]*60:self.end()
  def end(self):
   if not self.recording:return
-  task=self.tasks[self.selected];self.recording=False;self.close_seg();self.actions.close();self.segments.close();self.tags.close();self.boy.stop();(self.session/"manifest.json").write_text(json.dumps({"format":"human-demo-v3","task_id":task["id"],"frames":self.frame},indent=2));self.countdown=300;self.msg="Saved — next run in 5";threading.Thread(target=self.send,daemon=True).start()
+  task=self.tasks[self.selected];self.recording=False;self.close_seg();self.actions.close();self.segments.close();self.tags.close();self.boy.stop();(self.session/"manifest.json").write_text(json.dumps({"format":"human-demo-v3","task_id":task["id"],"frames":self.frame},indent=2));done=self.task_count(task["id"]);self.countdown=300 if done<task["target_runs"] else 0;self.msg=f"Success saved — {done}/{task['target_runs']}. Next run {done+1}/{task['target_runs']} in 5" if self.countdown else f"Success saved — {done}/{task['target_runs']}. Checkout complete.";threading.Thread(target=self.send,daemon=True).start()
  def send(self):
   try:
    arc=self.session.with_suffix(".tar.gz");
@@ -106,7 +106,7 @@ class App:
   for y in range(16):
    for x in range(16):self.rect(1100+x*10,50+y*10,8,8,(244,186,66,255) if (x,y)==(room&15,room>>4) else (55,59,73,255))
   interior=" INTERIOR" if self.room[0] else ""
-  task=self.tasks[self.selected];self.text(680,20,f"TASK {self.selected+1}/{len(self.tasks)}");self.text(680,44,task['title']);y=self.lines(680,72,"OBJECTIVE  "+task['goal'],42);y=self.lines(680,y+10,"GOOD · L2  "+task['x'],42);y=self.lines(680,y+10,"BAD · R2  "+task['y'],42);self.text(680,y+8,f"{task['duration_seconds']} SEC  SAVED {self.task_count(task['id'])}/{task['target_runs']}");self.controls_y=max(350,y+38);self.rect(680,self.controls_y,180,44,(55,59,73,255));self.text(742,self.controls_y+12,"PREV");self.rect(870,self.controls_y,180,44,(55,59,73,255));self.text(932,self.controls_y+12,"NEXT");self.rect(680,self.controls_y+55,370,48,(47,130,103,255));self.text(810,self.controls_y+68,"START RUN");self.rect(680,self.controls_y+115,180,44,(150,93,42,255));self.text(730,self.controls_y+127,"X: DISCARD");self.rect(870,self.controls_y+115,180,44,(55,59,73,255));self.text(915,self.controls_y+127,"END RUN");self.text(680,self.controls_y+180,self.msg[:59]);self.text(1100,20,"MAP");self.text(1100,220,f"PANEL {room&15},{room>>4}{interior}");self.text(1100,250,f"PAD: {self.controller_status()} CONNECTED" if self.controller_status() else "PAD: NOT CONNECTED");self.rect(1100,280,160,44,(55,59,73,255));self.text(1130,292,"RESCAN PAD");self.rect(1100,335,160,44,(62,85,129,255));self.text(1125,347,"BLUETOOTH");self.lines(1100,400,"L2 good. R2 bad. X discard.",20);sdl2.SDL_RenderPresent(self.r)
+  task=self.tasks[self.selected];done=self.task_count(task['id']);self.text(680,20,f"TASK {self.selected+1}/{len(self.tasks)}");self.text(680,44,task['title']);y=self.lines(680,72,"OBJECTIVE  "+task['goal'],42);y=self.lines(680,y+10,"GOOD · L2  "+task['x'],42);y=self.lines(680,y+10,"BAD · R2  "+task['y'],42);self.text(680,y+8,f"{task['duration_seconds']} SEC  SAVED {done}/{task['target_runs']}");self.controls_y=max(350,y+38);self.rect(680,self.controls_y,180,44,(55,59,73,255));self.text(742,self.controls_y+12,"PREV");self.rect(870,self.controls_y,180,44,(55,59,73,255));self.text(932,self.controls_y+12,"NEXT");self.rect(680,self.controls_y+55,370,48,(47,130,103,255));self.text(810,self.controls_y+68,"START RUN");self.rect(680,self.controls_y+115,180,44,(150,93,42,255));self.text(730,self.controls_y+127,"X: DISCARD");self.rect(870,self.controls_y+115,180,44,(55,59,73,255));self.text(890,self.controls_y+127,f"SAVE SUCCESS {min(done+1,task['target_runs'])}/{task['target_runs']}");self.text(680,self.controls_y+180,self.msg[:59]);self.text(1100,20,"MAP");self.text(1100,220,f"PANEL {room&15},{room>>4}{interior}");self.text(1100,250,f"PAD: {self.controller_status()} CONNECTED" if self.controller_status() else "PAD: NOT CONNECTED");self.rect(1100,280,160,44,(55,59,73,255));self.text(1130,292,"RESCAN PAD");self.rect(1100,335,160,44,(62,85,129,255));self.text(1125,347,"BLUETOOTH");self.lines(1100,400,"L2 good. R2 bad. X discard.",20);sdl2.SDL_RenderPresent(self.r)
  def task_count(self,task_id):
   return sum(1 for p in data_dir().glob(f"{task_id}-*/manifest.json"))
  def discard(self):
@@ -132,7 +132,7 @@ class App:
      if 1100<=x<=1260 and 335<=y<=379:self.bluetooth_settings()
    if self.recording:self.tick()
    elif self.countdown:
-    self.countdown-=1;self.msg=f"Next run in {(self.countdown+59)//60}"
+    self.countdown-=1;task=self.tasks[self.selected];self.msg=f"Next run {self.task_count(task['id'])+1}/{task['target_runs']} in {(self.countdown+59)//60}"
     if not self.countdown:self.start()
    try:self.msg=self.q.get_nowait()
    except queue.Empty:pass
