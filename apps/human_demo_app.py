@@ -25,7 +25,7 @@ def local_ip():
 
 class App:
  def __init__(self):
-  self.tasks=json.loads(TASK_FILE.read_text())["tasks"];self.selected=0;self.boy=None;self.recording=False;self.ready=False;self.frame=0;self.session=None;self.actions=self.segments=self.tags=None;self.held=frozenset();self.seg=0;self.controllers=[];self.msg="Loading task preview…";self.q=queue.Queue();self.room=(0,0,0);self.world_room=0;self.xy=(0,0);self.on_studio=local_ip()=="192.168.50.27";self.previous_markers=set();self.countdown=0
+  self.tasks=json.loads(TASK_FILE.read_text())["tasks"];self.selected=0;self.boy=None;self.recording=False;self.ready=False;self.frame=0;self.session=None;self.actions=self.segments=self.tags=None;self.held=frozenset();self.seg=0;self.controllers=[];self.msg="Loading task preview…";self.q=queue.Queue();self.room=(0,0,0);self.world_room=0;self.xy=(0,0);self.on_studio=local_ip()=="192.168.50.27";self.previous_markers=set();self.countdown=0;self.controls_y=390
   sdl2.SDL_Init(sdl2.SDL_INIT_VIDEO|sdl2.SDL_INIT_GAMECONTROLLER);ttf.TTF_Init();self.win=sdl2.SDL_CreateWindow(b"GameBoyGhost Demo Recorder",0x1FFF0000,0x1FFF0000,1280,680,0);self.r=sdl2.SDL_CreateRenderer(self.win,-1,sdl2.SDL_RENDERER_ACCELERATED);self.tex=sdl2.SDL_CreateTexture(self.r,sdl2.SDL_PIXELFORMAT_RGB24,sdl2.SDL_TEXTUREACCESS_STREAMING,160,144);self.font=ttf.TTF_OpenFont(b"/System/Library/Fonts/Supplemental/Arial.ttf",18)
   self.rescan_controllers()
   self.load_preview()
@@ -106,7 +106,7 @@ class App:
   for y in range(16):
    for x in range(16):self.rect(1010+x*16,50+y*16,14,14,(244,186,66,255) if (x,y)==(room&15,room>>4) else (55,59,73,255))
   interior=" INTERIOR" if self.room[0] else ""
-  task=self.tasks[self.selected];self.text(680,20,f"TASK {self.selected+1}/{len(self.tasks)}: {task['title']}");y=self.lines(680,50,task['goal']);y=self.lines(680,y+7,"GOOD L2: "+task['x']);y=self.lines(680,y+7,"BAD R2: "+task['y']);self.text(680,y+8,f"{task['duration_seconds']} SEC  SAVED {self.task_count(task['id'])}/{task['target_runs']}");self.rect(680,300,140,44,(55,59,73,255));self.text(725,312,"PREV");self.rect(830,300,140,44,(55,59,73,255));self.text(875,312,"NEXT");self.rect(680,355,290,48,(47,130,103,255));self.text(775,368,"START RUN");self.rect(680,415,140,44,(150,93,42,255));self.text(700,427,"X: DISCARD");self.rect(830,415,140,44,(55,59,73,255));self.text(855,427,"END RUN");self.text(680,480,self.msg[:47]);self.text(1010,20,"OVERWORLD PANEL");self.text(1010,315,f"WORLD PANEL {room&15},{room>>4}{interior}");self.text(1010,355,f"CONTROLLER: {self.controller_status()} CONNECTED" if self.controller_status() else "CONTROLLER: NOT CONNECTED");self.rect(1010,385,256,44,(55,59,73,255));self.text(1050,397,"RESCAN CONTROLLERS");self.rect(1010,440,256,44,(62,85,129,255));self.text(1035,452,"OPEN BLUETOOTH SETTINGS");self.lines(1010,500,"L2 marks good. R2 marks bad. X discards the active run.",29);sdl2.SDL_RenderPresent(self.r)
+  task=self.tasks[self.selected];self.text(680,20,f"TASK {self.selected+1}/{len(self.tasks)}");self.text(680,44,task['title']);y=self.lines(680,72,"OBJECTIVE  "+task['goal'],32);y=self.lines(680,y+10,"GOOD · L2  "+task['x'],32);y=self.lines(680,y+10,"BAD · R2  "+task['y'],32);self.text(680,y+8,f"{task['duration_seconds']} SEC  SAVED {self.task_count(task['id'])}/{task['target_runs']}");self.controls_y=max(390,y+38);self.rect(680,self.controls_y,140,44,(55,59,73,255));self.text(725,self.controls_y+12,"PREV");self.rect(830,self.controls_y,140,44,(55,59,73,255));self.text(875,self.controls_y+12,"NEXT");self.rect(680,self.controls_y+55,290,48,(47,130,103,255));self.text(775,self.controls_y+68,"START RUN");self.rect(680,self.controls_y+115,140,44,(150,93,42,255));self.text(700,self.controls_y+127,"X: DISCARD");self.rect(830,self.controls_y+115,140,44,(55,59,73,255));self.text(855,self.controls_y+127,"END RUN");self.text(680,self.controls_y+180,self.msg[:47]);self.text(1010,20,"OVERWORLD PANEL");self.text(1010,315,f"WORLD PANEL {room&15},{room>>4}{interior}");self.text(1010,355,f"CONTROLLER: {self.controller_status()} CONNECTED" if self.controller_status() else "CONTROLLER: NOT CONNECTED");self.rect(1010,385,256,44,(55,59,73,255));self.text(1050,397,"RESCAN CONTROLLERS");self.rect(1010,440,256,44,(62,85,129,255));self.text(1050,452,"BLUETOOTH SETTINGS");self.lines(1010,500,"L2 marks good. R2 marks bad. X discards the active run.",29);sdl2.SDL_RenderPresent(self.r)
  def task_count(self,task_id):
   return sum(1 for p in data_dir().glob(f"{task_id}-*/manifest.json"))
  def discard(self):
@@ -123,11 +123,11 @@ class App:
     elif e.type==sdl2.SDL_CONTROLLERDEVICEADDED:self.rescan_controllers();self.msg=self.capture_message()
     elif e.type==sdl2.SDL_MOUSEBUTTONUP:
      x,y=e.button.x,e.button.y
-     if 680<=x<=820 and 300<=y<=344:self.choose(-1)
-     if 830<=x<=970 and 300<=y<=344:self.choose(1)
-     if 680<=x<=970 and 355<=y<=403:self.start()
-     if 680<=x<=820 and 415<=y<=459:self.discard()
-     if 830<=x<=970 and 415<=y<=459:self.end()
+     if 680<=x<=820 and self.controls_y<=y<=self.controls_y+44:self.choose(-1)
+     if 830<=x<=970 and self.controls_y<=y<=self.controls_y+44:self.choose(1)
+     if 680<=x<=970 and self.controls_y+55<=y<=self.controls_y+103:self.start()
+     if 680<=x<=820 and self.controls_y+115<=y<=self.controls_y+159:self.discard()
+     if 830<=x<=970 and self.controls_y+115<=y<=self.controls_y+159:self.end()
      if 1010<=x<=1266 and 385<=y<=429:self.rescan_controllers();self.msg=self.capture_message()
      if 1010<=x<=1266 and 440<=y<=484:self.bluetooth_settings()
    if self.recording:self.tick()
