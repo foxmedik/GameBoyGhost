@@ -20,7 +20,7 @@ def main():
     command = [sys.executable, "-m", "PyInstaller", "--noconfirm", "--windowed",
         "--name", "GameBoyGhost Demo Recorder", "--target-architecture", "arm64",
         "--add-data", f"{ROM}:assets", "--add-data", f"{STATE}:assets",
-        "--add-data", f"{SDL2_PACKAGE}:sdl2", "--collect-all", "sdl2dll",
+        "--onefile", "--collect-all", "sdl2", "--collect-all", "sdl2dll",
         "--collect-all", "PIL", "--distpath", str(ROOT / "dist"), "--workpath", str(ROOT / "build"),
         "--specpath", str(ROOT / "build"), str(ROOT / "apps/human_demo_app.py")]
     subprocess.run(command, check=True)
