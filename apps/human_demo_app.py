@@ -8,7 +8,11 @@ import sdl2
 import sdl2.sdlttf as ttf
 
 ROOT=Path(getattr(sys,"_MEIPASS",Path(__file__).resolve().parents[1])); ASSETS=ROOT/"assets"
-ROM=ASSETS/"ladx.gbc"; STATE=ASSETS/"house.state"; DEST="studio@192.168.50.27:/Users/studio/Developer/GameBoyAgent/runs/human-demos/incoming/"
+if hasattr(sys, "_MEIPASS"):
+ ROM=ASSETS/"ladx.gbc"; STATE=ASSETS/"house.state"
+else:
+ ROM=ROOT/"Legend of Zelda, The - Link's Awakening DX (USA, Europe) (Rev A) (SGB Enhanced).gbc"; STATE=ROOT/"runs/navigation-chain-house-v1/initial.state"
+DEST="studio@192.168.50.27:/Users/studio/Developer/GameBoyAgent/runs/human-demos/incoming/"
 BUTTONS=("up","down","left","right","a","b","start","select")
 def data_dir():
  p=Path.home()/"Library/Application Support/GameBoyGhost Demo Recorder"/"runs";p.mkdir(parents=True,exist_ok=True);return p
@@ -58,9 +62,11 @@ class App:
   self.rect(0,0,1000,640,(20,22,29,255))
   if self.boy:sdl2.SDL_UpdateTexture(self.tex,None,self.boy.screen.ndarray[:,:,:3].tobytes(),480);sdl2.SDL_RenderCopy(self.r,self.tex,None,sdl2.SDL_Rect(18,40,640,576))
   self.text(700,20,"16x16 ROOM GRID");room=self.room[2]
+  overworld=self.room[0]==0
   for y in range(16):
-   for x in range(16):self.rect(700+x*16,50+y*16,14,14,(244,186,66,255) if (x,y)==(room&15,room>>4) else (55,59,73,255))
-  self.text(700,315,f"ROOM {room:02X}  LINK {self.xy[0]},{self.xy[1]}");self.text(700,340,f"CELL {self.xy[0]//16},{(self.xy[1]-4)//16}");self.rect(700,380,260,54,(47,130,103,255));self.text(780,397,"START RUN");self.rect(700,445,260,54,(150,93,42,255) if self.ready else (50,54,65,255));self.text(788,462,"END RUN");self.text(700,525,self.msg[:30]);self.text(700,548,self.msg[30:60]);sdl2.SDL_RenderPresent(self.r)
+   for x in range(16):self.rect(700+x*16,50+y*16,14,14,(244,186,66,255) if overworld and (x,y)==(room&15,room>>4) else (55,59,73,255))
+  where=f"OVERWORLD PANEL {room&15},{room>>4}" if overworld else f"INDOOR MAP {self.room[1]:02X} ROOM {room:02X}"
+  self.text(700,315,where);self.text(700,340,f"LINK {self.xy[0]},{self.xy[1]}  CELL {self.xy[0]//16},{(self.xy[1]-4)//16}");self.rect(700,380,260,54,(47,130,103,255));self.text(780,397,"START RUN");self.rect(700,445,260,54,(150,93,42,255) if self.ready else (50,54,65,255));self.text(788,462,"END RUN");self.text(700,525,self.msg[:30]);self.text(700,548,self.msg[30:60]);sdl2.SDL_RenderPresent(self.r)
  def loop(self):
   e=sdl2.SDL_Event();live=True
   while live:
