@@ -1,0 +1,11 @@
+{
+  "version": "start-toadstool-v1",
+  "countdown_seconds": 5,
+  "tasks": [
+    {"id":"house-to-sword","title":"House to sword","state":"runs/navigation-chain-house-v1/initial.state","duration_seconds":120,"target_runs":20,"x":"Mark sword pickup and each clean route milestone.","y":"Mark damage, a wrong turn, or a recovery.","goal":"Leave the house, reach the beach, and acquire the sword."},
+    {"id":"octorok-shield","title":"Block Octorok projectiles","state":"runs/navigation-chain-beach-v1/initial.state","duration_seconds":45,"target_runs":8,"x":"Press after every projectile visibly blocks on the shield.","y":"Press after late, early, or wrong-facing shield timing; include the recovery.","goal":"Block three projectiles while moving naturally."},
+    {"id":"normal-slash","title":"Normal sword slashes","state":"runs/navigation-chain-beach-v1/initial.state","duration_seconds":45,"target_runs":10,"x":"Press after each sword hit or enemy defeat.","y":"Press after a miss, bad range, or contact damage; then recover.","goal":"Create three deliberate sword-hit examples."},
+    {"id":"spin-slash","title":"Spin slash","state":"runs/navigation-chain-beach-v1/initial.state","duration_seconds":45,"target_runs":8,"x":"Press after each connected spin slash.","y":"Press after an early release, wrong-facing spin, or damage while charging.","goal":"Create three connected spin-slash examples."},
+    {"id":"toadstool-full-route","title":"House to Toadstool","state":"runs/navigation-chain-house-v1/initial.state","duration_seconds":180,"target_runs":20,"x":"Mark sword, cave entry, each rock push, cave exit, and Toadstool acquisition.","y":"Mark damage, a route error, a crumbling-floor fall, or recovery.","goal":"Reach the Toadstool through the verified cave route."}
+  ]
+}
