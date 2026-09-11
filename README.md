@@ -1,5 +1,9 @@
 # GameBoyGhost
 
+<p align="center">
+  <img src="logo.png" alt="GameBoyGhost logo" width="320">
+</p>
+
 A reproducible Game Boy agent research project, beginning with Link's Awakening DX. Both v2 handoff documents are canonical requirements.
 
 The current implementation includes a learned house-to-sword controller that passes 70/70 evaluated start cases, plus a ROM-verified structured baseline, neutral emulator surface, deterministic fixtures, and verified checkpoint/resume. Full-game completion remains unevaluated.
