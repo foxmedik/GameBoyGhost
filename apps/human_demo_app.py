@@ -1,5 +1,5 @@
 """SDL demonstration recorder app; no second SDL framework is loaded."""
-import ctypes, json, queue, subprocess, sys, tarfile, threading
+import ctypes, json, queue, shutil, socket, subprocess, sys, tarfile, threading
 from datetime import datetime
 from pathlib import Path
 from PIL import Image
@@ -16,23 +16,33 @@ DEST="studio@192.168.50.27:/Users/studio/Developer/GameBoyAgent/runs/human-demos
 BUTTONS=("up","down","left","right","a","b","start","select")
 def data_dir():
  p=Path.home()/"Library/Application Support/GameBoyGhost Demo Recorder"/"runs";p.mkdir(parents=True,exist_ok=True);return p
+def local_ip():
+ s=socket.socket(socket.AF_INET,socket.SOCK_DGRAM)
+ try:
+  s.connect(("192.168.50.27",9));return s.getsockname()[0]
+ finally:s.close()
 
 class App:
  def __init__(self):
-  self.boy=None;self.recording=False;self.ready=False;self.frame=0;self.session=None;self.actions=self.segments=None;self.held=frozenset();self.seg=0;self.controllers=[];self.msg="Click START RUN";self.q=queue.Queue();self.room=(0,0,0);self.xy=(0,0)
+  self.boy=None;self.recording=False;self.ready=False;self.frame=0;self.session=None;self.actions=self.segments=None;self.held=frozenset();self.seg=0;self.controllers=[];self.msg="Loading house preview…";self.q=queue.Queue();self.room=(0,0,0);self.xy=(0,0);self.on_studio=local_ip()=="192.168.50.27"
   sdl2.SDL_Init(sdl2.SDL_INIT_VIDEO|sdl2.SDL_INIT_GAMECONTROLLER);ttf.TTF_Init();self.win=sdl2.SDL_CreateWindow(b"GameBoyGhost Demo Recorder",0x1FFF0000,0x1FFF0000,1000,640,0);self.r=sdl2.SDL_CreateRenderer(self.win,-1,sdl2.SDL_RENDERER_ACCELERATED);self.tex=sdl2.SDL_CreateTexture(self.r,sdl2.SDL_PIXELFORMAT_RGB24,sdl2.SDL_TEXTUREACCESS_STREAMING,160,144);self.font=ttf.TTF_OpenFont(b"/System/Library/Fonts/Supplemental/Arial.ttf",18)
   for i in range(sdl2.SDL_NumJoysticks()):
    if sdl2.SDL_IsGameController(i):self.controllers.append(sdl2.SDL_GameControllerOpen(i))
-  if self.controllers:self.msg="Controller ready — click START RUN"
+  self.load_preview()
+  if self.controllers:self.msg=("STUDIO PREVIEW — click START RUN" if self.on_studio else "MINI CAPTURE — click START RUN")
+  else:self.msg="Pair controller, then restart app"
  def rect(self,x,y,w,h,c):sdl2.SDL_SetRenderDrawColor(self.r,*c);sdl2.SDL_RenderFillRect(self.r,sdl2.SDL_Rect(x,y,w,h))
  def text(self,x,y,v):
   if not v:return
   z=ttf.TTF_RenderUTF8_Blended(self.font,v.encode(),sdl2.SDL_Color(230,235,245,255));q=sdl2.SDL_CreateTextureFromSurface(self.r,z);sdl2.SDL_RenderCopy(self.r,q,None,sdl2.SDL_Rect(x,y,z.contents.w,z.contents.h));sdl2.SDL_DestroyTexture(q);sdl2.SDL_FreeSurface(z)
  def start(self):
   if self.recording:return
-  self.session=data_dir()/datetime.now().strftime("%Y%m%d-%H%M%S");(self.session/"frames").mkdir(parents=True);self.actions=(self.session/"actions.jsonl").open("x");self.segments=(self.session/"input_segments.jsonl").open("x");self.boy=PyBoy(str(ROM),window="null");self.boy.set_emulation_speed(0)
-  with STATE.open("rb") as f:self.boy.load_state(f)
+  self.session=data_dir()/datetime.now().strftime("%Y%m%d-%H%M%S");(self.session/"frames").mkdir(parents=True);self.actions=(self.session/"actions.jsonl").open("x");self.segments=(self.session/"input_segments.jsonl").open("x");self.boy.stop();self.load_preview()
   self.recording=True;self.ready=False;self.frame=0;self.held=frozenset();self.seg=0;self.msg="Recording — reach the Toadstool"
+ def load_preview(self):
+  self.boy=PyBoy(str(ROM),window="null");self.boy.set_emulation_speed(0)
+  with STATE.open("rb") as f:self.boy.load_state(f)
+  self.boy.tick(1,render=True);m=self.boy.memory;self.room=tuple(int(m[a]) for a in (0xDBA5,0xFFF7,0xFFF6));self.xy=(int(m[0xFF98]),int(m[0xFF99]))
  def inputs(self):
   out=set();p=((sdl2.SDL_CONTROLLER_BUTTON_DPAD_UP,"up"),(sdl2.SDL_CONTROLLER_BUTTON_DPAD_DOWN,"down"),(sdl2.SDL_CONTROLLER_BUTTON_DPAD_LEFT,"left"),(sdl2.SDL_CONTROLLER_BUTTON_DPAD_RIGHT,"right"),(sdl2.SDL_CONTROLLER_BUTTON_B,"a"),(sdl2.SDL_CONTROLLER_BUTTON_A,"b"),(sdl2.SDL_CONTROLLER_BUTTON_BACK,"select"),(sdl2.SDL_CONTROLLER_BUTTON_START,"start"))
   for c in self.controllers:
@@ -56,6 +66,8 @@ class App:
   try:
    arc=self.session.with_suffix(".tar.gz");
    with tarfile.open(arc,"w:gz") as t:t.add(self.session,arcname=self.session.name)
+   if self.on_studio:
+    incoming=ROOT/"runs/human-demos/incoming";incoming.mkdir(parents=True,exist_ok=True);shutil.copy2(arc,incoming/arc.name);self.q.put("Saved directly to Studio incoming folder");return
    subprocess.run(["rsync","-az","--partial",str(arc),DEST],check=True);self.q.put("Sent to Studio")
   except Exception as e:self.q.put(f"Saved locally; delivery failed: {e}")
  def draw(self):
