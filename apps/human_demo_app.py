@@ -24,7 +24,7 @@ def local_ip():
 
 class App:
  def __init__(self):
-  self.boy=None;self.recording=False;self.ready=False;self.frame=0;self.session=None;self.actions=self.segments=None;self.held=frozenset();self.seg=0;self.controllers=[];self.msg="Loading house preview…";self.q=queue.Queue();self.room=(0,0,0);self.xy=(0,0);self.on_studio=local_ip()=="192.168.50.27"
+  self.boy=None;self.recording=False;self.ready=False;self.frame=0;self.session=None;self.actions=self.segments=None;self.held=frozenset();self.seg=0;self.controllers=[];self.msg="Loading house preview…";self.q=queue.Queue();self.room=(0,0,0);self.world_room=0;self.xy=(0,0);self.on_studio=local_ip()=="192.168.50.27"
   sdl2.SDL_Init(sdl2.SDL_INIT_VIDEO|sdl2.SDL_INIT_GAMECONTROLLER);ttf.TTF_Init();self.win=sdl2.SDL_CreateWindow(b"GameBoyGhost Demo Recorder",0x1FFF0000,0x1FFF0000,1000,640,0);self.r=sdl2.SDL_CreateRenderer(self.win,-1,sdl2.SDL_RENDERER_ACCELERATED);self.tex=sdl2.SDL_CreateTexture(self.r,sdl2.SDL_PIXELFORMAT_RGB24,sdl2.SDL_TEXTUREACCESS_STREAMING,160,144);self.font=ttf.TTF_OpenFont(b"/System/Library/Fonts/Supplemental/Arial.ttf",18)
   for i in range(sdl2.SDL_NumJoysticks()):
    if sdl2.SDL_IsGameController(i):self.controllers.append(sdl2.SDL_GameControllerOpen(i))
@@ -42,7 +42,7 @@ class App:
  def load_preview(self):
   self.boy=PyBoy(str(ROM),window="null");self.boy.set_emulation_speed(0)
   with STATE.open("rb") as f:self.boy.load_state(f)
-  self.boy.tick(1,render=True);m=self.boy.memory;self.room=tuple(int(m[a]) for a in (0xDBA5,0xFFF7,0xFFF6));self.xy=(int(m[0xFF98]),int(m[0xFF99]))
+  self.boy.tick(1,render=True);m=self.boy.memory;self.room=tuple(int(m[a]) for a in (0xDBA5,0xFFF7,0xFFF6));self.world_room=int(m[0xFFF6] if self.room[0]==0 else m[0xDB9C]);self.xy=(int(m[0xFF98]),int(m[0xFF99]))
  def inputs(self):
   out=set();p=((sdl2.SDL_CONTROLLER_BUTTON_DPAD_UP,"up"),(sdl2.SDL_CONTROLLER_BUTTON_DPAD_DOWN,"down"),(sdl2.SDL_CONTROLLER_BUTTON_DPAD_LEFT,"left"),(sdl2.SDL_CONTROLLER_BUTTON_DPAD_RIGHT,"right"),(sdl2.SDL_CONTROLLER_BUTTON_B,"a"),(sdl2.SDL_CONTROLLER_BUTTON_A,"b"),(sdl2.SDL_CONTROLLER_BUTTON_BACK,"select"),(sdl2.SDL_CONTROLLER_BUTTON_START,"start"))
   for c in self.controllers:
@@ -57,7 +57,7 @@ class App:
   held=self.inputs()
   if held!=self.held:self.close_seg();self.held=held;self.seg=self.frame
   for b in BUTTONS:(self.boy.button_press if b in held else self.boy.button_release)(b)
-  self.boy.tick(1,render=True);m=self.boy.memory;self.room=tuple(int(m[a]) for a in (0xDBA5,0xFFF7,0xFFF6));self.xy=(int(m[0xFF98]),int(m[0xFF99]));state={"room":self.room,"x":self.xy[0],"y":self.xy[1],"health":int(m[0xDB5A]),"toadstool":int(m[0xDB4B])};self.actions.write(json.dumps({"frame":self.frame,"buttons":sorted(held),"state":state})+"\n");Image.fromarray(self.boy.screen.ndarray[:,:,:3]).save(self.session/"frames"/f"{self.frame:08d}.png");self.frame+=1
+  self.boy.tick(1,render=True);m=self.boy.memory;self.room=tuple(int(m[a]) for a in (0xDBA5,0xFFF7,0xFFF6));self.world_room=int(m[0xFFF6] if self.room[0]==0 else m[0xDB9C]);self.xy=(int(m[0xFF98]),int(m[0xFF99]));state={"room":self.room,"world_room":self.world_room,"x":self.xy[0],"y":self.xy[1],"health":int(m[0xDB5A]),"toadstool":int(m[0xDB4B])};self.actions.write(json.dumps({"frame":self.frame,"buttons":sorted(held),"state":state})+"\n");Image.fromarray(self.boy.screen.ndarray[:,:,:3]).save(self.session/"frames"/f"{self.frame:08d}.png");self.frame+=1
   if state["toadstool"]:self.ready=True;self.msg="Toadstool acquired — click END RUN"
  def end(self):
   if not self.ready:self.msg="END RUN unlocks after the Toadstool";return
@@ -73,12 +73,11 @@ class App:
  def draw(self):
   self.rect(0,0,1000,640,(20,22,29,255))
   if self.boy:sdl2.SDL_UpdateTexture(self.tex,None,self.boy.screen.ndarray[:,:,:3].tobytes(),480);sdl2.SDL_RenderCopy(self.r,self.tex,None,sdl2.SDL_Rect(18,40,640,576))
-  self.text(700,20,"16x16 ROOM GRID");room=self.room[2]
-  overworld=self.room[0]==0
+  room=self.world_room
   for y in range(16):
-   for x in range(16):self.rect(700+x*16,50+y*16,14,14,(244,186,66,255) if overworld and (x,y)==(room&15,room>>4) else (55,59,73,255))
-  where=f"OVERWORLD PANEL {room&15},{room>>4}" if overworld else f"INDOOR MAP {self.room[1]:02X} ROOM {room:02X}"
-  self.text(700,315,where);self.text(700,340,f"LINK {self.xy[0]},{self.xy[1]}  CELL {self.xy[0]//16},{(self.xy[1]-4)//16}");self.rect(700,380,260,54,(47,130,103,255));self.text(780,397,"START RUN");self.rect(700,445,260,54,(150,93,42,255) if self.ready else (50,54,65,255));self.text(788,462,"END RUN");self.text(700,525,self.msg[:30]);self.text(700,548,self.msg[30:60]);sdl2.SDL_RenderPresent(self.r)
+   for x in range(16):self.rect(700+x*16,50+y*16,14,14,(244,186,66,255) if (x,y)==(room&15,room>>4) else (55,59,73,255))
+  interior=" INTERIOR" if self.room[0] else ""
+  self.text(700,315,f"WORLD PANEL {room&15},{room>>4}{interior}");self.text(700,340,f"LINK {self.xy[0]},{self.xy[1]}  CELL {self.xy[0]//16},{(self.xy[1]-4)//16}");self.rect(700,380,260,54,(47,130,103,255));self.text(780,397,"START RUN");self.rect(700,445,260,54,(150,93,42,255) if self.ready else (50,54,65,255));self.text(788,462,"END RUN");self.text(700,525,self.msg[:30]);self.text(700,548,self.msg[30:60]);sdl2.SDL_RenderPresent(self.r)
  def loop(self):
   e=sdl2.SDL_Event();live=True
   while live:
