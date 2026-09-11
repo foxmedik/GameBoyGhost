@@ -6,7 +6,7 @@
   "local_release_path": "data/releases/ladx-collection-v1",
   "upload_status": "verified",
   "checkpoints": "local_only",
-  "dataset_revision": "ec397f19343bf83d4265ce616949c7ac411ec8a0",
+  "dataset_revision": "5a11ac080f056e2b1d9e4bf5a489b960399ff1fd",
   "dataset_rows": 16777216,
   "dataset_episodes": 8133,
   "dataset_shards": 64,
