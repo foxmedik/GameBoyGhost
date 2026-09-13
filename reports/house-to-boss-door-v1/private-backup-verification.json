@@ -1,0 +1,11 @@
+{
+  "verified": true,
+  "files": 108123,
+  "bytes": 42035491293,
+  "seconds": 62.19,
+  "inventory_sha256": "710ea29af6321673c92e1ebe9ce08cab2060b79774eb06d1a3b957b451b65144",
+  "volume_uuid": "82AC0A21-5E2F-4382-9C2E-472832DE3F85",
+  "backup_root": "/Volumes/bac kup/GameBoyGhost/house-to-boss-door-v1/workspace",
+  "private_inventory": "/Volumes/bac kup/GameBoyGhost/house-to-boss-door-v1/private-artifact-inventory.json",
+  "access": "opaque byte hashing only; sealed contents not parsed"
+}

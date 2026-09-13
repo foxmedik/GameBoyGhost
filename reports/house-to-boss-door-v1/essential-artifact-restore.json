@@ -1,0 +1,9 @@
+{
+  "verified": true,
+  "files": 414,
+  "bytes": 480979178,
+  "package": "/Volumes/bac kup/GameBoyGhost/house-to-boss-door-v1/essential-artifacts",
+  "restored_to": "/Users/studio/Developer/GameBoyAgent-restore-house-to-boss-door-v1",
+  "inventory_sha256": "c38479bb1561e44c27680f343ad094cc7255b27274b09cfe9ef094ff60745819",
+  "method": "source to independent USB, hash verification, then USB to clean clone, hash verification"
+}

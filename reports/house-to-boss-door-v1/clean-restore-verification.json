@@ -1,0 +1,19 @@
+{
+  "success": true,
+  "source_commit": "e425748dd0410b20ba2b254e883dfe233e624912",
+  "tests": {
+    "discovered": 190,
+    "passed": 189,
+    "skipped": 1,
+    "failures": 0,
+    "errors": 0,
+    "seconds": 40.957
+  },
+  "exact_replay": true,
+  "fresh_teacher_success": true,
+  "fresh_teacher_exact_replay": true,
+  "environment": "reports/house-to-boss-door-v1/clean-environment-verification.json",
+  "private_restore": "reports/house-to-boss-door-v1/essential-artifact-restore.json",
+  "replay": "reports/house-to-boss-door-v1/clean-house-replay.json",
+  "teacher": "reports/house-to-boss-door-v1/clean-teacher-summary.json"
+}

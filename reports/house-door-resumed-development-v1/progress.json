@@ -1,6 +1,6 @@
 {
   "schema": "house-door-first-proof-progress-v1",
-  "status": "guided_teacher_qualified_release_restore_pending",
+  "status": "original_goals_complete_annotated_video_pending",
   "proof": "runs/house-nightmare-door-proof-v1/continuation.json",
   "proof_sha256": "3140c8ea17024d53928e0fdae0ccbd7f94f56c87013657c3666accf63bb57077",
   "commands": 15896,
@@ -217,11 +217,11 @@
     "log": "reports/house-door-resumed-development-v1/candidate26-tests.log"
   },
   "sealed_files_unchanged": 149,
-  "wipe_ready": false,
+  "wipe_ready": true,
   "mac_erased": false,
-  "source_committed": false,
-  "external_backup_verified": false,
-  "clean_restore_verified": false,
+  "source_committed": true,
+  "external_backup_verified": true,
+  "clean_restore_verified": true,
   "endpoint_specific_verification": "reports/house-door-resumed-development-v1/full-proof-verification-v2.json",
   "initial_verifier_harness_failure": {
     "report": "reports/house-door-resumed-development-v1/full-proof-verification.json",

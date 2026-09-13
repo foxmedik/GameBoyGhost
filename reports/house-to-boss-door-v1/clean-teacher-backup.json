@@ -1,0 +1,16 @@
+{
+  "verified": true,
+  "path": "/Volumes/bac kup/GameBoyGhost/house-to-boss-door-v1/clean-restored-teacher-v1",
+  "files": {
+    "challenge.json": "e93217e9097983a046b9eabfcaf28ba31080228dc1c3d9dbd5c0986bbb360281",
+    "continuation.json": "78b49e86afcbf3d9b241399d47433772bf125ffef3d286c32b8ff8fb03975416",
+    "evidence.json": "09cb189436b1b04326cdbf6821d54091296e0151becabda0f13791b70d3e1140",
+    "final-observations.json": "26d79ec92a9f61c0e15cf924de4f1c72d6a3ca5cf29f475612305c3f34c21fe5",
+    "final.png": "b0a154b534cc979632fb4ce4652ad1c54c9e8f1f79fd10aa0b6ad8be11a597ad",
+    "journal.json": "7b7a8ea634de44045097702526fe5f72523b56b63ff4871f12b7baedfd204ca8",
+    "live-result.json": "5e6e1b44c0ca18d29477cc178d2ee51abd41d62042f600d9b2b954407e401d06",
+    "plan.json": "921abba910d35437e3e7914dc4b56855ec1f5c945e4c71e7360e4644e6bf9c36",
+    "summary.json": "481d8ae210d1a909e1d75d2182e0fcd49009ec0739e4aad002557e275d7e1fc0",
+    "trajectory.jsonl": "f98e18c1dfd0a4e4e50f2a17d35c79fadad7aefe01cd3243ffd3c5802d4f2144"
+  }
+}

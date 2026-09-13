@@ -1,0 +1,14 @@
+{
+  "files": {
+    "runs/navigation-cliff-specialists-v2/model/epoch-256.pt": "9d2b24b28be5289fc3d32d85d46faa1835ca2068d73a1e8790630d77dbaf85ec",
+    "runs/progression-dagger-v1-model/candidate.pt": "e5a4854a4c15a37fdd5c10b8cd20a8be24b6cfe17f6fa406124bf828162502e2",
+    "runs/progression-downstream-recovery-v1-model/candidate.pt": "251c31a86a7140fe425ea77dfe2dfde35f93a39d85e1257bf6c30038f600b676",
+    "runs/tail-cave-integration-dagger-v5-model/candidate.pt": "f15a225b43b0a455277e1fe3ffeb942319b9e5c7df3b46c061518f7b08e974bc",
+    "runs/tree-clean-route-v3/policy.json": "c527a20dc92f8c9c51d41e1c9909348549202809e42a6aa732668b64492b1845"
+  },
+  "archive": "selected-models.tar.gz",
+  "sha256": "22b798edf72fa61374ee15245e56854f8d896411e19f125e64a1d3e073840f17",
+  "bytes": 5434599,
+  "training_labels_generated": 0,
+  "destination": "independent private USB backup; artifact prepared for future model-hub upload"
+}

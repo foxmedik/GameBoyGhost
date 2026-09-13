@@ -1,0 +1,5 @@
+Downloading cpython-3.11.16-macos-aarch64-none (download) (25.9MiB)
+ Downloaded cpython-3.11.16-macos-aarch64-none (download)
+Using CPython 3.11.16
+Creating virtual environment at: /Users/studio/Developer/GameBoyAgent-restore-house-to-boss-door-v1/.venv-restored
+Activate with: source /Users/studio/Developer/GameBoyAgent-restore-house-to-boss-door-v1/.venv-restored/bin/activate

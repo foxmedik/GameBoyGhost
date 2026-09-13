@@ -1,0 +1,9 @@
+{
+  "success": true,
+  "packages_verified": 45,
+  "python": "3.11.16 (main, Aug 25 2026, 13:50:51) [Clang 22.1.3 ]",
+  "executable": "/Users/studio/Developer/GameBoyAgent-restore-house-to-boss-door-v1/.venv-restored/bin/python",
+  "environment_prefix": "/Users/studio/Developer/GameBoyAgent-restore-house-to-boss-door-v1/.venv-restored",
+  "old_environment_reused": false,
+  "installation": "uv pip install --no-cache from exact release lock"
+}

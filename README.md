@@ -1,3 +1,5 @@
+> **Verified checkpoint:** House → opened Nightmare boss door. Guided teacher:20/20 house +4/4 actual half-heart recovery, all exact replay. [Release and restore instructions](docs/RESTORE_HOUSE_TO_BOSS_DOOR_V1.md).
+
 > Current result: the first continuous full-health House → Nightmare boss door route passed exact replay (15,896 commands). Teacher qualification and wipe readiness remain false. See [the first-proof report](docs/HOUSE_DOOR_FIRST_PROOF.md) and [current status](docs/CURRENT_STATUS.md).
 
 # GameBoyGhost

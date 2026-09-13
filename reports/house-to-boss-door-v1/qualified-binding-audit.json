@@ -1,0 +1,7 @@
+{
+  "original_binding_unchanged": true,
+  "files_checked": 331,
+  "changed": [],
+  "added_release_tool": "scripts/replay_house_door_release.py",
+  "commit": "e425748dd0410b20ba2b254e883dfe233e624912"
+}

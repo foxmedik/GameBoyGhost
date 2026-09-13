@@ -1,17 +1,19 @@
 {
   "schema": "house-door-research-state-v1",
-  "wipe_ready": false,
-  "current_stage": "teacher_assembly_and_qualification",
+  "wipe_ready": true,
+  "current_stage": "qualified_release_clean_restore_verified",
   "full_route_continuous_proof": true,
   "full_route_exact_replay": true,
   "teacher_panel_frozen": true,
-  "teacher_candidate_bound": false,
-  "teacher_qualified": false,
+  "teacher_candidate_bound": true,
+  "teacher_qualified": true,
   "training_labels_generated": 0,
   "learner_training_started": false,
   "sealed_validation_unchanged": true,
-  "source_and_artifacts_independently_backed_up": false,
-  "clean_uv_restore_verified": false,
+  "source_and_artifacts_independently_backed_up": true,
+  "clean_uv_restore_verified": true,
   "mac_erased": false,
-  "evidence": "reports/house-door-resumed-development-v1/progress.json"
+  "evidence": "reports/house-door-resumed-development-v1/progress.json",
+  "release": "house-to-boss-door-v1",
+  "release_evidence": "reports/house-to-boss-door-v1/release-manifest.json"
 }

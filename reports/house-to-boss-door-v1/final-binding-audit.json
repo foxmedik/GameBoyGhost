@@ -1,0 +1,9 @@
+{
+  "qualified_controller_unchanged": true,
+  "original_files": 331,
+  "bookkeeping_only_changes": [
+    "configs/research_state.json"
+  ],
+  "original_configs": "runs/house-to-boss-door-v1-qualified-configs",
+  "release_tool_addition": "scripts/replay_house_door_release.py"
+}

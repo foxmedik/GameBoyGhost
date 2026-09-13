@@ -1,0 +1,50 @@
+{
+  "schema": "house-to-boss-door-release-v1",
+  "name": "house-to-boss-door-v1",
+  "status": "qualified_and_clean_restore_verified",
+  "commit": "e425748dd0410b20ba2b254e883dfe233e624912",
+  "repository": "https://github.com/foxmedik/GameBoyGhost",
+  "branch": "codex/house-to-boss-door-v1",
+  "qualification": "reports/house-to-boss-door-v1/result.json",
+  "candidate_binding_sha256": "ac277388a0ca1452855fa29e51861c98c19109c92b69aa33f2f3a0e7d27b2ee1",
+  "panel_sha256": "f224acd2aeb6fe4661d7b5cf57de0cb9e8993b2e57a16e331928dda701f38c01",
+  "rom_and_start_hashes": {
+    "runs/state-driven-tail-cave-disengage-guarded-v1/development-house-00/game.gbc": "6285ba6201f17bc8595c600ebc2477d52561f0aff29b11f7fc3343bacb2e230b",
+    "runs/state-driven-tail-cave-disengage-guarded-v1/development-house-00/initial.state": "ad8cd027b3dfd6ea1872d51b038a4c40402846d631e43b35259b4943dcfb9d42"
+  },
+  "python": "3.11.16",
+  "dependencies": "reports/house-to-boss-door-v1/requirements-lock.txt",
+  "control": "guided",
+  "house_passed": 20,
+  "recovery_passed": 4,
+  "exact_replay_cases": 24,
+  "labels_generated": 0,
+  "training_started": false,
+  "backup": {
+    "volume_uuid": "82AC0A21-5E2F-4382-9C2E-472832DE3F85",
+    "path": "/Volumes/bac kup/GameBoyGhost/house-to-boss-door-v1",
+    "verified": true,
+    "blocker": null,
+    "receipt": "reports/house-to-boss-door-v1/private-backup-verification.json",
+    "files": 108123,
+    "bytes": 42035491293,
+    "inventory_sha256": "710ea29af6321673c92e1ebe9ce08cab2060b79774eb06d1a3b957b451b65144"
+  },
+  "clean_restore": {
+    "path": "/Users/studio/Developer/GameBoyAgent-restore-house-to-boss-door-v1",
+    "verified": true,
+    "receipt": "reports/house-to-boss-door-v1/clean-restore-verification.json"
+  },
+  "wipe_ready": true,
+  "mac_erased": false,
+  "release_ref": "house-to-boss-door-v1",
+  "code_commit": "e425748dd0410b20ba2b254e883dfe233e624912",
+  "source_bundle": "reports/house-to-boss-door-v1/source-bundle.json",
+  "selected_models": "reports/house-to-boss-door-v1/selected-models.json",
+  "sealed_integrity": "reports/house-to-boss-door-v1/final-sealed-integrity.json",
+  "upstream_runtime": {
+    "repository": "https://github.com/Xe-Xo/LADXExperiments.git",
+    "commit": "23f09fcf0339c1497ef6778e69a33075dd716a9f"
+  },
+  "qualification_binding_note": "Qualified controller and original frozen panel remain unchanged. Research-state bookkeeping updated after clean restoration; original configs preserved in private essential artifacts. New replay verifier is a release tool, not a teacher intervention."
+}
