@@ -1,0 +1,21 @@
+{
+  "schema":"tail-cave-disengage-dagger-collection-v9",
+  "status":"frozen-before-collection",
+  "frozen_at":"2026-09-12",
+  "launcher":"scripts/collect_tail_cave_disengage_dagger_v9.py",
+  "launcher_sha256":"8f7e76880c82a529e0b7b51531be8136336b2bdb47f70b0a41622cca7d558ec4",
+  "collector":"scripts/collect_tail_cave_continuous_dagger_v8.py",
+  "collector_sha256":"6a0b1e1acaa4ca242603dacee2f1b9a04f8c88fb2c1f285e631071716251db41",
+  "candidate":"runs/tail-cave-integration-dagger-v5-model/candidate.pt",
+  "candidate_sha256":"f15a225b43b0a455277e1fe3ffeb942319b9e5c7df3b46c061518f7b08e974bc",
+  "source_run":"runs/state-driven-tail-cave-dagger-v5-autonomous-development",
+  "source_summary_sha256":"16758eb11ab9eeabc08e8f248def9c65008ee67116c8a983a8ee4197c94f2e58",
+  "base_case_ids":[1,2,18],
+  "idle_frames":[0,1,2],
+  "cases":9,
+  "required_successes":8,
+  "decision_budget":512,
+  "recovery":"When the player is right of x=132 and a beetle is within 40 Manhattan pixels, move left for three frames with the shield held before resuming the verified teacher.",
+  "fresh_full_route_panel_source":"configs/tail_cave_on_policy_dagger_v6_collection.json",
+  "sealed_validation":{"specification":"runs/progression-longrun-hour-v1/plan.json","results":"reports/progression-longrun-hour-v1.json","loaded":false,"used_for_training":false,"used_for_selection":false,"relabel_as_development":false}
+}

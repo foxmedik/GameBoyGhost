@@ -1,0 +1,5 @@
+{
+  "missing_narrative_references": [],
+  "scope": "Explicit backtick file/directory references; prospective replay output and wildcard sets excluded.",
+  "machine_gate_consistency": true
+}

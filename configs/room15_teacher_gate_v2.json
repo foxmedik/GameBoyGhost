@@ -1,0 +1,343 @@
+{
+  "schema": "room15-teacher-gate-v2",
+  "source": "runs/state-driven-tail-cave-disengage-guarded-v1",
+  "output": "runs/room15-teacher-gate-v2",
+  "purpose": "40 fresh offsets22/23 plus 3 explicit failed-gate regressions; require43/43 clears and10/10 zero-damage half-heart clears. Prior gate retained as failed evidence.",
+  "control": "Frozen draft state-checked room15 teacher; original first-key trace replayed continuously, no intermediate state reloads.",
+  "training_authorized": false,
+  "validation_loaded": false,
+  "validation_policy": "Existing 20 validation specifications and results remain sealed and are never read.",
+  "cases": [
+    {
+      "id": "base-11-idle-20",
+      "base": 11,
+      "idle": 20
+    },
+    {
+      "id": "base-11-idle-21",
+      "base": 11,
+      "idle": 21
+    },
+    {
+      "id": "base-14-idle-20",
+      "base": 14,
+      "idle": 20
+    },
+    {
+      "id": "base-00-idle-22",
+      "base": 0,
+      "idle": 22
+    },
+    {
+      "id": "base-01-idle-22",
+      "base": 1,
+      "idle": 22
+    },
+    {
+      "id": "base-02-idle-22",
+      "base": 2,
+      "idle": 22
+    },
+    {
+      "id": "base-03-idle-22",
+      "base": 3,
+      "idle": 22
+    },
+    {
+      "id": "base-04-idle-22",
+      "base": 4,
+      "idle": 22
+    },
+    {
+      "id": "base-05-idle-22",
+      "base": 5,
+      "idle": 22
+    },
+    {
+      "id": "base-06-idle-22",
+      "base": 6,
+      "idle": 22
+    },
+    {
+      "id": "base-07-idle-22",
+      "base": 7,
+      "idle": 22
+    },
+    {
+      "id": "base-08-idle-22",
+      "base": 8,
+      "idle": 22
+    },
+    {
+      "id": "base-09-idle-22",
+      "base": 9,
+      "idle": 22
+    },
+    {
+      "id": "base-10-idle-22",
+      "base": 10,
+      "idle": 22
+    },
+    {
+      "id": "base-11-idle-22",
+      "base": 11,
+      "idle": 22
+    },
+    {
+      "id": "base-12-idle-22",
+      "base": 12,
+      "idle": 22
+    },
+    {
+      "id": "base-13-idle-22",
+      "base": 13,
+      "idle": 22
+    },
+    {
+      "id": "base-14-idle-22",
+      "base": 14,
+      "idle": 22
+    },
+    {
+      "id": "base-15-idle-22",
+      "base": 15,
+      "idle": 22
+    },
+    {
+      "id": "base-16-idle-22",
+      "base": 16,
+      "idle": 22
+    },
+    {
+      "id": "base-17-idle-22",
+      "base": 17,
+      "idle": 22
+    },
+    {
+      "id": "base-18-idle-22",
+      "base": 18,
+      "idle": 22
+    },
+    {
+      "id": "base-19-idle-22",
+      "base": 19,
+      "idle": 22
+    },
+    {
+      "id": "base-00-idle-23",
+      "base": 0,
+      "idle": 23
+    },
+    {
+      "id": "base-01-idle-23",
+      "base": 1,
+      "idle": 23
+    },
+    {
+      "id": "base-02-idle-23",
+      "base": 2,
+      "idle": 23
+    },
+    {
+      "id": "base-03-idle-23",
+      "base": 3,
+      "idle": 23
+    },
+    {
+      "id": "base-04-idle-23",
+      "base": 4,
+      "idle": 23
+    },
+    {
+      "id": "base-05-idle-23",
+      "base": 5,
+      "idle": 23
+    },
+    {
+      "id": "base-06-idle-23",
+      "base": 6,
+      "idle": 23
+    },
+    {
+      "id": "base-07-idle-23",
+      "base": 7,
+      "idle": 23
+    },
+    {
+      "id": "base-08-idle-23",
+      "base": 8,
+      "idle": 23
+    },
+    {
+      "id": "base-09-idle-23",
+      "base": 9,
+      "idle": 23
+    },
+    {
+      "id": "base-10-idle-23",
+      "base": 10,
+      "idle": 23
+    },
+    {
+      "id": "base-11-idle-23",
+      "base": 11,
+      "idle": 23
+    },
+    {
+      "id": "base-12-idle-23",
+      "base": 12,
+      "idle": 23
+    },
+    {
+      "id": "base-13-idle-23",
+      "base": 13,
+      "idle": 23
+    },
+    {
+      "id": "base-14-idle-23",
+      "base": 14,
+      "idle": 23
+    },
+    {
+      "id": "base-15-idle-23",
+      "base": 15,
+      "idle": 23
+    },
+    {
+      "id": "base-16-idle-23",
+      "base": 16,
+      "idle": 23
+    },
+    {
+      "id": "base-17-idle-23",
+      "base": 17,
+      "idle": 23
+    },
+    {
+      "id": "base-18-idle-23",
+      "base": 18,
+      "idle": 23
+    },
+    {
+      "id": "base-19-idle-23",
+      "base": 19,
+      "idle": 23
+    }
+  ],
+  "frozen_inputs": {
+    "scripts/collect_room15_overnight.py": "7f7d56970a9e332aaae9bdf48c86e7a4e0ef7439d147c35cf93aef3633d3584f",
+    "scripts/run_toadstool_progression.py": "2b5891df2733a8181e128504f7c93d64eeca7238ca7c21592e31e7346941de75",
+    "src/gameboy_agent/progression.py": "028a2b55af1ede9083b42ea4fca8e96a0e86ffbc417b2200ce223c123f6cdf67",
+    "src/gameboy_agent/progression_skills.py": "ed783d8ffc381bd7130110ca370402d21cf14cbd8ed2f3b08513ac08b17d4f76",
+    "src/gameboy_agent/cave_navigation.py": "ce01861a4fd6527654718a41d38f2f330879383e243ecdef41a41adcf96119fb",
+    "src/gameboy_agent/checkpoint.py": "92dc02738f1b2ef26aa78b71ca363a042310cbf64e320f1b74dcb3171a2c37aa",
+    "src/gameboy_agent/curation.py": "346fdbec424e4fc16fb29233d7c328668ccdb829b6bd9e11eb651209bea861c3",
+    "src/gameboy_agent/tail_cave_teacher.py": "88712dcbe065c825b7ec14424ae9865d0423b6fa0f20eb70f88bdd7101213fea",
+    "src/gameboy_agent/skills.py": "3d34f3ec623cc5e7406d7ea9e49877dd82845a5bf8902daea693e4232323beff",
+    "src/gameboy_agent/terrain_navigation.py": "11e2c242187316a7dc3fd6571a90189c4c7dc3120264e590d23f176095347c65",
+    "src/gameboy_agent/local_approach.py": "d9ae3108f6a5d9c5c0b7c8186ce7f5eb2e2c92195d8c038fdde158c2b6206b5c",
+    "src/gameboy_agent/tail_cave_progression.py": "ca98e838029cbd6435a201ec38fcf0e4259850fc001111997c24158965523aab",
+    "src/gameboy_agent/__init__.py": "c0db13aa2a0f74826baea4e34dd5850b0acf613b4f290966df5ba3d5b3dde019",
+    "src/gameboy_agent/ladx_baseline.py": "d39803146f2563f47699c664166efb28dc949043d71ee4c9603f5c761f43ab8c",
+    "src/gameboy_agent/progression_contracts.py": "f26daed43320078182f365d2dbb75f09db3dc9a54874724da60ac0b9e031388d",
+    "src/gameboy_agent/rom_profile.py": "a0d2d51dede516c30351deebf0faff60dea80a0eb5dfc73edde64a2b7c1301e9",
+    "src/gameboy_agent/dataset.py": "e95c3f33de63f22a4d6aef19d99acdce044e1bf251f4abe866baa24a9a0cc489",
+    "src/gameboy_agent/tail_cave_recovery.py": "7a644aeab51e265d668c21e41f0b81423fe4e099e317bc7612189059558536e0",
+    "src/gameboy_agent/progression_env.py": "0f403b12da85cbef70e1bfbae64a330bd655bb200282cb636ff55e7d5ee73955",
+    "src/gameboy_agent/transitions.py": "9a00f8c610b755ee3580bd1f6cb22c0dab1a9217e398fbe0c58eb99c5ad86a2f",
+    "src/gameboy_agent/observed_route.py": "eca1aab8ad7346ba41f9182497b28d89a81c1587905af3bf250e471033129120",
+    "src/gameboy_agent/training_env.py": "56357f1af55a5fbeb46688f8935cdacf7cdffaaed4a38f02ea4e7193867f4d8f",
+    "src/gameboy_agent/tail_cave_controller.py": "da7cb3236e4aebb1fde1ca3ca5417b2d3996b9e7481425e14821f24e9ba58f3a",
+    "src/gameboy_agent/witch_approach.py": "c1edddb7e3811e282a2500c0a65a32138ecd3aea3aa5a306255c6078e9153c7d",
+    "src/gameboy_agent/neutral_env.py": "7ac122a8472bb7c4907be78f565cb7c23d449a1454b6df048bbfbb1c4699a1c7",
+    "src/gameboy_agent/navigation.py": "1f23b26bf4fbf95c1119d91d7f02163876b14918546bfd4d9c0b29785e1d43f8",
+    "src/gameboy_agent/world_memory.py": "c816fe5a72118a8791013676a0aacfbbb2846c9fe93545ddf1acec7ad5d28bcb",
+    "src/gameboy_agent/toadstool_teacher.py": "da0bbe14c75a7438a864ca70891fd60690d6e8c665340fe23c3200fd3ca296ab",
+    "src/gameboy_agent/progression_planner.py": "f384d048a769513eb8e0e4e6b85896113fc33ec7901c39a872bae5c1da3cb4a6",
+    "src/gameboy_agent/live_forest.py": "e7e2e646d8abafcef8484004128a4e7a88bdefe152bffc8f1bfb8adf4548750e",
+    "runs/state-driven-tail-cave-disengage-guarded-v1/development-house-00/game.gbc": "6285ba6201f17bc8595c600ebc2477d52561f0aff29b11f7fc3343bacb2e230b",
+    "runs/state-driven-tail-cave-disengage-guarded-v1/development-house-00/initial.state": "ad8cd027b3dfd6ea1872d51b038a4c40402846d631e43b35259b4943dcfb9d42",
+    "runs/state-driven-tail-cave-disengage-guarded-v1/development-house-00/trajectory.jsonl": "7b9d2f9ed45d91233f99234b817ac2aaf88d087ada552975277fa5da03c848ff",
+    "runs/state-driven-tail-cave-disengage-guarded-v1/development-house-00/result.json": "71a30f0022f0223f20adcece3602df53afde14b8d3b496c662837a6a001f60ab",
+    "runs/state-driven-tail-cave-disengage-guarded-v1/development-house-01/game.gbc": "6285ba6201f17bc8595c600ebc2477d52561f0aff29b11f7fc3343bacb2e230b",
+    "runs/state-driven-tail-cave-disengage-guarded-v1/development-house-01/initial.state": "ad8cd027b3dfd6ea1872d51b038a4c40402846d631e43b35259b4943dcfb9d42",
+    "runs/state-driven-tail-cave-disengage-guarded-v1/development-house-01/trajectory.jsonl": "9190ba27218015fb1eb0aff9706fca81884ee4999243b288b0eaab88a3a37f57",
+    "runs/state-driven-tail-cave-disengage-guarded-v1/development-house-01/result.json": "023b07c165b1390af6fed5ac07ac48897720e11be0580eff30546571b82da7d9",
+    "runs/state-driven-tail-cave-disengage-guarded-v1/development-house-02/game.gbc": "6285ba6201f17bc8595c600ebc2477d52561f0aff29b11f7fc3343bacb2e230b",
+    "runs/state-driven-tail-cave-disengage-guarded-v1/development-house-02/initial.state": "ad8cd027b3dfd6ea1872d51b038a4c40402846d631e43b35259b4943dcfb9d42",
+    "runs/state-driven-tail-cave-disengage-guarded-v1/development-house-02/trajectory.jsonl": "ab9f858862546dbbe7620e7a03c016ca8c69d70eca37105b1b3e44f26aface3c",
+    "runs/state-driven-tail-cave-disengage-guarded-v1/development-house-02/result.json": "d40bf32c9dab0d5626b3d838ff9c0fc9427f92feb4f0ade5d1547618f61a27f9",
+    "runs/state-driven-tail-cave-disengage-guarded-v1/development-house-03/game.gbc": "6285ba6201f17bc8595c600ebc2477d52561f0aff29b11f7fc3343bacb2e230b",
+    "runs/state-driven-tail-cave-disengage-guarded-v1/development-house-03/initial.state": "ad8cd027b3dfd6ea1872d51b038a4c40402846d631e43b35259b4943dcfb9d42",
+    "runs/state-driven-tail-cave-disengage-guarded-v1/development-house-03/trajectory.jsonl": "94e780c94ba7dd1e7023c1d506ad7c4b5f28fcfdf9000ae01ed79c9ecca2eb9d",
+    "runs/state-driven-tail-cave-disengage-guarded-v1/development-house-03/result.json": "f1a750bffcde6ab9a4c5a00290661b93fc1e49b3d6551a6ec3dd64fec8fed2c9",
+    "runs/state-driven-tail-cave-disengage-guarded-v1/development-house-04/game.gbc": "6285ba6201f17bc8595c600ebc2477d52561f0aff29b11f7fc3343bacb2e230b",
+    "runs/state-driven-tail-cave-disengage-guarded-v1/development-house-04/initial.state": "ad8cd027b3dfd6ea1872d51b038a4c40402846d631e43b35259b4943dcfb9d42",
+    "runs/state-driven-tail-cave-disengage-guarded-v1/development-house-04/trajectory.jsonl": "d110a530b1cc094bb82baa177e01100a8591545b7456705d0b23cbb71fd5b604",
+    "runs/state-driven-tail-cave-disengage-guarded-v1/development-house-04/result.json": "b09b3f88573fc2fa43393571bdc6c4ea9cdd84bc315e7dc685457721d77512dc",
+    "runs/state-driven-tail-cave-disengage-guarded-v1/development-house-05/game.gbc": "6285ba6201f17bc8595c600ebc2477d52561f0aff29b11f7fc3343bacb2e230b",
+    "runs/state-driven-tail-cave-disengage-guarded-v1/development-house-05/initial.state": "ad8cd027b3dfd6ea1872d51b038a4c40402846d631e43b35259b4943dcfb9d42",
+    "runs/state-driven-tail-cave-disengage-guarded-v1/development-house-05/trajectory.jsonl": "60e868f69486a79f5bb00f8a0179a86f6c5f35786330a6ddae68fda071ad01d5",
+    "runs/state-driven-tail-cave-disengage-guarded-v1/development-house-05/result.json": "a4b651464096fa23119143f33129fee9b60622c132662bba939a3a71a8fee668",
+    "runs/state-driven-tail-cave-disengage-guarded-v1/development-house-06/game.gbc": "6285ba6201f17bc8595c600ebc2477d52561f0aff29b11f7fc3343bacb2e230b",
+    "runs/state-driven-tail-cave-disengage-guarded-v1/development-house-06/initial.state": "ad8cd027b3dfd6ea1872d51b038a4c40402846d631e43b35259b4943dcfb9d42",
+    "runs/state-driven-tail-cave-disengage-guarded-v1/development-house-06/trajectory.jsonl": "ba97ce4ec695eaf4b4d409aa7d81c92a36a3214c7019a5acd07f9649cd06dfde",
+    "runs/state-driven-tail-cave-disengage-guarded-v1/development-house-06/result.json": "929e0450d201a27bc8c481fc60c86e2afc649350e387e2d8c5f778d57f628ccb",
+    "runs/state-driven-tail-cave-disengage-guarded-v1/development-house-07/game.gbc": "6285ba6201f17bc8595c600ebc2477d52561f0aff29b11f7fc3343bacb2e230b",
+    "runs/state-driven-tail-cave-disengage-guarded-v1/development-house-07/initial.state": "ad8cd027b3dfd6ea1872d51b038a4c40402846d631e43b35259b4943dcfb9d42",
+    "runs/state-driven-tail-cave-disengage-guarded-v1/development-house-07/trajectory.jsonl": "70aee67c9ce3d7c1691f518921b62cfdbfef65341029b3cacce7e9d0e9acbc05",
+    "runs/state-driven-tail-cave-disengage-guarded-v1/development-house-07/result.json": "ecfa9f332f49542d25edf54edb55bf97d6cdcd4bd1c5997e87e8c87c24294cf8",
+    "runs/state-driven-tail-cave-disengage-guarded-v1/development-house-08/game.gbc": "6285ba6201f17bc8595c600ebc2477d52561f0aff29b11f7fc3343bacb2e230b",
+    "runs/state-driven-tail-cave-disengage-guarded-v1/development-house-08/initial.state": "ad8cd027b3dfd6ea1872d51b038a4c40402846d631e43b35259b4943dcfb9d42",
+    "runs/state-driven-tail-cave-disengage-guarded-v1/development-house-08/trajectory.jsonl": "0b56c84a70c135693bf4ac342d585e9dc578ab7ce9cafae8a7ee73b77236dee9",
+    "runs/state-driven-tail-cave-disengage-guarded-v1/development-house-08/result.json": "5a458266b8396da455598bf7b91ec2333a4c50f0cb3cd7ba77545072c7d32389",
+    "runs/state-driven-tail-cave-disengage-guarded-v1/development-house-09/game.gbc": "6285ba6201f17bc8595c600ebc2477d52561f0aff29b11f7fc3343bacb2e230b",
+    "runs/state-driven-tail-cave-disengage-guarded-v1/development-house-09/initial.state": "ad8cd027b3dfd6ea1872d51b038a4c40402846d631e43b35259b4943dcfb9d42",
+    "runs/state-driven-tail-cave-disengage-guarded-v1/development-house-09/trajectory.jsonl": "0c6d13bff31d61cb9167c4ffda57a62f41d00b657d3d4508407984ef5e0209a3",
+    "runs/state-driven-tail-cave-disengage-guarded-v1/development-house-09/result.json": "a6a0aebef007945ab2dff3b2a076bceade689e940b5d4919b91f12958034cdda",
+    "runs/state-driven-tail-cave-disengage-guarded-v1/development-house-10/game.gbc": "6285ba6201f17bc8595c600ebc2477d52561f0aff29b11f7fc3343bacb2e230b",
+    "runs/state-driven-tail-cave-disengage-guarded-v1/development-house-10/initial.state": "ad8cd027b3dfd6ea1872d51b038a4c40402846d631e43b35259b4943dcfb9d42",
+    "runs/state-driven-tail-cave-disengage-guarded-v1/development-house-10/trajectory.jsonl": "610c8e4ccefeecbaec8783f278b0738b9bdca06644d19e217fb03a2b3aea679a",
+    "runs/state-driven-tail-cave-disengage-guarded-v1/development-house-10/result.json": "7338f25b4fe3f734083e18b58b490e61bf29e7e7ae3950afc3e66931faca512f",
+    "runs/state-driven-tail-cave-disengage-guarded-v1/development-house-11/game.gbc": "6285ba6201f17bc8595c600ebc2477d52561f0aff29b11f7fc3343bacb2e230b",
+    "runs/state-driven-tail-cave-disengage-guarded-v1/development-house-11/initial.state": "ad8cd027b3dfd6ea1872d51b038a4c40402846d631e43b35259b4943dcfb9d42",
+    "runs/state-driven-tail-cave-disengage-guarded-v1/development-house-11/trajectory.jsonl": "6559b3d313a4ac266c980e979da8e97497a9ce24d169f602265aa7142158569f",
+    "runs/state-driven-tail-cave-disengage-guarded-v1/development-house-11/result.json": "894d04a65e35b1ae96344842882abc1251b236d35c9656dd7aaa749b5f0becf2",
+    "runs/state-driven-tail-cave-disengage-guarded-v1/development-house-12/game.gbc": "6285ba6201f17bc8595c600ebc2477d52561f0aff29b11f7fc3343bacb2e230b",
+    "runs/state-driven-tail-cave-disengage-guarded-v1/development-house-12/initial.state": "ad8cd027b3dfd6ea1872d51b038a4c40402846d631e43b35259b4943dcfb9d42",
+    "runs/state-driven-tail-cave-disengage-guarded-v1/development-house-12/trajectory.jsonl": "fa92315158728ba2443f4a51093c039f219fccdf6dd7bcc737f09918fc116139",
+    "runs/state-driven-tail-cave-disengage-guarded-v1/development-house-12/result.json": "75e1084cb855463d1b2064be0232ee174a5336cec2e427d2e609b23c455a564f",
+    "runs/state-driven-tail-cave-disengage-guarded-v1/development-house-13/game.gbc": "6285ba6201f17bc8595c600ebc2477d52561f0aff29b11f7fc3343bacb2e230b",
+    "runs/state-driven-tail-cave-disengage-guarded-v1/development-house-13/initial.state": "ad8cd027b3dfd6ea1872d51b038a4c40402846d631e43b35259b4943dcfb9d42",
+    "runs/state-driven-tail-cave-disengage-guarded-v1/development-house-13/trajectory.jsonl": "07a6a1d6ecabaa4ed53b866f32ee23c1bee0b3118cd02c54a950517dcc538acf",
+    "runs/state-driven-tail-cave-disengage-guarded-v1/development-house-13/result.json": "c7eecf27af0b636f692c2f44ecfcddc23a7bf07884ebb0de41a7531881c4808e",
+    "runs/state-driven-tail-cave-disengage-guarded-v1/development-house-14/game.gbc": "6285ba6201f17bc8595c600ebc2477d52561f0aff29b11f7fc3343bacb2e230b",
+    "runs/state-driven-tail-cave-disengage-guarded-v1/development-house-14/initial.state": "ad8cd027b3dfd6ea1872d51b038a4c40402846d631e43b35259b4943dcfb9d42",
+    "runs/state-driven-tail-cave-disengage-guarded-v1/development-house-14/trajectory.jsonl": "36df4706087b640047d1a33ce6cabe6243d98a79dc73e99b5a5f58fb257b3b6b",
+    "runs/state-driven-tail-cave-disengage-guarded-v1/development-house-14/result.json": "15ca5d7c7ee8a841dd80d4ea10f33e6be0a7d2da5d2a14ca6914b10de8c2ff15",
+    "runs/state-driven-tail-cave-disengage-guarded-v1/development-house-15/game.gbc": "6285ba6201f17bc8595c600ebc2477d52561f0aff29b11f7fc3343bacb2e230b",
+    "runs/state-driven-tail-cave-disengage-guarded-v1/development-house-15/initial.state": "ad8cd027b3dfd6ea1872d51b038a4c40402846d631e43b35259b4943dcfb9d42",
+    "runs/state-driven-tail-cave-disengage-guarded-v1/development-house-15/trajectory.jsonl": "db2361c163105fd5ee8a9b4c7179b01a857158d2f7e6eb5a31db71071d9f52ea",
+    "runs/state-driven-tail-cave-disengage-guarded-v1/development-house-15/result.json": "10a5cffbd652a1baf8dfa590a381d95a5cacf55478840768c1c3f3e29c832a57",
+    "runs/state-driven-tail-cave-disengage-guarded-v1/development-house-16/game.gbc": "6285ba6201f17bc8595c600ebc2477d52561f0aff29b11f7fc3343bacb2e230b",
+    "runs/state-driven-tail-cave-disengage-guarded-v1/development-house-16/initial.state": "ad8cd027b3dfd6ea1872d51b038a4c40402846d631e43b35259b4943dcfb9d42",
+    "runs/state-driven-tail-cave-disengage-guarded-v1/development-house-16/trajectory.jsonl": "cb9edfe8c20ed3eeed120102b7780a12973f072d614c1136ab60b580aca214ab",
+    "runs/state-driven-tail-cave-disengage-guarded-v1/development-house-16/result.json": "206df97b84a54f2345d40005b53ad35bbe8f25ea50f632837c7f1c00260b8bd0",
+    "runs/state-driven-tail-cave-disengage-guarded-v1/development-house-17/game.gbc": "6285ba6201f17bc8595c600ebc2477d52561f0aff29b11f7fc3343bacb2e230b",
+    "runs/state-driven-tail-cave-disengage-guarded-v1/development-house-17/initial.state": "ad8cd027b3dfd6ea1872d51b038a4c40402846d631e43b35259b4943dcfb9d42",
+    "runs/state-driven-tail-cave-disengage-guarded-v1/development-house-17/trajectory.jsonl": "f24a5d9aaeb796e969c12489a37ebce781e6f5fc65166e3360eca2de271f8c93",
+    "runs/state-driven-tail-cave-disengage-guarded-v1/development-house-17/result.json": "dfd0a66f719122cc2eaf3fe47856f82a7a362a2948d2ba2fbb8272879acdefef",
+    "runs/state-driven-tail-cave-disengage-guarded-v1/development-house-18/game.gbc": "6285ba6201f17bc8595c600ebc2477d52561f0aff29b11f7fc3343bacb2e230b",
+    "runs/state-driven-tail-cave-disengage-guarded-v1/development-house-18/initial.state": "ad8cd027b3dfd6ea1872d51b038a4c40402846d631e43b35259b4943dcfb9d42",
+    "runs/state-driven-tail-cave-disengage-guarded-v1/development-house-18/trajectory.jsonl": "84218ae1b1ccdf3d9be496f29c7ec47e0c45108be5f3f97f38210303b5dc8032",
+    "runs/state-driven-tail-cave-disengage-guarded-v1/development-house-18/result.json": "614be36f1d571244a8e7c57a1c529b4029fea3c07e4f684890b963faa69bebc7",
+    "runs/state-driven-tail-cave-disengage-guarded-v1/development-house-19/game.gbc": "6285ba6201f17bc8595c600ebc2477d52561f0aff29b11f7fc3343bacb2e230b",
+    "runs/state-driven-tail-cave-disengage-guarded-v1/development-house-19/initial.state": "ad8cd027b3dfd6ea1872d51b038a4c40402846d631e43b35259b4943dcfb9d42",
+    "runs/state-driven-tail-cave-disengage-guarded-v1/development-house-19/trajectory.jsonl": "9dc38706a1af14736a14ab568476689c786564c457076d019e5f5ac91a1ff728",
+    "runs/state-driven-tail-cave-disengage-guarded-v1/development-house-19/result.json": "bf2c840db7d1df1e935b6b8e10e9e2b0290b20abaedc7e9b94129aa43f8134d1",
+    "src/gameboy_agent/room15_recovery.py": "184a2371bc5dda0323fe2c368e43817245a5c7735b91fa67fc609e83d96b7d28",
+    "scripts/evaluate_room15_teacher.py": "9e925a881222cf02935955ddc4582dc66f370d8443566d0bd45ec2cb7f3c51d4"
+  },
+  "required_successes": 43,
+  "required_half_heart_zero_damage": 10
+}

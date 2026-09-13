@@ -1,0 +1,11 @@
+{
+  "hypothesis": "Room10 passage allows360 decisions for close-combat pauses; ignore dying Stalfos for swing trigger. Whole-case frozen budgets unchanged.",
+  "cases": [
+    "house41",
+    "house67",
+    "house307",
+    "recovery23"
+  ],
+  "qualification": false,
+  "training_eligible": false
+}

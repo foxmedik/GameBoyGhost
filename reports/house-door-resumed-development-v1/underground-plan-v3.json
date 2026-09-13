@@ -1,0 +1,14 @@
+{
+  "source": "runs/teacher-beetle-v2/continuation.json",
+  "source_sha256": "b6232b566c20b509f17296c5c30131903e3988c24939d7bbada9fda3b044718b",
+  "case_count": 1,
+  "budget": {
+    "decisions": 1800,
+    "frames": 6500
+  },
+  "hypothesis": "Goomba reached ladder during descent. Stop at y88 and wait until sole Goomba is x104 or west and moving left before descending110 and guarded clearance. Same budgets.",
+  "success": "room01 ladder exit at full health, one key, shield B sword A, no buffered damage",
+  "training_eligible": false,
+  "qualification": false,
+  "prior_failure": "runs/teacher-underground-v2"
+}

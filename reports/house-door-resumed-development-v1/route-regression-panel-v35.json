@@ -1,0 +1,11 @@
+{
+  "hypothesis": "Map west middle-band approach reaches doorway-side Stalfos; beetle blade alignment12 and recovery from shield recoil outside pursuit lanes.",
+  "cases": [
+    "house673",
+    "house743",
+    "house607",
+    "recovery698"
+  ],
+  "qualification": false,
+  "training_eligible": false
+}

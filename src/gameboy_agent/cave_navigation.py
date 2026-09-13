@@ -126,3 +126,45 @@ def toadstool_stone_push_plan(boy):
     objects = memory[0xD711:0xD791]
     return [dict(push) for push in TOADSTOOL_STONE_PUSHES
             if int(objects[push['index']]) == PUSHABLE_BLOCK]
+
+
+def plan_block_exit(objects, physics, start, *, direction=4, max_states=4096):
+    """Bounded room-local search, treating a pushed block as immovable A6.
+
+    The matched 03_pushed_block handler installs A6 after the move. Only A7
+    may be pushed, only into ordinary traversable floor, with a reachable stance.
+    This is a geometry hypothesis; callers must verify every physical grid change.
+    """
+    from collections import deque
+    from gameboy_agent.terrain_navigation import PASSABLE, paths, DIRECTIONS
+    initial = tuple(int(v) for v in objects)
+    queue = deque([(initial, tuple(start), [])])
+    visited = set()
+    while queue and len(visited) < max_states:
+        cells, player, plan = queue.popleft()
+        grid = [[physics[cells[y*16+x]] for x in range(10)] for y in range(8)]
+        reachable = paths(grid, player)
+        key = (cells, min(reachable) if reachable else player)
+        if key in visited:
+            continue
+        visited.add(key)
+        edge = lambda p: (p[0] == 9 if direction == 4 else p[0] == 0 if direction == 3
+                          else p[1] == 0 if direction == 1 else p[1] == 7)
+        if any(edge(p) and grid[p[1]][p[0]] in PASSABLE for p in reachable):
+            return dict(status='planned', pushes=plan, states=len(visited))
+        for index, value in enumerate(cells):
+            x, y = index % 16, index // 16
+            if value != PUSHABLE_BLOCK or not (0 <= x < 10 and 0 <= y < 8):
+                continue
+            for movement, dx, dy in DIRECTIONS:
+                stance, destination = (x-dx,y-dy), (x+dx,y+dy)
+                tx, ty = destination
+                if (stance not in reachable or not (0 <= tx < 10 and 0 <= ty < 8)
+                        or grid[ty][tx] not in PASSABLE):
+                    continue
+                changed = list(cells)
+                changed[index], changed[ty*16+tx] = 0x0D, 0xA6
+                push = dict(index=index, direction=movement, stance=list(stance),
+                            destination_index=ty*16+tx)
+                queue.append((tuple(changed), (x,y), plan+[push]))
+    return dict(status='no_plan_within_budget', pushes=[], states=len(visited))

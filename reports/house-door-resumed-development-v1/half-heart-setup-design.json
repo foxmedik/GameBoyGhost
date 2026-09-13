@@ -1,0 +1,18 @@
+{
+  "status": "design_not_executed",
+  "qualification": false,
+  "training_eligible": false,
+  "location": "Second underground room24 after descending the east ladder, before final Goomba clearance",
+  "method": "Physical Goomba contact until raw health4, then sword clearance and guarded climb; no memory writes or state loads",
+  "setup_budget_decisions": 1200,
+  "setup_health_floor": 4,
+  "challenge": "First room29 Feather approach arrival at health4, pending damage/healing0",
+  "reject": [
+    "health below4 or pending damage would undershoot4",
+    "unexpected healing",
+    "unexpected room, inventory, dialogue, entity count",
+    "setup budget exhausted",
+    "challenge prerequisite missing"
+  ],
+  "next": "Freeze implementation and complete one development episode at idle23 before panel binding"
+}

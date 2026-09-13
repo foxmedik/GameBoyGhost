@@ -1,0 +1,602 @@
+{
+  "access": "opaque byte hashing only; no JSON parsing, evaluation, case selection or relabeling",
+  "files": {
+    "runs/progression-longrun-hour-v1/plan.json": {
+      "sha256": "af65050d86c2c83548ddcb210fd40801f58b4f41b827d42e67596a6101852cab",
+      "bytes": 141822
+    },
+    "reports/progression-longrun-hour-v1.json": {
+      "sha256": "58fc51ab2ba94428694bca9d323ea6310ce4960eb0e2f9164953a61c4b17078f",
+      "bytes": 8223
+    },
+    "runs/data-workset-smoke-v2/frozen-eval.json": {
+      "sha256": "0fae3b109780162423ee0c3fa364789de3e87b2ce8e2de6741d362dc668b6200",
+      "bytes": 7859
+    },
+    "runs/data-workset-smoke-v1/frozen-eval.json": {
+      "sha256": "0fae3b109780162423ee0c3fa364789de3e87b2ce8e2de6741d362dc668b6200",
+      "bytes": 7859
+    },
+    "runs/data-workset-16m-v1/frozen-eval.json": {
+      "sha256": "0fae3b109780162423ee0c3fa364789de3e87b2ce8e2de6741d362dc668b6200",
+      "bytes": 7859
+    },
+    "runs/progression-longrun-hour-v1/cases/validation-house-01/evidence.json": {
+      "sha256": "fe1c61df2568150aa67a12f4789ff9b3508c8cd94ffca9303c26580fc63d3ffd",
+      "bytes": 867
+    },
+    "runs/progression-longrun-hour-v1/cases/validation-house-01/final.png": {
+      "sha256": "2a99fffc9d1b4737821e8f37833ceb8bcd942d6457337a36b831a5dc7561f5bd",
+      "bytes": 5631
+    },
+    "runs/progression-longrun-hour-v1/cases/validation-house-01/result.json": {
+      "sha256": "995f4a8a5c92e82842d699d1ab51445998b380edec191d43a45118b38055e624",
+      "bytes": 1189
+    },
+    "runs/progression-longrun-hour-v1/cases/validation-house-01/final.state": {
+      "sha256": "01e9692a7601e704927b681284df38dfec44761108041bf83c34b94f5f6822fb",
+      "bytes": 198565
+    },
+    "runs/progression-longrun-hour-v1/cases/validation-house-01/journal.json": {
+      "sha256": "80ffd9c8c9dee16e22d7895b5c30202616f6e4cb08902ac776937b6fde9b5af1",
+      "bytes": 31436
+    },
+    "runs/progression-longrun-hour-v1/cases/validation-house-01/trajectory.jsonl": {
+      "sha256": "cc641d51882a8d8617380e529aedc45f993a8e449aadd2acdd77e61c1806eb6c",
+      "bytes": 4898981
+    },
+    "runs/progression-longrun-hour-v1/cases/validation-house-01/manifest.json": {
+      "sha256": "4192dbb5c10b52c66581955a80ac008d38270824c84d9369f797fe604f72ad50",
+      "bytes": 552
+    },
+    "runs/progression-longrun-hour-v1/cases/validation-house-06/evidence.json": {
+      "sha256": "874c6d0758dc3ef430cb03d7276040c0a39a73c05497307c750c0a776022f6ce",
+      "bytes": 866
+    },
+    "runs/progression-longrun-hour-v1/cases/validation-house-06/final.png": {
+      "sha256": "e4675ee84112e0352958b2ef9c69bd6c02c04d0bb712eeb79ebf173cf078f66f",
+      "bytes": 5663
+    },
+    "runs/progression-longrun-hour-v1/cases/validation-house-06/result.json": {
+      "sha256": "4b39375596ae98e7e526aa897bcbe37fc8a53f3b1e2680b7881857669c109d2b",
+      "bytes": 1189
+    },
+    "runs/progression-longrun-hour-v1/cases/validation-house-06/final.state": {
+      "sha256": "5f49778cc2f703e943f4c8c3012c23386d61a897dc7a71f97047780294f7f461",
+      "bytes": 198565
+    },
+    "runs/progression-longrun-hour-v1/cases/validation-house-06/journal.json": {
+      "sha256": "adb2c20989ab489e0396bd057ce135d3f820bc853d8904253bf72bccc63621d8",
+      "bytes": 35449
+    },
+    "runs/progression-longrun-hour-v1/cases/validation-house-06/trajectory.jsonl": {
+      "sha256": "1a0a545d7b5f7eea6ee2cbbd13c00100bc3cdb7fdd649010db356a21234213e7",
+      "bytes": 4900783
+    },
+    "runs/progression-longrun-hour-v1/cases/validation-house-06/manifest.json": {
+      "sha256": "96c2dbdb8a511115ec4bece20bed543b28e1c0c714c9e75000d6d1f0fed6b10c",
+      "bytes": 552
+    },
+    "runs/progression-longrun-hour-v1/cases/validation-house-08/evidence.json": {
+      "sha256": "37517e5f3dc66819f61f5a7bb8ace1921282415f10551d2defa5c3eb0985b570",
+      "bytes": 3
+    },
+    "runs/progression-longrun-hour-v1/cases/validation-house-08/final.png": {
+      "sha256": "a8305d21aab308447dfa0cdf2fc0091e411b844285f5473916f025a7dd6b4c09",
+      "bytes": 5017
+    },
+    "runs/progression-longrun-hour-v1/cases/validation-house-08/result.json": {
+      "sha256": "1fbe5093cbaa311b4046029ed73d2d20737159ae37b90af0a7bbc5928a3c6e8f",
+      "bytes": 1270
+    },
+    "runs/progression-longrun-hour-v1/cases/validation-house-08/final.state": {
+      "sha256": "ae1669bd463856fc42c7ec467ee4d1c801eea5ceb4d6ce6961a36a28620f3b05",
+      "bytes": 198565
+    },
+    "runs/progression-longrun-hour-v1/cases/validation-house-08/journal.json": {
+      "sha256": "c7bc7841c2a4623125c0eda154b8b68ed7e3faf90cb64369e83010401e515951",
+      "bytes": 25144
+    },
+    "runs/progression-longrun-hour-v1/cases/validation-house-08/trajectory.jsonl": {
+      "sha256": "edf69dc4a4a6adbc1e0c9ed2b919e60463d60d332bef36032f4c88f6c63e167e",
+      "bytes": 1749995
+    },
+    "runs/progression-longrun-hour-v1/cases/validation-house-08/manifest.json": {
+      "sha256": "0bb81c9b6fa5dbe21a53ac25f99783f4d12e11581e494f4a94108e4b2fb355d6",
+      "bytes": 552
+    },
+    "runs/progression-longrun-hour-v1/cases/validation-house-09/evidence.json": {
+      "sha256": "37517e5f3dc66819f61f5a7bb8ace1921282415f10551d2defa5c3eb0985b570",
+      "bytes": 3
+    },
+    "runs/progression-longrun-hour-v1/cases/validation-house-09/final.png": {
+      "sha256": "221f1ef63bbe9bf760498f305325e93e91b0771f64d6fcb41912643458cba354",
+      "bytes": 5353
+    },
+    "runs/progression-longrun-hour-v1/cases/validation-house-09/result.json": {
+      "sha256": "d150d5cedcd7e8e5f27db1fb6fb6485ad7815fd27ae8731c9acacac6fbca0c43",
+      "bytes": 1243
+    },
+    "runs/progression-longrun-hour-v1/cases/validation-house-09/final.state": {
+      "sha256": "2b17cf5293b9decaff03cbb6f4fc176ddef09fa47659a481942168dc9b66a739",
+      "bytes": 198565
+    },
+    "runs/progression-longrun-hour-v1/cases/validation-house-09/journal.json": {
+      "sha256": "ba4ceeef1c404eb7cded86dacf00fe4b1e8bb1bb5b3789bfc1263d98902ec381",
+      "bytes": 17397
+    },
+    "runs/progression-longrun-hour-v1/cases/validation-house-09/trajectory.jsonl": {
+      "sha256": "8384b11a324a147fbd635b54e2b0f95b0796b586a9622827ce47e6f6bc01e558",
+      "bytes": 4036501
+    },
+    "runs/progression-longrun-hour-v1/cases/validation-house-09/manifest.json": {
+      "sha256": "6682245c645b344f3bb3c559e6a86fbe3cb4430c53a7c306e67abacce31b6b23",
+      "bytes": 552
+    },
+    "runs/progression-longrun-hour-v1/cases/validation-house-07/evidence.json": {
+      "sha256": "7b7e0e40096b5f5dbf3da120e97eae690deedf7c0ed41f183fc902ef9e85b9bd",
+      "bytes": 867
+    },
+    "runs/progression-longrun-hour-v1/cases/validation-house-07/final.png": {
+      "sha256": "103e67e4508a461812694fc19ec243b2d2c0bc74be08c7032c42cfc776f7884e",
+      "bytes": 5668
+    },
+    "runs/progression-longrun-hour-v1/cases/validation-house-07/result.json": {
+      "sha256": "7c8ba83b5013dfcf5d869dcdac48c7811e3437871617afefb1c3fd52d0ea948d",
+      "bytes": 1189
+    },
+    "runs/progression-longrun-hour-v1/cases/validation-house-07/final.state": {
+      "sha256": "dc286808a91fa91cbd3efeb0033c1c8ef20473f19a421d6f598a5cb94b89a076",
+      "bytes": 198565
+    },
+    "runs/progression-longrun-hour-v1/cases/validation-house-07/journal.json": {
+      "sha256": "57bb56a02beed55e8243bbaef7eba99bc19fa6fa00f2eb608b03e58aba3fcba3",
+      "bytes": 29767
+    },
+    "runs/progression-longrun-hour-v1/cases/validation-house-07/trajectory.jsonl": {
+      "sha256": "e3909a0f685a3a23763f67f7622211c370c966b86c633479e45e32ef49c7c97c",
+      "bytes": 4897412
+    },
+    "runs/progression-longrun-hour-v1/cases/validation-house-07/manifest.json": {
+      "sha256": "9e8779fa90133087e5b75972e1dc46241abd97cc3701b61f8eb3752af56e4777",
+      "bytes": 552
+    },
+    "runs/progression-longrun-hour-v1/cases/validation-house-00/evidence.json": {
+      "sha256": "ea1cf4619516e1fa5e2ca72d5feff341e7c957faa36f45f9e87e2d1322c341d3",
+      "bytes": 867
+    },
+    "runs/progression-longrun-hour-v1/cases/validation-house-00/final.png": {
+      "sha256": "2a99fffc9d1b4737821e8f37833ceb8bcd942d6457337a36b831a5dc7561f5bd",
+      "bytes": 5631
+    },
+    "runs/progression-longrun-hour-v1/cases/validation-house-00/result.json": {
+      "sha256": "d40962ad569eb7e7a72ddc16456e6369afea612a55b73497cacab02e6084a45a",
+      "bytes": 1187
+    },
+    "runs/progression-longrun-hour-v1/cases/validation-house-00/final.state": {
+      "sha256": "20b7c98d41678b89cb41fe5c8ab3c475a2bf5adf70c73d4fac990c20855a5f1e",
+      "bytes": 198565
+    },
+    "runs/progression-longrun-hour-v1/cases/validation-house-00/journal.json": {
+      "sha256": "de0000a920c4ac97ad03ddf7d8ef04898185ae40ed55aa4803ea0202343485ee",
+      "bytes": 30419
+    },
+    "runs/progression-longrun-hour-v1/cases/validation-house-00/trajectory.jsonl": {
+      "sha256": "66973e262561e08b29db8cdc5b237423c146544e65ae4d617a1229cc0bc9d64a",
+      "bytes": 4896162
+    },
+    "runs/progression-longrun-hour-v1/cases/validation-house-00/manifest.json": {
+      "sha256": "22a53d09bf7de62cefea27105bd251a763b7c85bb8d0cb4b05a0053bef326067",
+      "bytes": 552
+    },
+    "runs/progression-longrun-hour-v1/cases/validation-house-13/evidence.json": {
+      "sha256": "d8045b56110cc1c4f761003f13661dea8e764c311a8829bba41befc353191a35",
+      "bytes": 866
+    },
+    "runs/progression-longrun-hour-v1/cases/validation-house-13/final.png": {
+      "sha256": "3d3a709360f31773c862a199dfc0e486cf96582661ec15dc8ef08f3a15a2aa38",
+      "bytes": 5190
+    },
+    "runs/progression-longrun-hour-v1/cases/validation-house-13/result.json": {
+      "sha256": "c35cacc93a6a07597f8901f173fd0b195c7a565776549d2345e4a5b4160601b4",
+      "bytes": 1187
+    },
+    "runs/progression-longrun-hour-v1/cases/validation-house-13/final.state": {
+      "sha256": "8cf2d6d9781309b3585054471fd19bf49fc0a5af6777bf58c28829f91836f73c",
+      "bytes": 198565
+    },
+    "runs/progression-longrun-hour-v1/cases/validation-house-13/journal.json": {
+      "sha256": "aa15fc15487fed66c75978c87e30d4697071f26c810f5a43ae64062b767b7a3c",
+      "bytes": 29903
+    },
+    "runs/progression-longrun-hour-v1/cases/validation-house-13/trajectory.jsonl": {
+      "sha256": "a16d9800c23cf260b9b3652b411b79b0be46b3679a8b32418ddb7b4696f18e0d",
+      "bytes": 4897996
+    },
+    "runs/progression-longrun-hour-v1/cases/validation-house-13/manifest.json": {
+      "sha256": "a2f036232612d468be2aec457ab4ffe7de8de98b718258144399d4a11424c01a",
+      "bytes": 552
+    },
+    "runs/progression-longrun-hour-v1/cases/validation-house-14/evidence.json": {
+      "sha256": "37517e5f3dc66819f61f5a7bb8ace1921282415f10551d2defa5c3eb0985b570",
+      "bytes": 3
+    },
+    "runs/progression-longrun-hour-v1/cases/validation-house-14/final.png": {
+      "sha256": "e6bed40f39c03992ce061596d409eb2b7af3c4c3f6d5cd6f7df273694d97719b",
+      "bytes": 5048
+    },
+    "runs/progression-longrun-hour-v1/cases/validation-house-14/result.json": {
+      "sha256": "5953e3a0b9bc852d8e423100389bd5a98cfe8fccc9230ff710c1176433a65250",
+      "bytes": 1241
+    },
+    "runs/progression-longrun-hour-v1/cases/validation-house-14/final.state": {
+      "sha256": "899fe555e4f1d938aea159cd10720755ed127e4616ec2593371329a1d826733f",
+      "bytes": 198565
+    },
+    "runs/progression-longrun-hour-v1/cases/validation-house-14/journal.json": {
+      "sha256": "c05e64a0ede0ce59fe96b0c413be07cade509891cbbefd00be9a371869bd991f",
+      "bytes": 14812
+    },
+    "runs/progression-longrun-hour-v1/cases/validation-house-14/trajectory.jsonl": {
+      "sha256": "3d65ee4b4c09d918f0597263b73e3a0940f7c58e7ea106fa3fd6c91ada5ea44d",
+      "bytes": 324464
+    },
+    "runs/progression-longrun-hour-v1/cases/validation-house-14/manifest.json": {
+      "sha256": "d1f6c5f581bc32e63d8545ff774ee35468d4a2e07e5af846f9ce3fd476fcff55",
+      "bytes": 552
+    },
+    "runs/progression-longrun-hour-v1/cases/validation-house-15/evidence.json": {
+      "sha256": "d8045b56110cc1c4f761003f13661dea8e764c311a8829bba41befc353191a35",
+      "bytes": 866
+    },
+    "runs/progression-longrun-hour-v1/cases/validation-house-15/final.png": {
+      "sha256": "3d3a709360f31773c862a199dfc0e486cf96582661ec15dc8ef08f3a15a2aa38",
+      "bytes": 5190
+    },
+    "runs/progression-longrun-hour-v1/cases/validation-house-15/result.json": {
+      "sha256": "1e97a2756b06d6dd9f9ce98510e3184475f798009a316426890fd3140c2e307a",
+      "bytes": 1187
+    },
+    "runs/progression-longrun-hour-v1/cases/validation-house-15/final.state": {
+      "sha256": "8cf2d6d9781309b3585054471fd19bf49fc0a5af6777bf58c28829f91836f73c",
+      "bytes": 198565
+    },
+    "runs/progression-longrun-hour-v1/cases/validation-house-15/journal.json": {
+      "sha256": "ca56658bd78ce203670d6482d0580ea1d2b0be4166191c6be60486efadd134a9",
+      "bytes": 29903
+    },
+    "runs/progression-longrun-hour-v1/cases/validation-house-15/trajectory.jsonl": {
+      "sha256": "a67efc92744957533f7f3ccb063ad25b1678db778d679e2da947a6d23191eb58",
+      "bytes": 4895618
+    },
+    "runs/progression-longrun-hour-v1/cases/validation-house-15/manifest.json": {
+      "sha256": "c471e09d0788e2bcbecf566272e25c0773238fdd075f25a1c413ae1fa60b531a",
+      "bytes": 552
+    },
+    "runs/progression-longrun-hour-v1/cases/validation-house-12/evidence.json": {
+      "sha256": "a3d99e027ba2fd1972f6b116d7644bed3d2ddac3a00c901d5cc8085aedd28c6d",
+      "bytes": 867
+    },
+    "runs/progression-longrun-hour-v1/cases/validation-house-12/final.png": {
+      "sha256": "2ce860ae4e56fd3dc547a1479a878339208d9cca0317ccb3689005b6cd02a145",
+      "bytes": 5625
+    },
+    "runs/progression-longrun-hour-v1/cases/validation-house-12/result.json": {
+      "sha256": "f863d8b280df5e94c92c9c4dd6a88a4ddc1f1386dadca75d87d336c9d94fa4c8",
+      "bytes": 1190
+    },
+    "runs/progression-longrun-hour-v1/cases/validation-house-12/final.state": {
+      "sha256": "6a928d72aeb14e08163bc62ca592da9a9d0a4793e23605801c48c054a200af6e",
+      "bytes": 198565
+    },
+    "runs/progression-longrun-hour-v1/cases/validation-house-12/journal.json": {
+      "sha256": "c68f5bdd6d472556f9ef39f4df0eb163ab6ddc6f104d4c60d783e2f80812ca95",
+      "bytes": 29767
+    },
+    "runs/progression-longrun-hour-v1/cases/validation-house-12/trajectory.jsonl": {
+      "sha256": "9fa06859c568f1c23d077d0a2c4e8f32ff4e4c4a3aa3b28d39f9f202e1fc2e06",
+      "bytes": 4897782
+    },
+    "runs/progression-longrun-hour-v1/cases/validation-house-12/manifest.json": {
+      "sha256": "bb2c62b5a1d1fcc0a06a65943abef87a263f45bb02d64e324a8ded577ab903dd",
+      "bytes": 552
+    },
+    "runs/progression-longrun-hour-v1/cases/validation-house-05/evidence.json": {
+      "sha256": "42eb34448775f8d3ef7077268ef881e020c2354821870915bf248e4c1c2385a0",
+      "bytes": 867
+    },
+    "runs/progression-longrun-hour-v1/cases/validation-house-05/final.png": {
+      "sha256": "2ce860ae4e56fd3dc547a1479a878339208d9cca0317ccb3689005b6cd02a145",
+      "bytes": 5625
+    },
+    "runs/progression-longrun-hour-v1/cases/validation-house-05/result.json": {
+      "sha256": "6c51777cfa6037569ea51a18594f451ff544bb84826d7b74259ba9dc850f4c18",
+      "bytes": 1187
+    },
+    "runs/progression-longrun-hour-v1/cases/validation-house-05/final.state": {
+      "sha256": "97bb92c60e8576adee53ce2e1e273d734584c5dbcc17d1e6427ea901f7ac0bc6",
+      "bytes": 198565
+    },
+    "runs/progression-longrun-hour-v1/cases/validation-house-05/journal.json": {
+      "sha256": "306a9c061f1b79c5cb4eaafda16dcb16c75e08db53275ba73939b26c1c88c5e9",
+      "bytes": 28742
+    },
+    "runs/progression-longrun-hour-v1/cases/validation-house-05/trajectory.jsonl": {
+      "sha256": "4ea5f033be3908b15f36ee79f5b9ac9a90c74777d360f52f5e7d93f44f5aa85b",
+      "bytes": 4895045
+    },
+    "runs/progression-longrun-hour-v1/cases/validation-house-05/manifest.json": {
+      "sha256": "8cf0307cabb701b9fb745605beb5d49341d7abd4daa1679e56f3d3a8c4f5b410",
+      "bytes": 552
+    },
+    "runs/progression-longrun-hour-v1/cases/validation-house-02/evidence.json": {
+      "sha256": "e20405c3ded0985566162127c3ed061f3548b9c50a02d4488f1f341a6aa000c3",
+      "bytes": 867
+    },
+    "runs/progression-longrun-hour-v1/cases/validation-house-02/final.png": {
+      "sha256": "2ce860ae4e56fd3dc547a1479a878339208d9cca0317ccb3689005b6cd02a145",
+      "bytes": 5625
+    },
+    "runs/progression-longrun-hour-v1/cases/validation-house-02/result.json": {
+      "sha256": "f1bd72347d392fb2af31928828817ddb75508eb91f7727be213be12a37b82b28",
+      "bytes": 1189
+    },
+    "runs/progression-longrun-hour-v1/cases/validation-house-02/final.state": {
+      "sha256": "a020d7f7e86230cff8a78b291a56252fffffb4d6cfcfbcad15a3940399a525bf",
+      "bytes": 198565
+    },
+    "runs/progression-longrun-hour-v1/cases/validation-house-02/journal.json": {
+      "sha256": "3f315e4e962812f491c6bdcc7ff313e36edd26c27f82b917f06c7a01c3ab28af",
+      "bytes": 28746
+    },
+    "runs/progression-longrun-hour-v1/cases/validation-house-02/trajectory.jsonl": {
+      "sha256": "e8f4baff16de7d0b621c5543c0ff467c29145cebad468ae310daa62aa7ec499f",
+      "bytes": 4897427
+    },
+    "runs/progression-longrun-hour-v1/cases/validation-house-02/manifest.json": {
+      "sha256": "b1dc31d4c30c3ef08285c5a625fb77ecbc2466358ef0ee95064c161b7e4191e6",
+      "bytes": 552
+    },
+    "runs/progression-longrun-hour-v1/cases/validation-house-03/evidence.json": {
+      "sha256": "37517e5f3dc66819f61f5a7bb8ace1921282415f10551d2defa5c3eb0985b570",
+      "bytes": 3
+    },
+    "runs/progression-longrun-hour-v1/cases/validation-house-03/final.png": {
+      "sha256": "587aae3776cca46a4b05406f4b7a234e852b4141074202a1cfc13209ada67bc6",
+      "bytes": 4091
+    },
+    "runs/progression-longrun-hour-v1/cases/validation-house-03/result.json": {
+      "sha256": "90cf802371d918ea8748648801ccd7ab0706f414d5321ceb35def51c0a5c7dc2",
+      "bytes": 1236
+    },
+    "runs/progression-longrun-hour-v1/cases/validation-house-03/final.state": {
+      "sha256": "38b91e92ac29fdf48d3289e95fe26ffd4ae2c9bf89912b291ca1492644731c7f",
+      "bytes": 198565
+    },
+    "runs/progression-longrun-hour-v1/cases/validation-house-03/journal.json": {
+      "sha256": "c14353b8e83144c0522e03849441f2ee79c6461e1c6ac1bec69ded745f144076",
+      "bytes": 20916
+    },
+    "runs/progression-longrun-hour-v1/cases/validation-house-03/trajectory.jsonl": {
+      "sha256": "2ef0d636a3f673a8ed8589763081e7b9809f192179182fe0503b456aa1a7d7b3",
+      "bytes": 787798
+    },
+    "runs/progression-longrun-hour-v1/cases/validation-house-03/manifest.json": {
+      "sha256": "120c7c03f8c3c24d1cf9dbec0ccaa6b963d01aa092afab7298808b7dd8368600",
+      "bytes": 552
+    },
+    "runs/progression-longrun-hour-v1/cases/validation-house-04/evidence.json": {
+      "sha256": "42eb34448775f8d3ef7077268ef881e020c2354821870915bf248e4c1c2385a0",
+      "bytes": 867
+    },
+    "runs/progression-longrun-hour-v1/cases/validation-house-04/final.png": {
+      "sha256": "2ce860ae4e56fd3dc547a1479a878339208d9cca0317ccb3689005b6cd02a145",
+      "bytes": 5625
+    },
+    "runs/progression-longrun-hour-v1/cases/validation-house-04/result.json": {
+      "sha256": "f0798924231976adda613e25d679fdab719b0a707b03ab20930e48274e740579",
+      "bytes": 1189
+    },
+    "runs/progression-longrun-hour-v1/cases/validation-house-04/final.state": {
+      "sha256": "97bb92c60e8576adee53ce2e1e273d734584c5dbcc17d1e6427ea901f7ac0bc6",
+      "bytes": 198565
+    },
+    "runs/progression-longrun-hour-v1/cases/validation-house-04/journal.json": {
+      "sha256": "b84a08b8415b85cebbb047abdc1b60997d2f710ea91129f6291b83e378e0876a",
+      "bytes": 28742
+    },
+    "runs/progression-longrun-hour-v1/cases/validation-house-04/trajectory.jsonl": {
+      "sha256": "857c4b432b983ffe06a5cfa55c17fef27400b4381bc29c6ef8910ccbbd1fe95a",
+      "bytes": 4897427
+    },
+    "runs/progression-longrun-hour-v1/cases/validation-house-04/manifest.json": {
+      "sha256": "3f136377d7dc7ea3312fa958f6c35872accf1bb0e012494352ac8ae6d30e5256",
+      "bytes": 552
+    },
+    "runs/progression-longrun-hour-v1/cases/validation-house-19/evidence.json": {
+      "sha256": "032dd8663181f14d0dffc7bc6eeff5972b5b55443e2dce6a79fc69c4c421c9f9",
+      "bytes": 865
+    },
+    "runs/progression-longrun-hour-v1/cases/validation-house-19/final.png": {
+      "sha256": "e63f2814481c94346ee7a3a8bdee36311485f1be2198a483d701c6e7c20865a9",
+      "bytes": 5610
+    },
+    "runs/progression-longrun-hour-v1/cases/validation-house-19/result.json": {
+      "sha256": "8cfd936129bd2ede51e8061c9955c8988cabff70e4eb85b017f93039893b4ab1",
+      "bytes": 1185
+    },
+    "runs/progression-longrun-hour-v1/cases/validation-house-19/final.state": {
+      "sha256": "563e5553bfb4d25784ab210c37493e033c85de3ef765289516174421b8ce6b59",
+      "bytes": 198565
+    },
+    "runs/progression-longrun-hour-v1/cases/validation-house-19/journal.json": {
+      "sha256": "3d4897abebfc6edac24ea0e9f4c902a49cd37bf15fc94b247af9403395f0398e",
+      "bytes": 32578
+    },
+    "runs/progression-longrun-hour-v1/cases/validation-house-19/trajectory.jsonl": {
+      "sha256": "861fd5ec20e8f3681de5af7ffe6a47916ac71a849d19e5abec15af4cf2884654",
+      "bytes": 4897071
+    },
+    "runs/progression-longrun-hour-v1/cases/validation-house-19/manifest.json": {
+      "sha256": "8af9f221300d9962fd2af1e12ffad6287ac10d189d370c963539f2fdd799c034",
+      "bytes": 552
+    },
+    "runs/progression-longrun-hour-v1/cases/validation-house-17/evidence.json": {
+      "sha256": "a0078dc1253f32abb2273c0e36cffedc4f3b783cb124097872c7e9a3133760ef",
+      "bytes": 867
+    },
+    "runs/progression-longrun-hour-v1/cases/validation-house-17/final.png": {
+      "sha256": "f88ee04ab0b855001d27d2b82fe2df6423115f1756fb1fcbc89070edf0db6541",
+      "bytes": 5740
+    },
+    "runs/progression-longrun-hour-v1/cases/validation-house-17/result.json": {
+      "sha256": "cbb734b46d08b49a1d80e75ce7edfe4402e8196c1b014fa2bc71e59ab1f9e865",
+      "bytes": 1190
+    },
+    "runs/progression-longrun-hour-v1/cases/validation-house-17/final.state": {
+      "sha256": "15cd4946177fd272f5953ba29affe7e269450b7ab0b01b1dd935c6977854e5e1",
+      "bytes": 198565
+    },
+    "runs/progression-longrun-hour-v1/cases/validation-house-17/journal.json": {
+      "sha256": "944c18305a4d314bf5e581fb46396c412d64bf80e35bdbb51d8b3d015d2549a8",
+      "bytes": 31437
+    },
+    "runs/progression-longrun-hour-v1/cases/validation-house-17/trajectory.jsonl": {
+      "sha256": "df40f368fad123e78f08429e10cbb7782452279ea545ffb639b0105bf40e74c9",
+      "bytes": 4898665
+    },
+    "runs/progression-longrun-hour-v1/cases/validation-house-17/manifest.json": {
+      "sha256": "b7cb7098b38060ec88fe5c5a3b90e4b27047948733fe73831ad6c15bc0cfc67e",
+      "bytes": 552
+    },
+    "runs/progression-longrun-hour-v1/cases/validation-house-10/evidence.json": {
+      "sha256": "85cff142be035e6d7b9b912d19d427b6a5ce18fa3f6e2dc4c2bab828efabeec7",
+      "bytes": 867
+    },
+    "runs/progression-longrun-hour-v1/cases/validation-house-10/final.png": {
+      "sha256": "2ce860ae4e56fd3dc547a1479a878339208d9cca0317ccb3689005b6cd02a145",
+      "bytes": 5625
+    },
+    "runs/progression-longrun-hour-v1/cases/validation-house-10/result.json": {
+      "sha256": "d1673bae48b41392e330719827219463ab86378871d310f2ffbf4908bbf559d2",
+      "bytes": 1186
+    },
+    "runs/progression-longrun-hour-v1/cases/validation-house-10/final.state": {
+      "sha256": "4a2e7ed6e0ec45219c2db456d774fdd47f80ea63b1824922f698a6a86f73da8d",
+      "bytes": 198565
+    },
+    "runs/progression-longrun-hour-v1/cases/validation-house-10/journal.json": {
+      "sha256": "10e762fe0175349215b19dee78b0724d4a88db4255ed938c74fbd2a6ad34205e",
+      "bytes": 29767
+    },
+    "runs/progression-longrun-hour-v1/cases/validation-house-10/trajectory.jsonl": {
+      "sha256": "554fa02d22e97a792cff9cbd3cbc7ee3f305558c401e2070b78cad7922434a2a",
+      "bytes": 4895601
+    },
+    "runs/progression-longrun-hour-v1/cases/validation-house-10/manifest.json": {
+      "sha256": "2903dbfc20803333e53217e12c6b37aca378388e54d153e421ca30b0f42d320f",
+      "bytes": 552
+    },
+    "runs/progression-longrun-hour-v1/cases/validation-house-11/evidence.json": {
+      "sha256": "27ce83ff15512d9939d1ead56c29968acb7c74774529cff2e201baa3aae82c6a",
+      "bytes": 865
+    },
+    "runs/progression-longrun-hour-v1/cases/validation-house-11/final.png": {
+      "sha256": "368cc82301d842ea5d7fb68bd18dde131d3e4020eb513c9a9567c688c8cf318a",
+      "bytes": 5622
+    },
+    "runs/progression-longrun-hour-v1/cases/validation-house-11/result.json": {
+      "sha256": "9225766a5a8c202c8b01fd904677a767bf6ff85f2b99863ebaa41c28196e602d",
+      "bytes": 1188
+    },
+    "runs/progression-longrun-hour-v1/cases/validation-house-11/final.state": {
+      "sha256": "2dc662c68ee3a07be82fee294d7078fc70acee48c515ce5d8d675f674f42fbbb",
+      "bytes": 198565
+    },
+    "runs/progression-longrun-hour-v1/cases/validation-house-11/journal.json": {
+      "sha256": "135f421fa48211b3ac6bfbd6add63882e50094bbb160c22038e06d9cfbfb4ef1",
+      "bytes": 33099
+    },
+    "runs/progression-longrun-hour-v1/cases/validation-house-11/trajectory.jsonl": {
+      "sha256": "8af94b7ac852fb05f75c3047e2cf948057d8d9a4d213538d953bf429d2112ecc",
+      "bytes": 4884301
+    },
+    "runs/progression-longrun-hour-v1/cases/validation-house-11/manifest.json": {
+      "sha256": "96a74825adef3109c91b15b07b1b54c5c17424b2f03bfc9e234aaf277caaefcd",
+      "bytes": 552
+    },
+    "runs/progression-longrun-hour-v1/cases/validation-house-16/evidence.json": {
+      "sha256": "77c12db6db8bec932d37b88217c9001add6f812511d6fc9977ce33c0c9cd33cb",
+      "bytes": 864
+    },
+    "runs/progression-longrun-hour-v1/cases/validation-house-16/final.png": {
+      "sha256": "4180c89f18290955014b576b0236c67f945bd61c9e8197ef3795f1d8b6ec39b1",
+      "bytes": 5269
+    },
+    "runs/progression-longrun-hour-v1/cases/validation-house-16/result.json": {
+      "sha256": "67389fac39e92e325f39cad9be566ecd2af19d7eb07d8b6aa2e7f003e6c32722",
+      "bytes": 1187
+    },
+    "runs/progression-longrun-hour-v1/cases/validation-house-16/final.state": {
+      "sha256": "e270a09d0e86f380472fea243026a48581dc0e884e117817cf689e277735f394",
+      "bytes": 198565
+    },
+    "runs/progression-longrun-hour-v1/cases/validation-house-16/journal.json": {
+      "sha256": "5e526d92c03c94a796c3aa9bdf73858498d317d2b4332fff7ecebe39c58dc97d",
+      "bytes": 31566
+    },
+    "runs/progression-longrun-hour-v1/cases/validation-house-16/trajectory.jsonl": {
+      "sha256": "f7fdd8f066e987dc973a4b67a9862c4f3a9d8c53a92ac0516298ee491289f22c",
+      "bytes": 4883056
+    },
+    "runs/progression-longrun-hour-v1/cases/validation-house-16/manifest.json": {
+      "sha256": "c77447d3aa23af802c12f681eb121d9d1130bda77efa795c679f45a7ea2ef90d",
+      "bytes": 552
+    },
+    "runs/progression-longrun-hour-v1/cases/validation-house-18/evidence.json": {
+      "sha256": "37517e5f3dc66819f61f5a7bb8ace1921282415f10551d2defa5c3eb0985b570",
+      "bytes": 3
+    },
+    "runs/progression-longrun-hour-v1/cases/validation-house-18/final.png": {
+      "sha256": "0cdefb36c9a41367283ec62794054b62106939c8d0a21da4040e37254edc4b77",
+      "bytes": 4872
+    },
+    "runs/progression-longrun-hour-v1/cases/validation-house-18/result.json": {
+      "sha256": "f74a49581485a480c07f7688959eaf55c6c35ebd94583995409753f34b0d71e2",
+      "bytes": 1241
+    },
+    "runs/progression-longrun-hour-v1/cases/validation-house-18/final.state": {
+      "sha256": "3941337990d01446f8b4fe67acaccd27d506843a2d78f3ef685bf4b8174c1de1",
+      "bytes": 198565
+    },
+    "runs/progression-longrun-hour-v1/cases/validation-house-18/journal.json": {
+      "sha256": "e3ae43d2d86c4c3163cbbc9509dc7c57a1c41e7207ee3c2025aa6629aab15491",
+      "bytes": 17385
+    },
+    "runs/progression-longrun-hour-v1/cases/validation-house-18/trajectory.jsonl": {
+      "sha256": "09fbeac9b784e896b03c90902de8448627a468f9045b5af9d72056e28d3b03cd",
+      "bytes": 3818949
+    },
+    "runs/progression-longrun-hour-v1/cases/validation-house-18/manifest.json": {
+      "sha256": "4ea4fc6c3e6f3576c3847ea73739b5376bac5d320a97db799026387dc68c23a5",
+      "bytes": 552
+    },
+    "runs/progression-longrun-hour-v1/results.jsonl": {
+      "sha256": "716b8d54e4bb6088d2bb0c70c19b760a79fc3c9d66d028584db3f0889340a3dd",
+      "bytes": 222932
+    },
+    "runs/progression-longrun-hour-v1/summary.json": {
+      "sha256": "c15ce27312475228b3669e24b48065ed34a5fd48f4472fdf775d8bce80d2695e",
+      "bytes": 3879
+    },
+    "runs/progression-longrun-hour-v1/verification.json": {
+      "sha256": "289f1f02477bd61ef41a1063b835c96e31513dfd90fb281f80d295fd0e5473cc",
+      "bytes": 3987
+    },
+    "runs/progression-longrun-hour-v1/completion.json": {
+      "sha256": "4e20e8facfa66acaaac17a0d032b1003bdd5e9f4ef6934079895485eef793f44",
+      "bytes": 4148
+    }
+  },
+  "validation_case_directories": 20
+}

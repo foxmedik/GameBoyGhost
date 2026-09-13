@@ -1,0 +1,36 @@
+{
+  "passed": 3,
+  "total": 4,
+  "cases": [
+    {
+      "case": "house131",
+      "summary": "runs/teacher-route-regression-panel-v18-house131/summary.json",
+      "success": true,
+      "exact_replay": true,
+      "failure": null
+    },
+    {
+      "case": "house257",
+      "summary": "runs/teacher-route-regression-panel-v18-house257/summary.json",
+      "success": true,
+      "exact_replay": true,
+      "failure": null
+    },
+    {
+      "case": "house307",
+      "summary": "runs/teacher-route-regression-panel-v18-house307/summary.json",
+      "success": true,
+      "exact_replay": true,
+      "failure": null
+    },
+    {
+      "case": "recovery23",
+      "summary": "runs/teacher-route-regression-panel-v18-recovery23/summary.json",
+      "success": false,
+      "exact_replay": true,
+      "failure": "RouteBlocker: Damage is still being applied; not a safe route state"
+    }
+  ],
+  "qualified": false,
+  "training_eligible": false
+}

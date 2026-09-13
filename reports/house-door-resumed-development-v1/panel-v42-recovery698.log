@@ -1,0 +1,15 @@
+UserWarning: Using SDL2 binaries from pysdl2-dll 2.32.10
+Loaded layouts
+Teacher stage room15_cleared: frame=34883 health=20
+Teacher stage compass_second_key: frame=37853 health=20
+Teacher stage map: frame=38770 health=20
+Teacher stage south_worm_entry: frame=39502 health=20
+Teacher stage south_worm_passage: frame=39674 health=20
+Teacher stage pushblock_entry: frame=40015 health=20
+RouteBlocker: Room05 upper Gel clearance budget exhausted
+Fresh probe replay 0/9110
+Fresh probe replay 2000/9110
+Fresh probe replay 4000/9110
+Fresh probe replay 6000/9110
+Fresh probe replay 8000/9110
+FRESH HOUSE PROBE EXACT REPLAY VERIFIED

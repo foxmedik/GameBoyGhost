@@ -1,0 +1,14 @@
+{
+  "source": "runs/teacher-pushblock-entry-v2/continuation.json",
+  "source_sha256": "dec41a0c88389775036ad802c947236073386a716490d00e17b97d1688b9f70c",
+  "case_count": 1,
+  "budget": {
+    "decisions": 1000,
+    "frames": 4500
+  },
+  "hypothesis": "Central north approach blocked at98 by horizontal barrier. Use mapped east148 bypass from south112 to80, then existing Spark observation and block approach. Same budgets.",
+  "success": "room03 east entry full health, one key, shield B sword A, no buffered damage",
+  "training_eligible": false,
+  "qualification": false,
+  "prior_failure": "runs/teacher-pushblock-v1"
+}

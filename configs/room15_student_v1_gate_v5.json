@@ -1,0 +1,20 @@
+{
+  "schema": "room15-autonomous-student-gate-v5",
+  "purpose": "Replacement frozen gate: v4 compared JSON-normalized replay state to tuple-preserving in-memory Trace state. Candidate, data, and case panel are unchanged.",
+  "supersedes": "configs/room15_student_v1_gate_v4.json",
+  "experiment": "configs/room15_student_v1.json",
+  "experiment_sha256": "8400b0e039eb80d69adb72ae9b5fe4062e890a087ec529a22ac57cf34f16e8a6",
+  "candidate": "runs/room15-student-v1-candidate/candidate.pt",
+  "candidate_sha256": "04c0d38fc09fe1d531a6d94350651ca5b29ba1c6bec4a901fc3e36eeed43b464",
+  "evaluator": "scripts/evaluate_room15_student_v1.py",
+  "evaluator_sha256": "4749527ee55a364e80634fc36ac14dab762d29d6760f424a1db6f011b94db734",
+  "source": "runs/state-driven-tail-cave-disengage-guarded-v1",
+  "cases_from": "configs/room15_student_v1_gate_v4.json",
+  "cases_source_sha256": "0729d7ad73aae1e8ad233457aaf4efa58c161576718a308cfc22863ab9a43819",
+  "decision_budget": 700,
+  "required_successes": 18,
+  "required_half_heart_successes": 4,
+  "control": "The entry helper traverses room 0x16. The candidate controls every room-15 action; no teacher fallback is permitted.",
+  "selection": "Final epoch only. Select only if this frozen gate passes; otherwise preserve as rejected evidence.",
+  "validation_loaded": false
+}

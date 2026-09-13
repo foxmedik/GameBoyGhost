@@ -1,0 +1,462 @@
+{
+  "schema": "house-nightmare-door-handoff-v1",
+  "as_of": "2026-09-12",
+  "status": "first_full_route_proven_teacher_qualification_pending",
+  "current_milestone": "HOUSE_TO_OPEN_NIGHTMARE_BOSS_DOOR_FULL_HEALTH",
+  "current_goal": "From the supplied house start, open Tail Cave boss door at full health with sword A and feather B; stop grounded outside the boss room, ready to fight.",
+  "out_of_scope": [
+    "Moldorm fight",
+    "Full Moon Cello"
+  ],
+  "authority": {
+    "status": "docs/CURRENT_STATUS.md",
+    "read_first": "docs/handoffs/NEXT_SESSION.md",
+    "research_focus": "configs/research_focus.json",
+    "protocol": "configs/house_to_boss_door_v2.json",
+    "route_plan": "docs/HOUSE_TO_BOSS_DOOR_FULL_HEALTH.md",
+    "route_progress": "docs/HOUSE_BOSS_DOOR_ROUTE_PROGRESS.md",
+    "room15_closure": "docs/ROOM15_ARCHITECTURAL_DECISION.md"
+  },
+  "authorization": {
+    "mode": "guided_development_and_wipe_readiness_preparation",
+    "exploratory_progression": true,
+    "new_training": false,
+    "new_label_collection": false,
+    "uploads": "Authorized checkpoint packaging after qualification; private destination must be verified",
+    "wipe": false,
+    "historical_teacher_flags_are_not_current_authorization": true,
+    "source": "reports/house-door-resumed-development-v1/session-request.txt"
+  },
+  "endpoint": {
+    "status": "live_full_route_verified",
+    "room": [
+      1,
+      0,
+      11
+    ],
+    "forbidden_boss_room": [
+      1,
+      0,
+      6
+    ],
+    "room_status_address": "0xD90B",
+    "open_mask": "0x04",
+    "boss_key_address": "0xDBCF",
+    "door_animation_address": "0xC188",
+    "requires": [
+      "continuous_house_episode",
+      "closed_to_open_transition",
+      "nightmare_key",
+      "alive",
+      "world_settled",
+      "dialogue_closed",
+      "door_animation_finished",
+      "movement_released",
+      "outside_boss_room",
+      "full_health",
+      "healing_finished",
+      "battle_loadout",
+      "grounded"
+    ],
+    "health_target": "health == 8 * max_hearts",
+    "equipment": {
+      "a": "sword",
+      "b": "rocs_feather"
+    },
+    "pending_healing": 0,
+    "pending_damage": 0,
+    "grounded": true
+  },
+  "furthest_guided_state": {
+    "handoff": "runs/house-nightmare-door-proof-v1/continuation.json",
+    "sha256": "3140c8ea17024d53928e0fdae0ccbd7f94f56c87013657c3666accf63bb57077",
+    "exact_replay": true,
+    "commands": 15896,
+    "final_frame": 53700,
+    "endpoint": {
+      "room": [
+        1,
+        0,
+        11
+      ],
+      "x": 80,
+      "y": 26,
+      "health": 24,
+      "max_hearts": 3,
+      "sword_A": true,
+      "feather_B": true,
+      "grounded": true,
+      "pending_healing": 0,
+      "pending_damage": 0,
+      "door_animation": 0,
+      "door_open": true,
+      "boss_room_entered": false
+    },
+    "qualification": false
+  },
+  "preferred_full_health_state": {
+    "handoff": "runs/full-health-worm-guard-v1/room0e-full-health-continuation.json",
+    "handoff_sha256": "eb67c94d5b51e0bfe0cdb9cf1b5d492940606c73337f22bcfaa9cc9ba3bff9ad",
+    "room": [
+      1,
+      0,
+      14
+    ],
+    "x": 11,
+    "y": 68,
+    "frame": 47692,
+    "health_raw": 24,
+    "max_health_raw": 24,
+    "nightmare_key": false,
+    "small_keys_held": 1,
+    "continuous_exact_replay": true
+  },
+  "other_living_handoffs": [
+    {
+      "path": "runs/tail-cave-feather-v2/feather-full-health-continuation.json",
+      "sha256": "3805c2e177e425bd08f84f6d3c8285724df887e2a9153286cb5fa260a539f9d7"
+    },
+    {
+      "path": "runs/tail-cave-nightmare-route-v2/nightmare-key-continuation.json",
+      "sha256": "449c3a7319a6cdfba1bb6b5faf6e6c56db5da263c4d677701641a292fa64b0e8"
+    }
+  ],
+  "best_autonomous_results": [
+    {
+      "scope": "continuous house to first Small Key with autonomous cave control; earlier quest includes guidance/local skills",
+      "successes": 17,
+      "cases": 20,
+      "required": 18,
+      "selected": false,
+      "candidate": "runs/tail-cave-integration-dagger-v5-model/candidate.pt"
+    },
+    {
+      "scope": "room0x16 first-key specialist only",
+      "successes": 18,
+      "cases": 20,
+      "selected_for_local_scope": true,
+      "candidate": "runs/tail-cave-specialist-v3-model/candidate.pt"
+    }
+  ],
+  "best_guided_results": [
+    {
+      "scope": "historical continuous house to first Small Key",
+      "successes": 20,
+      "cases": 20,
+      "exact_replays": 20,
+      "cave_teacher_takeovers_before_first_proposal": 20
+    },
+    {
+      "scope": "historical room15 entry teacher gate",
+      "successes": 43,
+      "cases": 43,
+      "half_heart_successes": 10,
+      "half_heart_cases": 10,
+      "full_route_qualification": false
+    },
+    {
+      "scope": "later room15 supplemental gate",
+      "successes": 4,
+      "cases": 5,
+      "half_heart_successes": 3,
+      "half_heart_cases": 4,
+      "gate_passed": false
+    }
+  ],
+  "latest_full_health_improvement": {
+    "report": "reports/full-health-route-development-v1.json",
+    "old_health_raw": 8,
+    "new_health_raw": 24,
+    "frames_saved": 578,
+    "varied_start_gate": false,
+    "next_guard_budget_decisions": 600,
+    "next_guard_result": "timeout_without_damage"
+  },
+  "open_blockers": [
+    "Reusable full-route teacher assembly and controller binding.",
+    "Frozen20 house plus4 actual-half-heart qualification cases have not run.",
+    "Pinned external source/artifact backups and clean uv reconstruction remain unverified."
+  ],
+  "selected_models": [
+    {
+      "config": "configs/sword_controller.json",
+      "field": "policy_path",
+      "path": "runs/tree-clean-route-v3/policy.json",
+      "scope": "selected fixed-start learned sword tree; no full-game claim",
+      "exists": true,
+      "bytes": 18002,
+      "sha256": "c527a20dc92f8c9c51d41e1c9909348549202809e42a6aa732668b64492b1845",
+      "expected_sha256": "c527a20dc92f8c9c51d41e1c9909348549202809e42a6aa732668b64492b1845",
+      "hash_matches": true,
+      "selected_for_stated_local_scope": true
+    },
+    {
+      "config": "configs/navigation_experiment.json",
+      "field": "policy_path",
+      "path": "runs/navigation-cliff-specialists-v2/model/epoch-256.pt",
+      "scope": "selected experimental known-goal navigator; not default/general navigation",
+      "exists": true,
+      "bytes": 6429458,
+      "sha256": "9d2b24b28be5289fc3d32d85d46faa1835ca2068d73a1e8790630d77dbaf85ec",
+      "expected_sha256": "9d2b24b28be5289fc3d32d85d46faa1835ca2068d73a1e8790630d77dbaf85ec",
+      "hash_matches": true,
+      "selected_for_stated_local_scope": true
+    },
+    {
+      "config": "configs/progression_local_controller.json",
+      "field": "policy_path",
+      "path": "runs/progression-dagger-v1-model/candidate.pt",
+      "scope": "selected bounded mushroom crossing",
+      "exists": true,
+      "bytes": 552476,
+      "sha256": "e5a4854a4c15a37fdd5c10b8cd20a8be24b6cfe17f6fa406124bf828162502e2",
+      "expected_sha256": "e5a4854a4c15a37fdd5c10b8cd20a8be24b6cfe17f6fa406124bf828162502e2",
+      "hash_matches": true,
+      "selected_for_stated_local_scope": true
+    },
+    {
+      "config": "configs/progression_local_controller.json",
+      "field": "downstream_policy_path",
+      "path": "runs/progression-downstream-recovery-v1-model/candidate.pt",
+      "scope": "selected bounded arrival skill followed by deterministic recovery",
+      "exists": true,
+      "bytes": 552604,
+      "sha256": "251c31a86a7140fe425ea77dfe2dfde35f93a39d85e1257bf6c30038f600b676",
+      "expected_sha256": "251c31a86a7140fe425ea77dfe2dfde35f93a39d85e1257bf6c30038f600b676",
+      "hash_matches": true,
+      "selected_for_stated_local_scope": true
+    },
+    {
+      "config": "configs/tail_cave_controller.json",
+      "field": "policy_path",
+      "path": "runs/tail-cave-specialist-v3-model/candidate.pt",
+      "scope": "selected room0x16 specialist only",
+      "exists": true,
+      "bytes": 321820,
+      "sha256": "b2cad4812fad5ce4a4aa7587d1dee1cb177eeacca5268e73171e7ebc5138f3f0",
+      "expected_sha256": "b2cad4812fad5ce4a4aa7587d1dee1cb177eeacca5268e73171e7ebc5138f3f0",
+      "hash_matches": true,
+      "selected_for_stated_local_scope": true
+    }
+  ],
+  "rejected_models": [
+    {
+      "path": "runs/room15-student-v1-candidate/candidate.pt",
+      "bytes": 265948,
+      "sha256": "04c0d38fc09fe1d531a6d94350651ca5b29ba1c6bec4a901fc3e36eeed43b464",
+      "selected": false
+    },
+    {
+      "path": "runs/room15-student-v2-candidate/candidate.pt",
+      "bytes": 265948,
+      "sha256": "5d80c62f6bb8e443d99b8fd9a72bbb9fd563e7b9947849da67b8b60b8523426f",
+      "selected": false
+    },
+    {
+      "path": "runs/room15-student-v3-candidate/candidate.pt",
+      "bytes": 294044,
+      "sha256": "1ee54751ba0e8b5279b4fdcde69c1fed7b8c213fdcd9e75bc5d1e6107e6a0123",
+      "selected": false
+    },
+    {
+      "path": "runs/room15-student-v4-candidate/candidate.pt",
+      "bytes": 294812,
+      "sha256": "bc27d1b563a87d0b6c61b74df49f513cf286f52532beefa0b5a115bf1298834a",
+      "selected": false
+    },
+    {
+      "path": "runs/room15-v5-recovery-skill-candidate/candidate.pt",
+      "bytes": 166492,
+      "sha256": "c9bb9b1bef775c2c1020d85570a9c1543d72f4342bbca14de514ac486f60433e",
+      "selected": false
+    },
+    {
+      "path": "runs/room15-v5-recovery-skill-time-candidate/candidate.pt",
+      "bytes": 167068,
+      "sha256": "ca706223d2b471addfafef2ba4bdf38ef93661d24b0e8ae78d7bc287bd461d3d",
+      "selected": false
+    },
+    {
+      "path": "runs/tail-cave-balanced-v11-model/candidate.pt",
+      "bytes": 324252,
+      "sha256": "60e655a7aefd7f37cb584aaa7b33f2a6f7a5818c028cf0df75f0621c519864fd",
+      "selected": false
+    },
+    {
+      "path": "runs/tail-cave-disengage-v10-model/candidate.pt",
+      "bytes": 322844,
+      "sha256": "2764a3d667284fa8010c889485750cc2f06dcdd6c4629e11fb6c235dde7b0cd9",
+      "selected": false
+    },
+    {
+      "path": "runs/tail-cave-integration-dagger-v5-model/candidate.pt",
+      "bytes": 324700,
+      "sha256": "f15a225b43b0a455277e1fe3ffeb942319b9e5c7df3b46c061518f7b08e974bc",
+      "selected": false
+    }
+  ],
+  "room15_students": {
+    "v1": 13,
+    "v2": 7,
+    "v3": 14,
+    "v4": 15,
+    "cases_each": 20,
+    "all_rejected": true,
+    "panels_differ": true,
+    "v5_probes": "6/8 and 5/8 are training-source diagnostics, not promotion gates"
+  },
+  "room15_recovery_branch": "closed_no_more_candidates",
+  "frozen_gates": {
+    "active_criteria_config": "configs/house_to_boss_door_v2.json",
+    "teacher": {
+      "house_required": 20,
+      "house_cases": 20,
+      "half_heart_required": 4,
+      "half_heart_cases": 4
+    },
+    "model_only": {
+      "house_required": 18,
+      "house_cases": 20,
+      "half_heart_required": 4,
+      "half_heart_cases": 4,
+      "teacher_fallbacks_allowed": 0
+    },
+    "all_finishes_full_health_battle_ready": true,
+    "all_cases_exact_replay": true,
+    "case_manifests_frozen": true,
+    "budgets_frozen": true,
+    "historical_gates_changed": false,
+    "case_manifest": "configs/house_boss_door_teacher_panel_v1.json",
+    "controller_binding_frozen": false
+  },
+  "training": {
+    "new_campaign_started": false,
+    "new_labels_generated": 0,
+    "teacher_qualified_for_full_route": false,
+    "whole_route_dataset_approved": false,
+    "active_learning_experiment": null,
+    "historical_approved_data_provenance_preserved": true
+  },
+  "sealed_validation_status": {
+    "original_house_cases": 20,
+    "other_reserved_cases": 96,
+    "access_this_closeout": "opaque integrity hashes only; no content parsing or evaluation",
+    "integrity_manifest": "reports/handoff-closeout-2026-09-12/sealed-integrity.json",
+    "final_verification": "reports/handoff-closeout-2026-09-12/verification-summary.json",
+    "development_use": false,
+    "relabeled": false
+  },
+  "evidence": {
+    "closeout_directory": "reports/handoff-closeout-2026-09-12",
+    "replay_report": "reports/handoff-closeout-2026-09-12/replay-verification.json",
+    "tests": "reports/handoff-closeout-2026-09-12/tests.json",
+    "environment": "reports/handoff-closeout-2026-09-12/environment.json",
+    "model_inventory": "reports/handoff-closeout-2026-09-12/model-inventory.json",
+    "video_manifest": "runs/videos/house-nightmare-route-development-v2/manifest.json"
+  },
+  "source": {
+    "base_commit": "6ae99a894afaf9c53e5e60202d9a1f92c34dfa78",
+    "working_tree_clean": false,
+    "current_work_pinned_to_commit": false,
+    "committed_or_pushed_this_closeout": false,
+    "repository_snapshot": "reports/handoff-closeout-2026-09-12/repository-after.json"
+  },
+  "rom_sha256": "6285ba6201f17bc8595c600ebc2477d52561f0aff29b11f7fc3343bacb2e230b",
+  "next_action": "Assemble and bind a reusable full-route guided teacher before executing the frozen24-case development panel; no recorded-prefix qualification, labels, or learner training.",
+  "wipe_ready": false,
+  "wipe_checklist": "docs/WIPE_READINESS.md",
+  "wipe_blockers": [
+    "Current source/config/docs are not pinned and verified in a new remote commit.",
+    "Current selected/rejected weights and optimizer/RNG states have no verified external backup.",
+    "Full raw/curated/development/private/sealed/replay artifact backup is not verified.",
+    "Private ROM/state/reference assets and access/decryption recovery must be backed up.",
+    "Full research-state snapshot and external artifact inventory must be preserved.",
+    "No clean-environment restore and exact replay from external backups has passed."
+  ],
+  "historical_dataset_revision": "5a11ac080f056e2b1d9e4bf5a489b960399ff1fd",
+  "remote_state_reverified": false,
+  "retained_models": [
+    {
+      "config": "configs/navigation_experiment.json",
+      "field": "previous_policy_path",
+      "path": "runs/navigation-routes-v7/model/epoch-008.pt",
+      "scope": "preserved frozen v7 fallback",
+      "exists": true,
+      "bytes": 3048964,
+      "sha256": "6d26dcd6a2d7b22c0681d7e7a0c9b9d3f27c9d8caccbeca94426be0da97fc062",
+      "expected_sha256": "6d26dcd6a2d7b22c0681d7e7a0c9b9d3f27c9d8caccbeca94426be0da97fc062",
+      "hash_matches": true,
+      "whole_route_promotion": false
+    },
+    {
+      "config": "configs/tail_cave_controller.json",
+      "field": "guided_proposal_policy_path",
+      "path": "runs/tail-cave-integration-dagger-v5-model/candidate.pt",
+      "scope": "v5 retained proposal model; rejected for autonomous promotion",
+      "exists": true,
+      "bytes": 324700,
+      "sha256": "f15a225b43b0a455277e1fe3ffeb942319b9e5c7df3b46c061518f7b08e974bc",
+      "expected_sha256": "f15a225b43b0a455277e1fe3ffeb942319b9e5c7df3b46c061518f7b08e974bc",
+      "hash_matches": true,
+      "whole_route_promotion": false
+    }
+  ],
+  "current_progression_continuation": "runs/house-nightmare-door-proof-v1/continuation.json",
+  "furthest_progression_continuation": "runs/house-nightmare-door-proof-v1/continuation.json",
+  "latest_progression_report": "docs/HOUSE_DOOR_FIRST_PROOF.md",
+  "full_route_teacher_gate_passed": false,
+  "next_step": "Assemble and bind a reusable full-route guided teacher before executing the frozen24-case development panel; no recorded-prefix qualification, labels, or learner training.",
+  "current_authorization": {
+    "source": "reports/house-door-resumed-development-v1/session-request.txt",
+    "guided_development": true,
+    "learner_training": false,
+    "new_labels": false,
+    "wipe": false
+  },
+  "full_route_proof": {
+    "handoff": "runs/house-nightmare-door-proof-v1/continuation.json",
+    "sha256": "3140c8ea17024d53928e0fdae0ccbd7f94f56c87013657c3666accf63bb57077",
+    "exact_replay": true,
+    "commands": 15896,
+    "final_frame": 53700,
+    "endpoint": {
+      "room": [
+        1,
+        0,
+        11
+      ],
+      "x": 80,
+      "y": 26,
+      "health": 24,
+      "max_hearts": 3,
+      "sword_A": true,
+      "feather_B": true,
+      "grounded": true,
+      "pending_healing": 0,
+      "pending_damage": 0,
+      "door_animation": 0,
+      "door_open": true,
+      "boss_room_entered": false
+    },
+    "qualification": false
+  },
+  "historical_furthest_guided_state": {
+    "handoff": "runs/tail-cave-room10-state-check-v2/continuation.json",
+    "handoff_sha256": "a39d067262b015ce7e65af6e2b4f149f87c8ee662692720c1c5e0840095fda3e",
+    "room": [
+      1,
+      0,
+      17
+    ],
+    "x": 17,
+    "y": 72,
+    "frame": 52180,
+    "health_raw": 4,
+    "max_health_raw": 24,
+    "nightmare_key": true,
+    "small_keys_held": 0,
+    "rolling_bones_defeated": false,
+    "boss_door_opened": false,
+    "continuous_exact_replay": true
+  }
+}

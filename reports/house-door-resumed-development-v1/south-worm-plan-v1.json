@@ -1,0 +1,13 @@
+{
+  "source": "runs/teacher-south-worm-entry-v2/continuation.json",
+  "source_sha256": "56aa832828a7f6a8f1d162b7d9c938e2419f57a9847881586a05d224446dbda4",
+  "case_count": 1,
+  "budget": {
+    "decisions": 1000,
+    "frames": 4500
+  },
+  "hypothesis": "Open south key block with two keys, guard at89 against observed worm using facing shield and 24frame sword cooldown, then exit north.",
+  "success": "room07 full health, one remaining key, shield B sword A, no buffered damage",
+  "training_eligible": false,
+  "qualification": false
+}

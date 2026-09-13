@@ -1,0 +1,11 @@
+{
+  "hypothesis": "Map doorway-side pursuit returns to middle band after recoil and allows facing/strike from x20..24; other controls unchanged.",
+  "cases": [
+    "house743",
+    "house673",
+    "house607",
+    "recovery698"
+  ],
+  "qualification": false,
+  "training_eligible": false
+}

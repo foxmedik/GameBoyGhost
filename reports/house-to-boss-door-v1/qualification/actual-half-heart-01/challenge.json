@@ -1,0 +1,58 @@
+{
+  "recovery": true,
+  "first_arrival": {
+    "state": {
+      "phase": {
+        "gameplay": 11,
+        "subtype": 7,
+        "scroll": 0,
+        "sequence": 4,
+        "palette": 0,
+        "room": [
+          1,
+          0,
+          29
+        ],
+        "health": 4
+      },
+      "room": [
+        1,
+        0,
+        29
+      ],
+      "x": 72,
+      "y": 127,
+      "health": 4,
+      "max_hearts": 3,
+      "inventory": [
+        4,
+        1,
+        12,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "sword": 1,
+      "toadstool": 0,
+      "powder": 25,
+      "bombs": 0,
+      "arrows": 0,
+      "tail_key": 1,
+      "tarin": 1,
+      "tail_door_status": 144,
+      "trade_item": 0,
+      "dialog_state": 0,
+      "dialog_id": 0,
+      "inventory_cursor": 0
+    },
+    "frame": 42322,
+    "pending_damage": 0,
+    "pending_healing": 0
+  }
+}

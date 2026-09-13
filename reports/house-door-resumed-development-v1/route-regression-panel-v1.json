@@ -1,0 +1,30 @@
+{
+  "qualification": false,
+  "cases": [
+    {
+      "id": "house23",
+      "idle": 23,
+      "recovery": false
+    },
+    {
+      "id": "house41",
+      "idle": 41,
+      "recovery": false
+    },
+    {
+      "id": "house67",
+      "idle": 67,
+      "recovery": false
+    },
+    {
+      "id": "recovery23",
+      "idle": 23,
+      "recovery": true
+    }
+  ],
+  "max_decisions_per_case": 30000,
+  "max_frames_per_case": 150000,
+  "max_wall_seconds_per_live_case": 900,
+  "source_frozen_during_all_cases": true,
+  "purpose": "Retest nominal, two exposed timing failures, and physical half-heart route after Map safe-lane correction"
+}

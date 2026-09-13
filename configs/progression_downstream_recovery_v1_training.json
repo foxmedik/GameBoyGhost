@@ -1,0 +1,23 @@
+{
+  "schema": "progression-downstream-recovery-training-v1",
+  "status": "frozen_before_training",
+  "frozen_at": "2026-09-12",
+  "experiment": "configs/progression_downstream_recovery_v1.json",
+  "collection": "runs/progression-downstream-recovery-v1-collection",
+  "collection_summary_sha256": "f349011a541edc91b8b51fae43be6de6327cc911fd641bab0325a8916692eefb",
+  "correction_rows": 2014,
+  "parent": "runs/progression-dagger-v1-model/candidate.pt",
+  "parent_sha256": "e5a4854a4c15a37fdd5c10b8cd20a8be24b6cfe17f6fa406124bf828162502e2",
+  "retention_collection": "runs/progression-dagger-v1-collection-v2",
+  "trainer": "scripts/train_progression_downstream_recovery_v1.py",
+  "trainer_sha256": "91bc6b838595bd843c6418cbfeeecdf49ff93f614ec40ff4da3b159412ff8d65",
+  "epochs": 24,
+  "batches_per_epoch": 64,
+  "batch_rows": 256,
+  "retention_batch_rows": 128,
+  "retention_weight": 0.5,
+  "learning_rate": 0.0003,
+  "seed": 2029,
+  "selection": "Final epoch only; no checkpoint shopping.",
+  "validation_loaded": false
+}

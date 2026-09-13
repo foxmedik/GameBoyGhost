@@ -1,0 +1,13 @@
+{
+  "source": "runs/teacher-underground-v3/continuation.json",
+  "source_sha256": "3156025cfbe8f82a09a978c953607f41f61a6eedfc6a7f97cc7f86361c4da48d",
+  "case_count": 1,
+  "budget": {
+    "decisions": 800,
+    "frames": 4500
+  },
+  "hypothesis": "Use existing trap bait/retreat/observed outward return controller from fresh corridor approach, then receive Feather and equip B.",
+  "success": "room1D closed Feather receipt, full health, one key, Feather B sword A, grounded, no pending health changes",
+  "training_eligible": false,
+  "qualification": false
+}

@@ -1,0 +1,25 @@
+{
+  "schema": "room15-student-on-policy-corrections-v1",
+  "purpose": "Freeze the seven v1 student-stall traces, replay them continuously, and collect only exact successful state-checked teacher recoveries. No optimizer update is part of this collection.",
+  "source": "runs/state-driven-tail-cave-disengage-guarded-v1",
+  "student_gate": "runs/room15-student-v1-gate-v5",
+  "student_gate_summary_sha256": "f49ca7a3f7deef180c8c51cf71588d402e1e7abefcb238076bb45cc3130d2205",
+  "cases": [
+    {"id":"correction-03","student_case":"student-room15-03","base":3,"idle":29},
+    {"id":"correction-08","student_case":"student-room15-08","base":8,"idle":34},
+    {"id":"correction-11","student_case":"student-room15-11","base":11,"idle":37},
+    {"id":"correction-13","student_case":"student-room15-13","base":13,"idle":39},
+    {"id":"correction-14","student_case":"student-room15-14","base":14,"idle":40},
+    {"id":"correction-16","student_case":"student-room15-16","base":16,"idle":42},
+    {"id":"correction-18","student_case":"student-room15-18","base":18,"idle":44}
+  ],
+  "frozen_inputs": {
+    "scripts/collect_room15_student_corrections_v1.py": "4bcef0cf10e0aa5553c7867567aa9757811fcbb0fad401f556852abb97d2ca86",
+    "src/gameboy_agent/tail_cave_progression.py": "ca98e838029cbd6435a201ec38fcf0e4259850fc001111997c24158965523aab",
+    "src/gameboy_agent/room15_recovery.py": "184a2371bc5dda0323fe2c368e43817245a5c7735b91fa67fc609e83d96b7d28",
+    "runs/room15-student-v1-gate-v5/summary.json": "f49ca7a3f7deef180c8c51cf71588d402e1e7abefcb238076bb45cc3130d2205",
+    "runs/room15-student-v1-gate-v5/plan.json": "996aaddabfdec62bda3f11e05c190a391ba5d00a35558c7a1dbf87e12da55bfd"
+  },
+  "training_authorized": false,
+  "validation_loaded": false
+}

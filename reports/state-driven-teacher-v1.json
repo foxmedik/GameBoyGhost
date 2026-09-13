@@ -1,0 +1,58 @@
+{
+  "schema": "state-driven-progression-teacher-report-v1",
+  "selected_run": "runs/state-driven-teacher-development-v3",
+  "panel_sha256": "6701c19643f4a097b017adac7490d808d04aef97561b1e712e094d3371320bb4",
+  "summary_sha256": "5c1f764d2cb9657fdbafaaf78c8f336d3f875a8787a35d4cc2b2961d6029fd44",
+  "development_successes": 18,
+  "development_cases": 20,
+  "reliable_teacher_gate": "18/20",
+  "reliable_teacher_gate_passed": true,
+  "exact_replays": 20,
+  "recorded_decisions": 94754,
+  "recorded_frames": 635596,
+  "total_damage_raw": 356,
+  "total_healing_raw": 172,
+  "successful_final_health_raw": [24, 8, 20, 16, 12, 12, 8, 24, 12, 12, 12, 20, 24, 20, 24, 16, 8, 24],
+  "failures": [
+    {
+      "case": "development-house-07",
+      "room": [0, 0, 82],
+      "room_hex": "0x52",
+      "kind": "combat_death"
+    },
+    {
+      "case": "development-house-12",
+      "room": [0, 0, 66],
+      "room_hex": "0x42",
+      "kind": "combat_death"
+    }
+  ],
+  "component_development": {
+    "live_sword": "20/20",
+    "live_forest": "18/20",
+    "mushroom": "18/20",
+    "witch_chain": "18/20"
+  },
+  "state_checked_progression": true,
+  "wrong_room_failure": "StageBlocked with expected and observed state",
+  "route_keyerror_removed": true,
+  "recorded_command_prefix_used_for_progression_handoff": false,
+  "teacher_kind": "scripted state-driven physical teacher using selected learned sword/navigation components where declared",
+  "new_model_training_performed": false,
+  "sealed_evaluation": {
+    "specification": "runs/progression-longrun-hour-v1/plan.json",
+    "results": "reports/progression-longrun-hour-v1.json",
+    "cases": 20,
+    "preserved": true,
+    "used_for_tuning": false,
+    "relabeled_as_development": false
+  },
+  "frozen_next_experiment": "configs/progression_local_control_v1.json",
+  "frozen_next_experiment_sha256": "ade6a5e561b6a24b270fd2bb9c1ea96a3632fe3ece637a30f51355d87e8b0841",
+  "tests": {
+    "command": "PYTHONPATH=src:/tmp/gameboy-audit-deps .venv-ladx/bin/python -m unittest discover -s tests -v",
+    "passed": 119,
+    "failed": 0,
+    "log": "/tmp/state-driven-teacher-v3-tests.log"
+  }
+}

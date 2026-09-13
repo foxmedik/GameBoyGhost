@@ -1,0 +1,136 @@
+{
+  "schema_version": 2,
+  "phase": "house_to_boss_door",
+  "status": "first_continuous_guided_proof_teacher_unqualified",
+  "plan": "docs/HOUSE_TO_BOSS_DOOR_FULL_HEALTH.md",
+  "objective": "From the supplied house start, open Tail Cave boss door at full health with sword A and feather B; stop grounded outside the boss room, ready to fight.",
+  "out_of_scope": [
+    "final_boss_fight",
+    "full_moon_cello"
+  ],
+  "completion": {
+    "route_proof_verified": true,
+    "endpoint_live_verified": true,
+    "full_route_teacher_qualified": false,
+    "training_manifest": null,
+    "frozen_learning_experiment": null,
+    "training_started": false,
+    "trained_system_gate_passed": false
+  },
+  "active_stage": "assemble_and_qualify_guided_teacher",
+  "next_milestone": "full_route_guided_teacher_qualified",
+  "next_action": "Assemble reusable full-route teacher, freeze binding, run fresh24-case development panel without altering its criteria.",
+  "candidate_endpoint": {
+    "status": "live_full_route_verified",
+    "room": [
+      1,
+      0,
+      11
+    ],
+    "forbidden_boss_room": [
+      1,
+      0,
+      6
+    ],
+    "room_status_address": "0xD90B",
+    "open_mask": "0x04",
+    "boss_key_address": "0xDBCF",
+    "door_animation_address": "0xC188",
+    "requires": [
+      "continuous_house_episode",
+      "closed_to_open_transition",
+      "nightmare_key",
+      "alive",
+      "world_settled",
+      "dialogue_closed",
+      "door_animation_finished",
+      "movement_released",
+      "outside_boss_room",
+      "full_health",
+      "healing_finished",
+      "battle_loadout",
+      "grounded"
+    ],
+    "health_target": "health == 8 * max_hearts",
+    "equipment": {
+      "a": "sword",
+      "b": "rocs_feather"
+    },
+    "pending_healing": 0,
+    "pending_damage": 0,
+    "grounded": true
+  },
+  "gate_design": {
+    "status": "case_specifications_and_budgets_frozen_controller_binding_pending",
+    "teacher": {
+      "house_successes_required": 20,
+      "house_cases": 20,
+      "half_heart_successes_required": 4,
+      "half_heart_cases": 4,
+      "raw_half_heart_health": 4,
+      "all_cases_exact_replay": true
+    },
+    "model_only": {
+      "house_successes_required": 18,
+      "house_cases": 20,
+      "half_heart_successes_required": 4,
+      "half_heart_cases": 4,
+      "all_cases_exact_replay": true,
+      "teacher_fallbacks_allowed": 0
+    },
+    "guided_hybrid_report_separately": true,
+    "episode_and_compute_budgets": "Freeze in experiment manifest before running; no in-run changes.",
+    "endpoint": "full_health_battle_ready_version_2",
+    "historical_gates_unchanged": true
+  },
+  "teacher_gate_manifest": "configs/house_boss_door_teacher_panel_v1.json",
+  "model_gate_manifest": null,
+  "training_prerequisites": [
+    "verified_live_endpoint",
+    "full_route_teacher_gate_pass",
+    "fresh_demonstration_manifest",
+    "episode_grouped_data_split",
+    "frozen_learning_experiment_and_budget"
+  ],
+  "sealed_validation_preserved": true,
+  "room15_recovery_branch": "closed_no_more_candidates",
+  "historical_protocol": "configs/progression_protocol_v1.json",
+  "current_continuation": "runs/house-nightmare-door-proof-v1/continuation.json",
+  "full_health_continuation": "runs/tail-cave-feather-v2/feather-full-health-continuation.json",
+  "latest_progression_evidence": "reports/house-door-resumed-development-v1/progress.json",
+  "latest_progression_report": "docs/HOUSE_DOOR_FIRST_PROOF.md",
+  "repeatability_blocker": "Nightmare Key controller fresh timing smoke: 1/2; idle13 enemy contact at room0E landing.",
+  "endpoint_implementation": "src/gameboy_agent/battle_ready_endpoint.py",
+  "supersedes": "configs/house_to_boss_door_v1.json",
+  "optimization_order": [
+    "endpoint success at full health",
+    "exact replay and no undeclared intervention",
+    "minimum damage and recovery detours",
+    "fewer frames and decisions among accepted routes"
+  ],
+  "healing_policy": "Physical health pickups are allowed; record healing and wait for it to settle. Full health is required at the endpoint, not at every frame.",
+  "training_design": {
+    "status": "not_frozen_not_started",
+    "sequence_unit": "continuous source episode grouped by start for splitting",
+    "planned_scope": [
+      "stage selection",
+      "state-checked stage transitions",
+      "local movement/combat/item policies",
+      "health recovery and final loadout"
+    ],
+    "required_metrics": [
+      "full_health_door_completion",
+      "guided_completion",
+      "model_only_completion",
+      "teacher_controlled_frames",
+      "interventions",
+      "damage",
+      "healing",
+      "frames",
+      "decisions"
+    ],
+    "current_traces": "development only; no automatic promotion to labels"
+  },
+  "checkpoint_plan": "configs/house_boss_door_checkpoint_v1.json",
+  "furthest_continuation": "runs/house-nightmare-door-proof-v1/continuation.json"
+}

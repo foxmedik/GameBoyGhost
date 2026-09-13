@@ -1,0 +1,11 @@
+{
+  "hypothesis": "Inset beetle pursuit to64..104/56..88, constrain alignment, prioritize aligned strikes over pursuit; same900 decisions.",
+  "cases": [
+    "house97",
+    "house307",
+    "house541",
+    "recovery23"
+  ],
+  "qualification": false,
+  "training_eligible": false
+}

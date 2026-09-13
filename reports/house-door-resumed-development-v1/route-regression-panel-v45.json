@@ -1,0 +1,11 @@
+{
+  "hypothesis": "Room0D worm guard stays on central x56..104 floor instead of crossing side pits; bounded encounter budget1200.",
+  "cases": [
+    "house97",
+    "house131",
+    "house953",
+    "recovery698"
+  ],
+  "qualification": false,
+  "training_eligible": false
+}

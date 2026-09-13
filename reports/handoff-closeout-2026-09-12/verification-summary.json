@@ -1,0 +1,75 @@
+{
+  "schema": "handoff-closeout-verification-v1",
+  "status": "passed_with_explicit_scope_limits",
+  "as_of": "2026-09-12",
+  "base_commit": "6ae99a894afaf9c53e5e60202d9a1f92c34dfa78",
+  "tests": {
+    "run": 171,
+    "passed": true,
+    "failures": 0,
+    "errors": 0,
+    "runtime_skips": 0,
+    "excluded": {
+      "test_progression_longrun.py": "Regenerates the sealed validation case definitions; deliberately not imported or run."
+    },
+    "command": "reports/handoff-closeout-2026-09-12/test-command.txt"
+  },
+  "syntax": {
+    "files": 256,
+    "errors": []
+  },
+  "json": {
+    "files_checked_in_main_pass": 237,
+    "errors": [],
+    "sealed_content_excluded": true
+  },
+  "continuous_replays": [
+    {
+      "handoff": "runs/full-health-worm-guard-v1/room0e-full-health-continuation.json",
+      "commands": 10963,
+      "final_frame": 47692,
+      "exact": true,
+      "extra_commands": 0
+    },
+    {
+      "handoff": "runs/tail-cave-room10-state-check-v2/continuation.json",
+      "commands": 13722,
+      "final_frame": 52180,
+      "exact": true,
+      "extra_commands": 0
+    }
+  ],
+  "secondary_handoff_hashes_match": true,
+  "selected_model_hashes_match": true,
+  "historical_teacher_hashes_match": true,
+  "sealed_integrity": {
+    "files": 149,
+    "mismatches": [],
+    "content_parsed_or_evaluated": false,
+    "relabeled": false
+  },
+  "existing_files_changed_this_closeout": [
+    "README.md",
+    "configs/research_focus.json",
+    "docs/PROJECT_STATUS.md"
+  ],
+  "unexpected_existing_changes": [],
+  "historical_evidence_rewritten": false,
+  "gate_configs_or_thresholds_changed": false,
+  "git_diff_check_passed": true,
+  "working_tree_clean": false,
+  "source_committed_this_closeout": false,
+  "local_development_bundle": {
+    "files_checked": 9,
+    "checksum_mismatches": [],
+    "is_current_closeout_backup": false
+  },
+  "video_sha256_matches": true,
+  "limits": [
+    "One sealed-definition generating test deliberately excluded.",
+    "No clean-environment restore or remote artifact re-verification.",
+    "No full-route teacher qualification or new learning campaign.",
+    "Evidence/model inventories do not replace complete external backup."
+  ],
+  "wipe_ready": false
+}

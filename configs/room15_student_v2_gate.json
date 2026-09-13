@@ -1,0 +1,22 @@
+{
+  "schema": "room15-autonomous-student-v2-gate",
+  "experiment": "configs/room15_student_v2.json",
+  "experiment_sha256": "b90b610a65342e1310d4da3ce7199054d703ca8c225c93041c73844511faece8",
+  "candidate": "runs/room15-student-v2-candidate/candidate.pt",
+  "candidate_sha256": "5d80c62f6bb8e443d99b8fd9a72bbb9fd563e7b9947849da67b8b60b8523426f",
+  "evaluator": "scripts/evaluate_room15_student_v1.py",
+  "evaluator_sha256": "4749527ee55a364e80634fc36ac14dab762d29d6760f424a1db6f011b94db734",
+  "source": "runs/state-driven-tail-cave-disengage-guarded-v1",
+  "decision_budget": 700,
+  "required_successes": 18,
+  "required_half_heart_successes": 4,
+  "control": "The entry helper traverses room 0x16. The candidate controls every room-15 action; no teacher fallback is permitted.",
+  "cases": [
+    {"id":"student-v2-room15-00","base":0,"idle":46}, {"id":"student-v2-room15-01","base":1,"idle":47}, {"id":"student-v2-room15-02","base":2,"idle":48}, {"id":"student-v2-room15-03","base":3,"idle":49}, {"id":"student-v2-room15-04","base":4,"idle":50},
+    {"id":"student-v2-room15-05","base":5,"idle":51}, {"id":"student-v2-room15-06","base":6,"idle":52}, {"id":"student-v2-room15-07","base":7,"idle":53}, {"id":"student-v2-room15-08","base":8,"idle":54}, {"id":"student-v2-room15-09","base":9,"idle":55},
+    {"id":"student-v2-room15-10","base":10,"idle":56}, {"id":"student-v2-room15-11","base":11,"idle":57}, {"id":"student-v2-room15-12","base":12,"idle":58}, {"id":"student-v2-room15-13","base":13,"idle":59}, {"id":"student-v2-room15-14","base":14,"idle":60},
+    {"id":"student-v2-room15-15","base":15,"idle":61}, {"id":"student-v2-room15-16","base":16,"idle":62}, {"id":"student-v2-room15-17","base":17,"idle":63}, {"id":"student-v2-room15-18","base":18,"idle":64}, {"id":"student-v2-room15-19","base":19,"idle":65}
+  ],
+  "selection": "Final epoch only. Select only if this frozen gate passes; otherwise preserve as rejected evidence.",
+  "validation_loaded": false
+}

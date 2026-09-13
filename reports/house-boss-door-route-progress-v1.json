@@ -1,0 +1,211 @@
+{
+  "status": "nightmare_key_acquired_miniboss_reached_route_not_qualified",
+  "control": "guided_physical_development",
+  "boss_door_opened": false,
+  "final_boss_entered": false,
+  "nightmare_key_acquired": true,
+  "miniboss_cleared": false,
+  "nightmare_key_controller_smoke": "reports/nightmare-key-route-smoke-v1.json",
+  "miniboss_lower_lane": {
+    "budget": 3000,
+    "success": false,
+    "health_start": 4,
+    "health_end": 4,
+    "boss_health_start": 8,
+    "boss_health_end": 5,
+    "reason": "decision_budget_exhausted",
+    "evidence": "runs/tail-cave-miniboss-lane-v1/lane-evidence.json"
+  },
+  "results": [
+    {
+      "path": "runs/tail-cave-nightmare-route-v1/summary.json",
+      "exact_replay": true,
+      "outcome": "terminal_failure",
+      "room": [
+        1,
+        0,
+        9
+      ],
+      "health": 0,
+      "commands": 769
+    },
+    {
+      "path": "runs/tail-cave-nightmare-route-v2/summary.json",
+      "exact_replay": true,
+      "outcome": "alive",
+      "room": [
+        1,
+        0,
+        8
+      ],
+      "health": 4,
+      "commands": 817
+    },
+    {
+      "path": "runs/tail-cave-nightmare-controller-check-v1/summary.json",
+      "exact_replay": true,
+      "outcome": "alive",
+      "room": [
+        1,
+        0,
+        8
+      ],
+      "health": 4,
+      "commands": 664
+    },
+    {
+      "path": "runs/tail-cave-nightmare-smoke-idle13/summary.json",
+      "exact_replay": true,
+      "outcome": "alive",
+      "room": [
+        1,
+        0,
+        14
+      ],
+      "health": 3,
+      "commands": 54
+    },
+    {
+      "path": "runs/tail-cave-nightmare-smoke-idle29/summary.json",
+      "exact_replay": true,
+      "outcome": "alive",
+      "room": [
+        1,
+        0,
+        8
+      ],
+      "health": 4,
+      "commands": 664
+    },
+    {
+      "path": "runs/tail-cave-boss-door-approach-v1/summary.json",
+      "exact_replay": true,
+      "outcome": "terminal_failure",
+      "room": [
+        1,
+        0,
+        15
+      ],
+      "health": 0,
+      "commands": 384
+    },
+    {
+      "path": "runs/tail-cave-boss-door-approach-v2/summary.json",
+      "exact_replay": true,
+      "outcome": "terminal_failure",
+      "room": [
+        1,
+        0,
+        16
+      ],
+      "health": 0,
+      "commands": 1254
+    },
+    {
+      "path": "runs/tail-cave-room10-crossing-v1/summary.json",
+      "exact_replay": true,
+      "outcome": "terminal_failure",
+      "room": [
+        1,
+        0,
+        16
+      ],
+      "health": 0,
+      "commands": 165
+    },
+    {
+      "path": "runs/tail-cave-room10-crossing-v2/summary.json",
+      "exact_replay": true,
+      "outcome": "alive",
+      "room": [
+        1,
+        0,
+        16
+      ],
+      "health": 4,
+      "commands": 194
+    },
+    {
+      "path": "runs/tail-cave-room10-crossing-v3/summary.json",
+      "exact_replay": true,
+      "outcome": "terminal_failure",
+      "room": [
+        1,
+        0,
+        16
+      ],
+      "health": 0,
+      "commands": 170
+    },
+    {
+      "path": "runs/tail-cave-room10-crossing-v4/summary.json",
+      "exact_replay": true,
+      "outcome": "terminal_failure",
+      "room": [
+        1,
+        0,
+        17
+      ],
+      "health": 0,
+      "commands": 484
+    },
+    {
+      "path": "runs/tail-cave-miniboss-lane-v1/summary.json",
+      "exact_replay": true,
+      "outcome": "alive",
+      "room": [
+        1,
+        0,
+        17
+      ],
+      "health": 4,
+      "commands": 3018
+    },
+    {
+      "path": "runs/tail-cave-room10-state-check-v1/summary.json",
+      "exact_replay": true,
+      "outcome": "interrupted_pending_damage",
+      "room": [
+        1,
+        0,
+        16
+      ],
+      "health": 4,
+      "commands": 204
+    },
+    {
+      "path": "runs/tail-cave-room10-state-check-v2/summary.json",
+      "exact_replay": true,
+      "outcome": "alive",
+      "room": [
+        1,
+        0,
+        17
+      ],
+      "health": 4,
+      "commands": 245
+    }
+  ],
+  "current_continuation": "runs/tail-cave-room10-state-check-v2/continuation.json",
+  "nightmare_key_continuation": "runs/tail-cave-nightmare-route-v2/nightmare-key-continuation.json",
+  "training_started": false,
+  "training_eligible": false,
+  "teacher_qualified": false,
+  "sealed_validation_used": false,
+  "unit_tests_passed": 23,
+  "endpoint_live_verified": false,
+  "sources": {
+    "src/gameboy_agent/nightmare_key_route.py": "bdbff9287796e0105b9b4938d033d5ff74db6c7ab62ed10f7ff38e4fbeec4dc4",
+    "src/gameboy_agent/boss_door_route.py": "d617ae99e91b7880248f41e989f71e5637bec0995733d37fa7a7e930f5276ec8",
+    "src/gameboy_agent/boss_door_endpoint.py": "34e96172146fd7aadcce714106a9f1be7a60a56f822a8f64e9cc05cfda145000",
+    "src/gameboy_agent/rolling_bones_development.py": "662a16261cfaee7fb86fef06fca3dfcc90b8a851723a73345047bd8b0e733d94",
+    "scripts/continue_tail_cave_guided.py": "88920c79f02f63c7c2a344397c993b25e7e6246eb07c82b46b8f71f9f4d78c39"
+  },
+  "room10_state_checked_crossing": {
+    "status": "one_nominal_success_not_qualified",
+    "evidence": "runs/tail-cave-room10-state-check-v2/summary.json",
+    "failed_prior_candidate": "runs/tail-cave-room10-state-check-v1/summary.json"
+  },
+  "completed_attempts": 14,
+  "exact_replays": 14
+}

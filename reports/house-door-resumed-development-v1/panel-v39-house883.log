@@ -1,0 +1,16 @@
+UserWarning: Using SDL2 binaries from pysdl2-dll 2.32.10
+Loaded layouts
+Teacher stage room15_cleared: frame=34902 health=16
+Teacher stage compass_second_key: frame=38018 health=16
+Teacher stage map: frame=38916 health=16
+Teacher stage south_worm_entry: frame=39635 health=16
+Teacher stage south_worm_passage: frame=39808 health=24
+Teacher stage pushblock_entry: frame=40148 health=24
+Teacher stage pushblock: frame=41506 health=24
+RouteBlocker: Item route buffered damage or falling
+Fresh probe replay 0/9646
+Fresh probe replay 2000/9646
+Fresh probe replay 4000/9646
+Fresh probe replay 6000/9646
+Fresh probe replay 8000/9646
+FRESH HOUSE PROBE EXACT REPLAY VERIFIED

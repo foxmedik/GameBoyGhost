@@ -1,0 +1,18 @@
+{
+  "schema": "progression-downstream-recovery-live-v1",
+  "status": "frozen_before_live_development",
+  "frozen_at": "2026-09-12",
+  "experiment": "configs/progression_downstream_recovery_v1.json",
+  "experiment_sha256": "2ae049d0c4e9e23f430526cdddc11b99f1b771042b855f1b59c90ecddb9ad7b7",
+  "source_teacher": "runs/state-driven-teacher-dagger-development-v1",
+  "candidate": "runs/progression-downstream-recovery-v1-model/candidate.pt",
+  "candidate_sha256": "251c31a86a7140fe425ea77dfe2dfde35f93a39d85e1257bf6c30038f600b676",
+  "evaluator": "scripts/evaluate_progression_downstream_recovery_v1.py",
+  "evaluator_sha256": "08fc15e0544953a3fc3ce395afd586d90b1133bf61b2d196862851855e424a0a",
+  "decision_budget": 320,
+  "stationary_before_recovery": 48,
+  "maximum_recoveries": 4,
+  "required_successes": 18,
+  "selection": "Single frozen candidate; accept only at least 18/20 live successes with exact replay.",
+  "validation_loaded": false
+}

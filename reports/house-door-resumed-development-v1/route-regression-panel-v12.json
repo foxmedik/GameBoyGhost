@@ -1,0 +1,11 @@
+{
+  "hypothesis": "Clear return Keese from north side before trap jump; add observed west-aisle worm interception within same900 budget.",
+  "cases": [
+    "house173",
+    "house257",
+    "house307",
+    "recovery23"
+  ],
+  "qualification": false,
+  "training_eligible": false
+}

@@ -1,0 +1,13 @@
+{
+  "source": "runs/teacher-feather-return-v1/continuation.json",
+  "source_sha256": "35e4faca3d865c0a3ee8516e775822f8cab48d15cf5c442d0285af47d8d409fe",
+  "case_count": 1,
+  "budget": {
+    "decisions": 900,
+    "frames": 4500
+  },
+  "hypothesis": "Use upper side-view platforms and bounded Feather jump primitives, checking room and health each frame, to avoid lower Goombas and climb east exit.",
+  "success": "room03 staircase return full health, one key, Feather B sword A, no buffered damage",
+  "training_eligible": false,
+  "qualification": false
+}

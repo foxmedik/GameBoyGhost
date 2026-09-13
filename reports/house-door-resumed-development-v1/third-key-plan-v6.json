@@ -1,0 +1,14 @@
+{
+  "source": "runs/teacher-main-return-v2/continuation.json",
+  "source_sha256": "ab23588b6c5669cd0c5ee6fa0cd7c4ca9477f84a791c8354c8e6e10f1262cc25",
+  "case_count": 1,
+  "budget": {
+    "decisions": 2000,
+    "frames": 7000
+  },
+  "hypothesis": "Generic dialogue closure then escape lost health. Use original successful physical left+B press and explicit B release followed by1 frame, checking health/motion every frame; stop atwest43 and settle before north. Freeze120 two-frame pulses within overall2000/7000 budget; log jump state.",
+  "success": "room08 lower entry full health, two keys, Feather B sword A, no buffered damage",
+  "training_eligible": false,
+  "qualification": false,
+  "prior_failure": "runs/teacher-third-key-v5"
+}

@@ -1,0 +1,13 @@
+{
+  "source": "runs/teacher-beetle-v2/continuation.json",
+  "source_sha256": "b6232b566c20b509f17296c5c30131903e3988c24939d7bbada9fda3b044718b",
+  "case_count": 1,
+  "budget": {
+    "decisions": 1800,
+    "frames": 6500
+  },
+  "hypothesis": "Descend ladder, clear Goombas with explicitly settled horizontal facing before sword pulse, climb west ladder to cross platform, clear final Goomba and exit via x40 ladder.",
+  "success": "room01 ladder exit at full health, one key, shield B sword A, no buffered damage",
+  "training_eligible": false,
+  "qualification": false
+}

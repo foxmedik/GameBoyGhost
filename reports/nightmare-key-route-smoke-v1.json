@@ -1,0 +1,36 @@
+{
+  "status": "failed_development_smoke",
+  "qualification": false,
+  "nominal_check": {
+    "id": "nominal",
+    "result": "runs/tail-cave-nightmare-controller-check-v1/summary.json",
+    "success": true,
+    "health": 4,
+    "nightmare_key": true,
+    "exact_replay": true
+  },
+  "fresh_smoke_cases": [
+    {
+      "id": "idle13",
+      "result": "runs/tail-cave-nightmare-smoke-idle13/summary.json",
+      "success": false,
+      "health": 3,
+      "nightmare_key": false,
+      "exact_replay": true
+    },
+    {
+      "id": "idle29",
+      "result": "runs/tail-cave-nightmare-smoke-idle29/summary.json",
+      "success": true,
+      "health": 4,
+      "nightmare_key": true,
+      "exact_replay": true
+    }
+  ],
+  "fresh_smoke_successes": 1,
+  "fresh_smoke_count": 2,
+  "exact_replay_count": 3,
+  "training_eligible": false,
+  "sealed_validation_used": false,
+  "first_blocker": "Idle13: room0E landing-area enemy contact at frame49030, position109,24; health4->3. The command stopped during damage processing, so its alive summary is not a successful or safe resumable milestone."
+}

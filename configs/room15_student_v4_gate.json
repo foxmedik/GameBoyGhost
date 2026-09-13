@@ -1,0 +1,22 @@
+{
+  "schema": "room15-autonomous-student-v4-fresh-gate",
+  "experiment": "configs/room15_student_v4.json",
+  "experiment_sha256": "743e4735a5ea6f6a0aa182d9b3302004f54d43e4c9d741e17148dc718754ec57",
+  "candidate": "runs/room15-student-v4-candidate/candidate.pt",
+  "candidate_sha256": "bc27d1b563a87d0b6c61b74df49f513cf286f52532beefa0b5a115bf1298834a",
+  "evaluator": "scripts/evaluate_room15_student_v4.py",
+  "evaluator_sha256": "dcc0f204a75b5bb0344bfd6913b526f93a79287a36f88c3a43a7328690e344cf",
+  "source": "runs/state-driven-tail-cave-disengage-guarded-v1",
+  "decision_budget": 700,
+  "required_successes": 18,
+  "required_half_heart_successes": 4,
+  "control": "The entry helper traverses room 0x16. V4 alone controls room 0x15 with observed-intent history and an explicit wait action; no teacher fallback is permitted.",
+  "cases": [
+    {"id":"student-v4-room15-00","base":0,"idle":86},{"id":"student-v4-room15-01","base":1,"idle":87},{"id":"student-v4-room15-02","base":2,"idle":88},{"id":"student-v4-room15-03","base":3,"idle":89},{"id":"student-v4-room15-04","base":4,"idle":90},
+    {"id":"student-v4-room15-05","base":5,"idle":91},{"id":"student-v4-room15-06","base":6,"idle":92},{"id":"student-v4-room15-07","base":7,"idle":93},{"id":"student-v4-room15-08","base":8,"idle":94},{"id":"student-v4-room15-09","base":9,"idle":95},
+    {"id":"student-v4-room15-10","base":10,"idle":96},{"id":"student-v4-room15-11","base":11,"idle":97},{"id":"student-v4-room15-12","base":12,"idle":98},{"id":"student-v4-room15-13","base":13,"idle":99},{"id":"student-v4-room15-14","base":14,"idle":100},
+    {"id":"student-v4-room15-15","base":15,"idle":101},{"id":"student-v4-room15-16","base":16,"idle":102},{"id":"student-v4-room15-17","base":17,"idle":103},{"id":"student-v4-room15-18","base":18,"idle":104},{"id":"student-v4-room15-19","base":19,"idle":105}
+  ],
+  "selection": "Select only if this fresh gate passes; the 20 sealed validation results remain untouched.",
+  "validation_loaded": false
+}

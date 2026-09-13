@@ -1,0 +1,54 @@
+{
+  "schema": "progression-downstream-recovery-report-v1",
+  "status": "selected_after_full_development_gate",
+  "problem": "The learned mushroom crossing changed downstream timing. The old traversal died or stalled in room 0x52 on witch and Tarin legs and in room 0x54 on the Tarin return.",
+  "teacher": {
+    "result": "runs/progression-downstream-recovery-v1-collection/summary.json",
+    "summary_sha256": "f349011a541edc91b8b51fae43be6de6327cc911fd641bab0325a8916692eefb",
+    "successes": 20,
+    "cases": 20,
+    "correction_rows": 2014,
+    "behavior": "Replan against live collision geometry and move with the physically equipped shield."
+  },
+  "candidate": {
+    "path": "runs/progression-downstream-recovery-v1-model/candidate.pt",
+    "sha256": "251c31a86a7140fe425ea77dfe2dfde35f93a39d85e1257bf6c30038f600b676",
+    "selection": "Frozen final epoch only",
+    "training_movement_accuracy": 0.9528301954269409,
+    "training_button_accuracy": 1.0,
+    "training_duration_accuracy": 1.0
+  },
+  "live_development": {
+    "result": "runs/progression-downstream-recovery-v1-live/summary.json",
+    "summary_sha256": "e75c59185f5b7dbe2834322a5338e05fef3b2b9d38261ce5706c05c08ccda86a",
+    "successes": 20,
+    "cases": 20,
+    "exact_replay": true,
+    "fallback_recoveries": 0
+  },
+  "integration": {
+    "result": "runs/state-driven-teacher-downstream-development-v3/summary.json",
+    "summary_sha256": "0f1b1434987597274e17c695a2e1363a99a9ca0a6ea5de662febca2b23584bca",
+    "panel_sha256": "6ad33c9f81b86e502259ed81989b1fde0343acb79f0918ffbb5dc6cbd390c576",
+    "successes": 20,
+    "cases": 20,
+    "exact_replay": true,
+    "tail_cave_entries": 20,
+    "minimum_final_health_raw": 4,
+    "maximum_decisions": 5271,
+    "controller_contract": "The learned model controls the first 16 decisions. A state-checked shield teacher then takes over, avoids a live entity blocking the next vector, and remains bounded to 512 decisions inside the surrounding 2048-decision stage budget."
+  },
+  "limitations": [
+    "Four development cases entered Tail Cave with 4 raw health, so later in-cave survival remains a separate development target.",
+    "The downstream model is selected only inside its three room, inventory, and destination contracts."
+  ],
+  "sealed_validation": {
+    "specification": "runs/progression-longrun-hour-v1/plan.json",
+    "results": "reports/progression-longrun-hour-v1.json",
+    "loaded": false,
+    "used_for_collection": false,
+    "used_for_training": false,
+    "used_for_selection": false,
+    "relabel_as_development": false
+  }
+}

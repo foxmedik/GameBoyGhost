@@ -1,5 +1,7 @@
 # Toadstool route audit
 
+> Current evidence: [PROGRESSION_TOADSTOOL_AND_RETURN.md](PROGRESSION_TOADSTOOL_AND_RETURN.md) supersedes the video-only proof and next-step notes below. Toadstool acquisition and cave return now have complete physical traces, journals and independent replay. The remainder of this document preserves chronological route investigation. Its earlier side-scrolling interpretation of 0E:A2 is superseded by the [physically verified witch exchange](PROGRESSION_WITCH_EXCHANGE.md).
+
 ## Result
 
 The complete route now succeeds in one continuous physical replay: forest checkpoint, cave entrance, user-traced crumbling-floor crossing, two verified block pushes, lower cave exit, Toadstool contact, and its unskippable message. The game writes `1` to `wHasToadstool` at `DB4B` only after the message has been advanced and the acquisition animation has settled. The final replay observes that value.

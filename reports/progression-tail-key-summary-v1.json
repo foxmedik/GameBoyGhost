@@ -1,0 +1,41 @@
+{
+  "selected_proof": "progression-tail-key-v2",
+  "scope": "scripted_teacher_baseline",
+  "runs": [
+    {
+      "run": "progression-tail-key-v1",
+      "status": "blocked",
+      "failure": "No conservative path in [0, 0, 65] from (6, 7) to (4, 4); obstacle skill required",
+      "steps": 4334,
+      "frames": 28544,
+      "damage_raw": 20,
+      "health": 4,
+      "tail_key": 0,
+      "exact_replay": true,
+      "artifact_hashes_verified": true
+    },
+    {
+      "run": "progression-tail-key-v2",
+      "status": "tail_key_acquired",
+      "failure": null,
+      "steps": 4404,
+      "frames": 30229,
+      "damage_raw": 20,
+      "health": 4,
+      "tail_key": 1,
+      "exact_replay": true,
+      "artifact_hashes_verified": true
+    }
+  ],
+  "source_hashes_verified": true,
+  "tests": {
+    "passed": 114,
+    "skipped": 0,
+    "seconds": 36.828,
+    "log": "runs/progression-tail-key-validation-20260911/tests.log"
+  },
+  "optimizer_updates": 0,
+  "reserved_evaluation_used": false,
+  "selected_policy_unchanged": true,
+  "selected_policy_sha256": "9d2b24b28be5289fc3d32d85d46faa1835ca2068d73a1e8790630d77dbaf85ec"
+}

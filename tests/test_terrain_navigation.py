@@ -3,10 +3,17 @@ from pathlib import Path
 import sys
 import unittest
 ROOT=Path(__file__).resolve().parents[1];sys.path.insert(0,str(ROOT/'src'))
-from gameboy_agent.terrain_navigation import paths,component,exits,choose_exit,steer,cell
+from gameboy_agent.terrain_navigation import paths,component,exits,choose_exit,steer,steer_path,cell
 
 
 class TerrainNavigationTests(unittest.TestCase):
+    def test_displaced_path_centring_does_not_cut_a_corner(self):
+        self.assertEqual(steer_path(44,101,(3,6)),2)
+        self.assertEqual(steer_path(44,108,(3,6)),4)
+        self.assertEqual(steer_path(46,101,(2,5)),3)
+        self.assertEqual(steer_path(40,101,(2,5)),1)
+        self.assertEqual(steer_path(68,90,(5,5)),4)
+
     def test_wall_ledge_pit_and_uncertain_tiles_are_not_paths(self):
         for flag in (1,0x10,0x30,0x50,0x80,0x90):
             grid=[[1]*10 for _ in range(8)];grid[4][3]=0;grid[4][4]=flag;grid[4][5]=0

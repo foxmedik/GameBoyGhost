@@ -1,0 +1,94 @@
+{
+  "result": {
+    "status": "blocked",
+    "failure": "No conservative right return path in [1, 10, 171]; obstacle/doorway skill required",
+    "steps": 2970,
+    "frames": 17574,
+    "damage_raw": 8,
+    "healing_raw": 0,
+    "final": {
+      "phase": {
+        "gameplay": 11,
+        "subtype": 7,
+        "scroll": 0,
+        "sequence": 4,
+        "palette": 0,
+        "room": [
+          1,
+          10,
+          171
+        ],
+        "health": 16
+      },
+      "room": [
+        1,
+        10,
+        171
+      ],
+      "x": 80,
+      "y": 122,
+      "health": 16,
+      "max_hearts": 3,
+      "inventory": [
+        4,
+        1,
+        12,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "sword": 1,
+      "toadstool": 1,
+      "powder": 0,
+      "bombs": 0,
+      "arrows": 0,
+      "tail_key": 0,
+      "tarin": 0,
+      "tail_door_status": 0,
+      "trade_item": 0,
+      "dialog_state": 0,
+      "dialog_id": 0,
+      "inventory_cursor": 0
+    },
+    "milestones": {
+      "sword_acquired": 17,
+      "toadstool_acquired": 61
+    },
+    "quest_success": false,
+    "exact_action_replay": true,
+    "assistance": "scripted_known_route_with_source_grounded_rom_senses",
+    "human_interventions": 0,
+    "optimizer_updates": 0,
+    "reserved_evaluation_used": false,
+    "wall_seconds": 11.515
+  },
+  "evidence": [
+    {
+      "kind": "forest_prefix_exact",
+      "decisions": 2912,
+      "frame": 17331
+    },
+    {
+      "kind": "return_transition",
+      "origin": [
+        0,
+        0,
+        80
+      ],
+      "target": [
+        1,
+        10,
+        171
+      ],
+      "frame": 17574
+    }
+  ],
+  "output": "runs/progression-witch-approach-v1",
+  "memory_version": "705b47cdbf3434e0e9eb00a82b8c6d8f6638a03f1b41d9263f17a707f98959e1"
+}

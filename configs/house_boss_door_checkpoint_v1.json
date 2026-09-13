@@ -1,0 +1,34 @@
+{
+  "schema_version": 1,
+  "name": "house-boss-door-full-health-v1",
+  "status": "blocked_not_ready_for_training_release",
+  "github_repository": "https://github.com/foxmedik/GameBoyGhost",
+  "hf_dataset_repository": "foxmedik/GameBoyGhost-LADX",
+  "hf_path_in_repo": "releases/house-boss-door-full-health-v1",
+  "model_repository": null,
+  "publishing_started": false,
+  "milestone_release_requirements": [
+    "full_health_door_proof",
+    "live_endpoint_verified",
+    "exact_replay",
+    "full_route_teacher_gate_pass",
+    "source_commit_and_manifest_hashes",
+    "source_checkout_reproduction_instructions"
+  ],
+  "training_release_additions": [
+    "approved_sequence_dataset_manifest",
+    "frozen_learning_experiment",
+    "checkpoint_weights_and_hashes",
+    "held_out_evaluation_report",
+    "explicit_autonomy_and_guidance_card"
+  ],
+  "allowed_current_label": "development snapshot: Nightmare Key acquired; miniboss reached; full-health route in development; no new trained model",
+  "exclude": [
+    "ROM files",
+    "emulator savestates",
+    "reference repository copies",
+    "secrets",
+    "sealed evaluation specifications and trajectories"
+  ],
+  "legacy_release_policy": "Preserve pinned historical release; use a separate immutable release directory and a distinct commit message. Existing uploader is specific to the old 16,777,216-action release and must not be reused unchanged."
+}

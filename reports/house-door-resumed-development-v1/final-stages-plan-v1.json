@@ -1,0 +1,13 @@
+{
+  "source": "runs/teacher-third-key-v6/continuation.json",
+  "source_sha256": "2243debeb60708d06e95dcf38c38ddb4b2b563ad100b43b8b1510de1a644ac4a",
+  "case_count": 1,
+  "budget": {
+    "decisions": 6000,
+    "frames": 25000
+  },
+  "hypothesis": "Assemble existing observed Nightmare Key, return, spacing combat and post-miniboss trap/door controllers from new item-stage endpoint.",
+  "success": "Open Nightmare boss door from outside at24/24, sword A Feather B, grounded, no health queues, dialogue or animations; never enter boss room",
+  "training_eligible": false,
+  "qualification": false
+}

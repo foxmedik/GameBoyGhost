@@ -1,0 +1,112 @@
+{
+  "result": {
+    "status": "blocked",
+    "failure": "Physical approach stalled in [0, 0, 66] at (79, 96)",
+    "steps": 3331,
+    "frames": 19334,
+    "damage_raw": 12,
+    "healing_raw": 0,
+    "final": {
+      "phase": {
+        "gameplay": 11,
+        "subtype": 7,
+        "scroll": 0,
+        "sequence": 4,
+        "palette": 0,
+        "room": [
+          0,
+          0,
+          66
+        ],
+        "health": 12
+      },
+      "room": [
+        0,
+        0,
+        66
+      ],
+      "x": 79,
+      "y": 96,
+      "health": 12,
+      "max_hearts": 3,
+      "inventory": [
+        4,
+        1,
+        12,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "sword": 1,
+      "toadstool": 1,
+      "powder": 0,
+      "bombs": 0,
+      "arrows": 0,
+      "tail_key": 0,
+      "tarin": 0,
+      "tail_door_status": 0,
+      "trade_item": 0,
+      "dialog_state": 0,
+      "dialog_id": 0,
+      "inventory_cursor": 0
+    },
+    "milestones": {
+      "sword_acquired": 17,
+      "toadstool_acquired": 61
+    },
+    "quest_success": false,
+    "exact_action_replay": true,
+    "assistance": "scripted_known_route_with_source_grounded_rom_senses",
+    "human_interventions": 0,
+    "optimizer_updates": 0,
+    "reserved_evaluation_used": false,
+    "wall_seconds": 12.461
+  },
+  "evidence": [
+    {
+      "kind": "toadstool_prefix_exact",
+      "decisions": 3143,
+      "frame": 18659
+    },
+    {
+      "kind": "return_transition",
+      "origin": [
+        0,
+        0,
+        98
+      ],
+      "target": [
+        0,
+        0,
+        82
+      ],
+      "frame": 18855
+    },
+    {
+      "kind": "approach_transition_settled",
+      "target": [
+        0,
+        0,
+        66
+      ],
+      "frame": 19012
+    },
+    {
+      "kind": "bounded_sword_stall_response",
+      "room": [
+        0,
+        0,
+        66
+      ],
+      "frame": 19175
+    }
+  ],
+  "output": "runs/progression-witch-exchange-v9",
+  "memory_version": "f50231cc2eafafee7197d918152289f8df14e282116213d6da23e2d6a152c562"
+}

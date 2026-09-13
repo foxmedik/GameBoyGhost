@@ -1,0 +1,139 @@
+{
+  "selected_or_retained": [
+    {
+      "config": "configs/sword_controller.json",
+      "field": "policy_path",
+      "path": "runs/tree-clean-route-v3/policy.json",
+      "scope": "selected fixed-start learned sword tree; no full-game claim",
+      "exists": true,
+      "bytes": 18002,
+      "sha256": "c527a20dc92f8c9c51d41e1c9909348549202809e42a6aa732668b64492b1845",
+      "expected_sha256": "c527a20dc92f8c9c51d41e1c9909348549202809e42a6aa732668b64492b1845",
+      "hash_matches": true
+    },
+    {
+      "config": "configs/navigation_experiment.json",
+      "field": "policy_path",
+      "path": "runs/navigation-cliff-specialists-v2/model/epoch-256.pt",
+      "scope": "selected experimental known-goal navigator; not default/general navigation",
+      "exists": true,
+      "bytes": 6429458,
+      "sha256": "9d2b24b28be5289fc3d32d85d46faa1835ca2068d73a1e8790630d77dbaf85ec",
+      "expected_sha256": "9d2b24b28be5289fc3d32d85d46faa1835ca2068d73a1e8790630d77dbaf85ec",
+      "hash_matches": true
+    },
+    {
+      "config": "configs/navigation_experiment.json",
+      "field": "previous_policy_path",
+      "path": "runs/navigation-routes-v7/model/epoch-008.pt",
+      "scope": "preserved frozen v7 fallback",
+      "exists": true,
+      "bytes": 3048964,
+      "sha256": "6d26dcd6a2d7b22c0681d7e7a0c9b9d3f27c9d8caccbeca94426be0da97fc062",
+      "expected_sha256": "6d26dcd6a2d7b22c0681d7e7a0c9b9d3f27c9d8caccbeca94426be0da97fc062",
+      "hash_matches": true
+    },
+    {
+      "config": "configs/progression_local_controller.json",
+      "field": "policy_path",
+      "path": "runs/progression-dagger-v1-model/candidate.pt",
+      "scope": "selected bounded mushroom crossing",
+      "exists": true,
+      "bytes": 552476,
+      "sha256": "e5a4854a4c15a37fdd5c10b8cd20a8be24b6cfe17f6fa406124bf828162502e2",
+      "expected_sha256": "e5a4854a4c15a37fdd5c10b8cd20a8be24b6cfe17f6fa406124bf828162502e2",
+      "hash_matches": true
+    },
+    {
+      "config": "configs/progression_local_controller.json",
+      "field": "downstream_policy_path",
+      "path": "runs/progression-downstream-recovery-v1-model/candidate.pt",
+      "scope": "selected bounded arrival skill followed by deterministic recovery",
+      "exists": true,
+      "bytes": 552604,
+      "sha256": "251c31a86a7140fe425ea77dfe2dfde35f93a39d85e1257bf6c30038f600b676",
+      "expected_sha256": "251c31a86a7140fe425ea77dfe2dfde35f93a39d85e1257bf6c30038f600b676",
+      "hash_matches": true
+    },
+    {
+      "config": "configs/tail_cave_controller.json",
+      "field": "policy_path",
+      "path": "runs/tail-cave-specialist-v3-model/candidate.pt",
+      "scope": "selected room0x16 specialist only",
+      "exists": true,
+      "bytes": 321820,
+      "sha256": "b2cad4812fad5ce4a4aa7587d1dee1cb177eeacca5268e73171e7ebc5138f3f0",
+      "expected_sha256": "b2cad4812fad5ce4a4aa7587d1dee1cb177eeacca5268e73171e7ebc5138f3f0",
+      "hash_matches": true
+    },
+    {
+      "config": "configs/tail_cave_controller.json",
+      "field": "guided_proposal_policy_path",
+      "path": "runs/tail-cave-integration-dagger-v5-model/candidate.pt",
+      "scope": "v5 retained proposal model; rejected for autonomous promotion",
+      "exists": true,
+      "bytes": 324700,
+      "sha256": "f15a225b43b0a455277e1fe3ffeb942319b9e5c7df3b46c061518f7b08e974bc",
+      "expected_sha256": "f15a225b43b0a455277e1fe3ffeb942319b9e5c7df3b46c061518f7b08e974bc",
+      "hash_matches": true
+    }
+  ],
+  "rejected_or_unqualified_recovery_candidates": [
+    {
+      "path": "runs/room15-student-v1-candidate/candidate.pt",
+      "bytes": 265948,
+      "sha256": "04c0d38fc09fe1d531a6d94350651ca5b29ba1c6bec4a901fc3e36eeed43b464",
+      "selected": false
+    },
+    {
+      "path": "runs/room15-student-v2-candidate/candidate.pt",
+      "bytes": 265948,
+      "sha256": "5d80c62f6bb8e443d99b8fd9a72bbb9fd563e7b9947849da67b8b60b8523426f",
+      "selected": false
+    },
+    {
+      "path": "runs/room15-student-v3-candidate/candidate.pt",
+      "bytes": 294044,
+      "sha256": "1ee54751ba0e8b5279b4fdcde69c1fed7b8c213fdcd9e75bc5d1e6107e6a0123",
+      "selected": false
+    },
+    {
+      "path": "runs/room15-student-v4-candidate/candidate.pt",
+      "bytes": 294812,
+      "sha256": "bc27d1b563a87d0b6c61b74df49f513cf286f52532beefa0b5a115bf1298834a",
+      "selected": false
+    },
+    {
+      "path": "runs/room15-v5-recovery-skill-candidate/candidate.pt",
+      "bytes": 166492,
+      "sha256": "c9bb9b1bef775c2c1020d85570a9c1543d72f4342bbca14de514ac486f60433e",
+      "selected": false
+    },
+    {
+      "path": "runs/room15-v5-recovery-skill-time-candidate/candidate.pt",
+      "bytes": 167068,
+      "sha256": "ca706223d2b471addfafef2ba4bdf38ef93661d24b0e8ae78d7bc287bd461d3d",
+      "selected": false
+    },
+    {
+      "path": "runs/tail-cave-balanced-v11-model/candidate.pt",
+      "bytes": 324252,
+      "sha256": "60e655a7aefd7f37cb584aaa7b33f2a6f7a5818c028cf0df75f0621c519864fd",
+      "selected": false
+    },
+    {
+      "path": "runs/tail-cave-disengage-v10-model/candidate.pt",
+      "bytes": 322844,
+      "sha256": "2764a3d667284fa8010c889485750cc2f06dcdd6c4629e11fb6c235dde7b0cd9",
+      "selected": false
+    },
+    {
+      "path": "runs/tail-cave-integration-dagger-v5-model/candidate.pt",
+      "bytes": 324700,
+      "sha256": "f15a225b43b0a455277e1fe3ffeb942319b9e5c7df3b46c061518f7b08e974bc",
+      "selected": false
+    }
+  ],
+  "remote_backup_verified_this_closeout": false,
+  "inventory_scope": "Current selected/retained weights and named rejected room15/late-cave candidates. All other runs and optimizer states must also be preserved; not an exhaustive backup manifest."
+}

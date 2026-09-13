@@ -1,0 +1,28 @@
+{
+  "schema":"progression-dagger-following-interaction-v1",
+  "status":"frozen_before_evaluation",
+  "frozen_at":"2026-09-12",
+  "candidate":"runs/progression-dagger-v1-model/candidate.pt",
+  "candidate_sha256":"e5a4854a4c15a37fdd5c10b8cd20a8be24b6cfe17f6fa406124bf828162502e2",
+  "evaluator_sha256":"6d98a9f664b1776c664dbf2ef5112cb8c23dde49b8e0e45285f45879ea84b7eb",
+  "toadstool_teacher_sha256":"da0bbe14c75a7438a864ca70891fd60690d6e8c665340fe23c3200fd3ca296ab",
+  "source_teacher":"runs/state-driven-teacher-development-v3",
+  "decision_budget":256,
+  "required_successes":9,
+  "cases":10,
+  "criterion":"Learned room52 crossing followed continuously by physical cave traversal and observed toadstool acquisition, alive, with exact replay.",
+  "specs":[
+    {"id":"integration-00","source_case":"development-house-16","arrival_idle_frames":1},
+    {"id":"integration-01","source_case":"development-house-16","arrival_idle_frames":5},
+    {"id":"integration-02","source_case":"development-house-17","arrival_idle_frames":2},
+    {"id":"integration-03","source_case":"development-house-17","arrival_idle_frames":4},
+    {"id":"integration-04","source_case":"development-house-18","arrival_idle_frames":1},
+    {"id":"integration-05","source_case":"development-house-18","arrival_idle_frames":3},
+    {"id":"integration-06","source_case":"development-house-18","arrival_idle_frames":5},
+    {"id":"integration-07","source_case":"development-house-19","arrival_idle_frames":2},
+    {"id":"integration-08","source_case":"development-house-19","arrival_idle_frames":4},
+    {"id":"integration-09","source_case":"development-house-19","arrival_idle_frames":5}
+  ],
+  "validation_loaded":false,
+  "sealed_validation":"runs/progression-longrun-hour-v1/plan.json"
+}

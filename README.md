@@ -1,33 +1,31 @@
+> Current result: the first continuous full-health House → Nightmare boss door route passed exact replay (15,896 commands). Teacher qualification and wipe readiness remain false. See [the first-proof report](docs/HOUSE_DOOR_FIRST_PROOF.md) and [current status](docs/CURRENT_STATUS.md).
+
 # GameBoyGhost
 
 <p align="center">
   <img src="logo.png" alt="GameBoyGhost logo" width="320">
 </p>
 
-A reproducible Game Boy agent research project, beginning with Link's Awakening DX. Both v2 handoff documents are canonical requirements.
+A reproducible Game Boy agent research project, beginning with Link's Awakening DX. The current authority is [Current status](docs/CURRENT_STATUS.md); read [Next session](docs/handoffs/NEXT_SESSION.md) first. The older v2 handoffs preserve historical requirements and do not override the active milestone.
 
 See [reference assets](docs/REFERENCE_ASSETS.md) for the organized locations of
 guides, tilesets, and local research media.
 
 Watch recorded training milestones on the [GameBoyGhost DX YouTube channel](https://www.youtube.com/@GameboyGhost-dx).
 
-To contribute input-aligned gameplay demonstrations with a Bluetooth controller,
-run the [human demonstration recorder](docs/HUMAN_DEMONSTRATIONS.md) from the
-house save state.
+**Handoff closeout:** exploration and new training/label collection are paused. See the [wipe-readiness checklist](docs/WIPE_READINESS.md): **the Mac is not ready to erase**. The examples and older experiment narratives below are not authorization to start training.
 
-The [House-to-Toadstool capture playlist](docs/HUMAN_DEMO_PLAYLIST_START_TOADSTOOL.md)
-lists the short, labeled human demonstrations that most directly support the
-current progression target.
+Human demonstration recorder work is **shelved**. The existing code and captures remain available, but more human recordings are not required for the active progression work.
 
-Active work follows the [staged progression execution plan](docs/PROGRESSION_EXECUTION_PLAN.md): continuous Tail Key acquisition and Tail Cave entry, evidence-backed memory, and bounded skill improvements. The [new progression interface](docs/PROGRESSION_INTERFACE_V1.md) removes inventory assistance and adds physical equipping and an event journal; the quest itself remains unverified. Further optimizer work is paused until a measured progression blocker exists. The [persistent world memory](docs/WORLD_MEMORY_V1.md) now reconstructs directed connections and observation evidence from verified traces, with deterministic route queries across saved generations.
+Active work follows the [full-health House → Boss Door plan](docs/HOUSE_TO_BOSS_DOOR_FULL_HEALTH.md): finish the continuous guided route, qualify its state-checked teacher, then freeze and run training against the full-health, battle-ready door-opening endpoint. The final boss fight and cello are a later phase. Guided progress now includes the Nightmare Key and arrival at the required miniboss; the miniboss clear, boss-door opening, and full-route repeatability remain pending. Model-only completion and teacher intervention are tracked separately. Existing sealed validation remains untouched; room-15 recovery research is closed.
 
-For the current verified state, completed work, limitations, and the next milestones, see the [project status](docs/PROJECT_STATUS.md).
+For the current verified state, completed work, limitations, and the next milestones, see the [current status](docs/CURRENT_STATUS.md) and [machine-readable handoff](configs/handoff_state.json). The [older project status](docs/PROJECT_STATUS.md) is a historical log, not a task queue.
 
-The [western crossing resolution](docs/PROGRESSION_CROSSING_RESOLUTION.md) corrects an invalid northward route and adds a bounded shielded corridor skill. A fresh house-to-D0 prefix completes with zero damage and exact replay; Tail Key progression remains unverified.
+The [western crossing resolution](docs/PROGRESSION_CROSSING_RESOLUTION.md) corrects an invalid northward route and adds a bounded shielded corridor skill. A fresh house-to-D0 prefix completes with zero damage and exact replay; Later progression evidence is linked below.
 
-The [forest progression checkpoint](docs/PROGRESSION_FOREST_TERRAIN.md) extends that continuous prefix through forest exploration at full health, with exact replay. Local terrain planning, physical cutting and bounded dialogue handling are scripted; toadstool acquisition remains the next milestone.
+The [forest progression checkpoint](docs/PROGRESSION_FOREST_TERRAIN.md) extends that continuous prefix through forest exploration at full health, with exact replay. Local terrain planning, physical cutting and bounded dialogue handling are scripted. The newer [toadstool and cave-return proof](docs/PROGRESSION_TOADSTOOL_AND_RETURN.md) acquires the mushroom and returns to the forest with complete journals and independent replay. The [witch exchange](docs/PROGRESSION_WITCH_EXCHANGE.md) is now physically verified from the house with exact replay; The [Tarin cure](docs/PROGRESSION_TARIN_CURE.md) is also verified as a scripted baseline; The [Tail Key pickup](docs/PROGRESSION_TAIL_KEY.md) is now verified with exact replay and no additional damage after Tarin; [Tail Cave unlock and settled entry](docs/PROGRESSION_TAIL_CAVE_ENTRY.md) now complete the scripted house-start proof with exact replay.
 
-The [toadstool route audit](docs/TOADSTOOL_ROUTE_AUDIT.md) shows that ordinary forest screen-edge traversal cannot reach the target room from the current checkpoint; the next bounded skill is non-edge transition discovery and traversal.
+The historical [toadstool route audit](docs/TOADSTOOL_ROUTE_AUDIT.md) explains why the cave traversal is necessary; the new proof verifies both directions physically.
 
 The current implementation includes a learned house-to-sword controller that passes 70/70 evaluated start cases, plus a ROM-verified structured baseline, neutral emulator surface, deterministic fixtures, and verified checkpoint/resume. Full-game completion remains unevaluated.
 

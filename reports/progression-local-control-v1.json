@@ -1,0 +1,27 @@
+{
+  "schema": "progression-local-control-candidate-report-v1",
+  "experiment": "configs/progression_local_control_v1.json",
+  "experiment_sha256": "ade6a5e561b6a24b270fd2bb9c1ea96a3632fe3ece637a30f51355d87e8b0841",
+  "data": "runs/progression-local-control-v1/data/manifest.json",
+  "data_sha256": "d7f9d8e8a5ca63238ac2c5373f1cd559c0636702683a1b951debeccefff275fb",
+  "training_result": "runs/progression-local-control-v1/result.json",
+  "training_result_sha256": "f5a840b7f5ea48e4a55cf304738b9933a69e34346484ef63d725b7df0427f269",
+  "checkpoint": "runs/progression-local-control-v1/model/epoch-008.pt",
+  "checkpoint_sha256": "1b9bac345ba4b0f19fbacb9a4f74d443f07d863876ea27f3967e1c1bd6fbb730",
+  "status": "rejected_before_live_evaluation",
+  "reason": "Candidate 1 never predicted the B class on visible development despite B being 1550 of 2037 demonstrated labels.",
+  "final_training": {
+    "movement_accuracy": 0.6036258339881897,
+    "button_accuracy": 0.12762871384620667
+  },
+  "final_visible_development": {
+    "movement_accuracy": 0.5945017337799072,
+    "button_accuracy": 0.09671084582805634,
+    "button_label_counts": [309, 178, 1550],
+    "button_prediction_counts": [575, 1462, 0]
+  },
+  "live_evaluation_performed": false,
+  "selected_runtime_changed": false,
+  "validation_loaded": false,
+  "next_candidate": "configs/progression_local_control_v2.json"
+}

@@ -1,0 +1,11 @@
+{
+  "hypothesis": "Map west combat clearance x40; south worm swing only at reachable enemies ahead and align north exit; same stage budgets.",
+  "cases": [
+    "house41",
+    "house67",
+    "house97",
+    "recovery23"
+  ],
+  "qualification": false,
+  "training_eligible": false
+}

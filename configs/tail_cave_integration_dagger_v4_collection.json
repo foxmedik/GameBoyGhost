@@ -1,0 +1,22 @@
+{
+  "schema":"tail-cave-integration-dagger-collection-v4",
+  "status":"frozen_before_collection",
+  "frozen_at":"2026-09-12",
+  "source_run":"runs/state-driven-tail-cave-guarded-development-v2",
+  "source_summary_sha256":"621fce43fa26eef276e6ab9b13d2f9024744d39ef882d029fc932d8d5cbe9cea",
+  "source_panel_sha256":"fddde860236856dc8bfa8bcd757e6464af7b08e2659269b1effd14f012f5cec6",
+  "candidate":"runs/tail-cave-specialist-v3-model/candidate.pt",
+  "candidate_sha256":"b2cad4812fad5ce4a4aa7587d1dee1cb177eeacca5268e73171e7ebc5138f3f0",
+  "feature_source":"src/gameboy_agent/tail_cave_controller.py",
+  "feature_source_sha256":"da7cb3236e4aebb1fde1ca3ca5417b2d3996b9e7481425e14821f24e9ba58f3a",
+  "teacher_source":"src/gameboy_agent/tail_cave_teacher.py",
+  "teacher_source_sha256":"d18642cd489d4da8c849a3fbe90bddb19eb61c3aecf541d950834347a2643b94",
+  "collector":"scripts/collect_tail_cave_integration_dagger_v4.py",
+  "collector_sha256":"55ee18e358044ce4fbd3c5dd5eefc4da273a7b4cfda91ea66c7c145bda661c06",
+  "base_case_ids":[0,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19],
+  "idle_frames":[0,1,2,3,4,5,6,7,8,9],
+  "teacher_budget":512,
+  "required_successes":180,
+  "policy":"Derive room-16 states by exact replay of continuous development routes. Cross 20 arrivals with 10 timing offsets. Record the first model/teacher disagreement and execute the teacher throughout; retain only successful traces for training.",
+  "sealed_validation":{"specification":"runs/progression-longrun-hour-v1/plan.json","results":"reports/progression-longrun-hour-v1.json","loaded":false,"used_for_training":false,"used_for_selection":false,"relabel_as_development":false}
+}

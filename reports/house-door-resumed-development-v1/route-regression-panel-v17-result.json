@@ -1,0 +1,36 @@
+{
+  "passed": 3,
+  "total": 4,
+  "cases": [
+    {
+      "case": "house131",
+      "summary": "runs/teacher-route-regression-panel-v17-house131/summary.json",
+      "success": true,
+      "exact_replay": true,
+      "failure": null
+    },
+    {
+      "case": "house257",
+      "summary": "runs/teacher-route-regression-panel-v17-house257/summary.json",
+      "success": false,
+      "exact_replay": true,
+      "failure": "RouteBlocker: Health interrupted: 24 -> 23"
+    },
+    {
+      "case": "house307",
+      "summary": "runs/teacher-route-regression-panel-v17-house307/summary.json",
+      "success": true,
+      "exact_replay": true,
+      "failure": null
+    },
+    {
+      "case": "recovery23",
+      "summary": "runs/teacher-route-regression-panel-v17-recovery23/summary.json",
+      "success": true,
+      "exact_replay": true,
+      "failure": null
+    }
+  ],
+  "qualified": false,
+  "training_eligible": false
+}

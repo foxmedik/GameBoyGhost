@@ -1,0 +1,22 @@
+{
+  "schema":"tail-cave-disengage-autonomous-evaluation-v10",
+  "status":"fresh-panel-frozen-before-training-candidate-fingerprint-filled-after-training",
+  "frozen_at":"2026-09-12",
+  "training_experiment":"configs/tail_cave_disengage_v10_training.json",
+  "training_experiment_sha256":"d81085c15453553fd9a04e2043ec3100c51b84498610884a44054e3334718874",
+  "runner":"scripts/develop_progression_teacher.py",
+  "runner_sha256":"f74a79bf9b5767ca5ae1532b8f60054d698923a004a1bc9523a1837372341259",
+  "spec_plan":"configs/tail_cave_on_policy_dagger_v6_collection.json",
+  "spec_plan_sha256":"ccc0a59485f7cf8697a80e6425710cab95a1d7ed21e0635a5109cb5ac9e2db75",
+  "candidate":"runs/tail-cave-disengage-v10-model/candidate.pt",
+  "candidate_sha256":"2764a3d667284fa8010c889485750cc2f06dcdd6c4629e11fb6c235dde7b0cd9",
+  "local_controller":"runs/progression-dagger-v1-model/candidate.pt",
+  "local_controller_sha256":"e5a4854a4c15a37fdd5c10b8cd20a8be24b6cfe17f6fa406124bf828162502e2",
+  "downstream_controller":"runs/progression-downstream-recovery-v1-model/candidate.pt",
+  "downstream_controller_sha256":"251c31a86a7140fe425ea77dfe2dfde35f93a39d85e1257bf6c30038f600b676",
+  "cases":20,
+  "required_successes":18,
+  "tail_cave_guard":false,
+  "success_criterion":"Full physical house-to-first-key completion alive with exact replay and no Tail Cave teacher comparison or recovery.",
+  "sealed_validation":{"specification":"runs/progression-longrun-hour-v1/plan.json","results":"reports/progression-longrun-hour-v1.json","loaded":false,"used_for_training":false,"used_for_selection":false,"relabel_as_development":false}
+}

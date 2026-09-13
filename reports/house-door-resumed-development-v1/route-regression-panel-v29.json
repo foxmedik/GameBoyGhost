@@ -1,0 +1,11 @@
+{
+  "hypothesis": "Upper room0F return targets nearby active Keese/Stalfos with observed facing instead of periodic swings; strict pending damage check.",
+  "cases": [
+    "house257",
+    "house67",
+    "house307",
+    "recovery23"
+  ],
+  "qualification": false,
+  "training_eligible": false
+}

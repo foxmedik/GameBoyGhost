@@ -1,0 +1,11 @@
+{
+  "hypothesis": "Observed reachable Stalfos triggers right-facing sword late in southeast jump, before touchdown; landing alignment uses observed-facing defense.",
+  "cases": [
+    "house479",
+    "house307",
+    "house743",
+    "recovery698"
+  ],
+  "qualification": false,
+  "training_eligible": false
+}

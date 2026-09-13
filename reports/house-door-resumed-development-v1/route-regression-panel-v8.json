@@ -1,0 +1,11 @@
+{
+  "hypothesis": "Correct upward detour coordinate and inequality; all other route logic and budgets unchanged.",
+  "cases": [
+    "house41",
+    "house67",
+    "house97",
+    "recovery23"
+  ],
+  "qualification": false,
+  "training_eligible": false
+}

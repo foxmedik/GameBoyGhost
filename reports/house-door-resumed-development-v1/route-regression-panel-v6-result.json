@@ -1,0 +1,42 @@
+{
+  "qualification": false,
+  "passed": 1,
+  "cases": [
+    {
+      "case": "house41",
+      "run": "runs/teacher-route-regression-panel-v6-house41",
+      "success": false,
+      "exact_replay": true,
+      "failure": "RouteBlocker: Map enemy clearance budget exhausted",
+      "commands": 7690,
+      "frame": 37580
+    },
+    {
+      "case": "house67",
+      "run": "runs/teacher-route-regression-panel-v6-house67",
+      "success": false,
+      "exact_replay": true,
+      "failure": "RouteBlocker: Map enemy clearance budget exhausted",
+      "commands": 7537,
+      "frame": 37038
+    },
+    {
+      "case": "house97",
+      "run": "runs/teacher-route-regression-panel-v6-house97",
+      "success": true,
+      "exact_replay": true,
+      "failure": null,
+      "commands": 17713,
+      "frame": 50979
+    },
+    {
+      "case": "recovery23",
+      "run": "runs/teacher-route-regression-panel-v6-recovery23",
+      "success": false,
+      "exact_replay": true,
+      "failure": "RouteBlocker: Map enemy clearance budget exhausted",
+      "commands": 7814,
+      "frame": 37023
+    }
+  ]
+}

@@ -1,0 +1,20 @@
+{
+  "schema":"tail-cave-integration-autonomous-evaluation-v4",
+  "status":"protocol-frozen-before-training-candidate-fingerprint-filled-after-training",
+  "frozen_at":"2026-09-12",
+  "training_experiment":"configs/tail_cave_integration_dagger_v4_training.json",
+  "training_experiment_sha256":"18ccb53e27f9d0083725a1af7fde94570d2000e5af1982bf89f4a3b142881331",
+  "candidate":"runs/tail-cave-integration-dagger-v4-model/candidate.pt",
+  "candidate_sha256":"863311874fb56830bd6c4ddb1259a8a6a88d42036d32bbcb5ad6d70ed2df8a7b",
+  "evaluator":"scripts/evaluate_tail_cave_integration_v4.py",
+  "evaluator_sha256":"a8cb768fe5c35d51b2c041c7151014165eb2627b2102a51d34a0d12bc6a29ebc",
+  "source_run":"runs/state-driven-tail-cave-guarded-development-v2",
+  "entry_states":"runs/tail-cave-integration-dagger-v4-collection/entries",
+  "base_case_ids":[0,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19],
+  "heldout_idle_frames":[10,11,12,13,14,15,16,17,18,19],
+  "decision_budget":512,
+  "required_successes":180,
+  "cases":200,
+  "success_criterion":"The candidate alone acquires the first Tail Cave Small Key alive in room 16 with exact replay.",
+  "sealed_validation":{"specification":"runs/progression-longrun-hour-v1/plan.json","results":"reports/progression-longrun-hour-v1.json","loaded":false,"used_for_training":false,"used_for_selection":false,"relabel_as_development":false}
+}

@@ -1,0 +1,12 @@
+{
+  "schema": "room15-autonomous-student-report-v1",
+  "candidate": "runs/room15-student-v1-candidate/candidate.pt",
+  "candidate_sha256": "04c0d38fc09fe1d531a6d94350651ca5b29ba1c6bec4a901fc3e36eeed43b464",
+  "offline": {"train_rows": 7586, "development_rows": 6146, "final_train_accuracy": 0.9489849805831909, "final_development_accuracy": 0.9295476675033569},
+  "autonomous_gate": {"run": "runs/room15-student-v1-gate-v5", "summary_sha256": "f49ca7a3f7deef180c8c51cf71588d402e1e7abefcb238076bb45cc3130d2205", "successes": 13, "cases": 20, "required_successes": 18, "half_heart_successes": 2, "half_heart_cases": 4, "exact_replays": 20, "selected": false},
+  "control": "Teacher traversed room 0x16 only; the model executed every room-15 action and no teacher fallback was allowed.",
+  "failures": {"ids": [3, 8, 11, 13, 14, 16, 18], "terminal_condition": "700-decision budget exhaustion", "deaths_at_termination": 0},
+  "on_policy_corrections": {"run": "runs/room15-student-v1-corrections", "cases": 7, "teacher_recoveries": 7, "exact_replays": 7, "teacher_commands": 1106, "training_started": false},
+  "validation_loaded": false,
+  "selection": "Rejected. Preserve as development evidence; freeze a new correction-data experiment before training."
+}

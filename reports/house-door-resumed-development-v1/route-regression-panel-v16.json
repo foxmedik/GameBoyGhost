@@ -1,0 +1,11 @@
+{
+  "hypothesis": "Extend existing armed lower room0F crossing through northward turn to east doorway.",
+  "cases": [
+    "house173",
+    "house257",
+    "house307",
+    "recovery23"
+  ],
+  "qualification": false,
+  "training_eligible": false
+}

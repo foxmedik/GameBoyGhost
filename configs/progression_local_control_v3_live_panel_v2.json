@@ -1,0 +1,30 @@
+{
+  "schema": "progression-local-control-live-development-panel-v2",
+  "status": "frozen",
+  "frozen_at": "2026-09-11",
+  "candidate": "runs/progression-local-control-v3/model/epoch-032.pt",
+  "candidate_sha256": "e13e011ea66c90e5f1c57c5143d037d0513aa9a96768788cb8dc38f9da357510",
+  "evaluator": "scripts/evaluate_progression_local_control_v3.py",
+  "evaluator_sha256": "229203b53c8e0ac474146d089ee265c8a64d9c27bdfe55642a743dc3449e87ab",
+  "specification_source": "configs/progression_local_control_v3_live_panel.json",
+  "specification_source_sha256": "70e94c9cef1cda9cca4721fe63fc70bc889230f4405f996a12ce6131ce034d5c",
+  "source_teacher": "runs/state-driven-teacher-development-v3",
+  "source_cases": ["development-house-16", "development-house-17", "development-house-18", "development-house-19"],
+  "setup": "Replay the exact verified development source prefix only to construct the local arrival state, then give candidate 3 exclusive movement/A/B control through the specified room crossing.",
+  "harness_change_from_v1": "Normalize the in-memory recorded after-state through JSON before exact replay comparison. Candidate, cases, budgets, recovery, and gates are unchanged.",
+  "action_frames": 3,
+  "decision_budget": 256,
+  "stationary_before_recovery": 12,
+  "maximum_recoveries": 4,
+  "recovery": "On observed stationary position, try left+B, right+B, up+B, then down+B once each. No teacher action selection after the handoff.",
+  "required_successes": 18,
+  "total_cases": 20,
+  "exact_replay_required": true,
+  "sealed_validation": {
+    "specification": "runs/progression-longrun-hour-v1/plan.json",
+    "results": "reports/progression-longrun-hour-v1.json",
+    "loaded": false,
+    "used_for_selection": false,
+    "relabel_as_development": false
+  }
+}

@@ -1,0 +1,14 @@
+{
+  "source": "runs/teacher-feather-return-v1/continuation.json",
+  "source_sha256": "35e4faca3d865c0a3ee8516e775822f8cab48d15cf5c442d0285af47d8d409fe",
+  "case_count": 1,
+  "budget": {
+    "decisions": 900,
+    "frames": 4500
+  },
+  "hypothesis": "One-frame Feather pulse produced low side-view jump, landed in lower Goomba lane. Match verified physical held-B jump primitive duration32/36, retaining per-frame health/room checks and same overall budget.",
+  "success": "room03 staircase return full health, one key, Feather B sword A, no buffered damage",
+  "training_eligible": false,
+  "qualification": false,
+  "prior_failure": "runs/teacher-platform-return-v1"
+}

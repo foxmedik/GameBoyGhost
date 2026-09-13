@@ -1,0 +1,14 @@
+{
+  "source": "runs/teacher-south-worm-entry-v2/continuation.json",
+  "source_sha256": "56aa832828a7f6a8f1d162b7d9c938e2419f57a9847881586a05d224446dbda4",
+  "case_count": 1,
+  "budget": {
+    "decisions": 1000,
+    "frames": 4500
+  },
+  "hypothesis": "The worm stayed beyond sword range of y89. Advance guarded toward y56 only while its head is farther than30, then face and strike within28. Same600 combat/1000 total decision budgets.",
+  "success": "room07 full health, two remaining keys, shield B sword A, no buffered damage",
+  "training_eligible": false,
+  "qualification": false,
+  "prior_failure": "runs/teacher-south-worm-v2"
+}

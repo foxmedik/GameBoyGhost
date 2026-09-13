@@ -1,0 +1,11 @@
+{
+  "hypothesis": "Observe outer Spark clearing rightward before room10 launch approach; bounded400 with live Stalfos defense.",
+  "cases": [
+    "house541",
+    "house131",
+    "house257",
+    "recovery23"
+  ],
+  "qualification": false,
+  "training_eligible": false
+}

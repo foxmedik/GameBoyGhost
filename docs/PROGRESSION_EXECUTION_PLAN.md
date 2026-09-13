@@ -1,5 +1,7 @@
 # Progression execution plan v1
 
+> Historical Tail Key / cave-entry plan. Active work now follows [House → Boss Door](HOUSE_TO_BOSS_DOOR_PLAN.md). The original gates and evidence below remain unchanged.
+
 Confirmed scope: build cumulative gameplay competence through a continuous Tail Key acquisition and Tail Cave entry, then establish reliability and useful inheritance. This plan replaces reactive cliff optimization as the active work sequence. Keep historical harnesses, policies, data and reserved evaluations intact. No new optimizer run starts before a measured skill blocker and its bounded experiment protocol exist.
 
 ## What counts as success

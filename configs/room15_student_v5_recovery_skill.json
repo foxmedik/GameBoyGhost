@@ -1,0 +1,19 @@
+{
+  "schema": "room15-v5-separate-recovery-skill",
+  "status": "frozen_before_extraction_or_training",
+  "purpose": "Train and test post-trigger recovery separately from nominal room behavior. Use only exact first-trigger teacher spans, terminating when Link has moved at least 16 pixels from the trigger state; do not mix these labels into the broad policy until the recovery skill passes its own gate.",
+  "source": "runs/room15-v5-first-trigger-teacher-spans",
+  "source_summary": "runs/room15-v5-first-trigger-teacher-spans/summary.json",
+  "recovery_start": "first state-checked y80/y83/y84 trigger before any guided action",
+  "recovery_success": "Link moves at least 16 Manhattan pixels from the trigger state, remains alive, leaves the original blocked region, and does not return to the same stationary y80/y83/y84 stall within the post-escape horizon",
+  "post_escape_horizon_decisions": 48,
+  "required_metrics": ["decisions_to_escape", "frames_to_escape", "damage_during_escape", "teacher_escape_direction_match", "productive_terminal_state", "immediate_restall", "half_heart_survival"],
+  "required_skill_successes": 8,
+  "required_exact_replays": 8,
+  "required_alive": 8,
+  "required_half_heart_successes": 2,
+  "required_immediate_restall": 0,
+  "integration": "Not authorized. A recovery-skill gate must pass before any autonomous-policy integration experiment is frozen.",
+  "training_authorized": true,
+  "validation_loaded": false
+}

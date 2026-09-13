@@ -1,0 +1,11 @@
+{
+  "hypothesis": "Observed bat defense and doorway realignment on mushroom-cave return; Compass lane uses crossed threshold instead of exact pixel equality.",
+  "cases": [
+    "house211",
+    "house257",
+    "house97",
+    "recovery698"
+  ],
+  "qualification": false,
+  "training_eligible": false
+}

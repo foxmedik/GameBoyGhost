@@ -1,0 +1,23 @@
+{
+  "schema": "room15-autonomous-student-v1",
+  "status": "frozen_before_extraction_or_training",
+  "purpose": "Learn room-15 control from fresh zero-damage teacher demonstrations only. The student controls every room-15 command during evaluation.",
+  "labels_manifest": "runs/room15-teacher-labels-v1/manifest.json",
+  "labels_manifest_sha256": "023cafa836e9bee1bbf3e99baae3ecca3b3fd78dfe7d0644b51468e446010395",
+  "feature_source": "src/gameboy_agent/room15_model.py",
+  "feature_source_sha256": "a72f83b6275c75c6620adf6945e45ff9d70498456147b05e01b5b795480bd25c",
+  "extractor": "scripts/extract_room15_student_v1.py",
+  "extractor_sha256": "37cde9bc70e89f1637633dc61e620ed6ec6ff3012f113324e62f5f6af76080be",
+  "trainer": "scripts/train_room15_student_v1.py",
+  "trainer_sha256": "891263706e8d18fea486f7dd3abb6029daab0842745c1f8701fcc3e0880ffbb9",
+  "evaluator": "scripts/evaluate_room15_student_v1.py",
+  "evaluator_sha256": "d097cf7733b29736390e0ce71105debef8dd6032aba62e7f2dbe5cb7ce2935a4",
+  "actions": 9,
+  "train_cases": ["base-00-idle-24", "base-00-idle-25", "base-02-idle-25", "base-03-idle-24", "base-05-idle-24", "base-05-idle-25", "base-06-idle-24", "base-07-idle-25", "base-08-idle-24", "base-09-idle-24", "base-10-idle-25", "base-11-idle-24", "base-12-idle-25", "base-13-idle-24", "base-14-idle-25", "base-15-idle-24", "base-16-idle-25", "base-17-idle-24", "base-19-idle-25"],
+  "development_cases": ["base-01-idle-24", "base-01-idle-25", "base-04-idle-24", "base-04-idle-25", "base-07-idle-24", "base-08-idle-25", "base-10-idle-24", "base-11-idle-25", "base-12-idle-24", "base-13-idle-25", "base-14-idle-24", "base-15-idle-25", "base-16-idle-24", "base-17-idle-25", "base-19-idle-24"],
+  "model": {"epochs": 45, "batches_per_epoch": 120, "batch_rows": 256, "learning_rate": 0.0003, "seed": 2115, "selection": "final epoch only; select only after the frozen autonomous gate"},
+  "development_gate": {"required_successes": 18, "required_half_heart_successes": 4, "decision_budget": 700, "cases": "20 physical house starts at fresh entry idle offsets 26 through 45"},
+  "training_authorized": true,
+  "validation_loaded": false,
+  "sealed_validation": {"specification": "runs/progression-longrun-hour-v1/plan.json", "results": "reports/progression-longrun-hour-v1.json", "loaded": false, "used_for_training": false, "used_for_selection": false, "relabel_as_development": false}
+}

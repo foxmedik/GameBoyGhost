@@ -1,0 +1,295 @@
+{
+  "selected_proof": "progression-tail-cave-v12",
+  "scope": "scripted_teacher_baseline",
+  "quest_success": true,
+  "runs": [
+    {
+      "run": "progression-tail-cave-v1",
+      "status": "blocked",
+      "failure": "No verified terrain path from [0, 0, 113] toward 81",
+      "steps": 4523,
+      "frames": 30720,
+      "damage_raw": 20,
+      "healing_raw": 0,
+      "final_health": 4,
+      "room": [
+        0,
+        0,
+        113
+      ],
+      "quest_success": false,
+      "exact_replay": true,
+      "artifact_hashes_verified": true
+    },
+    {
+      "run": "progression-tail-cave-v2",
+      "status": "blocked",
+      "failure": "Unexpected approach transition: [0, 0, 113] -> [0, 0, 97]",
+      "steps": 4552,
+      "frames": 30849,
+      "damage_raw": 20,
+      "healing_raw": 0,
+      "final_health": 4,
+      "room": [
+        0,
+        0,
+        97
+      ],
+      "quest_success": false,
+      "exact_replay": true,
+      "artifact_hashes_verified": true
+    },
+    {
+      "run": "progression-tail-cave-v3",
+      "status": "blocked",
+      "failure": "Episode ended before the requested progression stage finished",
+      "steps": 4652,
+      "frames": 31155,
+      "damage_raw": 24,
+      "healing_raw": 0,
+      "final_health": 0,
+      "room": [
+        0,
+        0,
+        112
+      ],
+      "quest_success": false,
+      "exact_replay": true,
+      "artifact_hashes_verified": true
+    },
+    {
+      "run": "progression-tail-cave-v4",
+      "status": "blocked",
+      "failure": "Episode ended before the requested progression stage finished",
+      "steps": 4762,
+      "frames": 31521,
+      "damage_raw": 24,
+      "healing_raw": 0,
+      "final_health": 0,
+      "room": [
+        0,
+        0,
+        112
+      ],
+      "quest_success": false,
+      "exact_replay": true,
+      "artifact_hashes_verified": true
+    },
+    {
+      "run": "progression-tail-cave-v5",
+      "status": "blocked",
+      "failure": "No verified terrain path from [0, 0, 144] toward A0",
+      "steps": 4707,
+      "frames": 31406,
+      "damage_raw": 20,
+      "healing_raw": 0,
+      "final_health": 4,
+      "room": [
+        0,
+        0,
+        144
+      ],
+      "quest_success": false,
+      "exact_replay": true,
+      "artifact_hashes_verified": true
+    },
+    {
+      "run": "progression-tail-cave-v6",
+      "status": "blocked",
+      "failure": "No verified terrain path from [0, 0, 177] toward C1",
+      "steps": 4808,
+      "frames": 31870,
+      "damage_raw": 20,
+      "healing_raw": 16,
+      "final_health": 20,
+      "room": [
+        0,
+        0,
+        177
+      ],
+      "quest_success": false,
+      "exact_replay": true,
+      "artifact_hashes_verified": true
+    },
+    {
+      "run": "progression-tail-cave-v7",
+      "status": "blocked",
+      "failure": "No verified terrain path from [0, 0, 178] toward C2",
+      "steps": 4928,
+      "frames": 32311,
+      "damage_raw": 20,
+      "healing_raw": 16,
+      "final_health": 20,
+      "room": [
+        0,
+        0,
+        178
+      ],
+      "quest_success": false,
+      "exact_replay": true,
+      "artifact_hashes_verified": true
+    },
+    {
+      "run": "progression-tail-cave-v8",
+      "status": "blocked",
+      "failure": "Physical approach stalled in [0, 0, 176] at (123, 66)",
+      "steps": 5015,
+      "frames": 34338,
+      "damage_raw": 20,
+      "healing_raw": 16,
+      "final_health": 20,
+      "room": [
+        0,
+        0,
+        176
+      ],
+      "quest_success": false,
+      "exact_replay": true,
+      "artifact_hashes_verified": true
+    },
+    {
+      "run": "progression-tail-cave-v9",
+      "status": "blocked",
+      "failure": "Physical approach stalled in [0, 0, 176] at (82, 88)",
+      "steps": 5038,
+      "frames": 34407,
+      "damage_raw": 20,
+      "healing_raw": 16,
+      "final_health": 20,
+      "room": [
+        0,
+        0,
+        176
+      ],
+      "quest_success": false,
+      "exact_replay": true,
+      "artifact_hashes_verified": true
+    },
+    {
+      "run": "progression-tail-cave-v10",
+      "status": "blocked",
+      "failure": "No verified terrain path from [0, 0, 194] toward D2",
+      "steps": 4926,
+      "frames": 32334,
+      "damage_raw": 20,
+      "healing_raw": 16,
+      "final_health": 20,
+      "room": [
+        0,
+        0,
+        194
+      ],
+      "quest_success": false,
+      "exact_replay": true,
+      "artifact_hashes_verified": true
+    },
+    {
+      "run": "progression-tail-cave-v11",
+      "status": "blocked",
+      "failure": "No verified terrain path from [0, 0, 195] toward D3",
+      "steps": 4983,
+      "frames": 32555,
+      "damage_raw": 20,
+      "healing_raw": 16,
+      "final_health": 20,
+      "room": [
+        0,
+        0,
+        195
+      ],
+      "quest_success": false,
+      "exact_replay": true,
+      "artifact_hashes_verified": true
+    },
+    {
+      "run": "progression-tail-cave-v12",
+      "status": "tail_cave_entered",
+      "failure": null,
+      "steps": 5192,
+      "frames": 33991,
+      "damage_raw": 20,
+      "healing_raw": 16,
+      "final_health": 20,
+      "room": [
+        1,
+        0,
+        23
+      ],
+      "quest_success": true,
+      "exact_replay": true,
+      "artifact_hashes_verified": true
+    }
+  ],
+  "terminal_milestone_events": [
+    {
+      "id": 119,
+      "frame": 28772,
+      "decision": 4375,
+      "kind": "tail_key_acquired",
+      "room": [
+        0,
+        0,
+        65
+      ],
+      "position": [
+        72,
+        74
+      ],
+      "text": "Tail Key possession appeared.",
+      "evidence": "observed_ram_transition",
+      "details": {
+        "raw": 1
+      }
+    },
+    {
+      "id": 155,
+      "frame": 33214,
+      "decision": 5155,
+      "kind": "tail_cave_opened",
+      "room": [
+        0,
+        0,
+        211
+      ],
+      "position": [
+        105,
+        106
+      ],
+      "text": "Tail Cave exterior event bit became set.",
+      "evidence": "observed_ram_transition",
+      "details": {}
+    },
+    {
+      "id": 157,
+      "frame": 33991,
+      "decision": 5191,
+      "kind": "tail_cave_entered",
+      "room": [
+        1,
+        0,
+        23
+      ],
+      "position": [
+        80,
+        124
+      ],
+      "text": "Reached the settled Tail Cave entrance alive after acquiring the key and opening the entrance.",
+      "evidence": "observed_ram_transition",
+      "details": {}
+    }
+  ],
+  "source_hashes_verified": true,
+  "tests": {
+    "passed": 115,
+    "skipped": 0,
+    "seconds": 36.727,
+    "log": "runs/progression-tail-cave-validation-20260911/tests.log",
+    "earlier_run": "One source-integrity test failed because code changed while the suite ran; retained log. Full suite rerun against frozen source passes."
+  },
+  "optimizer_updates": 0,
+  "reserved_evaluation_used": false,
+  "selected_policy_unchanged": true,
+  "selected_policy_sha256": "9d2b24b28be5289fc3d32d85d46faa1835ca2068d73a1e8790630d77dbaf85ec",
+  "reliability_established": false,
+  "learned_quest_capability_established": false
+}

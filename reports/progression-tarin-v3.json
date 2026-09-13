@@ -1,0 +1,245 @@
+{
+  "result": {
+    "status": "raccoon_cured",
+    "failure": null,
+    "steps": 4302,
+    "frames": 28405,
+    "damage_raw": 20,
+    "healing_raw": 0,
+    "final": {
+      "phase": {
+        "gameplay": 11,
+        "subtype": 7,
+        "scroll": 0,
+        "sequence": 4,
+        "palette": 0,
+        "room": [
+          0,
+          0,
+          81
+        ],
+        "health": 4
+      },
+      "room": [
+        0,
+        0,
+        81
+      ],
+      "x": 119,
+      "y": 73,
+      "health": 4,
+      "max_hearts": 3,
+      "inventory": [
+        4,
+        12,
+        1,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "sword": 1,
+      "toadstool": 0,
+      "powder": 24,
+      "bombs": 0,
+      "arrows": 0,
+      "tail_key": 0,
+      "tarin": 1,
+      "tail_door_status": 0,
+      "trade_item": 0,
+      "dialog_state": 0,
+      "dialog_id": 10,
+      "inventory_cursor": 0
+    },
+    "milestones": {
+      "sword_acquired": 17,
+      "toadstool_acquired": 61,
+      "powder_available": 93,
+      "raccoon_cured": 114
+    },
+    "quest_success": false,
+    "exact_action_replay": true,
+    "assistance": "scripted_known_route_with_source_grounded_rom_senses",
+    "human_interventions": 0,
+    "optimizer_updates": 0,
+    "reserved_evaluation_used": false,
+    "wall_seconds": 18.617
+  },
+  "evidence": [
+    {
+      "kind": "toadstool_prefix_exact",
+      "decisions": 3696,
+      "frame": 23053
+    },
+    {
+      "kind": "return_transition",
+      "origin": [
+        1,
+        14,
+        162
+      ],
+      "target": [
+        0,
+        0,
+        101
+      ],
+      "frame": 23278
+    },
+    {
+      "kind": "return_transition",
+      "origin": [
+        0,
+        0,
+        101
+      ],
+      "target": [
+        0,
+        0,
+        100
+      ],
+      "frame": 23439
+    },
+    {
+      "kind": "return_transition",
+      "origin": [
+        0,
+        0,
+        100
+      ],
+      "target": [
+        0,
+        0,
+        84
+      ],
+      "frame": 23584
+    },
+    {
+      "kind": "approach_transition_settled",
+      "target": [
+        0,
+        0,
+        68
+      ],
+      "frame": 23740
+    },
+    {
+      "kind": "return_transition",
+      "origin": [
+        0,
+        0,
+        68
+      ],
+      "target": [
+        0,
+        0,
+        67
+      ],
+      "frame": 23958
+    },
+    {
+      "kind": "return_transition",
+      "origin": [
+        0,
+        0,
+        67
+      ],
+      "target": [
+        0,
+        0,
+        66
+      ],
+      "frame": 24237
+    },
+    {
+      "kind": "bounded_sword_stall_response",
+      "room": [
+        0,
+        0,
+        66
+      ],
+      "frame": 24445
+    },
+    {
+      "kind": "bounded_sword_stall_response",
+      "room": [
+        0,
+        0,
+        66
+      ],
+      "frame": 24593
+    },
+    {
+      "kind": "return_transition",
+      "origin": [
+        0,
+        0,
+        66
+      ],
+      "target": [
+        0,
+        0,
+        82
+      ],
+      "frame": 24722
+    },
+    {
+      "kind": "return_transition",
+      "origin": [
+        0,
+        0,
+        82
+      ],
+      "target": [
+        0,
+        0,
+        98
+      ],
+      "frame": 24905
+    },
+    {
+      "kind": "return_transition",
+      "origin": [
+        0,
+        0,
+        98
+      ],
+      "target": [
+        0,
+        0,
+        97
+      ],
+      "frame": 25099
+    },
+    {
+      "kind": "return_transition",
+      "origin": [
+        0,
+        0,
+        97
+      ],
+      "target": [
+        0,
+        0,
+        81
+      ],
+      "frame": 25316
+    },
+    {
+      "kind": "tarin_room_reached",
+      "frame": 25316
+    },
+    {
+      "kind": "tarin_cure_verified",
+      "frame": 28405,
+      "powder_before": 32,
+      "powder_after": 24
+    }
+  ],
+  "output": "runs/progression-tarin-v3",
+  "memory_version": "d0da1e971f08a327f7b7c4c3b49957d0febe0daa3ab71637d62536dbfacc53d5"
+}

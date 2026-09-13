@@ -1,0 +1,14 @@
+{
+  "source": "runs/teacher-main-return-v2/continuation.json",
+  "source_sha256": "ab23588b6c5669cd0c5ee6fa0cd7c4ca9477f84a791c8354c8e6e10f1262cc25",
+  "case_count": 1,
+  "budget": {
+    "decisions": 2000,
+    "frames": 7000
+  },
+  "hypothesis": "Observed worm stays mostly x90 or farther east while guard stoppedx50. Advance shielded to72 before settling at80, only while head farther than40; preserve600 encounter budget and remaining pickup/escape plan.",
+  "success": "room08 lower entry full health, two keys, Feather B sword A, no buffered damage",
+  "training_eligible": false,
+  "qualification": false,
+  "prior_failure": "runs/teacher-third-key-v1"
+}

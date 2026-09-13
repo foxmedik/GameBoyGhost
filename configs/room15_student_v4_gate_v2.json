@@ -1,0 +1,13 @@
+{
+  "schema":"room15-autonomous-student-v4-fresh-gate-v2","invalidated_predecessor":"runs/room15-student-v4-gate","invalidated_reason":"The evaluator rejected V4's wait macro before executing it through the physical frame API.",
+  "experiment":"configs/room15_student_v4.json","experiment_sha256":"743e4735a5ea6f6a0aa182d9b3302004f54d43e4c9d741e17148dc718754ec57",
+  "candidate":"runs/room15-student-v4-candidate/candidate.pt","candidate_sha256":"bc27d1b563a87d0b6c61b74df49f513cf286f52532beefa0b5a115bf1298834a",
+  "evaluator":"scripts/evaluate_room15_student_v4.py","evaluator_sha256":"1f5a257b69afb82bdc808b42804ef4b698b96e35659860dfab42d6b4795730df","source":"runs/state-driven-tail-cave-disengage-guarded-v1",
+  "decision_budget":700,"required_successes":18,"required_half_heart_successes":4,"control":"V4 alone controls room 0x15, including its explicit physical wait macro; no teacher fallback is permitted.",
+  "cases":[
+    {"id":"student-v4b-room15-00","base":0,"idle":106},{"id":"student-v4b-room15-01","base":1,"idle":107},{"id":"student-v4b-room15-02","base":2,"idle":108},{"id":"student-v4b-room15-03","base":3,"idle":109},{"id":"student-v4b-room15-04","base":4,"idle":110},
+    {"id":"student-v4b-room15-05","base":5,"idle":111},{"id":"student-v4b-room15-06","base":6,"idle":112},{"id":"student-v4b-room15-07","base":7,"idle":113},{"id":"student-v4b-room15-08","base":8,"idle":114},{"id":"student-v4b-room15-09","base":9,"idle":115},
+    {"id":"student-v4b-room15-10","base":10,"idle":116},{"id":"student-v4b-room15-11","base":11,"idle":117},{"id":"student-v4b-room15-12","base":12,"idle":118},{"id":"student-v4b-room15-13","base":13,"idle":119},{"id":"student-v4b-room15-14","base":14,"idle":120},
+    {"id":"student-v4b-room15-15","base":15,"idle":121},{"id":"student-v4b-room15-16","base":16,"idle":122},{"id":"student-v4b-room15-17","base":17,"idle":123},{"id":"student-v4b-room15-18","base":18,"idle":124},{"id":"student-v4b-room15-19","base":19,"idle":125}
+  ],"selection":"Select only if this fresh gate passes; sealed validation remains untouched.","validation_loaded":false
+}

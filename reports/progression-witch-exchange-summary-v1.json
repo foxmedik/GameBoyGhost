@@ -1,0 +1,166 @@
+{
+  "selected_proof": "progression-witch-exchange-v12",
+  "scope": "scripted_teacher_baseline",
+  "runs": [
+    {
+      "run": "progression-witch-exchange-v3",
+      "status": "blocked",
+      "failure": "Physical approach stalled in [0, 0, 66] at (72, 131)",
+      "steps": 3366,
+      "frames": 19411,
+      "damage_raw": 13,
+      "final_health": 11,
+      "room": [
+        0,
+        0,
+        66
+      ],
+      "exact_replay": true
+    },
+    {
+      "run": "progression-witch-exchange-v4",
+      "status": "blocked",
+      "failure": "Approach budget exhausted at target [9, 3]",
+      "steps": 3403,
+      "frames": 19598,
+      "damage_raw": 16,
+      "final_health": 8,
+      "room": [
+        0,
+        0,
+        66
+      ],
+      "exact_replay": true
+    },
+    {
+      "run": "progression-witch-exchange-v5",
+      "status": "blocked",
+      "failure": "Approach budget exhausted at target [9, 4]",
+      "steps": 3706,
+      "frames": 20557,
+      "damage_raw": 16,
+      "final_health": 8,
+      "room": [
+        0,
+        0,
+        67
+      ],
+      "exact_replay": true
+    },
+    {
+      "run": "progression-witch-exchange-v6",
+      "status": "blocked",
+      "failure": "Episode ended before the requested progression stage finished",
+      "steps": 3309,
+      "frames": 19271,
+      "damage_raw": 24,
+      "final_health": 0,
+      "room": [
+        0,
+        0,
+        82
+      ],
+      "exact_replay": true
+    },
+    {
+      "run": "progression-witch-exchange-v7",
+      "status": "blocked",
+      "failure": "Physical approach stalled in [0, 0, 66] at (54, 108)",
+      "steps": 3320,
+      "frames": 19349,
+      "damage_raw": 12,
+      "final_health": 12,
+      "room": [
+        0,
+        0,
+        66
+      ],
+      "exact_replay": true
+    },
+    {
+      "run": "progression-witch-exchange-v8",
+      "status": "blocked",
+      "failure": "Physical approach stalled in [0, 0, 66] at (68, 90)",
+      "steps": 3321,
+      "frames": 19304,
+      "damage_raw": 12,
+      "final_health": 12,
+      "room": [
+        0,
+        0,
+        66
+      ],
+      "exact_replay": true
+    },
+    {
+      "run": "progression-witch-exchange-v9",
+      "status": "blocked",
+      "failure": "Physical approach stalled in [0, 0, 66] at (79, 96)",
+      "steps": 3331,
+      "frames": 19334,
+      "damage_raw": 12,
+      "final_health": 12,
+      "room": [
+        0,
+        0,
+        66
+      ],
+      "exact_replay": true
+    },
+    {
+      "run": "progression-witch-exchange-v10",
+      "status": "blocked",
+      "failure": "Physical approach stalled in [1, 14, 162] at (82, 79)",
+      "steps": 3679,
+      "frames": 20825,
+      "damage_raw": 16,
+      "final_health": 8,
+      "room": [
+        1,
+        14,
+        162
+      ],
+      "exact_replay": true
+    },
+    {
+      "run": "progression-witch-exchange-v11",
+      "status": "powder_acquired",
+      "failure": null,
+      "steps": 3684,
+      "frames": 22565,
+      "damage_raw": 16,
+      "final_health": 8,
+      "room": [
+        1,
+        14,
+        162
+      ],
+      "exact_replay": true
+    },
+    {
+      "run": "progression-witch-exchange-v12",
+      "status": "powder_acquired",
+      "failure": null,
+      "steps": 3696,
+      "frames": 23053,
+      "damage_raw": 16,
+      "final_health": 8,
+      "room": [
+        1,
+        14,
+        162
+      ],
+      "exact_replay": true
+    }
+  ],
+  "tests": {
+    "total": 114,
+    "passed": true,
+    "skipped": 0,
+    "seconds": 36.605,
+    "log": "runs/progression-witch-validation-20260911/tests.log"
+  },
+  "optimizer_updates": 0,
+  "reserved_evaluation_used": false,
+  "selected_navigation_sha256": "9d2b24b28be5289fc3d32d85d46faa1835ca2068d73a1e8790630d77dbaf85ec"
+}

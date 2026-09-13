@@ -1,0 +1,11 @@
+{
+  "hypothesis": "Remove Gel guard dead zone: move when outside the same18-pixel reach required to attack, rather than stopping at24.",
+  "cases": [
+    "house41",
+    "house211",
+    "house97",
+    "recovery698"
+  ],
+  "qualification": false,
+  "training_eligible": false
+}

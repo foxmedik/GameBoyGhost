@@ -1,0 +1,12 @@
+{
+  "hypothesis": "Setup assertion rejected ambiguous source match before either edit; launched cases retain panel39 source. Preserve duplicate results; do not claim the proposed fixes tested.",
+  "cases": [
+    "house883",
+    "house953",
+    "house1109",
+    "recovery698"
+  ],
+  "qualification": false,
+  "training_eligible": false,
+  "setup_error": "Expected unique beetle target selector, found duplicate in Gel helper; no bound source changed"
+}

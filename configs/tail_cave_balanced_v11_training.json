@@ -1,0 +1,41 @@
+{
+  "schema":"tail-cave-balanced-training-v11",
+  "status":"frozen-before-training",
+  "frozen_at":"2026-09-12",
+  "trainer":"scripts/train_tail_cave_balanced_v11.py",
+  "trainer_sha256":"570dac52594d6c1c8294e32fa18b8c1928a4454b2f412e6d7c63192bf8c6d632",
+  "parent":"runs/tail-cave-integration-dagger-v5-model/candidate.pt",
+  "parent_sha256":"f15a225b43b0a455277e1fe3ffeb942319b9e5c7df3b46c061518f7b08e974bc",
+  "base_data":"runs/tail-cave-specialist-v3-data/train.npz",
+  "base_data_sha256":"afe9765488a251e5cb2ba90ebea879ad4896a3f77abbf7468ddebc15c3b3a9a5",
+  "broad_collections":[
+    {"run":"runs/tail-cave-integration-dagger-v4-collection","summary_sha256":"d27ae64d454b37e464dacc26b8f72c29d1f268d0c60b35e69896c8b33a69796d","rows":21086},
+    {"run":"runs/tail-cave-integration-dagger-v5-collection","summary_sha256":"029badfca3f2dcccbd1c7d1048c098dba4603798e80c3760b007cdd4d08c7cf0","rows":19710}
+  ],
+  "target_collection":{"run":"runs/tail-cave-disengage-dagger-v9-collection","summary_sha256":"cf73d48175ab407f59778effb78c47ee4b6a4d9b47c094ff4bbdb524fd2dfe70","rows":1148},
+  "rejected_v10_result":{"run":"runs/state-driven-tail-cave-disengage-v10-fresh-autonomous","summary_sha256":"c84d5907a418d1cd2bfbbc4ef356fb2c60410af65ce6d2144c4079db107b16c8","used_for_training":false},
+  "model":{"epochs":40,"batches_per_epoch":128,"base_rows_per_batch":96,"broad_rows_per_batch":128,"target_rows_per_batch":32,"learning_rate":0.00003,"seed":2036,"selection":"Final epoch only; no checkpoint shopping."},
+  "fresh_full_route_panel":{"status":"frozen-before-training","required_successes":18,"cases":[
+    {"id":"balanced-development-house-00","split":"fresh_development","stage":"house","idle":1,"direction":"right","move_frames":1},
+    {"id":"balanced-development-house-01","split":"fresh_development","stage":"house","idle":3,"direction":"up","move_frames":1},
+    {"id":"balanced-development-house-02","split":"fresh_development","stage":"house","idle":5,"direction":"down","move_frames":1},
+    {"id":"balanced-development-house-03","split":"fresh_development","stage":"house","idle":7,"direction":"left","move_frames":1},
+    {"id":"balanced-development-house-04","split":"fresh_development","stage":"house","idle":9,"direction":null,"move_frames":0},
+    {"id":"balanced-development-house-05","split":"fresh_development","stage":"house","idle":11,"direction":"right","move_frames":2},
+    {"id":"balanced-development-house-06","split":"fresh_development","stage":"house","idle":13,"direction":"up","move_frames":2},
+    {"id":"balanced-development-house-07","split":"fresh_development","stage":"house","idle":15,"direction":"down","move_frames":2},
+    {"id":"balanced-development-house-08","split":"fresh_development","stage":"house","idle":17,"direction":"left","move_frames":2},
+    {"id":"balanced-development-house-09","split":"fresh_development","stage":"house","idle":19,"direction":null,"move_frames":0},
+    {"id":"balanced-development-house-10","split":"fresh_development","stage":"house","idle":21,"direction":"right","move_frames":3},
+    {"id":"balanced-development-house-11","split":"fresh_development","stage":"house","idle":23,"direction":"up","move_frames":3},
+    {"id":"balanced-development-house-12","split":"fresh_development","stage":"house","idle":25,"direction":"down","move_frames":3},
+    {"id":"balanced-development-house-13","split":"fresh_development","stage":"house","idle":27,"direction":"left","move_frames":3},
+    {"id":"balanced-development-house-14","split":"fresh_development","stage":"house","idle":29,"direction":null,"move_frames":0},
+    {"id":"balanced-development-house-15","split":"fresh_development","stage":"house","idle":31,"direction":"right","move_frames":4},
+    {"id":"balanced-development-house-16","split":"fresh_development","stage":"house","idle":33,"direction":"up","move_frames":4},
+    {"id":"balanced-development-house-17","split":"fresh_development","stage":"house","idle":35,"direction":"down","move_frames":4},
+    {"id":"balanced-development-house-18","split":"fresh_development","stage":"house","idle":37,"direction":"left","move_frames":4},
+    {"id":"balanced-development-house-19","split":"fresh_development","stage":"house","idle":39,"direction":null,"move_frames":0}
+  ]},
+  "sealed_validation":{"specification":"runs/progression-longrun-hour-v1/plan.json","results":"reports/progression-longrun-hour-v1.json","loaded":false,"used_for_training":false,"used_for_selection":false,"relabel_as_development":false}
+}

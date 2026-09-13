@@ -1,0 +1,160 @@
+{
+  "python": "3.11.16 (main, Aug 12 2026, 23:03:19) [Clang 21.0.0 (clang-2100.1.1.101)]",
+  "executable": "/Users/studio/Developer/GameBoyAgent/.venv-ladx/bin/python",
+  "platform": "macOS-26.6.2-arm64-arm-64bit",
+  "machine": "arm64",
+  "packages": {
+    "Farama-Notifications": "0.0.6",
+    "ImageIO": "2.37.4",
+    "Jinja2": "3.1.6",
+    "Markdown": "3.10.3",
+    "MarkupSafe": "3.0.3",
+    "PySDL2": "0.9.17",
+    "Werkzeug": "3.1.8",
+    "absl-py": "2.5.0",
+    "cloudpickle": "3.1.2",
+    "contourpy": "1.3.3",
+    "cycler": "0.12.1",
+    "filelock": "3.32.6",
+    "fonttools": "4.64.0",
+    "fsspec": "2026.7.0",
+    "grpcio": "1.83.1",
+    "gymnasium": "0.29.1",
+    "imageio-ffmpeg": "0.6.0",
+    "kiwisolver": "1.5.1",
+    "lazy-loader": "0.5",
+    "matplotlib": "3.11.1",
+    "mpmath": "1.3.0",
+    "networkx": "3.6.1",
+    "numpy": "1.26.4",
+    "packaging": "26.3",
+    "pandas": "3.0.5",
+    "pillow": "10.3.0",
+    "protobuf": "7.36.1",
+    "psutil": "7.0.0",
+    "pyarrow": "21.0.0",
+    "pyboy": "2.0.0",
+    "pygame": "2.5.2",
+    "pyparsing": "3.3.2",
+    "pysdl2-dll": "2.32.10",
+    "python-dateutil": "2.9.0.post0",
+    "scikit-image": "0.23.1",
+    "scipy": "1.17.1",
+    "setuptools": "84.0.0",
+    "six": "1.17.0",
+    "stable_baselines3": "2.3.0",
+    "sympy": "1.14.0",
+    "tensorboard": "2.16.2",
+    "tensorboard-data-server": "0.7.2",
+    "tifffile": "2026.3.3",
+    "torch": "2.2.2",
+    "typing_extensions": "4.16.0"
+  },
+  "references": [
+    {
+      "path": "references/LADXExperiments",
+      "recorded_commit": "23f09fcf0339c1497ef6778e69a33075dd716a9f",
+      "actual_commit": "23f09fcf0339c1497ef6778e69a33075dd716a9f",
+      "commit_matches": true,
+      "dirty": false
+    },
+    {
+      "path": "references/PokeBotBad",
+      "recorded_commit": "2e882849cac6e9b6a6ce62dcd689c64160d1d51e",
+      "actual_commit": "2e882849cac6e9b6a6ce62dcd689c64160d1d51e",
+      "commit_matches": true,
+      "dirty": false
+    },
+    {
+      "path": "references/PokemonRedExperiments",
+      "recorded_commit": "7739b399db503a7a78999683188414036a2c0c6b",
+      "actual_commit": "7739b399db503a7a78999683188414036a2c0c6b",
+      "commit_matches": true,
+      "dirty": false
+    },
+    {
+      "path": "references/PokemonRedExperiments1-CJBoey",
+      "recorded_commit": "eb54dd43853f9000373768c7d8ac3d12589629c6",
+      "actual_commit": "eb54dd43853f9000373768c7d8ac3d12589629c6",
+      "commit_matches": true,
+      "dirty": false
+    },
+    {
+      "path": "references/PufferLib",
+      "recorded_commit": "42f70d6932c30ac977736f861006809c50168ba9",
+      "actual_commit": "42f70d6932c30ac977736f861006809c50168ba9",
+      "commit_matches": true,
+      "dirty": false
+    },
+    {
+      "path": "references/PyBoy",
+      "recorded_commit": "a84cec12b5708a8a6e05a6edbdb3fa71c89b5afa",
+      "actual_commit": "a84cec12b5708a8a6e05a6edbdb3fa71c89b5afa",
+      "commit_matches": true,
+      "dirty": false
+    },
+    {
+      "path": "references/RedAgentExperiments",
+      "recorded_commit": "ca5c520b42a51109347bc8ed03f4e330598af079",
+      "actual_commit": "ca5c520b42a51109347bc8ed03f4e330598af079",
+      "commit_matches": true,
+      "dirty": false
+    },
+    {
+      "path": "references/dreamerv3-poke",
+      "recorded_commit": "d0fed662d1ec669b7860e8a3ae49993bef480275",
+      "actual_commit": "d0fed662d1ec669b7860e8a3ae49993bef480275",
+      "commit_matches": true,
+      "dirty": false
+    },
+    {
+      "path": "references/pokegym-leanke",
+      "recorded_commit": "e239397252df10607401cf5f07acaca016cd4753",
+      "actual_commit": "e239397252df10607401cf5f07acaca016cd4753",
+      "commit_matches": true,
+      "dirty": false
+    },
+    {
+      "path": "references/pokegym-puffer",
+      "recorded_commit": "9050f7ae43e21b9337ac5ae407d37e6eb34ca03f",
+      "actual_commit": "9050f7ae43e21b9337ac5ae407d37e6eb34ca03f",
+      "commit_matches": true,
+      "dirty": false
+    },
+    {
+      "path": "references/pokegym-xinpw8",
+      "recorded_commit": "a8b75e4ad2694461f661acf5894d498b69d1a3fa",
+      "actual_commit": "a8b75e4ad2694461f661acf5894d498b69d1a3fa",
+      "commit_matches": true,
+      "dirty": false
+    },
+    {
+      "path": "references/pokemon-emerald-experiments",
+      "recorded_commit": "49c15ebfe1c084cc70327430d2c8f0e78e96c39f",
+      "actual_commit": "49c15ebfe1c084cc70327430d2c8f0e78e96c39f",
+      "commit_matches": true,
+      "dirty": false
+    },
+    {
+      "path": "references/pokemonred_puffer",
+      "recorded_commit": "e3bd1b13675450373cd7d6c734069dee82e6ffa2",
+      "actual_commit": "e3bd1b13675450373cd7d6c734069dee82e6ffa2",
+      "commit_matches": true,
+      "dirty": false
+    },
+    {
+      "path": "references/pokerl-map-viz",
+      "recorded_commit": "0fa888646a3e0a2450f43c1ca7be8989e5234336",
+      "actual_commit": "0fa888646a3e0a2450f43c1ca7be8989e5234336",
+      "commit_matches": true,
+      "dirty": false
+    },
+    {
+      "path": "references/LADX-Disassembly",
+      "recorded_commit": "880d24c0a2ae3f09551d914f015c7589f743c8fb",
+      "actual_commit": "880d24c0a2ae3f09551d914f015c7589f743c8fb",
+      "commit_matches": true,
+      "dirty": false
+    }
+  ]
+}

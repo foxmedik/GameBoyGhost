@@ -1,0 +1,11 @@
+{
+  "hypothesis": "Activate Keese within32 pixels from y50 north side before clearance; retain original safe lower-to-upper worm connector.",
+  "cases": [
+    "house173",
+    "house257",
+    "house307",
+    "recovery23"
+  ],
+  "qualification": false,
+  "training_eligible": false
+}

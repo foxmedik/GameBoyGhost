@@ -1,0 +1,11 @@
+{
+  "schema":"tail-cave-compass-room-report-v1",
+  "date":"2026-09-12",
+  "objective":"Extend the continuous physical route beyond the first Small Key into room 0x15 and clear all four Hiding Zols alive.",
+  "continuous_smoke":{"run":"runs/state-driven-tail-cave-compass-room-smoke-v1","summary_sha256":"2f6f36c3e5b0265d354b2075a38dd3fc2902227058b8b7082be00eafd4f6d568","successes":1,"cases":1,"exact_replays":1},
+  "frozen_development":{"run":"runs/state-driven-tail-cave-compass-room-development-v2","summary_sha256":"e98dbc4e952e9b31ee3618314e56a63f44c5bc3e5a3ca9080f7df92f05a7314b","panel_sha256":"fca06c194bc3fdec2a2b337111c851246b5041907c2fbcb66429c5aa5aa882fc","successes":16,"cases":20,"required_successes":18,"exact_replays":20,"selected":false},
+  "recovered_dialogue_divergence":{"case":"development-house-08","dialog_id":236,"behavior":"Detect and dismiss an incidental combat-pickup dialogue before continuing; the corrected continuous case passed."},
+  "remaining_blocker":{"cases":[11,12,13,15],"entry_health_raw":4,"room":[1,0,21],"cause":"The right fire statue launches entity 0x7D down the same lane where the two right Hiding Zols emerge together. One hit is lethal.","latest_continuous_probe":{"run":"runs/state-driven-tail-cave-compass-room-low-health-v6","summary_sha256":"d16c69e3ed21787c9378d567051626c433ce2fc05d0d073a8d23863d983b8353","successes":0,"cases":4},"development_only_observation":"A save/load tactical branch can clear without damage after projectile shielding and a lower-plinth bypass, but reset timing changes the encounter and therefore does not satisfy continuous selection."},
+  "control":"State-checked physical teacher; no model was trained for room 0x15.",
+  "sealed_validation":{"specification":"runs/progression-longrun-hour-v1/plan.json","results":"reports/progression-longrun-hour-v1.json","loaded":false,"used_for_training":false,"used_for_selection":false,"relabel_as_development":false}
+}

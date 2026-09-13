@@ -1,0 +1,471 @@
+[
+  {
+    "case": "house541",
+    "summary": "runs/teacher-route-regression-panel-v31-house541/summary.json",
+    "result": {
+      "success": true,
+      "failure": null,
+      "exact_replay": true,
+      "final": {
+        "state": {
+          "phase": {
+            "gameplay": 11,
+            "subtype": 7,
+            "scroll": 0,
+            "sequence": 4,
+            "palette": 0,
+            "room": [
+              1,
+              0,
+              11
+            ],
+            "health": 24
+          },
+          "room": [
+            1,
+            0,
+            11
+          ],
+          "x": 81,
+          "y": 26,
+          "health": 24,
+          "max_hearts": 3,
+          "inventory": [
+            10,
+            1,
+            12,
+            4,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          "sword": 1,
+          "toadstool": 0,
+          "powder": 24,
+          "bombs": 0,
+          "arrows": 0,
+          "tail_key": 1,
+          "tarin": 1,
+          "tail_door_status": 144,
+          "trade_item": 0,
+          "dialog_state": 0,
+          "dialog_id": 169,
+          "inventory_cursor": 1
+        },
+        "frame": 49537,
+        "entities": [
+          {
+            "slot": 0,
+            "type": 39,
+            "status": 5,
+            "state": 3,
+            "x": 32,
+            "y": 32,
+            "vx": 248,
+            "vy": 0,
+            "z": 0
+          },
+          {
+            "slot": 1,
+            "type": 39,
+            "status": 5,
+            "state": 3,
+            "x": 128,
+            "y": 32,
+            "vx": 8,
+            "vy": 0,
+            "z": 0
+          },
+          {
+            "slot": 2,
+            "type": 39,
+            "status": 5,
+            "state": 1,
+            "x": 24,
+            "y": 112,
+            "vx": 0,
+            "vy": 0,
+            "z": 0
+          },
+          {
+            "slot": 4,
+            "type": 39,
+            "status": 5,
+            "state": 1,
+            "x": 136,
+            "y": 112,
+            "vx": 0,
+            "vy": 0,
+            "z": 0
+          }
+        ],
+        "pending_damage": 0,
+        "dungeon_items": [
+          1,
+          1,
+          0,
+          1,
+          0
+        ]
+      },
+      "commands": 15598,
+      "qualification": false,
+      "case_id": null,
+      "training_eligible": false
+    }
+  },
+  {
+    "case": "house131",
+    "summary": "runs/teacher-route-regression-panel-v31-house131/summary.json",
+    "result": {
+      "success": false,
+      "failure": "RouteBlocker: Damage is still being applied; not a safe route state",
+      "exact_replay": true,
+      "final": {
+        "state": {
+          "phase": {
+            "gameplay": 11,
+            "subtype": 7,
+            "scroll": 0,
+            "sequence": 4,
+            "palette": 0,
+            "room": [
+              1,
+              0,
+              16
+            ],
+            "health": 24
+          },
+          "room": [
+            1,
+            0,
+            16
+          ],
+          "x": 101,
+          "y": 40,
+          "health": 24,
+          "max_hearts": 3,
+          "inventory": [
+            10,
+            1,
+            12,
+            4,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          "sword": 1,
+          "toadstool": 0,
+          "powder": 24,
+          "bombs": 0,
+          "arrows": 0,
+          "tail_key": 1,
+          "tarin": 1,
+          "tail_door_status": 144,
+          "trade_item": 0,
+          "dialog_state": 0,
+          "dialog_id": 169,
+          "inventory_cursor": 1
+        },
+        "frame": 47066,
+        "entities": [
+          {
+            "slot": 0,
+            "type": 23,
+            "status": 5,
+            "state": 0,
+            "x": 108,
+            "y": 38,
+            "vx": 0,
+            "vy": 240,
+            "z": 0
+          },
+          {
+            "slot": 2,
+            "type": 22,
+            "status": 5,
+            "state": 0,
+            "x": 44,
+            "y": 72,
+            "vx": 0,
+            "vy": 16,
+            "z": 0
+          },
+          {
+            "slot": 3,
+            "type": 30,
+            "status": 5,
+            "state": 0,
+            "x": 134,
+            "y": 64,
+            "vx": 250,
+            "vy": 0,
+            "z": 0
+          }
+        ],
+        "pending_damage": 4,
+        "dungeon_items": [
+          1,
+          1,
+          0,
+          1,
+          0
+        ]
+      },
+      "commands": 14088,
+      "qualification": false,
+      "case_id": null,
+      "training_eligible": false
+    }
+  },
+  {
+    "case": "house257",
+    "summary": "runs/teacher-route-regression-panel-v31-house257/summary.json",
+    "result": {
+      "success": true,
+      "failure": null,
+      "exact_replay": true,
+      "final": {
+        "state": {
+          "phase": {
+            "gameplay": 11,
+            "subtype": 7,
+            "scroll": 0,
+            "sequence": 4,
+            "palette": 0,
+            "room": [
+              1,
+              0,
+              11
+            ],
+            "health": 24
+          },
+          "room": [
+            1,
+            0,
+            11
+          ],
+          "x": 81,
+          "y": 26,
+          "health": 24,
+          "max_hearts": 3,
+          "inventory": [
+            10,
+            1,
+            12,
+            4,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          "sword": 1,
+          "toadstool": 0,
+          "powder": 25,
+          "bombs": 0,
+          "arrows": 0,
+          "tail_key": 1,
+          "tarin": 1,
+          "tail_door_status": 144,
+          "trade_item": 0,
+          "dialog_state": 0,
+          "dialog_id": 169,
+          "inventory_cursor": 1
+        },
+        "frame": 48535,
+        "entities": [
+          {
+            "slot": 0,
+            "type": 39,
+            "status": 5,
+            "state": 3,
+            "x": 32,
+            "y": 32,
+            "vx": 248,
+            "vy": 0,
+            "z": 0
+          },
+          {
+            "slot": 2,
+            "type": 39,
+            "status": 5,
+            "state": 3,
+            "x": 128,
+            "y": 32,
+            "vx": 8,
+            "vy": 0,
+            "z": 0
+          },
+          {
+            "slot": 3,
+            "type": 39,
+            "status": 5,
+            "state": 1,
+            "x": 24,
+            "y": 112,
+            "vx": 0,
+            "vy": 0,
+            "z": 0
+          },
+          {
+            "slot": 4,
+            "type": 39,
+            "status": 5,
+            "state": 1,
+            "x": 136,
+            "y": 112,
+            "vx": 0,
+            "vy": 0,
+            "z": 0
+          }
+        ],
+        "pending_damage": 0,
+        "dungeon_items": [
+          1,
+          1,
+          0,
+          1,
+          0
+        ]
+      },
+      "commands": 15275,
+      "qualification": false,
+      "case_id": null,
+      "training_eligible": false
+    }
+  },
+  {
+    "case": "recovery23",
+    "summary": "runs/teacher-route-regression-panel-v31-recovery23/summary.json",
+    "result": {
+      "success": true,
+      "failure": null,
+      "exact_replay": true,
+      "final": {
+        "state": {
+          "phase": {
+            "gameplay": 11,
+            "subtype": 7,
+            "scroll": 0,
+            "sequence": 4,
+            "palette": 0,
+            "room": [
+              1,
+              0,
+              11
+            ],
+            "health": 24
+          },
+          "room": [
+            1,
+            0,
+            11
+          ],
+          "x": 80,
+          "y": 26,
+          "health": 24,
+          "max_hearts": 3,
+          "inventory": [
+            10,
+            1,
+            12,
+            4,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          "sword": 1,
+          "toadstool": 0,
+          "powder": 24,
+          "bombs": 0,
+          "arrows": 0,
+          "tail_key": 1,
+          "tarin": 1,
+          "tail_door_status": 144,
+          "trade_item": 0,
+          "dialog_state": 0,
+          "dialog_id": 169,
+          "inventory_cursor": 1
+        },
+        "frame": 49547,
+        "entities": [
+          {
+            "slot": 0,
+            "type": 39,
+            "status": 5,
+            "state": 3,
+            "x": 32,
+            "y": 32,
+            "vx": 248,
+            "vy": 0,
+            "z": 0
+          },
+          {
+            "slot": 2,
+            "type": 39,
+            "status": 5,
+            "state": 3,
+            "x": 128,
+            "y": 32,
+            "vx": 8,
+            "vy": 0,
+            "z": 0
+          },
+          {
+            "slot": 3,
+            "type": 39,
+            "status": 5,
+            "state": 1,
+            "x": 24,
+            "y": 112,
+            "vx": 0,
+            "vy": 0,
+            "z": 0
+          },
+          {
+            "slot": 4,
+            "type": 39,
+            "status": 5,
+            "state": 1,
+            "x": 136,
+            "y": 112,
+            "vx": 0,
+            "vy": 0,
+            "z": 0
+          }
+        ],
+        "pending_damage": 0,
+        "dungeon_items": [
+          1,
+          1,
+          0,
+          1,
+          0
+        ]
+      },
+      "commands": 15355,
+      "qualification": false,
+      "case_id": null,
+      "training_eligible": false
+    }
+  }
+]

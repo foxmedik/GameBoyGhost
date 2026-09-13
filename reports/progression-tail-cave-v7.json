@@ -1,0 +1,236 @@
+{
+  "result": {
+    "status": "blocked",
+    "failure": "No verified terrain path from [0, 0, 178] toward C2",
+    "steps": 4928,
+    "frames": 32311,
+    "damage_raw": 20,
+    "healing_raw": 16,
+    "final": {
+      "phase": {
+        "gameplay": 11,
+        "subtype": 7,
+        "scroll": 0,
+        "sequence": 4,
+        "palette": 0,
+        "room": [
+          0,
+          0,
+          178
+        ],
+        "health": 20
+      },
+      "room": [
+        0,
+        0,
+        178
+      ],
+      "x": 13,
+      "y": 28,
+      "health": 20,
+      "max_hearts": 3,
+      "inventory": [
+        4,
+        1,
+        12,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "sword": 1,
+      "toadstool": 0,
+      "powder": 24,
+      "bombs": 0,
+      "arrows": 0,
+      "tail_key": 1,
+      "tarin": 1,
+      "tail_door_status": 0,
+      "trade_item": 0,
+      "dialog_state": 0,
+      "dialog_id": 193,
+      "inventory_cursor": 0
+    },
+    "milestones": {
+      "sword_acquired": 17,
+      "toadstool_acquired": 61,
+      "powder_available": 93,
+      "raccoon_cured": 114,
+      "tail_key_acquired": 119
+    },
+    "quest_success": false,
+    "exact_action_replay": true,
+    "assistance": "scripted_known_route_with_source_grounded_rom_senses",
+    "human_interventions": 0,
+    "optimizer_updates": 0,
+    "reserved_evaluation_used": false,
+    "wall_seconds": 20.159
+  },
+  "evidence": [
+    {
+      "kind": "toadstool_prefix_exact",
+      "decisions": 4404,
+      "frame": 30229
+    },
+    {
+      "kind": "return_transition",
+      "origin": [
+        0,
+        0,
+        65
+      ],
+      "target": [
+        0,
+        0,
+        81
+      ],
+      "frame": 30335
+    },
+    {
+      "kind": "return_transition",
+      "origin": [
+        0,
+        0,
+        81
+      ],
+      "target": [
+        0,
+        0,
+        97
+      ],
+      "frame": 30539
+    },
+    {
+      "kind": "return_transition",
+      "origin": [
+        0,
+        0,
+        97
+      ],
+      "target": [
+        0,
+        0,
+        96
+      ],
+      "frame": 30709
+    },
+    {
+      "kind": "return_transition",
+      "origin": [
+        0,
+        0,
+        96
+      ],
+      "target": [
+        0,
+        0,
+        112
+      ],
+      "frame": 30923
+    },
+    {
+      "kind": "return_transition",
+      "origin": [
+        0,
+        0,
+        112
+      ],
+      "target": [
+        0,
+        0,
+        128
+      ],
+      "frame": 31217
+    },
+    {
+      "kind": "return_transition",
+      "origin": [
+        0,
+        0,
+        128
+      ],
+      "target": [
+        0,
+        0,
+        144
+      ],
+      "frame": 31406
+    },
+    {
+      "kind": "village_approach_bush_cut",
+      "frame": 31434
+    },
+    {
+      "kind": "return_transition",
+      "origin": [
+        0,
+        0,
+        144
+      ],
+      "target": [
+        0,
+        0,
+        160
+      ],
+      "frame": 31593
+    },
+    {
+      "kind": "return_transition",
+      "origin": [
+        0,
+        0,
+        160
+      ],
+      "target": [
+        0,
+        0,
+        161
+      ],
+      "frame": 31711
+    },
+    {
+      "kind": "return_transition",
+      "origin": [
+        0,
+        0,
+        161
+      ],
+      "target": [
+        0,
+        0,
+        177
+      ],
+      "frame": 31870
+    },
+    {
+      "kind": "bounded_sword_stall_response",
+      "room": [
+        0,
+        0,
+        177
+      ],
+      "frame": 32027
+    },
+    {
+      "kind": "return_transition",
+      "origin": [
+        0,
+        0,
+        177
+      ],
+      "target": [
+        0,
+        0,
+        178
+      ],
+      "frame": 32311
+    }
+  ],
+  "output": "runs/progression-tail-cave-v7",
+  "memory_version": "660ee7278c738a51e58fb09d45c1f9179fe7a5fb618ee8d30ac430dab8d2e90a"
+}

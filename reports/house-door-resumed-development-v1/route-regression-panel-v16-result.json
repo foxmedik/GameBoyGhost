@@ -1,0 +1,40 @@
+{
+  "passed": 4,
+  "total": 4,
+  "cases": [
+    {
+      "case": "house173",
+      "summary": "runs/teacher-route-regression-panel-v16-house173/summary.json",
+      "success": true,
+      "exact_replay": true,
+      "commands": 19304,
+      "frame": 51950
+    },
+    {
+      "case": "house257",
+      "summary": "runs/teacher-route-regression-panel-v16-house257/summary.json",
+      "success": true,
+      "exact_replay": true,
+      "commands": 16206,
+      "frame": 50714
+    },
+    {
+      "case": "house307",
+      "summary": "runs/teacher-route-regression-panel-v16-house307/summary.json",
+      "success": true,
+      "exact_replay": true,
+      "commands": 16054,
+      "frame": 51431
+    },
+    {
+      "case": "recovery23",
+      "summary": "runs/teacher-route-regression-panel-v16-recovery23/summary.json",
+      "success": true,
+      "exact_replay": true,
+      "commands": 17962,
+      "frame": 50771
+    }
+  ],
+  "qualified": false,
+  "training_eligible": false
+}

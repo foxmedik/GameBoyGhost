@@ -1,0 +1,18 @@
+Run from the repository root with a restored .venv-ladx.
+This is the same test selection used for closeout; choose a new log path if capturing output.
+The optimizer tests use temporary fixtures and are not a learner campaign.
+
+.venv-ladx/bin/python - <<'CHECKS'
+from pathlib import Path
+import sys, unittest
+root = Path.cwd()
+sys.path[:0] = [str(root/'src'), str(root/'scripts'), str(root/'tests')]
+loader = unittest.TestLoader()
+suite = unittest.TestSuite()
+for path in sorted((root/'tests').glob('test_*.py')):
+    if path.name == 'test_progression_longrun.py':
+        continue  # Regenerates the sealed case definitions; intentionally excluded.
+    suite.addTests(loader.loadTestsFromName(path.stem))
+result = unittest.TextTestRunner(verbosity=2).run(suite)
+raise SystemExit(not result.wasSuccessful())
+CHECKS

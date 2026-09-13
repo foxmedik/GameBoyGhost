@@ -1,0 +1,11 @@
+{
+  "hypothesis": "Downstream recovery observed enemy strikes; mushroom cave diagonal shield; room05 clear Gels from upper safe position before fresh Spark window.",
+  "cases": [
+    "house883",
+    "house953",
+    "house1109",
+    "recovery698"
+  ],
+  "qualification": false,
+  "training_eligible": false
+}

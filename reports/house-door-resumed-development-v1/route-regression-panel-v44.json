@@ -1,0 +1,11 @@
+{
+  "hypothesis": "After room05 Gel clearance, physically align top lane y27 and x88 before Spark-window crossing.",
+  "cases": [
+    "house131",
+    "house953",
+    "house883",
+    "recovery698"
+  ],
+  "qualification": false,
+  "training_eligible": false
+}

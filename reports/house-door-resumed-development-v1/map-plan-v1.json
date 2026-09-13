@@ -1,0 +1,14 @@
+{
+  "schema": "bounded-map-teacher-v1",
+  "source": "runs/teacher-compass-second-key-v6-execution/continuation.json",
+  "source_sha256": "e7f775b29cc106f5ea256fa19ed68894cc941a31600fba7915eede675c6968d8",
+  "case_count": 1,
+  "budget": {
+    "decisions": 1000,
+    "frames": 4500
+  },
+  "hypothesis": "Approach existing Map chest72,64 from south75 with live shield/sword defense against evasive Stalfos and Keese. Stop on damage or blocked motion.",
+  "success": "fresh Map receipt closed at full health, Compass and two keys retained",
+  "training_eligible": false,
+  "qualification": false
+}

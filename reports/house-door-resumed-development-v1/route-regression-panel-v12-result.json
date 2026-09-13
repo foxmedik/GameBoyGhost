@@ -1,0 +1,36 @@
+{
+  "passed": 0,
+  "total": 4,
+  "cases": [
+    {
+      "case": "house173",
+      "summary": "runs/teacher-route-regression-panel-v12-house173/summary.json",
+      "success": false,
+      "exact_replay": true,
+      "failure": "RouteBlocker: North-side room07 Keese clearance budget exhausted"
+    },
+    {
+      "case": "house257",
+      "summary": "runs/teacher-route-regression-panel-v12-house257/summary.json",
+      "success": false,
+      "exact_replay": true,
+      "failure": "RouteBlocker: North-side room07 Keese clearance budget exhausted"
+    },
+    {
+      "case": "house307",
+      "summary": "runs/teacher-route-regression-panel-v12-house307/summary.json",
+      "success": false,
+      "exact_replay": true,
+      "failure": "RouteBlocker: North-side room07 Keese clearance budget exhausted"
+    },
+    {
+      "case": "recovery23",
+      "summary": "runs/teacher-route-regression-panel-v12-recovery23/summary.json",
+      "success": false,
+      "exact_replay": true,
+      "failure": "RouteBlocker: North-side room07 Keese clearance budget exhausted"
+    }
+  ],
+  "qualified": false,
+  "training_eligible": false
+}

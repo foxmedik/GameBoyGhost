@@ -1,0 +1,116 @@
+{
+  "success": true,
+  "failure": null,
+  "exact_replay": true,
+  "final": {
+    "state": {
+      "phase": {
+        "gameplay": 11,
+        "subtype": 7,
+        "scroll": 0,
+        "sequence": 4,
+        "palette": 0,
+        "room": [
+          1,
+          0,
+          11
+        ],
+        "health": 24
+      },
+      "room": [
+        1,
+        0,
+        11
+      ],
+      "x": 81,
+      "y": 27,
+      "health": 24,
+      "max_hearts": 3,
+      "inventory": [
+        10,
+        1,
+        12,
+        4,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "sword": 1,
+      "toadstool": 0,
+      "powder": 24,
+      "bombs": 0,
+      "arrows": 0,
+      "tail_key": 1,
+      "tarin": 1,
+      "tail_door_status": 144,
+      "trade_item": 0,
+      "dialog_state": 0,
+      "dialog_id": 169,
+      "inventory_cursor": 1
+    },
+    "frame": 49947,
+    "entities": [
+      {
+        "slot": 0,
+        "type": 39,
+        "status": 5,
+        "state": 3,
+        "x": 32,
+        "y": 32,
+        "vx": 248,
+        "vy": 0,
+        "z": 0
+      },
+      {
+        "slot": 2,
+        "type": 39,
+        "status": 5,
+        "state": 3,
+        "x": 127,
+        "y": 32,
+        "vx": 8,
+        "vy": 0,
+        "z": 0
+      },
+      {
+        "slot": 3,
+        "type": 39,
+        "status": 5,
+        "state": 1,
+        "x": 24,
+        "y": 112,
+        "vx": 0,
+        "vy": 0,
+        "z": 0
+      },
+      {
+        "slot": 4,
+        "type": 39,
+        "status": 5,
+        "state": 1,
+        "x": 136,
+        "y": 112,
+        "vx": 0,
+        "vy": 0,
+        "z": 0
+      }
+    ],
+    "pending_damage": 0,
+    "dungeon_items": [
+      1,
+      1,
+      0,
+      1,
+      0
+    ]
+  },
+  "commands": 16633,
+  "qualification": true,
+  "case_id": "fresh-house-02",
+  "training_eligible": false
+}

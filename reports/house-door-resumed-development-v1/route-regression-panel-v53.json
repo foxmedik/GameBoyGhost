@@ -1,0 +1,11 @@
+{
+  "hypothesis": "Rejoin room18 solid x80 north exit lane after bat pursuit; allow bounded1024 Compass decisions for repeated hidden-Zol emergence and projectile guard.",
+  "cases": [
+    "house673",
+    "house743",
+    "house359",
+    "recovery698"
+  ],
+  "qualification": false,
+  "training_eligible": false
+}

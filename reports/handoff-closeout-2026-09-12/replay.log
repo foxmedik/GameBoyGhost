@@ -1,0 +1,12 @@
+UserWarning: Using SDL2 binaries from pysdl2-dll 2.32.10
+Loaded layouts
+runs/full-health-worm-guard-v1/room0e-full-health-continuation.json: 0/10963 commands verified
+runs/full-health-worm-guard-v1/room0e-full-health-continuation.json: 3000/10963 commands verified
+runs/full-health-worm-guard-v1/room0e-full-health-continuation.json: 6000/10963 commands verified
+runs/full-health-worm-guard-v1/room0e-full-health-continuation.json: 9000/10963 commands verified
+runs/tail-cave-room10-state-check-v2/continuation.json: 0/13722 commands verified
+runs/tail-cave-room10-state-check-v2/continuation.json: 3000/13722 commands verified
+runs/tail-cave-room10-state-check-v2/continuation.json: 6000/13722 commands verified
+runs/tail-cave-room10-state-check-v2/continuation.json: 9000/13722 commands verified
+runs/tail-cave-room10-state-check-v2/continuation.json: 12000/13722 commands verified
+Both existing continuous handoffs verified; zero extension commands.

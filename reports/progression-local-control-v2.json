@@ -1,0 +1,21 @@
+{
+  "schema": "progression-local-control-candidate-report-v2",
+  "experiment": "configs/progression_local_control_v2.json",
+  "experiment_sha256": "cfc8a74ca79028e77a41196e50fc9c3a61b31a75f1d7cabc4bde100f8aa9e88d",
+  "training_result": "runs/progression-local-control-v2/result.json",
+  "training_result_sha256": "806eb28bf38a2d946a5cffaa96f6f74b00c3a918731f7db607b78a1c69435383",
+  "checkpoint": "runs/progression-local-control-v2/model/epoch-008.pt",
+  "status": "rejected_before_live_evaluation",
+  "offline_gate": {
+    "movement_accuracy_minimum": 0.55,
+    "button_accuracy_minimum": 0.55,
+    "movement_accuracy": 0.561610221862793,
+    "button_accuracy": 0.32695138454437256,
+    "passed": false
+  },
+  "reason": "Balanced sampling restored all action classes and passed the movement threshold, but button accuracy remained below the frozen threshold at the fixed final epoch.",
+  "live_evaluation_performed": false,
+  "selected_runtime_changed": false,
+  "validation_loaded": false,
+  "candidate_number_for_blocker": 2
+}

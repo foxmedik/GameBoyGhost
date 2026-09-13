@@ -1,0 +1,13 @@
+{
+  "tests": 189,
+  "executed": 188,
+  "failures": 0,
+  "errors": 0,
+  "skips": 1,
+  "skip_reasons": [
+    "Historical reserved-panel generation is sealed; do not reconstruct its cases"
+  ],
+  "passed": true,
+  "excluded": [],
+  "seconds": 38.800445875152946
+}

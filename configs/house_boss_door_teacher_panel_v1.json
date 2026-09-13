@@ -1,0 +1,508 @@
+{
+  "schema": "house-boss-door-teacher-development-panel-v1",
+  "status": "specifications_frozen_controller_binding_pending",
+  "purpose": "fresh full-route guided teacher qualification; not sealed validation",
+  "case_generation": "explicit new house idle schedule; no existing reserved specs parsed",
+  "prerequisite_proof": {
+    "path": "runs/house-nightmare-door-proof-v1/continuation.json",
+    "sha256": "3140c8ea17024d53928e0fdae0ccbd7f94f56c87013657c3666accf63bb57077",
+    "endpoint_sha256": "9b9828dc94dd90f0db4508a26e9b153323b85a5f46ba438a408bba289db940e0",
+    "commands": 15896,
+    "frames": 53700,
+    "continuous_exact_replay": true
+  },
+  "start_hashes": {
+    "runs/state-driven-tail-cave-disengage-guarded-v1/development-house-00/game.gbc": "6285ba6201f17bc8595c600ebc2477d52561f0aff29b11f7fc3343bacb2e230b",
+    "runs/state-driven-tail-cave-disengage-guarded-v1/development-house-00/initial.state": "ad8cd027b3dfd6ea1872d51b038a4c40402846d631e43b35259b4943dcfb9d42"
+  },
+  "endpoint": {
+    "status": "software_tested_pending_live_fixture",
+    "room": [
+      1,
+      0,
+      11
+    ],
+    "forbidden_boss_room": [
+      1,
+      0,
+      6
+    ],
+    "room_status_address": "0xD90B",
+    "open_mask": "0x04",
+    "boss_key_address": "0xDBCF",
+    "door_animation_address": "0xC188",
+    "requires": [
+      "continuous_house_episode",
+      "closed_to_open_transition",
+      "nightmare_key",
+      "alive",
+      "world_settled",
+      "dialogue_closed",
+      "door_animation_finished",
+      "movement_released",
+      "outside_boss_room",
+      "full_health",
+      "healing_finished",
+      "battle_loadout",
+      "grounded"
+    ],
+    "health_target": "health == 8 * max_hearts",
+    "equipment": {
+      "a": "sword",
+      "b": "rocs_feather"
+    },
+    "pending_healing": 0,
+    "pending_damage": 0,
+    "grounded": true
+  },
+  "gates": {
+    "house_required": 20,
+    "house_cases": 20,
+    "actual_half_heart_required": 4,
+    "actual_half_heart_cases": 4,
+    "all_cases_exact_replay": true,
+    "all_finishes_same_full_health_endpoint": true,
+    "teacher_fallback_is_guidance_not_autonomy": true
+  },
+  "cases": [
+    {
+      "id": "fresh-house-00",
+      "kind": "house",
+      "seed": 0,
+      "house_idle_frames": 41,
+      "start": {
+        "rom": "runs/state-driven-tail-cave-disengage-guarded-v1/development-house-00/game.gbc",
+        "initial_state": "runs/state-driven-tail-cave-disengage-guarded-v1/development-house-00/initial.state"
+      },
+      "midroute_state_loads_allowed": 0,
+      "max_decisions": 30000,
+      "max_emulator_frames": 150000,
+      "max_wall_seconds": 900
+    },
+    {
+      "id": "fresh-house-01",
+      "kind": "house",
+      "seed": 0,
+      "house_idle_frames": 67,
+      "start": {
+        "rom": "runs/state-driven-tail-cave-disengage-guarded-v1/development-house-00/game.gbc",
+        "initial_state": "runs/state-driven-tail-cave-disengage-guarded-v1/development-house-00/initial.state"
+      },
+      "midroute_state_loads_allowed": 0,
+      "max_decisions": 30000,
+      "max_emulator_frames": 150000,
+      "max_wall_seconds": 900
+    },
+    {
+      "id": "fresh-house-02",
+      "kind": "house",
+      "seed": 0,
+      "house_idle_frames": 97,
+      "start": {
+        "rom": "runs/state-driven-tail-cave-disengage-guarded-v1/development-house-00/game.gbc",
+        "initial_state": "runs/state-driven-tail-cave-disengage-guarded-v1/development-house-00/initial.state"
+      },
+      "midroute_state_loads_allowed": 0,
+      "max_decisions": 30000,
+      "max_emulator_frames": 150000,
+      "max_wall_seconds": 900
+    },
+    {
+      "id": "fresh-house-03",
+      "kind": "house",
+      "seed": 0,
+      "house_idle_frames": 131,
+      "start": {
+        "rom": "runs/state-driven-tail-cave-disengage-guarded-v1/development-house-00/game.gbc",
+        "initial_state": "runs/state-driven-tail-cave-disengage-guarded-v1/development-house-00/initial.state"
+      },
+      "midroute_state_loads_allowed": 0,
+      "max_decisions": 30000,
+      "max_emulator_frames": 150000,
+      "max_wall_seconds": 900
+    },
+    {
+      "id": "fresh-house-04",
+      "kind": "house",
+      "seed": 0,
+      "house_idle_frames": 173,
+      "start": {
+        "rom": "runs/state-driven-tail-cave-disengage-guarded-v1/development-house-00/game.gbc",
+        "initial_state": "runs/state-driven-tail-cave-disengage-guarded-v1/development-house-00/initial.state"
+      },
+      "midroute_state_loads_allowed": 0,
+      "max_decisions": 30000,
+      "max_emulator_frames": 150000,
+      "max_wall_seconds": 900
+    },
+    {
+      "id": "fresh-house-05",
+      "kind": "house",
+      "seed": 0,
+      "house_idle_frames": 211,
+      "start": {
+        "rom": "runs/state-driven-tail-cave-disengage-guarded-v1/development-house-00/game.gbc",
+        "initial_state": "runs/state-driven-tail-cave-disengage-guarded-v1/development-house-00/initial.state"
+      },
+      "midroute_state_loads_allowed": 0,
+      "max_decisions": 30000,
+      "max_emulator_frames": 150000,
+      "max_wall_seconds": 900
+    },
+    {
+      "id": "fresh-house-06",
+      "kind": "house",
+      "seed": 0,
+      "house_idle_frames": 257,
+      "start": {
+        "rom": "runs/state-driven-tail-cave-disengage-guarded-v1/development-house-00/game.gbc",
+        "initial_state": "runs/state-driven-tail-cave-disengage-guarded-v1/development-house-00/initial.state"
+      },
+      "midroute_state_loads_allowed": 0,
+      "max_decisions": 30000,
+      "max_emulator_frames": 150000,
+      "max_wall_seconds": 900
+    },
+    {
+      "id": "fresh-house-07",
+      "kind": "house",
+      "seed": 0,
+      "house_idle_frames": 307,
+      "start": {
+        "rom": "runs/state-driven-tail-cave-disengage-guarded-v1/development-house-00/game.gbc",
+        "initial_state": "runs/state-driven-tail-cave-disengage-guarded-v1/development-house-00/initial.state"
+      },
+      "midroute_state_loads_allowed": 0,
+      "max_decisions": 30000,
+      "max_emulator_frames": 150000,
+      "max_wall_seconds": 900
+    },
+    {
+      "id": "fresh-house-08",
+      "kind": "house",
+      "seed": 0,
+      "house_idle_frames": 359,
+      "start": {
+        "rom": "runs/state-driven-tail-cave-disengage-guarded-v1/development-house-00/game.gbc",
+        "initial_state": "runs/state-driven-tail-cave-disengage-guarded-v1/development-house-00/initial.state"
+      },
+      "midroute_state_loads_allowed": 0,
+      "max_decisions": 30000,
+      "max_emulator_frames": 150000,
+      "max_wall_seconds": 900
+    },
+    {
+      "id": "fresh-house-09",
+      "kind": "house",
+      "seed": 0,
+      "house_idle_frames": 419,
+      "start": {
+        "rom": "runs/state-driven-tail-cave-disengage-guarded-v1/development-house-00/game.gbc",
+        "initial_state": "runs/state-driven-tail-cave-disengage-guarded-v1/development-house-00/initial.state"
+      },
+      "midroute_state_loads_allowed": 0,
+      "max_decisions": 30000,
+      "max_emulator_frames": 150000,
+      "max_wall_seconds": 900
+    },
+    {
+      "id": "fresh-house-10",
+      "kind": "house",
+      "seed": 0,
+      "house_idle_frames": 479,
+      "start": {
+        "rom": "runs/state-driven-tail-cave-disengage-guarded-v1/development-house-00/game.gbc",
+        "initial_state": "runs/state-driven-tail-cave-disengage-guarded-v1/development-house-00/initial.state"
+      },
+      "midroute_state_loads_allowed": 0,
+      "max_decisions": 30000,
+      "max_emulator_frames": 150000,
+      "max_wall_seconds": 900
+    },
+    {
+      "id": "fresh-house-11",
+      "kind": "house",
+      "seed": 0,
+      "house_idle_frames": 541,
+      "start": {
+        "rom": "runs/state-driven-tail-cave-disengage-guarded-v1/development-house-00/game.gbc",
+        "initial_state": "runs/state-driven-tail-cave-disengage-guarded-v1/development-house-00/initial.state"
+      },
+      "midroute_state_loads_allowed": 0,
+      "max_decisions": 30000,
+      "max_emulator_frames": 150000,
+      "max_wall_seconds": 900
+    },
+    {
+      "id": "fresh-house-12",
+      "kind": "house",
+      "seed": 0,
+      "house_idle_frames": 607,
+      "start": {
+        "rom": "runs/state-driven-tail-cave-disengage-guarded-v1/development-house-00/game.gbc",
+        "initial_state": "runs/state-driven-tail-cave-disengage-guarded-v1/development-house-00/initial.state"
+      },
+      "midroute_state_loads_allowed": 0,
+      "max_decisions": 30000,
+      "max_emulator_frames": 150000,
+      "max_wall_seconds": 900
+    },
+    {
+      "id": "fresh-house-13",
+      "kind": "house",
+      "seed": 0,
+      "house_idle_frames": 673,
+      "start": {
+        "rom": "runs/state-driven-tail-cave-disengage-guarded-v1/development-house-00/game.gbc",
+        "initial_state": "runs/state-driven-tail-cave-disengage-guarded-v1/development-house-00/initial.state"
+      },
+      "midroute_state_loads_allowed": 0,
+      "max_decisions": 30000,
+      "max_emulator_frames": 150000,
+      "max_wall_seconds": 900
+    },
+    {
+      "id": "fresh-house-14",
+      "kind": "house",
+      "seed": 0,
+      "house_idle_frames": 743,
+      "start": {
+        "rom": "runs/state-driven-tail-cave-disengage-guarded-v1/development-house-00/game.gbc",
+        "initial_state": "runs/state-driven-tail-cave-disengage-guarded-v1/development-house-00/initial.state"
+      },
+      "midroute_state_loads_allowed": 0,
+      "max_decisions": 30000,
+      "max_emulator_frames": 150000,
+      "max_wall_seconds": 900
+    },
+    {
+      "id": "fresh-house-15",
+      "kind": "house",
+      "seed": 0,
+      "house_idle_frames": 811,
+      "start": {
+        "rom": "runs/state-driven-tail-cave-disengage-guarded-v1/development-house-00/game.gbc",
+        "initial_state": "runs/state-driven-tail-cave-disengage-guarded-v1/development-house-00/initial.state"
+      },
+      "midroute_state_loads_allowed": 0,
+      "max_decisions": 30000,
+      "max_emulator_frames": 150000,
+      "max_wall_seconds": 900
+    },
+    {
+      "id": "fresh-house-16",
+      "kind": "house",
+      "seed": 0,
+      "house_idle_frames": 883,
+      "start": {
+        "rom": "runs/state-driven-tail-cave-disengage-guarded-v1/development-house-00/game.gbc",
+        "initial_state": "runs/state-driven-tail-cave-disengage-guarded-v1/development-house-00/initial.state"
+      },
+      "midroute_state_loads_allowed": 0,
+      "max_decisions": 30000,
+      "max_emulator_frames": 150000,
+      "max_wall_seconds": 900
+    },
+    {
+      "id": "fresh-house-17",
+      "kind": "house",
+      "seed": 0,
+      "house_idle_frames": 953,
+      "start": {
+        "rom": "runs/state-driven-tail-cave-disengage-guarded-v1/development-house-00/game.gbc",
+        "initial_state": "runs/state-driven-tail-cave-disengage-guarded-v1/development-house-00/initial.state"
+      },
+      "midroute_state_loads_allowed": 0,
+      "max_decisions": 30000,
+      "max_emulator_frames": 150000,
+      "max_wall_seconds": 900
+    },
+    {
+      "id": "fresh-house-18",
+      "kind": "house",
+      "seed": 0,
+      "house_idle_frames": 1031,
+      "start": {
+        "rom": "runs/state-driven-tail-cave-disengage-guarded-v1/development-house-00/game.gbc",
+        "initial_state": "runs/state-driven-tail-cave-disengage-guarded-v1/development-house-00/initial.state"
+      },
+      "midroute_state_loads_allowed": 0,
+      "max_decisions": 30000,
+      "max_emulator_frames": 150000,
+      "max_wall_seconds": 900
+    },
+    {
+      "id": "fresh-house-19",
+      "kind": "house",
+      "seed": 0,
+      "house_idle_frames": 1109,
+      "start": {
+        "rom": "runs/state-driven-tail-cave-disengage-guarded-v1/development-house-00/game.gbc",
+        "initial_state": "runs/state-driven-tail-cave-disengage-guarded-v1/development-house-00/initial.state"
+      },
+      "midroute_state_loads_allowed": 0,
+      "max_decisions": 30000,
+      "max_emulator_frames": 150000,
+      "max_wall_seconds": 900
+    },
+    {
+      "id": "actual-half-heart-00",
+      "kind": "recovery",
+      "seed": 0,
+      "house_idle_frames": 142,
+      "start": {
+        "rom": "runs/state-driven-tail-cave-disengage-guarded-v1/development-house-00/game.gbc",
+        "initial_state": "runs/state-driven-tail-cave-disengage-guarded-v1/development-house-00/initial.state"
+      },
+      "midroute_state_loads_allowed": 0,
+      "max_decisions": 30000,
+      "max_emulator_frames": 150000,
+      "max_wall_seconds": 900,
+      "challenge": {
+        "checkpoint": "first arrival at room1D Feather trap approach before Feather acquisition",
+        "required_room": [
+          1,
+          0,
+          29
+        ],
+        "x_range": [
+          68,
+          76
+        ],
+        "y_range": [
+          114,
+          128
+        ],
+        "health_raw": 4,
+        "pending_damage": 0,
+        "pending_healing": 0,
+        "must_be_observed_in_same_continuous_house_episode": true,
+        "health_writes_allowed": false,
+        "if_not_observed": "case fails recovery prerequisite; do not count an easier high-health run",
+        "required_recovery": "physical full heal followed by the same full-health door endpoint"
+      }
+    },
+    {
+      "id": "actual-half-heart-01",
+      "kind": "recovery",
+      "seed": 0,
+      "house_idle_frames": 386,
+      "start": {
+        "rom": "runs/state-driven-tail-cave-disengage-guarded-v1/development-house-00/game.gbc",
+        "initial_state": "runs/state-driven-tail-cave-disengage-guarded-v1/development-house-00/initial.state"
+      },
+      "midroute_state_loads_allowed": 0,
+      "max_decisions": 30000,
+      "max_emulator_frames": 150000,
+      "max_wall_seconds": 900,
+      "challenge": {
+        "checkpoint": "first arrival at room1D Feather trap approach before Feather acquisition",
+        "required_room": [
+          1,
+          0,
+          29
+        ],
+        "x_range": [
+          68,
+          76
+        ],
+        "y_range": [
+          114,
+          128
+        ],
+        "health_raw": 4,
+        "pending_damage": 0,
+        "pending_healing": 0,
+        "must_be_observed_in_same_continuous_house_episode": true,
+        "health_writes_allowed": false,
+        "if_not_observed": "case fails recovery prerequisite; do not count an easier high-health run",
+        "required_recovery": "physical full heal followed by the same full-health door endpoint"
+      }
+    },
+    {
+      "id": "actual-half-heart-02",
+      "kind": "recovery",
+      "seed": 0,
+      "house_idle_frames": 698,
+      "start": {
+        "rom": "runs/state-driven-tail-cave-disengage-guarded-v1/development-house-00/game.gbc",
+        "initial_state": "runs/state-driven-tail-cave-disengage-guarded-v1/development-house-00/initial.state"
+      },
+      "midroute_state_loads_allowed": 0,
+      "max_decisions": 30000,
+      "max_emulator_frames": 150000,
+      "max_wall_seconds": 900,
+      "challenge": {
+        "checkpoint": "first arrival at room1D Feather trap approach before Feather acquisition",
+        "required_room": [
+          1,
+          0,
+          29
+        ],
+        "x_range": [
+          68,
+          76
+        ],
+        "y_range": [
+          114,
+          128
+        ],
+        "health_raw": 4,
+        "pending_damage": 0,
+        "pending_healing": 0,
+        "must_be_observed_in_same_continuous_house_episode": true,
+        "health_writes_allowed": false,
+        "if_not_observed": "case fails recovery prerequisite; do not count an easier high-health run",
+        "required_recovery": "physical full heal followed by the same full-health door endpoint"
+      }
+    },
+    {
+      "id": "actual-half-heart-03",
+      "kind": "recovery",
+      "seed": 0,
+      "house_idle_frames": 1058,
+      "start": {
+        "rom": "runs/state-driven-tail-cave-disengage-guarded-v1/development-house-00/game.gbc",
+        "initial_state": "runs/state-driven-tail-cave-disengage-guarded-v1/development-house-00/initial.state"
+      },
+      "midroute_state_loads_allowed": 0,
+      "max_decisions": 30000,
+      "max_emulator_frames": 150000,
+      "max_wall_seconds": 900,
+      "challenge": {
+        "checkpoint": "first arrival at room1D Feather trap approach before Feather acquisition",
+        "required_room": [
+          1,
+          0,
+          29
+        ],
+        "x_range": [
+          68,
+          76
+        ],
+        "y_range": [
+          114,
+          128
+        ],
+        "health_raw": 4,
+        "pending_damage": 0,
+        "pending_healing": 0,
+        "must_be_observed_in_same_continuous_house_episode": true,
+        "health_writes_allowed": false,
+        "if_not_observed": "case fails recovery prerequisite; do not count an easier high-health run",
+        "required_recovery": "physical full heal followed by the same full-health door endpoint"
+      }
+    }
+  ],
+  "controller_binding": null,
+  "execution_prerequisites": [
+    "Freeze a complete reusable teacher implementation and its source/config/model hashes in a separate candidate binding before running any case.",
+    "Recorded command prefixes are replay evidence only and cannot implement the qualification teacher.",
+    "No case-specific controller edits or human rescue; any such intervention fails that case.",
+    "A failed candidate remains rejected; preserve all results and do not alter this panel retroactively."
+  ],
+  "training_eligible": false,
+  "labels_authorized": false,
+  "sealed_validation_used": false,
+  "wipe_ready": false
+}

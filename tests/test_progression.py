@@ -16,7 +16,7 @@ sys.path.insert(0, str(ROOT / 'src'))
 from gameboy_agent.progression import ProgressJournal, snapshot
 from gameboy_agent.progression_env import ProgressionEnv, advance_progression
 from gameboy_agent.transitions import TransitionTracker, TransitionTimeout
-from gameboy_agent.progression_skills import equip_item, InteractionFailure
+from gameboy_agent.progression_skills import equip_item, dismiss_dialogue, InteractionFailure
 
 
 def state(**updates):
@@ -29,6 +29,29 @@ def state(**updates):
 
 
 class JournalTests(unittest.TestCase):
+    def test_dialogue_dismissal_releases_controls_and_is_bounded(self):
+        calls = []
+        env = SimpleNamespace(pyboy=object(), step_input_events=lambda *a, **k:calls.append((a,k)))
+        with patch('gameboy_agent.progression_skills.snapshot',return_value=state(dialog_state=1,dialog_id=141)):
+            with self.assertRaises(InteractionFailure):
+                dismiss_dialogue(env,max_pulses=2)
+        self.assertEqual(set(calls[0][1]['release']),{'up','down','left','right','a','b','start','select'})
+        self.assertEqual(sum(a==(['a'],) for a,k in calls),2)
+        self.assertEqual(sum(k['frames'] for a,k in calls),245)
+
+    def test_precise_dialogue_returns_as_soon_as_world_resumes(self):
+        calls=[]
+        observed=state(dialog_state=1,dialog_id=8)
+        def step(*args,**kwargs):
+            calls.append(kwargs['frames'])
+            self.assertTrue(observed['dialog_state'], 'Must not advance an exposed world after closure')
+            if len(calls)==3:observed['dialog_state']=0
+        env=SimpleNamespace(pyboy=object(),step_input_events=step)
+        with patch('gameboy_agent.progression_skills.snapshot',side_effect=lambda _:dict(observed)):
+            result=dismiss_dialogue(env,precise=True)
+        self.assertEqual(result['status'],'closed')
+        self.assertEqual(calls,[1,1,1])
+
     def test_initial_success_is_rejected(self):
         for initial in (state(tail_key=1), state(tail_door_status=16), state(room=[1,0,23])):
             with self.assertRaises(ValueError):
@@ -175,6 +198,41 @@ class LiveInterfaceTests(unittest.TestCase):
         with patch.object(self.env, 'get_map_pos', return_value=(9,1,12)):
             self.env.script_give_magic_powder()
         self.assertEqual(before,bytes(self.env.pyboy.memory[0xDB00:0xDB80]))
+
+    def test_clocked_events_observe_each_frame_and_stop_at_budget(self):
+        env = self.env
+        start = env.frames
+        env.max_frames = start + 5
+        observed = []
+        original = env.journal.observe
+        def observe(state, **kwargs):
+            observed.append(kwargs['frame'])
+            return original(state, **kwargs)
+        with patch.object(env.journal, 'observe', side_effect=observe):
+            _, _, _, truncated, info = env.step_input_events(['right'], frames=64,
+                                                            release_after=['right'])
+        self.assertTrue(truncated)
+        self.assertEqual(observed, list(range(start+1, start+6)))
+        self.assertEqual(info['frames_advanced'], 5)
+        self.assertEqual(env.episode_actions[-1]['timing'], 'emulated_frames')
+        with self.assertRaises(RuntimeError):
+            env.step_input_events(frames=1)
+
+    def test_clocked_events_replay_diagonal_hold_and_release(self):
+        env = self.env
+        def play():
+            initial = env.frames
+            env.step_input_events(['left', 'up'], frames=18, release_after=['left', 'up'])
+            env.step_input_events(['left'], frames=64, release_after=['left'])
+            env.step_input_events(frames=8)
+            self.assertEqual(env.frames-initial, 90)
+            return snapshot(env.pyboy), env.pyboy.screen.ndarray.copy(), env.journal.state()
+        first, image, journal = play()
+        env.reset(seed=0)
+        second, replay_image, replay_journal = play()
+        self.assertEqual(first, second)
+        np.testing.assert_array_equal(image, replay_image)
+        self.assertEqual(journal, replay_journal)
 
     def test_equip_skill_uses_observed_slots_and_has_missing_item_boundary(self):
         with self.assertRaises(InteractionFailure):

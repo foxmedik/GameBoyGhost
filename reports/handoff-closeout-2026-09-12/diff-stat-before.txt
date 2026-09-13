@@ -1,0 +1,17 @@
+README.md                                   |  16 ++--
+ configs/progression_protocol_v1.json        |  56 +++++++++++--
+ configs/research_focus.json                 |  80 ++++++++++++++++---
+ docs/HANDOFF_2026-09-11_DEMO_RECORDER.md    |   2 +
+ docs/HUMAN_DEMO_PLAYLIST_START_TOADSTOOL.md |   2 +
+ docs/PROGRESSION_EXECUTION_PLAN.md          |   2 +
+ docs/PROJECT_STATUS.md                      | 120 ++++++++++++++++++++--------
+ docs/TOADSTOOL_ROUTE_AUDIT.md               |   2 +
+ docs/handoffs/RICE_SESSION_HANDOFF.md       |  89 +++++++++++++++++++++
+ src/gameboy_agent/cave_navigation.py        |  42 ++++++++++
+ src/gameboy_agent/progression_env.py        |  69 ++++++++++++++--
+ src/gameboy_agent/progression_skills.py     |  22 +++++
+ src/gameboy_agent/terrain_navigation.py     |  19 +++++
+ tests/test_cave_navigation.py               |  17 ++++
+ tests/test_progression.py                   |  47 ++++++++++-
+ tests/test_terrain_navigation.py            |   9 ++-
+ 16 files changed, 522 insertions(+), 72 deletions(-)

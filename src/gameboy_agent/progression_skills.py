@@ -10,6 +10,31 @@ class InteractionFailure(RuntimeError):
     pass
 
 
+def dismiss_dialogue(env, *, max_pulses=12, precise=False):
+    """Release movement and advance observed dialogue with bounded physical A.
+
+    Waiting lets unskippable text render. The ID is evidence of an interruption,
+    not a claim to have decoded its text or speaker.
+    """
+    from gameboy_agent.transitions import BUTTONS
+    initial = snapshot(env.pyboy)
+    if not initial['dialog_state']:
+        return dict(status='absent', pulses=0)
+    env.step_input_events(release=BUTTONS, frames=1)
+    for count in range(max_pulses):
+        for _ in range(120 if precise else 1):
+            env.step_input_events(frames=1 if precise else 120)
+            if not snapshot(env.pyboy)['dialog_state']:
+                return dict(status='closed', dialog_id=initial['dialog_id'], pulses=count)
+        if not snapshot(env.pyboy)['dialog_state']:
+            return dict(status='closed', dialog_id=initial['dialog_id'], pulses=count)
+        env.step_input_events(['a'], frames=1, release_after=['a'])
+        env.step_input_events(frames=1)
+        if not snapshot(env.pyboy)['dialog_state']:
+            return dict(status='closed', dialog_id=initial['dialog_id'], pulses=count+1)
+    raise InteractionFailure(f'Dialogue {initial["dialog_id"]:03X} did not close within {max_pulses} pulses')
+
+
 def equip_item(env, item, *, button='a', budget=40):
     if button not in ('a', 'b') or item not in range(1, 14) or item == 9:
         raise ValueError('Unsupported item/button; ocarina submenu requires a separate skill')

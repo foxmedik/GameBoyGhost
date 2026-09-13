@@ -1,0 +1,11 @@
+{
+  "hypothesis": "Lower room0F uses observed-facing enemy defense with A release while blade settles, avoiding held-A approach contact.",
+  "cases": [
+    "house307",
+    "house743",
+    "house673",
+    "recovery698"
+  ],
+  "qualification": false,
+  "training_eligible": false
+}

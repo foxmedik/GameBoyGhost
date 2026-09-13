@@ -1,0 +1,11 @@
+{
+  "hypothesis": "Outer-aisle beetle bait via row72; room10 diagonal launch y40 instead of48 to land at72. Same budgets and endpoint.",
+  "cases": [
+    "house41",
+    "house67",
+    "house307",
+    "recovery23"
+  ],
+  "qualification": false,
+  "training_eligible": false
+}

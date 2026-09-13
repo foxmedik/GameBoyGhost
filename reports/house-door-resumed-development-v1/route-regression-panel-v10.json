@@ -1,0 +1,11 @@
+{
+  "hypothesis": "Accept physical west doorway y60..80 at Rolling Bones, then perform existing left-side retreat; unchanged combat and endpoint contracts.",
+  "cases": [
+    "house41",
+    "house67",
+    "house97",
+    "recovery23"
+  ],
+  "qualification": false,
+  "training_eligible": false
+}

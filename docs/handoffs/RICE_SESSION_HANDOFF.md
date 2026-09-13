@@ -409,3 +409,92 @@ Five revised development runs are recorded in `runs/progression-forest-terrain-v
 All five traces replay exactly. Full suite101/101 passed37.874s; log in v5. Report `reports/progression-forest-progress-v1.json`, explanation `docs/PROGRESSION_FOREST_TERRAIN.md`, merged evidence memory `runs/progression-forest-progress-v1/memory-generation-4.json`. Source policy unchanged. Component cache/visit counts are episode-local, not inherited world-memory topology.
 
 NEXT: verify explicit toadstool approach subgoals and any required indoor/cave transitions; current extension runner stops on unexpected indoors. Do not spend another outdoor-wandering budget or start broad training before identifying that route/interaction gap. Preserve forest entry at full health as regression. Stage3 is incomplete; no quest or generalization claim.
+
+
+## Continuation update — physical toadstool and cave return verified, recorder shelved
+
+The user explicitly agreed to shelve human recorder work and resume Tail Key/Tail Cave progression. Preserve recorder code/captures; do not request more demonstrations or fix the recorder as a prerequisite. This update supersedes earlier next-work instructions.
+
+Read `docs/PROJECT_STATUS.md` and `docs/PROGRESSION_TOADSTOOL_AND_RETURN.md`. New exact-frame physical input events keep journal/frame accounting intact. `scripts/run_toadstool_progression.py` records full house-start traces and independently replays them. Toadstool v1 succeeds (2,912 decisions, 17,331 frames, 8 raw damage, health16); cave-return v4 succeeds (3,143 decisions, 18,659 frames, 12 total damage, health12). Two outbound and three return pushes are physically grid-verified. These are scripted teacher baselines, not newly learned quest policies.
+
+Current next blocker: `runs/progression-witch-exchange-v2` reaches room42 at (44,101), health12, dialogue08D open, and stops on the bounded approach. Shielding prevented additional damage in this attempt. Add bounded dialogue handling and reassess the physical path; no witch/powder, Tarin, Tail Key or entry success yet. All seven new attempts replay exactly; retain failed traces. 112/112 tests pass, selected policy hash unchanged, no optimizer or reserved evaluation use. Aggregate evidence: `reports/progression-toadstool-integration-v1.json`.
+
+
+## Continuation update — witch exchange physically verified
+
+The room42 interruption is resolved on a recorded development route. `runs/progression-witch-exchange-v12` completes the continuous house-to-powder sequence: 3,696 decisions, 23,053 frames, 16 total raw damage, health8, mushroom consumed, 32 powder physically obtained, receipt dialogue closed. Full independent action/state/journal replay passes. This is a scripted teacher baseline, with no model updates or runtime human rescue.
+
+Read `docs/PROGRESSION_WITCH_EXCHANGE.md` and `docs/PROJECT_STATUS.md`. Current next work: physically return to Tarin with powder, validate the cure, then Tail Key and Tail Cave. Preserve health accounting and the complete verified prefix. Recorder work remains shelved.
+
+All v3–v12 development attempts are retained. Broad nearby-enemy attacking caused a death in v6 and was rejected; current logic shields in transit and bounds move-and-sword responses to observed stalls/pushback. Navigation aligns across corridors; dialogue handling is bounded; witch interaction uses a reachable stance below the NPC. Final extension budget2,048 decisions, unchanged total house caps. 114/114 tests pass. Compact ledger: `reports/progression-witch-exchange-summary-v1.json`.
+
+
+## Continuation update — Tarin cure physically verified
+
+User requested Tarin after explicitly clarifying that this progression is scripted, not performed by a newly trained AI model. `runs/progression-tarin-v3` verifies the continuous house → sword → mushroom → witch/powder → Tarin cure: 4,302 decisions, 28,405 frames, 20 total raw damage, no healing, final health4 and powder24. The game sets Tarin flag DB48 from0 to1; dialogue closes and an additional240 physical frames settle the cure. Every command/state/frame and the event journal match independent replay. No Tail Key or cave entry yet.
+
+Read `docs/PROGRESSION_TARIN_CURE.md` and `docs/PROJECT_STATUS.md`. Direct52→51 failed because the arrival component has no reachable west exit; the successful return uses52→62→61→51. V1 failure and V2 initial cure remain preserved; V3 is the selected proof. All three manifests verified. Full suite114/114 passes in37.012 seconds, selected policy hash unchanged, zero optimizer updates or reserved evaluation. Aggregate ledger: `reports/progression-tarin-summary-v1.json`. After capture only the runner docstring and prefix-failure wording changed; its saved plan retains original source hashes.
+
+Next milestone is the Tail Key, then physically unlocking Tail Cave and settled entry. Health is only4 raw units; preserve damage/healing accounting and the verified prefix. This remains a scripted teacher baseline; learned progression and reliability remain unverified. Recorder work stays shelved.
+
+
+## Continuation update — Tail Key physically acquired
+
+User requested “ok next go get the key.” `runs/progression-tail-key-v2` completes the continuous house-to-Tail-Key scripted baseline:4,404 decisions,30,229 frames,total damage20/healing0,final health4,powder24. The extension from Tarin is102 decisions/1,824 frames with zero additional damage. DB11 changes0→1, chest A0→A1 in room41 at cell(4,3), dialogue closes and240 additional settling frames pass. Full independent action/state/frame/journal replay is exact. No model training or reserved evaluation occurred.
+
+V1 retained a safe blocker at the bush below the chest. V2 physically equips the sword, clears that bush (5C→04 verified), and opens the chest with physical inputs. Both manifests and all V2 source hashes verify. Full suite114/114 passes in36.828s; selected policy unchanged. Read `docs/PROGRESSION_TAIL_KEY.md`; ledger `reports/progression-tail-key-summary-v1.json`. Latest memory is `runs/progression-tail-key-v2/memory-generation-5.json`.
+
+Next is reaching the keyhole, physically unlocking Tail Cave and settled entry alive; these remain unverified and overall quest_success remains false. Preserve health accounting and the full prefix. Scripted proof is not learned-model capability or reliability evidence. Recorder work stays shelved.
+
+
+## Continuation update — complete scripted house-to-Tail-Cave proof
+
+User said “let goooo” after the Tail Key. `runs/progression-tail-cave-v12` now completes the full continuous supplied-house → sword → mushroom → witch/powder → Tarin cure → Tail Key → unlock → settled Tail Cave entrance alive. Total5,192 decisions/33,991 frames, damage20/healing16, final health20/powder24, room[1,0,23], dialogueclosed. Extension after key:788 decisions/3,762 frames, no additional damage. The game opened D3's event bit and journaled living settled entry; quest_success=true. All action/state/frame/event/journal replay is exact. No RAM assignments, intermediate loads, runtime rescue, new training or reserved evaluation. This is scripted baseline capability, not a learned-model accomplishment.
+
+Read `docs/PROGRESSION_TAIL_CAVE_ENTRY.md` and `docs/PROJECT_STATUS.md`. All12 attempts retained: early forest routes included2 deaths; route via61→60→70 avoids the encounter. Cutting the90 bush physically opened the village route; health then rose4→20 during movement, recorded without unverified cause attribution. Route throughB0 passes between children. C2→C3→C2 re-enters the lower component, thenD2→D3. Keyhole approach,600-frame animation wait and physical doorway entry complete the proof.
+
+All12 manifests verify; V12 source hashes and selected policy hash match. Full115/115 tests pass36.727s, no skips. Earlier suite overlapped a source edit and failed a checkpoint source-integrity assertion; frozen-source rerun passes and both logs are preserved. Ledger: `reports/progression-tail-cave-summary-v1.json`. Latest memory: `runs/progression-tail-cave-v12/memory-generation-5.json`.
+
+Stage3 initial guided proof is complete; stage5 first house proof is satisfied, varied-start reliability remains pending. Next freeze the baseline and define development/validation panels before reliability, learned-control or inheritance claims. Do not infer authorization for broad training or deeper dungeon progression from this proof. Recorder work stays shelved.
+
+
+## One-hour physical-variation batch dispatched — 2026-09-11
+
+User authorized approximately one hour of data collection while away. `scripts/run_progression_longrun.py` is running detached under caffeinate as PID57520, started18:26:17 UTC,3600-second admission budget then bounded drain. Output `runs/progression-longrun-hour-v1`; adjacent `.log`; portable incremental report `reports/progression-longrun-hour-v1.json`. Frozen761-case plan:control,20 house development,20 disjoint house validation,720 development-only conditional stage probes in deterministic shuffled order until deadline. This is the mixed saved-command-prefix/live-scripted-suffix baseline, not a learned-policy evaluation. Do not edit source/weights or replay specs while running.
+
+Two-case smoke succeeded on original control and died after1 physical idle frame at house; both exact replay. No tuning followed. Stage probes use full physical house reconstruction before local perturbation. Record prefix cost/setup damage, all outcomes and independent replay; no RAM perturbation, intermediate loads, optimizer updates or historical reserved navigation use. Freeze source copies/hash records; stop on resource floors, source change,3 infrastructure errors or STOP file.
+
+Heartbeat `progression-hour-run-follow-up` is active every10 minutes in this task. Stay quiet while healthy; on completion verify all manifests, produce `docs/PROGRESSION_LONGRUN_HOUR.md` with actual results and update status/handoff, then pause heartbeat. Do not extend/restart automatically. Check `/tmp/gameboy-longrun-final-tests.log` for the concurrent frozen-source regression and preserve it.
+
+Launch checks completed: original full control succeeds with exact replay;116/116 tests pass37.019s, no skips. Regression log and summary saved in the run directory. The long run remains active; current failures are data, not permission to modify the frozen candidate.
+
+
+## One-hour run complete — reliability failed, evidence verified
+
+Stopped at the requested deadline after60m10s.235 cases,896,813 recorded decisions/5,768,627 frames plus exact replay of every case. All manifests, frozen/current source hashes and model hash verify;116 tests pass.194 conditional stage probes add81,347 post-prefix decisions; most overall actions are repeated setup, not unique learning samples. Report `docs/PROGRESSION_LONGRUN_HOUR.md`; portable ledger `reports/progression-longrun-hour-v1.json`.
+
+Control1/1; house development0/20 (6 deaths); separate validation0/20 (5 deaths). Original proof remains valid, reliability gate fails. Conditional development: cave return28/28, witch21/33, Tarin29/40, key24/24, cave31/34, mushroom2/35. No optimizer or reserved navigation evaluation. House failures reveal brittle recorded-prefix timing and wrong-room suffix invocation; mushroom approach and room42 are leading development bottlenecks. Review development traces, add state-checked handoffs/recovery before training; do not tune on validation results. No run restart/extension or further dungeon work. Heartbeat progression-hour-run-follow-up is being paused.
+
+
+## State-driven teacher gate passed; local-control experiment frozen
+
+The timing-sensitive recorded-prefix handoff has been replaced in the new development teacher. `progression_contracts.py` validates the exact room, settled/alive state, inventory and prerequisite flags before each stage. Nonadjacent/wrapped/wrong-room traversal now raises `StageBlocked` with expected and observed state rather than a room-delta `KeyError`. Forest movement follows verified spatial observations with live room/position checks; mushroom pickup observes the actual latch; local transitions verify the crossing; bounded aimed-sword and lateral recovery target the mushroom and room42 bottlenecks.
+
+Selected evidence is `runs/state-driven-teacher-development-v3` and `reports/state-driven-teacher-v1.json`:18/20 visible development house starts reach settled Tail Cave entry alive, meeting the teacher gate. All20 traces, including deaths in rooms52 and42, replay exactly. Total94,754 decisions/635,596 frames; source and selected-policy hashes match. Full suite119/119 passes. This remains a scripted state-driven teacher using existing learned components, not a newly trained quest model.
+
+The completed20 validation specifications/results in `runs/progression-longrun-hour-v1` remain sealed evaluation evidence. They were not loaded for these repairs, used for model selection, or relabeled as development data.
+
+`configs/progression_local_control_v1.json` is the frozen, untrained next experiment. It learns only short-horizon movement/A/B control under explicit planner goals, emphasizing rooms0x52 and0x42. Planner stages, preconditions, interactions and recovery remain explicit. Four successful teacher cases are fixed as visible learner development;14 supply training data; the2 deaths remain development evidence and are excluded as positive labels. Before any optimizer update, implement replay-time extraction of complete structured observations and verify all source hashes. Do not load the sealed validation panel during extraction, training, selection, or recovery tuning.
+
+Replay-time extraction subsequently re-emulated and reverified every successful source, producing6,895 training and2,037 fixed visible-development rows. Candidate1 was rejected before live evaluation after predicting zero B actions. Candidate2 used balanced room/button sampling and restored all classes but missed its frozen55% button gate (32.7%). Candidate3, frozen before its updates, used the same data/sampling for32 fixed epochs and passed the offline gate at the final epoch:66.8% movement,59.9% button accuracy, every class predicted. Reports `reports/progression-local-control-v1.json` through `v3.json`; candidate3 remains unpromoted and has not run live. Selected runtime unchanged. The candidate cap of3 is reached; next freeze a development-only arrival panel and run candidate3 behind explicit recovery, without accessing validation. Current full suite121/121 passes.
+
+The frozen live panel completed afterward: candidate3 succeeds3/20 local crossings, with16 stalls and1 death; all20 exact replays pass. Only two witch52→42 and one Tarin52→62 contexts succeed. It is rejected, selected runtime remains unchanged, and no validation data was loaded. `reports/progression-local-control-v3-live.json`. The three-candidate cap is exhausted; do not launch candidate4. Required next step is a strategy review of action duration, partial observability and learner-state/closed-loop collection. Keep the scripted18/20 teacher as the baseline and keep the old20-case validation evidence sealed.
+
+
+## Learner-state correction succeeds locally; full-teacher preservation blocks enablement
+
+User said “do it” to the strategy review. Frozen `configs/progression_dagger_v1.json` narrows scope to mushroom-stage room52→62, fixes one exit goal per attempt, adds four-decision action/duration history, predicts duration1/3/10, and freezes20 correction plus20 separate development arrivals before training. Initial collection was stopped at1/9 when its teacher recentered at the boundary; maximum possible score was12/20. Preserved `runs/progression-dagger-v1-collection`. V2 explicitly switches from approach to crossing at the boundary and passes20/20, exact replay, after640 rejected-learner decisions;190 teacher correction rows.
+
+Frozen24-epoch model `runs/progression-dagger-v1-model/candidate.pt` fits corrections at99.5% movement/button/duration. More important: fresh live development passes20/20 with zero recoveries,668 model decisions, all full health and exact replay. Following-interaction panel passes10/10 continuous learned crossing→cave→physical mushroom acquisition, all full health and exact replay. Report `reports/progression-dagger-v1.json`; bounded selection record `configs/progression_local_controller.json`. No old validation case was loaded.
+
+Full visible-development teacher integration fails preservation at16/20 (required18). All20 exact replay. Learned crossing/pickup succeed, but changed timing causes three later deaths in room52 and one in54. Keep the learned controller selected only as a bounded local result and disabled in the whole teacher; retain the original state-driven18/20 whole-quest baseline. Next establish reliable recovery from those downstream states before another integration candidate. Current suite122/122 passes; all manifests/config/report JSON and hashes verified.

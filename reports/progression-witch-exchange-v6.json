@@ -1,0 +1,103 @@
+{
+  "result": {
+    "status": "blocked",
+    "failure": "Episode ended before the requested progression stage finished",
+    "steps": 3309,
+    "frames": 19271,
+    "damage_raw": 24,
+    "healing_raw": 0,
+    "final": {
+      "phase": {
+        "gameplay": 11,
+        "subtype": 7,
+        "scroll": 0,
+        "sequence": 4,
+        "palette": 0,
+        "room": [
+          0,
+          0,
+          82
+        ],
+        "health": 0
+      },
+      "room": [
+        0,
+        0,
+        82
+      ],
+      "x": 105,
+      "y": 44,
+      "health": 0,
+      "max_hearts": 3,
+      "inventory": [
+        4,
+        1,
+        12,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "sword": 1,
+      "toadstool": 1,
+      "powder": 0,
+      "bombs": 0,
+      "arrows": 0,
+      "tail_key": 0,
+      "tarin": 0,
+      "tail_door_status": 0,
+      "trade_item": 0,
+      "dialog_state": 0,
+      "dialog_id": 0,
+      "inventory_cursor": 0
+    },
+    "milestones": {
+      "sword_acquired": 17,
+      "toadstool_acquired": 61
+    },
+    "quest_success": false,
+    "exact_action_replay": true,
+    "assistance": "scripted_known_route_with_source_grounded_rom_senses",
+    "human_interventions": 0,
+    "optimizer_updates": 0,
+    "reserved_evaluation_used": false,
+    "wall_seconds": 12.41
+  },
+  "evidence": [
+    {
+      "kind": "toadstool_prefix_exact",
+      "decisions": 3143,
+      "frame": 18659
+    },
+    {
+      "kind": "bounded_sword_stall_response",
+      "room": [
+        0,
+        0,
+        98
+      ],
+      "frame": 18895
+    },
+    {
+      "kind": "return_transition",
+      "origin": [
+        0,
+        0,
+        98
+      ],
+      "target": [
+        0,
+        0,
+        82
+      ],
+      "frame": 19072
+    }
+  ],
+  "output": "runs/progression-witch-exchange-v6",
+  "memory_version": "1fa2db797aba7959a2a3d2c2086774aab1ac758331c6663e533d462b954e5a8e"
+}

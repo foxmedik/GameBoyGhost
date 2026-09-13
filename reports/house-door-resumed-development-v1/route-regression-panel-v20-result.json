@@ -1,0 +1,43 @@
+{
+  "passed": 2,
+  "total": 5,
+  "cases": [
+    {
+      "case": "house359",
+      "summary": "runs/teacher-route-regression-panel-v20-house359/summary.json",
+      "success": true,
+      "exact_replay": true,
+      "failure": null
+    },
+    {
+      "case": "house419",
+      "summary": "runs/teacher-route-regression-panel-v20-house419/summary.json",
+      "success": true,
+      "exact_replay": true,
+      "failure": null
+    },
+    {
+      "case": "house479",
+      "summary": "runs/teacher-route-regression-panel-v20-house479/summary.json",
+      "success": false,
+      "exact_replay": true,
+      "failure": "RouteBlocker: Item route buffered damage or falling"
+    },
+    {
+      "case": "house541",
+      "summary": "runs/teacher-route-regression-panel-v20-house541/summary.json",
+      "success": false,
+      "exact_replay": true,
+      "failure": "RouteBlocker: Room0D guarded encounter budget exhausted"
+    },
+    {
+      "case": "recovery23",
+      "summary": "runs/teacher-route-regression-panel-v20-recovery23/summary.json",
+      "success": false,
+      "exact_replay": true,
+      "failure": "RouteBlocker: Item route buffered damage or falling"
+    }
+  ],
+  "qualified": false,
+  "training_eligible": false
+}

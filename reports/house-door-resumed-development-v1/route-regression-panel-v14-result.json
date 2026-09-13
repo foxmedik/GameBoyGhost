@@ -1,0 +1,36 @@
+{
+  "passed": 2,
+  "total": 4,
+  "cases": [
+    {
+      "case": "house173",
+      "summary": "runs/teacher-route-regression-panel-v14-house173/summary.json",
+      "success": true,
+      "exact_replay": true,
+      "failure": null
+    },
+    {
+      "case": "house257",
+      "summary": "runs/teacher-route-regression-panel-v14-house257/summary.json",
+      "success": false,
+      "exact_replay": true,
+      "failure": "RouteBlocker: Link is falling into a pit; movement cannot recover this state"
+    },
+    {
+      "case": "house307",
+      "summary": "runs/teacher-route-regression-panel-v14-house307/summary.json",
+      "success": false,
+      "exact_replay": true,
+      "failure": "RouteBlocker: Return requires the closed Nightmare Key receipt handoff; got {'phase': {'gameplay': 11, 'subtype': 7, 'scroll': 0, 'sequence': 4, 'palette': 0, 'room': (1, 0, 8), 'health': 24}, 'room': [1, 0, 8], 'x': 71, 'y': 40, 'health': 24, 'max_hearts': 3, 'inventory': [10, 1, 12, 4, 0, 0, 0, 0, 0, 0, 0, 0], 'sword': 1, 'toadstool': 0, 'powder': 24, 'bombs': 0, 'arrows': 0, 'tail_key': 1, 'tarin': 1, 'tail_door_status': 144, 'trade_item': 0, 'dialog_state': 0, 'dialog_id': 169, 'inventory_cursor': 1}"
+    },
+    {
+      "case": "recovery23",
+      "summary": "runs/teacher-route-regression-panel-v14-recovery23/summary.json",
+      "success": true,
+      "exact_replay": true,
+      "failure": null
+    }
+  ],
+  "qualified": false,
+  "training_eligible": false
+}

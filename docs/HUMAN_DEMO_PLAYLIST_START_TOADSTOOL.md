@@ -1,5 +1,7 @@
 # Human capture playlist: House to Toadstool
 
+> Current decision (11 September 2026): recorder work and collection are shelved. Preserve this as historical context; follow `docs/PROJECT_STATUS.md` for active progression work.
+
 Record these as short, repeatable takes. Each clip should begin from the named
 state or room, pursue one observable outcome, and stop as soon as that outcome
 is clear. The recorder supplies raw frames, exact input holds, Link position,

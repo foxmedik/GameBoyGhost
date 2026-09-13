@@ -1,0 +1,11 @@
+{
+  "hypothesis": "Replace periodic lower room0F swings with live Stalfos proximity action pressure, matching the existing upper-room approach; strict buffered-damage checks.",
+  "cases": [
+    "house131",
+    "house257",
+    "house307",
+    "recovery23"
+  ],
+  "qualification": false,
+  "training_eligible": false
+}

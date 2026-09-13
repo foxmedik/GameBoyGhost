@@ -1,0 +1,14 @@
+{
+  "source": "runs/teacher-feather-v1/continuation.json",
+  "source_sha256": "4c6b81fbe04292fe74fd864e0462c933e986ceb5c82ade551611f8a493bd5a52",
+  "case_count": 1,
+  "budget": {
+    "decisions": 900,
+    "frames": 4500
+  },
+  "hypothesis": "Jump south across traps from78, settle beyond114; corridor jump at65 reaches floating heart and settle full-health processing before entering underground return.",
+  "success": "room18hex upper ladder entry full health, one key, Feather B sword A, no buffered damage",
+  "training_eligible": false,
+  "qualification": false,
+  "half_heart_recovery_claimed": false
+}

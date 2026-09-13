@@ -9,10 +9,27 @@ from gameboy_agent.cave_navigation import (
     PUSHABLE_BLOCK, PUSH_FRAMES, SWORD_BREAKABLE_CRYSTAL, block_changed,
     breakable_crystals, crystal_cleared, loaded_warps, obstacle_phase,
     push_direction, toadstool_stone_push_plan,
+    plan_block_exit,
 )
 
 
 class CaveNavigationTests(unittest.TestCase):
+    def test_exit_search_opens_lane_and_never_repushes_a6(self):
+        objects = [1]*128
+        physics = [1]*256
+        physics[0x0D] = 0
+        for x in range(1,10):
+            objects[3*16+x] = 0x0D
+        objects[3*16+7] = 0xA7
+        blocked = plan_block_exit(objects,physics,(1,3),max_states=40)
+        self.assertEqual(blocked['status'],'no_plan_within_budget')
+        for x,y in ((6,4),(7,4),(7,2)):
+            objects[y*16+x] = 0x0D
+        result = plan_block_exit(objects,physics,(1,3),max_states=40)
+        self.assertEqual(result['status'],'planned')
+        self.assertEqual(result['pushes'],[dict(index=55,direction=1,
+            stance=[7,4],destination_index=39)])
+
     def test_push_only_accepts_cardinal_adjacent_cells(self):
         self.assertEqual(push_direction((4, 5), (4, 4)), 1)
         self.assertEqual(push_direction((4, 5), (4, 6)), 2)

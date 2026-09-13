@@ -1,0 +1,325 @@
+{
+  "result": {
+    "status": "tail_cave_entered",
+    "failure": null,
+    "steps": 5192,
+    "frames": 33991,
+    "damage_raw": 20,
+    "healing_raw": 16,
+    "final": {
+      "phase": {
+        "gameplay": 11,
+        "subtype": 7,
+        "scroll": 0,
+        "sequence": 4,
+        "palette": 0,
+        "room": [
+          1,
+          0,
+          23
+        ],
+        "health": 20
+      },
+      "room": [
+        1,
+        0,
+        23
+      ],
+      "x": 80,
+      "y": 124,
+      "health": 20,
+      "max_hearts": 3,
+      "inventory": [
+        4,
+        1,
+        12,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "sword": 1,
+      "toadstool": 0,
+      "powder": 24,
+      "bombs": 0,
+      "arrows": 0,
+      "tail_key": 1,
+      "tarin": 1,
+      "tail_door_status": 144,
+      "trade_item": 0,
+      "dialog_state": 0,
+      "dialog_id": 0,
+      "inventory_cursor": 0
+    },
+    "milestones": {
+      "sword_acquired": 17,
+      "toadstool_acquired": 61,
+      "powder_available": 93,
+      "raccoon_cured": 114,
+      "tail_key_acquired": 119,
+      "tail_cave_opened": 155,
+      "tail_cave_entered": 157
+    },
+    "quest_success": true,
+    "exact_action_replay": true,
+    "assistance": "scripted_known_route_with_source_grounded_rom_senses",
+    "human_interventions": 0,
+    "optimizer_updates": 0,
+    "reserved_evaluation_used": false,
+    "wall_seconds": 21.144
+  },
+  "evidence": [
+    {
+      "kind": "toadstool_prefix_exact",
+      "decisions": 4404,
+      "frame": 30229
+    },
+    {
+      "kind": "return_transition",
+      "origin": [
+        0,
+        0,
+        65
+      ],
+      "target": [
+        0,
+        0,
+        81
+      ],
+      "frame": 30335
+    },
+    {
+      "kind": "return_transition",
+      "origin": [
+        0,
+        0,
+        81
+      ],
+      "target": [
+        0,
+        0,
+        97
+      ],
+      "frame": 30539
+    },
+    {
+      "kind": "return_transition",
+      "origin": [
+        0,
+        0,
+        97
+      ],
+      "target": [
+        0,
+        0,
+        96
+      ],
+      "frame": 30709
+    },
+    {
+      "kind": "return_transition",
+      "origin": [
+        0,
+        0,
+        96
+      ],
+      "target": [
+        0,
+        0,
+        112
+      ],
+      "frame": 30923
+    },
+    {
+      "kind": "return_transition",
+      "origin": [
+        0,
+        0,
+        112
+      ],
+      "target": [
+        0,
+        0,
+        128
+      ],
+      "frame": 31217
+    },
+    {
+      "kind": "return_transition",
+      "origin": [
+        0,
+        0,
+        128
+      ],
+      "target": [
+        0,
+        0,
+        144
+      ],
+      "frame": 31406
+    },
+    {
+      "kind": "village_approach_bush_cut",
+      "frame": 31434
+    },
+    {
+      "kind": "return_transition",
+      "origin": [
+        0,
+        0,
+        144
+      ],
+      "target": [
+        0,
+        0,
+        160
+      ],
+      "frame": 31593
+    },
+    {
+      "kind": "return_transition",
+      "origin": [
+        0,
+        0,
+        160
+      ],
+      "target": [
+        0,
+        0,
+        176
+      ],
+      "frame": 31816
+    },
+    {
+      "kind": "return_transition",
+      "origin": [
+        0,
+        0,
+        176
+      ],
+      "target": [
+        0,
+        0,
+        192
+      ],
+      "frame": 32009
+    },
+    {
+      "kind": "return_transition",
+      "origin": [
+        0,
+        0,
+        192
+      ],
+      "target": [
+        0,
+        0,
+        193
+      ],
+      "frame": 32122
+    },
+    {
+      "kind": "return_transition",
+      "origin": [
+        0,
+        0,
+        193
+      ],
+      "target": [
+        0,
+        0,
+        194
+      ],
+      "frame": 32334
+    },
+    {
+      "kind": "return_transition",
+      "origin": [
+        0,
+        0,
+        194
+      ],
+      "target": [
+        0,
+        0,
+        195
+      ],
+      "frame": 32555
+    },
+    {
+      "kind": "return_transition",
+      "origin": [
+        0,
+        0,
+        195
+      ],
+      "target": [
+        0,
+        0,
+        194
+      ],
+      "frame": 32818
+    },
+    {
+      "kind": "return_transition",
+      "origin": [
+        0,
+        0,
+        194
+      ],
+      "target": [
+        0,
+        0,
+        210
+      ],
+      "frame": 32938
+    },
+    {
+      "kind": "return_transition",
+      "origin": [
+        0,
+        0,
+        210
+      ],
+      "target": [
+        0,
+        0,
+        211
+      ],
+      "frame": 33117
+    },
+    {
+      "kind": "tail_cave_exterior_reached",
+      "frame": 33117
+    },
+    {
+      "kind": "tail_keyhole_opened",
+      "frame": 33216
+    },
+    {
+      "kind": "return_transition",
+      "origin": [
+        0,
+        0,
+        211
+      ],
+      "target": [
+        1,
+        0,
+        23
+      ],
+      "frame": 33991
+    },
+    {
+      "kind": "tail_cave_entry_verified",
+      "frame": 33991
+    }
+  ],
+  "output": "runs/progression-tail-cave-v12",
+  "memory_version": "b15d1147410903777369f0d49c4a71004fb00e227fecc63da9357ebfb12a9325"
+}

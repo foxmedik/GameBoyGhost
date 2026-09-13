@@ -1,0 +1,25 @@
+{
+  "schema": "progression-dagger-collection-v2",
+  "status": "frozen_before_collection",
+  "frozen_at": "2026-09-12",
+  "specification_source": "configs/progression_dagger_v1.json",
+  "specification_source_sha256": "c174ced027dbdc4262d5b7be2f00e1e3c8b8495460a1235f4b3b1ddf90eb9dd2",
+  "change_from_v1": "When the recovery teacher reaches the frozen boundary cell, explicitly enter crossing mode and continue down+B. V1 instead recentered upward and became mathematically unable to pass its teacher gate after 9 cases.",
+  "failed_collection": "runs/progression-dagger-v1-collection",
+  "source_teacher": "runs/state-driven-teacher-development-v3",
+  "candidate": "runs/progression-local-control-v3/model/epoch-032.pt",
+  "candidate_sha256": "e13e011ea66c90e5f1c57c5143d037d0513aa9a96768788cb8dc38f9da357510",
+  "collector": "scripts/collect_progression_dagger_v1.py",
+  "collector_sha256": "5b683909547b1b1ef5aba04f5d240f1737f9638d91c3d2bc1fc5fe9b59e602f4",
+  "teacher_budget": 256,
+  "teacher_required_successes": 18,
+  "teacher_cases": 20,
+  "sealed_validation": {
+    "specification": "runs/progression-longrun-hour-v1/plan.json",
+    "loaded": false,
+    "used_for_collection": false,
+    "used_for_training": false,
+    "used_for_selection": false,
+    "relabel_as_development": false
+  }
+}

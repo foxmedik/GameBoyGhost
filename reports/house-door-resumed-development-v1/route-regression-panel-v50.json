@@ -1,0 +1,11 @@
+{
+  "hypothesis": "Use already-allowed central floor to y88 to finish flipped bottom-edge beetles at y112 within24 reach.",
+  "cases": [
+    "house419",
+    "house359",
+    "house41",
+    "recovery698"
+  ],
+  "qualification": false,
+  "training_eligible": false
+}

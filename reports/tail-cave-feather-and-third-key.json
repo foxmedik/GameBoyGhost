@@ -1,0 +1,24 @@
+{
+  "status": "feather_and_third_key_verified",
+  "cello_acquired": false,
+  "nightmare_key_acquired": false,
+  "trap_crossing": "one no-damage half-heart development success",
+  "trap_evidence": "runs/tail-cave-feather-v2/trap-crossing.json",
+  "living_continuation": "runs/tail-cave-key-exit-v1/third-key-safe-room-continuation.json",
+  "full_health_backup": "runs/tail-cave-feather-v2/feather-full-health-continuation.json",
+  "exact_replay_attempts": [
+    "runs/tail-cave-feather-v2/summary.json",
+    "runs/tail-cave-key-exit-v1/summary.json"
+  ],
+  "training_started": false,
+  "labels_generated": false,
+  "teacher_qualified": false,
+  "sealed_validation_used": false,
+  "contract_tests": {
+    "passed": 5
+  },
+  "sources": {
+    "src/gameboy_agent/feather_approach.py": "e07d213833e6f457d0d73076fba208a3fe4428f2c3a0d6dd0d8c757eee5dbef9",
+    "src/gameboy_agent/guided_tail_steps.py": "99ed19b4b62d70eab072ec80c4ca792d4c1a67c8e06467781f66a75579df9751"
+  }
+}

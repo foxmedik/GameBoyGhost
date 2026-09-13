@@ -1,0 +1,167 @@
+{
+  "result": {
+    "status": "blocked",
+    "failure": "No verified terrain path from [0, 0, 144] toward A0",
+    "steps": 4707,
+    "frames": 31406,
+    "damage_raw": 20,
+    "healing_raw": 0,
+    "final": {
+      "phase": {
+        "gameplay": 11,
+        "subtype": 7,
+        "scroll": 0,
+        "sequence": 4,
+        "palette": 0,
+        "room": [
+          0,
+          0,
+          144
+        ],
+        "health": 4
+      },
+      "room": [
+        0,
+        0,
+        144
+      ],
+      "x": 105,
+      "y": 16,
+      "health": 4,
+      "max_hearts": 3,
+      "inventory": [
+        4,
+        1,
+        12,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "sword": 1,
+      "toadstool": 0,
+      "powder": 24,
+      "bombs": 0,
+      "arrows": 0,
+      "tail_key": 1,
+      "tarin": 1,
+      "tail_door_status": 0,
+      "trade_item": 0,
+      "dialog_state": 0,
+      "dialog_id": 193,
+      "inventory_cursor": 0
+    },
+    "milestones": {
+      "sword_acquired": 17,
+      "toadstool_acquired": 61,
+      "powder_available": 93,
+      "raccoon_cured": 114,
+      "tail_key_acquired": 119
+    },
+    "quest_success": false,
+    "exact_action_replay": true,
+    "assistance": "scripted_known_route_with_source_grounded_rom_senses",
+    "human_interventions": 0,
+    "optimizer_updates": 0,
+    "reserved_evaluation_used": false,
+    "wall_seconds": 19.393
+  },
+  "evidence": [
+    {
+      "kind": "toadstool_prefix_exact",
+      "decisions": 4404,
+      "frame": 30229
+    },
+    {
+      "kind": "return_transition",
+      "origin": [
+        0,
+        0,
+        65
+      ],
+      "target": [
+        0,
+        0,
+        81
+      ],
+      "frame": 30335
+    },
+    {
+      "kind": "return_transition",
+      "origin": [
+        0,
+        0,
+        81
+      ],
+      "target": [
+        0,
+        0,
+        97
+      ],
+      "frame": 30539
+    },
+    {
+      "kind": "return_transition",
+      "origin": [
+        0,
+        0,
+        97
+      ],
+      "target": [
+        0,
+        0,
+        96
+      ],
+      "frame": 30709
+    },
+    {
+      "kind": "return_transition",
+      "origin": [
+        0,
+        0,
+        96
+      ],
+      "target": [
+        0,
+        0,
+        112
+      ],
+      "frame": 30923
+    },
+    {
+      "kind": "return_transition",
+      "origin": [
+        0,
+        0,
+        112
+      ],
+      "target": [
+        0,
+        0,
+        128
+      ],
+      "frame": 31217
+    },
+    {
+      "kind": "return_transition",
+      "origin": [
+        0,
+        0,
+        128
+      ],
+      "target": [
+        0,
+        0,
+        144
+      ],
+      "frame": 31406
+    }
+  ],
+  "output": "runs/progression-tail-cave-v5",
+  "memory_version": "79bc0ed78149f979b820f4a04242b4a648bcaf2cb0ad53034f9cc98dcb52bf77"
+}

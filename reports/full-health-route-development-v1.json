@@ -1,0 +1,33 @@
+{
+  "status": "full_health_route_development",
+  "comparison": "development route comparison, not a controlled varied-start gate",
+  "refill_frame": 45836,
+  "old_room0e_arrival": {
+    "frame": 48270,
+    "health": 8,
+    "source": "runs/tail-cave-feather-v2/trajectory.jsonl"
+  },
+  "new_room0e_arrival": {
+    "frame": 47692,
+    "health": 24,
+    "source": "runs/full-health-worm-guard-v1/room0e-full-health-prefix.jsonl"
+  },
+  "arrival_health_improvement_raw": 16,
+  "frames_saved_to_room0e": 578,
+  "changes": [
+    "room04 direct jump at x48 bypasses room05 detour",
+    "shielded room0D worm encounter before traversal"
+  ],
+  "room0e_guard": {
+    "status": "failed_budget_exhausted",
+    "budget_decisions": 600,
+    "health_lost": 0,
+    "evidence": "runs/full-health-worm-guard-v1/guard0e-evidence.json"
+  },
+  "living_continuation": "runs/full-health-worm-guard-v1/room0e-full-health-continuation.json",
+  "boss_door_opened": false,
+  "full_route_teacher_qualified": false,
+  "training_started": false,
+  "sealed_validation_used": false,
+  "exact_replay": true
+}

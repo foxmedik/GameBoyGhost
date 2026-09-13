@@ -1,0 +1,11 @@
+{
+  "hypothesis": "Compass projectile guard compares actual facing after sword lock; crossings dismiss observed pickup dialogue before movement.",
+  "cases": [
+    "house359",
+    "house419",
+    "house41",
+    "recovery698"
+  ],
+  "qualification": false,
+  "training_eligible": false
+}

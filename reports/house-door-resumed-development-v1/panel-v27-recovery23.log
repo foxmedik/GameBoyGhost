@@ -1,0 +1,26 @@
+UserWarning: Using SDL2 binaries from pysdl2-dll 2.32.10
+Loaded layouts
+Teacher stage room15_cleared: frame=34168 health=12
+Teacher stage compass_second_key: frame=37157 health=12
+Teacher stage map: frame=38077 health=12
+Teacher stage south_worm_entry: frame=38806 health=12
+Teacher stage south_worm_passage: frame=38977 health=12
+Teacher stage pushblock_entry: frame=39317 health=12
+Teacher stage pushblock: frame=40365 health=12
+Teacher stage beetles: frame=40730 health=12
+Teacher stage underground: frame=41786 health=4
+Teacher stage feather: frame=42840 health=4
+Teacher stage feather_return: frame=43246 health=24
+Teacher stage platform_return: frame=43689 health=24
+Teacher stage main_return: frame=44789 health=24
+Teacher stage third_key: frame=45654 health=24
+Teacher stage boss_door: frame=49679 health=24
+Fresh probe replay 0/15487
+Fresh probe replay 2000/15487
+Fresh probe replay 4000/15487
+Fresh probe replay 6000/15487
+Fresh probe replay 8000/15487
+Fresh probe replay 10000/15487
+Fresh probe replay 12000/15487
+Fresh probe replay 14000/15487
+FRESH HOUSE PROBE EXACT REPLAY VERIFIED

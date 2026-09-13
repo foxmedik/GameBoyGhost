@@ -1,0 +1,11 @@
+{
+  "hypothesis": "Maintain x40 aisle throughout room0E northbound waypoint, including recoil after completed horizontal leg.",
+  "cases": [
+    "house359",
+    "house419",
+    "house41",
+    "recovery698"
+  ],
+  "qualification": false,
+  "training_eligible": false
+}

@@ -1,0 +1,25 @@
+{
+  "schema": "tail-cave-first-key-live-evaluation-v1",
+  "status": "frozen_before_live_evaluation",
+  "frozen_at": "2026-09-12",
+  "experiment": "configs/tail_cave_first_key_model_v1.json",
+  "experiment_sha256": "1c4fbc5181323982c76fcf887c8db9ab9dd60de374f00883e3547649534cf5d6",
+  "source": "runs/state-driven-teacher-downstream-development-v3",
+  "candidate": "runs/tail-cave-first-key-model-v1/candidate.pt",
+  "candidate_sha256": "b8c2e768eceac4070cca25145d8cd3a1fccd1269bbe2dec1d004bca8303217f6",
+  "evaluator": "scripts/evaluate_tail_cave_first_key_v1.py",
+  "evaluator_sha256": "fbf9ae758d675660075fd0d4fe3698ecb6aa6e9f18066544ce283a71c39423d6",
+  "decision_budget": 512,
+  "teacher_handoff_after_decisions": 128,
+  "required_successes": 18,
+  "success_criterion": "Acquire exactly one Small Key while alive in Tail Cave room 0x16; exact replay must reproduce every command, state, fingerprint, event journal, and key count.",
+  "selection_rule": "Select only if at least 18 of 20 cases succeed. Report teacher recovery separately; recovery-assisted success does not establish autonomous candidate competence.",
+  "sealed_validation": {
+    "specification": "runs/progression-longrun-hour-v1/plan.json",
+    "results": "reports/progression-longrun-hour-v1.json",
+    "loaded": false,
+    "used_for_training": false,
+    "used_for_selection": false,
+    "relabel_as_development": false
+  }
+}

@@ -1,0 +1,17 @@
+{
+  "schema":"tail-cave-integration-dagger-training-v4",
+  "status":"frozen_before_training",
+  "frozen_at":"2026-09-12",
+  "parent":"runs/tail-cave-specialist-v3-model/candidate.pt",
+  "parent_sha256":"b2cad4812fad5ce4a4aa7587d1dee1cb177eeacca5268e73171e7ebc5138f3f0",
+  "base_data":"runs/tail-cave-specialist-v3-data/train.npz",
+  "base_data_sha256":"afe9765488a251e5cb2ba90ebea879ad4896a3f77abbf7468ddebc15c3b3a9a5",
+  "collection":"runs/tail-cave-integration-dagger-v4-collection",
+  "collection_summary_sha256":"d27ae64d454b37e464dacc26b8f72c29d1f268d0c60b35e69896c8b33a69796d",
+  "trainer":"scripts/train_tail_cave_integration_dagger_v4.py",
+  "trainer_sha256":"3e5876de2a878a77a5cec21ebe28e0b30f54113adb3253c4f68324c579fb8319",
+  "model":{"epochs":50,"batches_per_epoch":128,"base_rows_per_batch":128,"correction_rows_per_batch":128,"report_rows":8192,"learning_rate":0.0001,"seed":2033,"selection":"Final epoch only; no checkpoint shopping."},
+  "autonomous_evaluation_protocol":{"status":"frozen_before_training","evaluator":"scripts/evaluate_tail_cave_integration_v4.py","evaluator_sha256":"a8cb768fe5c35d51b2c041c7151014165eb2627b2102a51d34a0d12bc6a29ebc","entry_states":"runs/tail-cave-integration-dagger-v4-collection/entries","base_case_ids":[0,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19],"training_idle_frames":[0,1,2,3,4,5,6,7,8,9],"heldout_idle_frames":[10,11,12,13,14,15,16,17,18,19],"cases":200,"required_successes":180,"decision_budget":512,"success_criterion":"The candidate alone acquires the first Tail Cave Small Key alive in room 16 with exact replay."},
+  "failed_collection_cases":{"retained_as_evidence":true,"used_for_training":false},
+  "sealed_validation":{"specification":"runs/progression-longrun-hour-v1/plan.json","results":"reports/progression-longrun-hour-v1.json","loaded":false,"used_for_training":false,"used_for_selection":false,"relabel_as_development":false}
+}

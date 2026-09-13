@@ -1,0 +1,11 @@
+{
+  "hypothesis": "After observed room10 landing, defend final east ledge crossing against active enemies before door travel.",
+  "cases": [
+    "house131",
+    "house257",
+    "house67",
+    "recovery23"
+  ],
+  "qualification": false,
+  "training_eligible": false
+}

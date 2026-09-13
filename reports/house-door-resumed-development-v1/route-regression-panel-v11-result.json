@@ -1,0 +1,36 @@
+{
+  "passed": 2,
+  "total": 4,
+  "cases": [
+    {
+      "case": "house173",
+      "summary": "runs/teacher-route-regression-panel-v11-house173/summary.json",
+      "success": true,
+      "exact_replay": true,
+      "failure": null
+    },
+    {
+      "case": "house257",
+      "summary": "runs/teacher-route-regression-panel-v11-house257/summary.json",
+      "success": false,
+      "exact_replay": true,
+      "failure": "RouteBlocker: Damage is still being applied; not a safe route state"
+    },
+    {
+      "case": "house307",
+      "summary": "runs/teacher-route-regression-panel-v11-house307/summary.json",
+      "success": false,
+      "exact_replay": true,
+      "failure": "RouteBlocker: Room0E guard budget exhausted"
+    },
+    {
+      "case": "recovery23",
+      "summary": "runs/teacher-route-regression-panel-v11-recovery23/summary.json",
+      "success": true,
+      "exact_replay": true,
+      "failure": null
+    }
+  ],
+  "qualified": false,
+  "training_eligible": false
+}

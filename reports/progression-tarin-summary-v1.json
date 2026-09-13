@@ -1,0 +1,64 @@
+{
+  "selected_proof": "progression-tarin-v3",
+  "scope": "scripted_teacher_baseline",
+  "runs": [
+    {
+      "run": "progression-tarin-v1",
+      "status": "blocked",
+      "failure": "No verified terrain path from [0, 0, 82] toward 51",
+      "steps": 4079,
+      "frames": 24722,
+      "damage_raw": 20,
+      "healing_raw": 0,
+      "final_health": 4,
+      "powder": 32,
+      "tarin": 0,
+      "exact_replay": true,
+      "artifact_hashes_verified": true
+    },
+    {
+      "run": "progression-tarin-v2",
+      "status": "raccoon_cured",
+      "failure": null,
+      "steps": 4301,
+      "frames": 28165,
+      "damage_raw": 20,
+      "healing_raw": 0,
+      "final_health": 4,
+      "powder": 24,
+      "tarin": 1,
+      "exact_replay": true,
+      "artifact_hashes_verified": true
+    },
+    {
+      "run": "progression-tarin-v3",
+      "status": "raccoon_cured",
+      "failure": null,
+      "steps": 4302,
+      "frames": 28405,
+      "damage_raw": 20,
+      "healing_raw": 0,
+      "final_health": 4,
+      "powder": 24,
+      "tarin": 1,
+      "exact_replay": true,
+      "artifact_hashes_verified": true
+    }
+  ],
+  "tests": {
+    "passed": 114,
+    "skipped": 0,
+    "seconds": 37.012,
+    "log": "runs/progression-tarin-validation-20260911/tests.log"
+  },
+  "optimizer_updates": 0,
+  "reserved_evaluation_used": false,
+  "selected_policy_sha256": "9d2b24b28be5289fc3d32d85d46faa1835ca2068d73a1e8790630d77dbaf85ec",
+  "selected_policy_unchanged": true,
+  "post_capture_source_changes": {
+    "files": [
+      "scripts/run_toadstool_progression.py"
+    ],
+    "note": "Runner module docstring and prefix-error wording clarified after capture; successful execution logic unchanged. Saved plan retains capture-time hashes."
+  }
+}

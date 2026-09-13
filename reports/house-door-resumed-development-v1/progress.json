@@ -1,0 +1,502 @@
+{
+  "schema": "house-door-first-proof-progress-v1",
+  "status": "guided_teacher_qualified_release_restore_pending",
+  "proof": "runs/house-nightmare-door-proof-v1/continuation.json",
+  "proof_sha256": "3140c8ea17024d53928e0fdae0ccbd7f94f56c87013657c3666accf63bb57077",
+  "commands": 15896,
+  "frames": 53700,
+  "endpoint": {
+    "room": [
+      1,
+      0,
+      11
+    ],
+    "x": 80,
+    "y": 26,
+    "health": 24,
+    "max_hearts": 3,
+    "sword_A": true,
+    "feather_B": true,
+    "grounded": true,
+    "pending_healing": 0,
+    "pending_damage": 0,
+    "door_animation": 0,
+    "door_open": true,
+    "boss_room_entered": false
+  },
+  "guided": true,
+  "autonomous_completion": false,
+  "intermediate_state_loads": 0,
+  "retained_failed_attempts_and_recoveries": [
+    {
+      "run": "runs/room0e-observed-pickup-v1-execution",
+      "exact_replay": true,
+      "extension_commands": 45,
+      "final_frame": 47737,
+      "final_health": 24,
+      "pending_damage": 0,
+      "blockers": [
+        {
+          "frame": 47737,
+          "error": "RouteBlocker: Observed hazard inside approach clearance"
+        }
+      ],
+      "training_eligible": false
+    },
+    {
+      "run": "runs/room0e-observed-jump-v1",
+      "exact_replay": true,
+      "extension_commands": 335,
+      "final_frame": 48027,
+      "final_health": 24,
+      "pending_damage": 0,
+      "blockers": [
+        {
+          "frame": 48027,
+          "error": "RouteBlocker: Receipt escape budget exhausted"
+        }
+      ],
+      "training_eligible": false
+    },
+    {
+      "run": "runs/room0e-airborne-recovery-v1",
+      "exact_replay": true,
+      "extension_commands": 755,
+      "final_frame": 49500,
+      "final_health": 24,
+      "pending_damage": 0,
+      "blockers": [],
+      "training_eligible": false
+    },
+    {
+      "run": "runs/full-health-rolling-bones-arrival-v1",
+      "exact_replay": true,
+      "extension_commands": 937,
+      "final_frame": 50692,
+      "final_health": 24,
+      "pending_damage": 4,
+      "blockers": [
+        {
+          "frame": 50692,
+          "error": "RouteBlocker: Arrival health/motion interruption"
+        }
+      ],
+      "training_eligible": false
+    },
+    {
+      "run": "runs/full-health-rolling-bones-arrival-v2",
+      "exact_replay": true,
+      "extension_commands": 1068,
+      "final_frame": 50823,
+      "final_health": 24,
+      "pending_damage": 4,
+      "blockers": [
+        {
+          "frame": 50823,
+          "error": "RouteBlocker: Arrival health/motion interruption"
+        }
+      ],
+      "training_eligible": false
+    },
+    {
+      "run": "runs/full-health-rolling-bones-arrival-v3",
+      "exact_replay": true,
+      "extension_commands": 1289,
+      "final_frame": 51097,
+      "final_health": 24,
+      "pending_damage": 0,
+      "blockers": [
+        {
+          "frame": 51018,
+          "error": "RouteBlocker: Transition budget exhausted: 10 -> 11"
+        }
+      ],
+      "training_eligible": false
+    },
+    {
+      "run": "runs/rolling-bones-observed-spacing-v1",
+      "exact_replay": true,
+      "extension_commands": 20,
+      "final_frame": 51117,
+      "final_health": 24,
+      "pending_damage": 0,
+      "blockers": [
+        {
+          "frame": 51117,
+          "error": "RouteBlocker: Movement budget exhausted in 11"
+        }
+      ],
+      "training_eligible": false
+    },
+    {
+      "run": "runs/rolling-bones-observed-spacing-v2",
+      "exact_replay": true,
+      "extension_commands": 1793,
+      "final_frame": 52890,
+      "final_health": 24,
+      "pending_damage": 0,
+      "blockers": [],
+      "training_eligible": false
+    },
+    {
+      "run": "runs/house-nightmare-door-proof-v1",
+      "exact_replay": true,
+      "extension_commands": 761,
+      "final_frame": 53700,
+      "final_health": 24,
+      "pending_damage": 0,
+      "blockers": [
+        {
+          "frame": 53388,
+          "error": "RouteBlocker: Upper traps did not both charge"
+        }
+      ],
+      "training_eligible": false
+    }
+  ],
+  "infrastructure_interruption": "runs/room0e-observed-pickup-v1/launch-result.json",
+  "teacher_gate": {
+    "manifest": "configs/house_boss_door_teacher_panel_v1.json",
+    "sha256": "f224acd2aeb6fe4661d7b5cf57de0cb9e8993b2e57a16e331928dda701f38c01",
+    "specifications_frozen": true,
+    "cases_run": 24,
+    "passed": true,
+    "controller_binding": "runs/house-door-teacher-qualification-v27/candidate-binding.json",
+    "blocker": null,
+    "candidate": "runs/house-door-teacher-qualification-v27/candidate-binding.json",
+    "controller_binding_sha256": "ac277388a0ca1452855fa29e51861c98c19109c92b69aa33f2f3a0e7d27b2ee1",
+    "result": "runs/house-door-teacher-qualification-v27/result.json",
+    "status": "qualified",
+    "prior_rejected_candidates": [
+      "runs/house-door-teacher-qualification-v1/result.json",
+      "runs/house-door-teacher-qualification-v2/result.json",
+      "runs/house-door-teacher-qualification-v3/result.json",
+      "runs/house-door-teacher-qualification-v4/result.json",
+      "runs/house-door-teacher-qualification-v5/result.json",
+      "runs/house-door-teacher-qualification-v6/result.json",
+      "runs/house-door-teacher-qualification-v7/result.json",
+      "runs/house-door-teacher-qualification-v8/result.json",
+      "runs/house-door-teacher-qualification-v9/result.json",
+      "runs/house-door-teacher-qualification-v10/result.json",
+      "runs/house-door-teacher-qualification-v11/result.json",
+      "runs/house-door-teacher-qualification-v12/result.json",
+      "runs/house-door-teacher-qualification-v13/result.json",
+      "runs/house-door-teacher-qualification-v14/result.json",
+      "runs/house-door-teacher-qualification-v15/result.json",
+      "runs/house-door-teacher-qualification-v16/result.json",
+      "runs/house-door-teacher-qualification-v17/result.json",
+      "runs/house-door-teacher-qualification-v18/result.json",
+      "runs/house-door-teacher-qualification-v19/result.json",
+      "runs/house-door-teacher-qualification-v20/result.json",
+      "runs/house-door-teacher-qualification-v21/result.json",
+      "runs/house-door-teacher-qualification-v22/result.json",
+      "runs/house-door-teacher-qualification-v23/result.json",
+      "runs/house-door-teacher-qualification-v24/result.json",
+      "runs/house-door-teacher-qualification-v25/result.json",
+      "runs/house-door-teacher-qualification-v26/result.json"
+    ],
+    "current_candidate_cases_run": 24,
+    "house_passed": 20,
+    "recovery_passed": 4,
+    "not_run": 0
+  },
+  "new_training_labels": 0,
+  "learner_training_started": false,
+  "software_tests": {
+    "tests": 190,
+    "executed": 189,
+    "failures": 0,
+    "errors": 0,
+    "skips": 1,
+    "skip_reasons": [
+      "Historical reserved-panel generation is sealed; do not reconstruct its cases"
+    ],
+    "passed": true,
+    "excluded": [],
+    "seconds": 39.598,
+    "log": "reports/house-door-resumed-development-v1/candidate26-tests.log"
+  },
+  "sealed_files_unchanged": 149,
+  "wipe_ready": false,
+  "mac_erased": false,
+  "source_committed": false,
+  "external_backup_verified": false,
+  "clean_restore_verified": false,
+  "endpoint_specific_verification": "reports/house-door-resumed-development-v1/full-proof-verification-v2.json",
+  "initial_verifier_harness_failure": {
+    "report": "reports/house-door-resumed-development-v1/full-proof-verification.json",
+    "cause": "Final raw Python snapshot contains a tuple while the JSON handoff contains a list; all command checks passed. Corrected normalization; fresh full replay passed."
+  },
+  "item_teacher_development": {
+    "source": "src/gameboy_agent/dungeon_items.py",
+    "success_run": "runs/teacher-compass-second-key-v6-execution",
+    "scope": "Compass and second Small Key only",
+    "health": 24,
+    "frame": 37569,
+    "commands": 6569,
+    "extension_commands": 988,
+    "qualification": false,
+    "tests_passed": 3,
+    "failed_candidates": [
+      "runs/teacher-compass-second-key-v1",
+      "runs/teacher-compass-second-key-v2",
+      "runs/teacher-compass-second-key-v3",
+      "runs/teacher-compass-second-key-v4",
+      "runs/teacher-compass-second-key-v5"
+    ],
+    "launch_failure": "runs/teacher-compass-second-key-v6/launch-result.json",
+    "notes": "docs/DUNGEON_ITEM_TEACHER_DEVELOPMENT.md"
+  },
+  "map_teacher_development": {
+    "source": "src/gameboy_agent/dungeon_items.py",
+    "success_run": "runs/teacher-map-v2",
+    "failed_run": "runs/teacher-map-v1",
+    "exact_replay": true,
+    "commands": 7152,
+    "health": 24,
+    "frame": 38562,
+    "qualification": false
+  },
+  "south_worm_entry_development": {
+    "success_run": "runs/teacher-south-worm-entry-v2",
+    "failed_run": "runs/teacher-south-worm-entry-v1",
+    "exact_replay": true,
+    "commands": 7759,
+    "health": 24,
+    "frame": 39318,
+    "qualification": false,
+    "final_dungeon_items": [
+      1,
+      1,
+      0,
+      0,
+      2
+    ],
+    "frozen_acceptance_passed": false,
+    "adjudication": "runs/teacher-south-worm-entry-v2/acceptance-adjudication.json"
+  },
+  "south_worm_passage_development": {
+    "success_run": "runs/teacher-south-worm-v4",
+    "exact_replay": true,
+    "commands": 7910,
+    "health": 24,
+    "frame": 39518,
+    "keys": 2,
+    "worm_kill_claimed": false,
+    "qualification": false,
+    "failed_candidates": [
+      "runs/teacher-south-worm-v1",
+      "runs/teacher-south-worm-v2",
+      "runs/teacher-south-worm-v3"
+    ]
+  },
+  "pushblock_entry_development": {
+    "success_run": "runs/teacher-pushblock-entry-v2",
+    "exact_replay": true,
+    "commands": 8084,
+    "health": 24,
+    "frame": 39741,
+    "keys": 1,
+    "qualification": false,
+    "failed_candidate": "runs/teacher-pushblock-entry-v1"
+  },
+  "pushblock_development": {
+    "accepted": true,
+    "success_run": "runs/teacher-pushblock-v4",
+    "exact_replay": true,
+    "commands": 8977,
+    "health": 24,
+    "frame": 40790,
+    "keys": 1,
+    "qualification": false,
+    "failed_candidates": [
+      "runs/teacher-pushblock-v1",
+      "runs/teacher-pushblock-v2",
+      "runs/teacher-pushblock-v3"
+    ],
+    "method": "Physical room05 detour with two observed left-Spark clearance waits, then block push and west exit"
+  },
+  "beetle_development": {
+    "accepted": true,
+    "success_run": "runs/teacher-beetle-v2",
+    "exact_replay": true,
+    "commands": 9254,
+    "health": 24,
+    "frame": 41137,
+    "keys": 1,
+    "qualification": false,
+    "failed_candidate": "runs/teacher-beetle-v1",
+    "next": "Underground Goombas and ladder exit to Feather approach"
+  },
+  "underground_development": {
+    "accepted": true,
+    "success_run": "runs/teacher-underground-v3",
+    "exact_replay": true,
+    "commands": 10034,
+    "health": 24,
+    "frame": 42036,
+    "keys": 1,
+    "qualification": false,
+    "failed_candidates": [
+      "runs/teacher-underground-v1",
+      "runs/teacher-underground-v2"
+    ],
+    "safety_tests_passed": 4
+  },
+  "feather_development": {
+    "accepted": true,
+    "success_run": "runs/teacher-feather-v1",
+    "exact_replay": true,
+    "commands": 10420,
+    "health": 24,
+    "frame": 43090,
+    "keys": 1,
+    "qualification": false,
+    "next": "Reusable Feather return and complete fresh-house teacher assembly"
+  },
+  "feather_return_development": {
+    "success_run": "runs/teacher-feather-return-v1",
+    "exact_replay": true,
+    "commands": 10653,
+    "health": 24,
+    "frame": 43480,
+    "keys": 1,
+    "qualification": false,
+    "half_heart_recovery_claimed": false
+  },
+  "platform_return_development": {
+    "success_run": "runs/teacher-platform-return-v2",
+    "exact_replay": true,
+    "commands": 10976,
+    "health": 24,
+    "frame": 43923,
+    "keys": 1,
+    "qualification": false,
+    "failed_candidate": "runs/teacher-platform-return-v1",
+    "required_input": "Hold B throughout side-view jump"
+  },
+  "main_return_development": {
+    "success_run": "runs/teacher-main-return-v2",
+    "exact_replay": true,
+    "commands": 11440,
+    "health": 24,
+    "frame": 44800,
+    "keys": 1,
+    "qualification": false,
+    "failed_candidate": "runs/teacher-main-return-v1",
+    "method": "Equip shield before northern worm entry and guard immediately"
+  },
+  "third_key_development": {
+    "accepted": true,
+    "success_run": "runs/teacher-third-key-v6",
+    "exact_replay": true,
+    "commands": 12037,
+    "health": 24,
+    "frame": 45660,
+    "keys": 2,
+    "qualification": false,
+    "failed_candidates": [
+      "runs/teacher-third-key-v1",
+      "runs/teacher-third-key-v2",
+      "runs/teacher-third-key-v3",
+      "runs/teacher-third-key-v4",
+      "runs/teacher-third-key-v5"
+    ]
+  },
+  "assembled_final_stages": {
+    "accepted": true,
+    "success_run": "runs/teacher-final-stages-v1",
+    "exact_replay": true,
+    "commands": 14969,
+    "health": 24,
+    "frame": 49622,
+    "endpoint_verification": "reports/house-door-resumed-development-v1/assembled-item-door-verification.json",
+    "qualification": false
+  },
+  "fresh_house_probe": {
+    "run": "runs/teacher-fresh-house-probe-v12",
+    "idle": 23,
+    "qualification": false,
+    "status": "passed_exact_replay",
+    "no_recorded_prefix_control": true,
+    "failed_probes": [
+      "runs/teacher-fresh-house-probe-v1-execution",
+      "runs/teacher-fresh-house-probe-v2",
+      "runs/teacher-fresh-house-probe-v3",
+      "runs/teacher-fresh-house-probe-v4",
+      "runs/teacher-fresh-house-probe-v5",
+      "runs/teacher-fresh-house-probe-v6",
+      "runs/teacher-fresh-house-probe-v7",
+      "runs/teacher-fresh-house-probe-v8",
+      "runs/teacher-fresh-house-probe-v9",
+      "runs/teacher-fresh-house-probe-v10",
+      "runs/teacher-fresh-house-probe-v11"
+    ],
+    "notes": "Complete fresh-house guided controller; no recorded-prefix control; endpoint contract and all command replay checks passed",
+    "accepted": true,
+    "commands": 17841,
+    "frame": 50650,
+    "health": 24
+  },
+  "half_heart_development": {
+    "run": "runs/teacher-physical-half-heart-probe-v1",
+    "status": "passed_exact_replay",
+    "qualification": false,
+    "method": "Physical underground Goomba contact before first room29 arrival; no health writes",
+    "accepted": true,
+    "commands": 17669,
+    "frame": 50478,
+    "challenge_frame": 41833,
+    "challenge_health": 4,
+    "health": 24
+  },
+  "map_obstacle_regression": {
+    "run": "runs/teacher-map-obstacle-regression-v7",
+    "status": "map_stage_passed_full_route_failed",
+    "qualification": false,
+    "idle": 41,
+    "failed_runs": [
+      "runs/teacher-map-obstacle-regression-v1",
+      "runs/teacher-map-obstacle-regression-v2",
+      "runs/teacher-map-obstacle-regression-v3",
+      "runs/teacher-map-obstacle-regression-v4",
+      "runs/teacher-map-obstacle-regression-v5",
+      "runs/teacher-map-obstacle-regression-v6"
+    ],
+    "notes": "Map acquired at health16 frame37853; later beetle pit fall rejected full route",
+    "accepted_stage": "map"
+  },
+  "beetle_live_target_regression": {
+    "run": "runs/teacher-beetle-live-target-regression-v1",
+    "status": "passed_exact_replay",
+    "qualification": false,
+    "idle": 41,
+    "commands": 18028,
+    "frame": 51518,
+    "health": 24
+  },
+  "second_key_live_target_regression": {
+    "run": "runs/teacher-second-key-live-target-regression-v1",
+    "status": "passed_exact_replay",
+    "qualification": false,
+    "idle": 67,
+    "commands": 17635,
+    "frame": 51212,
+    "health": 24
+  },
+  "route_regression_panel": {
+    "plan": "reports/house-door-resumed-development-v1/route-regression-panel-v56.json",
+    "status": "all_four_passed_exact_replay",
+    "qualification": false,
+    "result": "reports/house-door-resumed-development-v1/route-regression-panel-v56-result.json"
+  },
+  "requested_annotated_video": {
+    "status": "pending",
+    "scope": "Fresh full original-house to opened boss-door annotated run explaining obstacles and fixes from this session and final qualification results",
+    "requested_by_user": true,
+    "sequence": "Only after all original goals are complete",
+    "exclude_topics": [
+      "wipe"
+    ]
+  }
+}

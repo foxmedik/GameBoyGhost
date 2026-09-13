@@ -1,0 +1,126 @@
+{
+  "result": {
+    "status": "blocked",
+    "failure": "Approach budget exhausted at target [9, 4]",
+    "steps": 3706,
+    "frames": 20557,
+    "damage_raw": 16,
+    "healing_raw": 0,
+    "final": {
+      "phase": {
+        "gameplay": 11,
+        "subtype": 7,
+        "scroll": 0,
+        "sequence": 4,
+        "palette": 0,
+        "room": [
+          0,
+          0,
+          67
+        ],
+        "health": 8
+      },
+      "room": [
+        0,
+        0,
+        67
+      ],
+      "x": 136,
+      "y": 75,
+      "health": 8,
+      "max_hearts": 3,
+      "inventory": [
+        4,
+        1,
+        12,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "sword": 1,
+      "toadstool": 1,
+      "powder": 0,
+      "bombs": 0,
+      "arrows": 0,
+      "tail_key": 0,
+      "tarin": 0,
+      "tail_door_status": 0,
+      "trade_item": 0,
+      "dialog_state": 0,
+      "dialog_id": 0,
+      "inventory_cursor": 0
+    },
+    "milestones": {
+      "sword_acquired": 17,
+      "toadstool_acquired": 61
+    },
+    "quest_success": false,
+    "exact_action_replay": true,
+    "assistance": "scripted_known_route_with_source_grounded_rom_senses",
+    "human_interventions": 0,
+    "optimizer_updates": 0,
+    "reserved_evaluation_used": false,
+    "wall_seconds": 13.375
+  },
+  "evidence": [
+    {
+      "kind": "toadstool_prefix_exact",
+      "decisions": 3143,
+      "frame": 18659
+    },
+    {
+      "kind": "return_transition",
+      "origin": [
+        0,
+        0,
+        98
+      ],
+      "target": [
+        0,
+        0,
+        82
+      ],
+      "frame": 18861
+    },
+    {
+      "kind": "approach_transition_settled",
+      "target": [
+        0,
+        0,
+        66
+      ],
+      "frame": 19018
+    },
+    {
+      "kind": "bounded_sword_stall_response",
+      "room": [
+        0,
+        0,
+        66
+      ],
+      "frame": 19511
+    },
+    {
+      "kind": "return_transition",
+      "origin": [
+        0,
+        0,
+        66
+      ],
+      "target": [
+        0,
+        0,
+        67
+      ],
+      "frame": 19789
+    }
+  ],
+  "output": "runs/progression-witch-exchange-v5",
+  "memory_version": "6629e494eaf46b000f3134cbf9e15b0812e984deb88e129c77c3e8592e06fc17"
+}

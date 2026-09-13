@@ -61,19 +61,59 @@
       "scope": "Persistent evidence, directed route queries and saved-generation determinism; live motor integration remains stage 3."
     },
     "3": {
-      "status": "in_progress",
+      "status": "complete",
       "evidence": [
         "reports/progression-crossing-resolution-v1.json",
-        "reports/progression-forest-progress-v1.json"
+        "reports/progression-forest-progress-v1.json",
+        "reports/progression-toadstool-v1.json",
+        "reports/progression-witch-approach-v4.json",
+        "reports/progression-witch-exchange-v2.json",
+        "reports/progression-witch-exchange-v12.json",
+        "reports/progression-tarin-v3.json",
+        "reports/progression-tail-key-v2.json",
+        "reports/progression-tail-cave-v12.json"
       ],
       "blocker": null,
-      "remaining": "Toadstool acquisition, witch exchange, Tarin interaction, Tail Key and Tail Cave entry remain unverified."
+      "remaining": "Initial guided quest proof is complete. Reliability and learned-model capability remain unverified.",
+      "scope": "One continuous house-start scripted proof includes the post-sword acquisition/unlock/entry sequence and live terminal milestone fixtures. Exact replay verified."
     },
     "4": {
-      "status": "pending"
+      "status": "in_progress",
+      "reliable_teacher_result": "reports/state-driven-teacher-v1.json",
+      "reliable_teacher_successes": 18,
+      "reliable_teacher_cases": 20,
+      "reliable_teacher_gate_passed": true,
+      "frozen_experiment": "configs/progression_local_control_v1.json",
+      "training_status": "dagger_local_passed_full_teacher_preservation_failed",
+      "candidate_reports": [
+        "reports/progression-local-control-v1.json",
+        "reports/progression-local-control-v2.json",
+        "reports/progression-local-control-v3.json"
+      ],
+      "live_result": "reports/progression-local-control-v3-live.json",
+      "live_successes": 3,
+      "live_cases": 20,
+      "candidate_cap_reached": true,
+      "strategy_review_result": "reports/progression-dagger-v1.json",
+      "selected_local_controller": "configs/progression_local_controller.json",
+      "new_block_live_successes": 20,
+      "new_block_live_cases": 20,
+      "new_block_following_successes": 10,
+      "new_block_following_cases": 10,
+      "full_teacher_result": "runs/state-driven-teacher-dagger-development-v1/summary.json",
+      "full_teacher_successes": 16,
+      "full_teacher_cases": 20,
+      "full_teacher_gate_passed": false,
+      "remaining": "Keep the learned crossing disabled in the full teacher. Collect and verify recovery from the downstream room 0x52/0x54 states created by its changed timing before another integration candidate."
     },
     "5": {
-      "status": "pending"
+      "status": "in_progress",
+      "first_house_proof": "reports/progression-tail-cave-v12.json",
+      "remaining": "First exact-start house proof remains valid. A state-driven scripted teacher now passes 18/20 visible development starts; learned candidate reliability and a fresh evaluation remain unverified.",
+      "reliability_result": "reports/progression-longrun-hour-v1.json",
+      "validation_successes": 0,
+      "validation_cases": 20,
+      "reliability_gate_passed": false
     },
     "6": {
       "status": "pending"
@@ -83,7 +123,7 @@
     }
   },
   "reserved_navigation_evaluation_used": false,
-  "optimizer_status": "paused_until_measured_blocker_and_frozen_experiment",
-  "active_stage": 3,
-  "next_step": "Replace outdoor room-distance exploration with explicit verified toadstool approach subgoals, including any required indoor transitions; preserve zero-damage forest entry regression."
+  "optimizer_status": "dagger_local_selected_full_teacher_disabled_after_16_of_20",
+  "active_stage": 4,
+  "next_step": "Use the four full-teacher development failures to establish a reliable downstream room 0x52/0x54 recovery teacher, then freeze a new integration experiment. Keep the completed validation panel sealed."
 }

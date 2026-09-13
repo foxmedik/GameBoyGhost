@@ -1,0 +1,18 @@
+{
+  "source": "runs/teacher-pushblock-entry-v2/continuation.json",
+  "source_sha256": "dec41a0c88389775036ad802c947236073386a716490d00e17b97d1688b9f70c",
+  "case_count": 1,
+  "budget": {
+    "decisions": 1500,
+    "frames": 6000
+  },
+  "hypothesis": "Room05 south112 to124, up98 then right136 bypasses statue at12080 and bottom pot136112. North48 then12027 west20 south65 returns above room04 ledge. Guard Gels, stop immediately on damage or blockage; finish block puzzle if safe.",
+  "success": "room03 east entry full health, one key, shield B sword A, no buffered damage",
+  "training_eligible": false,
+  "qualification": false,
+  "prior_failures": [
+    "runs/teacher-pushblock-v1",
+    "runs/teacher-pushblock-v2"
+  ],
+  "budget_reason": "New detour traverses extra room; previously fixed direct-room candidates remain rejected."
+}

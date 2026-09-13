@@ -1,0 +1,7 @@
+User request: ok when youre done go ahead and record another full annotated run video for me, explaining what we overcame this session
+
+Record a new full annotated original-house → opened Nightmare boss door run after qualification work. Explain reproduced failures, physical control fixes, exact replay and final qualification status. Include video in finished checkpoint and release/backup artifacts. Do not substitute video for qualification or imply guided video is autonomous learner evidence.
+
+User constraint: Do not mention the wipe in the video. Focus on route, obstacles, fixes and results.
+
+Latest user timing constraint: Record the video only after ALL original goals are complete.

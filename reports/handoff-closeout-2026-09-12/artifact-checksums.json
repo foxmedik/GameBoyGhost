@@ -1,0 +1,33 @@
+{
+  "schema": "handoff-artifact-checksums-v1",
+  "excludes_self": true,
+  "files": {
+    "README.md": "7516a519f7d1d5f233b512a7abcde37dba95c09ff8e0be3e53ad2bc2f1a451c2",
+    "configs/handoff_state.json": "c999764baace4c2f7f1d8770c6f2d816040b596b0f5f0af3fda7f578947fb8cd",
+    "configs/research_focus.json": "628e1863c15f5206d99e08c7e09fa6cc018d8de0bf8b72016dc2012d1256e161",
+    "docs/CURRENT_STATUS.md": "7b66bc0974e00bc60bf5f4c3e963c4466bb2e5316856bc1f0353ce23b1a6d72f",
+    "docs/PROJECT_STATUS.md": "cc1a751199f0231892358962145cea6f95466f5e402c96e583945fe1c5cb93e3",
+    "docs/WIPE_READINESS.md": "de9b7830f78bad99e83cc37ecd6694b092a79d7924197a28bbe85c5605a0c6a6",
+    "docs/handoffs/NEXT_SESSION.md": "e79e4e086d82fda5ea49b4553b7898328438d10a53f17e56dc36a81d376d358e",
+    "reports/handoff-closeout-2026-09-12/diff-stat-after.txt": "345cb12356fa4078afb0f8e24619b869db4f738b24766dd56eec4397c9a86550",
+    "reports/handoff-closeout-2026-09-12/diff-stat-before.txt": "6c432a7c9a34c7ea958b7abc2f01aa79cbfab25f819dacfec062dce265e55ce8",
+    "reports/handoff-closeout-2026-09-12/environment.json": "eb415ae7591ee7731eebfcd9eec87de2b0aa3e0f62dcd23c8c077cd2961401f8",
+    "reports/handoff-closeout-2026-09-12/git-status-after.txt": "149f9322a8332e9f9e6a0351b81efbefcf6225c36fcdf8dd2138761eb04f8c15",
+    "reports/handoff-closeout-2026-09-12/git-status-before.txt": "be756a64f133e63a3dd8a95b81b22a9647a393ebcf097ae8feaf2523efcaaae3",
+    "reports/handoff-closeout-2026-09-12/handoff-reference-check.json": "03c8c4c88f741d44fc107b00b9e0db574aa1feee0c966c4d8f460edc1e789b81",
+    "reports/handoff-closeout-2026-09-12/json-files.txt": "ae9e51c5b5033ca3fd11a0c2b0791a472e123ee1b787cdef04a7b6dbd1750a15",
+    "reports/handoff-closeout-2026-09-12/model-inventory.json": "821e4c1395810f1147a8bff200d74ab5c066b31bdecf47fae8f24ee15fc4ae0f",
+    "reports/handoff-closeout-2026-09-12/replay-verification.json": "1b63fe7c9e46eb01b0804c7db528e6a297c4fcf0ad5f1ba8c070d583c116bdd5",
+    "reports/handoff-closeout-2026-09-12/replay.log": "1c770d05f4159d58f05839e927b2a9b746a7af11ba5d68f3dca86c3ec58be85d",
+    "reports/handoff-closeout-2026-09-12/repository-after.json": "64775081f4da5b38e815cedc17050b36880d184e84cf2c807589bb8790eb9c91",
+    "reports/handoff-closeout-2026-09-12/repository-before.json": "e6cb62eaf24c89dc46580541693ea68120962f4ce604fdd42e2bd8ff6c91a520",
+    "reports/handoff-closeout-2026-09-12/sealed-integrity.json": "cf19e72583d2d6e90104b1c87737c682d2fed20c4c5cab3466ce44470e0ebf5f",
+    "reports/handoff-closeout-2026-09-12/syntax-files.txt": "cb6dc33ce61220977572dfb60681edd52684401f727039a64c1be0612cdc3f05",
+    "reports/handoff-closeout-2026-09-12/test-command.txt": "e10dea53a37cd2164da9dca8ed79eb789785941808a011d81ad1d19542f375ae",
+    "reports/handoff-closeout-2026-09-12/tests.json": "22d44936044e4eea602e1ea90e2c319f9c27edd7a694625b258a8d2a99af797b",
+    "reports/handoff-closeout-2026-09-12/tests.log": "2b30f3537f04d761852bd5a93ada49bc37ebde6baa4fa278b8c3e68e21d4b695",
+    "reports/handoff-closeout-2026-09-12/verification-detail.json": "2286f0d1944b42ea6ffbfa755fab77bbe6d1458dd2a1cc8a7fb26aa42003de51",
+    "reports/handoff-closeout-2026-09-12/verification-summary.json": "10382c019d78beb816218fafe475e3e077f6ea66d9f1d3ad9bb7e59f2cbe03a0",
+    "scripts/verify_house_door_handoffs.py": "f47b12112f4ba6c9ba6dce69b7156809557c6e8ec6f07dec86a2c0f2f3f072ba"
+  }
+}

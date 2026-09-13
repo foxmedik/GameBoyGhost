@@ -1,0 +1,42 @@
+{
+  "qualification": false,
+  "passed": 0,
+  "cases": [
+    {
+      "case": "house23",
+      "run": "runs/teacher-route-regression-panel-v1-house23",
+      "success": false,
+      "exact_replay": true,
+      "failure": "RouteBlocker: Room0E guard budget exhausted",
+      "commands": 13656,
+      "frame": 45281
+    },
+    {
+      "case": "house41",
+      "run": "runs/teacher-route-regression-panel-v1-house41",
+      "success": false,
+      "exact_replay": true,
+      "failure": "RouteBlocker: Unexpected item-route dialogue 110",
+      "commands": 10374,
+      "frame": 41500
+    },
+    {
+      "case": "house67",
+      "run": "runs/teacher-route-regression-panel-v1-house67",
+      "success": false,
+      "exact_replay": true,
+      "failure": "RouteBlocker: Room0E guard budget exhausted",
+      "commands": 13347,
+      "frame": 45740
+    },
+    {
+      "case": "recovery23",
+      "run": "runs/teacher-route-regression-panel-v1-recovery23",
+      "success": false,
+      "exact_replay": true,
+      "failure": "RouteBlocker: Damage is still being applied; not a safe route state",
+      "commands": 13528,
+      "frame": 45153
+    }
+  ]
+}

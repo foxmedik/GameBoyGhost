@@ -74,3 +74,22 @@ def steer(x,y,target):
     if abs(dx)<=1 and abs(dy)<=1:return None
     # Centre laterally before walking up a narrow vertical corridor.
     return (4 if dx>0 else 3) if abs(dx)>1 else (2 if dy>0 else 1)
+
+
+def steer_path(x, y, target):
+    """Centre across a corridor before advancing to its adjacent path cell.
+
+    A horizontal step must align Y first; a vertical step must align X first.
+    This avoids cutting a solid corner when replanning after displacement.
+    """
+    here = cell(x, y)
+    tx, ty = target[0]*16+8, target[1]*16+12
+    if target[0] != here[0] and target[1] == here[1]:
+        if abs(ty-y) > 4:
+            return 2 if ty > y else 1
+        return 4 if tx > x else 3
+    if target[1] != here[1] and target[0] == here[0]:
+        if abs(tx-x) > 4:
+            return 4 if tx > x else 3
+        return 2 if ty > y else 1
+    return steer(x, y, target)

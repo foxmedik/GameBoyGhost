@@ -1,0 +1,11 @@
+{
+  "hypothesis": "Beetle approach uses connected central column and middle row, reaching upper alignment and outer flipped enemies while avoiding corner pits; keep y40 jump. Same budgets.",
+  "cases": [
+    "house41",
+    "house67",
+    "house307",
+    "recovery23"
+  ],
+  "qualification": false,
+  "training_eligible": false
+}

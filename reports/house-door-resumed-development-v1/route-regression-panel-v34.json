@@ -1,0 +1,11 @@
+{
+  "hypothesis": "Split frozen neutral idle into physical commands <=600 frames; exact total unchanged, no route-controller changes.",
+  "cases": [
+    "house607",
+    "house673",
+    "house743",
+    "recovery698"
+  ],
+  "qualification": false,
+  "training_eligible": false
+}

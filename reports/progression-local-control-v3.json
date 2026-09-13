@@ -1,0 +1,30 @@
+{
+  "schema": "progression-local-control-candidate-report-v3",
+  "experiment": "configs/progression_local_control_v3.json",
+  "experiment_sha256": "fc29a639a5fe7897f5cf896fb72e6b57460dae585be6e60ac5835c010a9c79f8",
+  "training_result": "runs/progression-local-control-v3/result.json",
+  "training_result_sha256": "6fcc54d1414808274e380ad5b471b5cfe8fbc6d2692079243ac6c9c298a6446c",
+  "checkpoint": "runs/progression-local-control-v3/model/epoch-032.pt",
+  "checkpoint_sha256": "e13e011ea66c90e5f1c57c5143d037d0513aa9a96768788cb8dc38f9da357510",
+  "status": "rejected_after_live_development",
+  "offline_gate": {
+    "movement_accuracy_minimum": 0.55,
+    "button_accuracy_minimum": 0.55,
+    "movement_accuracy": 0.6676484942436218,
+    "button_accuracy": 0.599410891532898,
+    "button_label_counts": [309, 178, 1550],
+    "button_prediction_counts": [311, 583, 1143],
+    "every_button_class_predicted": true,
+    "passed": true
+  },
+  "live_evaluation_performed": true,
+  "live_evaluation": "reports/progression-local-control-v3-live.json",
+  "live_successes": 3,
+  "live_cases": 20,
+  "live_gate_passed": false,
+  "selected_runtime_changed": false,
+  "validation_loaded": false,
+  "candidate_number_for_blocker": 3,
+  "candidate_cap_reached": true,
+  "next_step": "Stop at the three-candidate cap and review the observation, action-duration, and closed-loop training design. Keep the passing scripted teacher as the progression baseline."
+}

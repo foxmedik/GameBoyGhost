@@ -1,0 +1,29 @@
+{
+  "status": "frozen_before_collection",
+  "experiment": "room15-student-v4-targeted-sustained-blocked-escapes",
+  "source": "runs/state-driven-tail-cave-disengage-guarded-v1",
+  "student_gate": "runs/room15-student-v3-gate",
+  "source_experiment": "room15-student-v3",
+  "selection_rule": "For each v3 failure with a sustained blocked-intent plateau, select the first 25-decision window after decision 80 with one position and at least five directional requests. Exclude the harmless room-entry collision and the non-plateau half-heart failure.",
+  "rejected_predecessors": [
+    "runs/room15-v4-escape-spans",
+    "runs/room15-v4-escape-spans-v2"
+  ],
+  "rejected_reason": "The first detector selected the shared room-entry collision at x=141,y=67; v2 also pointed at a source without development-house snapshots.",
+  "cases": [
+    {"id": "escape-02-stall", "student_case": "student-v3-room15-02", "base": 2, "idle": 68, "blocked_index": 429},
+    {"id": "escape-06-y80", "student_case": "student-v3-room15-06", "base": 6, "idle": 72, "blocked_index": 203},
+    {"id": "escape-07-y80", "student_case": "student-v3-room15-07", "base": 7, "idle": 73, "blocked_index": 265},
+    {"id": "escape-08-y80", "student_case": "student-v3-room15-08", "base": 8, "idle": 74, "blocked_index": 204},
+    {"id": "escape-14-stall", "student_case": "student-v3-room15-14", "base": 14, "idle": 80, "blocked_index": 218}
+  ],
+  "excluded_failure": {"student_case": "student-v3-room15-11", "reason": "No sustained no-progress plateau; retain only as a separate low-health failure diagnosis."},
+  "frozen_inputs": {
+    "scripts/collect_room15_v4_escape_spans.py": "92f7e99c913c1c070631a47af6f058370c61d4830a7da0f56b716ca63cf30356",
+    "src/gameboy_agent/tail_cave_progression.py": "ca98e838029cbd6435a201ec38fcf0e4259850fc001111997c24158965523aab",
+    "src/gameboy_agent/room15_recovery.py": "184a2371bc5dda0323fe2c368e43817245a5c7735b91fa67fc609e83d96b7d28",
+    "runs/room15-student-v3-gate/summary.json": "1d4d69302cfeec6bcbbc4debaf27cba59dc29da55760b1620914d1e328eb60d9"
+  },
+  "training_authorized": false,
+  "validation_loaded": false
+}

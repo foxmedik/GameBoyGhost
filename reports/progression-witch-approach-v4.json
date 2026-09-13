@@ -1,0 +1,212 @@
+{
+  "result": {
+    "status": "returned_to_forest",
+    "failure": null,
+    "steps": 3143,
+    "frames": 18659,
+    "damage_raw": 12,
+    "healing_raw": 0,
+    "final": {
+      "phase": {
+        "gameplay": 11,
+        "subtype": 7,
+        "scroll": 0,
+        "sequence": 4,
+        "palette": 0,
+        "room": [
+          0,
+          0,
+          98
+        ],
+        "health": 12
+      },
+      "room": [
+        0,
+        0,
+        98
+      ],
+      "x": 120,
+      "y": 66,
+      "health": 12,
+      "max_hearts": 3,
+      "inventory": [
+        4,
+        1,
+        12,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "sword": 1,
+      "toadstool": 1,
+      "powder": 0,
+      "bombs": 0,
+      "arrows": 0,
+      "tail_key": 0,
+      "tarin": 0,
+      "tail_door_status": 0,
+      "trade_item": 0,
+      "dialog_state": 0,
+      "dialog_id": 0,
+      "inventory_cursor": 0
+    },
+    "milestones": {
+      "sword_acquired": 17,
+      "toadstool_acquired": 61
+    },
+    "quest_success": false,
+    "exact_action_replay": true,
+    "assistance": "scripted_known_route_with_source_grounded_rom_senses",
+    "human_interventions": 0,
+    "optimizer_updates": 0,
+    "reserved_evaluation_used": false,
+    "wall_seconds": 12.333
+  },
+  "evidence": [
+    {
+      "kind": "toadstool_prefix_exact",
+      "decisions": 2912,
+      "frame": 17331
+    },
+    {
+      "kind": "return_transition",
+      "origin": [
+        0,
+        0,
+        80
+      ],
+      "target": [
+        1,
+        10,
+        171
+      ],
+      "frame": 17574
+    },
+    {
+      "kind": "return_block_plan",
+      "room": [
+        1,
+        10,
+        171
+      ],
+      "status": "planned",
+      "pushes": [
+        {
+          "index": 70,
+          "direction": 4,
+          "stance": [
+            5,
+            4
+          ],
+          "destination_index": 71
+        },
+        {
+          "index": 55,
+          "direction": 4,
+          "stance": [
+            6,
+            3
+          ],
+          "destination_index": 56
+        },
+        {
+          "index": 39,
+          "direction": 1,
+          "stance": [
+            7,
+            3
+          ],
+          "destination_index": 23
+        }
+      ],
+      "states": 19
+    },
+    {
+      "kind": "verified_return_push",
+      "index": 70,
+      "direction": 4,
+      "stance": [
+        5,
+        4
+      ],
+      "destination_index": 71,
+      "frame": 17765
+    },
+    {
+      "kind": "verified_return_push",
+      "index": 55,
+      "direction": 4,
+      "stance": [
+        6,
+        3
+      ],
+      "destination_index": 56,
+      "frame": 17919
+    },
+    {
+      "kind": "verified_return_push",
+      "index": 39,
+      "direction": 1,
+      "stance": [
+        7,
+        3
+      ],
+      "destination_index": 23,
+      "frame": 18058
+    },
+    {
+      "kind": "return_transition",
+      "origin": [
+        1,
+        10,
+        171
+      ],
+      "target": [
+        1,
+        10,
+        172
+      ],
+      "frame": 18147
+    },
+    {
+      "kind": "return_transition",
+      "origin": [
+        1,
+        10,
+        172
+      ],
+      "target": [
+        1,
+        10,
+        189
+      ],
+      "frame": 18342
+    },
+    {
+      "kind": "return_transition",
+      "origin": [
+        1,
+        10,
+        189
+      ],
+      "target": [
+        0,
+        0,
+        98
+      ],
+      "frame": 18659
+    },
+    {
+      "kind": "return_cave_complete",
+      "frame": 18659
+    }
+  ],
+  "output": "runs/progression-witch-approach-v4",
+  "memory_version": "68dba9cf96eb8507f09395243e9843ba94205ef01b455b3919ff24f7ee7e4615"
+}

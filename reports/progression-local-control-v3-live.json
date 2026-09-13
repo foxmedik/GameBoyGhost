@@ -1,0 +1,33 @@
+{
+  "schema": "progression-local-control-live-development-report-v1",
+  "run": "runs/progression-local-control-v3-live-v3",
+  "panel": "configs/progression_local_control_v3_live_panel_v2.json",
+  "panel_sha256": "f36e9169042b00ece2133b315db9fc4e5c193d6ce9833d696082887c2021fc76",
+  "summary_sha256": "c4373fda37de25b08e6a50ef1d09979ff453ee416a0253c3e5b2066a862db42d",
+  "candidate": "runs/progression-local-control-v3/model/epoch-032.pt",
+  "candidate_sha256": "e13e011ea66c90e5f1c57c5143d037d0513aa9a96768788cb8dc38f9da357510",
+  "successes": 3,
+  "cases": 20,
+  "required_successes": 18,
+  "gate_passed": false,
+  "exact_replays": 20,
+  "failures": {
+    "stalls": 16,
+    "deaths": 1
+  },
+  "successful_contexts": {
+    "witch_52_to_42": 2,
+    "tarin_52_to_62": 1
+  },
+  "source_prefix_decisions": 59810,
+  "candidate_decisions": 1940,
+  "bounded_recoveries": 70,
+  "damage_raw_total_including_setup": 312,
+  "healing_raw_total_including_setup": 120,
+  "candidate_decision": "rejected",
+  "selected_runtime_changed": false,
+  "candidate_cap_reached": true,
+  "validation_loaded": false,
+  "sealed_validation_preserved": true,
+  "conclusion": "Offline action classification did not transfer to closed-loop local traversal. Stop after the preregistered third candidate and review the observation/action-duration/closed-loop training design before another experiment block."
+}

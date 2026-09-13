@@ -1,0 +1,14 @@
+{
+  "source": "runs/teacher-south-worm-entry-v2/continuation.json",
+  "source_sha256": "56aa832828a7f6a8f1d162b7d9c938e2419f57a9847881586a05d224446dbda4",
+  "case_count": 1,
+  "budget": {
+    "decisions": 1000,
+    "frames": 4500
+  },
+  "hypothesis": "Observed entrance barrier is cuttable with sword; cut at122 then guard89 against worm and exit north. No key expenditure expected.",
+  "success": "room07 full health, two remaining keys, shield B sword A, no buffered damage",
+  "training_eligible": false,
+  "qualification": false,
+  "prior_failure": "runs/teacher-south-worm-v1"
+}

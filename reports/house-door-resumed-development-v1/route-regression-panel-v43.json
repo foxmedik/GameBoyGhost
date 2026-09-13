@@ -1,0 +1,11 @@
+{
+  "hypothesis": "Room05 Gel guard physically repositions via top row to88,40 around blocks after recoil, rather than waiting far from remaining Gel.",
+  "cases": [
+    "house953",
+    "house1109",
+    "house883",
+    "recovery698"
+  ],
+  "qualification": false,
+  "training_eligible": false
+}

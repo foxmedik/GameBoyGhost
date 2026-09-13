@@ -1,0 +1,36 @@
+{
+  "passed": 1,
+  "total": 4,
+  "cases": [
+    {
+      "case": "house41",
+      "summary": "runs/teacher-route-regression-panel-v8-house41/summary.json",
+      "success": true,
+      "exact_replay": true,
+      "failure": null
+    },
+    {
+      "case": "house67",
+      "summary": "runs/teacher-route-regression-panel-v8-house67/summary.json",
+      "success": false,
+      "exact_replay": true,
+      "failure": "RouteBlocker: Southern worm passage budget exhausted"
+    },
+    {
+      "case": "house97",
+      "summary": "runs/teacher-route-regression-panel-v8-house97/summary.json",
+      "success": false,
+      "exact_replay": true,
+      "failure": "RouteBlocker: Item route buffered damage or falling"
+    },
+    {
+      "case": "recovery23",
+      "summary": "runs/teacher-route-regression-panel-v8-recovery23/summary.json",
+      "success": false,
+      "exact_replay": true,
+      "failure": "RouteBlocker: Southern worm passage budget exhausted"
+    }
+  ],
+  "qualified": false,
+  "training_eligible": false
+}

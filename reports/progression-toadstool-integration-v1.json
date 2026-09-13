@@ -1,0 +1,88 @@
+{
+  "scope": "scripted_progression_baseline",
+  "tests": {
+    "total": 112,
+    "passed": true,
+    "skipped": 0,
+    "seconds": 37.234,
+    "command": "PYTHONPATH=/tmp/gameboy-audit-deps .venv-ladx/bin/python -m unittest discover -s tests -v",
+    "log": "runs/progression-integration-validation-20260911/tests.log"
+  },
+  "runs": [
+    {
+      "run": "progression-toadstool-v1",
+      "status": "toadstool_acquired",
+      "failure": null,
+      "steps": 2912,
+      "frames": 17331,
+      "damage_raw": 8,
+      "health": 16,
+      "exact_action_replay": true
+    },
+    {
+      "run": "progression-witch-approach-v1",
+      "status": "blocked",
+      "failure": "No conservative right return path in [1, 10, 171]; obstacle/doorway skill required",
+      "steps": 2970,
+      "frames": 17574,
+      "damage_raw": 8,
+      "health": 16,
+      "exact_action_replay": true
+    },
+    {
+      "run": "progression-witch-approach-v2",
+      "status": "blocked",
+      "failure": "Physical approach stalled in [1, 10, 171] at (84, 122)",
+      "steps": 3004,
+      "frames": 17676,
+      "damage_raw": 8,
+      "health": 16,
+      "exact_action_replay": true
+    },
+    {
+      "run": "progression-witch-approach-v3",
+      "status": "blocked",
+      "failure": "No conservative down return path in [1, 10, 189]; obstacle/doorway skill required",
+      "steps": 3061,
+      "frames": 18342,
+      "damage_raw": 8,
+      "health": 16,
+      "exact_action_replay": true
+    },
+    {
+      "run": "progression-witch-approach-v4",
+      "status": "returned_to_forest",
+      "failure": null,
+      "steps": 3143,
+      "frames": 18659,
+      "damage_raw": 12,
+      "health": 12,
+      "exact_action_replay": true
+    },
+    {
+      "run": "progression-witch-exchange-v1",
+      "status": "blocked",
+      "failure": "No conservative path in [0, 0, 66] from (4, 7) to [4, 0]; obstacle skill required",
+      "steps": 3257,
+      "frames": 19084,
+      "damage_raw": 20,
+      "health": 4,
+      "exact_action_replay": true
+    },
+    {
+      "run": "progression-witch-exchange-v2",
+      "status": "blocked",
+      "failure": "Approach budget exhausted at target [9, 3]",
+      "steps": 3391,
+      "frames": 19486,
+      "damage_raw": 12,
+      "health": 12,
+      "exact_action_replay": true
+    }
+  ],
+  "selected_navigation_sha256": "9d2b24b28be5289fc3d32d85d46faa1835ca2068d73a1e8790630d77dbaf85ec",
+  "optimizer_updates": 0,
+  "reserved_evaluation_used": false,
+  "human_recorder": "shelved",
+  "next_blocker": "Room 42 approach ends at (44,101), dialogue 08D open, health 12; add bounded dialogue handling and reconsider the local path."
+}

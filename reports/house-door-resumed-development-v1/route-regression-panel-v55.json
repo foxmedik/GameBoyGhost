@@ -1,0 +1,11 @@
+{
+  "hypothesis": "Use receipt-aware ItemSteps for room07 south exit so physical power-up pickup animation/dialogue settles before continuing.",
+  "cases": [
+    "house419",
+    "house673",
+    "house743",
+    "recovery698"
+  ],
+  "qualification": false,
+  "training_eligible": false
+}

@@ -1,0 +1,13 @@
+{
+  "source": "runs/teacher-pushblock-entry-v2/continuation.json",
+  "source_sha256": "dec41a0c88389775036ad802c947236073386a716490d00e17b97d1688b9f70c",
+  "case_count": 1,
+  "budget": {
+    "decisions": 1000,
+    "frames": 4500
+  },
+  "hypothesis": "Use south80 lane and wait until Spark is on north-east segment, approach left24 then64, push block east, exit west at48.",
+  "success": "room03 east entry full health, one key, shield B sword A, no buffered damage",
+  "training_eligible": false,
+  "qualification": false
+}

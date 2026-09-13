@@ -1,0 +1,29 @@
+{
+  "schema": "room15-autonomous-student-v4-targeted-escape",
+  "status": "frozen_before_extraction_or_training",
+  "purpose": "Test whether v3's blocked-intent awareness can choose the teacher's state transition. Mix only bounded, exact-replayed sustained-stall escape spans into clean demonstrations with retained clean sampling and reduced correction loss.",
+  "labels_manifest": "runs/room15-teacher-labels-v1/manifest.json",
+  "source": "runs/state-driven-tail-cave-disengage-guarded-v1",
+  "student_gate": "runs/room15-student-v3-gate",
+  "escapes": "runs/room15-v4-escape-spans-v3",
+  "escape_limits": {"escape-02-stall": 28, "escape-06-y80": 16, "escape-07-y80": 16, "escape-08-y80": 72, "escape-14-stall": 72},
+  "span_rule": "For each y80/stall trajectory, use only the prefix through 16 pixels of teacher movement after the plateau. For escape-02, use its entire 28-command stationary direct-clear sequence. Full exact teacher clears remain evidence only.",
+  "recovery_loss_weight": 0.25,
+  "feature_source": "src/gameboy_agent/room15_model_v4.py",
+  "extractor": "scripts/extract_room15_student_v4.py",
+  "trainer": "scripts/train_room15_student_v4.py",
+  "actions": 10,
+  "train_cases": ["base-00-idle-24", "base-00-idle-25", "base-02-idle-25", "base-03-idle-24", "base-05-idle-24", "base-05-idle-25", "base-06-idle-24", "base-07-idle-25", "base-08-idle-24", "base-09-idle-24", "base-10-idle-25", "base-11-idle-24", "base-12-idle-25", "base-13-idle-24", "base-14-idle-25", "base-15-idle-24", "base-16-idle-25", "base-17-idle-24", "base-19-idle-25"],
+  "development_cases": ["base-01-idle-24", "base-01-idle-25", "base-04-idle-24", "base-04-idle-25", "base-07-idle-24", "base-08-idle-25", "base-10-idle-24", "base-11-idle-25", "base-12-idle-25", "base-13-idle-24", "base-14-idle-24", "base-15-idle-25", "base-16-idle-24", "base-17-idle-25", "base-19-idle-24"],
+  "model": {"epochs": 45, "batches_per_epoch": 120, "batch_rows": 256, "learning_rate": 0.0003, "seed": 4117, "recovery_batch_fraction": 0.08, "selection": "final epoch only"},
+  "fresh_gate": {"required_successes": 18, "required_half_heart_successes": 4, "decision_budget": 700, "cases": "20 fresh starts at offsets 86 through 105"},
+  "frozen_inputs": {
+    "runs/room15-teacher-labels-v1/manifest.json": "023cafa836e9bee1bbf3e99baae3ecca3b3fd78dfe7d0644b51468e446010395",
+    "runs/room15-v4-escape-spans-v3/summary.json": "40da9d8a91fd43cc4ee966c8d1c283ec4fabcc9aa852a4a1ef641e1d1ef19d02",
+    "src/gameboy_agent/room15_model_v4.py": "569ec83f4ea8dbe4c511eaac4f3a4f9240919ab27920c9afc80318c3b381b332",
+    "scripts/extract_room15_student_v4.py": "8e0d1bd2a02fe33fd985f9d58193ab6b5bbb1d2bc1b1b3b5f2b1fa722f9c0903",
+    "scripts/train_room15_student_v4.py": "a73a48df650acef80fc9d9068a9231c872559b7e13eda1f73c2c0e6fa3bacc26"
+  },
+  "training_authorized": true,
+  "validation_loaded": false
+}

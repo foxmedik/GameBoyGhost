@@ -1,0 +1,11 @@
+{
+  "hypothesis": "Align drifted third-key chest landing to x<=72/y<=58 before interaction; all other controller logic unchanged.",
+  "cases": [
+    "house131",
+    "house257",
+    "house307",
+    "recovery23"
+  ],
+  "qualification": false,
+  "training_eligible": false
+}

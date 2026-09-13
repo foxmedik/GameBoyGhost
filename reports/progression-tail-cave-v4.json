@@ -1,0 +1,148 @@
+{
+  "result": {
+    "status": "blocked",
+    "failure": "Episode ended before the requested progression stage finished",
+    "steps": 4762,
+    "frames": 31521,
+    "damage_raw": 24,
+    "healing_raw": 0,
+    "final": {
+      "phase": {
+        "gameplay": 11,
+        "subtype": 7,
+        "scroll": 0,
+        "sequence": 4,
+        "palette": 0,
+        "room": [
+          0,
+          0,
+          112
+        ],
+        "health": 0
+      },
+      "room": [
+        0,
+        0,
+        112
+      ],
+      "x": 95,
+      "y": 128,
+      "health": 0,
+      "max_hearts": 3,
+      "inventory": [
+        4,
+        1,
+        12,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "sword": 1,
+      "toadstool": 0,
+      "powder": 24,
+      "bombs": 0,
+      "arrows": 0,
+      "tail_key": 1,
+      "tarin": 1,
+      "tail_door_status": 0,
+      "trade_item": 0,
+      "dialog_state": 0,
+      "dialog_id": 193,
+      "inventory_cursor": 0
+    },
+    "milestones": {
+      "sword_acquired": 17,
+      "toadstool_acquired": 61,
+      "powder_available": 93,
+      "raccoon_cured": 114,
+      "tail_key_acquired": 119
+    },
+    "quest_success": false,
+    "exact_action_replay": true,
+    "assistance": "scripted_known_route_with_source_grounded_rom_senses",
+    "human_interventions": 0,
+    "optimizer_updates": 0,
+    "reserved_evaluation_used": false,
+    "wall_seconds": 19.688
+  },
+  "evidence": [
+    {
+      "kind": "toadstool_prefix_exact",
+      "decisions": 4404,
+      "frame": 30229
+    },
+    {
+      "kind": "return_transition",
+      "origin": [
+        0,
+        0,
+        65
+      ],
+      "target": [
+        0,
+        0,
+        81
+      ],
+      "frame": 30335
+    },
+    {
+      "kind": "return_transition",
+      "origin": [
+        0,
+        0,
+        81
+      ],
+      "target": [
+        0,
+        0,
+        97
+      ],
+      "frame": 30539
+    },
+    {
+      "kind": "return_transition",
+      "origin": [
+        0,
+        0,
+        97
+      ],
+      "target": [
+        0,
+        0,
+        113
+      ],
+      "frame": 30720
+    },
+    {
+      "kind": "return_transition",
+      "origin": [
+        0,
+        0,
+        113
+      ],
+      "target": [
+        0,
+        0,
+        112
+      ],
+      "frame": 30899
+    },
+    {
+      "kind": "bounded_sword_stall_response",
+      "room": [
+        0,
+        0,
+        112
+      ],
+      "frame": 31371
+    }
+  ],
+  "output": "runs/progression-tail-cave-v4",
+  "memory_version": "70ae32b4d7267671ead9dedfacd27c145cca1c30ad0b19e2db93daa5bf421f6a"
+}

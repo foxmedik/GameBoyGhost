@@ -1,0 +1,24 @@
+{
+  "schema": "room15-autonomous-student-gate-v3",
+  "purpose": "Replacement frozen gate: v1 missed replay idle input; v2 showed concurrent PyBoy replays are not reliable. The candidate and data are unchanged; this gate serializes emulators.",
+  "supersedes": ["configs/room15_student_v1_gate.json", "configs/room15_student_v1_gate_v2.json"],
+  "experiment": "configs/room15_student_v1.json",
+  "experiment_sha256": "8400b0e039eb80d69adb72ae9b5fe4062e890a087ec529a22ac57cf34f16e8a6",
+  "candidate": "runs/room15-student-v1-candidate/candidate.pt",
+  "candidate_sha256": "04c0d38fc09fe1d531a6d94350651ca5b29ba1c6bec4a901fc3e36eeed43b464",
+  "evaluator": "scripts/evaluate_room15_student_v1.py",
+  "evaluator_sha256": "9eac052f45f129bcc95ed1384a360bcaabb429d6579c581ea9dfc12ef9fd6fee",
+  "source": "runs/state-driven-tail-cave-disengage-guarded-v1",
+  "decision_budget": 700,
+  "required_successes": 18,
+  "required_half_heart_successes": 4,
+  "control": "The entry helper traverses room 0x16. The candidate controls every room-15 action; no teacher fallback is permitted.",
+  "cases": [
+    {"id":"student-room15-00","base":0,"idle":26}, {"id":"student-room15-01","base":1,"idle":27}, {"id":"student-room15-02","base":2,"idle":28}, {"id":"student-room15-03","base":3,"idle":29}, {"id":"student-room15-04","base":4,"idle":30},
+    {"id":"student-room15-05","base":5,"idle":31}, {"id":"student-room15-06","base":6,"idle":32}, {"id":"student-room15-07","base":7,"idle":33}, {"id":"student-room15-08","base":8,"idle":34}, {"id":"student-room15-09","base":9,"idle":35},
+    {"id":"student-room15-10","base":10,"idle":36}, {"id":"student-room15-11","base":11,"idle":37}, {"id":"student-room15-12","base":12,"idle":38}, {"id":"student-room15-13","base":13,"idle":39}, {"id":"student-room15-14","base":14,"idle":40},
+    {"id":"student-room15-15","base":15,"idle":41}, {"id":"student-room15-16","base":16,"idle":42}, {"id":"student-room15-17","base":17,"idle":43}, {"id":"student-room15-18","base":18,"idle":44}, {"id":"student-room15-19","base":19,"idle":45}
+  ],
+  "selection": "Final epoch only. Select only if this frozen gate passes; otherwise preserve as rejected evidence.",
+  "validation_loaded": false
+}

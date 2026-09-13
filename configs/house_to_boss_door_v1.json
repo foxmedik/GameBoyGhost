@@ -1,0 +1,90 @@
+{
+  "schema_version": 1,
+  "phase": "house_to_boss_door",
+  "status": "nightmare_key_acquired_miniboss_reached_route_unqualified",
+  "plan": "docs/HOUSE_TO_BOSS_DOOR_PLAN.md",
+  "objective": "Open Tail Cave boss door alive from the supplied house start; stop outside the boss room.",
+  "out_of_scope": [
+    "final_boss_fight",
+    "full_moon_cello"
+  ],
+  "completion": {
+    "route_proof_verified": false,
+    "endpoint_live_verified": false,
+    "full_route_teacher_qualified": false,
+    "training_manifest": null,
+    "frozen_learning_experiment": null,
+    "training_started": false,
+    "trained_system_gate_passed": false
+  },
+  "active_stage": "finish_guided_route",
+  "next_milestone": "rolling_bones_cleared",
+  "next_action": "Develop bounded miniboss attack/disengagement phases; prior pursuit and lower-lane tests failed. Before qualifying the full-route teacher, repair room0E landing safety exposed by the failed fresh timing check.",
+  "candidate_endpoint": {
+    "status": "source_grounded_pending_physical_validation",
+    "room": [
+      1,
+      0,
+      11
+    ],
+    "forbidden_boss_room": [
+      1,
+      0,
+      6
+    ],
+    "room_status_address": "0xD90B",
+    "open_mask": "0x04",
+    "boss_key_address": "0xDBCF",
+    "door_animation_address": "0xC188",
+    "requires": [
+      "continuous_house_episode",
+      "closed_to_open_transition",
+      "nightmare_key",
+      "alive",
+      "world_settled",
+      "dialogue_closed",
+      "door_animation_finished",
+      "movement_released",
+      "outside_boss_room"
+    ]
+  },
+  "gate_design": {
+    "status": "criteria_set_case_manifests_not_yet_frozen",
+    "teacher": {
+      "house_successes_required": 20,
+      "house_cases": 20,
+      "half_heart_successes_required": 4,
+      "half_heart_cases": 4,
+      "raw_half_heart_health": 4,
+      "all_cases_exact_replay": true
+    },
+    "model_only": {
+      "house_successes_required": 18,
+      "house_cases": 20,
+      "half_heart_successes_required": 4,
+      "half_heart_cases": 4,
+      "all_cases_exact_replay": true,
+      "teacher_fallbacks_allowed": 0
+    },
+    "guided_hybrid_report_separately": true,
+    "episode_and_compute_budgets": "Freeze in experiment manifest before running; no in-run changes."
+  },
+  "teacher_gate_manifest": null,
+  "model_gate_manifest": null,
+  "training_prerequisites": [
+    "verified_live_endpoint",
+    "full_route_teacher_gate_pass",
+    "fresh_demonstration_manifest",
+    "episode_grouped_data_split",
+    "frozen_learning_experiment_and_budget"
+  ],
+  "sealed_validation_preserved": true,
+  "room15_recovery_branch": "closed_no_more_candidates",
+  "historical_protocol": "configs/progression_protocol_v1.json",
+  "current_continuation": "runs/tail-cave-room10-state-check-v2/continuation.json",
+  "full_health_continuation": "runs/tail-cave-feather-v2/feather-full-health-continuation.json",
+  "latest_progression_evidence": "reports/house-boss-door-route-progress-v1.json",
+  "latest_progression_report": "docs/HOUSE_BOSS_DOOR_ROUTE_PROGRESS.md",
+  "repeatability_blocker": "Nightmare Key controller fresh timing smoke: 1/2; idle13 enemy contact at room0E landing.",
+  "endpoint_implementation": "src/gameboy_agent/boss_door_endpoint.py"
+}

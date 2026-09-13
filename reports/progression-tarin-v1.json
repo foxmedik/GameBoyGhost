@@ -1,0 +1,192 @@
+{
+  "result": {
+    "status": "blocked",
+    "failure": "No verified terrain path from [0, 0, 82] toward 51",
+    "steps": 4079,
+    "frames": 24722,
+    "damage_raw": 20,
+    "healing_raw": 0,
+    "final": {
+      "phase": {
+        "gameplay": 11,
+        "subtype": 7,
+        "scroll": 0,
+        "sequence": 4,
+        "palette": 0,
+        "room": [
+          0,
+          0,
+          82
+        ],
+        "health": 4
+      },
+      "room": [
+        0,
+        0,
+        82
+      ],
+      "x": 89,
+      "y": 15,
+      "health": 4,
+      "max_hearts": 3,
+      "inventory": [
+        4,
+        1,
+        12,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "sword": 1,
+      "toadstool": 0,
+      "powder": 32,
+      "bombs": 0,
+      "arrows": 0,
+      "tail_key": 0,
+      "tarin": 0,
+      "tail_door_status": 0,
+      "trade_item": 0,
+      "dialog_state": 0,
+      "dialog_id": 0,
+      "inventory_cursor": 0
+    },
+    "milestones": {
+      "sword_acquired": 17,
+      "toadstool_acquired": 61,
+      "powder_available": 93
+    },
+    "quest_success": false,
+    "exact_action_replay": true,
+    "assistance": "scripted_known_route_with_source_grounded_rom_senses",
+    "human_interventions": 0,
+    "optimizer_updates": 0,
+    "reserved_evaluation_used": false,
+    "wall_seconds": 15.819
+  },
+  "evidence": [
+    {
+      "kind": "toadstool_prefix_exact",
+      "decisions": 3696,
+      "frame": 23053
+    },
+    {
+      "kind": "return_transition",
+      "origin": [
+        1,
+        14,
+        162
+      ],
+      "target": [
+        0,
+        0,
+        101
+      ],
+      "frame": 23278
+    },
+    {
+      "kind": "return_transition",
+      "origin": [
+        0,
+        0,
+        101
+      ],
+      "target": [
+        0,
+        0,
+        100
+      ],
+      "frame": 23439
+    },
+    {
+      "kind": "return_transition",
+      "origin": [
+        0,
+        0,
+        100
+      ],
+      "target": [
+        0,
+        0,
+        84
+      ],
+      "frame": 23584
+    },
+    {
+      "kind": "approach_transition_settled",
+      "target": [
+        0,
+        0,
+        68
+      ],
+      "frame": 23740
+    },
+    {
+      "kind": "return_transition",
+      "origin": [
+        0,
+        0,
+        68
+      ],
+      "target": [
+        0,
+        0,
+        67
+      ],
+      "frame": 23958
+    },
+    {
+      "kind": "return_transition",
+      "origin": [
+        0,
+        0,
+        67
+      ],
+      "target": [
+        0,
+        0,
+        66
+      ],
+      "frame": 24237
+    },
+    {
+      "kind": "bounded_sword_stall_response",
+      "room": [
+        0,
+        0,
+        66
+      ],
+      "frame": 24445
+    },
+    {
+      "kind": "bounded_sword_stall_response",
+      "room": [
+        0,
+        0,
+        66
+      ],
+      "frame": 24593
+    },
+    {
+      "kind": "return_transition",
+      "origin": [
+        0,
+        0,
+        66
+      ],
+      "target": [
+        0,
+        0,
+        82
+      ],
+      "frame": 24722
+    }
+  ],
+  "output": "runs/progression-tarin-v1",
+  "memory_version": "ed231db923faf31c527f3ef3d0c3d24232f6e0386cba34cf6a8c096e64ffd2a3"
+}

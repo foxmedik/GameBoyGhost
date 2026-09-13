@@ -1,0 +1,119 @@
+{
+  "result": {
+    "status": "tail_key_acquired",
+    "failure": null,
+    "steps": 4404,
+    "frames": 30229,
+    "damage_raw": 20,
+    "healing_raw": 0,
+    "final": {
+      "phase": {
+        "gameplay": 11,
+        "subtype": 7,
+        "scroll": 0,
+        "sequence": 4,
+        "palette": 0,
+        "room": [
+          0,
+          0,
+          65
+        ],
+        "health": 4
+      },
+      "room": [
+        0,
+        0,
+        65
+      ],
+      "x": 72,
+      "y": 74,
+      "health": 4,
+      "max_hearts": 3,
+      "inventory": [
+        4,
+        1,
+        12,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "sword": 1,
+      "toadstool": 0,
+      "powder": 24,
+      "bombs": 0,
+      "arrows": 0,
+      "tail_key": 1,
+      "tarin": 1,
+      "tail_door_status": 0,
+      "trade_item": 0,
+      "dialog_state": 0,
+      "dialog_id": 193,
+      "inventory_cursor": 0
+    },
+    "milestones": {
+      "sword_acquired": 17,
+      "toadstool_acquired": 61,
+      "powder_available": 93,
+      "raccoon_cured": 114,
+      "tail_key_acquired": 119
+    },
+    "quest_success": false,
+    "exact_action_replay": true,
+    "assistance": "scripted_known_route_with_source_grounded_rom_senses",
+    "human_interventions": 0,
+    "optimizer_updates": 0,
+    "reserved_evaluation_used": false,
+    "wall_seconds": 19.196
+  },
+  "evidence": [
+    {
+      "kind": "toadstool_prefix_exact",
+      "decisions": 4302,
+      "frame": 28405
+    },
+    {
+      "kind": "return_transition",
+      "origin": [
+        0,
+        0,
+        81
+      ],
+      "target": [
+        0,
+        0,
+        65
+      ],
+      "frame": 28544
+    },
+    {
+      "kind": "chest_approach_bush_cut",
+      "frame": 28747,
+      "before": 92,
+      "after": 4
+    },
+    {
+      "kind": "tail_key_chest_verified",
+      "frame": 30229,
+      "room": [
+        0,
+        0,
+        65
+      ],
+      "chest_cell": [
+        4,
+        3
+      ],
+      "chest_before": 160,
+      "chest_after": 161,
+      "tail_key": 1
+    }
+  ],
+  "output": "runs/progression-tail-key-v2",
+  "memory_version": "306ec9d9b72622826cd0f7da5685b7ac096784dda96c3ab5f909c3728c22284a"
+}

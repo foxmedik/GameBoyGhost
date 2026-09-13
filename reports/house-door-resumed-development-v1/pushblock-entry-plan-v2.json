@@ -1,0 +1,14 @@
+{
+  "source": "runs/teacher-south-worm-v4/continuation.json",
+  "source_sha256": "9af103ed4b85ab5dd0668f2857a3e110edfbd82324d2768a01f03a7c5638ec5e",
+  "case_count": 1,
+  "budget": {
+    "decisions": 1000,
+    "frames": 4500
+  },
+  "hypothesis": "Bat chase crossed active trap row and buffered damage. Guard the bat from y94 or south; prevent north chase beyond94, then use planned x70 passage after bat clearance. Same budgets.",
+  "success": "room04 south entry full health, one key, shield B sword A, no buffered damage",
+  "training_eligible": false,
+  "qualification": false,
+  "prior_failure": "runs/teacher-pushblock-entry-v1"
+}

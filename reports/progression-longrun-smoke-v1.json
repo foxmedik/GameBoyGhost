@@ -1,0 +1,34 @@
+{
+  "status": "finished",
+  "reason": "requested case cap",
+  "updated_at": "2026-09-11T18:25:33.364866+00:00",
+  "started_at": "2026-09-11T18:25:10.172651+00:00",
+  "completed_cases": 2,
+  "planned_cases": 401,
+  "groups": {
+    "control/house": {
+      "cases": 1,
+      "successes": 1,
+      "exact_replays": 1,
+      "deaths": 0
+    },
+    "development/house": {
+      "cases": 1,
+      "successes": 0,
+      "exact_replays": 1,
+      "deaths": 1
+    }
+  },
+  "total_recorded_decisions": 5458,
+  "total_recorded_frames": 37119,
+  "replay_decisions": 5458,
+  "validation_complete": false,
+  "validation_passed": false,
+  "failures": {
+    "house: RuntimeError: Episode ended before the requested progression stage finished": 1
+  },
+  "optimizer_updates": 0,
+  "reserved_navigation_evaluation_used": false,
+  "scope": "frozen_scripted_baseline_physical_variations",
+  "results_file": "/Users/studio/Developer/GameBoyAgent/runs/progression-longrun-smoke-v1/results.jsonl"
+}

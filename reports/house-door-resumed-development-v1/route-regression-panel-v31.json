@@ -1,0 +1,11 @@
+{
+  "hypothesis": "Room10 north passage follows y40 between Sparks, realigns after combat, and targets close Stalfos only within18 to avoid following airborne targets north.",
+  "cases": [
+    "house541",
+    "house131",
+    "house257",
+    "recovery23"
+  ],
+  "qualification": false,
+  "training_eligible": false
+}

@@ -1,0 +1,96 @@
+{
+  "result": {
+    "status": "blocked",
+    "failure": "No conservative path in [0, 0, 65] from (6, 7) to (4, 4); obstacle skill required",
+    "steps": 4334,
+    "frames": 28544,
+    "damage_raw": 20,
+    "healing_raw": 0,
+    "final": {
+      "phase": {
+        "gameplay": 11,
+        "subtype": 7,
+        "scroll": 0,
+        "sequence": 4,
+        "palette": 0,
+        "room": [
+          0,
+          0,
+          65
+        ],
+        "health": 4
+      },
+      "room": [
+        0,
+        0,
+        65
+      ],
+      "x": 105,
+      "y": 125,
+      "health": 4,
+      "max_hearts": 3,
+      "inventory": [
+        4,
+        12,
+        1,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "sword": 1,
+      "toadstool": 0,
+      "powder": 24,
+      "bombs": 0,
+      "arrows": 0,
+      "tail_key": 0,
+      "tarin": 1,
+      "tail_door_status": 0,
+      "trade_item": 0,
+      "dialog_state": 0,
+      "dialog_id": 10,
+      "inventory_cursor": 0
+    },
+    "milestones": {
+      "sword_acquired": 17,
+      "toadstool_acquired": 61,
+      "powder_available": 93,
+      "raccoon_cured": 114
+    },
+    "quest_success": false,
+    "exact_action_replay": true,
+    "assistance": "scripted_known_route_with_source_grounded_rom_senses",
+    "human_interventions": 0,
+    "optimizer_updates": 0,
+    "reserved_evaluation_used": false,
+    "wall_seconds": 17.914
+  },
+  "evidence": [
+    {
+      "kind": "toadstool_prefix_exact",
+      "decisions": 4302,
+      "frame": 28405
+    },
+    {
+      "kind": "return_transition",
+      "origin": [
+        0,
+        0,
+        81
+      ],
+      "target": [
+        0,
+        0,
+        65
+      ],
+      "frame": 28544
+    }
+  ],
+  "output": "runs/progression-tail-key-v1",
+  "memory_version": "f4d65f7d168c8afbcb9a40bc3f90fb819ce4e37bba1c5f04e5a118fa8d80a3c7"
+}

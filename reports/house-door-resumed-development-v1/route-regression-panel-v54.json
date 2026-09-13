@@ -1,0 +1,11 @@
+{
+  "hypothesis": "Bound room0E encounter at3600 to allow additional observed worm patrol cycles; all geometry, health checks and whole-case frozen limits unchanged.",
+  "cases": [
+    "house673",
+    "house743",
+    "house359",
+    "recovery698"
+  ],
+  "qualification": false,
+  "training_eligible": false
+}

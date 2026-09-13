@@ -1,0 +1,205 @@
+{
+  "result": {
+    "status": "blocked",
+    "failure": "No conservative down return path in [1, 10, 189]; obstacle/doorway skill required",
+    "steps": 3061,
+    "frames": 18342,
+    "damage_raw": 8,
+    "healing_raw": 0,
+    "final": {
+      "phase": {
+        "gameplay": 11,
+        "subtype": 7,
+        "scroll": 0,
+        "sequence": 4,
+        "palette": 0,
+        "room": [
+          1,
+          10,
+          189
+        ],
+        "health": 16
+      },
+      "room": [
+        1,
+        10,
+        189
+      ],
+      "x": 72,
+      "y": 16,
+      "health": 16,
+      "max_hearts": 3,
+      "inventory": [
+        4,
+        1,
+        12,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "sword": 1,
+      "toadstool": 1,
+      "powder": 0,
+      "bombs": 0,
+      "arrows": 0,
+      "tail_key": 0,
+      "tarin": 0,
+      "tail_door_status": 0,
+      "trade_item": 0,
+      "dialog_state": 0,
+      "dialog_id": 0,
+      "inventory_cursor": 0
+    },
+    "milestones": {
+      "sword_acquired": 17,
+      "toadstool_acquired": 61
+    },
+    "quest_success": false,
+    "exact_action_replay": true,
+    "assistance": "scripted_known_route_with_source_grounded_rom_senses",
+    "human_interventions": 0,
+    "optimizer_updates": 0,
+    "reserved_evaluation_used": false,
+    "wall_seconds": 12.309
+  },
+  "evidence": [
+    {
+      "kind": "forest_prefix_exact",
+      "decisions": 2912,
+      "frame": 17331
+    },
+    {
+      "kind": "return_transition",
+      "origin": [
+        0,
+        0,
+        80
+      ],
+      "target": [
+        1,
+        10,
+        171
+      ],
+      "frame": 17574
+    },
+    {
+      "kind": "return_block_plan",
+      "room": [
+        1,
+        10,
+        171
+      ],
+      "status": "planned",
+      "pushes": [
+        {
+          "index": 70,
+          "direction": 4,
+          "stance": [
+            5,
+            4
+          ],
+          "destination_index": 71
+        },
+        {
+          "index": 55,
+          "direction": 4,
+          "stance": [
+            6,
+            3
+          ],
+          "destination_index": 56
+        },
+        {
+          "index": 39,
+          "direction": 1,
+          "stance": [
+            7,
+            3
+          ],
+          "destination_index": 23
+        }
+      ],
+      "states": 19
+    },
+    {
+      "kind": "verified_return_push",
+      "index": 70,
+      "direction": 4,
+      "stance": [
+        5,
+        4
+      ],
+      "destination_index": 71,
+      "frame": 17765
+    },
+    {
+      "kind": "verified_return_push",
+      "index": 55,
+      "direction": 4,
+      "stance": [
+        6,
+        3
+      ],
+      "destination_index": 56,
+      "frame": 17919
+    },
+    {
+      "kind": "verified_return_push",
+      "index": 39,
+      "direction": 1,
+      "stance": [
+        7,
+        3
+      ],
+      "destination_index": 23,
+      "frame": 18058
+    },
+    {
+      "kind": "return_transition",
+      "origin": [
+        1,
+        10,
+        171
+      ],
+      "target": [
+        1,
+        10,
+        172
+      ],
+      "frame": 18147
+    },
+    {
+      "kind": "return_transition",
+      "origin": [
+        1,
+        10,
+        172
+      ],
+      "target": [
+        1,
+        10,
+        189
+      ],
+      "frame": 18342
+    },
+    {
+      "kind": "return_block_plan",
+      "room": [
+        1,
+        10,
+        189
+      ],
+      "status": "no_plan_within_budget",
+      "pushes": [],
+      "states": 1
+    }
+  ],
+  "output": "runs/progression-witch-approach-v3",
+  "memory_version": "fb4908f835a33f0216d9f0dbe549cd1e7d9ce4c47965464ab7316693eedcfc44"
+}

@@ -1,0 +1,36 @@
+{
+  "passed": 3,
+  "total": 4,
+  "cases": [
+    {
+      "case": "house97",
+      "summary": "runs/teacher-route-regression-panel-v23-house97/summary.json",
+      "success": false,
+      "exact_replay": true,
+      "failure": "RouteBlocker: Item route buffered damage or falling"
+    },
+    {
+      "case": "house307",
+      "summary": "runs/teacher-route-regression-panel-v23-house307/summary.json",
+      "success": true,
+      "exact_replay": true,
+      "failure": null
+    },
+    {
+      "case": "house541",
+      "summary": "runs/teacher-route-regression-panel-v23-house541/summary.json",
+      "success": true,
+      "exact_replay": true,
+      "failure": null
+    },
+    {
+      "case": "recovery23",
+      "summary": "runs/teacher-route-regression-panel-v23-recovery23/summary.json",
+      "success": true,
+      "exact_replay": true,
+      "failure": null
+    }
+  ],
+  "qualified": false,
+  "training_eligible": false
+}

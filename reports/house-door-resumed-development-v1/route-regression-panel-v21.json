@@ -1,0 +1,12 @@
+{
+  "hypothesis": "Observed-facing ready sword in item navigation, tighter Gel reach; shield side worm instead of misaligned north swing; return room0D follows vertical central corridor.",
+  "cases": [
+    "house359",
+    "house419",
+    "house479",
+    "house541",
+    "recovery23"
+  ],
+  "qualification": false,
+  "training_eligible": false
+}

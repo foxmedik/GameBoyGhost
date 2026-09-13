@@ -1,0 +1,13 @@
+{
+  "source": "runs/teacher-platform-return-v2/continuation.json",
+  "source_sha256": "1fa1e26d0166981f8c62e1d2e02ad7da0a8bd3c215185e705591ca5e558e870c",
+  "case_count": 1,
+  "budget": {
+    "decisions": 1500,
+    "frames": 6000
+  },
+  "hypothesis": "Connect state-driven main return jumps and existing northern room0D shield/sword worm guard, then jump east passage into0E.",
+  "success": "room0E west entry full health, one key, Feather B sword A, no buffered damage",
+  "training_eligible": false,
+  "qualification": false
+}

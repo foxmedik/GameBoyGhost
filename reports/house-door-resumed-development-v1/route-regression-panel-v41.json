@@ -1,0 +1,11 @@
+{
+  "hypothesis": "Beetle prioritizes nearby upright enemies before sword lock; mushroom final diagonal reacts to Keese per physical frame with bounded extension.",
+  "cases": [
+    "house883",
+    "house953",
+    "house1109",
+    "recovery698"
+  ],
+  "qualification": false,
+  "training_eligible": false
+}

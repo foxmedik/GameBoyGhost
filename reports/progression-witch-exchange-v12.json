@@ -1,0 +1,215 @@
+{
+  "result": {
+    "status": "powder_acquired",
+    "failure": null,
+    "steps": 3696,
+    "frames": 23053,
+    "damage_raw": 16,
+    "healing_raw": 0,
+    "final": {
+      "phase": {
+        "gameplay": 11,
+        "subtype": 7,
+        "scroll": 0,
+        "sequence": 4,
+        "palette": 0,
+        "room": [
+          1,
+          14,
+          162
+        ],
+        "health": 8
+      },
+      "room": [
+        1,
+        14,
+        162
+      ],
+      "x": 72,
+      "y": 86,
+      "health": 8,
+      "max_hearts": 3,
+      "inventory": [
+        4,
+        12,
+        1,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "sword": 1,
+      "toadstool": 0,
+      "powder": 32,
+      "bombs": 0,
+      "arrows": 0,
+      "tail_key": 0,
+      "tarin": 0,
+      "tail_door_status": 0,
+      "trade_item": 0,
+      "dialog_state": 0,
+      "dialog_id": 153,
+      "inventory_cursor": 0
+    },
+    "milestones": {
+      "sword_acquired": 17,
+      "toadstool_acquired": 61,
+      "powder_available": 93
+    },
+    "quest_success": false,
+    "exact_action_replay": true,
+    "assistance": "scripted_known_route_with_source_grounded_rom_senses",
+    "human_interventions": 0,
+    "optimizer_updates": 0,
+    "reserved_evaluation_used": false,
+    "wall_seconds": 14.975
+  },
+  "evidence": [
+    {
+      "kind": "toadstool_prefix_exact",
+      "decisions": 3143,
+      "frame": 18659
+    },
+    {
+      "kind": "return_transition",
+      "origin": [
+        0,
+        0,
+        98
+      ],
+      "target": [
+        0,
+        0,
+        82
+      ],
+      "frame": 18855
+    },
+    {
+      "kind": "approach_transition_settled",
+      "target": [
+        0,
+        0,
+        66
+      ],
+      "frame": 19012
+    },
+    {
+      "kind": "bounded_sword_stall_response",
+      "room": [
+        0,
+        0,
+        66
+      ],
+      "frame": 19175
+    },
+    {
+      "kind": "bounded_sword_stall_response",
+      "room": [
+        0,
+        0,
+        66
+      ],
+      "frame": 19386
+    },
+    {
+      "kind": "return_transition",
+      "origin": [
+        0,
+        0,
+        66
+      ],
+      "target": [
+        0,
+        0,
+        67
+      ],
+      "frame": 19553
+    },
+    {
+      "kind": "return_transition",
+      "origin": [
+        0,
+        0,
+        67
+      ],
+      "target": [
+        0,
+        0,
+        68
+      ],
+      "frame": 19861
+    },
+    {
+      "kind": "return_transition",
+      "origin": [
+        0,
+        0,
+        68
+      ],
+      "target": [
+        0,
+        0,
+        84
+      ],
+      "frame": 19975
+    },
+    {
+      "kind": "return_transition",
+      "origin": [
+        0,
+        0,
+        84
+      ],
+      "target": [
+        0,
+        0,
+        100
+      ],
+      "frame": 20222
+    },
+    {
+      "kind": "return_transition",
+      "origin": [
+        0,
+        0,
+        100
+      ],
+      "target": [
+        0,
+        0,
+        101
+      ],
+      "frame": 20345
+    },
+    {
+      "kind": "return_transition",
+      "origin": [
+        0,
+        0,
+        101
+      ],
+      "target": [
+        1,
+        14,
+        162
+      ],
+      "frame": 20584
+    },
+    {
+      "kind": "witch_hut_entered",
+      "frame": 20584
+    },
+    {
+      "kind": "witch_exchange_verified",
+      "frame": 23053,
+      "powder": 32
+    }
+  ],
+  "output": "runs/progression-witch-exchange-v12",
+  "memory_version": "30b09bb4c6a761463713ea5b97af6da9b86c285248deb3e444385602f8c2066f"
+}

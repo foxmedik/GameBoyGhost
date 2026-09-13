@@ -1,0 +1,20 @@
+{
+  "schema":"tail-cave-continuous-dagger-collection-v8",
+  "status":"frozen-before-collection",
+  "frozen_at":"2026-09-12",
+  "collector":"scripts/collect_tail_cave_continuous_dagger_v8.py",
+  "collector_sha256":"6a0b1e1acaa4ca242603dacee2f1b9a04f8c88fb2c1f285e631071716251db41",
+  "candidate":"runs/tail-cave-integration-dagger-v5-model/candidate.pt",
+  "candidate_sha256":"f15a225b43b0a455277e1fe3ffeb942319b9e5c7df3b46c061518f7b08e974bc",
+  "source_run":"runs/state-driven-tail-cave-dagger-v5-autonomous-development",
+  "source_summary_sha256":"16758eb11ab9eeabc08e8f248def9c65008ee67116c8a983a8ee4197c94f2e58",
+  "base_case_ids":[1,2,18],
+  "idle_frames":[0,1,2,3,4],
+  "cases":15,
+  "required_successes":12,
+  "decision_budget":512,
+  "rollout":"Replay the complete source route and branch at the exact room-16 entry frame without save/load. Execute the model until first nonlethal damage, label all visited states, then recover with the teacher.",
+  "fresh_full_route_panel_source":"configs/tail_cave_on_policy_dagger_v6_collection.json",
+  "fresh_full_route_panel_source_sha256":"ccc0a59485f7cf8697a80e6425710cab95a1d7ed21e0635a5109cb5ac9e2db75",
+  "sealed_validation":{"specification":"runs/progression-longrun-hour-v1/plan.json","results":"reports/progression-longrun-hour-v1.json","loaded":false,"used_for_training":false,"used_for_selection":false,"relabel_as_development":false}
+}

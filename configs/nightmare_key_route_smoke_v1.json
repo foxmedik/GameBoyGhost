@@ -1,0 +1,23 @@
+{
+  "scope": "Nightmare Key segment development smoke, not whole-route teacher qualification",
+  "controller": "src/gameboy_agent/nightmare_key_route.py",
+  "sha256": "bdbff9287796e0105b9b4938d033d5ff74db6c7ab62ed10f7ff38e4fbeec4dc4",
+  "handoff": "runs/tail-cave-key-exit-v1/third-key-safe-room-continuation.json",
+  "cases": [
+    {
+      "id": "idle-13",
+      "idle_frames": 13
+    },
+    {
+      "id": "idle-29",
+      "idle_frames": 29
+    }
+  ],
+  "criterion": "Both acquire Nightmare Key alive with health unchanged and exact independent replay; failures are diagnostic, never labels.",
+  "budget": {
+    "cases": 2,
+    "wall_seconds": 600
+  },
+  "training_eligible": false,
+  "sealed_validation_used": false
+}

@@ -1,0 +1,12 @@
+{
+  "hypothesis": "Observed-facing overworld sword; active Gel targeting; precise Map combat dialogue closure; defended room05 crossing; second-key top movement300 local decisions.",
+  "cases": [
+    "house359",
+    "house419",
+    "house479",
+    "house541",
+    "recovery23"
+  ],
+  "qualification": false,
+  "training_eligible": false
+}

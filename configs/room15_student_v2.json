@@ -1,0 +1,23 @@
+{
+  "schema": "room15-autonomous-student-v2",
+  "status": "frozen_before_extraction_or_training",
+  "purpose": "One correction-data candidate: retain v1 clean training data, add seven exact continuous teacher recoveries, then test closed-loop behavior on fresh physical timing offsets.",
+  "v1_data": "runs/room15-student-v1-data",
+  "v1_manifest_sha256": "d74199267e788a83062239b12539c55760572cdb61391e648bd1d154915ad345",
+  "corrections": "runs/room15-student-v1-corrections",
+  "corrections_summary_sha256": "cb6a2ca1aab9d2e490536737b16df576add710425f58aea4b7331df332c60547",
+  "source": "runs/state-driven-tail-cave-disengage-guarded-v1",
+  "student_gate": "runs/room15-student-v1-gate-v5",
+  "feature_source": "src/gameboy_agent/room15_model.py",
+  "feature_source_sha256": "a72f83b6275c75c6620adf6945e45ff9d70498456147b05e01b5b795480bd25c",
+  "extractor": "scripts/extract_room15_student_v2.py",
+  "extractor_sha256": "3463874fd6b3b8212e2fe4560ea20c406183a1ba71e93862ffcf2b7d7583f85a",
+  "trainer": "scripts/train_room15_student_v1.py",
+  "trainer_sha256": "891263706e8d18fea486f7dd3abb6029daab0842745c1f8701fcc3e0880ffbb9",
+  "actions": 9,
+  "model": {"epochs": 45, "batches_per_epoch": 120, "batch_rows": 256, "learning_rate": 0.0003, "seed": 2116, "selection": "final epoch only; select only after a new frozen autonomous gate"},
+  "fresh_gate": {"required_successes": 18, "required_half_heart_successes": 4, "decision_budget": 700, "cases": "20 physical house starts at unused entry idle offsets 46 through 65"},
+  "training_authorized": true,
+  "validation_loaded": false,
+  "sealed_validation": {"specification": "runs/progression-longrun-hour-v1/plan.json", "results": "reports/progression-longrun-hour-v1.json", "loaded": false, "used_for_training": false, "used_for_selection": false, "relabel_as_development": false}
+}

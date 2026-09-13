@@ -1,0 +1,41 @@
+{
+  "status": "recovery_branch_closed_entry_teacher_continuation",
+  "decision": "No further mid-room recovery candidates or paired panel. Use deterministic teacher at room entry for progression; retain new low-health failure as a deterministic blocker.",
+  "local_gate": {
+    "path": "runs/room15-takeover-local-v1/summary.json",
+    "status": "stopped_invalid_harness",
+    "completed_cases": 3,
+    "clears": 3,
+    "gate_passed": false,
+    "error": "Replay verifier canonicalized actual state but not in-memory expected state. No controller failure inferred.",
+    "partial_cases_excluded": true
+  },
+  "entry_check": {
+    "status": "complete",
+    "cases": 5,
+    "planned": 5,
+    "successes": 4,
+    "exact_replays": 5,
+    "zero_damage_successes": 4,
+    "validation_loaded": false,
+    "training_started": false,
+    "half_heart_cases": 4,
+    "half_heart_zero_damage_successes": 3,
+    "gate_passed": false
+  },
+  "entry_check_path": "runs/room15-entry-fallback-check/summary.json",
+  "deterministic_blocker": "entry-fallback-13: base13 idle313, four raw health, lethal damage4, exact replay",
+  "continuation": "runs/room15-entry-fallback-check/continuation.json",
+  "new_training_labels": 0,
+  "candidate_optimizer_updates": 0,
+  "test_note": "145 repository tests passed; tests include isolated synthetic trainer tests, not recovery candidate training. Replay serialization path was not covered by preflight tests.",
+  "autonomous_gate_unchanged": {
+    "required_successes": 18,
+    "required_cases": 20,
+    "required_half_heart_successes": 4,
+    "required_exact_replays": 20,
+    "teacher_fallback_allowed": false
+  },
+  "validation_loaded": false,
+  "new_model_selected": false
+}

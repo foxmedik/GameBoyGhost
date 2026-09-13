@@ -1,0 +1,109 @@
+{
+  "schema": "progression-local-control-experiment-v1",
+  "status": "frozen_untrained",
+  "frozen_at": "2026-09-11",
+  "objective": "Learn short-horizon physical movement and combat under explicit planner goals for the state-driven Tail Cave progression stack, with emphasis on the observed room 52 and room 42 combat bottlenecks.",
+  "system_boundary": {
+    "learned": "Local movement and A/B action selection from the current structured observation, prior action, current room, and explicit target room/position.",
+    "scripted": "Quest-stage selection, prerequisite checks, interaction completion, inventory management, target generation, transition verification, and bounded recovery.",
+    "failure_contract": "The controller returns control to the state-driven recovery layer on budget exhaustion, unexpected room, death, or a failed stage precondition.",
+    "recorded_prefix_allowed_at_inference": false
+  },
+  "teacher": {
+    "run": "runs/state-driven-teacher-development-v3",
+    "panel_sha256": "6701c19643f4a097b017adac7490d808d04aef97561b1e712e094d3371320bb4",
+    "summary_sha256": "5c1f764d2cb9657fdbafaaf78c8f336d3f875a8787a35d4cc2b2961d6029fd44",
+    "development_successes": 18,
+    "development_cases": 20,
+    "required_successes": 18,
+    "gate_passed": true,
+    "exact_replays": 20,
+    "recorded_decisions": 94754,
+    "recorded_frames": 635596,
+    "failed_cases_retained_as_development_evidence": [
+      "development-house-07",
+      "development-house-12"
+    ]
+  },
+  "learner_data": {
+    "source": "Only independently replay-verified successful trajectories from the frozen teacher panel.",
+    "training_cases": [
+      "development-house-00",
+      "development-house-01",
+      "development-house-02",
+      "development-house-03",
+      "development-house-04",
+      "development-house-05",
+      "development-house-06",
+      "development-house-08",
+      "development-house-09",
+      "development-house-10",
+      "development-house-11",
+      "development-house-13",
+      "development-house-14",
+      "development-house-15"
+    ],
+    "visible_development_cases": [
+      "development-house-16",
+      "development-house-17",
+      "development-house-18",
+      "development-house-19"
+    ],
+    "failed_teacher_cases_are_training_labels": false,
+    "split_selection": "Fixed before feature extraction or optimizer updates; the last four successful case IDs form the visible learner-development group.",
+    "label_contract": "Replay each source trace from its initial state, capture the complete structured observation before each eligible physical movement/A/B decision, and preserve the demonstrated action and duration. Exclude menu, dialogue-only, transition-settling, and stage-interaction decisions from local-control labels.",
+    "goal_contract": "Each label carries the already selected state-driven waypoint or room transition target. Future-state lookahead and validation outcomes are forbidden inference inputs.",
+    "focus_rooms": [
+      82,
+      66
+    ],
+    "focus_room_notation": "decimal room IDs corresponding to 0x52 and 0x42"
+  },
+  "candidate": {
+    "maximum_candidates": 3,
+    "candidate_1": {
+      "architecture": "goal-conditioned two-layer 256-unit MLP compatible with the existing structured navigation observation",
+      "initialization": "A separate copy of the selected navigation controller; the selected runtime policy remains unchanged.",
+      "optimizer": "Adam",
+      "learning_rate": 0.00001,
+      "epochs": 8,
+      "seed": 2027,
+      "selection": "Final epoch only; no checkpoint shopping.",
+      "loss": "Movement cross-entropy plus 0.25 button cross-entropy, with parent-retention loss on the first 8192 verified base-cache rows and balanced sampling of rooms 0x52 and 0x42.",
+      "retention_weight": 1.0,
+      "retention_rows": 8192,
+      "new_teacher_decision_cap": 250000
+    }
+  },
+  "development_gate": {
+    "local_teacher_arrivals": "At least 18/20 alive completions on a newly frozen development arrival panel before integrated use.",
+    "integrated_progression": "At least 18/20 on the existing visible house development specifications, with no loss of a previously successful mandatory case.",
+    "following_interaction": "At least 9/10 successful continuous handoffs to the next interaction.",
+    "replay": "Every evaluated episode must independently replay action, state, frame, event journal, and final outcome exactly.",
+    "candidate_limit": 3
+  },
+  "sealed_evaluation": {
+    "specification": "runs/progression-longrun-hour-v1/plan.json",
+    "existing_results": "reports/progression-longrun-hour-v1.json",
+    "cases": 20,
+    "used_for_teacher_tuning": false,
+    "used_for_learner_training": false,
+    "used_for_model_selection": false,
+    "relabel_as_development": false,
+    "access_policy": "Preserve the specifications and completed results as evaluation evidence. Do not load them during feature extraction, training, learner-development selection, or recovery tuning."
+  },
+  "budgets": {
+    "new_decisions_per_blocker": 250000,
+    "new_decisions_initial_total": 1000000,
+    "optimizer_jobs_concurrent": 1,
+    "wall_time_cap_minutes_candidate_1": 60
+  },
+  "integrity": {
+    "teacher_source_hashes": "Frozen in runs/state-driven-teacher-development-v3/panel.json and verified after completion.",
+    "selected_sword_policy_sha256": "c527a20dc92f8c9c51d41e1c9909348549202809e42a6aa732668b64492b1845",
+    "selected_navigation_policy_sha256": "9d2b24b28be5289fc3d32d85d46faa1835ca2068d73a1e8790630d77dbaf85ec",
+    "training_performed": false,
+    "validation_accessed_for_new_work": false
+  },
+  "next_action": "Implement and verify replay-time feature extraction against this frozen contract before the first optimizer update."
+}

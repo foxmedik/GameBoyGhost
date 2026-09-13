@@ -1,0 +1,11 @@
+{
+  "hypothesis": "Room10 close Stalfos observed-facing strikes; room0D persistent remote worm guard repositions via row64. Keep beetle cross-floor and y40 launch.",
+  "cases": [
+    "house41",
+    "house67",
+    "house307",
+    "recovery23"
+  ],
+  "qualification": false,
+  "training_eligible": false
+}

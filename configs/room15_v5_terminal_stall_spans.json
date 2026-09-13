@@ -1,0 +1,7 @@
+{"schema":"room15-v5-terminal-stall-teacher-spans","purpose":"Development-only collection from the actual terminal living stalls of the rejected V4 fresh gate. Record the state-checked teacher transition after the student has exhausted its budget; no training.","source":"runs/state-driven-tail-cave-disengage-guarded-v1","student_gate":"runs/room15-student-v4-gate-v2","cases":[
+{"id":"v5-00-wait-cycle","student_case":"student-v4b-room15-00","base":0,"idle":106,"blocked_index":722},
+{"id":"v5-02-y80","student_case":"student-v4b-room15-02","base":2,"idle":108,"blocked_index":722},
+{"id":"v5-09-y80","student_case":"student-v4b-room15-09","base":9,"idle":115,"blocked_index":721},
+{"id":"v5-11-y80-half-heart","student_case":"student-v4b-room15-11","base":11,"idle":117,"blocked_index":722},
+{"id":"v5-14-lower-route","student_case":"student-v4b-room15-14","base":14,"idle":120,"blocked_index":721}],
+"frozen_inputs":{"scripts/collect_room15_v4_escape_spans.py":"92f7e99c913c1c070631a47af6f058370c61d4830a7da0f56b716ca63cf30356","src/gameboy_agent/tail_cave_progression.py":"ca98e838029cbd6435a201ec38fcf0e4259850fc001111997c24158965523aab","src/gameboy_agent/room15_recovery.py":"184a2371bc5dda0323fe2c368e43817245a5c7735b91fa67fc609e83d96b7d28","runs/room15-student-v4-gate-v2/summary.json":"c420d49b6c5ab563a6243076967fbd77223075ba6e93bfa7bd89e0874d247da2"},"training_authorized":false,"validation_loaded":false}

@@ -1,0 +1,11 @@
+{
+  "hypothesis": "Allow bounded800 Gel-clearance steps for observed cling/release cycles; prior failure released on final400th step. Endpoint and frozen whole-case limits unchanged.",
+  "cases": [
+    "house953",
+    "house419",
+    "house673",
+    "recovery698"
+  ],
+  "qualification": false,
+  "training_eligible": false
+}

@@ -1,0 +1,96 @@
+{
+  "schema": "progression-dagger-experiment-v1",
+  "status": "frozen_before_collection_or_training",
+  "frozen_at": "2026-09-12",
+  "strategy_review": {
+    "trigger": "Three-candidate cap reached after candidate 3 scored 3/20 live despite passing offline action accuracy.",
+    "evidence": "reports/progression-local-control-v3-live.json",
+    "mechanisms_tested": [
+      "Collect corrective actions from states actually created by the rejected learner.",
+      "Hold one exit target fixed for the whole local attempt instead of recomputing the shortest exit each decision.",
+      "Add four decisions of action and duration history.",
+      "Predict duration class 1/3/10 alongside movement and A/B."
+    ]
+  },
+  "scope": "Mushroom-stage room 0x52 south crossing to room 0x62 only.",
+  "source_teacher": "runs/state-driven-teacher-development-v3",
+  "source_teacher_panel_sha256": "6701c19643f4a097b017adac7490d808d04aef97561b1e712e094d3371320bb4",
+  "candidate": "runs/progression-local-control-v3/model/epoch-032.pt",
+  "candidate_sha256": "e13e011ea66c90e5f1c57c5143d037d0513aa9a96768788cb8dc38f9da357510",
+  "collector": "scripts/collect_progression_dagger_v1.py",
+  "collector_sha256": "ffd845baa6448a90725a2fcb449399acfc589f4872a8cb3e3b322721505d783f",
+  "teacher_budget": 256,
+  "teacher_required_successes": 18,
+  "teacher_cases": 20,
+  "collection_specs": [
+    {"id":"correction-00","source_case":"development-house-00","learner_steps":24,"arrival_idle_frames":0},
+    {"id":"correction-01","source_case":"development-house-01","learner_steps":24,"arrival_idle_frames":1},
+    {"id":"correction-02","source_case":"development-house-02","learner_steps":24,"arrival_idle_frames":2},
+    {"id":"correction-03","source_case":"development-house-03","learner_steps":24,"arrival_idle_frames":3},
+    {"id":"correction-04","source_case":"development-house-04","learner_steps":24,"arrival_idle_frames":4},
+    {"id":"correction-05","source_case":"development-house-05","learner_steps":24,"arrival_idle_frames":0},
+    {"id":"correction-06","source_case":"development-house-06","learner_steps":24,"arrival_idle_frames":1},
+    {"id":"correction-07","source_case":"development-house-08","learner_steps":24,"arrival_idle_frames":2},
+    {"id":"correction-08","source_case":"development-house-09","learner_steps":24,"arrival_idle_frames":3},
+    {"id":"correction-09","source_case":"development-house-10","learner_steps":24,"arrival_idle_frames":4},
+    {"id":"correction-10","source_case":"development-house-11","learner_steps":24,"arrival_idle_frames":0},
+    {"id":"correction-11","source_case":"development-house-13","learner_steps":24,"arrival_idle_frames":1},
+    {"id":"correction-12","source_case":"development-house-14","learner_steps":24,"arrival_idle_frames":2},
+    {"id":"correction-13","source_case":"development-house-15","learner_steps":24,"arrival_idle_frames":3},
+    {"id":"correction-14","source_case":"development-house-00","learner_steps":48,"arrival_idle_frames":4},
+    {"id":"correction-15","source_case":"development-house-01","learner_steps":48,"arrival_idle_frames":0},
+    {"id":"correction-16","source_case":"development-house-02","learner_steps":48,"arrival_idle_frames":1},
+    {"id":"correction-17","source_case":"development-house-03","learner_steps":48,"arrival_idle_frames":2},
+    {"id":"correction-18","source_case":"development-house-04","learner_steps":48,"arrival_idle_frames":3},
+    {"id":"correction-19","source_case":"development-house-05","learner_steps":48,"arrival_idle_frames":4}
+  ],
+  "development_panel": {
+    "status": "frozen_before_collection",
+    "required_successes": 18,
+    "cases": [
+      {"id":"development-00","source_case":"development-house-16","arrival_idle_frames":1},
+      {"id":"development-01","source_case":"development-house-16","arrival_idle_frames":2},
+      {"id":"development-02","source_case":"development-house-16","arrival_idle_frames":3},
+      {"id":"development-03","source_case":"development-house-16","arrival_idle_frames":4},
+      {"id":"development-04","source_case":"development-house-16","arrival_idle_frames":5},
+      {"id":"development-05","source_case":"development-house-17","arrival_idle_frames":1},
+      {"id":"development-06","source_case":"development-house-17","arrival_idle_frames":2},
+      {"id":"development-07","source_case":"development-house-17","arrival_idle_frames":3},
+      {"id":"development-08","source_case":"development-house-17","arrival_idle_frames":4},
+      {"id":"development-09","source_case":"development-house-17","arrival_idle_frames":5},
+      {"id":"development-10","source_case":"development-house-18","arrival_idle_frames":1},
+      {"id":"development-11","source_case":"development-house-18","arrival_idle_frames":2},
+      {"id":"development-12","source_case":"development-house-18","arrival_idle_frames":3},
+      {"id":"development-13","source_case":"development-house-18","arrival_idle_frames":4},
+      {"id":"development-14","source_case":"development-house-18","arrival_idle_frames":5},
+      {"id":"development-15","source_case":"development-house-19","arrival_idle_frames":1},
+      {"id":"development-16","source_case":"development-house-19","arrival_idle_frames":2},
+      {"id":"development-17","source_case":"development-house-19","arrival_idle_frames":3},
+      {"id":"development-18","source_case":"development-house-19","arrival_idle_frames":4},
+      {"id":"development-19","source_case":"development-house-19","arrival_idle_frames":5}
+    ]
+  },
+  "model": {
+    "architecture": "Existing 250-feature navigation encoder plus 12 normalized history features; two 256-unit hidden layers; 11 logits for movement, A/B and duration.",
+    "duration_classes": [1, 3, 10],
+    "history_decisions": 4,
+    "epochs": 24,
+    "learning_rate": 0.0003,
+    "seed": 2028,
+    "selection": "Final epoch only; no checkpoint shopping."
+  },
+  "budgets": {
+    "maximum_candidates": 2,
+    "new_emulator_decisions": 250000,
+    "optimizer_jobs_concurrent": 1
+  },
+  "sealed_validation": {
+    "specification": "runs/progression-longrun-hour-v1/plan.json",
+    "results": "reports/progression-longrun-hour-v1.json",
+    "loaded": false,
+    "used_for_collection": false,
+    "used_for_training": false,
+    "used_for_selection": false,
+    "relabel_as_development": false
+  }
+}

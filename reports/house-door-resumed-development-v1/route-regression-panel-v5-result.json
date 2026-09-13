@@ -1,0 +1,42 @@
+{
+  "qualification": false,
+  "passed": 0,
+  "cases": [
+    {
+      "case": "house41",
+      "run": "runs/teacher-route-regression-panel-v5-house41",
+      "success": false,
+      "exact_replay": true,
+      "failure": "RouteBlocker: Item route buffered damage or falling",
+      "commands": 7304,
+      "frame": 37670
+    },
+    {
+      "case": "house67",
+      "run": "runs/teacher-route-regression-panel-v5-house67",
+      "success": false,
+      "exact_replay": true,
+      "failure": "RouteBlocker: Item route buffered damage or falling",
+      "commands": 6936,
+      "frame": 36437
+    },
+    {
+      "case": "house97",
+      "run": "runs/teacher-route-regression-panel-v5-house97",
+      "success": false,
+      "exact_replay": true,
+      "failure": "RouteBlocker: Item route buffered damage or falling",
+      "commands": 6962,
+      "frame": 36152
+    },
+    {
+      "case": "recovery23",
+      "run": "runs/teacher-route-regression-panel-v5-recovery23",
+      "success": false,
+      "exact_replay": true,
+      "failure": "RouteBlocker: Item route buffered damage or falling",
+      "commands": 7571,
+      "frame": 36780
+    }
+  ]
+}

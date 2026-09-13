@@ -1,0 +1,22 @@
+{
+  "schema":"tail-cave-integration-autonomous-evaluation-v5",
+  "status":"protocol-frozen-before-training-candidate-fingerprint-filled-after-training",
+  "frozen_at":"2026-09-12",
+  "training_experiment":"configs/tail_cave_integration_dagger_v5_training.json",
+  "training_experiment_sha256":"df83a0ad01f6284295537bbf3a06ce6236ed86bc9dfe0a814ed5a465fd460475",
+  "candidate":"runs/tail-cave-integration-dagger-v5-model/candidate.pt",
+  "candidate_sha256":"f15a225b43b0a455277e1fe3ffeb942319b9e5c7df3b46c061518f7b08e974bc",
+  "launcher":"scripts/evaluate_tail_cave_integration_v5.py",
+  "launcher_sha256":"d344027d73c8efba3baf3021cb8c295b3cc4953b3d08e6c0f60f713e39ca7f37",
+  "evaluator":"scripts/evaluate_tail_cave_integration_v4.py",
+  "evaluator_sha256":"a8cb768fe5c35d51b2c041c7151014165eb2627b2102a51d34a0d12bc6a29ebc",
+  "source_run":"runs/state-driven-tail-cave-guarded-development-v2",
+  "entry_states":"runs/tail-cave-integration-dagger-v4-collection/entries",
+  "base_case_ids":[0,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19],
+  "heldout_idle_frames":[20,21,22,23,24,25,26,27,28,29],
+  "decision_budget":512,
+  "required_successes":180,
+  "cases":200,
+  "success_criterion":"The candidate alone acquires the first Tail Cave Small Key alive in room 16 with exact replay.",
+  "sealed_validation":{"specification":"runs/progression-longrun-hour-v1/plan.json","results":"reports/progression-longrun-hour-v1.json","loaded":false,"used_for_training":false,"used_for_selection":false,"relabel_as_development":false}
+}

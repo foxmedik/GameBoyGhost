@@ -1,0 +1,94 @@
+{
+  "result": {
+    "status": "toadstool_acquired",
+    "failure": null,
+    "steps": 2912,
+    "frames": 17331,
+    "damage_raw": 8,
+    "healing_raw": 0,
+    "final": {
+      "phase": {
+        "gameplay": 11,
+        "subtype": 7,
+        "scroll": 0,
+        "sequence": 4,
+        "palette": 0,
+        "room": [
+          0,
+          0,
+          80
+        ],
+        "health": 16
+      },
+      "room": [
+        0,
+        0,
+        80
+      ],
+      "x": 36,
+      "y": 49,
+      "health": 16,
+      "max_hearts": 3,
+      "inventory": [
+        4,
+        1,
+        12,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "sword": 1,
+      "toadstool": 1,
+      "powder": 0,
+      "bombs": 0,
+      "arrows": 0,
+      "tail_key": 0,
+      "tarin": 0,
+      "tail_door_status": 0,
+      "trade_item": 0,
+      "dialog_state": 0,
+      "dialog_id": 15,
+      "inventory_cursor": 0
+    },
+    "milestones": {
+      "sword_acquired": 17,
+      "toadstool_acquired": 61
+    },
+    "quest_success": false,
+    "exact_action_replay": true,
+    "assistance": "scripted_known_route_with_source_grounded_rom_senses",
+    "human_interventions": 0,
+    "optimizer_updates": 0,
+    "reserved_evaluation_used": false,
+    "wall_seconds": 11.437
+  },
+  "evidence": [
+    {
+      "kind": "forest_prefix_exact",
+      "decisions": 2349,
+      "frame": 13960
+    },
+    {
+      "kind": "verified_block_push",
+      "index": 55,
+      "before": 167,
+      "after": 13,
+      "frame": 15399
+    },
+    {
+      "kind": "verified_block_push",
+      "index": 87,
+      "before": 167,
+      "after": 13,
+      "frame": 15463
+    }
+  ],
+  "output": "runs/progression-toadstool-v1",
+  "memory_version": "c2c30796ed2f6285e266684635b0d8473474fa8ef90f6bec5883fc0062fedf3d"
+}

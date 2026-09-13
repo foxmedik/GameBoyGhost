@@ -1,0 +1,14 @@
+{
+  "source": "runs/teacher-pushblock-v4/continuation.json",
+  "source_sha256": "ef7d81dbff5db83f0ab2e9d9d1800f7d47cf9ad6b8b76ec9ce5c316ab6c9093c",
+  "case_count": 1,
+  "budget": {
+    "decisions": 1500,
+    "frames": 6000
+  },
+  "hypothesis": "Both beetles defeated without damage; staircase movement hit pot at13696. Align at y80 before east136 and north stairs. Same budgets.",
+  "success": "room19hex underground entry full health, one key, shield B sword A, no buffered damage",
+  "training_eligible": false,
+  "qualification": false,
+  "prior_failure": "runs/teacher-beetle-v1"
+}

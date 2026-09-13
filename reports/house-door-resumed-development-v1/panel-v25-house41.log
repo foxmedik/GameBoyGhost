@@ -1,0 +1,17 @@
+UserWarning: Using SDL2 binaries from pysdl2-dll 2.32.10
+Loaded layouts
+Teacher stage room15_cleared: frame=34186 health=16
+Teacher stage compass_second_key: frame=36810 health=16
+Teacher stage map: frame=38165 health=16
+Teacher stage south_worm_entry: frame=38884 health=16
+Teacher stage south_worm_passage: frame=39080 health=16
+Teacher stage pushblock_entry: frame=39419 health=16
+Teacher stage pushblock: frame=40466 health=16
+RouteBlocker: Spiked beetle budget exhausted
+Fresh probe replay 0/10585
+Fresh probe replay 2000/10585
+Fresh probe replay 4000/10585
+Fresh probe replay 6000/10585
+Fresh probe replay 8000/10585
+Fresh probe replay 10000/10585
+FRESH HOUSE PROBE EXACT REPLAY VERIFIED

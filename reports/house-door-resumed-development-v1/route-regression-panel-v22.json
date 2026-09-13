@@ -1,0 +1,11 @@
+{
+  "hypothesis": "Accept room0E west doorway y<=84 and physically align up to80 before guard; unchanged endpoint contract.",
+  "cases": [
+    "house97",
+    "house359",
+    "house541",
+    "recovery23"
+  ],
+  "qualification": false,
+  "training_eligible": false
+}

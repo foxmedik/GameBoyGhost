@@ -1,0 +1,59 @@
+{
+  "schema": "tail-cave-first-divergence-experiment-v2",
+  "status": "frozen_before_training",
+  "frozen_at": "2026-09-12",
+  "parent": "runs/tail-cave-first-key-model-v1/candidate.pt",
+  "parent_sha256": "b8c2e768eceac4070cca25145d8cd3a1fccd1269bbe2dec1d004bca8303217f6",
+  "base_data": "runs/tail-cave-first-key-data-v1",
+  "base_data_sha256": "5df214d490726f0737ecb4ba04b0c95c4afb3cd00ed294b2cdfcd500904384f9",
+  "correction_run": "runs/tail-cave-dagger-v2-collection",
+  "correction_summary_sha256": "c6e22afa7768643f427490d266aa30e3d32827e78e3ea9c841d9b298f6c054c0",
+  "trainer": "scripts/train_tail_cave_dagger_v2.py",
+  "trainer_sha256": "6b08853426b965e2b195abc564dfc27d9b432982b97a383014864937a182e58d",
+  "evaluator": "scripts/evaluate_tail_cave_dagger_v2.py",
+  "evaluator_sha256": "4a4561d4d1e509f337ed083b31a02d3a6a0577e6158929dfe1b59ff1aefbf9e7",
+  "model": {
+    "epochs": 24,
+    "batches_per_epoch": 64,
+    "batch_rows": 256,
+    "learning_rate": 0.0001,
+    "seed": 2031,
+    "sampling": "Each batch contains equal counts from the original verified teacher data and successful guarded corrections.",
+    "selection": "Final epoch only; no checkpoint shopping. Select only on the frozen autonomous development panel."
+  },
+  "development_panel": {
+    "status": "frozen_before_training",
+    "required_successes": 18,
+    "decision_budget": 512,
+    "cases": [
+      {"id":"autonomous-first-key-00","source_case":"development-house-00","entry_idle_frames":40},
+      {"id":"autonomous-first-key-01","source_case":"development-house-01","entry_idle_frames":41},
+      {"id":"autonomous-first-key-02","source_case":"development-house-02","entry_idle_frames":42},
+      {"id":"autonomous-first-key-03","source_case":"development-house-03","entry_idle_frames":43},
+      {"id":"autonomous-first-key-04","source_case":"development-house-04","entry_idle_frames":44},
+      {"id":"autonomous-first-key-05","source_case":"development-house-05","entry_idle_frames":45},
+      {"id":"autonomous-first-key-06","source_case":"development-house-06","entry_idle_frames":46},
+      {"id":"autonomous-first-key-07","source_case":"development-house-07","entry_idle_frames":47},
+      {"id":"autonomous-first-key-08","source_case":"development-house-08","entry_idle_frames":48},
+      {"id":"autonomous-first-key-09","source_case":"development-house-09","entry_idle_frames":49},
+      {"id":"autonomous-first-key-10","source_case":"development-house-10","entry_idle_frames":50},
+      {"id":"autonomous-first-key-11","source_case":"development-house-11","entry_idle_frames":51},
+      {"id":"autonomous-first-key-12","source_case":"development-house-12","entry_idle_frames":52},
+      {"id":"autonomous-first-key-13","source_case":"development-house-13","entry_idle_frames":53},
+      {"id":"autonomous-first-key-14","source_case":"development-house-14","entry_idle_frames":54},
+      {"id":"autonomous-first-key-15","source_case":"development-house-15","entry_idle_frames":55},
+      {"id":"autonomous-first-key-16","source_case":"development-house-16","entry_idle_frames":56},
+      {"id":"autonomous-first-key-17","source_case":"development-house-17","entry_idle_frames":57},
+      {"id":"autonomous-first-key-18","source_case":"development-house-18","entry_idle_frames":58},
+      {"id":"autonomous-first-key-19","source_case":"development-house-19","entry_idle_frames":59}
+    ]
+  },
+  "sealed_validation": {
+    "specification": "runs/progression-longrun-hour-v1/plan.json",
+    "results": "reports/progression-longrun-hour-v1.json",
+    "loaded": false,
+    "used_for_training": false,
+    "used_for_selection": false,
+    "relabel_as_development": false
+  }
+}

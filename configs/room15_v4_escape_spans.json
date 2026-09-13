@@ -1,0 +1,22 @@
+{
+  "schema": "room15-v4-first-blocked-intent-escapes",
+  "purpose": "Targeted development collection: replay each v3 failure only through its first blocked-intent state, then record the state-checked teacher escape. No optimizer update.",
+  "source": "runs/state-driven-tail-cave-disengage-guarded-v1",
+  "student_gate": "runs/room15-student-v3-gate",
+  "cases": [
+    {"id":"escape-02","student_case":"student-v3-room15-02","base":2,"idle":68,"blocked_index":33},
+    {"id":"escape-06","student_case":"student-v3-room15-06","base":6,"idle":72,"blocked_index":32},
+    {"id":"escape-07","student_case":"student-v3-room15-07","base":7,"idle":73,"blocked_index":33},
+    {"id":"escape-08","student_case":"student-v3-room15-08","base":8,"idle":74,"blocked_index":32},
+    {"id":"escape-11","student_case":"student-v3-room15-11","base":11,"idle":77,"blocked_index":33},
+    {"id":"escape-14","student_case":"student-v3-room15-14","base":14,"idle":80,"blocked_index":32}
+  ],
+  "frozen_inputs": {
+    "scripts/collect_room15_v4_escape_spans.py": "92f7e99c913c1c070631a47af6f058370c61d4830a7da0f56b716ca63cf30356",
+    "src/gameboy_agent/tail_cave_progression.py": "ca98e838029cbd6435a201ec38fcf0e4259850fc001111997c24158965523aab",
+    "src/gameboy_agent/room15_recovery.py": "184a2371bc5dda0323fe2c368e43817245a5c7735b91fa67fc609e83d96b7d28",
+    "runs/room15-student-v3-gate/summary.json": "1d4d69302cfeec6bcbbc4debaf27cba59dc29da55760b1620914d1e328eb60d9"
+  },
+  "training_authorized": false,
+  "validation_loaded": false
+}

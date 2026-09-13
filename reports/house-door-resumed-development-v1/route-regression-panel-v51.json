@@ -1,0 +1,11 @@
+{
+  "hypothesis": "Room0E guard waypoints correct both directions after shield recoil instead of accepting overshot x26 as x40 and walking into torch.",
+  "cases": [
+    "house359",
+    "house419",
+    "house41",
+    "recovery698"
+  ],
+  "qualification": false,
+  "training_eligible": false
+}

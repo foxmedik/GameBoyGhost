@@ -1,0 +1,14 @@
+{
+  "source": "runs/teacher-beetle-v2/continuation.json",
+  "source_sha256": "b6232b566c20b509f17296c5c30131903e3988c24939d7bbada9fda3b044718b",
+  "case_count": 1,
+  "budget": {
+    "decisions": 1800,
+    "frames": 6500
+  },
+  "hypothesis": "First two Goombas cleared safely; arrival24 at14864 is beside ladder. Align left136 before descending, then clear last Goomba and climb40 exit. Same budgets.",
+  "success": "room01 ladder exit at full health, one key, shield B sword A, no buffered damage",
+  "training_eligible": false,
+  "qualification": false,
+  "prior_failure": "runs/teacher-underground-v1"
+}

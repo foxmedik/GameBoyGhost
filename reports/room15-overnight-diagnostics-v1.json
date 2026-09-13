@@ -1,0 +1,557 @@
+{
+  "schema": "room15-overnight-diagnostics-report-v1",
+  "date": "2026-09-12",
+  "source": "runs/room15-overnight-diagnostics-v1",
+  "summary_sha256": "2d4dde2fa358142a344ad89bfc5a492f42fe8591f0f6794c0dd97e7557d39a59",
+  "overall": {
+    "cases": 400,
+    "successes": 134,
+    "zero_damage_successes": 126,
+    "alive": 368,
+    "zero_damage_alive": 275,
+    "deaths": 32,
+    "failures": {
+      "RuntimeError: Episode ended before the requested progression stage finished": 32,
+      "RuntimeError: Room-15 Gel teacher exhausted 512-decision budget": 234
+    }
+  },
+  "commands": 192316,
+  "damage_raw": 500,
+  "healing_raw": 0,
+  "case_seconds": 8557.730000000003,
+  "exact_replays": 400,
+  "verified_case_manifests": 400,
+  "frozen_inputs_changed": [],
+  "by_start": {
+    "0": {
+      "cases": 20,
+      "successes": 1,
+      "zero_damage_successes": 1,
+      "alive": 20,
+      "zero_damage_alive": 16,
+      "deaths": 0,
+      "failures": {
+        "RuntimeError: Room-15 Gel teacher exhausted 512-decision budget": 19
+      }
+    },
+    "1": {
+      "cases": 20,
+      "successes": 7,
+      "zero_damage_successes": 7,
+      "alive": 20,
+      "zero_damage_alive": 12,
+      "deaths": 0,
+      "failures": {
+        "RuntimeError: Room-15 Gel teacher exhausted 512-decision budget": 13
+      }
+    },
+    "2": {
+      "cases": 20,
+      "successes": 3,
+      "zero_damage_successes": 3,
+      "alive": 20,
+      "zero_damage_alive": 14,
+      "deaths": 0,
+      "failures": {
+        "RuntimeError: Room-15 Gel teacher exhausted 512-decision budget": 17
+      }
+    },
+    "3": {
+      "cases": 20,
+      "successes": 2,
+      "zero_damage_successes": 0,
+      "alive": 20,
+      "zero_damage_alive": 16,
+      "deaths": 0,
+      "failures": {
+        "RuntimeError: Room-15 Gel teacher exhausted 512-decision budget": 18
+      }
+    },
+    "4": {
+      "cases": 20,
+      "successes": 17,
+      "zero_damage_successes": 17,
+      "alive": 20,
+      "zero_damage_alive": 20,
+      "deaths": 0,
+      "failures": {
+        "RuntimeError: Room-15 Gel teacher exhausted 512-decision budget": 3
+      }
+    },
+    "5": {
+      "cases": 20,
+      "successes": 17,
+      "zero_damage_successes": 17,
+      "alive": 20,
+      "zero_damage_alive": 20,
+      "deaths": 0,
+      "failures": {
+        "RuntimeError: Room-15 Gel teacher exhausted 512-decision budget": 3
+      }
+    },
+    "6": {
+      "cases": 20,
+      "successes": 7,
+      "zero_damage_successes": 6,
+      "alive": 20,
+      "zero_damage_alive": 17,
+      "deaths": 0,
+      "failures": {
+        "RuntimeError: Room-15 Gel teacher exhausted 512-decision budget": 13
+      }
+    },
+    "7": {
+      "cases": 20,
+      "successes": 13,
+      "zero_damage_successes": 13,
+      "alive": 20,
+      "zero_damage_alive": 15,
+      "deaths": 0,
+      "failures": {
+        "RuntimeError: Room-15 Gel teacher exhausted 512-decision budget": 7
+      }
+    },
+    "8": {
+      "cases": 20,
+      "successes": 2,
+      "zero_damage_successes": 2,
+      "alive": 20,
+      "zero_damage_alive": 5,
+      "deaths": 0,
+      "failures": {
+        "RuntimeError: Room-15 Gel teacher exhausted 512-decision budget": 18
+      }
+    },
+    "9": {
+      "cases": 20,
+      "successes": 7,
+      "zero_damage_successes": 6,
+      "alive": 20,
+      "zero_damage_alive": 17,
+      "deaths": 0,
+      "failures": {
+        "RuntimeError: Room-15 Gel teacher exhausted 512-decision budget": 13
+      }
+    },
+    "10": {
+      "cases": 20,
+      "successes": 17,
+      "zero_damage_successes": 17,
+      "alive": 20,
+      "zero_damage_alive": 20,
+      "deaths": 0,
+      "failures": {
+        "RuntimeError: Room-15 Gel teacher exhausted 512-decision budget": 3
+      }
+    },
+    "11": {
+      "cases": 20,
+      "successes": 3,
+      "zero_damage_successes": 3,
+      "alive": 9,
+      "zero_damage_alive": 9,
+      "deaths": 11,
+      "failures": {
+        "RuntimeError: Episode ended before the requested progression stage finished": 11,
+        "RuntimeError: Room-15 Gel teacher exhausted 512-decision budget": 6
+      }
+    },
+    "12": {
+      "cases": 20,
+      "successes": 0,
+      "zero_damage_successes": 0,
+      "alive": 13,
+      "zero_damage_alive": 13,
+      "deaths": 7,
+      "failures": {
+        "RuntimeError: Episode ended before the requested progression stage finished": 7,
+        "RuntimeError: Room-15 Gel teacher exhausted 512-decision budget": 13
+      }
+    },
+    "13": {
+      "cases": 20,
+      "successes": 0,
+      "zero_damage_successes": 0,
+      "alive": 13,
+      "zero_damage_alive": 13,
+      "deaths": 7,
+      "failures": {
+        "RuntimeError: Episode ended before the requested progression stage finished": 7,
+        "RuntimeError: Room-15 Gel teacher exhausted 512-decision budget": 13
+      }
+    },
+    "14": {
+      "cases": 20,
+      "successes": 6,
+      "zero_damage_successes": 6,
+      "alive": 20,
+      "zero_damage_alive": 19,
+      "deaths": 0,
+      "failures": {
+        "RuntimeError: Room-15 Gel teacher exhausted 512-decision budget": 14
+      }
+    },
+    "15": {
+      "cases": 20,
+      "successes": 0,
+      "zero_damage_successes": 0,
+      "alive": 13,
+      "zero_damage_alive": 13,
+      "deaths": 7,
+      "failures": {
+        "RuntimeError: Episode ended before the requested progression stage finished": 7,
+        "RuntimeError: Room-15 Gel teacher exhausted 512-decision budget": 13
+      }
+    },
+    "16": {
+      "cases": 20,
+      "successes": 0,
+      "zero_damage_successes": 0,
+      "alive": 20,
+      "zero_damage_alive": 0,
+      "deaths": 0,
+      "failures": {
+        "RuntimeError: Room-15 Gel teacher exhausted 512-decision budget": 20
+      }
+    },
+    "17": {
+      "cases": 20,
+      "successes": 17,
+      "zero_damage_successes": 17,
+      "alive": 20,
+      "zero_damage_alive": 20,
+      "deaths": 0,
+      "failures": {
+        "RuntimeError: Room-15 Gel teacher exhausted 512-decision budget": 3
+      }
+    },
+    "18": {
+      "cases": 20,
+      "successes": 10,
+      "zero_damage_successes": 9,
+      "alive": 20,
+      "zero_damage_alive": 14,
+      "deaths": 0,
+      "failures": {
+        "RuntimeError: Room-15 Gel teacher exhausted 512-decision budget": 10
+      }
+    },
+    "19": {
+      "cases": 20,
+      "successes": 5,
+      "zero_damage_successes": 2,
+      "alive": 20,
+      "zero_damage_alive": 2,
+      "deaths": 0,
+      "failures": {
+        "RuntimeError: Room-15 Gel teacher exhausted 512-decision budget": 15
+      }
+    }
+  },
+  "by_idle": {
+    "0": {
+      "cases": 20,
+      "successes": 8,
+      "zero_damage_successes": 6,
+      "alive": 16,
+      "zero_damage_alive": 9,
+      "deaths": 4,
+      "failures": {
+        "RuntimeError: Episode ended before the requested progression stage finished": 4,
+        "RuntimeError: Room-15 Gel teacher exhausted 512-decision budget": 8
+      }
+    },
+    "1": {
+      "cases": 20,
+      "successes": 5,
+      "zero_damage_successes": 5,
+      "alive": 16,
+      "zero_damage_alive": 12,
+      "deaths": 4,
+      "failures": {
+        "RuntimeError: Episode ended before the requested progression stage finished": 4,
+        "RuntimeError: Room-15 Gel teacher exhausted 512-decision budget": 11
+      }
+    },
+    "2": {
+      "cases": 20,
+      "successes": 8,
+      "zero_damage_successes": 8,
+      "alive": 17,
+      "zero_damage_alive": 13,
+      "deaths": 3,
+      "failures": {
+        "RuntimeError: Room-15 Gel teacher exhausted 512-decision budget": 9,
+        "RuntimeError: Episode ended before the requested progression stage finished": 3
+      }
+    },
+    "3": {
+      "cases": 20,
+      "successes": 8,
+      "zero_damage_successes": 8,
+      "alive": 17,
+      "zero_damage_alive": 14,
+      "deaths": 3,
+      "failures": {
+        "RuntimeError: Room-15 Gel teacher exhausted 512-decision budget": 9,
+        "RuntimeError: Episode ended before the requested progression stage finished": 3
+      }
+    },
+    "4": {
+      "cases": 20,
+      "successes": 6,
+      "zero_damage_successes": 6,
+      "alive": 16,
+      "zero_damage_alive": 12,
+      "deaths": 4,
+      "failures": {
+        "RuntimeError: Episode ended before the requested progression stage finished": 4,
+        "RuntimeError: Room-15 Gel teacher exhausted 512-decision budget": 10
+      }
+    },
+    "5": {
+      "cases": 20,
+      "successes": 6,
+      "zero_damage_successes": 6,
+      "alive": 16,
+      "zero_damage_alive": 14,
+      "deaths": 4,
+      "failures": {
+        "RuntimeError: Episode ended before the requested progression stage finished": 4,
+        "RuntimeError: Room-15 Gel teacher exhausted 512-decision budget": 10
+      }
+    },
+    "6": {
+      "cases": 20,
+      "successes": 5,
+      "zero_damage_successes": 5,
+      "alive": 20,
+      "zero_damage_alive": 16,
+      "deaths": 0,
+      "failures": {
+        "RuntimeError: Room-15 Gel teacher exhausted 512-decision budget": 15
+      }
+    },
+    "7": {
+      "cases": 20,
+      "successes": 8,
+      "zero_damage_successes": 8,
+      "alive": 19,
+      "zero_damage_alive": 15,
+      "deaths": 1,
+      "failures": {
+        "RuntimeError: Episode ended before the requested progression stage finished": 1,
+        "RuntimeError: Room-15 Gel teacher exhausted 512-decision budget": 11
+      }
+    },
+    "8": {
+      "cases": 20,
+      "successes": 5,
+      "zero_damage_successes": 5,
+      "alive": 19,
+      "zero_damage_alive": 15,
+      "deaths": 1,
+      "failures": {
+        "RuntimeError: Episode ended before the requested progression stage finished": 1,
+        "RuntimeError: Room-15 Gel teacher exhausted 512-decision budget": 14
+      }
+    },
+    "9": {
+      "cases": 20,
+      "successes": 7,
+      "zero_damage_successes": 7,
+      "alive": 19,
+      "zero_damage_alive": 16,
+      "deaths": 1,
+      "failures": {
+        "RuntimeError: Episode ended before the requested progression stage finished": 1,
+        "RuntimeError: Room-15 Gel teacher exhausted 512-decision budget": 12
+      }
+    },
+    "10": {
+      "cases": 20,
+      "successes": 5,
+      "zero_damage_successes": 5,
+      "alive": 20,
+      "zero_damage_alive": 14,
+      "deaths": 0,
+      "failures": {
+        "RuntimeError: Room-15 Gel teacher exhausted 512-decision budget": 15
+      }
+    },
+    "11": {
+      "cases": 20,
+      "successes": 7,
+      "zero_damage_successes": 6,
+      "alive": 19,
+      "zero_damage_alive": 15,
+      "deaths": 1,
+      "failures": {
+        "RuntimeError: Episode ended before the requested progression stage finished": 1,
+        "RuntimeError: Room-15 Gel teacher exhausted 512-decision budget": 12
+      }
+    },
+    "12": {
+      "cases": 20,
+      "successes": 8,
+      "zero_damage_successes": 7,
+      "alive": 19,
+      "zero_damage_alive": 14,
+      "deaths": 1,
+      "failures": {
+        "RuntimeError: Episode ended before the requested progression stage finished": 1,
+        "RuntimeError: Room-15 Gel teacher exhausted 512-decision budget": 11
+      }
+    },
+    "13": {
+      "cases": 20,
+      "successes": 9,
+      "zero_damage_successes": 8,
+      "alive": 19,
+      "zero_damage_alive": 15,
+      "deaths": 1,
+      "failures": {
+        "RuntimeError: Episode ended before the requested progression stage finished": 1,
+        "RuntimeError: Room-15 Gel teacher exhausted 512-decision budget": 10
+      }
+    },
+    "14": {
+      "cases": 20,
+      "successes": 6,
+      "zero_damage_successes": 6,
+      "alive": 20,
+      "zero_damage_alive": 14,
+      "deaths": 0,
+      "failures": {
+        "RuntimeError: Room-15 Gel teacher exhausted 512-decision budget": 14
+      }
+    },
+    "15": {
+      "cases": 20,
+      "successes": 6,
+      "zero_damage_successes": 5,
+      "alive": 20,
+      "zero_damage_alive": 15,
+      "deaths": 0,
+      "failures": {
+        "RuntimeError: Room-15 Gel teacher exhausted 512-decision budget": 14
+      }
+    },
+    "16": {
+      "cases": 20,
+      "successes": 7,
+      "zero_damage_successes": 7,
+      "alive": 20,
+      "zero_damage_alive": 16,
+      "deaths": 0,
+      "failures": {
+        "RuntimeError: Room-15 Gel teacher exhausted 512-decision budget": 13
+      }
+    },
+    "17": {
+      "cases": 20,
+      "successes": 8,
+      "zero_damage_successes": 7,
+      "alive": 19,
+      "zero_damage_alive": 11,
+      "deaths": 1,
+      "failures": {
+        "RuntimeError: Episode ended before the requested progression stage finished": 1,
+        "RuntimeError: Room-15 Gel teacher exhausted 512-decision budget": 11
+      }
+    },
+    "18": {
+      "cases": 20,
+      "successes": 6,
+      "zero_damage_successes": 6,
+      "alive": 20,
+      "zero_damage_alive": 12,
+      "deaths": 0,
+      "failures": {
+        "RuntimeError: Room-15 Gel teacher exhausted 512-decision budget": 14
+      }
+    },
+    "19": {
+      "cases": 20,
+      "successes": 6,
+      "zero_damage_successes": 5,
+      "alive": 17,
+      "zero_damage_alive": 13,
+      "deaths": 3,
+      "failures": {
+        "RuntimeError: Episode ended before the requested progression stage finished": 3,
+        "RuntimeError: Room-15 Gel teacher exhausted 512-decision budget": 11
+      }
+    }
+  },
+  "half_heart": {
+    "cases": 80,
+    "successes": 3,
+    "zero_damage_successes": 3,
+    "alive": 48,
+    "zero_damage_alive": 48,
+    "deaths": 32,
+    "failures": {
+      "RuntimeError: Episode ended before the requested progression stage finished": 32,
+      "RuntimeError: Room-15 Gel teacher exhausted 512-decision budget": 45
+    }
+  },
+  "failure_positions": [
+    {
+      "x": 98,
+      "y": 80,
+      "count": 37
+    },
+    {
+      "x": 111,
+      "y": 80,
+      "count": 26
+    },
+    {
+      "x": 105,
+      "y": 80,
+      "count": 23
+    },
+    {
+      "x": 106,
+      "y": 80,
+      "count": 23
+    },
+    {
+      "x": 101,
+      "y": 80,
+      "count": 16
+    },
+    {
+      "x": 104,
+      "y": 80,
+      "count": 16
+    },
+    {
+      "x": 107,
+      "y": 80,
+      "count": 16
+    },
+    {
+      "x": 108,
+      "y": 80,
+      "count": 14
+    },
+    {
+      "x": 117,
+      "y": 80,
+      "count": 9
+    },
+    {
+      "x": 102,
+      "y": 58,
+      "count": 9
+    }
+  ],
+  "control": "Teacher-only room15; upstream verified guided trace replayed continuously from house. Autonomous room15 not evaluated.",
+  "teacher_action_fraction": 1.0,
+  "training_started": false,
+  "training_eligible": false,
+  "validation_loaded": false,
+  "interpretation": "Diagnostic batch of the latest unselected draft teacher; not directly comparable to the earlier 16/20 teacher version. No selection or learning improvement established."
+}

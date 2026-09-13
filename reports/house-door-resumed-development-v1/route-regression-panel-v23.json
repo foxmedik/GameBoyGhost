@@ -1,0 +1,11 @@
+{
+  "hypothesis": "Project beetle pursuit into central floor and align blade before flipped-target strikes; unchanged900 local budget.",
+  "cases": [
+    "house97",
+    "house307",
+    "house541",
+    "recovery23"
+  ],
+  "qualification": false,
+  "training_eligible": false
+}

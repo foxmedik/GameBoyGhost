@@ -1,0 +1,17 @@
+{
+  "schema":"tail-cave-balanced-autonomous-evaluation-v11",
+  "status":"panel-frozen-before-training-candidate-fingerprint-filled-after-training",
+  "frozen_at":"2026-09-12",
+  "training_experiment":"configs/tail_cave_balanced_v11_training.json",
+  "training_experiment_sha256":"44427ce5912f3a7da1693f42ddcf66f189ef01e6876517d45bcf4fdd335663b3",
+  "runner":"scripts/develop_progression_teacher.py",
+  "runner_sha256":"f74a79bf9b5767ca5ae1532b8f60054d698923a004a1bc9523a1837372341259",
+  "spec_plan":"configs/tail_cave_balanced_v11_training.json",
+  "candidate":"runs/tail-cave-balanced-v11-model/candidate.pt",
+  "candidate_sha256":"60e655a7aefd7f37cb584aaa7b33f2a6f7a5818c028cf0df75f0621c519864fd",
+  "cases":20,
+  "required_successes":18,
+  "tail_cave_guard":false,
+  "success_criterion":"Full physical house-to-first-key completion alive with exact replay and no Tail Cave teacher comparison or recovery.",
+  "sealed_validation":{"specification":"runs/progression-longrun-hour-v1/plan.json","results":"reports/progression-longrun-hour-v1.json","loaded":false,"used_for_training":false,"used_for_selection":false,"relabel_as_development":false}
+}

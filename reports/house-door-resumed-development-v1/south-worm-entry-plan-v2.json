@@ -1,0 +1,14 @@
+{
+  "source": "runs/teacher-map-v2/continuation.json",
+  "source_sha256": "f5411b0b217b3d1e65bfa11e6b878f72690eb814057f1ba92a07b82e31c12619",
+  "case_count": 1,
+  "budget": {
+    "decisions": 1500,
+    "frames": 6000
+  },
+  "hypothesis": "Two Keese remain behind central obstacles. Use observed upper43 lane to x80 before the same bounded clearance, then north. No budget increase.",
+  "success": "room0D south entrance at full health, Map and Compass, one remaining key after westdoor",
+  "training_eligible": false,
+  "qualification": false,
+  "prior_failure": "runs/teacher-south-worm-entry-v1"
+}

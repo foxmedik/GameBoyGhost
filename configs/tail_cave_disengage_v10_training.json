@@ -1,0 +1,18 @@
+{
+  "schema":"tail-cave-disengage-training-v10",
+  "status":"frozen-before-training",
+  "frozen_at":"2026-09-12",
+  "launcher":"scripts/train_tail_cave_disengage_v10.py",
+  "launcher_sha256":"6bd155b082c7c3d2be0e22dc5ce2694012ce94320e924608627df745c03ae0ca",
+  "trainer":"scripts/train_tail_cave_integration_dagger_v4.py",
+  "trainer_sha256":"3e5876de2a878a77a5cec21ebe28e0b30f54113adb3253c4f68324c579fb8319",
+  "parent":"runs/tail-cave-integration-dagger-v5-model/candidate.pt",
+  "parent_sha256":"f15a225b43b0a455277e1fe3ffeb942319b9e5c7df3b46c061518f7b08e974bc",
+  "base_data":"runs/tail-cave-specialist-v3-data/train.npz",
+  "base_data_sha256":"afe9765488a251e5cb2ba90ebea879ad4896a3f77abbf7468ddebc15c3b3a9a5",
+  "collection":"runs/tail-cave-disengage-dagger-v9-collection",
+  "collection_summary_sha256":"cf73d48175ab407f59778effb78c47ee4b6a4d9b47c094ff4bbdb524fd2dfe70",
+  "model":{"epochs":40,"batches_per_epoch":128,"base_rows_per_batch":128,"correction_rows_per_batch":128,"report_rows":8192,"learning_rate":0.00005,"seed":2035,"selection":"Final epoch only; no checkpoint shopping."},
+  "autonomous_evaluation_protocol":{"status":"frozen-before-training","panel_source":"configs/tail_cave_on_policy_dagger_v6_collection.json","panel_source_sha256":"ccc0a59485f7cf8697a80e6425710cab95a1d7ed21e0635a5109cb5ac9e2db75","cases":20,"required_successes":18,"control":"Fully autonomous cave model with no teacher comparison or recovery."},
+  "sealed_validation":{"specification":"runs/progression-longrun-hour-v1/plan.json","results":"reports/progression-longrun-hour-v1.json","loaded":false,"used_for_training":false,"used_for_selection":false,"relabel_as_development":false}
+}

@@ -1,0 +1,23 @@
+{
+  "status": "map_verified_feather_not_acquired",
+  "map_continuation": "runs/tail-cave-map-v1/map-continuation.json",
+  "report": "docs/TAIL_CAVE_MAP_AND_FEATHER_APPROACH.md",
+  "attempts": [
+    {
+      "result": "runs/tail-cave-map-v1/summary.json",
+      "exact_replay": true,
+      "terminal_room": "0x18",
+      "health": 0
+    },
+    {
+      "result": "runs/tail-cave-feather-retry-v1/summary.json",
+      "exact_replay": true,
+      "terminal_room": "0x1D",
+      "health": 0
+    }
+  ],
+  "training_started": false,
+  "labels_generated": false,
+  "sealed_validation_used": false,
+  "autonomous_gate_changed": false
+}

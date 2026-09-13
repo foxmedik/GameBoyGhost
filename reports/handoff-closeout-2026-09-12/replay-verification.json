@@ -1,0 +1,153 @@
+{
+  "schema": "house-door-handoff-verification-v1",
+  "verifier_sha256": "f47b12112f4ba6c9ba6dce69b7156809557c6e8ec6f07dec86a2c0f2f3f072ba",
+  "sealed_validation_used": false,
+  "checks": [
+    "dependency hashes",
+    "all command fingerprints",
+    "all snapshots",
+    "all frame counts",
+    "all emitted events",
+    "final state and dungeon items"
+  ],
+  "results": [
+    {
+      "handoff": "runs/full-health-worm-guard-v1/room0e-full-health-continuation.json",
+      "handoff_sha256": "eb67c94d5b51e0bfe0cdb9cf1b5d492940606c73337f22bcfaa9cc9ba3bff9ad",
+      "dependencies_hashed": 12,
+      "commands": 10963,
+      "exact_replay": true,
+      "final_frame": 47692,
+      "final": {
+        "phase": {
+          "gameplay": 11,
+          "subtype": 7,
+          "scroll": 0,
+          "sequence": 4,
+          "palette": 0,
+          "room": [
+            1,
+            0,
+            14
+          ],
+          "health": 24
+        },
+        "room": [
+          1,
+          0,
+          14
+        ],
+        "x": 11,
+        "y": 68,
+        "health": 24,
+        "max_hearts": 3,
+        "inventory": [
+          10,
+          1,
+          12,
+          4,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "sword": 1,
+        "toadstool": 0,
+        "powder": 21,
+        "bombs": 0,
+        "arrows": 0,
+        "tail_key": 1,
+        "tarin": 1,
+        "tail_door_status": 144,
+        "trade_item": 0,
+        "dialog_state": 0,
+        "dialog_id": 0,
+        "inventory_cursor": 1
+      },
+      "dungeon_items": [
+        1,
+        1,
+        0,
+        0,
+        1
+      ],
+      "pending_damage": 0,
+      "extra_progression_commands": 0,
+      "training_labels": 0,
+      "midroute_state_loads": 0
+    },
+    {
+      "handoff": "runs/tail-cave-room10-state-check-v2/continuation.json",
+      "handoff_sha256": "a39d067262b015ce7e65af6e2b4f149f87c8ee662692720c1c5e0840095fda3e",
+      "dependencies_hashed": 14,
+      "commands": 13722,
+      "exact_replay": true,
+      "final_frame": 52180,
+      "final": {
+        "phase": {
+          "gameplay": 11,
+          "subtype": 7,
+          "scroll": 0,
+          "sequence": 4,
+          "palette": 0,
+          "room": [
+            1,
+            0,
+            17
+          ],
+          "health": 4
+        },
+        "room": [
+          1,
+          0,
+          17
+        ],
+        "x": 17,
+        "y": 72,
+        "health": 4,
+        "max_hearts": 3,
+        "inventory": [
+          10,
+          1,
+          12,
+          4,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "sword": 1,
+        "toadstool": 0,
+        "powder": 21,
+        "bombs": 0,
+        "arrows": 0,
+        "tail_key": 1,
+        "tarin": 1,
+        "tail_door_status": 144,
+        "trade_item": 0,
+        "dialog_state": 0,
+        "dialog_id": 169,
+        "inventory_cursor": 1
+      },
+      "dungeon_items": [
+        1,
+        1,
+        0,
+        1,
+        0
+      ],
+      "pending_damage": 0,
+      "extra_progression_commands": 0,
+      "training_labels": 0,
+      "midroute_state_loads": 0
+    }
+  ]
+}

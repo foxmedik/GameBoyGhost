@@ -1,5 +1,7 @@
 # GameBoyGhost human-demo recorder handoff — 2026-09-11
 
+> Current decision (11 September 2026): recorder work and collection are shelved. Preserve this as historical context; follow `docs/PROJECT_STATUS.md` for active progression work.
+
 ## Purpose
 
 This session built the first usable human-demonstration recorder for Link's Awakening DX. It is intended to collect small, labeled gameplay clips that can become supervised training data: game frames, per-frame controller state, grouped input segments, game-state metadata, and human success/contrast markers.

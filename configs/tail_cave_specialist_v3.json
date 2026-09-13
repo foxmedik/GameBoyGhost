@@ -1,0 +1,42 @@
+{
+  "schema":"tail-cave-specialist-experiment-v3",
+  "status":"frozen_before_extraction_or_training",
+  "frozen_at":"2026-09-12",
+  "feature_source":"src/gameboy_agent/tail_cave_controller.py",
+  "feature_source_sha256":"da7cb3236e4aebb1fde1ca3ca5417b2d3996b9e7481425e14821f24e9ba58f3a",
+  "extractor":"scripts/extract_tail_cave_specialist_v3.py",
+  "extractor_sha256":"33b8eeb22a64971c4ff898f401d3714d73da3d345e88c0092ee7e0a9ae6e7e09",
+  "trainer":"scripts/train_tail_cave_specialist_v3.py",
+  "trainer_sha256":"c93d14a338be230e3ae01f9f714f6f202e7d2207b2aafcec16902736bc2e5c17",
+  "evaluator":"scripts/evaluate_tail_cave_specialist_v3.py",
+  "evaluator_sha256":"2de11309c5fd88ef4309d1dbc07b7dcf23333cd09d437f210d7fbf5580374e67",
+  "data_sources":[
+    {"run":"runs/tail-cave-first-key-development-v1","summary_sha256":"ed90eb706776a500ad96d4d89d6bfed378aca0a5decfe91933662829b5e8ac8e"},
+    {"run":"runs/tail-cave-dagger-v2-collection","summary_sha256":"c6e22afa7768643f427490d266aa30e3d32827e78e3ea9c841d9b298f6c054c0"}
+  ],
+  "model":{"epochs":40,"batches_per_epoch":96,"batch_rows":256,"learning_rate":0.0003,"seed":2032,"selection":"Final epoch only; no checkpoint shopping. Select only on the frozen autonomous panel."},
+  "development_panel":{"status":"frozen_before_training","required_successes":18,"decision_budget":512,
+    "cases":[
+      {"id":"specialist-first-key-00","source_case":"development-house-00","entry_idle_frames":60},
+      {"id":"specialist-first-key-01","source_case":"development-house-01","entry_idle_frames":61},
+      {"id":"specialist-first-key-02","source_case":"development-house-02","entry_idle_frames":62},
+      {"id":"specialist-first-key-03","source_case":"development-house-03","entry_idle_frames":63},
+      {"id":"specialist-first-key-04","source_case":"development-house-04","entry_idle_frames":64},
+      {"id":"specialist-first-key-05","source_case":"development-house-05","entry_idle_frames":65},
+      {"id":"specialist-first-key-06","source_case":"development-house-06","entry_idle_frames":66},
+      {"id":"specialist-first-key-07","source_case":"development-house-07","entry_idle_frames":67},
+      {"id":"specialist-first-key-08","source_case":"development-house-08","entry_idle_frames":68},
+      {"id":"specialist-first-key-09","source_case":"development-house-09","entry_idle_frames":69},
+      {"id":"specialist-first-key-10","source_case":"development-house-10","entry_idle_frames":70},
+      {"id":"specialist-first-key-11","source_case":"development-house-11","entry_idle_frames":71},
+      {"id":"specialist-first-key-12","source_case":"development-house-12","entry_idle_frames":72},
+      {"id":"specialist-first-key-13","source_case":"development-house-13","entry_idle_frames":73},
+      {"id":"specialist-first-key-14","source_case":"development-house-14","entry_idle_frames":74},
+      {"id":"specialist-first-key-15","source_case":"development-house-15","entry_idle_frames":75},
+      {"id":"specialist-first-key-16","source_case":"development-house-16","entry_idle_frames":76},
+      {"id":"specialist-first-key-17","source_case":"development-house-17","entry_idle_frames":77},
+      {"id":"specialist-first-key-18","source_case":"development-house-18","entry_idle_frames":78},
+      {"id":"specialist-first-key-19","source_case":"development-house-19","entry_idle_frames":79}
+    ]},
+  "sealed_validation":{"specification":"runs/progression-longrun-hour-v1/plan.json","results":"reports/progression-longrun-hour-v1.json","loaded":false,"used_for_training":false,"used_for_selection":false,"relabel_as_development":false}
+}

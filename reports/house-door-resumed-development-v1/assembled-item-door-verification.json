@@ -1,0 +1,77 @@
+{
+  "exact_replay": true,
+  "commands": 14969,
+  "final_frame": 49622,
+  "opened_frame": 49621,
+  "final": {
+    "phase": {
+      "gameplay": 11,
+      "subtype": 7,
+      "scroll": 0,
+      "sequence": 4,
+      "palette": 0,
+      "room": [
+        1,
+        0,
+        11
+      ],
+      "health": 24
+    },
+    "room": [
+      1,
+      0,
+      11
+    ],
+    "x": 81,
+    "y": 26,
+    "health": 24,
+    "max_hearts": 3,
+    "inventory": [
+      10,
+      1,
+      12,
+      4,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0
+    ],
+    "sword": 1,
+    "toadstool": 0,
+    "powder": 24,
+    "bombs": 0,
+    "arrows": 0,
+    "tail_key": 1,
+    "tarin": 1,
+    "tail_door_status": 144,
+    "trade_item": 0,
+    "dialog_state": 0,
+    "dialog_id": 169,
+    "inventory_cursor": 1
+  },
+  "dungeon_items": [
+    1,
+    1,
+    0,
+    1,
+    0
+  ],
+  "door_status": 140,
+  "door_animation": 0,
+  "pending_healing": 0,
+  "pending_damage": 0,
+  "grounded": true,
+  "movement_released": true,
+  "forbidden_boss_room_entered": false,
+  "midroute_state_loads": 0,
+  "control": "guided_physical_development",
+  "teacher_qualified": false,
+  "sealed_validation_used": false,
+  "training_labels": 0,
+  "handoff_sha256": "0c60417ad728154dcfb00de90d45a58187a3e41701d9a17bb259e2b5f5bf7170",
+  "verifier_sha256": "e389b362c24c6de998c00304013275f1f876e2ff2261f4b82c9b758f624ba471"
+}

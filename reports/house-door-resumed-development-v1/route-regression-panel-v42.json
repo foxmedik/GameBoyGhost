@@ -1,0 +1,11 @@
+{
+  "hypothesis": "Mushroom west climb observes Keese each frame before final diagonal; physical combat begins before imminent contact.",
+  "cases": [
+    "house1109",
+    "house883",
+    "house953",
+    "recovery698"
+  ],
+  "qualification": false,
+  "training_eligible": false
+}
