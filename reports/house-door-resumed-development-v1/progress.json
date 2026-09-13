@@ -1,6 +1,6 @@
 {
   "schema": "house-door-first-proof-progress-v1",
-  "status": "original_goals_complete_annotated_video_pending",
+  "status": "original_goals_and_requested_video_complete",
   "proof": "runs/house-nightmare-door-proof-v1/continuation.json",
   "proof_sha256": "3140c8ea17024d53928e0fdae0ccbd7f94f56c87013657c3666accf63bb57077",
   "commands": 15896,
@@ -491,12 +491,17 @@
     "result": "reports/house-door-resumed-development-v1/route-regression-panel-v56-result.json"
   },
   "requested_annotated_video": {
-    "status": "pending",
+    "status": "complete",
     "scope": "Fresh full original-house to opened boss-door annotated run explaining obstacles and fixes from this session and final qualification results",
     "requested_by_user": true,
     "sequence": "Only after all original goals are complete",
     "exclude_topics": [
       "wipe"
-    ]
+    ],
+    "path": "/Users/studio/Developer/GameBoyAgent/runs/videos/house-to-nightmare-door-qualified-v3/house-to-nightmare-door-annotated.mp4",
+    "sha256": "3e1549b488992987cae688f8b0cd1140de25752556c1670bba0c76f8f3438881",
+    "duration_seconds": 844.2666666666667,
+    "backup_verified": true,
+    "media_qa_passed": true
   }
 }

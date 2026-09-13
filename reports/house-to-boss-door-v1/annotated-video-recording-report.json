@@ -1,0 +1,67 @@
+{
+  "success": true,
+  "exact_replay": true,
+  "commands": 15999,
+  "emulator_frames": 48737,
+  "rendered_frames": 25328,
+  "fps": 30,
+  "duration_seconds": 844.2666666666667,
+  "chapters": 17,
+  "final": {
+    "phase": {
+      "gameplay": 11,
+      "subtype": 7,
+      "scroll": 0,
+      "sequence": 4,
+      "palette": 0,
+      "room": [
+        1,
+        0,
+        11
+      ],
+      "health": 24
+    },
+    "room": [
+      1,
+      0,
+      11
+    ],
+    "x": 80,
+    "y": 27,
+    "health": 24,
+    "max_hearts": 3,
+    "inventory": [
+      10,
+      1,
+      12,
+      4,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0
+    ],
+    "sword": 1,
+    "toadstool": 0,
+    "powder": 25,
+    "bombs": 0,
+    "arrows": 0,
+    "tail_key": 1,
+    "tarin": 1,
+    "tail_door_status": 144,
+    "trade_item": 0,
+    "dialog_state": 0,
+    "dialog_id": 169,
+    "inventory_cursor": 1
+  },
+  "door_open": true,
+  "source_run": "runs/house-door-teacher-qualification-v27/fresh-house-00",
+  "original_goals_complete_before_recording": true,
+  "narration": "macOS Samantha synthetic voice",
+  "full_route_without_cuts": true,
+  "video": "/Users/studio/Developer/GameBoyAgent/runs/videos/house-to-nightmare-door-qualified-v3/house-to-nightmare-door-annotated.mp4",
+  "sha256": "3e1549b488992987cae688f8b0cd1140de25752556c1670bba0c76f8f3438881"
+}

@@ -1,0 +1,126 @@
+{
+  "success": true,
+  "complete_decode": true,
+  "video_codec": "h264",
+  "audio_codec": "aac",
+  "resolution": [
+    1280,
+    720
+  ],
+  "duration_seconds": 844.2666666666667,
+  "sha256": "3e1549b488992987cae688f8b0cd1140de25752556c1670bba0c76f8f3438881",
+  "narration_intervals": [
+    {
+      "chapter": 1,
+      "start": 1,
+      "duration": 17.866122,
+      "available": 89.13333333333334
+    },
+    {
+      "chapter": 2,
+      "start": 90.13333333333334,
+      "duration": 14.710295,
+      "available": 67.86666666666666
+    },
+    {
+      "chapter": 3,
+      "start": 158.0,
+      "duration": 14.443265,
+      "available": 73.69999999999999
+    },
+    {
+      "chapter": 4,
+      "start": 231.7,
+      "duration": 14.930884,
+      "available": 39.633333333333326
+    },
+    {
+      "chapter": 5,
+      "start": 271.3333333333333,
+      "duration": 15.796871,
+      "available": 101.03333333333336
+    },
+    {
+      "chapter": 6,
+      "start": 372.3666666666667,
+      "duration": 14.501315,
+      "available": 101.39999999999998
+    },
+    {
+      "chapter": 7,
+      "start": 473.76666666666665,
+      "duration": 13.607347,
+      "available": 62.866666666666674
+    },
+    {
+      "chapter": 8,
+      "start": 536.6333333333333,
+      "duration": 13.139093,
+      "available": 21.366666666666674
+    },
+    {
+      "chapter": 9,
+      "start": 558.0,
+      "duration": 14.861224,
+      "available": 41.66666666666663
+    },
+    {
+      "chapter": 10,
+      "start": 599.6666666666666,
+      "duration": 14.874558,
+      "available": 46.66666666666674
+    },
+    {
+      "chapter": 11,
+      "start": 646.3333333333334,
+      "duration": 13.020181,
+      "available": 17.799999999999955
+    },
+    {
+      "chapter": 12,
+      "start": 664.1333333333333,
+      "duration": 15.685533,
+      "available": 19.433333333333394
+    },
+    {
+      "chapter": 13,
+      "start": 683.5666666666667,
+      "duration": 15.727029,
+      "available": 32.76666666666665
+    },
+    {
+      "chapter": 14,
+      "start": 716.3333333333334,
+      "duration": 17.06712,
+      "available": 31.133333333333326
+    },
+    {
+      "chapter": 15,
+      "start": 747.4666666666667,
+      "duration": 13.050068,
+      "available": 43.866666666666674
+    },
+    {
+      "chapter": 16,
+      "start": 791.3333333333334,
+      "duration": 12.56907,
+      "available": 28.949999999999932
+    },
+    {
+      "chapter": 17,
+      "start": 820.2833333333333,
+      "duration": 19.203356,
+      "available": 23.98333333333335
+    }
+  ],
+  "excluded_topic_absent": true,
+  "visual_review": {
+    "passed": true,
+    "frames": [
+      "chapter-01.png",
+      "chapter-12.png",
+      "final-frame.png"
+    ],
+    "findings": "Readable annotations, unobstructed game frame, correct endpoint and equipment."
+  }
+}

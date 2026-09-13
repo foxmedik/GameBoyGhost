@@ -1,0 +1,308 @@
+{
+  "success": true,
+  "backup": "/Volumes/bac kup/GameBoyGhost/house-to-boss-door-v1/media/house-to-nightmare-door-qualified-v3",
+  "files": 60,
+  "bytes": 139317296,
+  "inventory": [
+    {
+      "path": "chapter-00.png",
+      "sha256": "228d0df882c1b1829175923a0432cea8d2b34eb00fc0386e1cad850d0fe862b9",
+      "bytes": 55359
+    },
+    {
+      "path": "chapter-01.png",
+      "sha256": "048f1093deaaf53b65f5dea1b86c3a13c115d8c2ed5a899bbc077410bc9c577c",
+      "bytes": 56885
+    },
+    {
+      "path": "chapter-02.png",
+      "sha256": "d63fa6f6391becc2f3b82c1fa6f2aea23256354ad5e261d6598ba6c63f4ddf38",
+      "bytes": 61971
+    },
+    {
+      "path": "chapter-03.png",
+      "sha256": "20af490b670763ac6d60036e6848f6af2d09356131eb53454344292827c4c4da",
+      "bytes": 64039
+    },
+    {
+      "path": "chapter-04.png",
+      "sha256": "a0748db8eaee55ee1ef05193daabc6a93b0f8b9141dfc80271fcb7ed9f2ecb58",
+      "bytes": 62713
+    },
+    {
+      "path": "chapter-05.png",
+      "sha256": "3c5816b70cbd309c9912752c0abd4bdf5f2893cbcbc9f2a2ca2ecb61b71d1568",
+      "bytes": 63174
+    },
+    {
+      "path": "chapter-06.png",
+      "sha256": "f760a0b7df364d63828943cf76fcd5a328f7cc4221170759f71dfb7676dccbd0",
+      "bytes": 64020
+    },
+    {
+      "path": "chapter-07.png",
+      "sha256": "f9127826ca7da9dab1ac7d60c2886ff323481f458ca3ff3d9b2834a7850cf64d",
+      "bytes": 60428
+    },
+    {
+      "path": "chapter-08.png",
+      "sha256": "018e19ee92eee886031cfdd28f2bd807db4132a5ac7645fdd01d15d3703912c7",
+      "bytes": 57449
+    },
+    {
+      "path": "chapter-09.png",
+      "sha256": "c2289fea7f779270250ad387769492532720b39a4e5cabb02a42cde62cc607f6",
+      "bytes": 62610
+    },
+    {
+      "path": "chapter-10.png",
+      "sha256": "a8d4d456101063d5f1c9f55748e4d5e6dce68a14885befca0632823aec9b817f",
+      "bytes": 59533
+    },
+    {
+      "path": "chapter-11.png",
+      "sha256": "80497a5936af07fb3e125046dd671b416e503257cab0743a4c99942129072cd1",
+      "bytes": 60648
+    },
+    {
+      "path": "chapter-12.png",
+      "sha256": "eedf8a8a80eabc17bf0c1cdb10b80ec5e3cd99812e2f117dc4202cb7585866b9",
+      "bytes": 59302
+    },
+    {
+      "path": "chapter-13.png",
+      "sha256": "200a5543776b7800bdf1089763fe394f9b836d53b095853481cd7767ee4aae09",
+      "bytes": 63559
+    },
+    {
+      "path": "chapter-14.png",
+      "sha256": "cef3367773d5dd9d4fd13e9ddf0d308b6eb7c93f77ec7db8d34c7a08ff7db9d2",
+      "bytes": 60973
+    },
+    {
+      "path": "chapter-15.png",
+      "sha256": "4ee0c674e25c099389acc278820c0c7213135d7e1b8c16d810d514775b85d59a",
+      "bytes": 63548
+    },
+    {
+      "path": "chapter-16.png",
+      "sha256": "b97ad95c5b4be945931adacae2c1235ce9932bceca917bfaa340d4ccc3069f62",
+      "bytes": 62550
+    },
+    {
+      "path": "chapters.json",
+      "sha256": "ab53042aca229ae9acc9c0dabebe2b83e5f8844a98b1e18c538fb583d35c7841",
+      "bytes": 8094
+    },
+    {
+      "path": "encoding.log",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0
+    },
+    {
+      "path": "final-frame.png",
+      "sha256": "b97ad95c5b4be945931adacae2c1235ce9932bceca917bfaa340d4ccc3069f62",
+      "bytes": 62550
+    },
+    {
+      "path": "full-route-silent.mp4",
+      "sha256": "22e43bcc957161525fe9607e7fef9b9f2f93c2fdbdfa1c9b9d85add5a39be7b9",
+      "bytes": 61509112
+    },
+    {
+      "path": "house-to-nightmare-door-annotated.mp4",
+      "sha256": "3e1549b488992987cae688f8b0cd1140de25752556c1670bba0c76f8f3438881",
+      "bytes": 65355554
+    },
+    {
+      "path": "media-qa.json",
+      "sha256": "30830403520d30de2ed79df523cee15bf5120d964c0e85a06f1d53712f591471",
+      "bytes": 2788
+    },
+    {
+      "path": "narration-00.aiff",
+      "sha256": "b1b25abec53514d316bd21996eb8a15fd3fafe3d1408357b991a25c36cb78883",
+      "bytes": 791992
+    },
+    {
+      "path": "narration-00.txt",
+      "sha256": "16cb3a10aea57fb698b7ba0f05e4acd8755c08c06e5f18b75f7dc76fa07e55af",
+      "bytes": 326
+    },
+    {
+      "path": "narration-01.aiff",
+      "sha256": "09f8a120c1229298779e9a2941b18092672bf1eb1f8f071b47c3adbd27e1de27",
+      "bytes": 652820
+    },
+    {
+      "path": "narration-01.txt",
+      "sha256": "e43404fb7026b9bf20f9b8a3ad0dfce0289f826d8a936ece62470ed203fda101",
+      "bytes": 268
+    },
+    {
+      "path": "narration-02.aiff",
+      "sha256": "e6806f649551768b5cbc1141023a739fa66659d079d7286d08c69bc5c613e806",
+      "bytes": 641044
+    },
+    {
+      "path": "narration-02.txt",
+      "sha256": "555a06b27b42cc30f2a1a6c15300069c996fa153dd6f432beba542df944e4851",
+      "bytes": 263
+    },
+    {
+      "path": "narration-03.aiff",
+      "sha256": "4566e3ed39c6d18d43dafa10556ba6fbe06b335a0f5577cdf100bfe666246a54",
+      "bytes": 662548
+    },
+    {
+      "path": "narration-03.txt",
+      "sha256": "6d41ee61f0b00925053ff60f8039e013654aeace257c838835cd6cdb7c92a108",
+      "bytes": 257
+    },
+    {
+      "path": "narration-04.aiff",
+      "sha256": "a5ed4a369beae8744cc0f189ae37d3c96d9b7b0a4e977d4ca9edc8a3bbfe1039",
+      "bytes": 700738
+    },
+    {
+      "path": "narration-04.txt",
+      "sha256": "5484041f9cb1f2e9a6d2169bc1c98eda48c59090a67d1e072edf5b5b2af5d443",
+      "bytes": 295
+    },
+    {
+      "path": "narration-05.aiff",
+      "sha256": "20ce463d328cc0c67fde34ee04e9adeff47a9dd7e61f15af62e25100008e8957",
+      "bytes": 643604
+    },
+    {
+      "path": "narration-05.txt",
+      "sha256": "1374de0cc07a3cf7da2465811396602cb972de3e1e86f212ebf8146ac5bbc38c",
+      "bytes": 266
+    },
+    {
+      "path": "narration-06.aiff",
+      "sha256": "84e114d38f18963d815d2c878976e64f8010c585d0ab618a1f95dd08800ff310",
+      "bytes": 604180
+    },
+    {
+      "path": "narration-06.txt",
+      "sha256": "4413e1974714e98b2966225190cdcc7761f941f66b343570b2946748b8f9e101",
+      "bytes": 230
+    },
+    {
+      "path": "narration-07.aiff",
+      "sha256": "e6297ac04a28d33cfcfc05dc73585d51aa9a9be7536fb43c66885614a2023833",
+      "bytes": 583530
+    },
+    {
+      "path": "narration-07.txt",
+      "sha256": "82f5f01650aeaf19018ad1ac51fd1ce8a64f818680d950f2f7276d0c167b3466",
+      "bytes": 243
+    },
+    {
+      "path": "narration-08.aiff",
+      "sha256": "e050f92f47ee5294a68ad51428aedbf2adaf42de1f945b4046490893738692d4",
+      "bytes": 659476
+    },
+    {
+      "path": "narration-08.txt",
+      "sha256": "151daad4e02287af829eae4d315df9d2d893a2fcf74425442793c0e289734d36",
+      "bytes": 278
+    },
+    {
+      "path": "narration-09.aiff",
+      "sha256": "2537ef7229e722815dd6690c2d4f2aafef08bd45ae8e67688241cbc9861506b9",
+      "bytes": 660064
+    },
+    {
+      "path": "narration-09.txt",
+      "sha256": "a91325a55ecf3554535b0ebfc4be2b1f5cbd3a3d40534841315193dea9589577",
+      "bytes": 251
+    },
+    {
+      "path": "narration-10.aiff",
+      "sha256": "7929d86827585ec63d26f0b8d83d40580daa673448ba11b9ce84996c2a62669f",
+      "bytes": 578286
+    },
+    {
+      "path": "narration-10.txt",
+      "sha256": "3398968393ffd086228364c224d63efcddbe12abe33d1951b7e2c479c6492ad3",
+      "bytes": 235
+    },
+    {
+      "path": "narration-11.aiff",
+      "sha256": "a2868e8687251e88cc631bd553b87265e499dcf3b746eb026ae7b543623e8c47",
+      "bytes": 695828
+    },
+    {
+      "path": "narration-11.txt",
+      "sha256": "01f44887a4a8b7b93f460da2acc235deb51564b1269330225424b3b9eac98535",
+      "bytes": 290
+    },
+    {
+      "path": "narration-12.aiff",
+      "sha256": "709fcd80d4524d71e99c3fafed553a8578c0da483cc56b3bf56a5067e6f089c7",
+      "bytes": 697658
+    },
+    {
+      "path": "narration-12.txt",
+      "sha256": "450fe7918f79f06ebabbc340082717007d9a68880698e2d43e3ebbcb911db0a7",
+      "bytes": 304
+    },
+    {
+      "path": "narration-13.aiff",
+      "sha256": "c1a96cd0c185b80161c54e4c3f80febaeb93a9a71219dc15f6996cb75da2955c",
+      "bytes": 756756
+    },
+    {
+      "path": "narration-13.txt",
+      "sha256": "6a7648dae801bd92e608f718f09171e6c9fb4a19a628879e900ba10dc58f1261",
+      "bytes": 307
+    },
+    {
+      "path": "narration-14.aiff",
+      "sha256": "1bebc7669afda2c9ff4704ebc3cc5f5dc6180d004e1d699898d27189145d502c",
+      "bytes": 579604
+    },
+    {
+      "path": "narration-14.txt",
+      "sha256": "627a5df030a9db86ae10a02c628e4f3835fa40b0119f785d700de8f9c5204a87",
+      "bytes": 242
+    },
+    {
+      "path": "narration-15.aiff",
+      "sha256": "2b6d7eab1edc881d0488307c23262929a7b259ba9e64f9685babef56f62c7279",
+      "bytes": 558392
+    },
+    {
+      "path": "narration-15.txt",
+      "sha256": "5a418d70e10c97463046d2527a47efd75909fed71447970b0ecb0627ad814b88",
+      "bytes": 231
+    },
+    {
+      "path": "narration-16.aiff",
+      "sha256": "95ae10c7aa0a79da580639df4efcd0542ae1a4ea2f7dc31c57296fb0c7e4f9e2",
+      "bytes": 850964
+    },
+    {
+      "path": "narration-16.txt",
+      "sha256": "1bd042f80a545d3a769fe9b4a033a2f129bbf80c3ae3db976dae62aaba8e57f0",
+      "bytes": 328
+    },
+    {
+      "path": "recorder-source.py",
+      "sha256": "68cca6176e8a4a286437f6571a6a47150bf62dfe7f154b637f6adf88a23013d2",
+      "bytes": 16092
+    },
+    {
+      "path": "recording-report.json",
+      "sha256": "aeed7d16b1de474dfb1ac3e205fba2fad3bac93bfbe0aad11e37b9a304dbf9a8",
+      "bytes": 1356
+    },
+    {
+      "path": "stream-info.txt",
+      "sha256": "18865ab1effe9d551748862a71895089934dda52403d4d4555f9ac25119593f0",
+      "bytes": 891
+    }
+  ]
+}

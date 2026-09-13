@@ -35,3 +35,6 @@ checkpoints/
 /assets/videos/
 # Derived review frames can be regenerated from local source video.
 /runs/speedrun-review-*/
+
+# Historical reserved evaluation stays private in the protected backup.
+/reports/progression-longrun-hour-v1.json

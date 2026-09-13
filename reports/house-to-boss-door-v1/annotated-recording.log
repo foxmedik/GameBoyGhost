@@ -1,0 +1,17 @@
+UserWarning: Using SDL2 binaries from pysdl2-dll 2.32.10
+Loaded layouts
+Recorded and verified commands 2000
+Recorded and verified commands 4000
+Recorded and verified commands 6000
+Recorded and verified commands 8000
+Recorded and verified commands 10000
+Recorded and verified commands 12000
+Recorded and verified commands 14000
+Traceback (most recent call last):
+  File "/Users/studio/Developer/GameBoyAgent/scripts/record_house_door_annotated.py", line 195, in <module>
+    if __name__=='__main__':main()
+                            ^^^^^^
+  File "/Users/studio/Developer/GameBoyAgent/scripts/record_house_door_annotated.py", line 165, in main
+    if env.journal.state()!=json.loads((run/'journal.json').read_text()):raise RuntimeError('Journal mismatch')
+                                                                         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+RuntimeError: Journal mismatch

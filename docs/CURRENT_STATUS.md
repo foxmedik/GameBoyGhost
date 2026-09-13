@@ -10,4 +10,4 @@ A new uv environment restored the public source and USB artifacts, installed45 p
 
 research_state.wipe_ready=true. The Mac has not been erased.
 
-The requested annotated full run video is next, now that all original goals are complete. It will explain session obstacles, fixes and results without mentioning the wipe.
+The requested annotated full run video is complete: runs/videos/house-to-nightmare-door-qualified-v3/house-to-nightmare-door-annotated.mp4 (14m04s, 17 narrated chapters). Recording began after original-goal completion, verified all 15999 commands and 48737 frames, passed full audio/video decoding and visual checks, and was independently copied with hash verification to the private USB backup. The requested excluded topic is absent.
