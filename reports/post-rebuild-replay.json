@@ -1,0 +1,61 @@
+{
+  "success": true,
+  "exact_replay": true,
+  "commands": 15999,
+  "frames": 48737,
+  "final": {
+    "phase": {
+      "gameplay": 11,
+      "subtype": 7,
+      "scroll": 0,
+      "sequence": 4,
+      "palette": 0,
+      "room": [
+        1,
+        0,
+        11
+      ],
+      "health": 24
+    },
+    "room": [
+      1,
+      0,
+      11
+    ],
+    "x": 80,
+    "y": 27,
+    "health": 24,
+    "max_hearts": 3,
+    "inventory": [
+      10,
+      1,
+      12,
+      4,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0
+    ],
+    "sword": 1,
+    "toadstool": 0,
+    "powder": 25,
+    "bombs": 0,
+    "arrows": 0,
+    "tail_key": 1,
+    "tarin": 1,
+    "tail_door_status": 144,
+    "trade_item": 0,
+    "dialog_state": 0,
+    "dialog_id": 169,
+    "inventory_cursor": 1
+  },
+  "door_open": true,
+  "door_animation": 0,
+  "boss_room_entered": false,
+  "intermediate_state_loads": 0,
+  "source_run": "runs/house-door-teacher-qualification-v27/fresh-house-00"
+}

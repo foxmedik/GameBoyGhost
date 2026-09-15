@@ -1,7 +1,7 @@
 {
   "schema": "house-door-research-state-v1",
   "wipe_ready": true,
-  "current_stage": "qualified_release_clean_restore_verified",
+  "current_stage": "post_wipe_rebuild_verified_infrastructure_setup",
   "full_route_continuous_proof": true,
   "full_route_exact_replay": true,
   "teacher_panel_frozen": true,
@@ -12,8 +12,23 @@
   "sealed_validation_unchanged": true,
   "source_and_artifacts_independently_backed_up": true,
   "clean_uv_restore_verified": true,
-  "mac_erased": false,
+  "mac_erased": true,
   "evidence": "reports/house-door-resumed-development-v1/progress.json",
   "release": "house-to-boss-door-v1",
-  "release_evidence": "reports/house-to-boss-door-v1/release-manifest.json"
+  "release_evidence": "reports/house-to-boss-door-v1/release-manifest.json",
+  "authoritative_state": "configs/handoff_state.json",
+  "authoritative_document": "docs/FINAL_HANDOFF_PRE_WIPE.md",
+  "milestone_complete": true,
+  "clean_restore_verified": true,
+  "backup_verified": true,
+  "release_published": true,
+  "next_phase": "lab infrastructure setup",
+  "later_objectives": [
+    "learner takeover",
+    "Moldorm",
+    "Full Moon Cello"
+  ],
+  "old_environment_frozen": true,
+  "post_wipe_rebuild_verified": true,
+  "post_wipe_rebuild_evidence": "reports/post-wipe-rebuild-2026-09-15/acceptance.json"
 }

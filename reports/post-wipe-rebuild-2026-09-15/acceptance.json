@@ -1,0 +1,55 @@
+{
+  "schema": "gameboyghost-post-wipe-rebuild-v1",
+  "date": "2026-09-15",
+  "host": "gameboy-lab",
+  "accepted": true,
+  "repo_commit": "8aec8cde34059fa362e57d00fdf9e594ab9cd0da",
+  "ladx_commit": "23f09fcf0339c1497ef6778e69a33075dd716a9f",
+  "python": "3.11.16",
+  "uv": "0.12.15",
+  "rom_sha256": "6285ba6201f17bc8595c600ebc2477d52561f0aff29b11f7fc3343bacb2e230b",
+  "initial_state_sha256": "ad8cd027b3dfd6ea1872d51b038a4c40402846d631e43b35259b4943dcfb9d42",
+  "tests": {
+    "ran": 190,
+    "skipped": 1,
+    "failures": 0,
+    "errors": 0,
+    "test_tree_matches_usb": true,
+    "note": "Pre-wipe clean-restore documentation recorded 189 tests; current restored tree ran 190 while tests/ matches the frozen USB tree."
+  },
+  "release_replay": {
+    "report": "reports/post-rebuild-replay.json",
+    "success": true,
+    "exact_replay": true,
+    "commands": 15999,
+    "frames": 48737,
+    "final_room": [
+      1,
+      0,
+      11
+    ],
+    "health": 24,
+    "door_open": true,
+    "boss_room_entered": false,
+    "intermediate_state_loads": 0
+  },
+  "fresh_teacher": {
+    "run": "runs/post-rebuild-teacher-v1",
+    "success": true,
+    "exact_replay": true,
+    "final_frame": 48737,
+    "health": 24,
+    "evidence_artifact": {
+      "path": "runs/post-rebuild-teacher-v1/evidence.json",
+      "bytes": 85134,
+      "sha256": "09cb189436b1b04326cdbf6821d54091296e0151becabda0f13791b70d3e1140"
+    },
+    "final_observations_artifact": {
+      "path": "runs/post-rebuild-teacher-v1/final-observations.json",
+      "bytes": 448905,
+      "sha256": "26d79ec92a9f61c0e15cf924de4f1c72d6a3ca5cf29f475612305c3f34c21fe5"
+    }
+  },
+  "learner_training_started": false,
+  "new_learner_labels_generated": 0
+}
