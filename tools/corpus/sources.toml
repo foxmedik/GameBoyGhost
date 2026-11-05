@@ -1,0 +1,208 @@
+# GameBoyGhost reference corpus — source registry.
+# This is reference material, never training data.
+# Raw bytes and normalized text live in $GBG_CORPUS_DIR, not in git.
+version = 1
+
+# ---------------------------------------------------------------- P0: hardware / emulator docs
+
+[sources.pandocs]
+id = "pandocs"
+kind = "github_raw"
+priority = "P0"
+repo = "gbdev/pandocs"
+ref = "auto"                      # resolved to a commit SHA and pinned in sources.lock.json
+include = ["**/*.md", "**/*.txt"]
+exclude = ["**/node_modules/**", "**/.github/**"]
+license = "read"
+rate_limit_rps = 1
+
+[sources.awesome_gbdev]
+id = "awesome_gbdev"
+kind = "github_raw"
+priority = "P0"
+repo = "gbdev/awesome-gbdev"
+ref = "auto"
+include = ["README.md", "**/*.md"]
+exclude = ["**/.github/**"]
+license = "read"
+rate_limit_rps = 1
+
+[sources.sameboy]
+id = "sameboy"
+kind = "github_raw"
+priority = "P0"
+repo = "LIJI32/SameBoy"
+ref = "auto"
+include = ["README.md", "*.md", "docs/**/*.md", "doc/**/*.md", "**/*.md"]
+exclude = ["**/node_modules/**", "**/.github/**"]
+license = "read"
+rate_limit_rps = 1
+
+[sources.mooneye_gb]
+id = "mooneye_gb"
+kind = "github_raw"
+priority = "P0"
+repo = "Gekkio/mooneye-gb"
+ref = "auto"
+include = ["README.markdown", "README.md", "*.markdown", "*.md", "docs/**/*.md", "**/*.markdown"]
+exclude = ["**/target/**", "**/.github/**"]
+license = "read"
+rate_limit_rps = 1
+
+[sources.gb_test_roms]
+id = "gb_test_roms"
+kind = "github_raw"
+priority = "P0"
+repo = "retrio/gb-test-roms"
+ref = "auto"
+include = ["README.md", "**/*.md", "**/*.txt"]
+exclude = ["**/*.gb", "**/*.gbc", "**/*.bin", "**/*.zip"]
+license = "read"
+rate_limit_rps = 1
+
+[sources.mealybug]
+id = "mealybug"
+kind = "github_raw"
+priority = "P0"
+repo = "mattcurrie/mealybug-tearoom-tests"
+ref = "auto"
+include = ["README.md", "**/*.md"]
+exclude = ["**/*.gb", "**/*.gbc", "**/*.png"]
+license = "read"
+rate_limit_rps = 1
+
+[sources.giibiiadvance]
+id = "giibiiadvance"
+kind = "github_raw"
+priority = "P0"
+repo = "AntonioND/giibiiadvance"
+ref = "auto"
+include = ["README.md", "docs/**/*.md", "doc/**/*.md", "**/*.md", "**/*.txt"]
+exclude = ["**/*.gb", "**/*.gbc", "**/*.bin"]
+license = "read"
+rate_limit_rps = 1
+
+[sources.binjgb]
+id = "binjgb"
+kind = "github_raw"
+priority = "P0"
+repo = "binji/binjgb"
+ref = "auto"
+include = ["README.md", "**/*.md"]
+exclude = ["**/.github/**"]
+license = "read"
+rate_limit_rps = 1
+
+[sources.copetti_gb]
+id = "copetti_gb"
+kind = "html_article"
+priority = "P0"
+url = "https://www.copetti.org/writings/consoles/game-boy/"
+license = "unknown"               # site has no explicit reuse license; local reference only
+rate_limit_rps = 1
+
+# ---------------------------------------------------------------- P0: LADX / disassembly
+
+[sources.ladx_disassembly]
+id = "ladx_disassembly"
+kind = "github_raw"
+priority = "P0"
+repo = "zladx/LADX-Disassembly"
+ref = "auto"
+include = ["README.md", "**/*.md", "**/*.txt", "**/*.sym"]
+exclude = ["**/*.gb", "**/*.gbc", "**/*.bin", "**/*.o"]
+license = "read"
+rate_limit_rps = 1
+
+[sources.ladx_randomizer]
+id = "ladx_randomizer"
+kind = "github_raw"
+priority = "P0"
+repo = "daid/LADXR"                 # spec named zladx/LADX-Randomizer; that repo does not exist
+ref = "auto"
+include = ["README.md", "docs/**/*.md", "docs/**/*.txt"]
+exclude = ["**/node_modules/**", "**/*.gb", "**/*.gbc"]
+license = "read"
+rate_limit_rps = 1
+
+[sources.datacrystal_ladx]
+id = "datacrystal_ladx"
+kind = "mediawiki"
+priority = "P0"
+api = "https://datacrystal.tcrf.net/api.php"
+page = "The Legend of Zelda: Link's Awakening DX"
+mode = "wikitext"
+license = "unknown"
+rate_limit_rps = 1
+
+[sources.tcrf_ladx]
+id = "tcrf_ladx"
+kind = "mediawiki"
+priority = "P0"
+api = "https://tcrf.net/api.php"
+page = "The Legend of Zelda: Link's Awakening DX"
+mode = "wikitext"
+license = "unknown"
+rate_limit_rps = 1
+
+[sources.zeldawiki_ladx]
+id = "zeldawiki_ladx"
+kind = "mediawiki"
+priority = "P0"
+api = "https://zeldawiki.wiki/w/api.php"
+page = "The Legend of Zelda: Link's Awakening DX"
+mode = "wikitext"
+license = "unknown"
+rate_limit_rps = 1
+
+[sources.speedrun_ladx]
+id = "speedrun_ladx"
+kind = "speedrun"
+priority = "P0"
+game_id = "pdvj2vdw"
+runs_limit = 20
+categories_limit = 12
+license = "unknown"               # Speedrun.com API terms; local reference only
+rate_limit_rps = 1
+
+[sources.tasvideos_ladx]
+id = "tasvideos_ladx"
+kind = "html_article"
+priority = "P0"
+url = "https://tasvideos.org/GameResources/GB/LinksAwakening"
+license = "unknown"
+rate_limit_rps = 1
+
+# ---------------------------------------------------------------- P0: papers / reliability
+
+[sources.arxiv_dagger]
+id = "arxiv_dagger"
+kind = "arxiv"
+priority = "P0"
+arxiv_id = "1011.0686"
+license = "arxiv-metadata-only"
+rate_limit_rps = 1
+
+[sources.arxiv_il_survey]
+id = "arxiv_il_survey"
+kind = "arxiv"
+priority = "P0"
+arxiv_id = "1707.00716"
+license = "arxiv-metadata-only"
+rate_limit_rps = 1
+
+[sources.sre_postmortem]
+id = "sre_postmortem"
+kind = "html_article"
+priority = "P0"
+url = "https://sre.google/sre-book/postmortem-culture/"
+license = "CC-BY-NC-ND-4.0"       # Google SRE book online edition
+rate_limit_rps = 1
+
+[sources.complexsystems]
+id = "complexsystems"
+kind = "html_article"
+priority = "P0"
+url = "https://how.complexsystems.fail/"
+license = "unknown"
+rate_limit_rps = 1

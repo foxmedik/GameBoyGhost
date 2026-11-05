@@ -1,0 +1,8 @@
+{
+  "parse": {
+    "title": "The Legend of Zelda: Link's Awakening DX",
+    "pageid": 1234,
+    "revid": 987654,
+    "wikitext": "== RAM map ==\n\n{| class=\"wikitable\"\n|-\n! Address !! Size !! Description\n|-\n| $D000 || 1 || Example\n|}\n\n== ROM map ==\n\nSome text.\n"
+  }
+}

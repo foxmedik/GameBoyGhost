@@ -1,0 +1,231 @@
+{
+  "generated_at": "2026-11-05T14:45:53.361957+00:00",
+  "corpus_root": "/home/ben/.local/share/gbg-corpus",
+  "totals": {
+    "documents": 130,
+    "bytes": 1630373,
+    "failures": 4,
+    "failures_unresolved": 2,
+    "duplicates": 1
+  },
+  "by_source": {
+    "arxiv_dagger": {
+      "documents": 1,
+      "bytes": 2755,
+      "licenses": {
+        "arxiv-metadata-only": 1
+      },
+      "kinds": {
+        "arxiv": 1
+      }
+    },
+    "arxiv_il_survey": {
+      "documents": 1,
+      "bytes": 2555,
+      "licenses": {
+        "arxiv-metadata-only": 1
+      },
+      "kinds": {
+        "arxiv": 1
+      }
+    },
+    "awesome_gbdev": {
+      "documents": 1,
+      "bytes": 52651,
+      "licenses": {
+        "GPL-3.0": 1
+      },
+      "kinds": {
+        "github_raw": 1
+      }
+    },
+    "binjgb": {
+      "documents": 1,
+      "bytes": 7755,
+      "licenses": {
+        "MIT": 1
+      },
+      "kinds": {
+        "github_raw": 1
+      }
+    },
+    "complexsystems": {
+      "documents": 1,
+      "bytes": 23713,
+      "licenses": {
+        "unknown": 1
+      },
+      "kinds": {
+        "html_article": 1
+      }
+    },
+    "copetti_gb": {
+      "documents": 1,
+      "bytes": 153023,
+      "licenses": {
+        "unknown": 1
+      },
+      "kinds": {
+        "html_article": 1
+      }
+    },
+    "gb_test_roms": {
+      "documents": 7,
+      "bytes": 30329,
+      "licenses": {
+        "unknown": 7
+      },
+      "kinds": {
+        "github_raw": 7
+      }
+    },
+    "giibiiadvance": {
+      "documents": 5,
+      "bytes": 219374,
+      "licenses": {
+        "GPL-2.0": 5
+      },
+      "kinds": {
+        "github_raw": 5
+      }
+    },
+    "ladx_disassembly": {
+      "documents": 7,
+      "bytes": 20338,
+      "licenses": {
+        "unknown": 7
+      },
+      "kinds": {
+        "github_raw": 7
+      }
+    },
+    "ladx_randomizer": {
+      "documents": 1,
+      "bytes": 1292,
+      "licenses": {
+        "MIT": 1
+      },
+      "kinds": {
+        "github_raw": 1
+      }
+    },
+    "mealybug": {
+      "documents": 1,
+      "bytes": 5582,
+      "licenses": {
+        "MIT": 1
+      },
+      "kinds": {
+        "github_raw": 1
+      }
+    },
+    "mooneye_gb": {
+      "documents": 1,
+      "bytes": 9618,
+      "licenses": {
+        "GPL-3.0": 1
+      },
+      "kinds": {
+        "github_raw": 1
+      }
+    },
+    "pandocs": {
+      "documents": 82,
+      "bytes": 837879,
+      "licenses": {
+        "CC0-1.0": 82
+      },
+      "kinds": {
+        "github_raw": 82
+      }
+    },
+    "sameboy": {
+      "documents": 5,
+      "bytes": 35546,
+      "licenses": {
+        "MIT": 5
+      },
+      "kinds": {
+        "github_raw": 5
+      }
+    },
+    "speedrun_ladx": {
+      "documents": 12,
+      "bytes": 136478,
+      "licenses": {
+        "unknown": 12
+      },
+      "kinds": {
+        "speedrun": 12
+      }
+    },
+    "sre_postmortem": {
+      "documents": 1,
+      "bytes": 55113,
+      "licenses": {
+        "CC-BY-NC-ND-4.0": 1
+      },
+      "kinds": {
+        "html_article": 1
+      }
+    },
+    "tasvideos_ladx": {
+      "documents": 1,
+      "bytes": 26779,
+      "licenses": {
+        "unknown": 1
+      },
+      "kinds": {
+        "html_article": 1
+      }
+    },
+    "zeldawiki_ladx": {
+      "documents": 1,
+      "bytes": 9593,
+      "licenses": {
+        "unknown": 1
+      },
+      "kinds": {
+        "mediawiki": 1
+      }
+    }
+  },
+  "failures": [
+    {
+      "source_id": "ladx_randomizer",
+      "url": "zladx/LADX-Randomizer",
+      "error": "HTTPStatusError: Client error '404 Not Found' for url 'https://api.github.com/repos/zladx/LADX-Randomizer'\nFor more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/404",
+      "attempts": 1,
+      "retrieved_at": "2026-11-05T14:42:52Z"
+    },
+    {
+      "source_id": "datacrystal_ladx",
+      "url": "https://datacrystal.tcrf.net/api.php",
+      "error": "FetchError: HTTP 403 for https://datacrystal.tcrf.net/api.php",
+      "attempts": 1,
+      "retrieved_at": "2026-11-05T14:42:56Z"
+    },
+    {
+      "source_id": "tcrf_ladx",
+      "url": "https://tcrf.net/api.php",
+      "error": "FetchError: HTTP 403 for https://tcrf.net/api.php",
+      "attempts": 1,
+      "retrieved_at": "2026-11-05T14:43:01Z"
+    },
+    {
+      "source_id": "tasvideos_ladx",
+      "url": "https://tasvideos.org/GameResources/GB/TheLegendOfZeldaLinksAwakeningDX",
+      "error": "HTTPStatusError: Client error '404 Not Found' for url 'https://tasvideos.org/Wiki/PageDoesNotExist?url=GameResources%2FGB%2FTheLegendOfZeldaLinksAwakeningDX'\nFor more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/404",
+      "attempts": 1,
+      "retrieved_at": "2026-11-05T14:43:13Z"
+    }
+  ],
+  "duplicate_clusters": [
+    {
+      "canonical_sha256": "9786d6e7d5f6be7e6872aa03432a3e31407bbd3a912ca5941bd96da847f905d9",
+      "members": [
+        "https://github.com/AntonioND/giibiiadvance/blob/ccb40c3cf7d9efec538858a36d4ab69bb4d0ce5c/docs/other_docs/pandocs.txt"
+      ]
+    }
+  ]
+}
