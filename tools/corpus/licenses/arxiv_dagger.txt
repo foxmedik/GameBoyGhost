@@ -1,0 +1,7 @@
+License: arXiv.org non-exclusive license to distribute 1.0
+Usage class: permissive
+Source: https://arxiv.org/abs/1011.0686
+Evidence: https://arxiv.org/licenses/nonexclusive-distrib/1.0/
+
+This corpus stores metadata and the author-written abstract only. The PDF is
+not mirrored. Authors retain copyright; cite the paper and arXiv identifier.
