@@ -3,12 +3,14 @@ from __future__ import annotations
 import hashlib
 from pathlib import Path
 
+from .model import RETRIEVAL_METHODS, USAGE_CLASSES
 from .store import BANNED_EXT
 
 REQUIRED = {
     "source_id", "kind", "url", "canonical_url", "title", "retrieved_at",
-    "license", "revision", "http_status", "content_type", "sha256",
-    "normalized_path", "duplicate_of", "parser_version",
+    "license", "usage_class", "license_evidence_url", "usage_notes",
+    "retrieved_via", "snapshot_at", "revision", "http_status", "content_type",
+    "sha256", "normalized_path", "duplicate_of", "parser_version",
 }
 
 BANNED_DOMAINS = ("discord.com", "discord.gg", "spotify.com", "music.apple.com",
@@ -26,6 +28,21 @@ def check(store, repo_root: Path) -> list[str]:
         for key in REQUIRED:
             if key not in row:
                 errors.append(f"{sid}: missing field {key} ({url})")
+
+        usage_class = row.get("usage_class")
+        if usage_class is not None and usage_class not in USAGE_CLASSES:
+            errors.append(f"{sid}: invalid usage_class {usage_class!r} ({url})")
+        if usage_class is None:
+            errors.append(f"{sid}: missing usage_class ({url})")
+        if not (row.get("license_evidence_url") or "").strip():
+            errors.append(f"{sid}: blank license_evidence_url ({url})")
+        if not (row.get("usage_notes") or "").strip():
+            errors.append(f"{sid}: blank usage_notes ({url})")
+        if row.get("retrieved_via") not in RETRIEVAL_METHODS:
+            errors.append(f"{sid}: invalid retrieved_via {row.get('retrieved_via')!r} ({url})")
+        if row.get("retrieved_via") == "wayback" and not row.get("snapshot_at"):
+            errors.append(f"{sid}: wayback row lacks snapshot_at ({url})")
+
         if row.get("duplicate_of") and row.get("duplicate_of") == row.get("sha256"):
             errors.append(f"{sid}: self-referential duplicate_of ({url})")
         for domain in BANNED_DOMAINS:
