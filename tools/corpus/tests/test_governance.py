@@ -433,3 +433,103 @@ def test_index_includes_usage_class_column(tmp_path):
     conn.close()
     assert len(rows) > 0
     assert rows[0][2] == "share-alike"
+
+
+def test_export_excludes_disabled_sources(tmp_path):
+    """C3: sources with enabled = false have no text/, no links/ stub, and are in sources.json['disabled']."""
+    import json
+    store = Store(tmp_path / "corpus")
+    store.save(make_doc(source_id="pub", title="Active Public"))
+    store.save(make_doc(source_id="dis", title="Disabled Source", usage_class="copyrighted-local"))
+
+    sources = [
+        source("pub", usage_class="public-domain"),
+        source("dis", enabled=False, blocked_reason="wrong id (test)", usage_class="copyrighted-local"),
+    ]
+    out = tmp_path / "public_export"
+    res = export_public(store, out, sources)
+    assert res["guard_errors"] == []
+
+    # Assert no text/ or links/ for disabled source
+    assert (out / "text" / "pub").is_dir()
+    assert not (out / "text" / "dis").exists()
+    assert not (out / "links" / "dis.md").exists()
+
+    # Assert listed in sources.json under 'disabled' and not 'sources'
+    sources_data = json.loads((out / "sources.json").read_text())
+    assert "dis" in sources_data["disabled"]
+    assert sources_data["disabled"]["dis"]["blocked_reason"] == "wrong id (test)"
+    assert "dis" not in sources_data["sources"]
+    assert "pub" in sources_data["sources"]
+
+    assert check_public_export(out, store=store) == []
+
+
+def test_check_public_export_flags_disabled_sources_leak(tmp_path):
+    """C3: check_public_export fails if disabled source has files under text/, stub in links/, or is in 'sources'."""
+    import json
+    store = Store(tmp_path / "corpus")
+    store.save(make_doc(source_id="pub", title="Active Public"))
+    store.save(make_doc(source_id="dis", title="Disabled Source", usage_class="copyrighted-local"))
+
+    sources = [
+        source("pub", usage_class="public-domain"),
+        source("dis", enabled=False, blocked_reason="wrong id", usage_class="copyrighted-local"),
+    ]
+    out = tmp_path / "public_export"
+    export_public(store, out, sources)
+
+    # 1. Leaked dir under text/
+    (out / "text" / "dis").mkdir(parents=True)
+    (out / "text" / "dis" / "leak.md").write_text("leak")
+    errors = check_public_export(out, store=store)
+    assert any("disabled source 'dis' has content under text/" in e for e in errors)
+    import shutil
+    shutil.rmtree(out / "text" / "dis")
+
+    # 2. Leaked stub under links/
+    (out / "links" / "dis.md").write_text("stub")
+    errors = check_public_export(out, store=store)
+    assert any("disabled source 'dis' has link stub links/dis.md" in e for e in errors)
+    (out / "links" / "dis.md").unlink()
+
+    # 3. Listed under 'sources' in sources.json
+    sources_json_path = out / "sources.json"
+    data = json.loads(sources_json_path.read_text())
+    data["sources"]["dis"] = {"id": "dis", "title": "Disabled"}
+    sources_json_path.write_text(json.dumps(data, indent=2))
+    errors = check_public_export(out, store=store)
+    assert any("disabled source 'dis' is listed in sources.json under 'sources'" in e for e in errors)
+
+
+def test_check_enforces_expect_title_contains(tmp_path):
+    """C4: check fails if row title does not contain expect_title_contains (case-insensitive)."""
+    store = Store(tmp_path / "corpus")
+    doc = make_doc(
+        source_id="arxiv_dagger",
+        title="A Reduction of Imitation Learning and Structured Prediction to No-Regret Online Learning"
+    )
+    store.save(doc)
+
+    cfg_file = tmp_path / "sources.toml"
+    cfg_file.write_text("""
+version = 1
+[sources.arxiv_dagger]
+id = "arxiv_dagger"
+kind = "arxiv"
+expect_title_contains = "Imitation Learning"
+""")
+    # Matches case-insensitively -> passes
+    errors = run_check(store, repo_root=tmp_path, sources_path=cfg_file)
+    assert not any("does not contain expected substring" in e for e in errors)
+
+    # Substring mismatch -> fails
+    cfg_file.write_text("""
+version = 1
+[sources.arxiv_dagger]
+id = "arxiv_dagger"
+kind = "arxiv"
+expect_title_contains = "Reinforcement Learning"
+""")
+    errors = run_check(store, repo_root=tmp_path, sources_path=cfg_file)
+    assert any("title 'A Reduction of Imitation Learning" in e and "Reinforcement Learning" in e for e in errors)

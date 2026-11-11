@@ -23,8 +23,8 @@ means metadata and URL only; no body text or excerpts.
 | zeldawiki_ladx | https://zeldawiki.wiki/wiki/The_Legend_of_Zelda:_Link%27s_Awakening_DX | GFDL-1.3 | share-alike | https://zeldawiki.wiki/wiki/Zelda_Wiki:GNU_Free_Documentation_License | may publish with GFDL-1.3 notice and attribution; do not relicense |
 | speedrun_ladx | https://www.speedrun.com/pdvj2vdw | none declared | copyrighted-local | https://github.com/speedruncom/api | must not publish: API docs carry no reuse grant; terms page blocked and not archived; API data only |
 | tasvideos_ladx | https://tasvideos.org/GameResources/GB/LinksAwakening | CC-BY-2.0 | permissive | https://tasvideos.org/SiteLicense | may publish with attribution and CC BY 2.0 notice |
-| arxiv_dagger | https://arxiv.org/abs/1011.0686 | arXiv-non-exclusive-1.0 | permissive | https://arxiv.org/licenses/nonexclusive-distrib/1.0/ | may publish metadata and abstract only; PDF not mirrored; cite authors |
-| arxiv_il_survey | https://arxiv.org/abs/1707.00716 | arXiv-non-exclusive-1.0 | permissive | https://arxiv.org/licenses/nonexclusive-distrib/1.0/ | may publish metadata and abstract only; PDF not mirrored; cite authors |
+| arxiv_dagger | https://arxiv.org/abs/1011.0686 | CC0-1.0 | public-domain | https://info.arxiv.org/help/license/index.html | may publish metadata and abstract only: arXiv CC0 dedication; PDF not mirrored |
+| arxiv_il_survey | https://arxiv.org/abs/1707.00716 | arXiv-non-exclusive-1.0 | permissive | https://arxiv.org/licenses/nonexclusive-distrib/1.0/ | disabled: wrong arXiv id (1707.00716 is 'Higher dimensional operators in 2HDM'); correct id pending |
 | sre_postmortem | https://sre.google/sre-book/postmortem-culture/ | CC-BY-NC-ND-4.0 | nc-nd | https://sre.google/sre-book/postmortem-culture/ | must not publish: footer is CC BY-NC-ND 4.0; local reference only |
 | complexsystems | https://how.complexsystems.fail/ | all-rights-reserved | copyrighted-local | https://how.complexsystems.fail/ | must not publish: Copyright (c) R.I.Cook notice, no reuse grant |
 | nist_800_61 | https://csrc.nist.gov/pubs/sp/800/61/r3/final | US-Government-work | public-domain | https://nvlpubs.nist.gov/nistpubs/SpecialPublications/NIST.SP.800-61r3.pdf | may publish: PDF page 3 says not subject to copyright in the US |
@@ -46,9 +46,12 @@ means metadata and URL only; no body text or excerpts.
 - **tcrf_ladx**: direct `index.php?action=raw` returned Cloudflare 403. The
   archived DX URL is a redirect to the Link's Awakening page, which covers DX.
   The archived footer says CC BY 3.0; `retrieved_via=wayback`.
-- **arxiv** rows are classed `permissive` per the corpus brief, but only
-  metadata and author abstracts are stored. The arXiv non-exclusive license is
-  not a blanket redistribution grant for the PDF.
+- **arxiv_dagger**: arXiv grants CC0 on metadata and author abstracts (per
+  https://info.arxiv.org/help/license/index.html); it is `public-domain`.
+  The PDF is not mirrored.
+- **arxiv_il_survey**: disabled (`enabled = false`) because arXiv 1707.00716
+  is a particle-physics paper ('Higher dimensional operators in 2HDM'), not an
+  imitation-learning survey. Excluded from public export.
 - **speedrun_ladx** stays `copyrighted-local`: no reuse grant was found, the
   terms page is Cloudflare-blocked, and Wayback has no capture of it.
 - **gb_test_roms** and **ladx_disassembly** stay `copyrighted-local`: no

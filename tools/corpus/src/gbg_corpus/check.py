@@ -5,6 +5,7 @@ from pathlib import Path
 
 import yaml
 
+from .config import load_sources
 from .model import RETRIEVAL_METHODS, USAGE_CLASSES
 from .store import BANNED_EXT
 
@@ -24,10 +25,22 @@ BANNED_DOMAINS = ("discord.com", "discord.gg", "spotify.com", "music.apple.com",
                   "open.spotify.com", "podcasts.apple.com")
 
 
-def check(store, repo_root: Path) -> list[str]:
+def check(store, repo_root: Path, sources_path: Path | None = None) -> list[str]:
     errors: list[str] = []
     seen_canonical: dict[tuple, str] = {}
     repo_root = repo_root.resolve()
+    sources_file = sources_path or (repo_root / "tools" / "corpus" / "sources.toml")
+    expected_titles: dict[str, str] = {}
+    if sources_file.exists():
+        try:
+            sources_list = load_sources(sources_file)
+            expected_titles = {
+                s.id: s.get("expect_title_contains")
+                for s in sources_list
+                if s.get("expect_title_contains")
+            }
+        except Exception as exc:
+            errors.append(f"failed to load sources config {sources_file}: {exc}")
 
     for row in store.all_rows():
         sid = row.get("source_id", "?")
@@ -35,6 +48,14 @@ def check(store, repo_root: Path) -> list[str]:
         for key in REQUIRED:
             if key not in row:
                 errors.append(f"{sid}: missing field {key} ({url})")
+
+        exp_title = expected_titles.get(sid)
+        if exp_title:
+            row_title = row.get("title") or ""
+            if exp_title.lower() not in row_title.lower():
+                errors.append(
+                    f"{sid}: title {row_title!r} does not contain expected substring {exp_title!r}"
+                )
 
         usage_class = row.get("usage_class")
         if usage_class is not None and usage_class not in USAGE_CLASSES:

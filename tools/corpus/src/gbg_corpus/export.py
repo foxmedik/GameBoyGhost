@@ -120,11 +120,21 @@ def export_public(store, out, sources=None, fail_on_restricted: bool = True) -> 
     (out / "links").mkdir(parents=True, exist_ok=True)
 
     cfg_by_id = {s.id: s for s in (sources or [])}
+    disabled_sources: dict[str, dict] = {}
+    for s in (sources or []):
+        if s.get("enabled", True) is False:
+            disabled_sources[s.id] = {
+                "id": s.id,
+                "title": s.get("title") or s.id,
+                "blocked_reason": s.get("blocked_reason", "disabled"),
+            }
+    disabled_ids = set(disabled_sources.keys())
+
     rows_by_id: dict[str, list[dict]] = defaultdict(list)
     for row in store.all_rows():
         rows_by_id[row["source_id"]].append(row)
 
-    all_ids = sorted(set(cfg_by_id) | set(rows_by_id))
+    all_ids = sorted((set(cfg_by_id) | set(rows_by_id)) - disabled_ids)
     sources_json: dict[str, dict] = {}
     counts = {c: 0 for c in USAGE_CLASSES}
     written_files: dict[str, str] = {}
@@ -204,6 +214,7 @@ def export_public(store, out, sources=None, fail_on_restricted: bool = True) -> 
         "generated_at": _now(),
         "usage_class_counts": counts,
         "restricted_classes": sorted(RESTRICTED_CLASSES),
+        "disabled": disabled_sources,
         "files": dict(sorted(written_files.items())),
         "sources": sources_json,
     }
@@ -374,6 +385,21 @@ def check_public_export(out, store=None, fail_on_restricted: bool = True) -> lis
         errors.append("sources.json 'files' allowlist is missing or not an object")
         files = {}
 
+    disabled = data.get("disabled")
+    disabled_ids: set[str] = set()
+    if isinstance(disabled, dict):
+        disabled_ids = set(disabled.keys())
+    elif isinstance(disabled, (list, set, tuple)):
+        disabled_ids = set(disabled)
+
+    for sid in sorted(disabled_ids):
+        if sid in sources:
+            errors.append(f"disabled source {sid!r} is listed in sources.json under 'sources'")
+        if (out / "text" / sid).exists():
+            errors.append(f"disabled source {sid!r} has content under text/")
+        if (out / "links" / f"{sid}.md").exists():
+            errors.append(f"disabled source {sid!r} has link stub links/{sid}.md")
+
     # A4. File allowlist validation against disk
     for p in sorted(out.rglob("*")):
         if p.is_file():
@@ -406,6 +432,8 @@ def check_public_export(out, store=None, fail_on_restricted: bool = True) -> lis
         for row in store.all_rows():
             rows_by_id[row["source_id"]].append(row)
         for sid, rows in rows_by_id.items():
+            if sid in disabled_ids:
+                continue
             pub_rows = [r for r in rows if r.get("usage_class", "unknown") in PUBLIC_BODY_CLASSES]
             restricted_rows = [r for r in rows if r.get("usage_class", "unknown") in RESTRICTED_CLASSES]
             if pub_rows:
@@ -461,11 +489,15 @@ def check_public_export(out, store=None, fail_on_restricted: bool = True) -> lis
         for row in store.all_rows():
             rows_by_id[row["source_id"]].append(row)
         for sid, rows in rows_by_id.items():
+            if sid in disabled_ids:
+                continue
             if rows and all(r.get("usage_class") in RESTRICTED_CLASSES for r in rows):
                 store_fully_restricted.add(sid)
 
     json_fully_restricted: set[str] = set()
     for sid, meta in sources.items():
+        if sid in disabled_ids:
+            continue
         if isinstance(meta, dict):
             docs = meta.get("documents", [])
             if docs and all(d.get("usage_class") in RESTRICTED_CLASSES for d in docs):
@@ -478,7 +510,9 @@ def check_public_export(out, store=None, fail_on_restricted: bool = True) -> lis
     text_root = out / "text"
     if text_root.exists():
         for child in sorted(text_root.iterdir()):
-            if child.is_dir() and child.name in fully_restricted:
+            if child.is_dir() and child.name in disabled_ids:
+                errors.append(f"disabled source {child.name!r} has content under text/")
+            elif child.is_dir() and child.name in fully_restricted:
                 errors.append(f"restricted source {child.name!r} has body text under text/")
             elif not child.is_dir():
                 errors.append(f"non-directory found under text/: {child.name}")
@@ -498,9 +532,11 @@ def check_public_export(out, store=None, fail_on_restricted: bool = True) -> lis
     if store is not None:
         should_have_stub |= {
             row["source_id"] for row in store.all_rows()
-            if row.get("usage_class") in RESTRICTED_CLASSES
+            if row.get("usage_class") in RESTRICTED_CLASSES and row["source_id"] not in disabled_ids
         }
     for sid, meta in sources.items():
+        if sid in disabled_ids:
+            continue
         if isinstance(meta, dict):
             if meta.get("usage_class") in RESTRICTED_CLASSES:
                 should_have_stub.add(sid)

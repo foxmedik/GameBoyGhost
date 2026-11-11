@@ -129,6 +129,8 @@ def apply_audit(store, sources) -> tuple[int, list[str]]:
     config = {}
     warnings: list[str] = []
     for src in sources:
+        if src.get("enabled", True) is False:
+            continue
         usage_class = src.get("usage_class")
         evidence = src.get("license_evidence_url", "")
         notes = src.get("usage_notes", "")
