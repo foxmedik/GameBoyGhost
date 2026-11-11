@@ -1,7 +1,10 @@
 from __future__ import annotations
 
+import hashlib
 import json
 from pathlib import Path
+
+import yaml
 
 from .model import USAGE_CLASSES, validate_usage_class
 
@@ -48,6 +51,71 @@ def migrate_add_usage_class(store) -> int:
     store._rows.clear()
     store._simhashes.clear()
     return changed
+
+
+SYNC_GOVERNANCE_FIELDS = (
+    "license", "usage_class", "license_evidence_url", "usage_notes",
+    "retrieved_via", "snapshot_at", "snapshot_url"
+)
+
+
+def sync_normalized_front_matter(store) -> tuple[int, dict[str, tuple[str, str]]]:
+    """Sync front matter of normalized files with manifest rows.
+
+    The body must be byte-identical before and after; prove it by hashing every
+    body before and after.
+
+    Returns (changed_count, body_hashes_map) where body_hashes_map is:
+    {rel_path: (sha256_before, sha256_after)}
+    """
+    changed = 0
+    body_hashes: dict[str, tuple[str, str]] = {}
+
+    for row in store.all_rows():
+        norm_rel = row.get("normalized_path")
+        if not norm_rel:
+            continue
+        p = store.root / norm_rel
+        if not p.exists():
+            continue
+
+        text = p.read_text(errors="replace")
+        if text.startswith("---"):
+            parts = text.split("---", 2)
+            if len(parts) >= 3:
+                fm = yaml.safe_load(parts[1]) or {}
+                raw_body = parts[2]
+            else:
+                fm = {}
+                raw_body = text
+        else:
+            fm = {}
+            raw_body = text
+
+        body_before = raw_body
+        sha_before = hashlib.sha256(body_before.encode("utf-8")).hexdigest()
+
+        dirty = False
+        for f in SYNC_GOVERNANCE_FIELDS:
+            target_val = row.get(f)
+            if fm.get(f) != target_val:
+                fm[f] = target_val
+                dirty = True
+
+        if dirty:
+            new_fm = yaml.safe_dump(fm, sort_keys=False, allow_unicode=True).strip()
+            new_text = f"---\n{new_fm}\n---" + raw_body
+            p.write_text(new_text)
+            body_after = new_text.split("---", 2)[2] if new_text.startswith("---") else new_text
+            sha_after = hashlib.sha256(body_after.encode("utf-8")).hexdigest()
+            assert sha_before == sha_after, f"body bytes changed for {p}"
+            changed += 1
+        else:
+            sha_after = sha_before
+
+        body_hashes[norm_rel] = (sha_before, sha_after)
+
+    return changed, body_hashes
 
 
 def apply_audit(store, sources) -> tuple[int, list[str]]:
@@ -102,4 +170,12 @@ def apply_audit(store, sources) -> tuple[int, list[str]]:
             _rewrite(path, rows)
     store._rows.clear()
     store._simhashes.clear()
+
+    fm_changed, body_hashes = sync_normalized_front_matter(store)
+    for path_str, (before, after) in body_hashes.items():
+        if before != after:
+            raise RuntimeError(f"body bytes changed for {path_str}")
+    if fm_changed:
+        print(f"front matter: {fm_changed} files updated")
+
     return changed, warnings

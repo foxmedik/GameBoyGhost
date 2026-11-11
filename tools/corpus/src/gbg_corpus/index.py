@@ -18,6 +18,7 @@ CREATE TABLE docs(
   chunk_index INTEGER,
   sha256 TEXT,
   license TEXT,
+  usage_class TEXT NOT NULL,
   text TEXT NOT NULL
 );
 CREATE VIRTUAL TABLE docs_fts USING fts5(
@@ -41,13 +42,14 @@ def build_index(store, db_path: Path | None = None) -> int:
         if text.startswith("---"):
             parts = text.split("---", 2)
             text = parts[2] if len(parts) == 3 else text
+        usage_class = row.get("usage_class", "unknown")
         for i, chunk in enumerate(chunk_markdown(text)):
             db.execute(
-                "INSERT INTO docs(source_id,kind,url,title,heading_path,chunk_index,sha256,license,text)"
-                " VALUES (?,?,?,?,?,?,?,?,?)",
+                "INSERT INTO docs(source_id,kind,url,title,heading_path,chunk_index,sha256,license,usage_class,text)"
+                " VALUES (?,?,?,?,?,?,?,?,?,?)",
                 (row["source_id"], row["kind"], row["url"], row["title"],
                  " > ".join(chunk["heading_path"]), i, row["sha256"],
-                 row["license"], chunk["text"]))
+                 row["license"], usage_class, chunk["text"]))
             n += 1
     db.execute("INSERT INTO docs_fts(rowid,title,text,heading_path,source_id) "
                "SELECT id,title,text,heading_path,source_id FROM docs")

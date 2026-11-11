@@ -3,8 +3,15 @@ from __future__ import annotations
 import hashlib
 from pathlib import Path
 
+import yaml
+
 from .model import RETRIEVAL_METHODS, USAGE_CLASSES
 from .store import BANNED_EXT
+
+SYNC_GOVERNANCE_FIELDS = (
+    "license", "usage_class", "license_evidence_url", "usage_notes",
+    "retrieved_via", "snapshot_at", "snapshot_url"
+)
 
 REQUIRED = {
     "source_id", "kind", "url", "canonical_url", "title", "retrieved_at",
@@ -66,6 +73,28 @@ def check(store, repo_root: Path) -> list[str]:
                 pass
         if not norm.exists():
             errors.append(f"{sid}: missing normalized file {norm}")
+        else:
+            norm_text = norm.read_text(errors="replace")
+            if not norm_text.startswith("---"):
+                errors.append(f"{sid}: normalized file missing front matter: {norm.name}")
+            else:
+                parts = norm_text.split("---", 2)
+                if len(parts) < 3:
+                    errors.append(f"{sid}: malformed front matter in {norm.name}")
+                else:
+                    try:
+                        fm = yaml.safe_load(parts[1]) or {}
+                    except Exception as exc:
+                        errors.append(f"{sid}: invalid YAML front matter in {norm.name}: {exc}")
+                        fm = {}
+                    for f in SYNC_GOVERNANCE_FIELDS:
+                        mf_val = row.get(f)
+                        fm_val = fm.get(f)
+                        if fm_val != mf_val:
+                            errors.append(
+                                f"{sid}: front matter mismatch in {norm.name} for {f}: "
+                                f"manifest={mf_val!r} != front_matter={fm_val!r}"
+                            )
 
         key = (row.get("canonical_url"), row.get("revision"))
         if key in seen_canonical and not row.get("duplicate_of"):

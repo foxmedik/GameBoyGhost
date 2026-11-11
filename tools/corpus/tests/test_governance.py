@@ -6,9 +6,11 @@ from pathlib import Path
 import pytest
 
 from gbg_corpus.adapters import parse_wayback_cdx, wayback_id_url
+from gbg_corpus.check import check as run_check
 from gbg_corpus.config import Source
 from gbg_corpus.export import ExportGuardError, check_public_export, export_public
-from gbg_corpus.migrate import migrate_add_usage_class
+from gbg_corpus.index import build_index
+from gbg_corpus.migrate import migrate_add_usage_class, sync_normalized_front_matter
 from gbg_corpus.model import Document
 from gbg_corpus.store import MAX_DOC_BYTES, Store
 
@@ -340,3 +342,94 @@ def test_shingles_catch_leak_with_stripped_markdown_and_altered_punctuation(clea
     )
     errors = check_public_export(out, store=store)
     assert any("shares" in e and "shingles" in e for e in errors)
+
+
+def test_front_matter_sync_idempotent_and_preserves_body_bytes(tmp_path):
+    """B4: front-matter sync is idempotent and preserves exact body bytes."""
+    import hashlib
+    store = Store(tmp_path / "corpus")
+    doc = make_doc(
+        source_id="test", title="Sync Test", text="# Heading\n\nBody paragraph line 1.\nLine 2.\n",
+        license="MIT", usage_class="permissive",
+    )
+    row = store.save(doc)
+    assert row is not None
+
+    norm_path = store.root / row["normalized_path"]
+    # Hand-alter front matter to simulate a legacy file missing usage_class and with stale license
+    text = norm_path.read_text()
+    parts = text.split("---", 2)
+    stale_fm = (
+        "---\nsource_id: test\ntitle: Sync Test\nlicense: old-lic\n"
+        f"sha256: {row['sha256']}\n---"
+    )
+    norm_path.write_text(stale_fm + parts[2])
+
+    body_before = parts[2]
+    hash_before = hashlib.sha256(body_before.encode("utf-8")).hexdigest()
+
+    changed, hashes = sync_normalized_front_matter(store)
+    assert changed == 1
+    rel = row["normalized_path"]
+    assert rel in hashes
+    b_before, b_after = hashes[rel]
+    assert b_before == hash_before
+    assert b_after == hash_before
+
+    # Verify body bytes on disk are identical
+    text_after = norm_path.read_text()
+    body_after = text_after.split("---", 2)[2]
+    assert hashlib.sha256(body_after.encode("utf-8")).hexdigest() == hash_before
+    assert body_after == body_before
+
+    # Verify front matter now has manifest fields
+    import yaml
+    fm_updated = yaml.safe_load(text_after.split("---", 2)[1])
+    assert fm_updated["license"] == "MIT"
+    assert fm_updated["usage_class"] == "permissive"
+
+    # Idempotent second pass
+    changed2, hashes2 = sync_normalized_front_matter(store)
+    assert changed2 == 0
+    assert hashes2[rel][0] == hash_before
+    assert hashes2[rel][1] == hash_before
+
+
+def test_check_fails_on_front_matter_mismatch(tmp_path):
+    """B4: check fails when normalized front matter disagrees with manifest row."""
+    store = Store(tmp_path / "corpus")
+    doc = make_doc(source_id="test", title="Mismatch Test", license="MIT", usage_class="permissive")
+    row = store.save(doc)
+    assert row is not None
+
+    # Front matter initially in sync
+    errors = run_check(store, tmp_path)
+    assert not any("front matter mismatch" in e for e in errors)
+
+    # Hand-edit front matter to create mismatch
+    norm_path = store.root / row["normalized_path"]
+    text = norm_path.read_text()
+    parts = text.split("---", 2)
+    tampered_fm = parts[1].replace("license: MIT", "license: GPL-3.0")
+    norm_path.write_text(f"---{tampered_fm}---" + parts[2])
+
+    errors = run_check(store, tmp_path)
+    assert any("front matter mismatch" in e and "license" in e for e in errors)
+
+
+def test_index_includes_usage_class_column(tmp_path):
+    """B3: index.py docs table includes usage_class column filled from manifest row."""
+    import sqlite3
+    store = Store(tmp_path / "corpus")
+    doc = make_doc(source_id="test", title="Index Test", text="# Head\n\nChunk text.", usage_class="share-alike")
+    store.save(doc)
+
+    db_path = tmp_path / "index.sqlite"
+    count = build_index(store, db_path)
+    assert count > 0
+
+    conn = sqlite3.connect(db_path)
+    rows = conn.execute("SELECT source_id, license, usage_class, text FROM docs").fetchall()
+    conn.close()
+    assert len(rows) > 0
+    assert rows[0][2] == "share-alike"
