@@ -34,8 +34,11 @@ def _read_body(normalized_path: Path) -> str:
     return text
 
 
+_WORD_RE = re.compile(r"\w+")
+
+
 def _shingles(text: str, n: int = 12) -> set[str]:
-    words = text.lower().split()
+    words = _WORD_RE.findall(text.lower())
     if len(words) < n:
         return set()
     return {
@@ -394,8 +397,10 @@ def check_public_export(out, store=None, fail_on_restricted: bool = True) -> lis
             except Exception as exc:
                 errors.append(f"unable to read {rel_path}: {exc}")
 
-    # A4. Store manifest recomputation
-    if store is not None:
+    # A4. Store manifest recomputation and shingle fingerprints
+    if store is None:
+        errors.append("store not provided: content fingerprint scan and manifest verification could not run")
+    else:
         expected_manifest_files: set[str] = {"README.md"}
         rows_by_id: dict[str, list[dict]] = defaultdict(list)
         for row in store.all_rows():
@@ -419,8 +424,7 @@ def check_public_export(out, store=None, fail_on_restricted: bool = True) -> lis
         for e in sorted(sources_files - expected_manifest_files):
             errors.append(f"sources.json allowlist contains unexpected file not in manifests: {e}")
 
-    # A2/A3. Shingle fingerprints
-    if store is not None:
+        # A2/A3. Shingle fingerprints
         restricted_fingerprints: list[tuple[str, str, set[str]]] = []
         for row in store.all_rows():
             if row.get("usage_class") in RESTRICTED_CLASSES:

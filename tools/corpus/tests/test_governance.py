@@ -86,7 +86,22 @@ def test_export_public_excludes_restricted_bodies(tmp_path):
     assert (out / "links" / "unk.md").exists()
     assert "secret body" not in (out / "links" / "priv.md").read_text()
     assert "unknown body" not in (out / "links" / "unk.md").read_text()
-    assert check_public_export(out) == []
+    assert check_public_export(out, store=store) == []
+
+
+def test_clean_export_returns_no_errors(clean_leak_bench):
+    store, out, sources, priv_doc = clean_leak_bench
+    assert check_public_export(out, store=store) == []
+
+
+def test_guard_failure_deletes_output_directory(tmp_path):
+    bad_out = tmp_path / "bad_export"
+    bad_store = Store(tmp_path / "bad_corpus")
+    bad_store.save(make_doc(source_id="pub", title="Leaked Doc", text=f"# Leak\n\n{PRIV_BODY}"))
+    bad_store.save(make_doc(source_id="priv", title="Secret", text=f"# Secret\n\n{PRIV_BODY}", usage_class="nc-nd"))
+    with pytest.raises(ExportGuardError):
+        export_public(bad_store, bad_out, [source("pub", usage_class="public-domain"), source("priv", usage_class="nc-nd")])
+    assert not bad_out.exists()
 
 
 def test_check_fails_when_restricted_body_under_text(tmp_path):
@@ -104,15 +119,6 @@ def test_check_fails_when_restricted_body_under_text(tmp_path):
     errors = check_public_export(out)
     assert any("restricted source 'priv'" in e for e in errors)
     assert any("restricted body text" in e for e in errors)
-
-    # A6: guard failure deletes output directory before raising
-    bad_out = tmp_path / "bad_export"
-    bad_store = Store(tmp_path / "bad_corpus")
-    bad_store.save(make_doc(source_id="pub", title="Leaked Doc", text=f"# Leak\n\n{PRIV_BODY}"))
-    bad_store.save(make_doc(source_id="priv", title="Secret", text=f"# Secret\n\n{PRIV_BODY}", usage_class="nc-nd"))
-    with pytest.raises(ExportGuardError):
-        export_public(bad_store, bad_out, [source("pub", usage_class="public-domain"), source("priv", usage_class="nc-nd")])
-    assert not bad_out.exists()
 
 
 def test_magic_byte_sniff_rejects_fake_markdown_zip(tmp_path):
@@ -275,3 +281,62 @@ def test_leak_variant_11_sources_json_priv_removed(clean_leak_bench):
     errors = check_public_export(out, store=store)
     assert isinstance(errors, list)
     assert len(errors) > 0
+
+
+def test_fingerprint_scan_catches_leak_when_allowlist_passes(clean_leak_bench):
+    """A2.1: Plant restricted body in allowlisted file with updated hash; fingerprint scan catches it."""
+    import hashlib
+    store, out, sources, priv_doc = clean_leak_bench
+    pub_file = out / "text" / "pub" / "public-guide.md"
+    assert pub_file.exists()
+    pub_file.write_text(f"---\nusage_class: public-domain\n---\n\n{PRIV_BODY}\n")
+
+    rel = "text/pub/public-guide.md"
+    new_sha = hashlib.sha256(pub_file.read_bytes()).hexdigest()
+    sources_json = out / "sources.json"
+    data = json.loads(sources_json.read_text())
+    data["files"][rel] = new_sha
+    sources_json.write_text(json.dumps(data, indent=2))
+
+    errors = check_public_export(out, store=store)
+    assert not any("sources.json allowlist" in e for e in errors)
+    assert not any("hash mismatch" in e for e in errors)
+    assert any("shares" in e and "shingles" in e for e in errors)
+
+
+def test_allowlist_alone_catches_extra_file_when_fingerprint_scan_empty(tmp_path):
+    """A2.1 mirror: Empty restricted set, planted extra file; allowlist alone catches it."""
+    store = Store(tmp_path / "pub_only_corpus")
+    store.save(make_doc(source_id="pub", title="Public Only Doc"))
+    out = tmp_path / "pub_export"
+    export_public(store, out, [source("pub", usage_class="public-domain")])
+
+    (out / "extra.md").write_text("untracked extra file\n")
+    errors = check_public_export(out, store=store)
+    assert any("file not in sources.json allowlist: extra.md" in e for e in errors)
+    assert not any("shares" in e and "shingles" in e for e in errors)
+
+
+def test_check_public_export_requires_store(clean_leak_bench):
+    """A2.2: check_public_export(out, store=None) returns error saying content scan could not run."""
+    store, out, sources, priv_doc = clean_leak_bench
+    errors = check_public_export(out, store=None)
+    assert len(errors) > 0
+    assert any("store not provided: content fingerprint scan and manifest verification could not run" in e for e in errors)
+
+
+def test_shingles_catch_leak_with_stripped_markdown_and_altered_punctuation(clean_leak_bench):
+    r"""A2.3: Restricted body with stripped markdown and altered punctuation is still caught by \w+ shingles."""
+    store, out, sources, priv_doc = clean_leak_bench
+    words = PRIV_BODY.split()
+    altered_tokens = [
+        f"**{w.upper()}**," if i % 3 == 0 else (f"#{w}?!" if i % 3 == 1 else f"--- {w} ---")
+        for i, w in enumerate(words)
+    ]
+    altered_body = " ".join(altered_tokens)
+
+    (out / "text" / "pub" / "leak.md").write_text(
+        f"---\nusage_class: public-domain\n---\n\n{altered_body}\n"
+    )
+    errors = check_public_export(out, store=store)
+    assert any("shares" in e and "shingles" in e for e in errors)
