@@ -143,15 +143,18 @@ def cmd_export(args) -> int:
     if not args.public or not args.out:
         print("export requires --public --out <dir> (or --check <dir>)", file=sys.stderr)
         return 2
-    result = export_public(Store(), args.out, load_sources(SOURCES_TOML),
-                           fail_on_restricted=args.fail_on_restricted)
+    try:
+        result = export_public(Store(), args.out, load_sources(SOURCES_TOML))
+    except Exception as exc:
+        print(f"export FAILED: {exc}", file=sys.stderr)
+        return 1
     print(f"wrote public export to {result['out']}")
     print(f"sources: {result['sources']}; classes: "
           + ", ".join(f"{k}={v}" for k, v in result["counts"].items() if v))
     if result["guard_errors"]:
         for e in result["guard_errors"]:
             print(" -", e)
-        return 1 if args.fail_on_restricted else 0
+        return 1
     print("export guard OK: no restricted body text")
     return 0
 
@@ -187,7 +190,6 @@ def main(argv=None) -> int:
     p.add_argument("--public", action="store_true")
     p.add_argument("--out")
     p.add_argument("--check", metavar="DIR")
-    p.add_argument("--fail-on-restricted", action=argparse.BooleanOptionalAction, default=True)
     p.set_defaults(func=cmd_export)
 
     args = ap.parse_args(argv)

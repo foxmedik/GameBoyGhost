@@ -7,7 +7,7 @@ import pytest
 
 from gbg_corpus.adapters import parse_wayback_cdx, wayback_id_url
 from gbg_corpus.config import Source
-from gbg_corpus.export import check_public_export, export_public
+from gbg_corpus.export import ExportGuardError, check_public_export, export_public
 from gbg_corpus.migrate import migrate_add_usage_class
 from gbg_corpus.model import Document
 from gbg_corpus.store import MAX_DOC_BYTES, Store
@@ -105,6 +105,15 @@ def test_check_fails_when_restricted_body_under_text(tmp_path):
     assert any("restricted source 'priv'" in e for e in errors)
     assert any("restricted body text" in e for e in errors)
 
+    # A6: guard failure deletes output directory before raising
+    bad_out = tmp_path / "bad_export"
+    bad_store = Store(tmp_path / "bad_corpus")
+    bad_store.save(make_doc(source_id="pub", title="Leaked Doc", text=f"# Leak\n\n{PRIV_BODY}"))
+    bad_store.save(make_doc(source_id="priv", title="Secret", text=f"# Secret\n\n{PRIV_BODY}", usage_class="nc-nd"))
+    with pytest.raises(ExportGuardError):
+        export_public(bad_store, bad_out, [source("pub", usage_class="public-domain"), source("priv", usage_class="nc-nd")])
+    assert not bad_out.exists()
+
 
 def test_magic_byte_sniff_rejects_fake_markdown_zip(tmp_path):
     store = Store(tmp_path / "corpus")
@@ -132,3 +141,137 @@ def test_wayback_cdx_fixture_builds_id_url():
     assert url == ("https://web.archive.org/web/20131128111419id_/"
                    "http://tcrf.net/The_Legend_of_Zelda:_Link%27s_Awakening_DX")
     assert "20131128111419id_/" in url
+
+
+PRIV_BODY_WORDS = [
+    "link", "awakening", "zelda", "dungeon", "compass", "instrument", "sword",
+    "shield", "koholint", "nightmare", "tail", "cave", "bottle", "grotto",
+    "key", "cavern", "angler", "tunnel", "catfish", "maw", "face", "shrine",
+    "eagle", "tower", "turtle", "rock", "wind", "fish", "egg", "marin",
+] * 12  # 30 * 12 = 360 words (> 300 words)
+PRIV_BODY = " ".join(PRIV_BODY_WORDS)
+
+
+@pytest.fixture
+def clean_leak_bench(tmp_path):
+    store = Store(tmp_path / "corpus")
+    pub_doc = make_doc(
+        source_id="pub", title="Public Guide", url="https://example.test/pub",
+        text="# Public Guide\n\nThis is a fully public guide to hardware.",
+        raw=b"# Public Guide\n\nThis is a fully public guide to hardware.",
+        usage_class="public-domain", license="CC0-1.0",
+        license_evidence_url="https://example.test/cc0",
+    )
+    priv_doc = make_doc(
+        source_id="priv", title="Private Research", url="https://example.test/priv",
+        text=f"# Private Research\n\n{PRIV_BODY}",
+        raw=f"# Private Research\n\n{PRIV_BODY}".encode("utf-8"),
+        usage_class="nc-nd", license="CC-BY-NC-ND-4.0",
+        license_evidence_url="https://example.test/nc-nd",
+    )
+    store.save(pub_doc)
+    store.save(priv_doc)
+    sources = [
+        source("pub", usage_class="public-domain", license="CC0-1.0"),
+        source("priv", usage_class="nc-nd", license="CC-BY-NC-ND-4.0"),
+    ]
+    out = tmp_path / "public_export"
+    res = export_public(store, out, sources)
+    assert res["guard_errors"] == []
+    assert check_public_export(out, store=store) == []
+    return store, out, sources, priv_doc
+
+
+def test_leak_variant_01_no_front_matter(clean_leak_bench):
+    store, out, sources, priv_doc = clean_leak_bench
+    (out / "text" / "pub" / "leak.md").write_text(PRIV_BODY + "\n")
+    errors = check_public_export(out, store=store)
+    assert len(errors) > 0
+
+
+def test_leak_variant_02_front_matter_public_domain(clean_leak_bench):
+    store, out, sources, priv_doc = clean_leak_bench
+    (out / "text" / "pub" / "leak.md").write_text(
+        f"---\nusage_class: public-domain\n---\n\n{PRIV_BODY}\n"
+    )
+    errors = check_public_export(out, store=store)
+    assert len(errors) > 0
+
+
+def test_leak_variant_03_own_normalized_file(clean_leak_bench):
+    store, out, sources, priv_doc = clean_leak_bench
+    norm = store.root / store.rows("priv")[0]["normalized_path"]
+    (out / "text" / "pub" / "leak.md").write_text(norm.read_text())
+    errors = check_public_export(out, store=store)
+    assert len(errors) > 0
+
+
+def test_leak_variant_04_quoted_usage_class(clean_leak_bench):
+    store, out, sources, priv_doc = clean_leak_bench
+    (out / "text" / "pub" / "leak.md").write_text(
+        f"---\nusage_class: 'nc-nd'\n---\n\n{PRIV_BODY}\n"
+    )
+    errors = check_public_export(out, store=store)
+    assert len(errors) > 0
+
+
+def test_leak_variant_05_oversized_front_matter(clean_leak_bench):
+    store, out, sources, priv_doc = clean_leak_bench
+    padding = "note: " + ("x" * 4500) + "\n"
+    (out / "text" / "pub" / "leak.md").write_text(
+        f"---\nusage_class: 'nc-nd'\n{padding}---\n\n{PRIV_BODY}\n"
+    )
+    errors = check_public_export(out, store=store)
+    assert len(errors) > 0
+
+
+def test_leak_variant_06_appended_to_links(clean_leak_bench):
+    store, out, sources, priv_doc = clean_leak_bench
+    priv_link = out / "links" / "priv.md"
+    with priv_link.open("a") as f:
+        f.write("\n\n" + PRIV_BODY + "\n")
+    errors = check_public_export(out, store=store)
+    assert len(errors) > 0
+
+
+def test_leak_variant_07_extra_file_at_root(clean_leak_bench):
+    store, out, sources, priv_doc = clean_leak_bench
+    (out / "extra.md").write_text("extra root file\n")
+    errors = check_public_export(out, store=store)
+    assert len(errors) > 0
+
+
+def test_leak_variant_08_invalid_directory(clean_leak_bench):
+    store, out, sources, priv_doc = clean_leak_bench
+    (out / "text" / "misc").mkdir(parents=True, exist_ok=True)
+    (out / "text" / "misc" / "leak.md").write_text(
+        f"---\nusage_class: public-domain\n---\n\n{PRIV_BODY}\n"
+    )
+    errors = check_public_export(out, store=store)
+    assert len(errors) > 0
+
+
+def test_leak_variant_09_file_under_text(clean_leak_bench):
+    store, out, sources, priv_doc = clean_leak_bench
+    (out / "text" / "priv.txt").write_text(PRIV_BODY + "\n")
+    errors = check_public_export(out, store=store)
+    assert len(errors) > 0
+
+
+def test_leak_variant_10_case_variant_directory(clean_leak_bench):
+    store, out, sources, priv_doc = clean_leak_bench
+    (out / "text" / "PRIV").mkdir(parents=True, exist_ok=True)
+    (out / "text" / "PRIV" / "leak.md").write_text(PRIV_BODY + "\n")
+    errors = check_public_export(out, store=store)
+    assert len(errors) > 0
+
+
+def test_leak_variant_11_sources_json_priv_removed(clean_leak_bench):
+    store, out, sources, priv_doc = clean_leak_bench
+    sources_json = out / "sources.json"
+    data = json.loads(sources_json.read_text())
+    data["sources"].pop("priv", None)
+    sources_json.write_text(json.dumps(data, indent=2))
+    errors = check_public_export(out, store=store)
+    assert isinstance(errors, list)
+    assert len(errors) > 0
