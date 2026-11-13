@@ -1,0 +1,12 @@
+License: US Government work (not subject to copyright in the United States)
+Usage class: public-domain
+Title: Incident Response Recommendations and Considerations for Cybersecurity
+       Risk Management: A CSF 2.0 Community Profile
+Revision: NIST SP 800-61 Rev. 3 (April 2025)
+DOI: https://doi.org/10.6028/NIST.SP.800-61r3
+Source: https://csrc.nist.gov/pubs/sp/800/61/r3/final
+PDF: https://nvlpubs.nist.gov/nistpubs/SpecialPublications/NIST.SP.800-61r3.pdf
+Evidence: PDF page 3 states the publication "is not subject to copyright in the
+United States. Attribution would, however, be appreciated by NIST."
+
+This is a US Government work. Attribution to NIST is appreciated.

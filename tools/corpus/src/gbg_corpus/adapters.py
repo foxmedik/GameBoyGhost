@@ -14,9 +14,18 @@ from .config import Source
 from .model import Document
 from .net import Fetcher, FetchError, github_headers
 from .normalize import decode, html_to_markdown
-from .store import BANNED_EXT
+from .store import BANNED_EXT, sha256_bytes
 
 LOCK_PATH = Path(__file__).resolve().parents[2] / "sources.lock.json"
+
+
+def _usage_meta(src: Source) -> dict:
+    """Governance fields inherited by every document from a source."""
+    return {
+        "usage_class": src.get("usage_class", "unknown"),
+        "license_evidence_url": src.get("license_evidence_url", ""),
+        "usage_notes": src.get("usage_notes", ""),
+    }
 
 
 def load_lock() -> dict:
@@ -147,9 +156,10 @@ def fetch_github_raw(src: Source, limit: int | None = None) -> list[Document]:
                 url=f"https://github.com/{repo}/blob/{sha}/{path}",
                 canonical_url=f"https://github.com/{repo}/blob/{sha}/{path}",
                 title=title, text=text, raw=r.content, ext=ext,
-                license=license_id, revision=sha,
+                license=license_id if license_id != "unknown" else src.get("license", "unknown"),
+                revision=sha,
                 content_type="text/markdown" if ext == "md" else "text/plain",
-                extra={"repo": repo, "path": path},
+                extra={"repo": repo, "path": path}, **_usage_meta(src),
             ))
         return docs
     finally:
@@ -193,9 +203,12 @@ def fetch_mediawiki(src: Source) -> list[Document]:
             "prop": "wikitext|revid" if src.get("mode", "wikitext") == "wikitext" else "text|revid",
         }
         r = fetcher.get(api, params=params)
-        return [parse_mediawiki(r.json(), api, src.page,
-                                src.get("mode", "wikitext"), src.id, src.kind,
-                                src.get("license", "unknown"))]
+        doc = parse_mediawiki(r.json(), api, src.page,
+                              src.get("mode", "wikitext"), src.id, src.kind,
+                              src.get("license", "unknown"))
+        for key, value in _usage_meta(src).items():
+            setattr(doc, key, value)
+        return [doc]
     finally:
         fetcher.close()
 
@@ -240,6 +253,7 @@ def fetch_arxiv(src: Source) -> list[Document]:
             author=", ".join(a for a in authors if a), published_at=published,
             license=src.get("license", "arxiv-metadata-only"), revision=rev,
             content_type="application/atom+xml", extra={"doi": doi, "arxiv_id": arxiv_id},
+            **_usage_meta(src),
         )]
     finally:
         fetcher.close()
@@ -285,8 +299,129 @@ def _json_doc(src: Source, url: str, title: str, payload: dict, canonical: str) 
         source_id=src.id, kind=src.kind, url=url, canonical_url=canonical,
         title=title, text=text, raw=json.dumps(payload).encode(), ext="json",
         license=src.get("license", "unknown"), revision="",
-        content_type="application/json",
+        content_type="application/json", **_usage_meta(src),
     )
+
+
+# ---------------------------------------------------------------- Wayback snapshots
+
+def parse_wayback_cdx(payload) -> list[dict]:
+    """Parse a CDX JSON response into capture records.
+
+    Accepts raw JSON text, bytes, or an already-decoded list.  The first CDX
+    row is the field header when present.
+    """
+    if isinstance(payload, (bytes, bytearray)):
+        payload = payload.decode("utf-8")
+    if isinstance(payload, str):
+        payload = json.loads(payload)
+    if not isinstance(payload, list) or not payload:
+        return []
+    rows = payload
+    if payload and payload[0] and isinstance(payload[0], list) and payload[0][0] == "urlkey":
+        rows = payload[1:]
+    captures = []
+    for row in rows:
+        if not isinstance(row, list) or len(row) < 5:
+            continue
+        captures.append({
+            "urlkey": row[0], "timestamp": row[1], "original_url": row[2],
+            "mimetype": row[3], "statuscode": row[4],
+            "digest": row[5] if len(row) > 5 else "",
+        })
+    return captures
+
+
+def wayback_id_url(timestamp: str, original_url: str) -> str:
+    """Build a raw Wayback URL (``id_`` returns the original page bytes)."""
+    return f"https://web.archive.org/web/{timestamp}id_/{original_url}"
+
+
+def fetch_wayback_html(src: Source) -> list[Document]:
+    """Read archived HTML snapshots without touching the blocked origin.
+
+    Each page entry carries the original URL, the Wayback timestamp and the
+    ``id_`` snapshot URL.  The archived bytes are stored as-is; the manifest
+    records ``retrieved_via=wayback`` and the snapshot separately from the
+    original URL.
+    """
+    fetcher = Fetcher(rate_limit_rps=src.get("rate_limit_rps", 1))
+    try:
+        docs = []
+        for page in src.get("pages", []):
+            snapshot_url = page["snapshot_url"]
+            original_url = page["original_url"]
+            r = fetcher.get(snapshot_url)
+            text, meta = html_to_markdown(r.text, original_url)
+            if len(text.strip()) < 80:
+                raise FetchError(r.status_code, snapshot_url, "empty extraction")
+            title = page.get("title") or meta.get("title") or original_url
+            canonical = page.get("canonical_url") or original_url
+            docs.append(Document(
+                source_id=src.id, kind=src.kind,
+                url=original_url, canonical_url=canonical,
+                title=title.strip(), text=f"# {title.strip()}\n\n{text}",
+                raw=r.content, ext="html",
+                license=src.get("license", "unknown"),
+                revision=page.get("snapshot_at", ""),
+                content_type="text/html",
+                retrieved_via="wayback",
+                snapshot_at=page.get("snapshot_at"),
+                snapshot_url=snapshot_url,
+                extra={
+                    "requested_url": page.get("requested_url", original_url),
+                    "resolved_url": meta.get("canonical_url") or original_url,
+                    "wayback_timestamp": page.get("snapshot_at"),
+                },
+                **_usage_meta(src),
+            ))
+        return docs
+    finally:
+        fetcher.close()
+
+
+# ---------------------------------------------------------------- PDF documents
+
+def fetch_pdf_text(src: Source) -> list[Document]:
+    """Fetch a PDF, extract its text with PyMuPDF, and store text only.
+
+    The PDF itself is deliberately not written into the corpus: the stored raw
+    payload is the extracted text, so the binary guard never has to special-case
+    a legitimate PDF.  The PDF URL and SHA-256 are recorded in the manifest.
+    """
+    import pymupdf
+
+    fetcher = Fetcher(rate_limit_rps=src.get("rate_limit_rps", 1))
+    try:
+        pdf_url = src.get("pdf_url") or src.url
+        r = fetcher.get(pdf_url)
+        if not r.content.startswith(b"%PDF-"):
+            raise FetchError(r.status_code, pdf_url, "response is not a PDF")
+        pdf = pymupdf.open(stream=r.content, filetype="pdf")
+        text = "\n\n".join(page.get_text("text") for page in pdf).strip()
+        if len(text) < 500:
+            raise FetchError(r.status_code, pdf_url, "empty PDF text extraction")
+        text = re.sub(r"\n{4,}", "\n\n\n", text)
+        title = (src.get("title") or pdf.metadata.get("title")
+                 or "PDF document").strip()
+        title = " ".join(title.split())
+        pages = pdf.page_count
+        pdf.close()
+        return [Document(
+            source_id=src.id, kind=src.kind, url=pdf_url, canonical_url=pdf_url,
+            title=title, text=f"# {title}\n\n{text}", raw=text.encode("utf-8"),
+            ext="md", license=src.get("license", "unknown"),
+            published_at=src.get("published_at"), revision=src.get("revision", ""),
+            content_type="text/markdown",
+            extra={
+                "pdf_url": pdf_url, "pdf_sha256": sha256_bytes(r.content),
+                "pdf_pages": pages, "landing_url": src.get("url"),
+                "doi": src.get("doi"),
+            },
+            **_usage_meta(src),
+        )]
+    finally:
+        fetcher.close()
 
 
 # ---------------------------------------------------------------- HTML articles
@@ -306,7 +441,7 @@ def fetch_html_article(src: Source) -> list[Document]:
             title=title.strip(), text=text, raw=r.content, ext="html",
             author=meta.get("author"), published_at=meta.get("published_at"),
             license=src.get("license", "unknown"), revision="",
-            content_type="text/html",
+            content_type="text/html", **_usage_meta(src),
         )]
     finally:
         fetcher.close()

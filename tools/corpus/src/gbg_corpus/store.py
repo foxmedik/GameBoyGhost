@@ -8,7 +8,7 @@ from pathlib import Path
 
 from . import PARSER_VERSION
 from .dedup import is_near_duplicate, simhash
-from .model import Document
+from .model import Document, validate_usage_class
 from .normalize import front_matter, slugify
 
 BANNED_EXT = {
@@ -17,6 +17,48 @@ BANNED_EXT = {
     ".ogg", ".m4a", ".mp4", ".mkv", ".avi", ".png", ".jpg", ".jpeg", ".gif",
     ".webp", ".exe", ".dll", ".so", ".dylib",
 }
+
+MAX_DOC_BYTES = 5 * 1024 * 1024  # 5 MB hard limit, never silently truncate.
+
+# Magic bytes for content that must never be treated as text, even when the
+# filename ends in .md.  This is deliberately a small, high-confidence list.
+MAGIC_SIGNATURES: tuple[tuple[bytes, str], ...] = (
+    (b"PK\x03\x04", "zip"),
+    (b"PK\x05\x06", "zip"),
+    (b"PK\x07\x08", "zip"),
+    (b"7z\xbc\xaf\x27\x1c", "7z"),
+    (b"Rar!\x1a\x07", "rar"),
+    (b"\x1f\x8b", "gzip"),
+    (b"%PDF-", "pdf"),
+    (b"\x89PNG\r\n\x1a\n", "png"),
+    (b"\xff\xd8\xff", "jpeg"),
+    (b"GIF87a", "gif"),
+    (b"GIF89a", "gif"),
+    (b"RIFF", "riff-audio/image"),
+    (b"ID3", "mp3"),
+    (b"OggS", "ogg"),
+    (b"fLaC", "flac"),
+    (b"\x1aE\xdf\xa3", "matroska/webm"),
+    (b"\x7fELF", "elf-binary"),
+    (b"NES\x1a", "nes-rom"),
+    (b"\x00asm", "wasm"),
+)
+
+# Game Boy / Game Boy Color cartridges carry the Nintendo logo at 0x0104.
+_GB_LOGO = bytes.fromhex(
+    "CEED6666CC0D000B03730083000C000D0008111F8889000EDCCC6EE6DD"
+    "DDD999BBBB67636E0EECCCDDDC999FBBB9333E"
+)
+
+
+def sniff_binary(data: bytes) -> str | None:
+    """Return a short kind when data is a known non-text/binary payload."""
+    for prefix, kind in MAGIC_SIGNATURES:
+        if data.startswith(prefix):
+            return kind
+    if len(data) >= 0x104 + len(_GB_LOGO) and data[0x104:0x104 + len(_GB_LOGO)] == _GB_LOGO:
+        return "gameboy-rom"
+    return None
 
 
 def now_iso() -> str:
@@ -30,7 +72,7 @@ def sha256_bytes(data: bytes) -> str:
 class Store:
     def __init__(self, root: Path | None = None):
         self.root = Path(root or os.environ.get("GBG_CORPUS_DIR", "~/.local/share/gbg-corpus")).expanduser()
-        for sub in ("raw", "normalized", "manifests"):
+        for sub in ("raw", "normalized", "manifests", "raw/manual"):
             (self.root / sub).mkdir(parents=True, exist_ok=True)
         self.failures_path = self.root / "failures.jsonl"
         self._rows: dict[str, list[dict]] = {}
@@ -81,6 +123,25 @@ class Store:
             if r.get("canonical_url") == doc.canonical_url and r.get("revision") == doc.revision:
                 return None
 
+        if len(doc.raw) > MAX_DOC_BYTES:
+            self.record_failure(
+                doc.source_id, doc.url,
+                f"refused oversized document: {len(doc.raw)} bytes (max {MAX_DOC_BYTES})",
+            )
+            return None
+
+        sniffed = sniff_binary(doc.raw)
+        if sniffed:
+            self.record_failure(
+                doc.source_id, doc.url,
+                f"refused binary content ({sniffed}) despite extension .{doc.ext.lstrip('.')}",
+            )
+            return None
+
+        validate_usage_class(doc.usage_class)
+        if doc.retrieved_via not in {"direct", "wayback", "manual"}:
+            raise ValueError(f"invalid retrieved_via {doc.retrieved_via!r}")
+
         ext = doc.ext.lstrip(".")
         if f".{ext.lower()}" in BANNED_EXT or ext.lower() in BANNED_EXT:
             self.record_failure(doc.source_id, doc.url, f"refused banned extension .{ext}")
@@ -107,6 +168,12 @@ class Store:
         fm = {
             "source_id": doc.source_id, "url": doc.url, "canonical_url": doc.canonical_url,
             "title": doc.title, "license": doc.license, "sha256": digest,
+            "usage_class": doc.usage_class,
+            "license_evidence_url": doc.license_evidence_url,
+            "usage_notes": doc.usage_notes,
+            "retrieved_via": doc.retrieved_via,
+            "snapshot_at": doc.snapshot_at,
+            "snapshot_url": doc.snapshot_url,
             "retrieved_at": now_iso(), "revision": doc.revision,
             "heading_path": [doc.title],
         }
@@ -117,6 +184,12 @@ class Store:
             "canonical_url": doc.canonical_url, "title": doc.title,
             "author": doc.author, "published_at": doc.published_at,
             "retrieved_at": now_iso(), "license": doc.license,
+            "usage_class": doc.usage_class,
+            "license_evidence_url": doc.license_evidence_url,
+            "usage_notes": doc.usage_notes,
+            "retrieved_via": doc.retrieved_via,
+            "snapshot_at": doc.snapshot_at,
+            "snapshot_url": doc.snapshot_url,
             "revision": doc.revision, "http_status": doc.http_status,
             "content_type": doc.content_type, "sha256": digest,
             "normalized_path": str(norm_path.relative_to(self.root)),

@@ -13,8 +13,32 @@ repo = "gbdev/pandocs"
 ref = "auto"                      # resolved to a commit SHA and pinned in sources.lock.json
 include = ["**/*.md", "**/*.txt"]
 exclude = ["**/node_modules/**", "**/.github/**"]
-license = "read"
+license = "CC0-1.0"
+usage_class = "public-domain"
+license_evidence_url = "https://raw.githubusercontent.com/gbdev/pandocs/89f82b2181dac4e335bbbdd1451534e6b3a716cf/LICENSE"
+usage_notes = "CC0 1.0 public-domain dedication verified in the pinned LICENSE file."
+terms_url = "https://raw.githubusercontent.com/gbdev/pandocs/89f82b2181dac4e335bbbdd1451534e6b3a716cf/LICENSE"
+robots_hash = "b622e2dd9b60e8540ffd1f4b0974c9dbee73bce606f9660c6344d09357889956"
 rate_limit_rps = 1
+
+[[sources.pandocs.overrides]]
+path_glob = "historical/**"
+license = "none-declared"
+usage_class = "copyrighted-local"
+license_evidence_url = "https://github.com/gbdev/pandocs/tree/89f82b2181dac4e335bbbdd1451534e6b3a716cf/historical"
+usage_notes = "Legacy third-party documents; repo-level CC0 not shown to cover them."
+
+[[sources.pandocs.allowed_overlap]]
+public_glob = "src/**"
+restricted_source = "pandocs"
+restricted_glob = "historical/**"
+reason = "Modern CC0 Pan Docs chapters descend from and incorporate text from historical Pan Docs releases."
+
+[[sources.pandocs.allowed_overlap]]
+public_glob = "src/**"
+restricted_source = "giibiiadvance"
+restricted_glob = "docs/other_docs/**"
+reason = "Giibiiadvance vendored copies of the 2001 Pan Docs and third-party sound documentation that modern Pan Docs evolved from."
 
 [sources.awesome_gbdev]
 id = "awesome_gbdev"
@@ -24,7 +48,12 @@ repo = "gbdev/awesome-gbdev"
 ref = "auto"
 include = ["README.md", "**/*.md"]
 exclude = ["**/.github/**"]
-license = "read"
+license = "GPL-3.0"
+usage_class = "share-alike"
+license_evidence_url = "https://raw.githubusercontent.com/gbdev/awesome-gbdev/7915a26a5e1e1814d823b90846e7519d5bda797c/LICENSE"
+usage_notes = "GPL-3.0 text verified in the pinned LICENSE file; attribution and notice required."
+terms_url = "https://raw.githubusercontent.com/gbdev/awesome-gbdev/7915a26a5e1e1814d823b90846e7519d5bda797c/LICENSE"
+robots_hash = "b622e2dd9b60e8540ffd1f4b0974c9dbee73bce606f9660c6344d09357889956"
 rate_limit_rps = 1
 
 [sources.sameboy]
@@ -35,7 +64,12 @@ repo = "LIJI32/SameBoy"
 ref = "auto"
 include = ["README.md", "*.md", "docs/**/*.md", "doc/**/*.md", "**/*.md"]
 exclude = ["**/node_modules/**", "**/.github/**"]
-license = "read"
+license = "MIT"
+usage_class = "permissive"
+license_evidence_url = "https://raw.githubusercontent.com/LIJI32/SameBoy/ea667ad79aa28409f034b1fd6da7304e1844750d/LICENSE"
+usage_notes = "Expat/MIT license verified in the pinned LICENSE file; retain the copyright notice."
+terms_url = "https://raw.githubusercontent.com/LIJI32/SameBoy/ea667ad79aa28409f034b1fd6da7304e1844750d/LICENSE"
+robots_hash = "b622e2dd9b60e8540ffd1f4b0974c9dbee73bce606f9660c6344d09357889956"
 rate_limit_rps = 1
 
 [sources.mooneye_gb]
@@ -46,7 +80,12 @@ repo = "Gekkio/mooneye-gb"
 ref = "auto"
 include = ["README.markdown", "README.md", "*.markdown", "*.md", "docs/**/*.md", "**/*.markdown"]
 exclude = ["**/target/**", "**/.github/**"]
-license = "read"
+license = "GPL-3.0"
+usage_class = "share-alike"
+license_evidence_url = "https://raw.githubusercontent.com/Gekkio/mooneye-gb/3856dcbca82a7d32bd438cc92fd9693f868e2e23/LICENSE"
+usage_notes = "GPL-3.0 text verified in the pinned LICENSE file; attribution and notice required."
+terms_url = "https://raw.githubusercontent.com/Gekkio/mooneye-gb/3856dcbca82a7d32bd438cc92fd9693f868e2e23/LICENSE"
+robots_hash = "b622e2dd9b60e8540ffd1f4b0974c9dbee73bce606f9660c6344d09357889956"
 rate_limit_rps = 1
 
 [sources.gb_test_roms]
@@ -57,7 +96,12 @@ repo = "retrio/gb-test-roms"
 ref = "auto"
 include = ["README.md", "**/*.md", "**/*.txt"]
 exclude = ["**/*.gb", "**/*.gbc", "**/*.bin", "**/*.zip"]
-license = "read"
+license = "none-declared"
+usage_class = "copyrighted-local"
+license_evidence_url = "https://github.com/retrio/gb-test-roms/tree/c240dd7d700e5c0b00a7bbba52b53e4ee67b5f15"
+usage_notes = "No LICENSE or COPYING file at the pinned commit; ROM test binaries remain copyrighted and are not fetched."
+terms_url = "https://github.com/retrio/gb-test-roms"
+robots_hash = "b622e2dd9b60e8540ffd1f4b0974c9dbee73bce606f9660c6344d09357889956"
 rate_limit_rps = 1
 
 [sources.mealybug]
@@ -68,7 +112,12 @@ repo = "mattcurrie/mealybug-tearoom-tests"
 ref = "auto"
 include = ["README.md", "**/*.md"]
 exclude = ["**/*.gb", "**/*.gbc", "**/*.png"]
-license = "read"
+license = "MIT"
+usage_class = "permissive"
+license_evidence_url = "https://raw.githubusercontent.com/mattcurrie/mealybug-tearoom-tests/70e88fb90b59d19dfbb9c3ac36c64105202bb1f4/LICENSE"
+usage_notes = "MIT license verified in the pinned LICENSE file; retain the copyright notice."
+terms_url = "https://raw.githubusercontent.com/mattcurrie/mealybug-tearoom-tests/70e88fb90b59d19dfbb9c3ac36c64105202bb1f4/LICENSE"
+robots_hash = "b622e2dd9b60e8540ffd1f4b0974c9dbee73bce606f9660c6344d09357889956"
 rate_limit_rps = 1
 
 [sources.giibiiadvance]
@@ -79,8 +128,20 @@ repo = "AntonioND/giibiiadvance"
 ref = "auto"
 include = ["README.md", "docs/**/*.md", "doc/**/*.md", "**/*.md", "**/*.txt"]
 exclude = ["**/*.gb", "**/*.gbc", "**/*.bin"]
-license = "read"
+license = "GPL-2.0"
+usage_class = "share-alike"
+license_evidence_url = "https://raw.githubusercontent.com/AntonioND/giibiiadvance/ccb40c3cf7d9efec538858a36d4ab69bb4d0ce5c/LICENSE.txt"
+usage_notes = "GPL-2.0 text verified in the pinned LICENSE.txt; attribution and notice required."
+terms_url = "https://raw.githubusercontent.com/AntonioND/giibiiadvance/ccb40c3cf7d9efec538858a36d4ab69bb4d0ce5c/LICENSE.txt"
+robots_hash = "b622e2dd9b60e8540ffd1f4b0974c9dbee73bce606f9660c6344d09357889956"
 rate_limit_rps = 1
+
+[[sources.giibiiadvance.overrides]]
+path_glob = "**/*.txt"
+license = "none-declared"
+usage_class = "copyrighted-local"
+license_evidence_url = "https://github.com/AntonioND/giibiiadvance/tree/ccb40c3cf7d9efec538858a36d4ab69bb4d0ce5c/docs/other_docs"
+usage_notes = "Third-party hardware notes and a copy of the 2001 Pan Docs vendored into a GPL-2.0 repo."
 
 [sources.binjgb]
 id = "binjgb"
@@ -90,7 +151,12 @@ repo = "binji/binjgb"
 ref = "auto"
 include = ["README.md", "**/*.md"]
 exclude = ["**/.github/**"]
-license = "read"
+license = "MIT"
+usage_class = "permissive"
+license_evidence_url = "https://raw.githubusercontent.com/binji/binjgb/16621111ed0ee73bcc45c912a823bcebedcffc0f/LICENSE"
+usage_notes = "MIT license verified in the pinned LICENSE file; retain the copyright notice."
+terms_url = "https://raw.githubusercontent.com/binji/binjgb/16621111ed0ee73bcc45c912a823bcebedcffc0f/LICENSE"
+robots_hash = "b622e2dd9b60e8540ffd1f4b0974c9dbee73bce606f9660c6344d09357889956"
 rate_limit_rps = 1
 
 [sources.copetti_gb]
@@ -98,7 +164,12 @@ id = "copetti_gb"
 kind = "html_article"
 priority = "P0"
 url = "https://www.copetti.org/writings/consoles/game-boy/"
-license = "unknown"               # site has no explicit reuse license; local reference only
+license = "CC-BY-4.0"
+usage_class = "permissive"
+license_evidence_url = "https://www.copetti.org/writings/consoles/game-boy/#referencing"
+usage_notes = "Article's Copyright and permissions section grants CC BY 4.0; attribute Rodrigo Copetti."
+terms_url = "https://www.copetti.org/writings/consoles/game-boy/#referencing"
+robots_hash = "9a6ae137d2aca31bda363b72b959dfa9acad8109319345fe77ea2ae174b5b062"
 rate_limit_rps = 1
 
 # ---------------------------------------------------------------- P0: LADX / disassembly
@@ -111,7 +182,12 @@ repo = "zladx/LADX-Disassembly"
 ref = "auto"
 include = ["README.md", "**/*.md", "**/*.txt", "**/*.sym"]
 exclude = ["**/*.gb", "**/*.gbc", "**/*.bin", "**/*.o"]
-license = "read"
+license = "none-declared"
+usage_class = "copyrighted-local"
+license_evidence_url = "https://github.com/zladx/LADX-Disassembly/tree/2a5c2c0d6df93a54df81ae9e1fe28b5c2fd60d03"
+usage_notes = "No LICENSE or COPYING file at the pinned commit; derivative of a Nintendo game, local reference only."
+terms_url = "https://github.com/zladx/LADX-Disassembly"
+robots_hash = "b622e2dd9b60e8540ffd1f4b0974c9dbee73bce606f9660c6344d09357889956"
 rate_limit_rps = 1
 
 [sources.ladx_randomizer]
@@ -122,28 +198,66 @@ repo = "daid/LADXR"                 # spec named zladx/LADX-Randomizer; that rep
 ref = "auto"
 include = ["README.md", "docs/**/*.md", "docs/**/*.txt"]
 exclude = ["**/node_modules/**", "**/*.gb", "**/*.gbc"]
-license = "read"
+license = "MIT"
+usage_class = "permissive"
+license_evidence_url = "https://raw.githubusercontent.com/daid/LADXR/4325207e4e55076e05f209fbdf16b860a90e42ef/LICENSE"
+usage_notes = "MIT license verified in the pinned LICENSE file; repository is daid/LADXR, not the nonexistent zladx/LADX-Randomizer."
+terms_url = "https://raw.githubusercontent.com/daid/LADXR/4325207e4e55076e05f209fbdf16b860a90e42ef/LICENSE"
+robots_hash = "b622e2dd9b60e8540ffd1f4b0974c9dbee73bce606f9660c6344d09357889956"
 rate_limit_rps = 1
 
 [sources.datacrystal_ladx]
 id = "datacrystal_ladx"
-kind = "mediawiki"
+kind = "wayback_html"
 priority = "P0"
-api = "https://datacrystal.tcrf.net/api.php"
-page = "The Legend of Zelda: Link's Awakening DX"
-mode = "wikitext"
-license = "unknown"
+license = "GFDL-1.2"
+usage_class = "share-alike"
+license_evidence_url = "https://web.archive.org/web/20240303104212id_/https://datacrystal.tcrf.net/wiki/The_Legend_of_Zelda:_Link%27s_Awakening_(Game_Boy)"
+usage_notes = "GFDL 1.2 footer on the archived Data Crystal page; the DX-specific page has no Wayback capture, so the archived Link's Awakening (Game Boy) page and its RAM/ROM maps were used."
+terms_url = "https://www.gnu.org/licenses/fdl-1.2.html"
+robots_hash = "b0393d8d38be4e649629cd6dd87dfdffe050fda666fce6bc0ee4660b1dd1af81"
 rate_limit_rps = 1
+
+[[sources.datacrystal_ladx.pages]]
+title = "The Legend of Zelda: Link's Awakening (Game Boy)"
+original_url = "https://datacrystal.tcrf.net/wiki/The_Legend_of_Zelda:_Link%27s_Awakening_(Game_Boy)"
+canonical_url = "https://datacrystal.tcrf.net/wiki/The_Legend_of_Zelda:_Link%27s_Awakening_(Game_Boy)"
+snapshot_at = "20240303104212"
+snapshot_url = "https://web.archive.org/web/20240303104212id_/https://datacrystal.tcrf.net/wiki/The_Legend_of_Zelda:_Link%27s_Awakening_(Game_Boy)"
+
+[[sources.datacrystal_ladx.pages]]
+title = "The Legend of Zelda: Link's Awakening (Game Boy)/RAM map"
+original_url = "https://datacrystal.tcrf.net/wiki/The_Legend_of_Zelda:_Link%27s_Awakening_(Game_Boy)/RAM_map"
+canonical_url = "https://datacrystal.tcrf.net/wiki/The_Legend_of_Zelda:_Link%27s_Awakening_(Game_Boy)/RAM_map"
+snapshot_at = "20241103171754"
+snapshot_url = "https://web.archive.org/web/20241103171754id_/https://datacrystal.tcrf.net/wiki/The_Legend_of_Zelda:_Link%27s_Awakening_(Game_Boy)/RAM_map"
+
+[[sources.datacrystal_ladx.pages]]
+title = "The Legend of Zelda: Link's Awakening (Game Boy)/ROM map"
+original_url = "https://datacrystal.tcrf.net/wiki/The_Legend_of_Zelda:_Link%27s_Awakening_(Game_Boy)/ROM_map"
+canonical_url = "https://datacrystal.tcrf.net/wiki/The_Legend_of_Zelda:_Link%27s_Awakening_(Game_Boy)/ROM_map"
+snapshot_at = "20250530122228"
+snapshot_url = "https://web.archive.org/web/20250530122228id_/https://datacrystal.tcrf.net/wiki/The_Legend_of_Zelda:_Link%27s_Awakening_(Game_Boy)/ROM_map"
 
 [sources.tcrf_ladx]
 id = "tcrf_ladx"
-kind = "mediawiki"
+kind = "wayback_html"
 priority = "P0"
-api = "https://tcrf.net/api.php"
-page = "The Legend of Zelda: Link's Awakening DX"
-mode = "wikitext"
-license = "unknown"
+license = "CC-BY-3.0"
+usage_class = "permissive"
+license_evidence_url = "https://web.archive.org/web/20131128111419id_/http://tcrf.net/The_Legend_of_Zelda:_Link%27s_Awakening_DX"
+usage_notes = "CC BY 3.0 footer on the archived DX page; the DX title redirects to the Link's Awakening page, which covers DX."
+terms_url = "https://creativecommons.org/licenses/by/3.0/"
+robots_hash = "b0393d8d38be4e649629cd6dd87dfdffe050fda666fce6bc0ee4660b1dd1af81"
 rate_limit_rps = 1
+
+[[sources.tcrf_ladx.pages]]
+title = "The Legend of Zelda: Link's Awakening"
+original_url = "https://tcrf.net/The_Legend_of_Zelda:_Link%27s_Awakening_DX"
+canonical_url = "https://tcrf.net/The_Legend_of_Zelda:_Link%27s_Awakening"
+requested_url = "https://tcrf.net/The_Legend_of_Zelda:_Link%27s_Awakening_DX"
+snapshot_at = "20131128111419"
+snapshot_url = "https://web.archive.org/web/20131128111419id_/http://tcrf.net/The_Legend_of_Zelda:_Link%27s_Awakening_DX"
 
 [sources.zeldawiki_ladx]
 id = "zeldawiki_ladx"
@@ -152,7 +266,12 @@ priority = "P0"
 api = "https://zeldawiki.wiki/w/api.php"
 page = "The Legend of Zelda: Link's Awakening DX"
 mode = "wikitext"
-license = "unknown"
+license = "GFDL-1.3"
+usage_class = "share-alike"
+license_evidence_url = "https://zeldawiki.wiki/wiki/Zelda_Wiki:GNU_Free_Documentation_License"
+usage_notes = "Site footer and license page state GNU Free Documentation License 1.3; copyleft, attribution and notice required."
+terms_url = "https://zeldawiki.wiki/wiki/Zelda_Wiki:GNU_Free_Documentation_License"
+robots_hash = "2283b809e492d84a69de0c2804aa688b0ad7a73fa1f306dc91a9115640a773ad"
 rate_limit_rps = 1
 
 [sources.speedrun_ladx]
@@ -162,7 +281,12 @@ priority = "P0"
 game_id = "pdvj2vdw"
 runs_limit = 20
 categories_limit = 12
-license = "unknown"               # Speedrun.com API terms; local reference only
+license = "none-declared"
+usage_class = "copyrighted-local"
+license_evidence_url = "https://github.com/speedruncom/api"
+usage_notes = "Official API docs and response carry no reuse grant; the terms page returned Cloudflare 403 and is absent from Wayback, so API data is local reference only."
+terms_url = "https://www.speedrun.com/terms"
+robots_hash = "ce621dffa42497a38e3fc85c22e58fd084bc731cef9d2dd434dca71e037aec11"
 rate_limit_rps = 1
 
 [sources.tasvideos_ladx]
@@ -170,7 +294,12 @@ id = "tasvideos_ladx"
 kind = "html_article"
 priority = "P0"
 url = "https://tasvideos.org/GameResources/GB/LinksAwakening"
-license = "unknown"
+license = "CC-BY-2.0"
+usage_class = "permissive"
+license_evidence_url = "https://tasvideos.org/SiteLicense"
+usage_notes = "SiteLicense page states all site content is CC BY 2.0; attribute TASVideos contributors."
+terms_url = "https://tasvideos.org/SiteLicense"
+robots_hash = "a6e8b74ffd48f4a41e65b7152c2190bd541dda9675418c8f112fe2bb334c9653"
 rate_limit_rps = 1
 
 # ---------------------------------------------------------------- P0: papers / reliability
@@ -180,15 +309,28 @@ id = "arxiv_dagger"
 kind = "arxiv"
 priority = "P0"
 arxiv_id = "1011.0686"
-license = "arxiv-metadata-only"
+license = "CC0-1.0"
+usage_class = "public-domain"
+license_evidence_url = "https://info.arxiv.org/help/license/index.html"
+usage_notes = "Metadata and abstract only under the arXiv CC0 terms; the PDF is not mirrored."
+terms_url = "https://info.arxiv.org/help/license/index.html"
+expect_title_contains = "Imitation Learning"
+robots_hash = "eda2bc852443f3f29d31eb04d37b26476654dc33b29256fb882819da23d189a5"
 rate_limit_rps = 1
 
 [sources.arxiv_il_survey]
 id = "arxiv_il_survey"
 kind = "arxiv"
 priority = "P0"
-arxiv_id = "1707.00716"
-license = "arxiv-metadata-only"
+arxiv_id = "2106.12177"
+enabled = true
+expect_title_contains = "Imitation Learning"
+license = "CC0-1.0"
+usage_class = "public-domain"
+license_evidence_url = "https://info.arxiv.org/help/license/index.html"
+usage_notes = "Metadata and abstract only under the arXiv CC0 terms; the PDF is not mirrored."
+terms_url = "https://info.arxiv.org/help/license/index.html"
+robots_hash = "eda2bc852443f3f29d31eb04d37b26476654dc33b29256fb882819da23d189a5"
 rate_limit_rps = 1
 
 [sources.sre_postmortem]
@@ -196,7 +338,12 @@ id = "sre_postmortem"
 kind = "html_article"
 priority = "P0"
 url = "https://sre.google/sre-book/postmortem-culture/"
-license = "CC-BY-NC-ND-4.0"       # Google SRE book online edition
+license = "CC-BY-NC-ND-4.0"
+usage_class = "nc-nd"
+license_evidence_url = "https://sre.google/sre-book/postmortem-culture/"
+usage_notes = "Page footer states CC BY-NC-ND 4.0; local reference only, no body text in public exports."
+terms_url = "https://creativecommons.org/licenses/by-nc-nd/4.0/"
+robots_hash = "0070574c0db6da5e8b9c59c3e17fb72f7eb8e6aebd7ea4c90f02f395e28b481a"
 rate_limit_rps = 1
 
 [sources.complexsystems]
@@ -204,5 +351,31 @@ id = "complexsystems"
 kind = "html_article"
 priority = "P0"
 url = "https://how.complexsystems.fail/"
-license = "unknown"
+license = "all-rights-reserved"
+usage_class = "copyrighted-local"
+license_evidence_url = "https://how.complexsystems.fail/"
+usage_notes = "Page carries a Copyright (c) R.I.Cook notice and no reuse grant; local reference only."
+terms_url = "https://how.complexsystems.fail/"
+robots_hash = "673f93255de165c55c19656c8a278d8fa15f13986414f1427b2689c616ef34d2"
+rate_limit_rps = 1
+
+# ---------------------------------------------------------------- P0: incident response reference
+
+[sources.nist_800_61]
+id = "nist_800_61"
+kind = "pdf_text"
+priority = "P0"
+url = "https://csrc.nist.gov/pubs/sp/800/61/r3/final"
+pdf_url = "https://nvlpubs.nist.gov/nistpubs/SpecialPublications/NIST.SP.800-61r3.pdf"
+title = "Incident Response Recommendations and Considerations for Cybersecurity Risk Management: A CSF 2.0 Community Profile"
+revision = "NIST SP 800-61 Rev. 3"
+published_at = "2025-04-03"
+doi = "10.6028/NIST.SP.800-61r3"
+license = "US-Government-work"
+usage_class = "public-domain"
+license_evidence_url = "https://nvlpubs.nist.gov/nistpubs/SpecialPublications/NIST.SP.800-61r3.pdf"
+usage_notes = "PDF page 3 states the publication is not subject to copyright in the United States; Rev. 3 final resolved from CSRC."
+terms_url = "https://csrc.nist.gov/pubs/sp/800/61/r3/final"
+expect_title_contains = "Incident Response"
+robots_hash = "47e4abd33df451e4177a8441686d64577b940bdf5779fcf95a29acb6986ff653"
 rate_limit_rps = 1

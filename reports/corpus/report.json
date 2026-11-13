@@ -1,33 +1,110 @@
 {
-  "generated_at": "2026-11-05T14:45:53.361957+00:00",
+  "generated_at": "2026-11-13T19:51:41.600445+00:00",
   "corpus_root": "/home/ben/.local/share/gbg-corpus",
   "totals": {
-    "documents": 130,
-    "bytes": 1630373,
+    "documents": 135,
+    "bytes": 1933294,
     "failures": 4,
-    "failures_unresolved": 2,
-    "duplicates": 1
+    "failures_unresolved": 0,
+    "duplicates": 1,
+    "restricted_documents": 39,
+    "unknown_documents": 0,
+    "usage_classes": {
+      "public-domain": 79,
+      "permissive": 11,
+      "share-alike": 6,
+      "nc-nd": 1,
+      "copyrighted-local": 38,
+      "unknown": 0
+    }
+  },
+  "freshness": {
+    "threshold_days": 180,
+    "evaluated_documents": 135,
+    "stale_documents": 7,
+    "oldest_age_days": 10543,
+    "stale": [
+      {
+        "source_id": "complexsystems",
+        "title": "How Complex Systems Fail",
+        "url": "https://how.complexsystems.fail/",
+        "age_days": 10543,
+        "dated_by": "published_at"
+      },
+      {
+        "source_id": "arxiv_dagger",
+        "title": "A Reduction of Imitation Learning and Structured Prediction to No-Regret Online Learning",
+        "url": "http://arxiv.org/abs/1011.0686v3",
+        "age_days": 5855,
+        "dated_by": "published_at"
+      },
+      {
+        "source_id": "sre_postmortem",
+        "title": "Chapter 15 - Postmortem Culture: Learning from Failure",
+        "url": "https://sre.google/sre-book/postmortem-culture/",
+        "age_days": 3603,
+        "dated_by": "published_at"
+      },
+      {
+        "source_id": "copetti_gb",
+        "title": "Game Boy / Color Architecture | A Practical Analysis",
+        "url": "https://www.copetti.org/writings/consoles/game-boy/",
+        "age_days": 2822,
+        "dated_by": "published_at"
+      },
+      {
+        "source_id": "arxiv_il_survey",
+        "title": "Imitation Learning: Progress, Taxonomies and Challenges",
+        "url": "http://arxiv.org/abs/2106.12177v2",
+        "age_days": 1969,
+        "dated_by": "published_at"
+      },
+      {
+        "source_id": "tasvideos_ladx",
+        "title": "Game Resources / GB / Links Awakening",
+        "url": "https://tasvideos.org/GameResources/GB/LinksAwakening",
+        "age_days": 1765,
+        "dated_by": "published_at"
+      },
+      {
+        "source_id": "nist_800_61",
+        "title": "Incident Response Recommendations and Considerations for Cybersecurity Risk Management: A CSF 2.0 Community Profile",
+        "url": "https://nvlpubs.nist.gov/nistpubs/SpecialPublications/NIST.SP.800-61r3.pdf",
+        "age_days": 589,
+        "dated_by": "published_at"
+      }
+    ]
   },
   "by_source": {
     "arxiv_dagger": {
       "documents": 1,
       "bytes": 2755,
       "licenses": {
-        "arxiv-metadata-only": 1
+        "CC0-1.0": 1
+      },
+      "usage_classes": {
+        "public-domain": 1
       },
       "kinds": {
         "arxiv": 1
-      }
+      },
+      "age_days": 5855,
+      "max_age_days": 5855
     },
     "arxiv_il_survey": {
       "documents": 1,
-      "bytes": 2555,
+      "bytes": 2562,
       "licenses": {
-        "arxiv-metadata-only": 1
+        "CC0-1.0": 1
+      },
+      "usage_classes": {
+        "public-domain": 1
       },
       "kinds": {
         "arxiv": 1
-      }
+      },
+      "age_days": 1969,
+      "max_age_days": 1969
     },
     "awesome_gbdev": {
       "documents": 1,
@@ -35,9 +112,14 @@
       "licenses": {
         "GPL-3.0": 1
       },
+      "usage_classes": {
+        "share-alike": 1
+      },
       "kinds": {
         "github_raw": 1
-      }
+      },
+      "age_days": 8,
+      "max_age_days": 8
     },
     "binjgb": {
       "documents": 1,
@@ -45,59 +127,104 @@
       "licenses": {
         "MIT": 1
       },
+      "usage_classes": {
+        "permissive": 1
+      },
       "kinds": {
         "github_raw": 1
-      }
+      },
+      "age_days": 8,
+      "max_age_days": 8
     },
     "complexsystems": {
       "documents": 1,
       "bytes": 23713,
       "licenses": {
-        "unknown": 1
+        "all-rights-reserved": 1
+      },
+      "usage_classes": {
+        "copyrighted-local": 1
       },
       "kinds": {
         "html_article": 1
-      }
+      },
+      "age_days": 10543,
+      "max_age_days": 10543
     },
     "copetti_gb": {
       "documents": 1,
       "bytes": 153023,
       "licenses": {
-        "unknown": 1
+        "CC-BY-4.0": 1
+      },
+      "usage_classes": {
+        "permissive": 1
       },
       "kinds": {
         "html_article": 1
-      }
+      },
+      "age_days": 2822,
+      "max_age_days": 2822
+    },
+    "datacrystal_ladx": {
+      "documents": 3,
+      "bytes": 90772,
+      "licenses": {
+        "GFDL-1.2": 3
+      },
+      "usage_classes": {
+        "share-alike": 3
+      },
+      "kinds": {
+        "wayback_html": 3
+      },
+      "age_days": 7,
+      "max_age_days": 7
     },
     "gb_test_roms": {
       "documents": 7,
       "bytes": 30329,
       "licenses": {
-        "unknown": 7
+        "none-declared": 7
+      },
+      "usage_classes": {
+        "copyrighted-local": 7
       },
       "kinds": {
         "github_raw": 7
-      }
+      },
+      "age_days": 8,
+      "max_age_days": 8
     },
     "giibiiadvance": {
       "documents": 5,
       "bytes": 219374,
       "licenses": {
-        "GPL-2.0": 5
+        "none-declared": 5
+      },
+      "usage_classes": {
+        "copyrighted-local": 5
       },
       "kinds": {
         "github_raw": 5
-      }
+      },
+      "age_days": 8,
+      "max_age_days": 8
     },
     "ladx_disassembly": {
       "documents": 7,
       "bytes": 20338,
       "licenses": {
-        "unknown": 7
+        "none-declared": 7
+      },
+      "usage_classes": {
+        "copyrighted-local": 7
       },
       "kinds": {
         "github_raw": 7
-      }
+      },
+      "age_days": 8,
+      "max_age_days": 8
     },
     "ladx_randomizer": {
       "documents": 1,
@@ -105,9 +232,14 @@
       "licenses": {
         "MIT": 1
       },
+      "usage_classes": {
+        "permissive": 1
+      },
       "kinds": {
         "github_raw": 1
-      }
+      },
+      "age_days": 8,
+      "max_age_days": 8
     },
     "mealybug": {
       "documents": 1,
@@ -115,9 +247,14 @@
       "licenses": {
         "MIT": 1
       },
+      "usage_classes": {
+        "permissive": 1
+      },
       "kinds": {
         "github_raw": 1
-      }
+      },
+      "age_days": 8,
+      "max_age_days": 8
     },
     "mooneye_gb": {
       "documents": 1,
@@ -125,19 +262,46 @@
       "licenses": {
         "GPL-3.0": 1
       },
+      "usage_classes": {
+        "share-alike": 1
+      },
       "kinds": {
         "github_raw": 1
-      }
+      },
+      "age_days": 8,
+      "max_age_days": 8
+    },
+    "nist_800_61": {
+      "documents": 1,
+      "bytes": 108379,
+      "licenses": {
+        "US-Government-work": 1
+      },
+      "usage_classes": {
+        "public-domain": 1
+      },
+      "kinds": {
+        "pdf_text": 1
+      },
+      "age_days": 589,
+      "max_age_days": 589
     },
     "pandocs": {
       "documents": 82,
       "bytes": 837879,
       "licenses": {
-        "CC0-1.0": 82
+        "none-declared": 6,
+        "CC0-1.0": 76
+      },
+      "usage_classes": {
+        "copyrighted-local": 6,
+        "public-domain": 76
       },
       "kinds": {
         "github_raw": 82
-      }
+      },
+      "age_days": 8,
+      "max_age_days": 8
     },
     "sameboy": {
       "documents": 5,
@@ -145,19 +309,29 @@
       "licenses": {
         "MIT": 5
       },
+      "usage_classes": {
+        "permissive": 5
+      },
       "kinds": {
         "github_raw": 5
-      }
+      },
+      "age_days": 8,
+      "max_age_days": 8
     },
     "speedrun_ladx": {
       "documents": 12,
       "bytes": 136478,
       "licenses": {
-        "unknown": 12
+        "none-declared": 12
+      },
+      "usage_classes": {
+        "copyrighted-local": 12
       },
       "kinds": {
         "speedrun": 12
-      }
+      },
+      "age_days": 8,
+      "max_age_days": 8
     },
     "sre_postmortem": {
       "documents": 1,
@@ -165,29 +339,59 @@
       "licenses": {
         "CC-BY-NC-ND-4.0": 1
       },
+      "usage_classes": {
+        "nc-nd": 1
+      },
       "kinds": {
         "html_article": 1
-      }
+      },
+      "age_days": 3603,
+      "max_age_days": 3603
     },
     "tasvideos_ladx": {
       "documents": 1,
       "bytes": 26779,
       "licenses": {
-        "unknown": 1
+        "CC-BY-2.0": 1
+      },
+      "usage_classes": {
+        "permissive": 1
       },
       "kinds": {
         "html_article": 1
-      }
+      },
+      "age_days": 1765,
+      "max_age_days": 1765
+    },
+    "tcrf_ladx": {
+      "documents": 1,
+      "bytes": 103763,
+      "licenses": {
+        "CC-BY-3.0": 1
+      },
+      "usage_classes": {
+        "permissive": 1
+      },
+      "kinds": {
+        "wayback_html": 1
+      },
+      "age_days": 7,
+      "max_age_days": 7
     },
     "zeldawiki_ladx": {
       "documents": 1,
       "bytes": 9593,
       "licenses": {
-        "unknown": 1
+        "GFDL-1.3": 1
+      },
+      "usage_classes": {
+        "share-alike": 1
       },
       "kinds": {
         "mediawiki": 1
-      }
+      },
+      "age_days": 8,
+      "max_age_days": 8
     }
   },
   "failures": [

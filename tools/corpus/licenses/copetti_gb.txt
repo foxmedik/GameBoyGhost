@@ -1,0 +1,9 @@
+License: CC BY 4.0
+Usage class: permissive
+Copyright: Rodrigo Copetti
+Source: https://www.copetti.org/writings/consoles/game-boy/
+Evidence: https://www.copetti.org/writings/consoles/game-boy/#referencing
+
+The article's "Copyright and permissions" section grants the Creative Commons
+Attribution 4.0 International License. Attribution to Rodrigo Copetti is
+required. Canonical license: https://creativecommons.org/licenses/by/4.0/
