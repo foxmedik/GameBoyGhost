@@ -8,7 +8,8 @@ import pytest
 from gbg_corpus.adapters import parse_wayback_cdx, wayback_id_url
 from gbg_corpus.check import check as run_check
 from gbg_corpus.config import Source
-from gbg_corpus.export import ExportGuardError, check_public_export, export_public
+from gbg_corpus.export import (ExportGuardError, _read_body,
+                               check_public_export, export_public)
 from gbg_corpus.index import build_index
 from gbg_corpus.migrate import migrate_add_usage_class, sync_normalized_front_matter
 from gbg_corpus.model import Document
@@ -533,3 +534,186 @@ expect_title_contains = "Reinforcement Learning"
 """)
     errors = run_check(store, repo_root=tmp_path, sources_path=cfg_file)
     assert any("title 'A Reduction of Imitation Learning" in e and "Reinforcement Learning" in e for e in errors)
+
+
+def test_pinned_restrictions_in_sources_toml():
+    """D3: reads the real sources.toml and asserts restricted sources and overrides."""
+    from gbg_corpus.cli import SOURCES_TOML
+    from gbg_corpus.config import load_sources
+    from gbg_corpus.model import RESTRICTED_CLASSES
+
+    sources = load_sources(SOURCES_TOML)
+    src_by_id = {s.id: s for s in sources}
+
+    # 1. Pinned restricted sources
+    pinned_restricted_ids = (
+        "gb_test_roms", "ladx_disassembly", "speedrun_ladx",
+        "sre_postmortem", "complexsystems"
+    )
+    for sid in pinned_restricted_ids:
+        assert sid in src_by_id, f"pinned restricted source {sid} missing from sources.toml"
+        src = src_by_id[sid]
+        u_class = src.get("usage_class")
+        assert u_class in RESTRICTED_CLASSES, (
+            f"pinned source {sid} must be in a restricted class, got {u_class!r}"
+        )
+
+    # 2. Both D2 overrides exist and are restricted
+    # pandocs: historical/** -> copyrighted-local
+    assert "pandocs" in src_by_id
+    pandocs = src_by_id["pandocs"]
+    pandocs_overrides = pandocs.get("overrides", [])
+    hist_ov = [ov for ov in pandocs_overrides if ov.get("path_glob") == "historical/**"]
+    assert len(hist_ov) >= 1, "pandocs missing override for historical/**"
+    assert hist_ov[0].get("usage_class") == "copyrighted-local"
+    assert hist_ov[0].get("usage_class") in RESTRICTED_CLASSES
+    assert "89f82b2181dac4e335bbbdd1451534e6b3a716cf/historical" in hist_ov[0].get("license_evidence_url", "")
+
+    # giibiiadvance: **/*.txt -> copyrighted-local
+    assert "giibiiadvance" in src_by_id
+    gbadv = src_by_id["giibiiadvance"]
+    gbadv_overrides = gbadv.get("overrides", [])
+    txt_ov = [ov for ov in gbadv_overrides if ov.get("path_glob") == "**/*.txt"]
+    assert len(txt_ov) >= 1, "giibiiadvance missing override for **/*.txt"
+    assert txt_ov[0].get("usage_class") == "copyrighted-local"
+    assert txt_ov[0].get("usage_class") in RESTRICTED_CLASSES
+    assert "ccb40c3cf7d9efec538858a36d4ab69bb4d0ce5c" in txt_ov[0].get("license_evidence_url", "")
+
+
+def test_apply_audit_per_path_overrides(tmp_path):
+    """D1: apply_audit applies first matching override by path field, else source-level values."""
+    from gbg_corpus.migrate import apply_audit
+
+    store = Store(tmp_path / "corpus")
+    doc_main = make_doc(source_id="pandocs", url="https://example.test/main", canonical_url="https://example.test/main",
+                        title="Main Doc", text="main text", raw=b"main text",
+                        usage_class="unknown", extra={"path": "docs/main.md"})
+    doc_hist = make_doc(source_id="pandocs", url="https://example.test/hist", canonical_url="https://example.test/hist",
+                        title="Old Doc", text="old text", raw=b"old text",
+                        usage_class="unknown", extra={"path": "historical/old.txt"})
+    store.save(doc_main)
+    store.save(doc_hist)
+
+    src = source(
+        "pandocs",
+        usage_class="public-domain",
+        license="CC0-1.0",
+        overrides=[{
+            "path_glob": "historical/**",
+            "usage_class": "copyrighted-local",
+            "license": "none-declared",
+            "license_evidence_url": "https://example.test/hist",
+            "usage_notes": "Hist notes",
+        }],
+    )
+    changed, warnings = apply_audit(store, [src])
+    assert changed == 2
+
+    rows = store.rows("pandocs")
+    rows_by_title = {r["title"]: r for r in rows}
+    assert rows_by_title["Main Doc"]["usage_class"] == "public-domain"
+    assert rows_by_title["Old Doc"]["usage_class"] == "copyrighted-local"
+
+
+def test_planted_historical_body_in_allowlisted_pandocs_is_caught(tmp_path):
+    """D2.5: restricted historical body planted in an allowlisted text/pandocs file with updated sha256 is caught."""
+    import hashlib
+    import json
+    store = Store()
+    out = tmp_path / "export"
+    from gbg_corpus.cli import SOURCES_TOML
+    from gbg_corpus.config import load_sources
+    sources = load_sources(SOURCES_TOML)
+    res = export_public(store, out, sources)
+    assert res["guard_errors"] == []
+
+    # Plant historical/2001-Oct-pandocs.txt body into text/pandocs/cgb-registers.md
+    hist_row = [r for r in store.rows("pandocs") if r.get("path") == "historical/2001-Oct-pandocs.txt"][0]
+    hist_body = _read_body(store.root / hist_row["normalized_path"])
+
+    target_file = out / "text" / "pandocs" / "cgb-registers.md"
+    assert target_file.exists()
+    target_file.write_text(f"---\nusage_class: public-domain\nlicense: CC0-1.0\n---\n\n> **License:** CC0-1.0 (public-domain).\n\n{hist_body}\n")
+
+    # Update sha256 in sources.json so allowlist check passes
+    sources_json_path = out / "sources.json"
+    data = json.loads(sources_json_path.read_text())
+    rel = "text/pandocs/cgb-registers.md"
+    data["files"][rel] = hashlib.sha256(target_file.read_bytes()).hexdigest()
+    sources_json_path.write_text(json.dumps(data, indent=2))
+
+    # Because condition c fails (exported body does not match normalized body in store),
+    # the allowance does not apply and the fingerprint scan catches it
+    errors = check_public_export(out, store=store, sources=sources)
+    assert any("shares" in e and "2001-Oct-pandocs" in e for e in errors)
+
+
+def test_overlapping_publishable_row_without_declared_allowance_fails(tmp_path):
+    """D2.5: publishable row whose body overlaps a restricted row with no declared allowance fails export."""
+    store = Store(tmp_path / "corpus")
+    shared_text = " ".join([f"common_word_{i}" for i in range(50)])
+    doc_pub = make_doc(source_id="pub", title="Pub Doc", text=f"# Pub\n\n{shared_text}", raw=f"# Pub\n\n{shared_text}".encode(),
+                       usage_class="public-domain", extra={"path": "src/pub.md"})
+    doc_priv = make_doc(source_id="priv", title="Priv Doc", text=f"# Priv\n\n{shared_text}", raw=f"# Priv\n\n{shared_text}".encode(),
+                        usage_class="nc-nd", extra={"path": "historical/priv.txt"})
+    store.save(doc_pub)
+    store.save(doc_priv)
+
+    sources = [
+        source("pub", usage_class="public-domain"),
+        source("priv", usage_class="nc-nd"),
+    ]
+    out = tmp_path / "export"
+    with pytest.raises(ExportGuardError):
+        export_public(store, out, sources)
+
+
+def test_overlapping_publishable_row_with_declared_allowance_passes(tmp_path):
+    """D2.5: publishable row whose body overlaps a restricted row with a declared allowance passes export."""
+    store = Store(tmp_path / "corpus")
+    shared_text = " ".join([f"common_word_{i}" for i in range(50)])
+    doc_pub = make_doc(source_id="pub", title="Pub Doc", text=f"# Pub\n\n{shared_text}", raw=f"# Pub\n\n{shared_text}".encode(),
+                       usage_class="public-domain", extra={"path": "src/pub.md"})
+    doc_priv = make_doc(source_id="priv", title="Priv Doc", text=f"# Priv\n\n{shared_text}", raw=f"# Priv\n\n{shared_text}".encode(),
+                        usage_class="nc-nd", extra={"path": "historical/priv.txt"})
+    store.save(doc_pub)
+    store.save(doc_priv)
+
+    sources = [
+        source("pub", usage_class="public-domain", allowed_overlap=[{
+            "public_glob": "src/**",
+            "restricted_source": "priv",
+            "restricted_glob": "historical/**",
+            "reason": "Test allowed overlap.",
+        }]),
+        source("priv", usage_class="nc-nd"),
+    ]
+    out = tmp_path / "export"
+    res = export_public(store, out, sources)
+    assert res["guard_errors"] == []
+    assert check_public_export(out, store=store, sources=sources) == []
+
+
+def test_pinned_declared_allowances_in_sources_toml():
+    """D2.5: pinned test listing declared allowances from real sources.toml."""
+    from gbg_corpus.cli import SOURCES_TOML
+    from gbg_corpus.config import load_sources
+
+    sources = load_sources(SOURCES_TOML)
+    src_by_id = {s.id: s for s in sources}
+
+    # Only pandocs has declared allowances
+    for sid, s in src_by_id.items():
+        allowances = s.get("allowed_overlap", [])
+        if sid == "pandocs":
+            assert len(allowances) == 2, f"pandocs must have exactly 2 declared allowances, got {len(allowances)}"
+            pairs = {(a["public_glob"], a["restricted_source"], a["restricted_glob"]) for a in allowances}
+            expected_pairs = {
+                ("src/**", "pandocs", "historical/**"),
+                ("src/**", "giibiiadvance", "docs/other_docs/**"),
+            }
+            assert pairs == expected_pairs
+            for a in allowances:
+                assert a.get("reason"), "allowance must have a non-empty reason"
+        else:
+            assert len(allowances) == 0, f"source {sid} must not declare allowances"

@@ -2,10 +2,11 @@ from __future__ import annotations
 
 import hashlib
 import json
-from pathlib import Path
+from pathlib import Path, PurePosixPath
 
 import yaml
 
+from .adapters import _glob_re
 from .model import USAGE_CLASSES, validate_usage_class
 
 
@@ -119,14 +120,15 @@ def sync_normalized_front_matter(store) -> tuple[int, dict[str, tuple[str, str]]
 
 
 def apply_audit(store, sources) -> tuple[int, list[str]]:
-    """Apply source-level license findings to every manifest row.
+    """Apply license findings and per-path overrides from sources.toml to every manifest row.
 
-    Returns (rows_changed, warnings).  Only sources with a non-unknown
-    ``usage_class`` in sources.toml are applied.  Existing rows are never
-    rewritten with a weaker class by this function; it is a straight copy of
-    the audited source metadata.
+    Returns (rows_changed, warnings). It is a straight copy of the audited source
+    metadata from sources.toml (including class upgrades or downgrades), applying
+    the first matching per-path override to rows by their 'path' field, otherwise
+    the source-level values.
     """
     config = {}
+    overrides_by_id: dict[str, list[dict]] = {}
     warnings: list[str] = []
     for src in sources:
         if src.get("enabled", True) is False:
@@ -149,20 +151,44 @@ def apply_audit(store, sources) -> tuple[int, list[str]]:
             "license_evidence_url": evidence,
             "usage_notes": notes,
         }
+        ovs = src.get("overrides", [])
+        validated_ovs = []
+        for ov in ovs:
+            ov_class = ov.get("usage_class")
+            if not ov_class:
+                raise ValueError(f"{src.id}: override missing usage_class")
+            validated_ovs.append({
+                "path_glob": ov.get("path_glob", ""),
+                "usage_class": validate_usage_class(ov_class),
+                "license": ov.get("license", src.get("license")),
+                "license_evidence_url": ov.get("license_evidence_url", evidence),
+                "usage_notes": ov.get("usage_notes", notes),
+            })
+        overrides_by_id[src.id] = validated_ovs
 
     changed = 0
     for path in sorted((store.root / "manifests").glob("*.jsonl")):
         rows = [json.loads(l) for l in path.read_text().splitlines() if l.strip()]
         dirty = False
         for row in rows:
-            meta = config.get(row.get("source_id"))
+            sid = row.get("source_id")
+            meta = config.get(sid)
             if not meta:
                 continue
+
+            target_meta = meta
+            row_path = row.get("path", "")
+            if row_path and sid in overrides_by_id:
+                for ov in overrides_by_id[sid]:
+                    glob = ov["path_glob"]
+                    if PurePosixPath(row_path).match(glob) or _glob_re(glob).match(row_path):
+                        target_meta = ov
+                        break
+
             row_dirty = False
-            for key, value in meta.items():
-                if value is None:
-                    continue
-                if row.get(key) != value:
+            for key in ("usage_class", "license", "license_evidence_url", "usage_notes"):
+                value = target_meta.get(key)
+                if value is not None and row.get(key) != value:
                     row[key] = value
                     row_dirty = True
             if row_dirty:

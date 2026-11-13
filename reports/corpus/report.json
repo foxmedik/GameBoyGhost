@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-10T23:41:12.963348+00:00",
+  "generated_at": "2026-11-13T16:13:03.279835+00:00",
   "corpus_root": "/home/ben/.local/share/gbg-corpus",
   "totals": {
     "documents": 135,
@@ -7,14 +7,14 @@
     "failures": 4,
     "failures_unresolved": 0,
     "duplicates": 1,
-    "restricted_documents": 28,
+    "restricted_documents": 39,
     "unknown_documents": 0,
     "usage_classes": {
-      "public-domain": 83,
-      "permissive": 13,
-      "share-alike": 11,
+      "public-domain": 78,
+      "permissive": 12,
+      "share-alike": 6,
       "nc-nd": 1,
-      "copyrighted-local": 27,
+      "copyrighted-local": 38,
       "unknown": 0
     }
   },
@@ -22,55 +22,55 @@
     "threshold_days": 180,
     "evaluated_documents": 135,
     "stale_documents": 7,
-    "oldest_age_days": 10540,
+    "oldest_age_days": 10543,
     "stale": [
       {
         "source_id": "complexsystems",
         "title": "How Complex Systems Fail",
         "url": "https://how.complexsystems.fail/",
-        "age_days": 10540,
+        "age_days": 10543,
         "dated_by": "published_at"
       },
       {
         "source_id": "arxiv_dagger",
         "title": "A Reduction of Imitation Learning and Structured Prediction to No-Regret Online Learning",
         "url": "http://arxiv.org/abs/1011.0686v3",
-        "age_days": 5852,
+        "age_days": 5854,
         "dated_by": "published_at"
       },
       {
         "source_id": "sre_postmortem",
         "title": "Chapter 15 - Postmortem Culture: Learning from Failure",
         "url": "https://sre.google/sre-book/postmortem-culture/",
-        "age_days": 3600,
+        "age_days": 3603,
         "dated_by": "published_at"
       },
       {
         "source_id": "arxiv_il_survey",
         "title": "Higher dimensional operators in 2HDM",
         "url": "http://arxiv.org/abs/1707.00716v2",
-        "age_days": 3417,
+        "age_days": 3419,
         "dated_by": "published_at"
       },
       {
         "source_id": "copetti_gb",
         "title": "Game Boy / Color Architecture | A Practical Analysis",
         "url": "https://www.copetti.org/writings/consoles/game-boy/",
-        "age_days": 2819,
+        "age_days": 2822,
         "dated_by": "published_at"
       },
       {
         "source_id": "tasvideos_ladx",
         "title": "Game Resources / GB / Links Awakening",
         "url": "https://tasvideos.org/GameResources/GB/LinksAwakening",
-        "age_days": 1762,
+        "age_days": 1765,
         "dated_by": "published_at"
       },
       {
         "source_id": "nist_800_61",
         "title": "Incident Response Recommendations and Considerations for Cybersecurity Risk Management: A CSF 2.0 Community Profile",
         "url": "https://nvlpubs.nist.gov/nistpubs/SpecialPublications/NIST.SP.800-61r3.pdf",
-        "age_days": 586,
+        "age_days": 589,
         "dated_by": "published_at"
       }
     ]
@@ -80,16 +80,16 @@
       "documents": 1,
       "bytes": 2755,
       "licenses": {
-        "arXiv-non-exclusive-1.0": 1
+        "CC0-1.0": 1
       },
       "usage_classes": {
-        "permissive": 1
+        "public-domain": 1
       },
       "kinds": {
         "arxiv": 1
       },
-      "age_days": 5852,
-      "max_age_days": 5852
+      "age_days": 5854,
+      "max_age_days": 5854
     },
     "arxiv_il_survey": {
       "documents": 1,
@@ -103,8 +103,8 @@
       "kinds": {
         "arxiv": 1
       },
-      "age_days": 3417,
-      "max_age_days": 3417
+      "age_days": 3419,
+      "max_age_days": 3419
     },
     "awesome_gbdev": {
       "documents": 1,
@@ -118,8 +118,8 @@
       "kinds": {
         "github_raw": 1
       },
-      "age_days": 5,
-      "max_age_days": 5
+      "age_days": 8,
+      "max_age_days": 8
     },
     "binjgb": {
       "documents": 1,
@@ -133,8 +133,8 @@
       "kinds": {
         "github_raw": 1
       },
-      "age_days": 5,
-      "max_age_days": 5
+      "age_days": 8,
+      "max_age_days": 8
     },
     "complexsystems": {
       "documents": 1,
@@ -148,8 +148,8 @@
       "kinds": {
         "html_article": 1
       },
-      "age_days": 10540,
-      "max_age_days": 10540
+      "age_days": 10543,
+      "max_age_days": 10543
     },
     "copetti_gb": {
       "documents": 1,
@@ -163,8 +163,8 @@
       "kinds": {
         "html_article": 1
       },
-      "age_days": 2819,
-      "max_age_days": 2819
+      "age_days": 2822,
+      "max_age_days": 2822
     },
     "datacrystal_ladx": {
       "documents": 3,
@@ -178,8 +178,8 @@
       "kinds": {
         "wayback_html": 3
       },
-      "age_days": 5,
-      "max_age_days": 5
+      "age_days": 7,
+      "max_age_days": 7
     },
     "gb_test_roms": {
       "documents": 7,
@@ -193,23 +193,23 @@
       "kinds": {
         "github_raw": 7
       },
-      "age_days": 5,
-      "max_age_days": 5
+      "age_days": 8,
+      "max_age_days": 8
     },
     "giibiiadvance": {
       "documents": 5,
       "bytes": 219374,
       "licenses": {
-        "GPL-2.0": 5
+        "none-declared": 5
       },
       "usage_classes": {
-        "share-alike": 5
+        "copyrighted-local": 5
       },
       "kinds": {
         "github_raw": 5
       },
-      "age_days": 5,
-      "max_age_days": 5
+      "age_days": 8,
+      "max_age_days": 8
     },
     "ladx_disassembly": {
       "documents": 7,
@@ -223,8 +223,8 @@
       "kinds": {
         "github_raw": 7
       },
-      "age_days": 5,
-      "max_age_days": 5
+      "age_days": 8,
+      "max_age_days": 8
     },
     "ladx_randomizer": {
       "documents": 1,
@@ -238,8 +238,8 @@
       "kinds": {
         "github_raw": 1
       },
-      "age_days": 5,
-      "max_age_days": 5
+      "age_days": 8,
+      "max_age_days": 8
     },
     "mealybug": {
       "documents": 1,
@@ -253,8 +253,8 @@
       "kinds": {
         "github_raw": 1
       },
-      "age_days": 5,
-      "max_age_days": 5
+      "age_days": 8,
+      "max_age_days": 8
     },
     "mooneye_gb": {
       "documents": 1,
@@ -268,8 +268,8 @@
       "kinds": {
         "github_raw": 1
       },
-      "age_days": 5,
-      "max_age_days": 5
+      "age_days": 8,
+      "max_age_days": 8
     },
     "nist_800_61": {
       "documents": 1,
@@ -283,23 +283,25 @@
       "kinds": {
         "pdf_text": 1
       },
-      "age_days": 586,
-      "max_age_days": 586
+      "age_days": 589,
+      "max_age_days": 589
     },
     "pandocs": {
       "documents": 82,
       "bytes": 837879,
       "licenses": {
-        "CC0-1.0": 82
+        "none-declared": 6,
+        "CC0-1.0": 76
       },
       "usage_classes": {
-        "public-domain": 82
+        "copyrighted-local": 6,
+        "public-domain": 76
       },
       "kinds": {
         "github_raw": 82
       },
-      "age_days": 5,
-      "max_age_days": 5
+      "age_days": 8,
+      "max_age_days": 8
     },
     "sameboy": {
       "documents": 5,
@@ -313,8 +315,8 @@
       "kinds": {
         "github_raw": 5
       },
-      "age_days": 5,
-      "max_age_days": 5
+      "age_days": 8,
+      "max_age_days": 8
     },
     "speedrun_ladx": {
       "documents": 12,
@@ -328,8 +330,8 @@
       "kinds": {
         "speedrun": 12
       },
-      "age_days": 5,
-      "max_age_days": 5
+      "age_days": 8,
+      "max_age_days": 8
     },
     "sre_postmortem": {
       "documents": 1,
@@ -343,8 +345,8 @@
       "kinds": {
         "html_article": 1
       },
-      "age_days": 3600,
-      "max_age_days": 3600
+      "age_days": 3603,
+      "max_age_days": 3603
     },
     "tasvideos_ladx": {
       "documents": 1,
@@ -358,8 +360,8 @@
       "kinds": {
         "html_article": 1
       },
-      "age_days": 1762,
-      "max_age_days": 1762
+      "age_days": 1765,
+      "max_age_days": 1765
     },
     "tcrf_ladx": {
       "documents": 1,
@@ -373,8 +375,8 @@
       "kinds": {
         "wayback_html": 1
       },
-      "age_days": 5,
-      "max_age_days": 5
+      "age_days": 7,
+      "max_age_days": 7
     },
     "zeldawiki_ladx": {
       "documents": 1,
@@ -388,8 +390,8 @@
       "kinds": {
         "mediawiki": 1
       },
-      "age_days": 5,
-      "max_age_days": 5
+      "age_days": 8,
+      "max_age_days": 8
     }
   },
   "failures": [

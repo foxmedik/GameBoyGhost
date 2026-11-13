@@ -56,6 +56,12 @@ means metadata and URL only; no body text or excerpts.
   terms page is Cloudflare-blocked, and Wayback has no capture of it.
 - **gb_test_roms** and **ladx_disassembly** stay `copyrighted-local`: no
   LICENSE/COPYING file exists at the pinned commits.
+- **pandocs (historical/)**: the 6 legacy files under `historical/**` credit third
+  parties in their headers; repo-level CC0 is not shown to cover them, so they
+  are overridden to `copyrighted-local`.
+- **giibiiadvance (**/*.txt)**: third-party hardware notes and a vendored copy of
+  the 2001 Pan Docs under `**/*.txt` are overridden to `copyrighted-local` rather
+  than inheriting repository-level GPL-2.0.
 
 ## Local no-license sources
 

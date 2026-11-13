@@ -6,13 +6,16 @@ import re
 import shutil
 from collections import defaultdict
 from datetime import datetime, timezone
-from pathlib import Path
+from pathlib import Path, PurePosixPath
 
+from .adapters import _glob_re
+from .config import Source, load_sources
 from .model import PUBLIC_BODY_CLASSES, RESTRICTED_CLASSES, USAGE_CLASSES
 from .normalize import slugify
 
 PROJECT_ROOT = Path(__file__).resolve().parents[2]
 LICENSE_DIR = PROJECT_ROOT / "licenses"
+SOURCES_TOML = PROJECT_ROOT / "sources.toml"
 
 SHINGLE_THRESHOLD = 3
 
@@ -32,6 +35,15 @@ def _read_body(normalized_path: Path) -> str:
         if len(parts) == 3:
             return parts[2].lstrip("\n")
     return text
+
+
+def _exported_body(path: Path) -> str:
+    body = _read_body(path)
+    if body.startswith("> **License:**"):
+        parts = body.split("\n\n", 1)
+        if len(parts) == 2:
+            return parts[1].lstrip("\n")
+    return body
 
 
 _WORD_RE = re.compile(r"\w+")
@@ -143,8 +155,6 @@ def export_public(store, out, sources=None, fail_on_restricted: bool = True) -> 
         rows = rows_by_id.get(sid, [])
         cfg = cfg_by_id.get(sid)
         cls = _source_class(rows, cfg)
-        counts[cls] = counts.get(cls, 0) + 1
-
         first = rows[0] if rows else {}
         title = (cfg.get("title") if cfg else None) or first.get("title") or sid
         url = (cfg.get("url") if cfg else None) or first.get("canonical_url") or first.get("url", "")
@@ -170,6 +180,10 @@ def export_public(store, out, sources=None, fail_on_restricted: bool = True) -> 
         }
         sources_json[sid] = meta
 
+        for r in rows:
+            c = r.get("usage_class", "unknown")
+            counts[c] = counts.get(c, 0) + 1
+
         pub_rows = [r for r in rows if r.get("usage_class", "unknown") in PUBLIC_BODY_CLASSES]
         restricted_rows = [r for r in rows if r.get("usage_class", "unknown") in RESTRICTED_CLASSES]
 
@@ -194,7 +208,7 @@ def export_public(store, out, sources=None, fail_on_restricted: bool = True) -> 
                 filename = f"{slugify(row.get('title') or row.get('sha256', 'document'))}.md"
                 doc_path = dest / filename
                 doc_path.write_text(
-                    _front_matter(doc_meta) + _publish_notice(meta) + body.rstrip() + "\n"
+                    _front_matter(doc_meta) + _publish_notice(doc_meta) + body.rstrip() + "\n"
                 )
                 written_files[doc_path.relative_to(out).as_posix()] = hashlib.sha256(
                     doc_path.read_bytes()
@@ -220,7 +234,7 @@ def export_public(store, out, sources=None, fail_on_restricted: bool = True) -> 
     }
     sources_path.write_text(json.dumps(sources_data, indent=2, ensure_ascii=False) + "\n")
 
-    errors = check_public_export(out, store=store)
+    errors = check_public_export(out, store=store, sources=sources)
     if errors and fail_on_restricted:
         if out.exists():
             shutil.rmtree(out)
@@ -345,7 +359,7 @@ Class counts: {", ".join(f"{k}={v}" for k, v in counts.items() if v)}.
 _FM_RE = re.compile(r"\A---\n(.*?)\n---\n", re.S)
 
 
-def check_public_export(out, store=None, fail_on_restricted: bool = True) -> list[str]:
+def check_public_export(out, store=None, sources=None, fail_on_restricted: bool = True) -> list[str]:
     """Validate an already-written public export directory.
 
     Checks:
@@ -374,6 +388,13 @@ def check_public_export(out, store=None, fail_on_restricted: bool = True) -> lis
         return [f"invalid sources.json: {exc}"]
     if not isinstance(data, dict):
         return ["sources.json is not a JSON object"]
+
+    if sources is None and store is not None and SOURCES_TOML.exists():
+        try:
+            sources = load_sources(SOURCES_TOML)
+        except Exception:
+            sources = None
+    cfg_by_id = {s.id: s for s in (sources or [])}
 
     sources = data.get("sources")
     if not isinstance(sources, dict):
@@ -452,8 +473,16 @@ def check_public_export(out, store=None, fail_on_restricted: bool = True) -> lis
         for e in sorted(sources_files - expected_manifest_files):
             errors.append(f"sources.json allowlist contains unexpected file not in manifests: {e}")
 
+        # Map expected publishable rows by relative export path
+        pub_rows_by_rel: dict[str, dict] = {}
+        for row in store.all_rows():
+            if row.get("usage_class", "unknown") in PUBLIC_BODY_CLASSES:
+                sid = row["source_id"]
+                fn = f"{slugify(row.get('title') or row.get('sha256', 'document'))}.md"
+                pub_rows_by_rel[f"text/{sid}/{fn}"] = row
+
         # A2/A3. Shingle fingerprints
-        restricted_fingerprints: list[tuple[str, str, set[str]]] = []
+        restricted_fingerprints: list[tuple[str, str, set[str], dict]] = []
         for row in store.all_rows():
             if row.get("usage_class") in RESTRICTED_CLASSES:
                 norm = store.root / row.get("normalized_path", "")
@@ -462,7 +491,7 @@ def check_public_export(out, store=None, fail_on_restricted: bool = True) -> lis
                     sh = _shingles(body)
                     if sh:
                         doc_label = row.get("title") or row.get("sha256", "document")
-                        restricted_fingerprints.append((row["source_id"], doc_label, sh))
+                        restricted_fingerprints.append((row["source_id"], doc_label, sh, row))
 
         for p in sorted(out.rglob("*")):
             if p.is_file():
@@ -474,13 +503,43 @@ def check_public_export(out, store=None, fail_on_restricted: bool = True) -> lis
                 f_sh = _shingles(content)
                 if not f_sh:
                     continue
-                for sid, doc_label, r_sh in restricted_fingerprints:
+                rel_path = p.relative_to(out).as_posix()
+                for r_sid, doc_label, r_sh, r_row in restricted_fingerprints:
                     shared = f_sh & r_sh
                     if len(shared) >= SHINGLE_THRESHOLD:
-                        errors.append(
-                            f"file {p.relative_to(out).as_posix()} shares {len(shared)} shingles "
-                            f"with restricted document {doc_label!r} from source {sid!r}"
-                        )
+                        # D2.3: Check if declared allowance covers the overlap
+                        is_allowed = False
+                        pub_row = pub_rows_by_rel.get(rel_path)
+                        if pub_row is not None:
+                            # Condition b: exported file maps to a publishable manifest row
+                            norm_path = store.root / pub_row.get("normalized_path", "")
+                            if norm_path.exists():
+                                exp_body = _exported_body(p)
+                                store_body = _read_body(norm_path)
+                                # Condition c: exported body is byte-identical to normalized body in store
+                                if exp_body == store_body:
+                                    # Condition a: declared allowance covers (public row, restricted row) pair
+                                    pub_sid = pub_row.get("source_id", "")
+                                    pub_src = cfg_by_id.get(pub_sid)
+                                    allowances = pub_src.get("allowed_overlap", []) if pub_src else []
+                                    pub_path = pub_row.get("path", "")
+                                    r_path = r_row.get("path", "")
+                                    for allow in allowances:
+                                        if allow.get("restricted_source") != r_sid:
+                                            continue
+                                        p_glob = allow.get("public_glob", "")
+                                        r_glob = allow.get("restricted_glob", "")
+                                        p_match = PurePosixPath(pub_path).match(p_glob) or bool(_glob_re(p_glob).match(pub_path))
+                                        r_match = PurePosixPath(r_path).match(r_glob) or bool(_glob_re(r_glob).match(r_path))
+                                        if p_match and r_match:
+                                            is_allowed = True
+                                            break
+
+                        if not is_allowed:
+                            errors.append(
+                                f"file {rel_path} shares {len(shared)} shingles "
+                                f"with restricted document {doc_label!r} from source {r_sid!r}"
+                            )
 
     # Check text/ directory
     store_fully_restricted: set[str] = set()

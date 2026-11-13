@@ -83,7 +83,8 @@ def cmd_check(args) -> int:
     store = Store()
     errors = run_check(store, REPO_ROOT)
     if getattr(args, "public_out", None):
-        errors += check_public_export(Path(args.public_out), store=store)
+        sources = load_sources(SOURCES_TOML)
+        errors += check_public_export(Path(args.public_out), store=store, sources=sources)
     if errors:
         print(f"check FAILED ({len(errors)} problems)")
         for e in errors[:100]:
@@ -130,8 +131,9 @@ def cmd_audit(args) -> int:
 
 
 def cmd_export(args) -> int:
+    sources = load_sources(SOURCES_TOML)
     if args.check:
-        errors = check_public_export(Path(args.check), store=Store())
+        errors = check_public_export(Path(args.check), store=Store(), sources=sources)
         if errors:
             print(f"export check FAILED ({len(errors)} problems)")
             for e in errors:
@@ -144,12 +146,12 @@ def cmd_export(args) -> int:
         print("export requires --public --out <dir> (or --check <dir>)", file=sys.stderr)
         return 2
     try:
-        result = export_public(Store(), args.out, load_sources(SOURCES_TOML))
+        result = export_public(Store(), args.out, sources)
     except Exception as exc:
         print(f"export FAILED: {exc}", file=sys.stderr)
         return 1
     print(f"wrote public export to {result['out']}")
-    print(f"sources: {result['sources']}; classes: "
+    print(f"sources: {result['sources']}; documents: "
           + ", ".join(f"{k}={v}" for k, v in result["counts"].items() if v))
     if result["guard_errors"]:
         for e in result["guard_errors"]:

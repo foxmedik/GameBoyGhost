@@ -21,6 +21,25 @@ terms_url = "https://raw.githubusercontent.com/gbdev/pandocs/89f82b2181dac4e335b
 robots_hash = "b622e2dd9b60e8540ffd1f4b0974c9dbee73bce606f9660c6344d09357889956"
 rate_limit_rps = 1
 
+[[sources.pandocs.overrides]]
+path_glob = "historical/**"
+license = "none-declared"
+usage_class = "copyrighted-local"
+license_evidence_url = "https://github.com/gbdev/pandocs/tree/89f82b2181dac4e335bbbdd1451534e6b3a716cf/historical"
+usage_notes = "Legacy third-party documents; repo-level CC0 not shown to cover them."
+
+[[sources.pandocs.allowed_overlap]]
+public_glob = "src/**"
+restricted_source = "pandocs"
+restricted_glob = "historical/**"
+reason = "Modern CC0 Pan Docs chapters descend from and incorporate text from historical Pan Docs releases."
+
+[[sources.pandocs.allowed_overlap]]
+public_glob = "src/**"
+restricted_source = "giibiiadvance"
+restricted_glob = "docs/other_docs/**"
+reason = "Giibiiadvance vendored copies of the 2001 Pan Docs and third-party sound documentation that modern Pan Docs evolved from."
+
 [sources.awesome_gbdev]
 id = "awesome_gbdev"
 kind = "github_raw"
@@ -116,6 +135,13 @@ usage_notes = "GPL-2.0 text verified in the pinned LICENSE.txt; attribution and 
 terms_url = "https://raw.githubusercontent.com/AntonioND/giibiiadvance/ccb40c3cf7d9efec538858a36d4ab69bb4d0ce5c/LICENSE.txt"
 robots_hash = "b622e2dd9b60e8540ffd1f4b0974c9dbee73bce606f9660c6344d09357889956"
 rate_limit_rps = 1
+
+[[sources.giibiiadvance.overrides]]
+path_glob = "**/*.txt"
+license = "none-declared"
+usage_class = "copyrighted-local"
+license_evidence_url = "https://github.com/AntonioND/giibiiadvance/tree/ccb40c3cf7d9efec538858a36d4ab69bb4d0ce5c/docs/other_docs"
+usage_notes = "Third-party hardware notes and a copy of the 2001 Pan Docs vendored into a GPL-2.0 repo."
 
 [sources.binjgb]
 id = "binjgb"
