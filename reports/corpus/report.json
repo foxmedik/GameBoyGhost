@@ -1,17 +1,17 @@
 {
-  "generated_at": "2026-11-13T16:13:03.279835+00:00",
+  "generated_at": "2026-11-13T19:51:41.600445+00:00",
   "corpus_root": "/home/ben/.local/share/gbg-corpus",
   "totals": {
     "documents": 135,
-    "bytes": 1933287,
+    "bytes": 1933294,
     "failures": 4,
     "failures_unresolved": 0,
     "duplicates": 1,
     "restricted_documents": 39,
     "unknown_documents": 0,
     "usage_classes": {
-      "public-domain": 78,
-      "permissive": 12,
+      "public-domain": 79,
+      "permissive": 11,
       "share-alike": 6,
       "nc-nd": 1,
       "copyrighted-local": 38,
@@ -35,7 +35,7 @@
         "source_id": "arxiv_dagger",
         "title": "A Reduction of Imitation Learning and Structured Prediction to No-Regret Online Learning",
         "url": "http://arxiv.org/abs/1011.0686v3",
-        "age_days": 5854,
+        "age_days": 5855,
         "dated_by": "published_at"
       },
       {
@@ -46,17 +46,17 @@
         "dated_by": "published_at"
       },
       {
-        "source_id": "arxiv_il_survey",
-        "title": "Higher dimensional operators in 2HDM",
-        "url": "http://arxiv.org/abs/1707.00716v2",
-        "age_days": 3419,
-        "dated_by": "published_at"
-      },
-      {
         "source_id": "copetti_gb",
         "title": "Game Boy / Color Architecture | A Practical Analysis",
         "url": "https://www.copetti.org/writings/consoles/game-boy/",
         "age_days": 2822,
+        "dated_by": "published_at"
+      },
+      {
+        "source_id": "arxiv_il_survey",
+        "title": "Imitation Learning: Progress, Taxonomies and Challenges",
+        "url": "http://arxiv.org/abs/2106.12177v2",
+        "age_days": 1969,
         "dated_by": "published_at"
       },
       {
@@ -88,23 +88,23 @@
       "kinds": {
         "arxiv": 1
       },
-      "age_days": 5854,
-      "max_age_days": 5854
+      "age_days": 5855,
+      "max_age_days": 5855
     },
     "arxiv_il_survey": {
       "documents": 1,
-      "bytes": 2555,
+      "bytes": 2562,
       "licenses": {
-        "arXiv-non-exclusive-1.0": 1
+        "CC0-1.0": 1
       },
       "usage_classes": {
-        "permissive": 1
+        "public-domain": 1
       },
       "kinds": {
         "arxiv": 1
       },
-      "age_days": 3419,
-      "max_age_days": 3419
+      "age_days": 1969,
+      "max_age_days": 1969
     },
     "awesome_gbdev": {
       "documents": 1,
